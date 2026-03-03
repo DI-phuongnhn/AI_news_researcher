@@ -23,14 +23,19 @@ Create a fully automated agent that:
 - **English-to-Vietnamese Strategy**: We realized that searching in Vietnamese directly produced shallow results. We shifted to discovering keywords in English/Japanese/Vietnamese, then using the **English keywords** to perform a "global search" to find high-density papers and blogs before translating the summary back to Vietnamese.
 - **Strict Filtering**: Implemented an exclusion list for general news sites (VnExpress, CNN, etc.) to ensure only technical sources were processed.
 
-### Phase 3: Quota Resilience (The "Model Rotation" Breakthrough)
-- **Challenge**: The Gemini Free Tier has strict daily limits (e.g., 20 requests for some 2.0 models).
-- **Solution**: Developed the `ModelRotator` utility. Instead of failing on a `429 RESOURCE_EXHAUSTED` error, the system now automatically switches between a pool of models (`gemini-2.0-flash`, `gemini-1.5-flash`, `gemini-1.5-pro`, etc.) until it finds one with available quota.
+### Phase 3: Quota Resilience (Model Rotation v1)
+- **Challenge**: The Gemini Free Tier has strict daily limits.
+- **Solution**: Developed the `ModelRotator` utility to switch models on `429` errors.
 
 ### Phase 4: Zero-Maintenance Hosting (Static Migration)
 - **Transition**: Migrated from Flask to a **Static Dashboard** (`index.html`).
-- **Logic**: The script now saves results to `data/latest_news.json` and the frontend uses Vanilla JS to fetch and render that JSON.
-- **Deployment**: Hosted on **GitHub Pages**. Automation via **GitHub Actions** (8:00 AM VN Time) pushes both data and UI updates simultaneously.
+- **Logic**: The script saves to `data/latest_news.json`, rendered by Vanilla JS.
+- **Deployment**: Hosted on **GitHub Pages** with updates via **GitHub Actions**.
+
+### Phase 5: Production Hardening (Model Rotation v2)
+- **Refinement**: Some model names in the pool were outdated or required different identifiers. 
+- **Validation**: Updated the fallback list to use verified identifiers (`gemini-flash-lite-latest`, etc.).
+- **Error Handling**: Broadened detection to catch `REMITTER_LIMIT` and `RATE_LIMIT` strings, ensuring the bot never stops until all options are exhausted.
 
 ---
 

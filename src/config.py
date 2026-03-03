@@ -13,9 +13,9 @@ class Config:
     GEMINI_MODELS_FALLBACK = [
         "gemini-2.0-flash-lite",
         "gemini-2.0-flash",
-        "gemini-1.5-flash",
-        "gemini-1.5-pro",
-        "gemini-flash-latest"
+        "gemini-flash-latest",
+        "gemini-flash-lite-latest",
+        "gemini-pro-latest"
     ]
     
     # RSS Feeds
