@@ -2,7 +2,8 @@
 .env
 __pycache__/
 *.pyc
-data/latest_news.json
+# Data is managed by GitHub Actions but we need initial file
+# data/latest_news.json 
 models_available.txt
 models_list.txt
 /tmp/
