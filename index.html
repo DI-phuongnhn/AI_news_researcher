@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Researcher Dashboard</title>
+    <style>
+        :root {
+            --primary-bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        #last-updated {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .keywords {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .lang-group {
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .lang-label {
+            display: inline-block;
+            min-width: 50px;
+            font-weight: bold;
+            color: var(--accent);
+            padding-top: 4px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #334155;
+            color: #cbd5e1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            white-space: nowrap;
+        }
+
+        .tag:hover {
+            background: var(--accent);
+            color: var(--primary-bg);
+            border-color: #f1f5f9;
+            transform: translateY(-1px);
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+        }
+
+        #searchBar {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            background: #1e293b;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        #searchBar:focus {
+            border-color: var(--accent);
+        }
+
+        #news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .news-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-meta {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .news-summary {
+            line-height: 1.6;
+            color: #cbd5e1;
+            white-space: pre-line;
+        }
+
+        .badge {
+            background: #334155;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-dim);
+        }
+
+        .error-message {
+            background: #7f1d1d;
+            color: #fecaca;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Technical Researcher</h1>
+            <p id="last-updated">Đang tải dữ liệu...</p>
+        </header>
+
+        <div id="quota-error" class="error-message" style="display: none;">
+            ⚠️ <strong>Thông báo Quota API:</strong> Bot đã tiêu hết số lượt chạy miễn phí trong ngày hôm nay. Dữ liệu
+            sẽ được cập nhật lại vào 8:00 sáng mai.
+        </div>
+
+        <div class="keywords">
+            <h3
+                style="margin-top: 0; margin-bottom: 1.5rem; color: var(--accent); font-size: 1.1rem; border-bottom: 1px solid #334155; padding-bottom: 0.5rem;">
+                Trending Keywords
+            </h3>
+            <div id="keyword-clouds">
+                <!-- Keywords will be injected here -->
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Tìm kiếm tin tức AI (title, nội dung, tag)..."
+                onkeyup="filterNews()">
+        </div>
+
+        <div id="news-list">
+            <div class="loading">Đang khởi tạo bản tin kỹ thuật...</div>
+        </div>
+    </div>
+
+    <script>
+        let allData = null;
+
+        async function fetchData() {
+            try {
+                // Fetch direct from data/latest_news.json
+                const response = await fetch('data/latest_news.json');
+                if (!response.ok) throw new Error('Không thể tải file dữ liệu');
+                const data = await response.json();
+                allData = data;
+                renderDashboard(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('news-list').innerHTML = `<div class="loading">Lỗi: ${error.message}. Hãy đảm bảo file data/latest_news.json tồn tại.</div>`;
+            }
+        }
+
+        function renderDashboard(data) {
+            // Update timestamp
+            document.getElementById('last-updated').innerText = `Tự động cập nhật lúc: ${new Date(data.timestamp).toLocaleString('vi-VN')}`;
+
+            // Check for quota error in keywords
+            if (data.keywords.includes('QUOTA_EXHAUSTED') || data.keywords.includes('429')) {
+                document.getElementById('quota-error').style.display = 'block';
+            }
+
+            // Render Keywords
+            const clouds = document.getElementById('keyword-clouds');
+            clouds.innerHTML = '';
+
+            const structured = parseKeywords(data.keywords);
+            for (const [lang, words] of Object.entries(structured)) {
+                if (words.length === 0) continue;
+
+                const group = document.createElement('div');
+                group.className = 'lang-group';
+                group.innerHTML = `
+                    <span class="lang-label">${lang}:</span>
+                    <div class="tag-cloud">
+                        ${words.map(word => `<span class="tag" onclick="filterByTag('${word}')">${word}</span>`).join('')}
+                    </div>
+                `;
+                clouds.appendChild(group);
+            }
+
+            // Render News
+            const list = document.getElementById('news-list');
+            if (!data.reports || data.reports.length === 0) {
+                list.innerHTML = '<div class="loading">Hiện chưa có bản tin kỹ thuật nào được tổng hợp.</div>';
+                return;
+            }
+
+            list.innerHTML = data.reports.map(item => `
+                <div class="news-card">
+                    <a href="${item.link}" class="news-title" target="_blank">${item.title}</a>
+                    <div class="news-meta">
+                        <span class="badge">${item.source}</span>
+                        <span>${item.date ? new Date(item.date).toLocaleDateString('vi-VN') : ''}</span>
+                    </div>
+                    <div class="news-summary">${item.summary_vn}</div>
+                </div>
+            `).join('');
+        }
+
+        function parseKeywords(raw) {
+            const structured = { 'EN': [], 'VN': [], 'JP': [] };
+            if (raw.includes('Error:')) return structured;
+
+            const sections = raw.split(/\n\n+/);
+            sections.forEach(section => {
+                const parts = section.split(':');
+                if (parts.length >= 2) {
+                    const lang = parts[0].trim().toUpperCase();
+                    const words = parts[1].split(',').map(w => w.trim().replace(/^\[|\]$/g, ''));
+                    if (structured[lang]) structured[lang] = words;
+                }
+            });
+            return structured;
+        }
+
+        function filterByTag(tag) {
+            let searchBar = document.getElementById('searchBar');
+            if (searchBar.value === tag) {
+                searchBar.value = '';
+            } else {
+                searchBar.value = tag;
+            }
+            filterNews();
+            document.querySelector('.search-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function filterNews() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let cards = document.getElementsByClassName('news-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText.toLowerCase();
+                cards[i].style.display = text.includes(input) ? "" : "none";
+            }
+        }
+
+        // Initial fetch
+        fetchData();
+    </script>
+</body>
+
+</html>

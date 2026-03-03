@@ -1,0 +1,8 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+data/latest_news.json
+models_available.txt
+models_list.txt
+/tmp/
