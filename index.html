@@ -161,6 +161,27 @@
             font-weight: 500;
         }
 
+        .btn-refresh,
+        .btn-action {
+            background: var(--card-bg);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-refresh:hover,
+        .btn-action:hover {
+            background: var(--accent);
+            color: var(--primary-bg);
+        }
+
         .loading {
             text-align: center;
             padding: 3rem;
@@ -183,6 +204,11 @@
         <header>
             <h1>AI Technical Researcher</h1>
             <p id="last-updated">Đang tải dữ liệu...</p>
+            <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 10px;">
+                <button onclick="fetchData()" class="btn-refresh">🔄 Cập nhật Dashboard</button>
+                <a href="https://github.com/DI-phuongnhn/AI_news_researcher/actions" target="_blank"
+                    class="btn-action">🚀 Chạy nghiên cứu mới (GitHub Actions)</a>
+            </div>
         </header>
 
         <div id="quota-error" class="error-message" style="display: none;">
