@@ -30,9 +30,8 @@ Create a fully automated agent that:
 ### Phase 4: Zero-Maintenance Hosting (Static Migration)
 - **Transition**: Migrated from Flask to a **Static Dashboard** (`index.html`).
 - **Logic**: The script saves to `data/latest_news.json`, rendered by Vanilla JS.
-- **Deployment**: Hosted on **GitHub Pages** with updates via **GitHub Actions**.
-
-### Phase 5: Production Hardening (Model Rotation v2)
+- **Deployment**: Hosted on **GitHub Pages**. Automation via **GitHub Actions** (8:00 AM VN Time) pushes both data and UI updates simultaneously.
+- **Authentication**: Uses a **Personal Access Token (PAT)** to bypass 403 permission errors during the push step from GitHub Actions.
 - **Refinement**: Some model names in the pool were outdated or required different identifiers. 
 - **Validation**: Updated the fallback list to use verified identifiers (`gemini-flash-lite-latest`, etc.).
 - **Error Handling**: Broadened detection to catch `REMITTER_LIMIT` and `RATE_LIMIT` strings, ensuring the bot never stops until all options are exhausted.
