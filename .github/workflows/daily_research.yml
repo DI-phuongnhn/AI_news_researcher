@@ -5,6 +5,9 @@ on:
     - cron: '0 1 * * *' # 01:00 UTC = 08:00 AM VN
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   research:
     runs-on: ubuntu-latest
