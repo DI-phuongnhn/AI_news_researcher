@@ -1,41 +1,5 @@
 {
-    "timestamp": "2026-03-07T03:19:11.080535",
-    "keywords": "EN: [DeepSeek-V3 Architecture, Mixture-of-Experts (MoE), Reasoning Models (o1/R1), Chain-of-Thought (CoT) Distillation, Test-time Compute, FP8 Precision Training, Speculative Decoding, GraphRAG, Agentic Workflows, BitNet (1-bit LLMs), Long-Context Windows (1M+ tokens), Direct Preference Optimization (DPO)]\n\nVN: [DeepSeek-V3, Mô hình suy luận (Reasoning Models), Tối ưu hóa Quantization (GGUF/EXL2), GraphRAG, Quy trình Agentic (Agentic Workflows), Fine-tuning LoRA/QLoRA, Huấn luyện FP8, Nhúng văn bản (Embedding models) cho tiếng Việt, Local LLM, Xử lý ngữ cảnh dài (Long-context)]\n\nJP: [推論モデル (Reasoning Models), DeepSeek-V3 構造, 混合専門家 (MoE), 量子化技術 (Quantization), 思考の連鎖 (Chain-of-Thought), エージェント・オーケストレーション (Agentic Orchestration), グラフRAG (GraphRAG), 日本語LLMの評価ベンチマーク, 低ランク近似 (LoRA), 推論時計算 (Test-time Compute)]",
-    "reports": [
-        {
-            "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
-            "link": "https://arxiv.org/abs/2603.04448",
-            "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "SkillNet là một hạ tầng mở được thiết kế để giải quyết tình trạng các Agent AI thường xuyên phải \"tái phát minh bánh xe\" do thiếu cơ chế tích lũy kỹ năng hệ thống. Điểm cốt lõi kỹ thuật của SkillNet là việc cấu trúc hóa các kỹ năng thông qua một **ontology thống nhất**, cho phép tổng hợp từ các nguồn dữ liệu không đồng nhất và thiết lập các mối quan hệ logic phức tạp giữa chúng. Hệ thống áp dụng khung đánh giá đa chiều bao gồm: tính an toàn, tính hoàn thiện, khả năng thực thi, khả năng bảo trì và mức độ tối ưu chi phí. Với kho lưu trữ hơn 200.000 kỹ năng cùng bộ toolkit Python, SkillNet biến các kỹ năng thành những tài sản có khả năng tiến hóa và lắp ghép (composable assets). Kết quả thực nghiệm trên ALFWorld và WebShop cho thấy việc sử dụng SkillNet giúp tăng 40% hiệu suất (reward) và giảm 30% số bước thực thi, tạo nền tảng quan trọng cho việc tối ưu hóa **Agentic Workflows** và chuyển đổi từ kinh nghiệm nhất thời sang khả năng làm chủ bền vững cho AI.",
-            "date": "2026-03-06T05:00:00"
-        },
-        {
-            "title": "Capability Thresholds and Manufacturing Topology: How Embodied Intelligence Triggers Phase Transitions in Economic Geography",
-            "link": "https://arxiv.org/abs/2603.04457",
-            "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Nghiên cứu này thiết lập một khung toán học mới dựa trên trí tuệ hiện thân (Embodied Intelligence) để định nghĩa lại hình học kinh tế của ngành sản xuất toàn cầu. Tác giả đề xuất khái niệm \"Không gian năng lực\" $C = (d, g, r, t)$, bao gồm các biến số: độ khéo léo (dexterity), khả năng tổng quát hóa (generalization), độ tin cậy (reliability) và hợp nhất thị giác-xúc giác (tactile-vision fusion). Điểm đột phá kỹ thuật nằm ở việc chứng minh rằng hàm mục tiêu lựa chọn địa điểm sản xuất sẽ trải qua quá trình tái cấu trúc topo (topological reorganization) khi các vector năng lực AI vượt qua những bề mặt tới hạn (critical surfaces). Thông qua ba cơ chế: đảo ngược trọng số, thu hẹp lô sản xuất (batch collapse) và phi tập trung hóa hạ tầng con người, mô hình cho phép chuyển dịch từ các mega-factory tập trung sang mạng lưới vi sản xuất (micro-manufacturing) tiệm cận nhu cầu. Đây là phân tích toán học sâu sắc về cách AI hiện thân làm thay đổi bản chất của chuỗi cung ứng và địa kinh tế sản xuất.",
-            "date": "2026-03-06T05:00:00"
-        },
-        {
-            "title": "Progressive Refinement Regulation for Accelerating Diffusion Language Model Decoding",
-            "link": "https://arxiv.org/abs/2603.04514",
-            "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Nghiên cứu giới thiệu framework Progressive Refinement Regulation (PRR) nhằm tối ưu hóa tốc độ giải mã cho các mô hình ngôn ngữ khuếch tán (Diffusion Language Models - DLMs). Điểm đột phá kỹ thuật nằm ở việc thay thế quy tắc tinh chỉnh đồng nhất bằng cơ chế kiểm soát linh hoạt theo từng token (token-wise control). Thay vì chỉ dựa trên các tín hiệu tức thời, PRR xác định mức độ hội tụ của token thông qua phân tích quỹ đạo giải mã đầy đủ (decoding rollouts) để nhận diện các giai đoạn tinh chỉnh dư thừa. Hệ thống sử dụng một bộ điều khiển nhẹ (lightweight controller) để thực hiện định hình phân phối dựa trên nhiệt độ (temperature-based distribution shaping) theo một lộ trình huấn luyện tự tiến hóa (self-evolving training). Kết quả thực nghiệm cho thấy PRR giúp tăng tốc đáng kể quá trình suy luận của DLM bằng cách giảm thiểu các bước khử nhiễu không cần thiết cho các token đã ổn định, đồng thời bảo toàn nguyên vẹn chất lượng văn bản đầu ra so với các phương pháp giải mã truyền thống.",
-            "date": "2026-03-06T05:00:00"
-        },
-        {
-            "title": "Discovering mathematical concepts through a multi-agent system",
-            "link": "https://arxiv.org/abs/2603.04528",
-            "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Nghiên cứu giới thiệu một mô hình hệ thống đa tác tử (multi-agent system) mới cho việc tự động khám phá các khái niệm toán học thông qua quy trình biện chứng: đưa ra giả thuyết, nỗ lực chứng minh và tìm kiếm phản ví dụ. Điểm đột phá nằm ở cơ chế phản hồi động và phân phối dữ liệu đang tiến hóa, giúp hệ thống tự quyết định hướng nghiên cứu tiếp theo. Về mặt kỹ thuật, hệ thống đã giải quyết thành công bài toán thử thách: tự phục hồi (recover) khái niệm \"đồng điều\" (homology) - một cấu trúc tô pô phức tạp - chỉ từ dữ liệu đa diện và kiến thức đại số tuyến tính cơ bản. Các nghiên cứu bóc tách (ablation studies) chứng minh rằng việc tối ưu hóa sự kết hợp giữa các tiến trình cục bộ có thể dẫn đến sự hình thành các khái niệm có \"độ thú vị toán học\" (mathematical interestingness) tương đương với tư duy con người. Đây là bước tiến quan trọng trong việc chuyển đổi AI từ công cụ tính toán sang chủ thể tự chủ trong nghiên cứu toán học thuần túy.",
-            "date": "2026-03-06T05:00:00"
-        },
-        {
-            "title": "Adaptive Memory Admission Control for LLM Agents",
-            "link": "https://arxiv.org/abs/2603.04549",
-            "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Nghiên cứu đề xuất framework **Adaptive Memory Admission Control (A-MAC)** nhằm giải quyết bài toán quản lý bộ nhớ dài hạn trong các tác nhân LLM (LLM Agents). Thay vì tích lũy dữ liệu tràn lan hoặc phụ thuộc vào các chính sách lọc bằng LLM thuần túy gây tốn kém, A-MAC cấu trúc hóa việc tiếp nhận thông tin thông qua 5 yếu tố định lượng: độ hữu dụng tương lai, độ tin cậy thực tế, tính mới ngữ nghĩa, tính mới thời gian và ưu tiên loại nội dung (*content type prior*). Về mặt kỹ thuật, framework này kết hợp trích xuất đặc trưng dựa trên quy tắc (rule-based) với một bước đánh giá hữu dụng bằng LLM duy nhất, sau đó tối ưu hóa chính sách qua kiểm định chéo. Kết quả trên benchmark **LoCoMo** cho thấy A-MAC đạt điểm F1 là 0.583 và giảm 31% độ trễ so với các hệ thống hiện có. Khám phá quan trọng nhất là việc xác định *content type prior* đóng vai trò then chốt trong việc duy trì tính toàn vẹn của bộ nhớ, giúp tối ưu hóa hiệu suất trong các hệ thống Agentic Workflows phức tạp.",
-            "date": "2026-03-06T05:00:00"
-        }
-    ]
+    "timestamp": "2026-03-08T03:31:21.935947",
+    "keywords": "EN: [DeepSeek-V3 Architecture, Chain-of-Thought (CoT) Reasoning, Mixture of Experts (MoE), Model Context Protocol (MCP), FP8 Quantization, Agentic Workflows, GraphRAG, Speculative Decoding, Direct Preference Optimization (DPO), KV Cache Optimization]\n\nVN: [Mô hình lập luận (Reasoning Models), Kiến trúc DeepSeek-V3, Tối ưu hóa Quantization, Agentic AI, GraphRAG, Fine-tuning mô hình ngôn ngữ lớn, Triển khai Local LLM, Giao thức MCP, Huấn luyện mô hình đa phương thức (Multimodal), Kỹ thuật RAG nâng cao]\n\nJP: [推論モデル (Reasoning Models), DeepSeek-V3 アーキテクチャ, 混合エキスパート (MoE), 量子化技術 (Quantization), エージェンティックAI, グラフRAG (GraphRAG), モデル・コンテキスト・プロトコル (MCP), ローカルLLM実行, 蒸留 (Distillation), マルチモーダル学習]",
+    "reports": []
 }
