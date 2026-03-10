@@ -11,6 +11,7 @@ import os
 import sys
 import json
 import time
+import difflib
 from datetime import datetime
 
 # Adjust path to handle execution from the project root
@@ -23,13 +24,40 @@ from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.search_fetcher import search_technical_news
 from src.agent.summarizer import summarize_news
 
+def calculate_similarity(text1, text2):
+    """
+    Calculates the similarity ratio between two strings.
+    Useful for detecting near-duplicate titles or snippets.
+    """
+    if not text1 or not text2:
+        return 0.0
+    return difflib.SequenceMatcher(None, str(text1).lower(), str(text2).lower()).ratio()
+
 def run_agent():
     """
-    Executes the autonomous research agent pipeline.
+    Executes the autonomous research agent pipeline with deduplication.
     
     Returns:
         dict: The final report data containing timestamp, keywords, and summarized news.
     """
+    # Step 0: Load Historical Data for Deduplication
+    all_news_file = Config.HISTORICAL_DATA_FILE
+    all_historical_data = []
+    seen_contents = [] # List of strings to compare against
+
+    if os.path.exists(all_news_file):
+        try:
+            with open(all_news_file, "r", encoding="utf-8") as f:
+                all_historical_data = json.load(f)
+                if isinstance(all_historical_data, list):
+                    for day_entry in all_historical_data:
+                        for report in day_entry.get("reports", []):
+                            # Store title + start of summary for comparison
+                            content_str = (report.get("title", "") + " " + report.get("summary_vn", "")[:200])
+                            seen_contents.append(content_str)
+        except Exception as e:
+            print(f"Warning: Could not load historical data for deduplication: {e}")
+
     print("Step 1: Discovering global technical AI trending keywords...")
     keywords = get_trending_keywords()
     print(f"Keywords discovered: {keywords[:100]}...")
@@ -65,10 +93,33 @@ def run_agent():
     all_raw_news.extend(fetch_reddit_ml_news())
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
+
+    # Step 3.5: Deduplication Step
+    print("Step 3.5: Deduplicating news against historical data (>80% similarity)...")
+    unique_raw_news = []
+    duplicate_count = 0
+
+    for item in all_raw_news:
+        new_content = (item.get("title", "") + " " + item.get("summary", "")[:200])
+        is_duplicate = False
+        
+        for seen in seen_contents:
+            if calculate_similarity(new_content, seen) > 0.8:
+                is_duplicate = True
+                break
+        
+        if not is_duplicate:
+            unique_raw_news.append(item)
+            # Also add to seen_contents to avoid internal duplicates within the same run
+            seen_contents.append(new_content)
+        else:
+            duplicate_count += 1
+
+    print(f"  Filtered out {duplicate_count} duplicate items. Unique items remaining: {len(unique_raw_news)}")
     
     print("Step 4: Filtering & Summarizing with AI (Vietnamese)...")
     # Filters out general news sites and low-signal content
-    final_reports = summarize_news(all_raw_news, keywords)
+    final_reports = summarize_news(unique_raw_news, keywords)
     
     # Create the report payload
     output_data = {
@@ -78,24 +129,10 @@ def run_agent():
     }
     
     # Step 5: Data Persistence
-    all_news_file = Config.HISTORICAL_DATA_FILE
-    all_historical_data = []
-    
-    # Load and merge with historical data
-    if os.path.exists(all_news_file):
-        try:
-            with open(all_news_file, "r", encoding="utf-8") as f:
-                all_historical_data = json.load(f)
-                if not isinstance(all_historical_data, list):
-                    all_historical_data = []
-        except Exception as e:
-            print(f"Warning: Could not load historical data: {e}")
-            all_historical_data = []
-            
     # Prepend newest report
     all_historical_data.insert(0, output_data)
     
-    # Save both historical and latest files
+    # Save both historical and latest files (already loaded all_historical_data at Step 0)
     os.makedirs("data", exist_ok=True)
     with open(all_news_file, "w", encoding="utf-8") as f:
         json.dump(all_historical_data, f, ensure_ascii=False, indent=4)
