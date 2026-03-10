@@ -36,28 +36,40 @@ Create a fully automated agent that:
 - **Validation**: Updated the fallback list to use verified identifiers (`gemini-flash-lite-latest`, etc.).
 - **Error Handling**: Broadened detection to catch `REMITTER_LIMIT` and `RATE_LIMIT` strings, ensuring the bot never stops until all options are exhausted.
 
+### Phase 5: High-Capacity & Technical Depth Expansion
+- **Source Expansion**: Multiplied search depth to target **20+ high-quality items** per day.
+- **Social Integration**: Added explicit targeted searches for **X (Twitter), Facebook, and Reddit** discussions.
+- **Multi-Key Rotation**: Upgraded the rotator to handle **Horizontal Scaling** (cycling through multiple API keys) and **Vertical Scaling** (cycling through model generations).
+- **Data Persistence**: Moved away from daily overwrites to a **Historical Archive** (`all_news.json`).
+- **Dashboard Upgrades**: Implemented **Pagination**, Group-by-Date rendering, and **Dynamic Hot Keywords** dựa trên dữ liệu thực tế.
+- **Full Refactoring**: Redesigned the codebase for modularity, adding comprehensive **Vietnamese/English docstrings** and PEP 8 compliance.
+
 ---
 
 ## Key Technical Components
 
-### 1. `src/agent/model_rotator.py`
-The "brain" of the API layer. It manages the pool of models and handles retries with a circular rotation logic. This maximizes the utilization of the Free Tier.
+### 1. `src/agent/model_rotator.py` (`SmartRotator`)
+The upgraded "brain" of the API layer. It maintains a singleton instance that tracks quota usage across a grid of API Keys and Model IDs. It ensures zero-downtime processing even when hitting Free Tier limits.
 
 ### 2. `src/fetcher/keyword_discovery.py`
-Aggregates signal from social media and authoritative blogs to generate a tri-lingual tag cloud (English, Vietnamese, Japanese).
+Now specialized in identifying new Models (e.g., GPT-5, OpenClaw) and Frameworks, providing high-signal context for the news search.
 
 ### 3. `src/fetcher/search_fetcher.py`
-Uses `duckduckgo_search` with targeted English keywords to find the most recent technical deep-dives, bypassing generic news sites.
+Includes specialized query builders for Social Media platforms, using `site:` operators to find community-driven technical signals.
 
-### 4. `index.html` (The Static Dashboard)
-A minimalist, high-performance dashboard that parses the `latest_news.json`. It includes tag-based filtering and search, all without a backend server.
+### 4. `src/agent/summarizer.py`
+An AI-driven gatekeeper that evaluates technical depth and provides high-density Vietnamese summaries. It can process up to 45 candidates to ensure the 20-item quality quota is met.
+
+### 5. `index.html` (Enhanced Dashboard)
+A performant Vanilla JS frontend hỗ trợ phân trang, xem lại dữ liệu lịch sử và các badge keyword động ("Hot" status).
 
 ---
 
 ## Technical Debt & Future Work
-- **X/Twitter API**: Currently uses conceptual aggregation; direct API integration would provide more real-time signals but requires a paid tier.
-- **Database**: Currently uses JSON for simplicity. If the archive grows beyond 1,000 items, a lightweight DB (like SQLite) or a more robust JSON indexing might be needed.
-- **Image Generation**: Future versions could use Imagen to generate unique header images for each daily report.
+- **Performance**: Khi `all_news.json` phình to, việc chuyển sang database (SQLite) hoặc tối ưu hóa load dữ liệu client-side sẽ là cần thiết.
+- **Translation Fidelity**: Nghiên cứu các mô hình dịch chuyên sâu cho thuật ngữ AI chuyên ngành (vd: "Mixture-of-Experts").
+- **Automated Verification**: Cài đặt unit tests để đảm bảo fetcher hoạt động ổn định trước thay đổi layout của các công cụ tìm kiếm.
 
 ---
+*Updated: March 2026*
 *Created by [Antigravity AI Agent] for [NguyenHaNhatPhuong]*
