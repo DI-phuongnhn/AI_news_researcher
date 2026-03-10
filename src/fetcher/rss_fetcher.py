@@ -1,9 +1,24 @@
+"""
+RSS feed news fetcher.
+This module extracts articles from RSS feeds, focusing on those published 
+within a specific recent timeframe.
+"""
+
 import feedparser
 from datetime import datetime, timedelta
 import time
 
 def fetch_rss_news(rss_url, days=1):
-    """Fetch news from an RSS feed for the last N days."""
+    """
+    Fetches and parses news from a given RSS URL.
+    
+    Args:
+        rss_url (str): The URL of the RSS feed.
+        days (int): Number of days to look back for articles. Defaults to 1.
+        
+    Returns:
+        list: A list of dictionaries, each containing 'title', 'link', 'summary', 'source', and 'date'.
+    """
     feed = feedparser.parse(rss_url)
     news_items = []
     
@@ -24,7 +39,7 @@ def fetch_rss_news(rss_url, days=1):
                     "date": published_time.isoformat()
                 })
         else:
-            # Fallback for feeds without dates
+            # Fallback for feeds without parseable dates
             news_items.append({
                 "title": entry.title,
                 "link": entry.link,
@@ -36,7 +51,7 @@ def fetch_rss_news(rss_url, days=1):
     return news_items
 
 if __name__ == "__main__":
-    # Test with arXiv
+    # Test execution with arXiv
     test_url = "http://export.arxiv.org/rss/cs.AI"
     items = fetch_rss_news(test_url)
     print(f"Fetched {len(items)} items from {test_url}")

@@ -1,14 +1,31 @@
+"""
+Technical keyword discovery agent.
+This module leverages AI to identify trending technical topics in the AI/ML space 
+across different languages to guide the news fetching process.
+"""
+
 import os
 import time
 from src.config import Config
 from src.agent.model_rotator import get_rotator
 
-def get_trending_keywords(languages=["English", "Vietnamese", "Japanese"]):
+def get_trending_keywords(languages=None):
     """
-    Use Gemini to discover trending AI technical keywords with model rotation.
+    Identifies high-signal technical keywords using the Gemini API.
+    
+    Args:
+        languages (list, optional): List of target languages. 
+                                   Defaults to ["English", "Vietnamese", "Japanese"].
+                                   
+    Returns:
+        str: A formatted string containing keywords grouped by language.
     """
+    if languages is None:
+        languages = ["English", "Vietnamese", "Japanese"]
+        
     rotator = get_rotator()
     
+    # Brief pause to avoid immediate rate limiting on startup
     time.sleep(2)
     
     prompt = f"""
@@ -35,4 +52,5 @@ def get_trending_keywords(languages=["English", "Vietnamese", "Japanese"]):
     return rotator.generate_content(prompt)
 
 if __name__ == "__main__":
+    # Test execution
     print(get_trending_keywords())
