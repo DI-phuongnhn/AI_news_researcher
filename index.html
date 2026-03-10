@@ -102,11 +102,24 @@
             text-transform: uppercase;
         }
 
-        .search-container {
+        .controls-row {
+            display: flex;
+            gap: 15px;
             margin-bottom: 2rem;
+            flex-wrap: wrap;
         }
 
-        #searchBar {
+        .search-container {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .date-selector-container {
+            min-width: 200px;
+        }
+
+        #searchBar,
+        #dateSelector {
             width: 100%;
             padding: 12px 16px;
             border-radius: 8px;
@@ -118,7 +131,8 @@
             transition: border-color 0.2s;
         }
 
-        #searchBar:focus {
+        #searchBar:focus,
+        #dateSelector:focus {
             border-color: var(--accent);
         }
 
@@ -201,8 +215,8 @@
         }
 
         .date-section {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
             border-left: 4px solid var(--accent);
             padding-left: 1rem;
         }
@@ -211,12 +225,6 @@
             margin: 0;
             font-size: 1.5rem;
             color: var(--accent);
-        }
-
-        .date-section .date-meta {
-            color: var(--text-dim);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
         }
 
         .pagination {
@@ -283,9 +291,16 @@
             </div>
         </div>
 
-        <div class="search-container">
-            <input type="text" id="searchBar" placeholder="Tìm kiếm tin tức AI (title, nội dung, tag)..."
-                onkeyup="filterNews()">
+        <div class="controls-row">
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Tìm kiếm tin tức AI (title, nội dung, tag)..."
+                    onkeyup="filterNews()">
+            </div>
+            <div class="date-selector-container">
+                <select id="dateSelector" onchange="jumpToDate()">
+                    <option value="">-- Chọn ngày xem nhanh --</option>
+                </select>
+            </div>
         </div>
 
         <div id="news-container">
@@ -303,24 +318,25 @@
 
     <script>
         let allHistoricalData = [];
+        let flattenedReports = [];
         let currentPage = 1;
-        const itemsPerPage = 5; // 5 days per page
+        const itemsPerPage = 15;
 
         async function fetchData() {
             try {
-                // Try fetching all_news.json
                 const response = await fetch('data/all_news.json');
                 if (!response.ok) {
-                    // Fallback to latest_news.json if history doesn't exist yet
                     console.log("Historical data not found, falling back to latest_news.json");
                     const fallbackResponse = await fetch('data/latest_news.json');
                     if (!fallbackResponse.ok) throw new Error('Không thể tải file dữ liệu');
                     const data = await fallbackResponse.json();
-                    allHistoricalData = [data]; // Wrap in array
+                    allHistoricalData = [data];
                 } else {
                     allHistoricalData = await response.json();
                 }
 
+                processData();
+                renderDateSelector();
                 renderPage(1);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -328,17 +344,70 @@
             }
         }
 
+        function processData() {
+            flattenedReports = [];
+            allHistoricalData.forEach(dayEntry => {
+                const dayStr = new Date(dayEntry.timestamp).toLocaleDateString('vi-VN');
+                dayEntry.reports.forEach(report => {
+                    flattenedReports.push({
+                        ...report,
+                        runTimestamp: dayEntry.timestamp,
+                        displayDate: dayStr,
+                        keywords: dayEntry.keywords
+                    });
+                });
+            });
+        }
+
+        function renderDateSelector() {
+            const selector = document.getElementById('dateSelector');
+            selector.innerHTML = '<option value="">-- Chọn ngày xem nhanh --</option>';
+
+            const dates = [...new Set(flattenedReports.map(r => r.displayDate))];
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.innerText = date;
+                selector.appendChild(option);
+            });
+        }
+
+        function jumpToDate() {
+            const selectedDate = document.getElementById('dateSelector').value;
+            if (!selectedDate) return;
+
+            const index = flattenedReports.findIndex(r => r.displayDate === selectedDate);
+            if (index !== -1) {
+                const targetPage = Math.ceil((index + 1) / itemsPerPage);
+                renderPage(targetPage);
+
+                setTimeout(() => {
+                    const headers = document.getElementsByClassName('date-header-text');
+                    for (let h of headers) {
+                        if (h.innerText.includes(selectedDate)) {
+                            h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            break;
+                        }
+                    }
+                }, 150);
+            }
+        }
+
         function renderPage(page) {
             currentPage = page;
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
-            const pageData = allHistoricalData.slice(start, end);
+            const pageData = flattenedReports.slice(start, end);
 
-            // Dynamic Keywords: Aggregrate from all days on this page
             if (pageData.length > 0) {
-                const combinedKeywords = pageData.map(d => d.keywords).join('\n\n');
-                renderKeywords(combinedKeywords);
-                document.getElementById('last-updated').innerText = `Dữ liệu trang ${page} (Mới nhất: ${new Date(pageData[0].timestamp).toLocaleString('vi-VN')})`;
+                document.getElementById('last-updated').innerText = `Dữ liệu trang ${page} (Mới nhất: ${new Date(flattenedReports[0].runTimestamp).toLocaleString('vi-VN')})`;
+
+                const uniqueRuns = [...new Set(pageData.map(d => d.runTimestamp))];
+                const activeKeywords = allHistoricalData
+                    .filter(d => uniqueRuns.includes(d.timestamp))
+                    .map(d => d.keywords)
+                    .join('\n\n');
+                renderKeywords(activeKeywords);
             }
 
             const list = document.getElementById('news-list');
@@ -349,34 +418,36 @@
                 return;
             }
 
-            pageData.forEach(dayEntry => {
-                const daySection = document.createElement('div');
-                daySection.className = 'date-section';
-                daySection.innerHTML = `
-                    <h2>Nghiên cứu ngày: ${new Date(dayEntry.timestamp).toLocaleDateString('vi-VN')}</h2>
-                    <div class="date-meta">Tìm thấy ${dayEntry.reports.length} bản tin kỹ thuật</div>
-                `;
+            let lastDate = "";
+            pageData.forEach((item) => {
+                if (item.displayDate !== lastDate) {
+                    const header = document.createElement('div');
+                    header.className = 'date-section';
+                    header.innerHTML = `<h2 class="date-header-text">Nghiên cứu ngày: ${item.displayDate}</h2>`;
+                    list.appendChild(header);
+                    lastDate = item.displayDate;
+                }
 
-                const reportsHtml = dayEntry.reports.map(item => `
-                    <div class="news-card" style="margin-bottom: 1.5rem">
-                        <a href="${item.link}" class="news-title" target="_blank">${item.title}</a>
-                        <div class="news-meta">
-                            <span class="badge">${item.source}</span>
-                            <span>${item.date ? new Date(item.date).toLocaleDateString('vi-VN') : ''}</span>
-                        </div>
-                        <div class="news-summary">${item.summary_vn}</div>
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                card.style.marginBottom = '1.5rem';
+                card.innerHTML = `
+                    <a href="${item.link}" class="news-title" target="_blank">${item.title}</a>
+                    <div class="news-meta">
+                        <span class="badge">${item.source}</span>
+                        <span>${item.date ? new Date(item.date).toLocaleDateString('vi-VN') : ''}</span>
                     </div>
-                `).join('');
-
-                daySection.innerHTML += reportsHtml;
-                list.appendChild(daySection);
+                    <div class="news-summary">${item.summary_vn}</div>
+                `;
+                list.appendChild(card);
             });
 
             updatePagination();
+            filterNews();
         }
 
         function updatePagination() {
-            const totalPages = Math.ceil(allHistoricalData.length / itemsPerPage);
+            const totalPages = Math.ceil(flattenedReports.length / itemsPerPage);
             const controls = document.getElementById('pagination-controls');
 
             if (totalPages <= 1) {
@@ -400,19 +471,16 @@
             const clouds = document.getElementById('keyword-clouds');
             clouds.innerHTML = '';
 
-            const structured = parseKeywords(keywords);
+            if (!keywords) return;
 
-            // Logic for "Hot" tags: If a keyword appears in more than 1 entry on this page
+            const structured = parseKeywords(keywords);
             const allWords = keywords.split(/[\n,]+/).map(w => w.split(':').pop().trim().replace(/^\[|\]$/g, '')).filter(w => w);
             const counts = {};
             allWords.forEach(w => counts[w] = (counts[w] || 0) + 1);
 
             for (const [lang, words] of Object.entries(structured)) {
                 if (words.length === 0) continue;
-
-                // Remove duplicates in words list
                 const uniqueWords = [...new Set(words)];
-
                 const group = document.createElement('div');
                 group.className = 'lang-group';
                 group.innerHTML = `
@@ -430,15 +498,14 @@
 
         function parseKeywords(raw) {
             const structured = { 'EN': [], 'VN': [], 'JP': [] };
-            if (raw.includes('Error:')) return structured;
-
+            if (!raw || raw.includes('Error:')) return structured;
             const sections = raw.split(/\n\n+/);
             sections.forEach(section => {
                 const parts = section.split(':');
                 if (parts.length >= 2) {
                     const lang = parts[0].trim().toUpperCase();
                     const words = parts[1].split(',').map(w => w.trim().replace(/^\[|\]$/g, ''));
-                    if (structured[lang]) structured[lang] = words;
+                    if (structured[lang]) structured[lang].push(...words);
                 }
             });
             return structured;
@@ -446,13 +513,9 @@
 
         function filterByTag(tag) {
             let searchBar = document.getElementById('searchBar');
-            if (searchBar.value === tag) {
-                searchBar.value = '';
-            } else {
-                searchBar.value = tag;
-            }
+            searchBar.value = (searchBar.value === tag) ? '' : tag;
             filterNews();
-            document.querySelector('.search-container').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.controls-row').scrollIntoView({ behavior: 'smooth' });
         }
 
         function filterNews() {
@@ -461,7 +524,6 @@
             let dateSections = document.getElementsByClassName('date-section');
             let hasResults = false;
 
-            // 1. Filter individual news cards
             for (let i = 0; i < cards.length; i++) {
                 let text = cards[i].innerText.toLowerCase();
                 let isMatch = text.includes(input);
@@ -469,24 +531,24 @@
                 if (isMatch) hasResults = true;
             }
 
-            // 2. Hide date sections if all their nested cards are hidden
             for (let i = 0; i < dateSections.length; i++) {
-                let sectionCards = dateSections[i].getElementsByClassName('news-card');
+                let nextElement = dateSections[i].nextElementSibling;
                 let sectionHasMatch = false;
-                for (let j = 0; j < sectionCards.length; j++) {
-                    if (sectionCards[j].style.display !== "none") {
+                while (nextElement && (nextElement.classList.contains('news-card') || nextElement.classList.contains('date-section'))) {
+                    if (nextElement.classList.contains('date-section')) break;
+                    if (nextElement.style.display !== "none") {
                         sectionHasMatch = true;
                         break;
                     }
+                    nextElement = nextElement.nextElementSibling;
                 }
                 dateSections[i].style.display = sectionHasMatch ? "" : "none";
             }
 
-            // 3. Show/hide 'No results' message
             let list = document.getElementById('news-list');
             let noResultMsg = document.getElementById('no-results-msg');
 
-            if (!hasResults) {
+            if (!hasResults && input !== "") {
                 if (!noResultMsg) {
                     noResultMsg = document.createElement('div');
                     noResultMsg.id = 'no-results-msg';
@@ -495,7 +557,6 @@
                     noResultMsg.innerHTML = `
                         <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
                         <h3>Không tìm thấy bản tin nào phù hợp</h3>
-                        <p style="color: var(--text-dim)">Thử kết hợp các từ khóa khác hoặc xóa bớt nội dung tìm kiếm.</p>
                         <button onclick="clearSearch()" class="btn-refresh" style="margin-top: 1rem">Xóa tìm kiếm</button>
                     `;
                     list.appendChild(noResultMsg);
@@ -511,7 +572,6 @@
             filterNews();
         }
 
-        // Initial fetch
         fetchData();
     </script>
 </body>
