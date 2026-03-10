@@ -19,9 +19,10 @@ def get_trending_keywords(languages=["English", "Vietnamese", "Japanese"]):
     - IT Blogs: Latest posts from TechCrunch, VentureBeat, Wired, and official company blogs (OpenAI, Anthropic, Google).
     
     REQUIREMENTS:
-    1. Focus ONLY on high-technical relevance (e.g., 'Quantization techniques', 'DeepSeek-V3 architecture', 'Agentic Workflows', 'AI Infrastructure', 'Autonomous Systems like OpenClaw').
-    2. Provide keywords for these languages: {', '.join(languages)}.
-    3. For Vietnamese (VN), prioritize terms that are globally trending in English but relevant to the local tech community (e.g., 'Agentic AI', 'Multi-agent Systems').
+    1. Focus ONLY on high-technical relevance (e.g., 'Quantization', 'MoE', 'Agentic Workflows').
+    2. ALWAYS include specific names of new Models, Versions, or Frameworks (e.g., 'GPT-5', 'Claude 4', 'OpenClaw', 'DeepSeek-V3', 'Llama-4-70B').
+    3. Provide keywords for these languages: {', '.join(languages)}.
+    4. For Vietnamese (VN), prioritize terms that are globally trending in English but relevant to the local tech community.
     
     OUTPUT FORMAT:
     EN: [keyword1, keyword2, keyword3, ...]

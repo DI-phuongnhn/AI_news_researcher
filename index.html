@@ -90,6 +90,18 @@
             transform: translateY(-1px);
         }
 
+        .tag.hot::after {
+            content: "🔥 Hot";
+            background: #ef4444;
+            color: white;
+            font-size: 0.65rem;
+            padding: 1px 6px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
         .search-container {
             margin-bottom: 2rem;
         }
@@ -322,10 +334,11 @@
             const end = start + itemsPerPage;
             const pageData = allHistoricalData.slice(start, end);
 
-            // Render the first day's keywords only (the most recent ones)
-            if (allHistoricalData.length > 0) {
-                renderKeywords(allHistoricalData[0].keywords);
-                document.getElementById('last-updated').innerText = `Dữ liệu mới nhất lúc: ${new Date(allHistoricalData[0].timestamp).toLocaleString('vi-VN')}`;
+            // Dynamic Keywords: Aggregrate from all days on this page
+            if (pageData.length > 0) {
+                const combinedKeywords = pageData.map(d => d.keywords).join('\n\n');
+                renderKeywords(combinedKeywords);
+                document.getElementById('last-updated').innerText = `Dữ liệu trang ${page} (Mới nhất: ${new Date(pageData[0].timestamp).toLocaleString('vi-VN')})`;
             }
 
             const list = document.getElementById('news-list');
@@ -388,15 +401,27 @@
             clouds.innerHTML = '';
 
             const structured = parseKeywords(keywords);
+
+            // Logic for "Hot" tags: If a keyword appears in more than 1 entry on this page
+            const allWords = keywords.split(/[\n,]+/).map(w => w.split(':').pop().trim().replace(/^\[|\]$/g, '')).filter(w => w);
+            const counts = {};
+            allWords.forEach(w => counts[w] = (counts[w] || 0) + 1);
+
             for (const [lang, words] of Object.entries(structured)) {
                 if (words.length === 0) continue;
+
+                // Remove duplicates in words list
+                const uniqueWords = [...new Set(words)];
 
                 const group = document.createElement('div');
                 group.className = 'lang-group';
                 group.innerHTML = `
                     <span class="lang-label">${lang}:</span>
                     <div class="tag-cloud">
-                        ${words.map(word => `<span class="tag" onclick="filterByTag('${word}')">${word}</span>`).join('')}
+                        ${uniqueWords.map(word => {
+                    const isHot = counts[word] > 1;
+                    return `<span class="tag ${isHot ? 'hot' : ''}" onclick="filterByTag('${word}')">${word}</span>`;
+                }).join('')}
                     </div>
                 `;
                 clouds.appendChild(group);

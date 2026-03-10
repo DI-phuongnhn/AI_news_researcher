@@ -1,5 +1,46 @@
 [
     {
+        "timestamp": "2026-03-10T23:39:02.773071",
+        "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, OpenAI o1 (Strawberry), Agentic Workflows, Mixture of Experts (MoE), Chain-of-Thought (CoT) Reasoning, Quantization (GGUF/EXL2), GraphRAG, BitNet 1.58b, Long Context Window (2M+), Llama-3.2-Vision, Phi-3.5, LangGraph, LLM Observability, Speculative Decoding]\n\nVN: [DeepSeek-V3, DeepSeek-R1, OpenAI o1, Quy trình Agentic (Agentic Workflows), Mixture of Experts (MoE), Suy luận Chain-of-Thought, Kỹ thuật Quantization, GraphRAG, Tối ưu hóa RAG, Fine-tuning LLM, Llama-3.2, Triển khai LLM tại biên (Edge AI), LangGraph, Xử lý ngữ cảnh dài (Long Context)]\n\nJP: [DeepSeek-V3, DeepSeek-R1, OpenAI o1, エージェントワークフロー (Agentic Workflows), 混合専門家モデル (MoE), 思考の連鎖 (Chain-of-Thought), 量子化 (Quantization), GraphRAG, ビットネット (BitNet), Llama-3.2, 長文コンテキスト (Long Context), 推論モデル (Reasoning Models), LangGraph, ローカルLLM]",
+        "reports": [
+            {
+                "title": "Autonomous AI Agents for Option Hedging: Enhancing Financial Stability through Shortfall Aware Reinforcement Learning",
+                "link": "https://arxiv.org/abs/2603.06587",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu hai khung học tăng cường (RL) mới nhằm tối ưu hóa hoạt động phòng hộ quyền chọn (option hedging): Replication Learning of Option Pricing (RLOP) và phiên bản thích ứng của Q-learner trong mô hình Black-Scholes (QLBS). Điểm đột phá kỹ thuật nằm ở việc tích hợp cơ chế \"shortfall-aware\" vào mục tiêu huấn luyện của tác nhân (agent), ưu tiên tối thiểu hóa xác suất thâm hụt và các chỉ số rủi ro đuôi (Expected Shortfall) thay vì chỉ hiệu chỉnh tham số theo biến động ẩn (implied volatility) như các mô hình truyền thống. Thử nghiệm trên quyền chọn SPY và XOP cho thấy RLOP giảm đáng kể tần suất thâm hụt trong các kịch bản thị trường căng thẳng. Đây là bước tiến quan trọng trong việc xây dựng các quy trình Agentic tự trị cho quản trị rủi ro phái sinh, xử lý hiệu quả các ma sát thị trường (market frictions) và thu hẹp khoảng cách giữa hiệu chuẩn mô hình tĩnh với hiệu suất thực thi giao dịch thực tế trong hệ thống tài chính quy mô lớn.",
+                "date": "2026-03-10T04:00:00"
+            },
+            {
+                "title": "Scaling Strategy, Not Compute: A Stand-Alone, Open-Source StarCraft II Benchmark for Accessible Reinforcement Learning Research",
+                "link": "https://arxiv.org/abs/2603.06608",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu \"Two-Bridge Map Suite\", một benchmark mã nguồn mở dành cho Reinforcement Learning (RL) dựa trên StarCraft II, nhằm giải quyết khoảng trống kỹ thuật giữa các mini-game quá đơn giản và toàn bộ trò chơi quá phức tạp. Điểm cải tiến cốt lõi là việc thiết kế một môi trường trung gian giúp cô lập hai kỹ năng chiến thuật quan trọng: điều hướng tầm xa (long-range navigation) và điều khiển vi mô (micro-combat). Bằng cách loại bỏ các biến số về kinh tế, xây dựng căn cứ và sương mù chiến tranh, môi trường này giảm thiểu đáng kể sự nhiễu và tính thưa thớt của tín hiệu phần thưởng (sparse rewards) - vốn là rào cản lớn trong RTS RL. Được xây dựng dưới dạng wrapper tương thích với Gym trên nền PySC2, công cụ này cho phép triển khai các thuật toán RL hiện đại và quy trình Agentic với chi phí tính toán thấp, tạo điều kiện cho việc thiết kế chương trình học (curriculum design) hiệu quả và tối ưu hóa tài nguyên nghiên cứu.",
+                "date": "2026-03-10T04:00:00"
+            },
+            {
+                "title": "MultiGen: Level-Design for Editable Multiplayer Worlds in Diffusion Game Engines",
+                "link": "https://arxiv.org/abs/2603.06679",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu MultiGen, một kiến trúc mới cho \"Diffusion Game Engines\" (Công cụ game dựa trên mô hình khuếch tán), giải quyết hạn chế về tính nhất quán và khả năng kiểm soát trong các mô hình thế giới video hiện nay. Khác với các hệ thống dự đoán khung hình tiếp theo (next-frame predictors) truyền thống vốn bị giới hạn bởi cửa sổ ngữ cảnh, MultiGen tách biệt quy trình tạo thành ba module: Bộ nhớ (Memory), Quan sát (Observation) và Động lực học (Dynamics). Cốt lõi của hệ thống là một bộ nhớ ngoài tường minh (explicit external memory) giúp duy trì trạng thái thế giới bền vững và độc lập. Về mặt kỹ thuật, cấu trúc này cho phép người dùng trực tiếp chỉnh sửa cấu trúc môi trường (level-design) và hỗ trợ suy luận đa người chơi (multiplayer) trong thời gian thực với các góc nhìn đồng bộ. Đây là bước đột phá trong việc chuyển đổi từ các mô hình sinh video đơn thuần sang các hệ thống mô phỏng tương tác có khả năng tái lập và quản lý trạng thái phức tạp.",
+                "date": "2026-03-10T04:00:00"
+            },
+            {
+                "title": "Best-of-Tails: Bridging Optimism and Pessimism in Inference-Time Alignment",
+                "link": "https://arxiv.org/abs/2603.06797",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu Best-of-Tails (BoT), một khung kỹ thuật mới nhằm tối ưu hóa việc căn chỉnh mô hình ngôn ngữ lớn (LLM) tại thời điểm suy luận (inference-time alignment). BoT giải quyết sự đánh đổi giữa phương pháp \"lạc quan\" (Best-of-N) – vốn dễ dẫn đến hiện tượng reward hacking (khai thác lỗi hàm thưởng) – và các phương pháp \"bi quan\" có điều chỉnh (regularized) thường hạn chế khả năng khám phá các phản hồi xuất sắc. Điểm đột phá về mặt thuật toán là việc sử dụng phân kỳ Tsallis (Tsallis divergence) như một bộ điều chỉnh (regularizer) có khả năng tinh chỉnh linh hoạt. Hệ thống tích hợp Hill estimator để định lượng độ dày của đuôi phân phối phần thưởng (reward-tail heaviness) trên từng truy vấn (per-prompt), từ đó tự động điều chỉnh chiến lược chọn lọc giữa thăm dò (exploration) và giảm thiểu sai số căn chỉnh. BoT giúp cải thiện hiệu suất trong các tác vụ suy luận toán học phức tạp và logic bằng cách cân bằng động giữa rủi ro sai số hàm thưởng và khả năng tìm kiếm các câu trả lời chất lượng cao nằm ở vùng đuôi phân phối.",
+                "date": "2026-03-10T04:00:00"
+            },
+            {
+                "title": "Breaking the Martingale Curse: Multi-Agent Debate via Asymmetric Cognitive Potential Energy",
+                "link": "https://arxiv.org/abs/2603.06801",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu AceMAD, một khung làm việc giúp giải quyết \"Lời nguyền Martingale\" (Martingale Curse) trong thảo luận đa tác tử (Multi-Agent Debate - MAD). Hiện tượng này xảy ra khi các lỗi tương quan khiến các tác tử hội tụ về một đồng thuận sai lầm, khiến kết quả không thể vượt qua giới hạn của biểu quyết đa số (majority voting). AceMAD khai thác \"năng lượng tiềm năng nhận thức bất đối xứng\" thông qua cơ chế dự đoán chéo (peer-prediction). Cụ thể, các tác tử nắm giữ sự thật thường có khả năng dự đoán trước các quan niệm sai lầm của đám đông, trong khi số đông bị ảo giác lại không nhận ra sai lầm của chính mình. Bằng cách áp dụng các quy tắc chấm điểm (strictly proper scoring rules) và lý thuyết thông tin, AceMAD tạo ra một quá trình trôi (drift) submartingale phi tuyến tính hướng về phía chân lý. Kết quả thực nghiệm cho thấy AceMAD có khả năng khôi phục các tín hiệu đúng đắn ngay cả khi đa số ban đầu đưa ra nhận định sai, mở ra hướng đi mới cho các quy trình Agentic Workflows và suy luận phức tạp.",
+                "date": "2026-03-10T04:00:00"
+            }
+        ]
+    },
+    {
         "timestamp": "2026-03-10T23:07:12.940437",
         "keywords": "Execution failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
         "reports": [
