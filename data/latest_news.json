@@ -1,5 +1,41 @@
 {
-    "timestamp": "2026-03-09T03:35:12.526222",
-    "keywords": "EN: [DeepSeek-R1, DeepSeek-V3, GRPO (Group Relative Policy Optimization), Reasoning Models, Multi-head Latent Attention (MLA), Chain-of-Thought (CoT) Distillation, FP8 Precision Training, Mixture-of-Experts (MoE), Agentic RAG, Quantization (GGUF/EXL2), Long Context Optimization, Speculative Decoding]\n\nVN: [DeepSeek-R1, Mô hình suy luận (Reasoning Models), GRPO, Tối ưu hóa Attention (MLA), Chưng cất tri thức (Knowledge Distillation), Mixture-of-Experts (MoE), RAG nâng cao (Agentic RAG), Lượng tử hóa mô hình (Quantization), Huấn luyện độ chính xác FP8, Xử lý ngữ cảnh dài (Long Context)]\n\nJP: [DeepSeek-R1, 推論モデル (Reasoning Models), 思考の連鎖 (Chain-of-Thought), 混合専門家家モデル (Mixture of Experts), 量子化 (Quantization), 知識蒸留 (Knowledge Distillation), 強化学習 (GRPO), ローカルLLM (Local LLM), マルチモーダル学習, FP8 低精度訓練]",
-    "reports": []
+    "timestamp": "2026-03-10T03:30:08.976355",
+    "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Mixture of Experts (MoE), Multi-head Latent Attention (MLA), Model Context Protocol (MCP), Reasoning Models (CoT), FP8 Quantization, Agentic RAG, BitNet b1.58, Speculative Decoding, KV Cache Optimization, Long-context Scaling]\n\nVN: [DeepSeek-V3, Mô hình suy luận (Reasoning Models), Mixture of Experts (MoE), Lượng tử hóa FP8 (FP8 Quantization), RAG nâng cao (Advanced RAG), Giao thức MCP (Model Context Protocol), Fine-tuning mô hình ngôn ngữ lớn, Tối ưu hóa bộ nhớ KV Cache, AI Agentic Workflows]\n\nJP: [DeepSeek-V3, 推論モデル (Reasoning Models), 思考の連鎖 (Chain-of-Thought), 混合エキスパート (MoE), 量子化技術 (Quantization), モデルコンテキストプロトコル (MCP), ローカルLLM (Local LLM), エージェント指向RAG, マルチモーダル学習, 高速推論 (Speculative Decoding)]",
+    "reports": [
+        {
+            "title": "RoboLayout: Differentiable 3D Scene Generation for Embodied Agents",
+            "link": "https://arxiv.org/abs/2603.05522",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "RoboLayout là một framework mở rộng từ LayoutVLM, tập trung vào việc tạo lập bố cục cảnh 3D có khả năng tương tác cho các thực thể hiện thân (embodied agents). Cải tiến kỹ thuật cốt lõi nằm ở việc tích hợp các **ràng buộc khả năng tiếp cận (reachability constraints)** tường minh vào quy trình **tối ưu hóa bố cục khả vi (differentiable layout optimization)**. Điều này cho phép hệ thống tạo ra các không gian không chỉ nhất quán về mặt ngữ nghĩa mà còn đảm bảo tính điều hướng và khả năng thực hiện tác vụ vật lý cho đa dạng các thực thể (robot, con người, động vật). Ngoài ra, nghiên cứu giới thiệu giai đoạn **tinh chỉnh cục bộ (local refinement stage)**, giúp tái tối ưu hóa các vị trí vật thể lỗi một cách chọn lọc, từ đó nâng cao hiệu suất hội tụ mà không làm tăng chi phí tính toán tổng thể. RoboLayout giải quyết bài toán then chốt trong việc thu hẹp khoảng cách giữa mô hình ngôn ngữ thị giác (VLM) và yêu cầu vật lý thực tế của AI hiện thân trong môi trường nội thất phức tạp.",
+            "date": "2026-03-09T04:00:00"
+        },
+        {
+            "title": "Real-Time AI Service Economy: A Framework for Agentic Computing Across the Continuum",
+            "link": "https://arxiv.org/abs/2603.05614",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu đề xuất một khung kinh tế cho các dịch vụ AI thời gian thực vận hành trên hệ sinh thái device-edge-cloud, tập trung vào cơ chế phân bổ tài nguyên phi tập trung dựa trên giá (price-based allocation) cho các tác tử AI. Điểm cốt lõi là việc chứng minh cấu trúc của đồ thị phụ thuộc dịch vụ (DAG) là nhân tố quyết định sự ổn định của thị trường. Với cấu trúc phân cấp (tree/series-parallel), hệ thống đạt được trạng thái cân bằng ổn định và tối ưu hóa tài nguyên hiệu quả thông qua cơ chế thỏa dụng tựa tuyến tính (quasilinear utilities). Ngược lại, các đồ thị có liên kết chéo phức tạp gây ra hiện tượng dao động giá và khó khăn trong quản lý. Để giải quyết, tác giả giới thiệu kiến trúc quản lý lai (hybrid) sử dụng \"bộ tích hợp xuyên miền\" (cross-domain integrators) để đóng gói các đồ thị con phức tạp thành các lát cắt tài nguyên (resource slices) đơn giản. Đây là bước tiến quan trọng trong việc điều phối hạ tầng cho các workflow Agentic AI quy mô lớn.",
+            "date": "2026-03-09T04:00:00"
+        },
+        {
+            "title": "Reasoning Models Struggle to Control their Chains of Thought",
+            "link": "https://arxiv.org/abs/2603.05706",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu khảo sát khả năng kiểm soát chuỗi suy luận (CoT controllability) của các mô hình lý luận (Reasoning Models) thông qua bộ đánh giá CoT-Control. Kết quả cho thấy một sự chênh lệch lớn về hiệu suất: trong khi các mô hình như Claude Sonnet 4.5 có khả năng kiểm soát đầu ra cuối cùng (output) lên tới 61,9%, thì khả năng tuân thủ các ràng buộc trong CoT (ví dụ: giải toán mà không dùng thuật ngữ cụ thể) chỉ đạt 2,7%. Đặc biệt, khả năng kiểm soát CoT có xu hướng giảm khi tăng cường huấn luyện RL, tăng tính toán tại thời điểm suy luận (test-time compute) và độ khó của tác vụ. Về mặt kỹ thuật, phát hiện này rất quan trọng cho an toàn AI (AI Safety) vì nó cho thấy các mô hình hiện tại khó có thể \"ngụy trang\" hoặc che giấu suy luận thực sự của chúng để vượt qua các hệ thống giám sát (CoT monitoring). Điều này củng cố tính trung thực (faithfulness) của CoT, giúp việc phát hiện các hành vi sai lệch trở nên khả thi hơn.",
+            "date": "2026-03-09T04:00:00"
+        },
+        {
+            "title": "Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery",
+            "link": "https://arxiv.org/abs/2603.05860",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Hệ thống MACRO (Experience-driven Self-skill Discovery) giải quyết hạn chế của các tác nhân AI y tế truyền thống vốn dựa trên các chuỗi công cụ (tool chains) tĩnh và dễ gãy khi gặp biến đổi dữ liệu (domain shift). Điểm đột phá kỹ thuật nằm ở cơ chế tự động hóa việc tổng hợp kỹ năng: từ các quỹ đạo thực thi thành công, tác nhân tự nhận diện và đóng gói các chuỗi thao tác hiệu quả thành những \"công cụ phức hợp\" (composite tools) mới. Kiến trúc này sử dụng bộ nhớ đặc trưng hình ảnh (image-feature memory) để định hướng lựa chọn công cụ dựa trên ngữ cảnh thị giác lâm sàng. Đặc biệt, MACRO áp dụng vòng lặp huấn luyện dựa trên thuật toán tương tự GRPO (Group Relative Policy Optimization) để tối ưu hóa việc gọi các tổ hợp công cụ, thiết lập quy trình tự cải thiện khép kín (closed-loop self-improvement) với giám sát tối thiểu. Kết quả thực nghiệm cho thấy sự vượt trội trong điều phối đa bước và khả năng thích ứng linh hoạt trên nhiều tập dữ liệu hình ảnh y tế khác nhau.",
+            "date": "2026-03-09T04:00:00"
+        },
+        {
+            "title": "The World Won't Stay Still: Programmable Evolution for Agent Benchmarks",
+            "link": "https://arxiv.org/abs/2603.05910",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu **ProEvolve**, một framework dựa trên đồ thị (graph-based) nhằm giải quyết hạn chế của các benchmark tĩnh trong việc đánh giá các LLM agent. Điểm cốt lõi là việc sử dụng **đồ thị quan hệ có kiểu (typed relational graph)** để biểu diễn thống nhất toàn bộ hệ sinh thái của agent bao gồm dữ liệu, công cụ và schema. Thông qua cơ chế **biến đổi đồ thị (graph transformations)**, ProEvolve cho phép lập trình hóa các động lực tiến hóa của môi trường, đảm bảo tính nhất quán khi cập nhật hoặc thay đổi các khả năng hệ thống. Framework hỗ trợ tự động tạo lập hàng trăm môi trường thực tế và hàng ngàn sandbox thử nghiệm thông qua kỹ thuật **lấy mẫu đồ thị con (subgraph sampling)**. Đóng góp kỹ thuật này cho phép đo lường chính xác độ bền bỉ (robustness) và khả năng thích nghi của agent trước sự thay đổi liên tục của các API và schema trong thế giới thực, vượt xa các phương pháp đánh giá cố định hiện nay.",
+            "date": "2026-03-09T04:00:00"
+        }
+    ]
 }
