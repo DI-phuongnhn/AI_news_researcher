@@ -57,7 +57,28 @@ def run_agent():
         "reports": final_reports
     }
     
+    # Accumulate results in all_news.json
+    all_news_file = "data/all_news.json"
+    all_historical_data = []
+    
+    if os.path.exists(all_news_file):
+        try:
+            with open(all_news_file, "r", encoding="utf-8") as f:
+                all_historical_data = json.load(f)
+                if not isinstance(all_historical_data, list):
+                    all_historical_data = []
+        except Exception as e:
+            print(f"Warning: Could not load historical data: {e}")
+            all_historical_data = []
+            
+    # Prepend new report to the beginning of the list (newest first)
+    all_historical_data.insert(0, output_data)
+    
+    # Save both files
     os.makedirs("data", exist_ok=True)
+    with open(all_news_file, "w", encoding="utf-8") as f:
+        json.dump(all_historical_data, f, ensure_ascii=False, indent=4)
+        
     with open("data/latest_news.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, ensure_ascii=False, indent=4)
         
