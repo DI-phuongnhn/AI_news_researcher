@@ -458,11 +458,57 @@
         function filterNews() {
             let input = document.getElementById('searchBar').value.toLowerCase();
             let cards = document.getElementsByClassName('news-card');
+            let dateSections = document.getElementsByClassName('date-section');
+            let hasResults = false;
 
+            // 1. Filter individual news cards
             for (let i = 0; i < cards.length; i++) {
                 let text = cards[i].innerText.toLowerCase();
-                cards[i].style.display = text.includes(input) ? "" : "none";
+                let isMatch = text.includes(input);
+                cards[i].style.display = isMatch ? "" : "none";
+                if (isMatch) hasResults = true;
             }
+
+            // 2. Hide date sections if all their nested cards are hidden
+            for (let i = 0; i < dateSections.length; i++) {
+                let sectionCards = dateSections[i].getElementsByClassName('news-card');
+                let sectionHasMatch = false;
+                for (let j = 0; j < sectionCards.length; j++) {
+                    if (sectionCards[j].style.display !== "none") {
+                        sectionHasMatch = true;
+                        break;
+                    }
+                }
+                dateSections[i].style.display = sectionHasMatch ? "" : "none";
+            }
+
+            // 3. Show/hide 'No results' message
+            let list = document.getElementById('news-list');
+            let noResultMsg = document.getElementById('no-results-msg');
+
+            if (!hasResults) {
+                if (!noResultMsg) {
+                    noResultMsg = document.createElement('div');
+                    noResultMsg.id = 'no-results-msg';
+                    noResultMsg.className = 'loading';
+                    noResultMsg.style.marginTop = '2rem';
+                    noResultMsg.innerHTML = `
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+                        <h3>Không tìm thấy bản tin nào phù hợp</h3>
+                        <p style="color: var(--text-dim)">Thử kết hợp các từ khóa khác hoặc xóa bớt nội dung tìm kiếm.</p>
+                        <button onclick="clearSearch()" class="btn-refresh" style="margin-top: 1rem">Xóa tìm kiếm</button>
+                    `;
+                    list.appendChild(noResultMsg);
+                }
+                noResultMsg.style.display = "block";
+            } else if (noResultMsg) {
+                noResultMsg.style.display = "none";
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('searchBar').value = '';
+            filterNews();
         }
 
         // Initial fetch
