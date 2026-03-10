@@ -21,13 +21,11 @@ def summarize_news(news_list, trending_keywords):
         if not any(domain in item['link'] for domain in exclude_domains)
     ]
     
-    # Process top 5 candidates
-    items_to_process = filtered_list[:5]
+    # Process top candidates (expanded to reach 20+ final items)
+    items_to_process = filtered_list[:45] # Slightly more to be safe
     
     for i, item in enumerate(items_to_process):
-        if i > 0:
-            print(f"Waiting 30 seconds before next item... ({i+1}/{len(items_to_process)})")
-            time.sleep(30)
+        print(f"Processing item {i+1}/{len(items_to_process)}: {item['title'][:50]}...")
             
         prompt = f"""
         You are an Expert Technical AI Researcher.

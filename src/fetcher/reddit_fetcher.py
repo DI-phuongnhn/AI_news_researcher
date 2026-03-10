@@ -5,7 +5,7 @@ from datetime import datetime
 
 def fetch_reddit_ml_news():
     """Fetch latest posts from r/MachineLearning using public JSON endpoint."""
-    url = "https://www.reddit.com/r/MachineLearning/new.json?limit=10"
+    url = "https://www.reddit.com/r/MachineLearning/new.json?limit=25"
     headers = {"User-Agent": "AI-News-Researcher-Agent/1.0"}
     
     try:

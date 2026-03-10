@@ -24,15 +24,20 @@ def run_agent():
     search_keywords = []
     if "EN:" in keywords:
         en_part = keywords.split("EN:")[1].split("\n\n")[0]
-        search_keywords = [k.strip() for k in en_part.split(",") if k.strip()][:3] # Limit to top 3 for search
+        search_keywords = [k.strip() for k in en_part.split(",") if k.strip()][:5] # Limit to top 5 for broader search
     
     print("Waiting 30 seconds to reset API quota...")
     time.sleep(30)
     
-    print("Step 2: Performing advanced technical search (using EN keywords)...")
+    print("Step 2: Performing advanced technical search (using EN keywords & Social)...")
     all_raw_news = []
     if search_keywords:
-        all_raw_news.extend(search_technical_news(search_keywords, max_results=3))
+        # Standard technical search
+        all_raw_news.extend(search_technical_news(search_keywords, max_results=10))
+        # Targeted social search to ensure X, FB, Reddit presence
+        social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
+        print("  Running targeted social media search...")
+        all_raw_news.extend(search_technical_news(social_kws, max_results=5))
     
     print("Step 3: Fetching news from RSS & Reddit...")
     # RSS Sources
