@@ -7,7 +7,7 @@ env_path = os.path.join(project_root, '.env')
 load_dotenv(dotenv_path=env_path)
 
 class Config:
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    GEMINI_API_KEYS = [k.strip() for k in os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", "")).split(",") if k.strip()]
     GEMINI_MODEL = "gemini-2.0-flash-lite" 
     # Fallback models to maximize Free Tier quota
     GEMINI_MODELS_FALLBACK = [

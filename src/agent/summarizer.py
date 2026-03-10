@@ -8,11 +8,6 @@ def summarize_news(news_list, trending_keywords):
     Filter for technical relevance and summarize news items in Vietnamese.
     Uses model rotation to bypass Free Tier quota limits.
     """
-    api_key = Config.GEMINI_API_KEY
-    if not api_key:
-        print("Error: GEMINI_API_KEY not found in .env")
-        return []
-        
     rotator = get_rotator()
     summaries = []
     
@@ -44,8 +39,8 @@ def summarize_news(news_list, trending_keywords):
         KEYWORDS FOR CONTEXT: {trending_keywords}
         
         1. VALIDATE TECHNICAL DEPTH: 
-           - Is this about architectural novelty, algorithmic breakthroughs, math, or significant benchmarking?
-           - If it is just social impact, general AI hype, or PR for a company, return 'TECHNICAL: NO'.
+           - Is this about architectural novelty, algorithmic breakthroughs, math, Agentic Frameworks (e.g., OpenClaw, LangGraph), or AI Infrastructure?
+           - If it is just social impact, general AI hype, or PR for a company without technical substance, return 'TECHNICAL: NO'.
            - IF the source is a general news site (not technical), return 'TECHNICAL: NO'.
         
         2. SUMMARIZE (VIETNAMESE):
