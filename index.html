@@ -352,9 +352,19 @@
                     const itemDate = report.date ? new Date(report.date) : new Date(dayEntry.timestamp);
                     const displayDate = itemDate.toLocaleDateString('vi-VN');
                     
+                    // Assign priority level (3: Social, 2: Search, 1: Others/Research)
+                    let priority = 1;
+                    const src = (report.source || "").toLowerCase();
+                    if (src.includes('x (') || src.includes('facebook') || src.includes('reddit')) {
+                        priority = 3;
+                    } else if (src.includes('duckduckgo')) {
+                        priority = 2;
+                    }
+
                     flattenedReports.push({
                         ...report,
-                        sortToken: itemDate.getTime(), // For precise sorting
+                        sortToken: itemDate.getTime(),
+                        priority: priority,
                         runTimestamp: dayEntry.timestamp,
                         displayDate: displayDate,
                         keywords: dayEntry.keywords 
@@ -362,8 +372,18 @@
                 });
             });
 
-            // Sort ALL reports by article publication date (newest first)
-            flattenedReports.sort((a, b) => b.sortToken - a.sortToken);
+            // Sort logic: Date (newest first) -> Priority (Social first) -> Precision Time
+            flattenedReports.sort((a, b) => {
+                // Secondary sort by Priority (Social > Search > Others) within the same date
+                if (b.displayDate === a.displayDate) {
+                    if (b.priority !== a.priority) {
+                        return b.priority - a.priority;
+                    }
+                    return b.sortToken - a.sortToken;
+                }
+                // Primary sort by absolute time to ensure dates group correctly
+                return b.sortToken - a.sortToken;
+            });
         }
 
         function renderDateSelector() {

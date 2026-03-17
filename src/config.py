@@ -57,7 +57,8 @@ class Config:
     
     # Facebook Groups for technical AI/ML discussions (for Apify)
     FB_GROUPS = [
-        "https://www.facebook.com/groups/874728723021553" # AI & Machine Learning group
+        "https://www.facebook.com/groups/874728723021553", # AI & Machine Learning group
+        "https://www.facebook.com/groups/364997627165697"  # J2Team Community
     ]
     
     # --- Data Persistence ---
