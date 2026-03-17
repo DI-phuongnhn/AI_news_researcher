@@ -79,11 +79,13 @@ def search_x_apify(keywords_list, max_items=5):
     }
     return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
 
-def fetch_facebook_groups_apify(group_urls=None, max_items=10):
+def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
     """
     Specific implementation for Facebook Group Scraping via Apify.
     Uses Actor: 2chN8UQcH1CfxLRNE (Facebook Groups Scraper)
     """
+    from datetime import timedelta
+    
     if not group_urls:
         group_urls = Config.FB_GROUPS
         
@@ -92,11 +94,18 @@ def fetch_facebook_groups_apify(group_urls=None, max_items=10):
 
     actor_id = "2chN8UQcH1CfxLRNE"
     
+    # Calculate date 7 days ago (YYYY-MM-DD)
+    seven_days_ago = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
+    current_year = datetime.now().year
+    
     # Standardize input for this specific Facebook actor
     run_input = {
-        "startUrls": [{"url": url} for url in group_urls],
+        "startUrls": [{"url": url} for url in group_urls if url],
         "resultsLimit": max_items,
-        "viewOption": "CHRONOLOGICAL"
+        "viewOption": "CHRONOLOGICAL",
+        "searchGroupKeyword": keywords[0] if keywords and isinstance(keywords, list) else keywords,
+        "searchGroupYear": str(current_year),
+        "onlyPostsNewerThan": seven_days_ago
     }
     
     return fetch_apify_posts(actor_id, run_input, "Facebook Group")

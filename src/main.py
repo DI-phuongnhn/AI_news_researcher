@@ -105,7 +105,7 @@ def run_agent():
     
     # 3c. Specialized Facebook Group Fetcher (via Apify)
     print("  Fetching Facebook Groups via Apify...")
-    all_raw_news.extend(fetch_facebook_groups_apify())
+    all_raw_news.extend(fetch_facebook_groups_apify(keywords=search_keywords))
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
 
