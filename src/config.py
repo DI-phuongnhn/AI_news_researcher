@@ -25,6 +25,9 @@ class Config:
         if k.strip()
     ]
     
+    # --- Apify Configuration ---
+    APIFY_API_TOKEN = os.getenv("APIFY_API_TOKEN", "")
+    
     # Models to cycle through to maximize Free Tier quota
     GEMINI_MODELS_FALLBACK = [
         "gemini-2.0-flash-lite",
