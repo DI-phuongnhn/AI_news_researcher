@@ -110,6 +110,28 @@ def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
     
     return fetch_apify_posts(actor_id, run_input, "Facebook Group")
 
+def fetch_x_profiles_apify(handles=None, max_items_per_profile=5):
+    """
+    Scrapes specific X (Twitter) profiles by their handles.
+    Uses Actor: quacker/twitter-scraper
+    """
+    if not handles:
+        handles = Config.X_ACCOUNTS
+        
+    if not handles:
+        return []
+
+    actor_id = "quacker/twitter-scraper"
+    
+    # Standardize input for profile scraping
+    run_input = {
+        "handles": handles,
+        "maxItems": max_items_per_profile * len(handles),
+        "sort": "Latest"
+    }
+    
+    return fetch_apify_posts(actor_id, run_input, "X Profiles")
+
 if __name__ == "__main__":
     # Test script: you need a valid APIFY_API_TOKEN in your .env
     test_keywords = ["DeepSeek", "AI Researcher"]

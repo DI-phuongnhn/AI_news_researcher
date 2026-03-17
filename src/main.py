@@ -23,7 +23,7 @@ from src.fetcher.reddit_fetcher import fetch_reddit_ml_news
 from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.search_fetcher import search_technical_news
 from src.agent.summarizer import summarize_news
-from src.fetcher.apify_fetcher import search_x_apify, fetch_facebook_groups_apify
+from src.fetcher.apify_fetcher import search_x_apify, fetch_facebook_groups_apify, fetch_x_profiles_apify
 
 def calculate_similarity(text1, text2):
     """
@@ -106,6 +106,10 @@ def run_agent():
     # 3c. Specialized Facebook Group Fetcher (via Apify)
     print("  Fetching Facebook Groups via Apify...")
     all_raw_news.extend(fetch_facebook_groups_apify(keywords=search_keywords))
+    
+    # 3d. Specialized X Profile Fetcher (via Apify)
+    print("  Fetching X Profiles via Apify...")
+    all_raw_news.extend(fetch_x_profiles_apify())
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
 
