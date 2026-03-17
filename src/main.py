@@ -23,6 +23,7 @@ from src.fetcher.reddit_fetcher import fetch_reddit_ml_news
 from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.search_fetcher import search_technical_news
 from src.agent.summarizer import summarize_news
+from src.fetcher.apify_fetcher import search_x_apify
 
 def calculate_similarity(text1, text2):
     """
@@ -35,7 +36,7 @@ def calculate_similarity(text1, text2):
 
 def run_agent():
     """
-    Executes the autonomous research agent pipeline with deduplication.
+    Executes the autonomous research agent pipeline with optimized deduplication and retention.
     
     Returns:
         dict: The final report data containing timestamp, keywords, and summarized news.
@@ -43,7 +44,8 @@ def run_agent():
     # Step 0: Load Historical Data for Deduplication
     all_news_file = Config.HISTORICAL_DATA_FILE
     all_historical_data = []
-    seen_contents = [] # List of strings to compare against
+    seen_urls = set()
+    seen_titles = []
 
     if os.path.exists(all_news_file):
         try:
@@ -52,9 +54,12 @@ def run_agent():
                 if isinstance(all_historical_data, list):
                     for day_entry in all_historical_data:
                         for report in day_entry.get("reports", []):
-                            # Store title + start of summary for comparison
-                            content_str = (report.get("title", "") + " " + report.get("summary_vn", "")[:200])
-                            seen_contents.append(content_str)
+                            url = report.get("link", "")
+                            if url:
+                                seen_urls.add(url)
+                            title = report.get("title", "")
+                            if title:
+                                seen_titles.append(title)
         except Exception as e:
             print(f"Warning: Could not load historical data for deduplication: {e}")
 
@@ -95,23 +100,31 @@ def run_agent():
     print(f"Total raw items fetched: {len(all_raw_news)}")
 
     # Step 3.5: Deduplication Step
-    print("Step 3.5: Deduplicating news against historical data (>80% similarity)...")
+    print("Step 3.5: Deduplicating news against historical data (URL & Title similarity)...")
     unique_raw_news = []
     duplicate_count = 0
 
     for item in all_raw_news:
-        new_content = (item.get("title", "") + " " + item.get("summary", "")[:200])
-        is_duplicate = False
+        url = item.get("link", "")
+        title = item.get("title", "")
         
-        for seen in seen_contents:
-            if calculate_similarity(new_content, seen) > 0.8:
-                is_duplicate = True
-                break
+        # 1. Exact URL match
+        if url and url in seen_urls:
+            duplicate_count += 1
+            continue
+            
+        # 2. Title similarity (>85%)
+        is_title_duplicate = False
+        if title:
+            for seen_title in seen_titles:
+                if calculate_similarity(title, seen_title) > 0.85:
+                    is_title_duplicate = True
+                    break
         
-        if not is_duplicate:
+        if not is_title_duplicate:
             unique_raw_news.append(item)
-            # Also add to seen_contents to avoid internal duplicates within the same run
-            seen_contents.append(new_content)
+            if url: seen_urls.add(url)
+            if title: seen_titles.append(title)
         else:
             duplicate_count += 1
 
@@ -122,25 +135,41 @@ def run_agent():
     final_reports = summarize_news(unique_raw_news, keywords)
     
     # Create the report payload
+    run_time = datetime.now()
     output_data = {
-        "timestamp": datetime.now().isoformat(),
+        "timestamp": run_time.isoformat(),
         "keywords": keywords,
         "reports": final_reports
     }
     
-    # Step 5: Data Persistence
+    # Step 5: Data Persistence & 14-day Retention
     # Prepend newest report
     all_historical_data.insert(0, output_data)
     
-    # Save both historical and latest files (already loaded all_historical_data at Step 0)
+    # Filter for last 14 days
+    print("Step 5.1: Applying 14-day retention policy...")
+    current_time = datetime.now()
+    retention_period = 14 # days
+    
+    filtered_historical_data = []
+    for entry in all_historical_data:
+        try:
+            entry_time = datetime.fromisoformat(entry.get("timestamp"))
+            if (current_time - entry_time).days <= retention_period:
+                filtered_historical_data.append(entry)
+        except (ValueError, TypeError):
+            # Keep entries with invalid timestamps for safety or if they are the latest
+            filtered_historical_data.append(entry)
+    
+    # Save both historical and latest files
     os.makedirs("data", exist_ok=True)
     with open(all_news_file, "w", encoding="utf-8") as f:
-        json.dump(all_historical_data, f, ensure_ascii=False, indent=4)
+        json.dump(filtered_historical_data, f, ensure_ascii=False, indent=4)
         
     with open(Config.DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(output_data, f, ensure_ascii=False, indent=4)
         
-    print(f"Successfully processed {len(final_reports)} high-quality technical news items.")
+    print(f"Successfully processed {len(final_reports)} items. Historical data retention applied.")
     return output_data
 
 if __name__ == "__main__":

@@ -347,22 +347,30 @@
         function processData() {
             flattenedReports = [];
             allHistoricalData.forEach(dayEntry => {
-                const dayStr = new Date(dayEntry.timestamp).toLocaleDateString('vi-VN');
                 dayEntry.reports.forEach(report => {
+                    // Prioritize article date, fallback to run date
+                    const itemDate = report.date ? new Date(report.date) : new Date(dayEntry.timestamp);
+                    const displayDate = itemDate.toLocaleDateString('vi-VN');
+                    
                     flattenedReports.push({
                         ...report,
+                        sortToken: itemDate.getTime(), // For precise sorting
                         runTimestamp: dayEntry.timestamp,
-                        displayDate: dayStr,
-                        keywords: dayEntry.keywords
+                        displayDate: displayDate,
+                        keywords: dayEntry.keywords 
                     });
                 });
             });
+
+            // Sort ALL reports by article publication date (newest first)
+            flattenedReports.sort((a, b) => b.sortToken - a.sortToken);
         }
 
         function renderDateSelector() {
             const selector = document.getElementById('dateSelector');
             selector.innerHTML = '<option value="">-- Chọn ngày xem nhanh --</option>';
-
+            
+            // Get unique dates in order
             const dates = [...new Set(flattenedReports.map(r => r.displayDate))];
             dates.forEach(date => {
                 const option = document.createElement('option');
