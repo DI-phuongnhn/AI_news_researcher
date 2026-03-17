@@ -50,7 +50,8 @@ class Config:
     X_ACCOUNTS = [
         "AndrewYNg", "karpathy", "OpenAI", "AnthropicAI", 
         "huggingface", "ylecun", "sama", "fchollet",
-        "gdb", "drfeifei", "demishassabis", "_akhaliq", "GoogleDeepMind"
+        "gdb", "drfeifei", "demishassabis", "_akhaliq", "GoogleDeepMind",
+        "yoheinakajima", "yamano_ai", "chaen_ai", "iketomoai", "keito_ai", "mikimiki_web"
     ]
     
     # Targeted subreddits for technical AI/ML discussions
@@ -60,6 +61,7 @@ class Config:
     FB_GROUPS = [
         "https://www.facebook.com/groups/874728723021553", # AI & Machine Learning group
         "https://www.facebook.com/groups/364997627165697"  # J2Team Community
+        "https://www.facebook.com/groups/binhdanhocai" # Bình dân học AI
     ]
     
     # --- Data Persistence ---
