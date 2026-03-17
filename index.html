@@ -7,34 +7,35 @@
     <title>AI News Researcher Dashboard</title>
     <style>
         :root {
-            /* Dark Theme (Default) */
-            --primary-bg: #1a1c2c;
-            --card-bg: #2a2d3e;
-            --accent: #ff9ff3;
-            --accent-secondary: #feca57;
-            --accent-tertiary: #48dbfb;
-            --text-main: #f1f2f6;
-            --text-dim: #a4b0be;
-            --border: #3b3e52;
-            --tag-bg: #3b3e52;
-            --tag-text: #f1f2f6;
-            --shadow: rgba(0, 0, 0, 0.3);
-            --header-gradient: linear-gradient(135deg, #ff9ff3, #48dbfb);
+            /* Muted Dark Theme (Default) */
+            --primary-bg: #1e272e;
+            --card-bg: #2f3640;
+            --accent: #a8d8ea; /* Pastel Light Blue */
+            --accent-secondary: #ffdfd3; /* Peach */
+            --accent-tertiary: #95adbe; /* Muted Blue-Grey */
+            --text-main: #d2dae2;
+            --text-dim: #808e9b;
+            --border: #485460;
+            --tag-bg: #485460;
+            --tag-text: #d2dae2;
+            --shadow: rgba(0, 0, 0, 0.2);
+            --header-gradient: linear-gradient(135deg, #a8d8ea, #aa96da);
         }
 
         [data-theme="light"] {
-            --primary-bg: #f5f6fa;
+            /* Muted Light Theme */
+            --primary-bg: #f8f9fa;
             --card-bg: #ffffff;
-            --accent: #e056fd;
-            --accent-secondary: #ff9f43;
-            --accent-tertiary: #0abde3;
-            --text-main: #2f3640;
-            --text-dim: #718093;
-            --border: #dcdde1;
+            --accent: #95adbe; /* Muted Slate */
+            --accent-secondary: #f0b1b1; /* Muted Rose */
+            --accent-tertiary: #b2c2a3; /* Muted Sage */
+            --text-main: #2f3542;
+            --text-dim: #747d8c;
+            --border: #ced6e0;
             --tag-bg: #f1f2f6;
-            --tag-text: #2f3640;
-            --shadow: rgba(0, 0, 0, 0.05);
-            --header-gradient: linear-gradient(135deg, #e056fd, #0abde3);
+            --tag-text: #2f3542;
+            --shadow: rgba(0, 0, 0, 0.04);
+            --header-gradient: linear-gradient(135deg, #95adbe, #d8a7b1);
         }
 
         body {
@@ -208,8 +209,8 @@
             padding: 2rem;
             border-radius: 20px;
             border: 1px solid var(--border);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px var(--shadow);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px var(--shadow);
             position: relative;
             overflow: hidden;
         }
@@ -220,15 +221,15 @@
             left: 0;
             top: 0;
             height: 100%;
-            width: 6px;
+            width: 4px;
             background: var(--accent);
-            opacity: 0.6;
+            opacity: 0.4;
         }
 
         .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px var(--shadow);
-            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px var(--shadow);
+            border-color: var(--accent-tertiary);
         }
 
         .news-title {
