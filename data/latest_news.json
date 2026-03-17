@@ -1,5 +1,286 @@
 {
-    "timestamp": "2026-03-16T03:55:50.857861",
-    "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, OpenAI o1, Agentic Workflows, Test-time Compute, GRPO (Group Relative Policy Optimization), Mixture of Experts (MoE), Quantization (GGUF/EXL2), Llama-3.3-70B, Claude 3.5 Sonnet, GraphRAG, Multi-token Prediction, Small Language Models (SLM), Long-context Attention, World Models, BitNet]\n\nVN: [DeepSeek-V3, DeepSeek-R1, OpenAI o1, Agentic Workflows (Quy trình làm việc dựa trên Agent), MoE (Mixture of Experts), Quantization (Lượng tử hóa mô hình), RAG (Truy xuất tăng cường tạo), GraphRAG, Llama-3.3-70B, Claude 3.5 Sonnet, Fine-tuning LLMs, SLM (Mô hình ngôn ngữ nhỏ), Reinforcement Learning (Học tăng cường), Multi-modal AI]\n\nJP: [DeepSeek-V3, DeepSeek-R1, OpenAI o1, エージェント・ワークフロー (Agentic Workflows), 推論時間計算 (Test-time Compute), 混合エキスパート (MoE), 量子化 (Quantization), Llama-3.3-70B, Claude 3.5 Sonnet, 検索拡張生成 (RAG), GraphRAG, 小型言語モデル (SLM), マルチモーダルLLM, 強化学習 (Reinforcement Learning), 分散学習]",
-    "reports": []
+    "timestamp": "2026-03-17T03:39:03.159450",
+    "keywords": "EN: [DeepSeek-V3, Model Context Protocol (MCP), Agentic Workflows, o1-pro, Gemini 2.0 Flash, Llama 3.3 70B, Mixture of Experts (MoE), Chain of Thought (CoT) Reasoning, BitNet 1.58-bit, Quantization (GGUF/EXL2), Retrieval-Augmented Generation (RAG), Long Context Window, Speculative Decoding, Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO)]\n\nVN: [DeepSeek-V3, Model Context Protocol (MCP), Agentic Workflows (Quy trình tác vụ Agent), o1-pro, Gemini 2.0 Flash, Llama 3.3 70B, Mixture of Experts (MoE), Chain of Thought (Chuỗi suy nghĩ), Tối ưu hóa Quantization, RAG (Truy xuất tăng cường), Fine-tuning (Tinh chỉnh mô hình), Local LLMs (LLM cục bộ), DPO (Tối ưu hóa sở thích trực tiếp), FlashAttention, Xử lý ngữ cảnh dài (Long Context)]\n\nJP: [DeepSeek-V3, Model Context Protocol (MCP), エージェントワークフロー (Agentic Workflows), o1-pro, Gemini 2.0 Flash, Llama 3.3 70B, 混合エキスパート (MoE), 推論モデル (Reasoning Models), 思考の鎖 (Chain of Thought), 量子化 (Quantization/GGUF), 検索拡張生成 (RAG), ローカルLLM (Local LLMs), ファインチューニング (Fine-tuning), 直接選好最適化 (DPO), スペキュレイティブデコーディング (Speculative Decoding)]",
+    "reports": [
+        {
+            "title": "Context-Enriched Natural Language Descriptions of Vessel Trajectories",
+            "link": "https://arxiv.org/abs/2603.12287",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu đề xuất một khung làm giàu ngữ nghĩa và trừu tượng hóa quỹ đạo tàu biển, chuyển đổi dữ liệu AIS (Automatic Identification System) thô thành các mô tả ngôn ngữ tự nhiên có cấu trúc. Điểm mấu chốt kỹ thuật nằm ở quy trình phân đoạn (segmentation) các chuỗi tọa độ nhiễu thành các chuyến đi (trips) và giai đoạn (episodes) riêng biệt, sau đó tích hợp ngữ cảnh đa nguồn như thực thể địa lý, đặc điểm hàng hải và điều kiện thời tiết. Bằng cách giảm độ phức tạp không-thời gian và tăng mật độ ngữ nghĩa (semantic density), phương pháp này cho phép các mô hình ngôn ngữ lớn (LLM) thực hiện suy luận hàng hải cấp độ cao thay vì chỉ xử lý dữ liệu cảm biến thô. Đây là bước tiến quan trọng trong việc tích hợp dữ liệu di động (mobility data) vào các quy trình tác vụ Agent (Agentic Workflows) và hệ thống RAG, tối ưu hóa khả năng phân tích hạ nguồn trong lĩnh vực logistics và an ninh hàng hải.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Efficient Reasoning with Balanced Thinking",
+            "link": "https://arxiv.org/abs/2603.12372",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "ReBalance là một khung kỹ thuật (framework) không cần huấn luyện lại (training-free) nhằm tối ưu hóa hiệu suất lý luận cho các mô hình ngôn ngữ lớn (LRM). Nghiên cứu tập trung giải quyết hai hiện tượng tiêu cực: \"overthinking\" (lý luận dư thừa gây lãng phí tài nguyên) và \"underthinking\" (thiếu thăm dò dẫn đến sai sót). Về mặt kỹ thuật, ReBalance sử dụng độ tin cậy (confidence) như một chỉ số liên tục để giám sát động lực suy nghĩ. Phương pháp này tổng hợp các trạng thái ẩn (hidden states) để xây dựng các \"prototypes\" về chế độ lý luận, từ đó tính toán vector điều hướng (steering vector) nhằm dẫn dắt quỹ đạo suy nghĩ của mô hình. Một hàm điều khiển động sẽ điều tiết cường độ vector này dựa trên độ tin cậy thời gian thực: cắt tỉa các bước lặp lại khi có biến động tin cậy cao và thúc đẩy khám phá sâu hơn khi xuất hiện dấu hiệu quá tự tin (overconfidence). Kết quả thực nghiệm trên các mô hình từ 0.5B đến 32B cho thấy ReBalance cải thiện đáng kể độ chính xác và hiệu quả tính toán trong các tác vụ toán học và lập trình.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Generating Expressive and Customizable Evals for Timeseries Data Analysis Agents with AgentFuel",
+            "link": "https://arxiv.org/abs/2603.12483",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu AgentFuel, một framework chuyên dụng để xây dựng các bộ đánh giá (evals) tùy chỉnh và có độ biểu đạt cao cho các Agent phân tích dữ liệu chuỗi thời gian (timeseries). Phân tích trên 6 Agent hàng đầu cho thấy các hệ thống hiện tại thường thất bại trước những truy vấn có trạng thái (stateful) và đặc thù sự cố (incident-specific). AgentFuel giải quyết hai \"khoảng cách biểu đạt\" (expressivity gaps) chính: sự thiếu hụt tập dữ liệu tùy chỉnh theo miền và các loại truy vấn chuyên biệt. Về mặt kỹ thuật, công cụ này cho phép các chuyên gia thực hiện kiểm thử chức năng đầu cuối (end-to-end functional tests), bộc lộ các khiếm khuyết trong kiến trúc agentic hiện nay. Kết quả thực nghiệm cho thấy việc áp dụng AgentFuel không chỉ giúp định danh các điểm yếu mà còn hỗ trợ cải thiện hiệu suất của Agent (như thông qua phương pháp GEPA). Đây là đóng góp quan trọng cho hạ tầng đánh giá AI trong các lĩnh vực IoT, quan sát hệ thống (observability) và an ninh mạng.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "AI Planning Framework for LLM-Based Web Agents",
+            "link": "https://arxiv.org/abs/2603.12710",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này thiết lập một khung (framework) lập kế hoạch chính quy cho các Agent web dựa trên LLM, xử lý nhiệm vụ dưới dạng tiến trình ra quyết định tuần tự. Đóng góp cốt lõi nằm ở việc xây dựng hệ thống phân loại (taxonomy) ánh xạ các kiến trúc agent hiện đại vào các thuật toán tìm kiếm cổ điển: Step-by-Step tương ứng với BFS, Tree Search với Best-First Search, và Full-Plan-in-Advance với DFS. Cách tiếp cận này cho phép chẩn đoán định lượng các lỗi hệ thống như trôi dạt ngữ cảnh (context drift) và phân rã tác vụ không nhất quán. Tác giả đề xuất 5 chỉ số đo lường mới để đánh giá chất lượng quỹ đạo (trajectory) thay vì chỉ dựa vào tỷ lệ thành công đơn thuần, hỗ trợ bởi tập dữ liệu 794 quỹ đạo từ benchmark WebArena. Kết quả thực nghiệm chỉ ra rằng dù Agent Step-by-Step bám sát quỹ đạo của con người hơn (38% thành công), Agent Full-Plan lại vượt trội về độ chính xác thành phần (89%), khẳng định tính thiết yếu của việc lựa chọn kiến trúc dựa trên các chỉ số kỹ thuật đặc thù trong Agentic Workflows.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "On Using Machine Learning to Early Detect Catastrophic Failures in Marine Diesel Engines",
+            "link": "https://arxiv.org/abs/2603.12733",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này đề xuất một phương pháp mới nhằm phát hiện sớm các lỗi thảm khốc (catastrophic failures) trong động cơ diesel hàng hải, vốn là những sự cố đột ngột và khó dự đoán hơn so với sự suy giảm hiệu suất dần dần. Điểm cải tiến kỹ thuật cốt lõi là việc tính toán và đánh giá các đạo hàm của độ lệch (derivatives of the deviation) giữa dữ liệu cảm biến thực tế và giá trị kỳ vọng của các biến số động cơ. Mô hình Random Forest được lựa chọn là thuật toán tối ưu nhất để phân tích các động lực học bất thường này. Thay vì dựa vào các ngưỡng tới hạn (critical thresholds) cố định như phương pháp công nghiệp truyền thống, cách tiếp cận này cho phép nhận diện dấu hiệu lỗi trước khi các cảnh báo tiêu chuẩn được kích hoạt. Điều này cho phép người vận hành can thiệp kịp thời để tắt máy, ngăn ngừa hư hỏng hệ thống không thể phục hồi và đảm bảo an toàn hàng hải thông qua việc chủ động quản lý các biến đổi động học của tín hiệu.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "ToolTree: Efficient LLM Agent Tool Planning via Dual-Feedback Monte Carlo Tree Search and Bidirectional Pruning",
+            "link": "https://arxiv.org/abs/2603.12740",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "ToolTree giới thiệu một bước tiến quan trọng trong quy trình tác vụ Agent (Agentic Workflows) bằng cách thay thế các chiến lược chọn công cụ tham lam (greedy) truyền thống bằng cơ chế lập kế hoạch dựa trên Tìm kiếm cây Monte Carlo (MCTS). Điểm cốt lõi của nghiên cứu là kiến trúc đánh giá LLM hai giai đoạn (dual-stage) kết hợp với kỹ thuật cắt tỉa hai chiều (bidirectional pruning), cho phép hệ thống loại bỏ các nhánh suy luận kém triển vọng cả trước và sau khi thực thi công cụ. Phương pháp này giải quyết triệt để vấn đề phụ thuộc giữa các công cụ (inter-tool dependencies) và thiếu tầm nhìn dài hạn trong các tác vụ đa bước phức tạp. Kết quả thực nghiệm trên 4 bộ benchmark cho thấy ToolTree đạt mức tăng trưởng hiệu suất trung bình 10% so với các phương pháp SOTA, đồng thời tối ưu hóa đáng kể chi phí tính toán. Đây là minh chứng cho việc kết hợp Chain of Thought (CoT) với các thuật toán tìm kiếm cấu trúc để nâng cao khả năng tự chủ của LLM Agent.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "AI Model Modulation with Logits Redistribution",
+            "link": "https://arxiv.org/abs/2603.12755",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu đề xuất AIM (AI Model Modulation), một cơ chế điều biến mô hình mới cho phép một phiên bản duy nhất thực hiện đa dạng hành vi mà không cần huấn luyện lại (retraining-free) hoặc truy cập dữ liệu gốc (data-agnostic). Cốt lõi của AIM là chiến lược \"Logits Redistribution\" (tái phân phối logits), dựa trên nền tảng toán học về đặc tính thống kê của thứ tự logits thông qua phân phối xác suất chung. AIM hỗ trợ hai chế độ chính: \"Utility Modulation\" giúp kiểm soát động chất lượng đầu ra và \"Focus Modulation\" cho phép điều chỉnh trọng tâm vào các đặc trưng đầu vào cụ thể. Phương pháp này giải quyết triệt để bài toán chi phí lưu trữ và vận hành khi phải duy trì nhiều phiên bản mô hình chuyên biệt. Thử nghiệm thực tế trên các kiến trúc ResNet, SegFormer và Llama cho thấy AIM có tính linh hoạt cao, áp dụng hiệu quả cho cả phân loại hình ảnh, phân đoạn ngữ nghĩa và tạo văn bản (LLM).",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Context is all you need: Towards autonomous model-based process design using agentic AI in flowsheet simulations",
+            "link": "https://arxiv.org/abs/2603.12813",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu trình bày một khung Agentic AI đột phá áp dụng trong mô phỏng dòng quy trình (flowsheet) công nghiệp, cụ thể là công cụ nội bộ Chemasim. Điểm cốt lõi là việc triển khai hệ thống đa tác nhân (multi-agent system) cho phép phân rã các nhiệm vụ phức tạp: một tác nhân tập trung vào suy luận kỹ thuật (engineering reasoning) để giải quyết bài toán trừu tượng, trong khi tác nhân khác thực thi mã hóa dựa trên ngữ cảnh (context-based coding) từ tài liệu kỹ thuật và ví dụ mẫu. Bằng cách tận dụng các LLM tiên tiến như Claude Opus 4.6 và GitHub Copilot, framework này có khả năng tạo cú pháp chính xác cho các phần mềm chuyên dụng vốn thiếu dữ liệu đào tạo công khai. Các thử nghiệm trên quy trình chưng cất áp suất thay đổi (pressure-swing) và chưng cất dị azeotrope chứng minh hiệu quả trong việc tự động hóa thiết kế quy trình hóa học. Đây là minh chứng cho tiềm năng của Agentic Workflows trong việc thu hẹp khoảng cách giữa lý thuyết kỹ thuật và thực thi mô phỏng tự hành trong công nghiệp hóa chất.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "ODRL Policy Comparison Through Normalisation",
+            "link": "https://arxiv.org/abs/2603.12926",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này giải quyết các thách thức về tính phức tạp và khả năng tương tác của ngôn ngữ ODRL (tiêu chuẩn về quyền kỹ thuật số) thông qua phương pháp chuẩn hóa có tham số (parametrised normalisation). Các tác giả đề xuất thuật toán chuyển đổi các chính sách chứa cả quyền hạn (permissions) và lệnh cấm (prohibitions) về một dạng biểu diễn tối thiểu chỉ bao gồm quyền hạn, đồng thời đơn giản hóa các ràng buộc logic và số học phức tạp. Điểm cốt lõi kỹ thuật nằm ở việc chứng minh toán học rằng các thuật toán này bảo toàn hoàn toàn ngữ nghĩa (semantics-preserving) của chính sách gốc. Phân tích độ phức tạp cho thấy kết quả ở mức hàm mũ đối với số lượng thuộc tính nhưng tuyến tính đối với các giá trị duy nhất. Đóng góp này cực kỳ quan trọng cho AI Infrastructure và Agentic Workflows, giúp đơn giản hóa việc so sánh chính sách tương đương về mặt ngữ nghĩa thành bài toán kiểm tra tính đồng nhất của các quy tắc cơ bản, đảm bảo tính tuân thủ trong quản trị dữ liệu.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Efficient and Interpretable Multi-Agent LLM Routing via Ant Colony Optimization",
+            "link": "https://arxiv.org/abs/2603.12933",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu AMRO-S, một khung điều hướng (routing) hiệu quả và có khả năng giải thích cho hệ thống đa tác vụ (MAS) dựa trên thuật toán Tối ưu hóa Bầy kiến (ACO). AMRO-S giải quyết các hạn chế về chi phí suy luận và độ trễ của các bộ điều hướng LLM truyền thống thông qua ba cơ chế cốt lõi: 1) Sử dụng mô hình ngôn ngữ nhỏ (SLM) đã qua tinh chỉnh (SFT) để suy luận ý định (intent inference) với chi phí thấp; 2) Phân rã bộ nhớ điều hướng thành các \"pheromone chuyên biệt\" theo từng tác vụ, giúp giảm nhiễu chéo và tối ưu hóa việc chọn đường dẫn trong các khối lượng công việc hỗn hợp; 3) Áp dụng cơ chế cập nhật bất đồng bộ có cổng lọc chất lượng (quality-gated) để tách rời quá trình học tập khỏi quá trình suy luận. Giải pháp này giúp tối ưu hóa hiệu suất hệ thống MAS mà không làm tăng độ trễ, cung cấp một phương pháp tiếp cận mới cho Agentic Workflows có khả năng mở rộng và minh bạch hơn.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Structured Distillation for Personalized Agent Memory: 11x Token Reduction with Retrieval Preservation",
+            "link": "https://arxiv.org/abs/2603.13017",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu phương pháp \"Structured Distillation\" (Chưng cất cấu trúc) nhằm tối ưu hóa bộ nhớ dài hạn cho agent AI thông qua việc nén lịch sử hội thoại thành một lớp truy xuất tinh gọn. Thay vì lưu trữ dữ liệu thô (verbatim) gây tốn kém ngữ cảnh, mỗi lượt trao đổi được chuyển đổi thành đối tượng phức hợp gồm 4 trường: exchange_core, specific_context, thematic room_assignments và regex-extracted files_touched. Phương pháp này đạt tỷ lệ nén 11x (giảm từ trung bình 371 xuống 38 token/trao đổi) trong khi vẫn duy trì 96% hiệu suất truy xuất (MRR đạt 0.717 so với 0.745 của bản gốc). Phân tích kỹ thuật cho thấy Vector Search có khả năng bảo toàn hiệu quả truy xuất tốt hơn đáng kể so với BM25 sau khi nén. Giải pháp \"cross-layer search\" thậm chí còn vượt qua các baseline dữ liệu thô, cung cấp một kiến trúc hiệu quả cho Agentic Workflows và RAG trong việc xử lý ngữ cảnh dài với chi phí tài nguyên thấp.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation",
+            "link": "https://arxiv.org/abs/2603.13099",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu **CRYSTAL** (*Clear Reasoning via Yielded Steps, Traceability and Logic*), một benchmark chẩn đoán mới gồm 6.372 thể hiện, tập trung đánh giá khả năng suy luận đa phương thức (multimodal reasoning) thông qua các bước trung gian có thể kiểm chứng được. Điểm mới kỹ thuật nằm ở việc sử dụng hai chỉ số bổ sung: *Match F1* (đánh giá độ chính xác từng bước) và *Ordered Match F1* (phạt việc xáo trộn chuỗi suy luận). Việc xây dựng tham chiếu sử dụng quy trình lấy cảm hứng từ Delphi, kết hợp đầu ra từ bốn MLLM độc lập và được kiểm duyệt bởi con người. Đánh giá 20 MLLM cho thấy các thất bại hệ thống như hiện tượng \"cherry-picking\" (precision cao hơn recall). Quan trọng hơn, nhóm nghiên cứu đề xuất **Causal Process Reward (CPR)**, một phần thưởng nhân tính hóa liên kết trực tiếp độ chính xác câu trả lời cuối cùng với sự liên kết từng bước, và **CPR-Curriculum** để huấn luyện theo lộ trình tăng dần độ khó. Phương pháp CPR-Curriculum đã cải thiện Match F1 tới +32% so với các chiến lược thưởng cộng dồn truyền thống, giúp tối ưu hóa khả năng suy luận mà không cần chú thích bước thủ công.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Steve-Evolving: Open-World Embodied Self-Evolution via Fine-Grained Diagnosis and Dual-Track Knowledge Distillation",
+            "link": "https://arxiv.org/abs/2603.13131",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu \"Steve-Evolving,\" một framework tự tiến hóa phi tham số được thiết kế cho các tác nhân hiện thân (embodied agents) trong môi trường mở (open-world). Điểm đột phá là sự kết hợp chặt chẽ giữa chẩn đoán thực thi chi tiết (fine-grained execution diagnosis) và chưng cất tri thức theo hai luồng (dual-track knowledge distillation) trong một vòng lặp kín. Quá trình này bao gồm Ba giai đoạn: Neo kinh nghiệm (Experience Anchoring), Chưng cất kinh nghiệm (Experience Distillation), và Điều khiển vòng lặp kín dựa trên tri thức (Knowledge-Driven Closed-Loop Control).\n\nHệ thống neo kinh nghiệm cấu trúc hóa mọi nỗ lực giải quyết mục tiêu phụ thành các bộ dữ liệu có sơ đồ cố định, có thể truy xuất hiệu quả thông qua chỉ mục đa chiều. Quan trọng hơn, chẩn đoán không chỉ dừng lại ở kết quả nhị phân mà cung cấp các tín hiệu phân tích sâu (như khác biệt trạng thái, nguyên nhân thất bại, phát hiện vòng lặp). Dữ liệu này sau đó được chưng cất thành các kỹ năng tái sử dụng (với điều kiện tiên quyết rõ ràng) và các quy tắc bảo vệ (guardrails) để ngăn chặn các hành động rủi ro, giải quyết nút thắt cổ chai về cách tổ chức và tiến hóa kinh nghiệm tương tác cho các tác vụ dài hạn.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "When Right Meets Wrong: Bilateral Context Conditioning with Reward-Confidence Correction for GRPO",
+            "link": "https://arxiv.org/abs/2603.13134",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo giới thiệu một cách tiếp cận mới đối với thuật toán Tối ưu hóa Chính sách Tương đối Nhóm (GRPO) thông qua việc tái cấu trúc tương phản (contrastive reformulation). Nhận thấy GRPO bỏ qua tín hiệu đối sánh giữa các giải pháp đúng và sai trong cùng một nhóm mẫu, nghiên cứu đề xuất **Bilateral Context Conditioning (BICC)**. BICC cho phép mô hình tham chiếu chéo giữa các vết suy luận thành công và thất bại trong quá trình tối ưu hóa, tạo ra luồng thông tin trực tiếp giữa các mẫu. Ngoài ra, để ổn định quá trình huấn luyện, họ đưa ra **Reward-Confidence Correction (RCC)**, điều chỉnh cơ sở đường xu hướng (advantage baseline) của GRPO bằng cách sử dụng hiệp phương sai độ tin cậy phần thưởng, ước tính qua xấp xỉ bậc nhất của bộ ước lượng tối thiểu hóa phương sai. Các cơ chế này không yêu cầu lấy mẫu bổ sung hoặc mô hình phụ trợ, mang lại cải tiến nhất quán cho các mô hình suy luận.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Developing and evaluating a chatbot to support maternal health care",
+            "link": "https://arxiv.org/abs/2603.13168",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo trình bày một hệ thống chatbot hỗ trợ chăm sóc sức khỏe sản khoa tại Ấn Độ, tập trung vào việc giải quyết các thách thức kỹ thuật khi triển khai trong môi trường tài nguyên thấp (ngữ cảnh khu vực, truy vấn ngắn, mã hỗn hợp). Về mặt kỹ thuật, hệ thống này kết hợp ba thành phần chính: (1) phân loại (triage) nhận biết giai đoạn thai kỳ để định tuyến các truy vấn rủi ro cao sang các mẫu chuyên gia; (2) truy xuất lai (hybrid retrieval) trên các hướng dẫn sản khoa đã được tuyển chọn; và (3) sinh văn bản có điều kiện dựa trên bằng chứng (evidence-conditioned generation) từ một Mô hình Ngôn ngữ Lớn (LLM). Đóng góp cốt lõi là một quy trình đánh giá nghiêm ngặt cho việc triển khai có rủi ro cao, bao gồm một bộ chuẩn (benchmark) phân loại nhãn (đạt 86.7% thu hồi trường hợp khẩn cấp), một bộ chuẩn truy xuất đa bằng chứng tổng hợp, và đánh giá LLM-as-judge dựa trên tiêu chí được thiết kế bởi bác sĩ lâm sàng. Điều này thể hiện một phương pháp tiếp cận RAG kết hợp với quy trình phân loại an toàn (safe routing) cho các ứng dụng y tế chuyên sâu.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Semantic Invariance in Agentic AI",
+            "link": "https://arxiv.org/abs/2603.13173",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu khái niệm \"bất biến ngữ nghĩa\" (semantic invariance) trong các tác nhân AI dựa trên LLM, nhấn mạnh sự cần thiết đảm bảo tính ổn định của suy luận khi đầu vào có sự thay đổi về diễn đạt nhưng giữ nguyên ngữ nghĩa. Các phương pháp đánh giá tiêu chuẩn hiện tại không kiểm tra được khía cạnh quan trọng này. Nhóm tác giả đề xuất một khuôn khổ kiểm thử biến hình (metamorphic testing) hệ thống, áp dụng tám phép biến đổi bảo toàn ngữ nghĩa (như diễn giải lại, sắp xếp lại sự kiện, thay đổi ngữ cảnh) lên bảy mô hình nền tảng thuộc bốn họ kiến trúc khác nhau (Hermes, Qwen3, DeepSeek-R1, gpt-oss) trên 19 bài toán suy luận đa bước. Kết quả gây bất ngờ: quy mô mô hình không dự đoán được độ bền vững; mô hình nhỏ hơn Qwen3-30B-A3B lại đạt độ ổn định cao nhất (79.6% phản hồi bất biến), trong khi các mô hình lớn hơn lại dễ bị tổn thương hơn, chỉ ra lỗ hổng nghiêm trọng trong độ tin cậy của các tác nhân LLM hiện tại.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "DART: Input-Difficulty-AwaRe Adaptive Threshold for Early-Exit DNNs",
+            "link": "https://arxiv.org/abs/2603.12269",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo giới thiệu DART (Input-Difficulty-Aware Adaptive Threshold), một khuôn khổ mới nhằm cải thiện hiệu suất của mạng nơ-ron tích chập thoát sớm (Early-Exit DNNs) bằng cách giải quyết hạn chế của các chính sách thoát tĩnh hoặc độc lập. DART tích hợp ba đổi mới kỹ thuật cốt lõi: (1) một mô-đun ước tính độ khó đầu vào (input difficulty estimation module) hiệu suất thấp để định lượng độ phức tạp của dữ liệu đầu vào, (2) thuật toán tối ưu hóa chính sách thoát chung dựa trên quy hoạch động (dynamic programming), và (3) hệ thống quản lý hệ số thích ứng. Phương pháp này cho phép mạng lưới điều chỉnh ngưỡng thoát dựa trên độ khó thực tế của dữ liệu, dẫn đến việc tối ưu hóa hiệu quả tính toán và năng lượng. Thử nghiệm cho thấy DART mang lại tốc độ tăng tốc lên tới $3.3\\times$ và giảm năng lượng tới $5.1\\times$ trên các kiến trúc CNN tiêu chuẩn. Việc mở rộng sang Vision Transformers (ViT) cho thấy tiềm năng nhưng cũng nhấn mạnh sự cần thiết của cơ chế dành riêng cho Transformer. Khái niệm Điểm Hiệu suất Nhận thức Độ khó (DAES) được đề xuất để đánh giá đa mục tiêu.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Task-Specific Knowledge Distillation via Intermediate Probes",
+            "link": "https://arxiv.org/abs/2603.12270",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo giới thiệu $\\text{\\method{}}$ (Task-Specific Knowledge Distillation via Intermediate Probes), một framework chưng cất kiến thức (knowledge distillation) mới nhằm giải quyết vấn đề phân phối đầu ra (output logits) của mô hình giáo viên (LLM) không đáng tin cậy trong các tác vụ suy luận (reasoning). Thay vì sử dụng logit đầu ra làm tín hiệu huấn luyện cho mô hình sinh viên, $\\text{\\method{}}$ huấn luyện các \"probe\" (bộ phân loại nhẹ) trên các trạng thái ẩn (hidden states) bị đóng băng của giáo viên. Các dự đoán từ probe này, vốn trực tiếp khai thác thông tin nội tại từ tầng trung gian, được dùng làm nhãn giám sát (supervision) cho sinh viên. Sự thay đổi này giúp \"làm sạch\" tín hiệu chưng cất bằng cách bỏ qua nhiễu sinh ra từ quá trình chiếu từ không gian ẩn sang không gian từ vựng (vocabulary projection). Kỹ thuật này mang lại cải thiện nhất quán trên các benchmark suy luận, đặc biệt hiệu quả khi dữ liệu hạn chế, mà không yêu cầu thay đổi kiến trúc của cả giáo viên và sinh viên.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Diagnosing Retrieval Bias Under Multiple In-Context Knowledge Updates in Large Language Models",
+            "link": "https://arxiv.org/abs/2603.12271",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo nghiên cứu này đề xuất khung đánh giá Dynamic Knowledge Instance (DKI) để mô hình hóa hiện tượng sai lệch truy xuất (retrieval bias) trong các Mô hình Ngôn ngữ Lớn (LLMs) khi cùng một sự kiện được cập nhật nhiều lần trong ngữ cảnh dài, mô phỏng lại hiện tượng nhiễu loạn AB-AC trong tâm lý học nhận thức. Thay vì chỉ xét cập nhật một lần, nghiên cứu tập trung vào các kịch bản cập nhật đa tầng lịch sử. Kết quả cho thấy khi số lượng cập nhật tăng lên, độ chính xác truy xuất trạng thái cũ nhất (earliest-state) vẫn cao, nhưng độ chính xác trạng thái mới nhất (latest-state) giảm đáng kể. Phân tích sâu (attention, hidden-state, logits) chỉ ra rằng các tín hiệu này trở nên kém phân biệt trên các lỗi, không cung cấp cơ sở vững chắc để xác định thông tin cập nhật mới nhất. Điều này làm nổi bật thách thức cố hữu trong việc LLMs duy trì và ưu tiên kiến thức mới trong ngữ cảnh kéo dài, ngay cả khi áp dụng các chiến lược can thiệp lấy cảm hứng từ nhận thức chỉ mang lại cải thiện khiêm tốn.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Aligning Language Models from User Interactions",
+            "link": "https://arxiv.org/abs/2603.12273",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này giới thiệu một phương pháp học tập mới gọi là \"tự chưng cất\" (self-distillation) được thiết kế để tận dụng dữ liệu tương tác người dùng đa lượt (multi-turn user interactions) vốn thường bị bỏ qua. Điểm mấu chốt về mặt kỹ thuật là mô hình được điều kiện hóa bằng tin nhắn theo dõi của người dùng (follow-up message), từ đó tạo ra một phân phối token mục tiêu (target token distribution) phản ánh sự thay đổi hành vi của mô hình sau khi nhìn lại (hindsight). Phân phối \"hindsight\" này sau đó được chưng cất trở lại vào chính sách hiện tại của mô hình. Phương pháp này cho phép mô hình học trực tiếp từ những sai sót, phản hồi không phù hợp hoặc sự không tương thích về sở thích mà người dùng đã ngầm chỉ ra qua các lượt hội thoại tiếp theo, cải thiện khả năng tuân thủ chỉ dẫn và sự tương thích tổng thể mà không làm giảm các năng lực khác. Nó cũng hỗ trợ cá nhân hóa liên tục mà không cần phản hồi rõ ràng.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Prompt Injection as Role Confusion",
+            "link": "https://arxiv.org/abs/2603.12277",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo này phân tích cơ chế thất bại của các mô hình ngôn ngữ lớn (LLMs) trước các cuộc tấn công tiêm nhiễm câu lệnh (prompt injection), quy về hiện tượng \"nhầm lẫn vai trò\" (role confusion) trong không gian tiềm ẩn (latent space). Các nhà nghiên cứu chỉ ra rằng LLMs gán thẩm quyền dựa trên cách văn bản được thể hiện (kiểu chữ viết) thay vì nguồn gốc của văn bản. Họ phát triển các \"role probes\" (thăm dò vai trò) để xác định cách mô hình nội tại nhận diện \"ai đang nói\". Phát hiện cốt lõi là văn bản độc hại bắt chước một vai trò tin cậy sẽ kế thừa thẩm quyền của vai trò đó. Ứng dụng mô hình nhầm lẫn vai trò này để tiêm nhiễm các suy luận giả mạo vào lời nhắc người dùng và đầu ra công cụ đã đạt tỷ lệ thành công cao (60-61%) trên nhiều mô hình khác nhau, ngay cả với các cơ chế bảo mật hiện tại. Điều này đề xuất một khuôn khổ cơ chế thống nhất cho prompt injection, nhấn mạnh sự khác biệt cơ bản giữa định nghĩa bảo mật ở giao diện và việc gán thẩm quyền trong không gian tiềm ẩn.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Predictive Analytics for Foot Ulcers Using Time-Series Temperature and Pressure Data",
+            "link": "https://arxiv.org/abs/2603.12278",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo trình bày một khuôn khổ phân tích dự đoán (predictive analytics) cho các vết loét bàn chân tiểu đường (DFU) bằng cách sử dụng dữ liệu chuỗi thời gian từ cảm biến đeo được (nhiệt độ NTC và áp suất FlexiForce) trong quá trình đi bộ. Sự đổi mới kỹ thuật nằm ở việc áp dụng các thuật toán học máy không giám sát (Isolation Forest và K-Nearest Neighbors) để phát hiện dị thường (anomaly detection) trong các mẫu sinh lý được trích xuất qua tiền xử lý và kỹ thuật đặc trưng dữ liệu (feature engineering) chuyên sâu. Isolation Forest thể hiện độ nhạy cao với các vi-dị thường (micro-anomalies), trong khi KNN hiệu quả với các sai lệch cực đoan. Việc kết hợp dữ liệu nhiệt độ và áp suất được chứng minh là cải thiện độ chính xác dự đoán, mở đường cho việc giám sát sức khỏe bàn chân theo thời gian thực, giảm thiểu tỷ lệ mắc DFU.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "The DIME Architecture: A Unified Operational Algorithm for Neural Representation, Dynamics, Control and Integration",
+            "link": "https://arxiv.org/abs/2603.12286",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu kiến trúc DIME (Detect-Integrate-Mark-Execute), một khung tính toán thống nhất nhằm hợp nhất các khía cạnh rời rạc trong thần kinh học như nhận thức, bộ nhớ, định giá và ý thức. Về mặt kiến trúc, DIME bao gồm bốn thành phần tương tác cốt lõi: **Engrams** (các cấu trúc nơ-ron hồi quy phân tán hỗ trợ quỹ đạo kích hoạt), **Execution threads** (quỹ đạo không-thời gian thực thi các quy trình nơ-ron), **Marker systems** (cơ chế điều tiết neuromodulatory và limbic để quản lý gain và tính dẻo), và **Hyperengrams** (các trạng thái tích hợp quy mô lớn cho phép truy cập ý thức vận hành). Điểm đột phá kỹ thuật nằm ở việc tích hợp các lý thuyết *predictive coding*, *active inference* và *global workspace* vào một chu kỳ vận hành chung. Điều này cho phép giải quyết sự phân mảnh trong các mô hình trí tuệ nhân tạo hiện tại, cung cấp nền tảng để xây dựng các hệ thống AI có khả năng tự điều phối, tích hợp đa luồng dữ liệu và mô phỏng các trạng thái vận hành phức tạp tương tự não bộ con người.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "From Garbage to Gold: A Data-Architectural Theory of Predictive Robustness",
+            "link": "https://arxiv.org/abs/2603.12288",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này đề xuất một lý thuyết kiến trúc dữ liệu mới nhằm giải thích nghịch lý trong học máy với dữ liệu bảng (tabular ML): tại sao các mô hình hiện đại vẫn đạt hiệu suất tối ưu bất chấp dữ liệu đầu vào nhiễu và cộng tuyến. Tác giả phân tách nhiễu thành \"Sai số dự báo\" (Predictor Error) và \"Bất định cấu trúc\" (Structural Uncertainty). Thông qua Lý thuyết Thông tin và Mô hình Nhân tố Tiềm ẩn, nghiên cứu chứng minh rằng việc sử dụng tập dữ liệu nhiễu ở số chiều lớn (high-D) có thể vượt qua các giới hạn nhiễu một cách tiệm cận, hiệu quả hơn việc làm sạch dữ liệu ở số chiều thấp (low-D). Khái niệm \"Informative Collinearity\" được giới thiệu như một cơ chế giúp giảm tải suy diễn tiềm ẩn (latent inference) và thúc đẩy hiện tượng \"Benign Overfitting\". Đây là bước tiến quan trọng giúp định hình phương pháp \"Proactive Data-Centric AI\", chuyển dịch trọng tâm từ việc làm sạch dữ liệu đơn thuần sang tối ưu hóa kiến trúc tổ hợp biến dự báo để đạt được độ bền vững dự báo (predictive robustness).",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Detecting Miscitation on the Scholarly Web through LLM-Augmented Text-Rich Graph Learning",
+            "link": "https://arxiv.org/abs/2603.12290",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu LAGMiD, một khung làm việc (framework) đột phá kết hợp giữa Large Language Models (LLMs) và Graph Neural Networks (GNNs) để phát hiện trích dẫn sai trong mạng lưới tri thức học thuật. Điểm cốt lõi là cơ chế suy luận chuỗi bằng chứng (evidence-chain reasoning) dựa trên Chain-of-Thought (CoT), cho phép truy vết trích dẫn đa bước (multi-hop) và đánh giá độ trung thực ngữ nghĩa vượt xa các phương pháp tương đồng ngữ nghĩa truyền thống. LAGMiD giải quyết bài toán chi phí tính toán và rủi ro ảo giác của LLM thông qua phương pháp chưng cất tri thức (knowledge distillation), căn chỉnh các embedding của GNN với trạng thái suy luận trung gian của LLM. Ngoài ra, chiến lược học tập cộng tác (collaborative learning) giúp định tuyến các trường hợp phức tạp cho LLM trong khi GNN tối ưu hóa khả năng khái quát hóa cấu trúc đồ thị. Kết quả đạt SOTA trên ba tập dữ liệu chuẩn, minh chứng cho khả năng mở rộng và độ chính xác cao trong việc duy trì tính toàn vẹn của dữ liệu khoa học.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Synthetic Data Generation for Brain-Computer Interfaces: Overview, Benchmarking, and Future Directions",
+            "link": "https://arxiv.org/abs/2603.12296",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này giải quyết bài toán cốt lõi về khan hiếm và tính nhạy cảm của dữ liệu trong phát triển giao diện não-máy tính (BCI) thông qua việc hệ thống hóa các phương pháp tạo dữ liệu tổng hợp (Synthetic Data Generation). Tác giả phân loại các thuật toán sinh tín hiệu não thành bốn trục kỹ thuật chính: dựa trên tri thức (knowledge-based), đặc trưng (feature-based), mô hình (model-based) và dịch chuyển (translation-based). Điểm đột phá nằm ở việc thiết lập một khung đánh giá chuẩn (benchmarking) toàn diện trên bốn kịch bản BCI tiêu biểu, cho phép so sánh khách quan hiệu năng giữa các kiến trúc Deep Learning trong việc tạo ra tín hiệu có tính hợp lý sinh học (physiologically plausible). Việc công bố mã nguồn DG4BCI cung cấp công cụ quan trọng để cộng đồng tối ưu hóa các mô hình giải mã tín hiệu não, khắc phục các hạn chế về dữ liệu nhiễu và bảo mật, đồng thời mở đường cho các hệ thống BCI hiệu quả và chính xác hơn trong tương lai.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Layer Consistency",
+            "link": "https://arxiv.org/abs/2603.12298",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "GER-steer (Global Evolutionary Refined Steering) là một khung thuật toán mới nhằm tối ưu hóa kỹ thuật điều hướng kích hoạt (activation engineering) để kiểm soát mô hình ngôn ngữ lớn (LLM) mà không cần can thiệp vào trọng số (training-free). Các phương pháp hiện tại thường trích xuất vector điều hướng từ sự khác biệt kích hoạt tĩnh, vốn dễ bị nhiễu cao chiều và hiện tượng \"trôi dạt ngữ nghĩa\" (semantic drift) giữa các lớp. GER-steer giải quyết vấn đề này bằng cách khai thác tính ổn định hình học của quá trình tiến hóa biểu diễn trong mạng nơ-ron để hiệu chỉnh các vector điều hướng. Thuật toán tận dụng tín hiệu toàn cục (global signal) nhằm tách biệt chính xác ý định ngữ nghĩa cốt lõi khỏi các nhiễu giả (orthogonal artifacts). Điểm đột phá kỹ thuật nằm ở khả năng duy trì tính nhất quán xuyên lớp (cross-layer consistency) mà không cần tinh chỉnh thủ công cho từng lớp, tạo ra một giải pháp phổ quát và hiệu quả cho việc căn chỉnh mô hình (alignment) một cách đáng tin cậy.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "A Geometrically-Grounded Drive for MDL-Based Optimization in Deep Learning",
+            "link": "https://arxiv.org/abs/2603.12304",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này đề xuất một khung tối ưu hóa đột phá tích hợp nguyên lý Độ dài Mô tả Tối thiểu (MDL) trực tiếp vào động lực học huấn luyện của mạng thần kinh sâu. Thay vì chỉ đóng vai trò là tiêu chí lựa chọn mô hình hậu kiểm, MDL được tái cấu trúc thành một \"lực đẩy\" (MDL Drive) chủ động trong quá trình tối ưu hóa. Cốt lõi của phương pháp là một đa tạp nhận thức (cognitive manifold) tiến hóa theo dòng chảy Ricci song hành (coupled Ricci flow), cho phép nén các biểu diễn nội tại một cách tự động mà không làm mất đi độ chính xác của dữ liệu. Về mặt lý thuyết, nhóm tác giả chứng minh được sự sụt giảm đơn điệu của độ dài mô tả, các chuyển pha topo thông qua giao thức phẫu thuật hình học và tính hội tụ mũ. Với độ phức tạp thuật toán chỉ $O(N \\log N)$, nghiên cứu này cung cấp một nền tảng toán học vững chắc giúp giải quyết bài toán cân bằng giữa hiệu suất và độ tinh gọn của mô hình, mở ra hướng đi mới cho việc tối ưu hóa dựa trên hình học vi phân và lý thuyết thông tin.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "HCP-DCNet: A Hierarchical Causal Primitive Dynamic Composition Network for Self-Improving Causal Understanding",
+            "link": "https://arxiv.org/abs/2603.12305",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "HCP-DCNet là một khung kiến trúc đột phá nhằm giải quyết hạn chế của Deep Learning truyền thống trong việc suy luận nhân quả (causality) và trả lời các câu hỏi \"phản thực\" (what-if). Thay vì sử dụng các biểu diễn nguyên khối, HCP-DCNet phân rã ngữ cảnh nhân quả thành các \"nguyên ngữ nhân quả\" (causal primitives) có tính tái sử dụng cao, được tổ chức theo bốn lớp trừu tượng: vật lý, chức năng, sự kiện và quy luật. Hệ thống sử dụng mạng định tuyến kênh đôi (dual-channel routing) để kết hợp động các nguyên ngữ này thành Đồ thị thực thi nhân quả (CEGs) có khả năng vi phân toàn phần. Đặc biệt, nghiên cứu giới thiệu chiến lược \"meta-evolution\" dựa trên can thiệp nhân quả thông qua tiến trình quyết định Markov có ràng buộc (CMDP), cho phép mô hình tự cải thiện khả năng hiểu cơ chế nhân quả. Với các đảm bảo toán học về tính hội tụ và khả năng xấp xỉ phổ quát, HCP-DCNet vượt trội trong việc phát hiện nhân quả và suy luận phản thực trong cả môi trường vật lý và xã hội.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "VQQA: An Agentic Approach for Video Evaluation and Quality Improvement",
+            "link": "https://arxiv.org/abs/2603.12310",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu **VQQA (Video Quality Question Answering)**, một framework đa tác vụ (multi-agent) đột phá nhằm tối ưu hóa chất lượng video sinh ra thông qua giao diện ngôn ngữ tự nhiên (black-box). Thay vì dựa vào các chỉ số đánh giá thụ động, VQQA sử dụng các mô hình Thị giác-Ngôn ngữ (VLM) để tạo câu hỏi và phản hồi chi tiết, đóng vai trò như các **\"gradient ngữ nghĩa\" (semantic gradients)** để tinh chỉnh câu lệnh (prompt). Cơ chế này thiết lập một vòng lặp tối ưu hóa khép kín, giúp nhận diện và khắc phục các lỗi hình ảnh (artifacts) mà không cần can thiệp vào cấu trúc nội hàm của mô hình sinh (white-box). Với khả năng ứng dụng cho cả T2V và I2V, VQQA đạt mức cải thiện ấn tượng lần lượt là +11,57% trên T2V-CompBench và +8,43% trên VBench2. Đây là minh chứng cho hiệu quả của **Agentic Workflows** trong việc giải quyết bài toán căn chỉnh ý định người dùng (intent alignment) phức tạp trong lĩnh vực AI Video.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Thermodynamics of Reinforcement Learning Curricula",
+            "link": "https://arxiv.org/abs/2603.12324",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo đề xuất một khuôn khổ hình học mới để mô hình hóa việc học theo chương trình (curriculum learning) trong Học tăng cường (RL) bằng cách áp dụng các nguyên lý từ nhiệt động lực học phi cân bằng. Cụ thể, các tham số phần thưởng (reward parameters) được diễn giải là tọa độ trên một đa tạp tác vụ (task manifold). Công trình chứng minh rằng, bằng cách tối thiểu hóa \"công nhiệt động dư thừa\" (excess thermodynamic work), các chương trình học tối ưu tương ứng với các đường trắc địa (geodesics) trong không gian tác vụ này. Điều này cung cấp một cơ sở lý thuyết vững chắc cho việc thiết kế lịch trình học tập. Ứng dụng trực tiếp là thuật toán \"MEW\" (Minimum Excess Work) để suy diễn lịch trình tôi luyện nhiệt độ (temperature annealing) một cách nguyên tắc cho các mô hình RL tối đa hóa entropy (maximum-entropy RL). Sự đổi mới nằm ở việc chuyển đổi việc thiết kế chương trình RL thành bài toán tối ưu hóa hình học-nhiệt động lực học.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Maximum Entropy Exploration Without the Rollouts",
+            "link": "https://arxiv.org/abs/2603.12325",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo giới thiệu EVE (EigenVector-based Exploration), một thuật toán mới nhằm giải quyết bài toán khám phá (exploration) trong Học tăng cường (RL) bằng cách tối đa hóa entropy của phân phối thăm viếng trạng thái ổn định, mà không cần ước tính tần suất thăm viếng thông qua các rollout on-policy tốn kém. Thay vì thế, phương pháp này chuyển bài toán thành một công thức phần thưởng trung bình nội tại. Điểm cốt lõi là nhận ra rằng phiên bản entropy-chính quy hóa của mục tiêu này có thể được đặc trưng hóa bằng phổ (spectral characterization), liên quan đến các vector riêng trội (dominant eigenvectors) của ma trận chuyển tiếp xác định bởi bài toán. EVE sử dụng các cập nhật lặp tương tự như phương pháp dựa trên giá trị để tính toán nghiệm. Đối với mục tiêu không chính quy hóa ban đầu, họ áp dụng phương pháp lặp chính sách hậu nghiệm (Posterior-Policy Iteration - PPI) để đảm bảo cải thiện entropy đơn điệu và hội tụ. Điều này mang lại một phương pháp hiệu quả hơn về mặt tính toán để đạt được sự bao phủ đồng đều không gian trạng thái.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Optimizing Task Completion Time Updates Using POMDPs",
+            "link": "https://arxiv.org/abs/2603.12340",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo này giải quyết vấn đề quản lý cập nhật thời gian hoàn thành công việc trong quản lý dự án, một vấn đề được coi là chưa được nghiên cứu đầy đủ so với việc ước tính thời lượng. Nhóm tác giả mô hình hóa vấn đề này như một Quy trình quyết định Markov Quan sát một phần (POMDP) để xác định thời điểm và cách thức tối ưu để thông báo lại cho các bên liên quan. Do phần lớn các biến trạng thái (thời gian hiện tại, thông báo trước đó) là có thể quan sát đầy đủ, nghiên cứu tận dụng khuôn khổ Mixed Observability MDP (MOMDP) để tối ưu hóa chính sách hiệu quả hơn. Hàm thưởng được thiết kế để cân bằng giữa chi phí sai sót của thông báo và tần suất cập nhật, nhằm tổng hợp các chính sách điều khiển thông báo tối ưu. Các chính sách được tạo ra hoạt động như bộ điều khiển phản hồi, thích ứng với sự tiến triển của trạng thái niềm tin (belief state), cho thấy sự cải thiện đáng kể về độ chính xác và kiểm soát thông báo.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Budget-Sensitive Discovery Scoring: A Formally Verified Framework for Evaluating AI-Guided Scientific Selection",
+            "link": "https://arxiv.org/abs/2603.12349",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo giới thiệu Budget-Sensitive Discovery Score (BSDS), một khung đánh giá mới, được kiểm chứng bằng hình thức (formally verified) cho các chiến lược lựa chọn ứng viên khám phá khoa học dựa trên AI, đặc biệt khi ngân sách thử nghiệm bị giới hạn. BSDS là một chỉ số phức hợp, sử dụng 20 định lý được kiểm tra bằng trợ lý chứng minh Lean 4, đồng thời phạt lỗi phát hiện sai (weighted False Discovery Rate - $\\lambda$-weighted FDR) và sự do dự quá mức (weighted coverage gap - $\\gamma$-weighted coverage gap) ở mọi mức ngân sách. Điểm trung bình theo ngân sách (Discovery Quality Score - DQS) cung cấp một thống kê tổng hợp duy nhất, ngăn chặn việc các mô hình tối ưu hóa quá mức cho một ngân sách cụ thể. Trong ứng dụng thử nghiệm trên bài toán chọn ứng viên phát hiện thuốc (sử dụng MoleculeNet HIV), kết quả cho thấy một mô hình cơ bản (Greedy-ML dựa trên RF) đạt DQS tốt nhất, vượt qua các biến thể MLP và cấu hình LLM (cả zero-shot và few-shot), cho thấy LLM không mang lại giá trị gia tăng đáng kể trong quy trình này so với mô hình nền tảng.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs",
+            "link": "https://arxiv.org/abs/2603.12382",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "SPARROW là một Mô hình Ngôn ngữ Đa phương thức Lớn (MLLM) dành cho video, giải quyết thách thức về độ chính xác không gian và tính ổn định tham chiếu theo thời gian, vốn thường bị suy giảm do việc sử dụng token phân đoạn ([SEG]) tĩnh. SPARROW giới thiệu hai thành phần cốt lõi: (i) **Target-Specific Tracked Features (TSF)** để đưa các tín hiệu tham chiếu được căn chỉnh theo thời gian vào quá trình huấn luyện, và (ii) một thiết kế **dual-prompt** kết hợp token hộp ([BOX]) và token phân đoạn ([SEG]) để hợp nhất các tiên nghiệm hình học với ngữ nghĩa. Điều này cho phép mô hình theo dõi các đối tượng di chuyển hoặc tái xuất hiện mà không bị trôi dạt không gian hoặc nhầm lẫn danh tính. Hoạt động không cần các bộ dò ngoài (sử dụng bộ đề xuất dựa trên SAM2), SPARROW được tích hợp vào các MLLM video hiện có (UniPixel, GLUS, VideoGLaMM) và đạt được sự cải thiện đáng kể về độ ổn định tham chiếu và độ chính xác không gian trên nhiều bộ dữ liệu chuẩn.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Test-Time Strategies for More Efficient and Accurate Agentic RAG",
+            "link": "https://arxiv.org/abs/2603.12396",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo này nghiên cứu các chiến lược sửa đổi tại thời điểm kiểm thử (test-time) cho các tác vụ RAG (Retrieval-Augmented Generation) theo mô hình Agentic, cụ thể là cải tiến quy trình Search-R1. Các phương pháp Agentic RAG hiện tại gặp vấn đề về sự lặp lại trong truy xuất thông tin và khó khăn trong việc tích hợp ngữ cảnh hiệu quả, dẫn đến lãng phí token và suy luận kém tối ưu. Nhóm tác giả đề xuất tích hợp hai thành phần: một mô-đun **contextualization** (để tích hợp tài liệu đã truy xuất sâu hơn vào lý luận) và một mô-đun **de-duplication** (thay thế các tài liệu đã xử lý bằng các tài liệu mới phù hợp hơn). Việc đánh giá trên HotpotQA và Natural Questions cho thấy phiên bản tối ưu (sử dụng GPT-4.1-mini cho contextualization) đã tăng 5.6% điểm Exact Match (EM) và giảm 10.5% số lượt truy vấn (turns) so với baseline Search-R1, chứng minh hiệu quả trong việc tối ưu hóa quy trình truy xuất tương tác trong các tác vụ RAG phức tạp.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Revisiting Model Stitching In the Foundation Model Era",
+            "link": "https://arxiv.org/abs/2603.12433",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này \"Đánh giá lại việc nối mô hình (Model Stitching)\" trong kỷ nguyên các Mô hình Nền tảng Thị giác (VFM) không đồng nhất (như CLIP, DINOv2, SigLIP 2) vốn có mục tiêu và dữ liệu huấn luyện khác nhau. Các phương pháp nối mô hình truyền thống thất bại khi áp dụng giữa các VFM dị thể. Các tác giả đề xuất một giao thức hệ thống và phát hiện ra rằng việc sử dụng một hàm mất mát so khớp đặc trưng (feature-matching loss) đơn giản tại lớp tiền phân loại (penultimate layer) của mô hình đích giúp việc nối các VFM không đồng nhất trở nên đáng tin cậy trên nhiều tác vụ thị giác. Kết quả quan trọng là, khi nối ở các điểm sâu hơn, mô hình ghép nối có thể vượt trội hơn cả hai mô hình gốc. Điều này dẫn đến đề xuất Cây Nối VFM (VST) nhằm chia sẻ hiệu quả các lớp đầu của VFM, mang lại sự đánh đổi có kiểm soát giữa độ chính xác và độ trễ, đặc biệt hữu ích cho các LLM đa phương thức tích hợp nhiều VFM.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Unmasking Biases and Reliability Concerns in Convolutional Neural Networks Analysis of Cancer Pathology Images",
+            "link": "https://arxiv.org/abs/2603.12445",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu này phân tích tính xác thực (soundness) của các phương pháp đánh giá tiêu chuẩn cho Mạng Nơ-ron Tích chập (CNN) trong chẩn đoán bệnh lý ung thư. Các tác giả đã thử nghiệm bốn kiến trúc CNN phổ biến trên mười ba bộ dữ liệu chuẩn ung thư (melanoma, carcinoma, v.v.). Điểm thay đổi cốt lõi là việc so sánh hiệu suất của mô hình trên dữ liệu thực tế với hiệu suất trên các tập dữ liệu được tạo thành từ các đoạn cắt xén từ vùng nền (background) của ảnh gốc, vốn không chứa thông tin lâm sàng liên quan. Kết quả cho thấy các CNN đạt độ chính xác cao bất ngờ (lên tới 93%) ngay cả khi thiếu dữ liệu sinh y học, bác bỏ giả thuyết vô hiệu là chúng chỉ đạt độ chính xác ngẫu nhiên. Điều này chỉ ra rằng các mô hình đang khai thác các thiên kiến (bias) trong quy trình thu thập hoặc tiền xử lý dữ liệu huấn luyện (ví dụ: nhiễu nền, ký hiệu ảnh) thay vì học các đặc trưng bệnh lý thực sự. Kết quả có ý nghĩa kỹ thuật sâu sắc, cảnh báo rằng các thực hành đánh giá hiện tại có thể dẫn đến kết quả không đáng tin cậy và dễ bị sai lệch trong ứng dụng y sinh.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Operationalising Cyber Risk Management Using AI: Connecting Cyber Incidents to MITRE ATT&CK Techniques, Security Controls, and Metrics",
+            "link": "https://arxiv.org/abs/2603.12455",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Bài báo này giới thiệu một khuôn khổ mới nhằm tự động hóa việc ánh xạ các sự cố an ninh mạng (cyber incidents) sang các kỹ thuật của MITRE ATT&CK, giải quyết thách thức đối với các tổ chức có nguồn lực hạn chế. Sự đổi mới kỹ thuật cốt lõi nằm ở việc sử dụng Xử lý Ngôn ngữ Tự nhiên (NLP) và tinh chỉnh (fine-tuning) mô hình nhúng câu (sentence-transformers) `all-mpnet-base-v2` trên tập dữ liệu đối sánh sự cố-kỹ thuật đã được tăng cường (74,986 cặp). Khung làm việc này tích hợp một \"Cyber Catalog\" kết nối các kỹ thuật ATT&CK với các Điều khiển An ninh CIS và các chỉ số SMART có thể đo lường được. Việc tinh chỉnh mô hình đã cải thiện đáng kể hiệu suất tương quan (Spearman 0.7894, Pearson 0.8756) so với các mô hình cơ sở, cho thấy khả năng trích xuất ngữ nghĩa vượt trội trong việc liên kết thông tin tình báo mối đe dọa với các biện pháp kiểm soát an ninh hành động được.",
+            "date": "2026-03-16T04:00:00"
+        },
+        {
+            "title": "Shattering the Shortcut: A Topology-Regularized Benchmark for Multi-hop Medical Reasoning in LLMs",
+            "link": "https://arxiv.org/abs/2603.12458",
+            "source": "http://export.arxiv.org/rss/cs.AI",
+            "summary_vn": "Nghiên cứu giới thiệu ShatterMed-QA, một benchmark song ngữ mới (10.558 câu hỏi) nhằm đánh giá khả năng suy luận chẩn đoán đa bước phức tạp trong y tế của các Mô hình Ngôn ngữ Lớn (LLM). Thách thức kỹ thuật cốt lõi là ngăn chặn \"học tắt\" (shortcut learning) nơi LLM khai thác các nút trung tâm (hub nodes) chung chung trong biểu đồ tri thức (knowledge graph). Để giải quyết, các tác giả phát triển thuật toán $k$-Shattering để điều chỉnh tô-pô (topology-regularized), loại bỏ các nút trung tâm này nhằm buộc mô hình phải đi theo chuỗi vi bệnh lý (micro-pathological cascades) hợp lý về mặt sinh học. Các câu hỏi được tổng hợp bằng phương pháp che dấu thực thể cầu nối (implicit bridge entity masking) và lấy mẫu phủ định dựa trên tô-pô. Kết quả cho thấy hiệu suất suy giảm lớn trên các LLM, nhưng việc khôi phục bằng Retrieval-Augmented Generation (RAG) cho thấy sự phụ thuộc lớn vào khả năng truy xuất bằng chứng, xác nhận tính hiệu quả của ShatterMed-QA trong việc bóc tách các khiếm khuyết suy luận cơ bản.",
+            "date": "2026-03-16T04:00:00"
+        }
+    ]
 }
