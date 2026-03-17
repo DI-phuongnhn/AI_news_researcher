@@ -55,6 +55,11 @@ class Config:
     # Targeted subreddits for technical AI/ML discussions
     REDDIT_SUBREDDITS = ["MachineLearning"]
     
+    # Facebook Groups for technical AI/ML discussions (for Apify)
+    FB_GROUPS = [
+        "https://www.facebook.com/groups/874728723021553" # AI & Machine Learning group
+    ]
+    
     # --- Data Persistence ---
     DATA_FILE = "data/latest_news.json"
     HISTORICAL_DATA_FILE = "data/all_news.json"

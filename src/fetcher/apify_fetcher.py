@@ -70,17 +70,36 @@ def search_x_apify(keywords_list, max_items=5):
     """
     Specific implementation for an X/Twitter Apify Actor.
     """
-    # Replace with a valid Twitter/X actor from Apify store if needed
-    # (e.g., "quacker/twitter-scraper" or "microworlds/twitter-scraper")
     actor_id = "quacker/twitter-scraper" 
     
-    # Apify Actor input schematic
     run_input = {
         "searchTerms": keywords_list,
         "maxItems": max_items,
         "sort": "Latest"
     }
     return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
+
+def fetch_facebook_groups_apify(group_urls=None, max_items=10):
+    """
+    Specific implementation for Facebook Group Scraping via Apify.
+    Uses Actor: 2chN8UQcH1CfxLRNE (Facebook Groups Scraper)
+    """
+    if not group_urls:
+        group_urls = Config.FB_GROUPS
+        
+    if not group_urls:
+        return []
+
+    actor_id = "2chN8UQcH1CfxLRNE"
+    
+    # Standardize input for this specific Facebook actor
+    run_input = {
+        "startUrls": [{"url": url} for url in group_urls],
+        "resultsLimit": max_items,
+        "viewOption": "CHRONOLOGICAL"
+    }
+    
+    return fetch_apify_posts(actor_id, run_input, "Facebook Group")
 
 if __name__ == "__main__":
     # Test script: you need a valid APIFY_API_TOKEN in your .env
