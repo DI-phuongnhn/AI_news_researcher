@@ -63,7 +63,7 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
         return posts
         
     except Exception as e:
-        print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {e}")
+        print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {type(e).__name__}: {e}")
         return []
 
 def search_x_apify(keywords_list, max_items=5):
