@@ -121,35 +121,49 @@ def run_agent():
     all_raw_news = []
     if search_keywords:
         # 2a. Standard technical search
-        all_raw_news.extend(search_technical_news(search_keywords, max_results=10))
+        print(f"  Searching DuckDuckGo for: {', '.join(search_keywords)}...")
+        raw_tech = search_technical_news(search_keywords, max_results=10)
+        all_raw_news.extend(raw_tech)
+        print(f"  -> Found {len(raw_tech)} technical items.")
         
         # 2b. Specialized social search via Apify (if token exists)
-        print("  Running targeted social media search via Apify...")
+        print(f"  Running targeted social media search via Apify for: {', '.join(search_keywords[:2])}...")
         apify_posts = search_x_apify(search_keywords[:2], max_items=5)
         if apify_posts:
             all_raw_news.extend(apify_posts)
+            print(f"  -> Found {len(apify_posts)} Apify social posts.")
         else:
-            print("  Falling back to DuckDuckGo social search...")
+            print("  -> Apify social search returned 0 items, falling back to DuckDuckGo social...")
             social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
-            all_raw_news.extend(search_technical_news(social_kws, max_results=5))
+            social_news = search_technical_news(social_kws, max_results=5)
+            all_raw_news.extend(social_news)
+            print(f"  -> Found {len(social_news)} fallback social items.")
     
     print("Step 3: Fetching news from RSS & Reddit...")
     # 3a. RSS Feeds (arXiv, OpenAI, IEEE, etc.)
     for name, url in Config.RSS_FEEDS.items():
         print(f"  Fetching {name}...")
-        all_raw_news.extend(fetch_rss_news(url))
+        rss_items = fetch_rss_news(url)
+        all_raw_news.extend(rss_items)
+        print(f"    -> {len(rss_items)} items.")
         
     # 3b. Specialized Reddit Fetcher
-    print("  Fetching Reddit...")
-    all_raw_news.extend(fetch_reddit_ml_news())
+    print("  Fetching Reddit r/MachineLearning...")
+    reddit_items = fetch_reddit_ml_news()
+    all_raw_news.extend(reddit_items)
+    print(f"    -> {len(reddit_items)} items.")
     
     # 3c. Specialized Facebook Group Fetcher (via Apify)
     print("  Fetching Facebook Groups via Apify...")
-    all_raw_news.extend(fetch_facebook_groups_apify(keywords=search_keywords))
+    fb_items = fetch_facebook_groups_apify(keywords=search_keywords)
+    all_raw_news.extend(fb_items)
+    print(f"    -> {len(fb_items)} items.")
     
     # 3d. Specialized X Profile Fetcher (via Apify)
     print("  Fetching X Profiles via Apify...")
-    all_raw_news.extend(fetch_x_profiles_apify())
+    x_items = fetch_x_profiles_apify()
+    all_raw_news.extend(x_items)
+    print(f"    -> {len(x_items)} items.")
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
 
