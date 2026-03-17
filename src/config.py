@@ -49,7 +49,8 @@ class Config:
     # Influential technical figures for potential search context
     X_ACCOUNTS = [
         "AndrewYNg", "karpathy", "OpenAI", "AnthropicAI", 
-        "huggingface", "ylecun", "sama", "fchollet"
+        "huggingface", "ylecun", "sama", "fchollet",
+        "gdb", "drfeifei", "demishassabis", "_akhaliq", "GoogleDeepMind"
     ]
     
     # Targeted subreddits for technical AI/ML discussions
