@@ -2,7 +2,7 @@ name: Daily AI Technical Research
 
 on:
   schedule:
-    - cron: '0 1 * * *' # 01:00 UTC = 08:00 AM VN
+    - cron: '0 1 * * 2,4,6' # 01:00 UTC = 08:00 AM VN (Tue, Thu, Sat)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -27,14 +27,13 @@ jobs:
       - name: Run Research Agent
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         run: python src/main.py
         
       - name: Commit and push results
-        env:
-          GIT_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git config --global user.name "AI Research Bot"
           git config --global user.email "bot@github.com"
-          git add data/latest_news.json index.html
-          git commit -m "Auto-update: Daily technical news research and static dashboard [skip ci]" || echo "No changes to commit"
-          git push https://AI-Research-Bot:${GIT_AUTH_TOKEN}@github.com/DI-phuongnhn/AI_news_researcher.git HEAD:main
+          git add data/*.json index.html
+          git commit -m "Auto-update: Daily technical news research [T-Th-Sa schedule]" || echo "No changes to commit"
+          git push origin main
