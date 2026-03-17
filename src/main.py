@@ -16,6 +16,9 @@ import re
 from datetime import datetime
 from urllib.parse import urlparse, urlunparse
 
+# Ensure project root is in sys.path for 'src' package resolution
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from src.config import Config
 from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.rss_fetcher import fetch_rss_news
