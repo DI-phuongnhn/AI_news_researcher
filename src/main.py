@@ -82,10 +82,16 @@ def run_agent():
     if search_keywords:
         # 2a. Standard technical search
         all_raw_news.extend(search_technical_news(search_keywords, max_results=10))
-        # 2b. Targeted social search (X, FB, Reddit)
-        print("  Running targeted social media search...")
-        social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
-        all_raw_news.extend(search_technical_news(social_kws, max_results=5))
+        
+        # 2b. Specialized social search via Apify (if token exists)
+        print("  Running targeted social media search via Apify...")
+        apify_posts = search_x_apify(search_keywords[:2], max_items=5)
+        if apify_posts:
+            all_raw_news.extend(apify_posts)
+        else:
+            print("  Falling back to DuckDuckGo social search...")
+            social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
+            all_raw_news.extend(search_technical_news(social_kws, max_results=5))
     
     print("Step 3: Fetching news from RSS & Reddit...")
     # 3a. RSS Feeds (arXiv, OpenAI, IEEE, etc.)
