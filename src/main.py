@@ -184,11 +184,35 @@ def run_agent():
     # Filters out general news sites and low-signal content
     final_reports = summarize_news(unique_raw_news, keywords)
     
+    # Step 4.5: Post-Fetch Keyword Extraction (Actual found news)
+    print("Step 4.5: Extracting actual keywords from fetched news...")
+    actual_keywords = "N/A"
+    if final_reports:
+        # Construct a small context of all titles and some summaries for the AI to extract keywords
+        context_text = "\n".join([f"- {r['title']}: {r['summary_vn'][:200]}" for r in final_reports[:15]])
+        extraction_prompt = f"""
+        Based on the following summarized AI news for today, extract the 10 most relevant TECHNICAL keywords.
+        Focus on Model names (e.g. Claude, Opus, DeepSeek), Frameworks, and specific techniques mentioned.
+        
+        NEWS CONTEXT:
+        {context_text}
+        
+        OUTPUT FORMAT (Strict):
+        EN: [kw1, kw2, ...]
+        VN: [kw1, kw2, ...]
+        """
+        try:
+            from src.agent.model_rotator import get_rotator
+            actual_keywords = get_rotator().generate_content(extraction_prompt)
+        except Exception as e:
+            print(f"Warning: Could not extract final keywords: {e}")
+            actual_keywords = keywords # Fallback to discovery phase keywords
+
     # Create the report payload
     run_time = datetime.now()
     output_data = {
         "timestamp": run_time.isoformat(),
-        "keywords": keywords,
+        "keywords": actual_keywords, # Use refined keywords
         "reports": final_reports
     }
     

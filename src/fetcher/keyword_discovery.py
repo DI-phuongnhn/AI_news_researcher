@@ -36,17 +36,17 @@ def get_trending_keywords(languages=None):
     - IT Blogs: Latest posts from TechCrunch, VentureBeat, Wired, and official company blogs (OpenAI, Anthropic, Google).
     
     REQUIREMENTS:
-    1. Focus ONLY on high-technical relevance (e.g., 'Quantization', 'MoE', 'Agentic Workflows').
-    2. ALWAYS include specific names of new Models, Versions, or Frameworks (e.g., 'GPT-5', 'Claude 4', 'OpenClaw', 'DeepSeek-V3', 'Llama-4-70B').
-    3. Provide keywords for these languages: {', '.join(languages)}.
-    4. For Vietnamese (VN), prioritize terms that are globally trending in English but relevant to the local tech community.
+    1. DEEP SCAN: Do NOT just look at hashtags (#). Scan the FULL content of posts and headlines for hidden technical signals.
+    2. MODEL FOCUS: Always identify specific model versions or products (e.g., 'Claude 3.5 Opus', 'Claude 3.7', 'DeepSeek-V3', 'OpenClaw', 'Llama-4', 'SeeDance').
+    3. TECHNICAL DEPTH: Focus on architectural novelty (e.g., 'Linear Attention', 'Sparse Mixture of Experts', 'Agentic Reasoners').
+    4. Provide keywords for these languages: {', '.join(languages)}.
     
     OUTPUT FORMAT:
     EN: [keyword1, keyword2, keyword3, ...]
     VN: [keyword1, keyword2, keyword3, ...]
     JP: [keyword1, keyword2, keyword3, ...]
     
-    Separate languages with double newlines.
+    Keep keywords concise (1-3 words max).
     """
     
     return rotator.generate_content(prompt)
