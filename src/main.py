@@ -11,28 +11,45 @@ import os
 import sys
 import json
 import time
-import difflib
-from datetime import datetime
+from urllib.parse import urlparse, urlunparse
+import re
 
-# Adjust path to handle execution from the project root
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+def normalize_url(url):
+    """
+    Strips tracking parameters and fragments from a URL for robust comparison.
+    """
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url)
+        # Keep only scheme, netloc, and path
+        return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path, '', '', ''))
+    except Exception:
+        return url.lower()
 
-from src.config import Config
-from src.fetcher.rss_fetcher import fetch_rss_news
-from src.fetcher.reddit_fetcher import fetch_reddit_ml_news
-from src.fetcher.keyword_discovery import get_trending_keywords
-from src.fetcher.search_fetcher import search_technical_news
-from src.agent.summarizer import summarize_news
-from src.fetcher.apify_fetcher import search_x_apify, fetch_facebook_groups_apify, fetch_x_profiles_apify
+def normalize_text(text):
+    """
+    Normalizes text by lowercase, removing non-alphanumerics, and stripping common prefixes.
+    """
+    if not text:
+        return ""
+    # Remove brackets like [arXiv], [Social], etc.
+    text = re.sub(r'\[.*?\]', '', text)
+    # Lowercase and remove all non-word characters except spaces
+    text = re.sub(r'[^\w\s]', '', text.lower())
+    # Collapse multiple spaces
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
 
 def calculate_similarity(text1, text2):
     """
-    Calculates the similarity ratio between two strings.
-    Useful for detecting near-duplicate titles or snippets.
+    Calculates the similarity ratio between two strings using normalized versions.
     """
-    if not text1 or not text2:
+    n1 = normalize_text(text1)
+    n2 = normalize_text(text2)
+    if not n1 or not n2:
         return 0.0
-    return difflib.SequenceMatcher(None, str(text1).lower(), str(text2).lower()).ratio()
+    return difflib.SequenceMatcher(None, n1, n2).ratio()
 
 def run_agent():
     """
@@ -46,6 +63,7 @@ def run_agent():
     all_historical_data = []
     seen_urls = set()
     seen_titles = []
+    seen_summaries = [] # Used for snippet-level similarity
 
     if os.path.exists(all_news_file):
         try:
@@ -54,12 +72,20 @@ def run_agent():
                 if isinstance(all_historical_data, list):
                     for day_entry in all_historical_data:
                         for report in day_entry.get("reports", []):
-                            url = report.get("link", "")
+                            # Normalize URL from history
+                            url = normalize_url(report.get("link", ""))
                             if url:
                                 seen_urls.add(url)
-                            title = report.get("title", "")
+                            
+                            # Store normalized title
+                            title = normalize_text(report.get("title", ""))
                             if title:
                                 seen_titles.append(title)
+                                
+                            # Store summary for cross-check (even if it's Vietnamese)
+                            summary = report.get("summary", "")
+                            if summary:
+                                seen_summaries.append(summary)
         except Exception as e:
             print(f"Warning: Could not load historical data for deduplication: {e}")
 
@@ -113,32 +139,42 @@ def run_agent():
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
 
-    # Step 3.5: Deduplication Step
-    print("Step 3.5: Deduplicating news against historical data (URL & Title similarity)...")
+    # Step 3.5: Extreme Deduplication Step
+    print("Step 3.5: Extreme Deduplicating (Strict URL, Normalized Title & Snippets)...")
     unique_raw_news = []
     duplicate_count = 0
 
     for item in all_raw_news:
-        url = item.get("link", "")
+        url = normalize_url(item.get("link", ""))
         title = item.get("title", "")
+        summary = item.get("summary", "") # Current raw snippet
         
-        # 1. Exact URL match
+        # 1. Normalized URL match
         if url and url in seen_urls:
             duplicate_count += 1
             continue
             
-        # 2. Title similarity (>85%)
-        is_title_duplicate = False
+        # 2. Normalized Title similarity (>85%)
+        is_duplicate = False
         if title:
+            norm_title = normalize_text(title)
             for seen_title in seen_titles:
-                if calculate_similarity(title, seen_title) > 0.85:
-                    is_title_duplicate = True
+                if calculate_similarity(norm_title, seen_title) > 0.85:
+                    is_duplicate = True
                     break
         
-        if not is_title_duplicate:
+        # 3. Snippet similarity check if title wasn't enough (>75% similarity)
+        if not is_duplicate and summary:
+            for seen_sum in seen_summaries:
+                if calculate_similarity(summary, seen_sum) > 0.75:
+                    is_duplicate = True
+                    break
+
+        if not is_duplicate:
             unique_raw_news.append(item)
             if url: seen_urls.add(url)
-            if title: seen_titles.append(title)
+            if title: seen_titles.append(normalize_text(title))
+            if summary: seen_summaries.append(summary)
         else:
             duplicate_count += 1
 
