@@ -50,7 +50,7 @@ def summarize_news(news_list, trending_keywords):
         KEYWORDS FOR CONTEXT: {trending_keywords}
         
         1. VALIDATE TECHNICAL DEPTH: 
-           - Is this about architectural novelty, algorithmic breakthroughs, math, Agentic Frameworks (e.g., OpenClaw, LangGraph), or AI Infrastructure?
+           - Is this about architectural novelty, algorithmic breakthroughs, math, Agentic Frameworks (e.g., OpenClaw, LangGraph), AI Automation/Orchestration tools (e.g., n8n, Flowise), or AI Infrastructure?
            - If it is just social impact, general AI hype, or PR for a company without technical substance, return 'TECHNICAL: NO'.
            - IF the source is a general news site (not technical), return 'TECHNICAL: NO'.
         

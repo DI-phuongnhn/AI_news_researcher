@@ -51,7 +51,7 @@ class Config:
         "AndrewYNg", "karpathy", "OpenAI", "AnthropicAI", 
         "huggingface", "ylecun", "sama", "fchollet",
         "gdb", "drfeifei", "demishassabis", "_akhaliq", "GoogleDeepMind",
-        "yoheinakajima", "yamano_ai", "chaen_ai", "iketomoai", "keito_ai", "mikimiki_web"
+        "yoheinakajima", "yamano_ai", "chaen_ai", "iketomoai", "keito_ai", "mikimiki_web", "so_ainsight"
     ]
     
     # Targeted subreddits for technical AI/ML discussions

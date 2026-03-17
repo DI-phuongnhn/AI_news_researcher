@@ -11,8 +11,22 @@ import os
 import sys
 import json
 import time
-from urllib.parse import urlparse, urlunparse
+import difflib
 import re
+from datetime import datetime
+from urllib.parse import urlparse, urlunparse
+
+from src.config import Config
+from src.fetcher.keyword_discovery import get_trending_keywords
+from src.fetcher.rss_fetcher import fetch_rss_news
+from src.fetcher.reddit_fetcher import fetch_reddit_ml_news
+from src.fetcher.search_fetcher import search_technical_news
+from src.fetcher.apify_fetcher import (
+    search_x_apify, 
+    fetch_facebook_groups_apify, 
+    fetch_x_profiles_apify
+)
+from src.agent.summarizer import summarize_news
 
 def normalize_url(url):
     """

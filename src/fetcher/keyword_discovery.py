@@ -39,7 +39,8 @@ def get_trending_keywords(languages=None):
     1. DEEP SCAN: Do NOT just look at hashtags (#). Scan the FULL content of posts and headlines for hidden technical signals.
     2. MODEL FOCUS: Always identify specific model versions or products (e.g., 'Claude 3.5 Opus', 'Claude 3.7', 'DeepSeek-V3', 'OpenClaw', 'Llama-4', 'SeeDance').
     3. TECHNICAL DEPTH: Focus on architectural novelty (e.g., 'Linear Attention', 'Sparse Mixture of Experts', 'Agentic Reasoners').
-    4. Provide keywords for these languages: {', '.join(languages)}.
+    4. ECOSYSTEM & TOOLS: Look for AI infrastructure, Orchestration & Automation tools (e.g., 'n8n', 'LangGraph', 'CrewAI', 'Flowise', 'Vector Databases', 'Dify').
+    5. Provide keywords for these languages: {', '.join(languages)}.
     
     OUTPUT FORMAT:
     EN: [keyword1, keyword2, keyword3, ...]
