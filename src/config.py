@@ -54,7 +54,7 @@ class Config:
     
     # Top AI thought leaders (Technical focuses)
     X_ACCOUNTS = [
-        "karpathy", "AndrewYNg", "ylecun", "_akhaliq",
+        "ai_hakase_", "AndrewYNg", "Kohaku_NFT",
         "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface",
         "fchollet", "drfeifei", "AravSrinivas", "gdb"
     ]
@@ -65,7 +65,7 @@ class Config:
     # Facebook Groups (trimmed to 2 most relevant to conserve Apify credits)
     FB_GROUPS = [
         "https://www.facebook.com/groups/874728723021553", # AI & Machine Learning group
-        "https://www.facebook.com/groups/binhdanhocai"      # Bình dân học AI
+        "https://www.facebook.com/groups/binhdanhocai"     # Bình dân học AI
     ]
     
     # --- Data Persistence ---

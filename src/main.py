@@ -70,37 +70,58 @@ def calculate_similarity(text1, text2):
 
 def filter_relevance(news_list, search_keywords):
     """
-    Fast pre-AI filter that checks if the news item's title or summary 
-    contains at least one of the trending technical keywords.
+    Stricter pre-AI filter that uses Regex word boundaries to avoid false matches
+    (e.g., matching 'ai' in 'cô gái'). Also excludes common noise patterns.
     """
     if not search_keywords:
         return news_list
         
     filtered = []
-    # Normalize keywords for comparison
-    norm_keywords = [normalize_text(kw) for kw in search_keywords if normalize_text(kw)]
+    # Keywords to EXCLUDE (Noise blacklist)
+    excluded_patterns = [
+        r"\boscar\b", r"\bhoạt hình\b", r"\bstopmotion\b", r"\banimation\b",
+        r"\bbán hàng\b", r"\bgom đơn\b", r"\bquảng cáo\b", r"\bkhóa học\b",
+        r"\bmovie\b", r"\bcinema\b", r"\bphim\b",
+        r"có được không", r"ai có ý tưởng", r"dạy làm", r"tìm người", r"cần tư vấn",
+        r"hỏi đáp", r"giúp em", r"giúp mình"
+    ]
+    
+    # Normalize keywords for comparison and escape for regex
+    norm_keywords = [re.escape(normalize_text(kw)) for kw in search_keywords if normalize_text(kw)]
     
     for item in news_list:
-        title_norm = normalize_text(item.get("title", ""))
-        summary_norm = normalize_text(item.get("summary", ""))
+        title = item.get("title", "")
+        summary = item.get("summary", "")
+        text_to_check = f"{title} {summary}".lower()
         
-        # Check for direct keyword match
+        # 1. Strict Exclusion (Noise)
+        is_noise = False
+        for pattern in excluded_patterns:
+            if re.search(pattern, text_to_check):
+                is_noise = True
+                break
+        if is_noise:
+            continue
+
+        # 2. Strict Keyword Matching (Word Boundaries)
         is_relevant = False
         for kw in norm_keywords:
-            if kw in title_norm or kw in summary_norm:
+            # Match exactly the word/phrase with boundaries
+            # Handle both English and Vietnamese characters in boundaries
+            pattern = rf"(?i)\b{kw}\b"
+            if re.search(pattern, text_to_check):
                 is_relevant = True
                 break
         
-        # If it's from a highly technical source like arXiv OR already keyword-searched 
-        # via Apify/Social media, we are more lenient to prevent false negatives.
+        # 3. Source-specific check (ArXiv remains trusted, Apify must now pass keywords)
         source_lower = item.get("source", "").lower()
-        if not is_relevant and ("arxiv" in source_lower or "apify" in source_lower):
+        if not is_relevant and "arxiv" in source_lower:
             is_relevant = True
             
         if is_relevant:
             filtered.append(item)
             
-    print(f"  Pre-AI Filtering: Kept {len(filtered)} out of {len(news_list)} items.")
+    print(f"  Strict Filtering: Kept {len(filtered)} out of {len(news_list)} items.")
     return filtered
 
 def run_agent():
