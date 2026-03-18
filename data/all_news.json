@@ -1,5 +1,18 @@
 [
     {
+        "timestamp": "2026-03-18T02:15:37.503626",
+        "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
+        "reports": [
+            {
+                "title": "GroupGuard: A Framework for Modeling and Defending Collusive Attacks in Multi-Agent Systems",
+                "link": "https://arxiv.org/abs/2603.13940",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo giới thiệu GroupGuard, một framework phòng thủ mới cho các Hệ thống Đa Tác tử (Multi-Agent Systems) nhằm chống lại các cuộc tấn công cộng tác (collusive attacks) do các tác tử LLM phối hợp thực hiện. Về mặt kỹ thuật, GroupGuard áp dụng chiến lược phòng thủ đa tầng, không yêu cầu huấn luyện lại (training-free). Các thành phần cốt lõi bao gồm giám sát liên tục dựa trên đồ thị (graph-based monitoring), thu hút tác tử độc hại bằng cách sử dụng mồi nhử (honeypot inducement), và cắt tỉa cấu trúc (structural pruning) để cô lập các tác tử cấu kết. Điều này rất quan trọng vì nó giải quyết một lỗ hổng bảo mật mới nảy sinh từ sự tương tác phức tạp trong các hệ thống tác tử, nơi các chiến lược xã hội được sử dụng để phá hoại. Kết quả thử nghiệm cho thấy GroupGuard đạt độ chính xác phát hiện lên tới 88%, giúp ổn định hiệu suất cộng tác vốn bị suy giảm nghiêm trọng bởi các cuộc tấn công nhóm này. Đây là một bước tiến trong việc bảo mật các luồng công việc tác tử (Agentic Workflows) phức tạp.",
+                "date": "2026-03-17T04:00:00"
+            }
+        ]
+    },
+    {
         "timestamp": "2026-03-17T17:11:06.939955",
         "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
         "reports": [
