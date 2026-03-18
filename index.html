@@ -199,9 +199,16 @@
         }
 
         #news-list {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+        }
+
+        /* Responsive grid: 1 column on mobile/tablet */
+        @media (max-width: 850px) {
+            #news-list {
+                grid-template-columns: 1fr;
+            }
         }
 
         .news-card {
@@ -213,6 +220,9 @@
             box-shadow: 0 4px 20px var(--shadow);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .news-card::before {
@@ -233,7 +243,7 @@
         }
 
         .news-title {
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--text-main);
             text-decoration: none;
@@ -258,11 +268,12 @@
         }
 
         .news-summary {
-            line-height: 1.7;
+            line-height: 1.6;
             color: var(--text-main);
             opacity: 0.9;
             white-space: pre-line;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            flex-grow: 1;
         }
 
         .badge {
@@ -307,18 +318,20 @@
             color: var(--text-dim);
             font-weight: 500;
             font-size: 1.1rem;
+            grid-column: 1 / -1;
         }
 
         .date-section {
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
             padding-bottom: 0.5rem;
             border-bottom: 2px dashed var(--border);
+            grid-column: 1 / -1;
         }
 
         .date-section h2 {
             margin: 0;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--accent-secondary);
         }
@@ -362,7 +375,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="max-width: 1200px;">
         <header>
             <button class="theme-toggle" onclick="toggleTheme()" title="Đổi giao diện">🌓</button>
             <h1>AI Technical Researcher</h1>
@@ -418,7 +431,7 @@
         let allHistoricalData = [];
         let flattenedReports = [];
         let currentPage = 1;
-        const itemsPerPage = 15;
+        const itemsPerPage = 20;
 
         // Theme Management
         function initTheme() {
@@ -571,20 +584,22 @@
 
                 const card = document.createElement('div');
                 card.className = 'news-card';
-                card.style.marginBottom = '1.5rem';
                 card.innerHTML = `
-                    <a href="${item.link}" class="news-title" target="_blank">${item.title}</a>
-                    <div class="news-meta">
-                        <span class="badge">${item.source}</span>
-                        <span>${item.date ? new Date(item.date).toLocaleDateString('vi-VN') : ''}</span>
+                    <div style="width: 100%">
+                        <a href="${item.link}" class="news-title" target="_blank">${item.title}</a>
+                        <div class="news-meta">
+                            <span class="badge">${item.source}</span>
+                            <span>${item.date ? new Date(item.date).toLocaleDateString('vi-VN') : ''}</span>
+                        </div>
+                        <div class="news-summary">${item.summary_vn}</div>
                     </div>
-                    <div class="news-summary">${item.summary_vn}</div>
                 `;
                 list.appendChild(card);
             });
 
             updatePagination();
             filterNews();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function updatePagination() {
