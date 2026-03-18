@@ -1,5 +1,18 @@
 [
     {
+        "timestamp": "2026-03-18T03:36:01.277913",
+        "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
+        "reports": [
+            {
+                "title": "Human Attribution of Causality to AI Across Agency, Misuse, and Misalignment",
+                "link": "https://arxiv.org/abs/2603.13236",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo này không giới thiệu kiến trúc hay thuật toán mới, mà tập trung vào nghiên cứu thực nghiệm về tâm lý học liên quan đến việc gán trách nhiệm nhân quả đối với AI trong các tình huống sự cố có hại. Các thí nghiệm đánh giá nhận thức của con người về nguyên nhân, đổ lỗi, khả năng dự đoán và lý luận phản thực tế trong các chuỗi sự kiện có sự tham gia của AI. Kết quả cho thấy sự phân bổ trách nhiệm khác nhau dựa trên mức độ \"tác nhân\" (agency) của AI (ví dụ: AI xác định phương tiện so với AI xác định cả mục tiêu và phương tiện). Đáng chú ý, mức độ tự chủ của AI ảnh hưởng mạnh mẽ đến việc gán trách nhiệm cho con người và AI. Kết quả này có ý nghĩa quan trọng đối với việc xây dựng các khuôn khổ pháp lý và đạo đức cho các hệ thống tự trị, đặc biệt trong bối cảnh các hệ thống đa tác nhân (Multi-Agent Systems) ngày càng phức tạp, nơi việc xác định trách nhiệm pháp lý trong chuỗi nhân quả là bước đầu tiên quan trọng.",
+                "date": "2026-03-17T04:00:00"
+            }
+        ]
+    },
+    {
         "timestamp": "2026-03-18T02:15:37.503626",
         "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
         "reports": [
