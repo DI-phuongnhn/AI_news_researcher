@@ -91,8 +91,10 @@ def filter_relevance(news_list, search_keywords):
                 is_relevant = True
                 break
         
-        # If it's from a highly technical source like arXiv, we are more lenient
-        if not is_relevant and "arxiv" in item.get("source", "").lower():
+        # If it's from a highly technical source like arXiv OR already keyword-searched 
+        # via Apify/Social media, we are more lenient to prevent false negatives.
+        source_lower = item.get("source", "").lower()
+        if not is_relevant and ("arxiv" in source_lower or "apify" in source_lower):
             is_relevant = True
             
         if is_relevant:
