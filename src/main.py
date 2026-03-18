@@ -68,6 +68,39 @@ def calculate_similarity(text1, text2):
         return 0.0
     return difflib.SequenceMatcher(None, n1, n2).ratio()
 
+def filter_relevance(news_list, search_keywords):
+    """
+    Fast pre-AI filter that checks if the news item's title or summary 
+    contains at least one of the trending technical keywords.
+    """
+    if not search_keywords:
+        return news_list
+        
+    filtered = []
+    # Normalize keywords for comparison
+    norm_keywords = [normalize_text(kw) for kw in search_keywords if normalize_text(kw)]
+    
+    for item in news_list:
+        title_norm = normalize_text(item.get("title", ""))
+        summary_norm = normalize_text(item.get("summary", ""))
+        
+        # Check for direct keyword match
+        is_relevant = False
+        for kw in norm_keywords:
+            if kw in title_norm or kw in summary_norm:
+                is_relevant = True
+                break
+        
+        # If it's from a highly technical source like arXiv, we are more lenient
+        if not is_relevant and "arxiv" in item.get("source", "").lower():
+            is_relevant = True
+            
+        if is_relevant:
+            filtered.append(item)
+            
+    print(f"  Pre-AI Filtering: Kept {len(filtered)} out of {len(news_list)} items.")
+    return filtered
+
 def run_agent():
     """
     Executes the autonomous research agent pipeline with optimized deduplication and retention.
@@ -230,9 +263,14 @@ def run_agent():
     print(f"  ArXiv (Limited): {len(limited_arxiv)} (from {len(arxiv_items)})")
     print(f"  Others: {len(other_items)}")
     
+    # Step 3.7: Pre-AI Relevance Filtering
+    # Filter diverse_news by discovered keywords before calling AI to save quota and improve relevance
+    print("Step 3.7: Pre-AI Relevance filtering...")
+    filtered_news = filter_relevance(diverse_news, search_keywords)
+    
     print("Step 4: Filtering & Summarizing with AI (Vietnamese)...")
     # Filters out general news sites and low-signal content
-    final_reports = summarize_news(diverse_news, keywords)
+    final_reports = summarize_news(filtered_news, keywords)
     
     # Step 4.5: Post-Fetch Keyword Extraction (Actual found news)
     print("Step 4.5: Extracting actual keywords from fetched news...")

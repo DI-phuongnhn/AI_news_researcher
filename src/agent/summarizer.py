@@ -41,25 +41,35 @@ def summarize_news(news_list, trending_keywords):
         print(f"Processing item {i+1}/{len(items_to_process)}: {item['title'][:50]}...")
             
         prompt = f"""
-        You are an Expert Technical AI Researcher.
-        ANALYSIS TASK:
-        - Analyze the news item: {item['title']}
+        You are an Expert Technical AI Researcher / Senior Software Architect.
+        
+        VALIDATION TASK:
+        Analyze the news item to see if it has REAL technical substance for AI Engineers.
+        
+        - Title: {item['title']}
         - Source: {item['source']}
         - Content: {item['summary'][:1500]}
         
-        KEYWORDS FOR CONTEXT: {trending_keywords}
+        TRENDING CONTEXT: {trending_keywords}
         
-        1. VALIDATE TECHNICAL DEPTH: 
-           - Is this about architectural novelty, algorithmic breakthroughs, math, Agentic Frameworks (e.g., OpenClaw, LangGraph), AI Automation/Orchestration tools (e.g., n8n, Flowise), or AI Infrastructure?
-           - If it is just social impact, general AI hype, or PR for a company without technical substance, return 'TECHNICAL: NO'.
-           - IF the source is a general news site (not technical), return 'TECHNICAL: NO'.
+        CRITERIA FOR 'TECHNICAL: YES':
+        1. Architectural novelty: New model architectures (e.g. MLA, MoE updates), training techniques, or optimization algorithms.
+        2. Frameworks/Ops: Major updates to Agentic frameworks (LangGraph, CrewAI, Autogen) or AI Infrastructure (vLLM, SGLang).
+        3. Research: Math, papers (arXiv), or technical breakdowns from official labs (OpenAI, DeepSeek, Anthropic).
+        4. Benchmarks/Performance: Quantitative technical benchmarks (not just "AI is better now").
         
-        2. SUMMARIZE (VIETNAMESE):
+        REJECT ('TECHNICAL: NO') IF:
+        - It is just social impact, ethics, or general news.
+        - It is "AI Hype" or high-level product announcements without technical documentation.
+        - It is a generic news site (CNN, TechCrunch) reporting on a "cool new tool" without technical details.
+        - It is merely a fundraising announcement or executive hire.
+        
+        5. SUMMARIZE (VIETNAMESE):
            - Provide a high-density technical summary (100-150 words).
-           - Focus on: "What exactly changed?" and "Why does it matter technically?"
-           - Use professional technical Vietnamese vocabulary.
+           - USE technical terms: Agentic, Multi-Agent, RAG, KV Cache, LoRA, etc.
+           - Answer: "How does this work technically?" and "What is the specific innovation?"
         
-        OUTPUT FORMAT:
+        OUTPUT FORMAT (STRICT):
         TECHNICAL: YES/NO
         SUMMARY: [Vietnamese summary here]
         """
@@ -77,4 +87,5 @@ def summarize_news(news_list, trending_keywords):
                 "date": item.get('date', '')
             })
             
+    print(f"AI Filtering complete. Kept {len(summaries)} out of {len(items_to_process)} technical items.")
     return summaries
