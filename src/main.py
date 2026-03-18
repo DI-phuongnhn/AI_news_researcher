@@ -131,7 +131,7 @@ def run_agent():
         
         # 2b. Specialized social search via Apify (if token exists)
         print(f"  Running targeted social media search via Apify for: {', '.join(search_keywords[:2])}...")
-        apify_posts = search_x_apify(search_keywords[:2], max_items=5)
+        apify_posts = search_x_apify(search_keywords[:2])
         if apify_posts:
             all_raw_news.extend(apify_posts)
             print(f"  -> Found {len(apify_posts)} Apify social posts.")

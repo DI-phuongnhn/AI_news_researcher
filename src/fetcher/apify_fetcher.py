@@ -67,11 +67,14 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
         print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {type(e).__name__}: {e}")
         return []
 
-def search_x_apify(keywords_list, max_items=5):
+def search_x_apify(keywords_list, max_items=None):
     """
     Search X/Twitter by keywords using the official Apify Twitter Scraper.
     Actor: apify/twitter-scraper
     """
+    if max_items is None:
+        max_items = Config.APIFY_X_SEARCH_MAX
+    
     actor_id = "apify/twitter-scraper"
     
     run_input = {
@@ -82,11 +85,14 @@ def search_x_apify(keywords_list, max_items=5):
     }
     return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
 
-def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
+def fetch_facebook_groups_apify(group_urls=None, max_items=None, keywords=None):
     """
     Scrape posts from Facebook Groups using the official Apify Facebook Groups Scraper.
     Actor: apify/facebook-groups-scraper
     """
+    if max_items is None:
+        max_items = Config.APIFY_FB_MAX
+    
     if not group_urls:
         group_urls = Config.FB_GROUPS
         
@@ -104,11 +110,14 @@ def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
     
     return fetch_apify_posts(actor_id, run_input, "Facebook Group")
 
-def fetch_x_profiles_apify(handles=None, max_items_per_profile=5):
+def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     """
     Scrapes specific X (Twitter) profiles by their handles.
     Actor: apify/twitter-scraper
     """
+    if max_items_per_profile is None:
+        max_items_per_profile = Config.APIFY_X_PROFILE_MAX
+    
     if not handles:
         handles = Config.X_ACCOUNTS
         

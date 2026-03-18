@@ -28,6 +28,12 @@ class Config:
     # --- Apify Configuration ---
     APIFY_API_TOKEN = os.getenv("APIFY_API_TOKEN", "")
     
+    # Budget control: limit items per actor call to conserve $5/month free credits
+    # With 13 runs/month, keeping total Apify cost under $0.30/run = ~$3.90/month (safe margin)
+    APIFY_X_SEARCH_MAX = 3        # tweets from keyword search
+    APIFY_X_PROFILE_MAX = 2       # tweets per profile handle
+    APIFY_FB_MAX = 5              # posts per Facebook group run
+    
     # Models to cycle through to maximize Free Tier quota
     GEMINI_MODELS_FALLBACK = [
         "gemini-2.0-flash-lite",
@@ -46,22 +52,19 @@ class Config:
         "HuggingFace": "https://huggingface.co/blog/feed.xml"
     }
     
-    # Influential technical figures for potential search context
+    # Top AI thought leaders (trimmed to 8 to conserve Apify credits)
     X_ACCOUNTS = [
-        "AndrewYNg", "karpathy", "OpenAI", "AnthropicAI", 
-        "huggingface", "ylecun", "sama", "fchollet",
-        "gdb", "drfeifei", "demishassabis", "_akhaliq", "GoogleDeepMind",
-        "yoheinakajima", "yamano_ai", "chaen_ai", "iketomoai", "keito_ai", "mikimiki_web", "so_ainsight"
+        "karpathy", "AndrewYNg", "ylecun", "_akhaliq",
+        "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface"
     ]
     
     # Targeted subreddits for technical AI/ML discussions
     REDDIT_SUBREDDITS = ["MachineLearning"]
     
-    # Facebook Groups for technical AI/ML discussions (for Apify)
+    # Facebook Groups (trimmed to 2 most relevant to conserve Apify credits)
     FB_GROUPS = [
         "https://www.facebook.com/groups/874728723021553", # AI & Machine Learning group
-        "https://www.facebook.com/groups/364997627165697",  # J2Team Community
-        "https://www.facebook.com/groups/binhdanhocai" # Bình dân học AI
+        "https://www.facebook.com/groups/binhdanhocai"      # Bình dân học AI
     ]
     
     # --- Data Persistence ---
