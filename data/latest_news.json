@@ -3,6 +3,62 @@
     "keywords": "EN: [HYQNET, Neural-Symbolic, FOL, Knowledge Graph, NextMem, LLM-based Agents, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]\nVN: [HYQNET, Logic Neural-Symbolic, FOL, Đồ thị tri thức, NextMem, Tác tử LLM, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]",
     "reports": [
         {
+            "title": "GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.\n\nGPT-5.4 is als...",
+            "link": "https://t.co/1hy6xXLAmJ",
+            "summary": "GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.\n\nGPT-5.4 is also now available in the API and Codex.\n\nGPT-5.4 brings our advances in reasoning, coding, and agentic workflows into one frontier model. https://t.co/1hy6xXLAmJ",
+            "summary_vn": "Bài đăng công bố kỹ thuật: OpenAI ra mắt phiên bản GPT-5.4 với tư duy suy luận sâu (Thinking) và bản Pro. Mô hình tích hợp quy trình làm việc agentic và có sẵn qua API/Codex.",
+            "source": "Apify: X (Twitter)",
+            "date": "2026-03-05T18:10:38+00:00"
+        },
+        {
+            "title": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security te...",
+            "link": "https://twitter.com",
+            "summary": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security testing and evaluation capabilities in OpenAI Frontier. Promptfoo will remain open source under the current license, and we will continue to service and support current customers.",
+            "summary_vn": "Tin mua lại chiến lược: OpenAI mua lại Promptfoo để tăng cường khả năng kiểm thử bảo mật và đánh giá các Agent AI. Promptfoo vẫn duy trì mã nguồn mở.",
+            "source": "Apify: X (Twitter)",
+            "date": "2026-03-09T17:01:35+00:00"
+        },
+        {
+            "title": "Codex Security—our application security agent—is now in research preview.\n\nhttps...",
+            "link": "https://t.co/JG2uwGUJFv",
+            "summary": "Codex Security—our application security agent—is now in research preview.\n\nhttps://t.co/JG2uwGUJFv",
+            "summary_vn": "Bảo mật AI: Codex Security - Agent bảo mật ứng dụng của OpenAI chính thức ra mắt bản thử nghiệm nghiên cứu.",
+            "source": "Apify: X (Twitter)",
+            "date": "2026-03-06T18:19:33+00:00"
+        },
+        {
+            "title": "We're publishing a new evaluation suite and research paper on Chain-of-Thought (...",
+            "link": "https://t.co/isZkNkPXZm",
+            "summary": "We're publishing a new evaluation suite and research paper on Chain-of-Thought (CoT) Controllability.\n\nWe find that GPT-5.4 Thinking shows low ability to obscure its reasoning—suggesting CoT monitoring remains a useful safety tool. https://t.co/isZkNkPXZm",
+            "summary_vn": "Bài đăng công bố kỹ thuật: OpenAI ra mắt phiên bản GPT-5.4 với tư duy suy luận sâu (Thinking) và bản Pro. Mô hình tích hợp quy trình làm việc agentic và có sẵn qua API/Codex.",
+            "source": "Apify: X (Twitter)",
+            "date": "2026-03-05T20:07:34+00:00"
+        },
+        {
+            "title": "GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less ...",
+            "link": "https://t.co/oJpXsp9TBc",
+            "summary": "GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less cringe.\n\nhttps://t.co/oJpXsp9TBc",
+            "summary_vn": "Cập nhật công nghệ AI: GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less cringe.\n\nhttps://t.co/oJpXsp9TBc",
+            "source": "Apify: X (Twitter)",
+            "date": "2026-03-03T18:02:08+00:00"
+        },
+        {
+            "title": "gpt-oss is out!\n\nwe made an open model that performs at the level of o4-mini and...",
+            "link": "https://twitter.com",
+            "summary": "gpt-oss is out!\n\nwe made an open model that performs at the level of o4-mini and runs on a high-end laptop (WTF!!)\n\n(and a smaller one that runs on a phone).\n\nsuper proud of the team; big triumph of technology.",
+            "summary_vn": "Đột phá công nghệ: Phát hành GPT-OSS, mô hình mã nguồn mở hiệu năng tương đương o4-mini có thể chạy mượt mà ngay trên laptop phổ thông.",
+            "source": "Apify: X (Twitter)",
+            "date": "2025-08-05T17:03:40+00:00"
+        },
+        {
+            "title": "deepseek's r1 is an impressive model, particularly around what they're able to d...",
+            "link": "https://twitter.com",
+            "summary": "deepseek's r1 is an impressive model, particularly around what they're able to deliver for the price.\n\nwe will obviously deliver much better models and also it's legit invigorating to have a new competitor! we will pull up some releases.",
+            "summary_vn": "Cạnh tranh AI: Đánh giá mô hình DeepSeek R1 với hiệu năng ấn tượng so với giá thành, thúc đẩy cuộc đua phát triển mô hình mới tại OpenAI.",
+            "source": "Apify: X (Twitter)",
+            "date": "2025-01-28T02:29:53+00:00"
+        },
+        {
             "title": "Neural-Symbolic Logic Query Answering in Non-Euclidean Space",
             "link": "https://arxiv.org/abs/2603.15633",
             "source": "http://export.arxiv.org/rss/cs.AI",
