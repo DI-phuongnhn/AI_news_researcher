@@ -112,8 +112,8 @@ def fetch_facebook_groups_apify(group_urls=None, max_items=None, keywords=None):
 
 def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     """
-    Scrapes specific X (Twitter) profiles by their handles.
-    Actor: apify/twitter-scraper
+    Scrapes specific X (Twitter) profiles by their handles using the Fast Scraper.
+    Actor: u6ppkMWAx2E2MpEuF
     """
     if max_items_per_profile is None:
         max_items_per_profile = Config.APIFY_X_PROFILE_MAX
@@ -124,13 +124,15 @@ def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     if not handles:
         return []
 
-    actor_id = "apify/twitter-scraper"
+    actor_id = "u6ppkMWAx2E2MpEuF"
     
-    # Use twitterHandles for profile scraping
+    # Use 'handles' and 'tweetsDesired' for the Fast Scraper
     run_input = {
-        "twitterHandles": handles,
-        "maxItems": max_items_per_profile * len(handles),
-        "sort": "Latest"
+        "handles": handles,
+        "tweetsDesired": max_items_per_profile * len(handles),
+        "addUserInfo": True,
+        "startUrls": [],
+        "proxyConfig": { "useApifyProxy": True }
     }
     
     return fetch_apify_posts(actor_id, run_input, "X Profiles")

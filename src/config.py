@@ -52,10 +52,11 @@ class Config:
         "HuggingFace": "https://huggingface.co/blog/feed.xml"
     }
     
-    # Top AI thought leaders (trimmed to 8 to conserve Apify credits)
+    # Top AI thought leaders (Technical focuses)
     X_ACCOUNTS = [
         "karpathy", "AndrewYNg", "ylecun", "_akhaliq",
-        "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface"
+        "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface",
+        "fchollet", "drfeifei", "AravSrinivas", "gdb"
     ]
     
     # Targeted subreddits for technical AI/ML discussions
