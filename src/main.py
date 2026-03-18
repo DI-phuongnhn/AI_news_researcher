@@ -211,9 +211,28 @@ def run_agent():
 
     print(f"  Filtered out {duplicate_count} duplicate items. Unique items remaining: {len(unique_raw_news)}")
     
+    # Step 3.6: Source-Diverse Ordering & ArXiv Limiting
+    # Prioritize social media (Apify) and limit ArXiv to exactly 10 items as requested
+    print("Step 3.6: Prioritizing Apify and limiting ArXiv...")
+    social_items = [item for item in unique_raw_news if "Apify" in item.get("source", "")]
+    
+    # ArXiv items (from RSS)
+    arxiv_items = [item for item in unique_raw_news if "arxiv" in item.get("source", "").lower() or "arxiv" in item.get("link", "").lower()]
+    limited_arxiv = arxiv_items[:10]
+    
+    # Other items (Reddit, other RSS feeds not from ArXiv)
+    other_items = [item for item in unique_raw_news if "Apify" not in item.get("source", "") and item not in arxiv_items]
+    
+    # Final ordering: Social (Priority) -> Limited ArXiv -> Others
+    diverse_news = social_items + limited_arxiv + other_items
+    
+    print(f"  Priority (Social/Apify): {len(social_items)}")
+    print(f"  ArXiv (Limited): {len(limited_arxiv)} (from {len(arxiv_items)})")
+    print(f"  Others: {len(other_items)}")
+    
     print("Step 4: Filtering & Summarizing with AI (Vietnamese)...")
     # Filters out general news sites and low-signal content
-    final_reports = summarize_news(unique_raw_news, keywords)
+    final_reports = summarize_news(diverse_news, keywords)
     
     # Step 4.5: Post-Fetch Keyword Extraction (Actual found news)
     print("Step 4.5: Extracting actual keywords from fetched news...")
