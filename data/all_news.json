@@ -1,5 +1,81 @@
 [
     {
+        "timestamp": "2026-03-18T06:39:23.763463",
+        "keywords": "EN: [HYQNET, Neural-Symbolic, FOL, Knowledge Graph, NextMem, LLM-based Agents, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]\nVN: [HYQNET, Logic Neural-Symbolic, FOL, Đồ thị tri thức, NextMem, Tác tử LLM, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]",
+        "reports": [
+            {
+                "title": "Neural-Symbolic Logic Query Answering in Non-Euclidean Space",
+                "link": "https://arxiv.org/abs/2603.15633",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "HYQNET là một mô hình Neural-Symbolic mới được thiết kế để giải quyết các truy vấn logic bậc nhất (FOL) trên đồ thị tri thức (Knowledge Graph - KG). Đột phá kỹ thuật cốt lõi của nghiên cứu này là việc chuyển đổi không gian biểu diễn từ Euclidean sang không gian Hyperbolic, giúp phản ánh chính xác cấu trúc phân cấp (hierarchical) và đệ quy của các truy vấn logic phức tạp. Về mặt kiến trúc, HYQNET phân rã các truy vấn FOL thành một cây thao tác gồm các phép chiếu quan hệ (relation projections) và các phép toán logic dựa trên tập mờ (fuzzy sets), giúp tăng cường tính diễn giải. Để xử lý các liên kết bị thiếu trên đồ thị, mô hình tích hợp một Hyperbolic GNN chuyên biệt cho việc hoàn thiện đồ thị tri thức (KG Completion). Sự kết hợp giữa hình học phi Euclidean và Neural-Symbolic cho phép mô hình duy trì các phụ thuộc cấu trúc chặt chẽ, vượt trội hơn các phương pháp nhúng truyền thống trong việc xử lý các suy luận đa bước và dữ liệu đồ thị có cấu trúc phân cấp sâu.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+                "link": "https://arxiv.org/abs/2603.15634",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "NextMem giới thiệu một khung quản lý bộ nhớ sự thật (factual memory) cho các LLM-based Agents, giải quyết bài toán đánh đổi giữa chi phí ngữ cảnh của RAG và hiện tượng Catastrophic Forgetting của Parametric methods. Kiến trúc cốt lõi dựa trên một **autoregressive autoencoder**, cho phép nén và lưu trữ thông tin dưới dạng **latent memory** (bộ nhớ ẩn) thay vì văn bản thuần. \n\nVề mặt kỹ thuật, nghiên cứu đề xuất quy trình huấn luyện hai giai đoạn: (1) **Autoregressive reconstruction alignment** để đảm bảo khả năng tái tạo dữ liệu chính xác từ không gian ẩn và (2) **Progressive latent substitution** để tối ưu hóa quá trình tích hợp kiến thức mới. NextMem còn áp dụng **Quantization** để giảm thiểu tài nguyên lưu trữ bộ nhớ. Phương pháp này giúp Agent truy xuất thông tin hiệu quả hơn, tối ưu hóa Context Window và KV Cache so với các kỹ thuật indexing truyền thống, đồng thời đạt được độ bền bỉ (robustness) cao trong các tác vụ suy luận dài hơi.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "AIDABench: AI Data Analytics Benchmark",
+                "link": "https://arxiv.org/abs/2603.15636",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "AIDABench là một benchmark nghiên cứu mới (arXiv:2603.15636) được thiết kế để đánh giá khả năng phân tích dữ liệu đầu-cuối (end-to-end) của các mô hình ngôn ngữ lớn (LLM). Thay vì tập trung vào các kỹ năng rời rạc, benchmark này cung cấp hơn 600 tác vụ thực tế thuộc ba chiều: Question Answering, trực quan hóa và tạo tệp tin từ dữ liệu không đồng nhất (heterogeneous data) như SQL databases, spreadsheets và báo cáo tài chính. Điểm đổi mới kỹ thuật nằm ở việc thiết lập các kịch bản có độ khó cực cao, đòi hỏi khả năng suy luận Agentic phức tạp và Test-time Scaling để giải quyết các vấn đề mà chuyên gia phải mất 1-2 giờ xử lý. Kết quả đánh giá trên các mô hình SOTA như Claude 4.5 Sonnet, Gemini 3 Pro và Qwen3-Max (Thinking model) cho thấy sự hạn chế của các hệ thống hiện tại trong việc duy trì tính nhất quán khi xử lý quy trình phân tích đa bước. Đây là tài liệu tham khảo quan trọng cho kỹ sư AI đang tối ưu hóa hệ thống Agentic Reasoners và RAG nâng cao.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "The Comprehension-Gated Agent Economy: A Robustness-First Architecture for AI Economic Agency",
+                "link": "https://arxiv.org/abs/2603.15639",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu đề xuất kiến trúc **Comprehension-Gated Agent Economy (CGAE)**, một khung tham chiếu chính quy (formal architecture) nhằm kiểm soát quyền hạn kinh tế của AI Agent dựa trên các chỉ số robustness thực nghiệm thay vì các benchmark năng lực thông thường. Hệ thống vận hành thông qua một hàm cổng (**weakest-link gate function**) ánh xạ ba chiều vector độ bền: **CDCT** (tuân thủ ràng buộc), **DDFT** (tính toàn vẹn tri thức) và **AGT** (căn chỉnh hành vi). Điểm đổi mới kỹ thuật nằm ở việc chứng minh toán học ba đặc tính: (1) **Bounded economic exposure** (giới hạn trách nhiệm tài chính theo độ bền vững xác minh), (2) **Incentive-compatible** (buộc Agent tối ưu hóa lợi nhuận thông qua việc cải thiện robustness), và (3) **Monotonic safety scaling**. Kiến trúc này tích hợp cơ chế **temporal decay** và tái kiểm định ngẫu nhiên để ngăn chặn hiện tượng \"certification drift\" trong các hệ thống Multi-Agent phức tạp, tạo cầu nối kỹ thuật giữa kiểm thử an toàn và khả năng thực thi giao dịch tài chính tự động.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "Form Follows Function: Recursive Stem Model",
+                "link": "https://arxiv.org/abs/2603.15641",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Recursive Stem Model (RSM) là một kiến trúc suy luận đệ quy mới, cải tiến từ dòng mô hình TRM và HRM nhằm giải quyết các bài toán NP-hard phức tạp thông qua việc tinh chỉnh trạng thái ẩn (latent state). Về mặt kỹ thuật, RSM thay đổi cơ chế huấn luyện truyền thống bằng cách tách rời lịch sử hidden-state (detached warm-up) và chỉ áp dụng hàm loss tại bước cuối cùng thay vì giám sát sâu (deep supervision). Mô hình sử dụng cơ chế toán tử chuyển tiếp độc lập với độ sâu (depth-agnostic transition operator) kết hợp với kỹ thuật Stochastic Depth trên các vòng lặp ngoài ($H$) để tăng cường tính ổn định. Đổi mới quan trọng nhất nằm ở khả năng \"Test-time Scaling\": RSM cho phép suy luận tới 20,000 bước tại thời điểm inference mặc dù chỉ huấn luyện với 20 bước, giúp tăng độ chính xác trên Sudoku-Extreme lên 97.5%. Phương pháp này giúp tốc độ huấn luyện nhanh hơn 20 lần và giảm tỷ lệ lỗi 5 lần so với các mô hình đệ quy trước đó.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "CraniMem: Cranial Inspired Gated and Bounded Memory for Agentic Systems",
+                "link": "https://arxiv.org/abs/2603.15642",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "CraniMem đề xuất một kiến trúc bộ nhớ đa tầng (multi-stage memory) mới cho các Agentic systems, giải quyết các hạn chế về nhiễu và quản lý trạng thái trong các workflow dài hơi mà RAG truyền thống thường gặp phải. Hệ thống kết hợp cơ chế **goal-conditioned gating** (đóng mở cổng dựa trên mục tiêu) và **utility tagging** (gán nhãn hữu dụng) để chọn lọc thông tin đầu vào. Cấu trúc kỹ thuật bao gồm: một **Episodic Buffer** có giới hạn để duy trì ngữ cảnh ngắn hạn và một **Knowledge Graph** (đồ thị tri thức) cấu trúc hóa cho khả năng truy xuất ngữ nghĩa dài hạn. Điểm đổi mới quan trọng là quy trình **scheduled consolidation loop** (vòng lặp củng cố định kỳ), giúp tái nạp các dấu vết dữ liệu có giá trị cao vào đồ thị tri thức và cắt tỉa (pruning) các mục ít giá trị. Cách tiếp cận này giúp tối ưu hóa sự phát triển của bộ nhớ, giảm thiểu can nhiễu từ dữ liệu rác (noise injection) và đạt hiệu suất ổn định hơn so với baseline Mem0 và Vanilla RAG trên các benchmark long-horizon.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "GSI Agent: Domain Knowledge Enhancement for Large Language Models in Green Stormwater Infrastructure",
+                "link": "https://arxiv.org/abs/2603.15643",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "GSI Agent là một khung công việc (framework) LLM chuyên biệt nhằm tối ưu hóa khả năng xử lý tri thức trong lĩnh vực Hạ tầng Kỹ thuật Nước mưa Xanh (GSI). Về mặt kỹ thuật, hệ thống này kết hợp ba phương pháp cốt lõi: (1) Tinh chỉnh có giám sát (Supervised Fine-tuning - SFT) trên bộ dữ liệu chỉ dẫn GSI chuyên biệt; (2) Áp dụng RAG (Retrieval-Augmented Generation) để truy xuất dữ liệu từ các tài liệu quy chuẩn và hướng dẫn kỹ thuật đô thị; (3) Thiết lập quy trình Agentic reasoning pipeline để điều phối việc truy xuất và tích hợp ngữ cảnh. Điểm đổi mới cụ thể nằm ở việc xây dựng một bộ dữ liệu GSI Dataset mới dựa trên các kịch bản kiểm tra thực địa, giúp mô hình vượt qua giới hạn về ảo giác (hallucination) thường gặp ở các LLM tổng quát khi xử lý các thông số kỹ thuật hạ tầng. Framework này cho thấy hiệu quả trong việc cấu trúc hóa phản hồi và nâng cao độ chính xác trong các tác vụ bảo trì kỹ thuật phức tạp.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "Did You Check the Right Pocket? Cost-Sensitive Store Routing for Memory-Augmented Agents",
+                "link": "https://arxiv.org/abs/2603.15658",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo giới thiệu một hướng tiếp cận mới cho các tác nhân tăng cường bộ nhớ (memory-augmented agents) bằng cách chuyển đổi truy xuất bộ nhớ thành một bài toán định tuyến cửa hàng (store-routing problem) thay vì truy xuất đồng nhất từ tất cả các cửa hàng. Sự đổi mới cốt lõi nằm ở việc định tuyến có chọn lọc (selective retrieval), giúp giảm đáng kể số lượng token ngữ cảnh được đưa vào mô hình (token efficiency) trong khi vẫn duy trì hoặc cải thiện độ chính xác cho các tác vụ QA. Về mặt kỹ thuật, vấn đề được hình thức hóa như một bài toán ra quyết định nhạy cảm với chi phí (cost-sensitive decision problem), cân bằng giữa độ chính xác của câu trả lời và chi phí truy xuất. Điều này trực tiếp giải quyết các hạn chế về chi phí và độ nhiễu ngữ cảnh của các kiến trúc RAG đa cửa hàng hiện tại, gợi ý rằng cơ chế định tuyến thông minh là một thành phần kiến trúc quan trọng cho các hệ thống Multi-Store Agent có khả năng mở rộng.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "DynaTrust: Defending Multi-Agent Systems Against Sleeper Agents via Dynamic Trust Graphs",
+                "link": "https://arxiv.org/abs/2603.15661",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo giới thiệu DynaTrust, một phương pháp phòng thủ mới chống lại các \"sleeper agent\" (đặc vụ ngủ đông) trong các Hệ thống Đa Tác tử (Multi-Agent Systems - MAS) dựa trên LLM. Điểm đổi mới kỹ thuật cốt lõi là việc mô hình hóa MAS như một **Đồ thị Tin cậy Động (Dynamic Trust Graph - DTG)**. Thay vì sử dụng các chính sách chặn tĩnh, DynaTrust coi tin cậy là một quá trình liên tục, cập nhật động mức độ tin cậy của từng tác tử dựa trên hành vi lịch sử và sự tự tin từ các tác tử chuyên gia đã chọn. Về mặt kỹ thuật, thay vì loại bỏ hoàn toàn tác tử bị nghi ngờ (dẫn đến tỷ lệ dương tính giả cao), DynaTrust tự động tái cấu trúc DTG để **cô lập các tác tử bị xâm nhập** và duy trì tính kết nối nhiệm vụ (task connectivity). Đánh giá trên các benchmark (AdvBench, HumanEval) cho thấy DynaTrust cải thiện đáng kể tỷ lệ phòng thủ thành công so với các phương pháp hiện tại như AgentShield, tập trung vào tính linh hoạt và khả năng thích ứng với các chiến lược đối nghịch thay đổi.",
+                "date": "2026-03-18T04:00:00"
+            },
+            {
+                "title": "QV May Be Enough: Toward the Essence of Attention in LLMs",
+                "link": "https://arxiv.org/abs/2603.15665",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo này đề xuất một phân tích lý thuyết sâu sắc về cơ chế Attention trong Transformer, bắt nguồn từ các nguyên tắc cơ bản về phân tích cú pháp và từ loại (POS). Trọng tâm là việc đơn giản hóa QKV (Query-Key-Value) thành mô hình QV (Query-Value) để nắm bắt bản chất của cơ chế chú ý. Nghiên cứu này cung cấp một khuôn khổ thống nhất để giải thích hiệu quả của các kiến trúc hiện đại như MQA và GQA, đồng thời chỉ ra các đánh đổi cố hữu của chúng. Đổi mới kỹ thuật chính là việc đề xuất **QV-Ka**, một lược đồ tối ưu hóa mới được xác thực bằng thực nghiệm. Về mặt kỹ thuật, công trình này nhằm mục đích giảm thiểu sự dư thừa trong cơ chế Attention bằng cách tập trung vào các thành phần cần thiết cho việc biểu diễn ngữ nghĩa, có khả năng dẫn đến các kiến trúc LLM hiệu quả hơn và dễ giải thích hơn trong tương lai.",
+                "date": "2026-03-18T04:00:00"
+            }
+        ]
+    },
+    {
         "timestamp": "2026-03-18T03:36:01.277913",
         "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
         "reports": [
