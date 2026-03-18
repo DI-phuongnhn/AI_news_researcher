@@ -29,6 +29,7 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
     
     try:
         print(f"  Starting Apify Actor: {actor_id} for {platform_name}...")
+        print(f"  Input: {run_input}")
         # Run the actor and wait for it to finish
         run = client.actor(actor_id).call(run_input=run_input)
         
@@ -42,14 +43,14 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
             # - URLs are usually in 'url', 'post_url'
             # - dates are usually 'created_at', 'timestamp'
             
-            text_content = item.get("full_text") or item.get("text") or item.get("content") or ""
-            url = item.get("url") or item.get("post_url") or ""
-            date_raw = item.get("created_at") or item.get("date") or datetime.now().isoformat()
+            text_content = item.get("full_text") or item.get("text") or item.get("message") or item.get("content") or ""
+            url = item.get("url") or item.get("post_url") or item.get("postUrl") or ""
+            date_raw = item.get("created_at") or item.get("date") or item.get("time") or datetime.now().isoformat()
             
             # Use the first 50 chars of text as title if title is missing
             title = item.get("title")
             if not title:
-                title = text_content[:50] + "..." if text_content else "No Title"
+                title = text_content[:80] + "..." if text_content else "No Title"
                 
             posts.append({
                 "title": title,
@@ -68,44 +69,37 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
 
 def search_x_apify(keywords_list, max_items=5):
     """
-    Specific implementation for an X/Twitter Apify Actor.
+    Search X/Twitter by keywords using the official Apify Twitter Scraper.
+    Actor: apify/twitter-scraper
     """
-    actor_id = "quacker/twitter-scraper" 
+    actor_id = "apify/twitter-scraper"
     
     run_input = {
         "searchTerms": keywords_list,
         "maxItems": max_items,
-        "sort": "Latest"
+        "sort": "Latest",
+        "tweetLanguage": "en"
     }
     return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
 
 def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
     """
-    Specific implementation for Facebook Group Scraping via Apify.
-    Uses Actor: 2chN8UQcH1CfxLRNE (Facebook Groups Scraper)
+    Scrape posts from Facebook Groups using the official Apify Facebook Groups Scraper.
+    Actor: apify/facebook-groups-scraper
     """
-    from datetime import timedelta
-    
     if not group_urls:
         group_urls = Config.FB_GROUPS
         
     if not group_urls:
+        print("  [Facebook Group] No group URLs configured. Skipping.")
         return []
 
-    actor_id = "2chN8UQcH1CfxLRNE"
+    actor_id = "apify/facebook-groups-scraper"
     
-    # Calculate date 7 days ago (YYYY-MM-DD)
-    seven_days_ago = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
-    current_year = datetime.now().year
-    
-    # Standardize input for this specific Facebook actor
+    # Standardize input for the official Facebook Groups Scraper
     run_input = {
         "startUrls": [{"url": url} for url in group_urls if url],
         "resultsLimit": max_items,
-        "viewOption": "CHRONOLOGICAL",
-        "searchGroupKeyword": keywords[0] if keywords and isinstance(keywords, list) else keywords,
-        "searchGroupYear": str(current_year),
-        "onlyPostsNewerThan": seven_days_ago
     }
     
     return fetch_apify_posts(actor_id, run_input, "Facebook Group")
@@ -113,7 +107,7 @@ def fetch_facebook_groups_apify(group_urls=None, max_items=10, keywords=None):
 def fetch_x_profiles_apify(handles=None, max_items_per_profile=5):
     """
     Scrapes specific X (Twitter) profiles by their handles.
-    Uses Actor: quacker/twitter-scraper
+    Actor: apify/twitter-scraper
     """
     if not handles:
         handles = Config.X_ACCOUNTS
@@ -121,11 +115,11 @@ def fetch_x_profiles_apify(handles=None, max_items_per_profile=5):
     if not handles:
         return []
 
-    actor_id = "quacker/twitter-scraper"
+    actor_id = "apify/twitter-scraper"
     
-    # Standardize input for profile scraping
+    # Use twitterHandles for profile scraping
     run_input = {
-        "handles": handles,
+        "twitterHandles": handles,
         "maxItems": max_items_per_profile * len(handles),
         "sort": "Latest"
     }
