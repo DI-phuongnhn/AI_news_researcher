@@ -1,7 +1,7 @@
 [
     {
         "timestamp": "2026-03-18T06:39:23.763463",
-        "keywords": "EN: [HYQNET, Neural-Symbolic, FOL, Knowledge Graph, NextMem, LLM-based Agents, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]\nVN: [HYQNET, Logic Neural-Symbolic, FOL, Đồ thị tri thức, NextMem, Tác tử LLM, Comprehension-Gated Agent Economy (CGAE), Recursive Stem Model (RSM), CraniMem, DynaTrust]",
+        "keywords": "EN: GPT-5.4, Codex, Agentic, Promptfoo\nVN: Mô hình ngôn ngữ lớn, Đa tác tử, Bảo mật AI",
         "reports": [
             {
                 "title": "GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.\n\nGPT-5.4 is als...",
@@ -133,7 +133,7 @@
     },
     {
         "timestamp": "2026-03-18T03:36:01.277913",
-        "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
+        "keywords": "EN: GPT-5.4, Codex, Agentic, Promptfoo\nVN: Mô hình ngôn ngữ lớn, Đa tác tử, Bảo mật AI",
         "reports": [
             {
                 "title": "Human Attribution of Causality to AI Across Agency, Misuse, and Misalignment",
@@ -146,7 +146,7 @@
     },
     {
         "timestamp": "2026-03-18T02:15:37.503626",
-        "keywords": "Error: All (API Key + Model) combinations exhausted their quota.",
+        "keywords": "EN: GPT-5.4, Codex, Agentic, Promptfoo\nVN: Mô hình ngôn ngữ lớn, Đa tác tử, Bảo mật AI",
         "reports": [
             {
                 "title": "GroupGuard: A Framework for Modeling and Defending Collusive Attacks in Multi-Agent Systems",
