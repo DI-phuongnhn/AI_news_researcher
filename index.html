@@ -472,15 +472,28 @@
 
         function processData() {
             flattenedReports = [];
+            const arxivCountPerDay = {};
+
             allHistoricalData.forEach(dayEntry => {
                 const scanDate = new Date(dayEntry.timestamp);
                 const displayGroupDate = scanDate.toLocaleDateString('vi-VN');
+                
+                if (!arxivCountPerDay[displayGroupDate]) {
+                    arxivCountPerDay[displayGroupDate] = 0;
+                }
 
                 dayEntry.reports.forEach(report => {
+                    const src = (report.source || "").toLowerCase();
+                    const isArxiv = src.includes('arxiv.org');
+                    
+                    if (isArxiv) {
+                        arxivCountPerDay[displayGroupDate]++;
+                        if (arxivCountPerDay[displayGroupDate] > 5) return;
+                    }
+
                     const itemDate = report.date ? new Date(report.date) : scanDate;
                     
                     let priority = 1;
-                    const src = (report.source || "").toLowerCase();
                     if (src.includes('x (') || src.includes('facebook') || src.includes('reddit')) {
                         priority = 3;
                     } else if (src.includes('duckduckgo')) {
