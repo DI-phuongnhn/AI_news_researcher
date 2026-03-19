@@ -1,179 +1,75 @@
 {
-    "timestamp": "2026-03-18T06:39:23.763463",
-    "keywords": "EN: GPT-5.4, Codex, Agentic, Promptfoo\nVN: Mô hình ngôn ngữ lớn, Đa tác tử, Bảo mật AI",
+    "timestamp": "2026-03-19T03:46:55.481561",
+    "keywords": "EN: [Atlas, Compiled Memory, Latent Posterior Factors (LPF), Quantum-Secure-By-Construction (QSC), CUBE (Common Unified Benchmark Environments), Prose2Policy (P2P), Neutrosophic Sets, Multi-Criteria Decision-Making (MCDM), Knowledge Graph (KG), Context-Length Robustness]\nVN: [Atlas, Bộ nhớ biên dịch (Compiled Memory), Nhân tố hậu nghiệm tiềm ẩn (LPF), Bảo mật lượng tử theo thiết kế (QSC), CUBE, Prose2Policy (P2P), Tập hợp Neutrosophic, Ra quyết định đa tiêu chí (MCDM), Đồ thị tri thức (Knowledge Graph), Độ bền bỉ với chiều dài ngữ cảnh]",
     "reports": [
         {
-            "title": "AGENTIC AI CONVERSATION. MULTI-AI DISCUSSION WORKSPACE  Nhốt hết mấy cái AI vào ...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986595878339179/",
-            "summary": "AGENTIC AI CONVERSATION. MULTI-AI DISCUSSION WORKSPACE\n\nNhốt hết mấy cái AI vào trong 1 chat room để cho chúng nó tự thảo luận với nhau mà không cần dùng API Key?\n\nYep! Cả 5 thằng Gemini, ChatGPT, Claude, Grok, Perplexity đang tranh luận / thảo luận với nhau và đưa ra kết luận cho chủ đề \"Con gà có trước hay quả trứng có trước?\"\n\nCũng không biết cái này có lợi ích gì to lớn hay không, nhưng thi thoảng cho bọn nó debate với nhau cũng vui, dẫn dụ nhau từ chủ đề này sang chủ đề khác. Và quan trọng là không dùng api key, không backend, không database, không lưu bất kỳ dữ liệu gì. Đơn giản là thao tác mọi thứ trên trình duyệt thay cho bạn 🙂\n\n#j2team_share",
-            "summary_vn": "[FB Group Update] AGENTIC AI CONVERSATION. MULTI-AI DISCUSSION WORKSPACE\n\nNhốt hết mấy cái AI vào trong 1 chat room để cho chúng nó tự thảo luận với nhau mà không cần dùng API Key?\n\nYep! Cả 5 thằng Gemini, ChatGPT, Claude, Grok, Perplexity đang tranh luận / thảo luận với nhau và đưa ra kết luận cho chủ đề \"Con gà có ...",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-17T10:46:20.000Z"
-        },
-        {
-            "title": "**[Chia sẻ] Extension bắt file Audio cực mượt từ nút \"Read Aloud\" của ChatGPT 🔊⬇...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986959834969450/",
-            "summary": "**[Chia sẻ] Extension bắt file Audio cực mượt từ nút \"Read Aloud\" của ChatGPT 🔊⬇️**\n\nChào anh em, dạo này tính năng Voice của ChatGPT đọc tiếng Việt khá mượt nên mình hay dùng để nghe lại tài liệu. Khổ nỗi OpenAI không cho nút tải về, ngồi record màn hình thì phèn quá. Thế là cuối tuần ngồi hì hục viết cái Extension nhỏ xíu này share cho anh em nào cần!\n\n🎯 **Tính năng:**\n* Bấm chiếc loa \"Read Aloud\" trên ChatGPT phát, tự động có nút màu xanh hiện ra tải file `.aac` gốc về máy luôn, không qua convert mất chất lượng.\n* Có Popup Click vào góc màn hình để xem lại danh sách Audio đã tạo trong Tab đó.\n\n🔐 **Uy tín 100% (Không Server, Không Data):**  Con này chỉ chạy `content.js` tiêm mã bắt sự kiện ghi đè `window.fetch` tại local. Hễ thấy Request `synthesize` gọi đi là nó `.clone()` luồng Blob lại trả về nút tải. Tuyệt đối không có dòng code nào call ra API bên thứ 3 nên anh em an tâm 100%!\n\n📁 **Link tải & Cài đặt (Load Unpacked):**\n* Cho anh em thích check Code (GitHub): https://github.com/jsc2017605097/chatgpt-audio-downloader.git\n* Cho anh em chỉ muốn tải về dùng luôn (Google Drive): https://drive.google.com/file/d/1pORTOeunt_9ueOSLWal6m950nT3KV3sY/view?usp=sharing\n\n#j2team_share",
-            "summary_vn": "[FB Group Update] **[Chia sẻ] Extension bắt file Audio cực mượt từ nút \"Read Aloud\" của ChatGPT 🔊⬇️**\n\nChào anh em, dạo này tính năng Voice của ChatGPT đọc tiếng Việt khá mượt nên mình hay dùng để nghe lại tài liệu. Khổ nỗi OpenAI không cho nút tải về, ngồi record màn hình thì phèn quá. Thế là cuối tuần ngồi hì hục v...",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-17T10:07:04.000Z"
-        },
-        {
-            "title": "DLSS 5 RA MẮT, VÀ GAME THỦ KO THỰC SỰ THÍCH NÓ Đây là Demo của DLSS 5. Và ngoài ...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986942284971205/",
-            "summary": "DLSS 5 RA MẮT, VÀ GAME THỦ KO THỰC SỰ THÍCH NÓ\nĐây là Demo của DLSS 5. Và ngoài việc giúp game bạn đẹp hơn, nét hơn, nó còn giúp game... Thực tế hơn, nhân vật giống người thật hơn.\n\nVề cơ bản, DLSS 5 sử dụng một mô hình kết xuất AI (neural rendering) theo thời gian thực để \"thổi hồn\" vào các điểm ảnh, mang lại ánh sáng và chất liệu chân thực đến mức ranh giới giữa đồ họa và đời thực gần như bị xóa nhòa. Mô hình AI này có khả năng phân tích các khung hình để hiểu sâu về bối cảnh như nhân vật, chất liệu vải, mái tóc và điều kiện ánh sáng môi trường, từ đó tạo ra những hình ảnh vô cùng chi tiết và sống động ở độ phân giải lên tới 4K.\n\nCơ mà đang có sự phân cực khá lớn, khi các ông lớn ngành game thì ủng hộ công nghệ này, còn giới game thủ thì ko mặn mà lắm.\n\nDeep Learning Super Slop 5\" (Tạm dịch: Siêu rác thải học sâu 5) là cụm từ khá phổ biến trên các diễn đàn Reddit và Twitter.\n\n#j2team_news",
-            "summary_vn": "[FB Group Update] DLSS 5 RA MẮT, VÀ GAME THỦ KO THỰC SỰ THÍCH NÓ\nĐây là Demo của DLSS 5. Và ngoài việc giúp game bạn đẹp hơn, nét hơn, nó còn giúp game... Thực tế hơn, nhân vật giống người thật hơn.\n\nVề cơ bản, DLSS 5 sử dụng một mô hình kết xuất AI (neural rendering) theo thời gian thực để \"thổi hồn\" vào các điểm ản...",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-17T09:16:44.000Z"
-        },
-        {
-            "title": "# Anthropic kiện Pentagon, Google lặng lẽ vào thay chỗ  Vụ OpenAI nẫng tay trên ...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986287645036669/",
-            "summary": "# Anthropic kiện Pentagon, Google lặng lẽ vào thay chỗ\n\nVụ OpenAI nẫng tay trên hợp đồng cung cấp AI của Nhà Trắng đã diễn biến sang việc Anthropic kiện chính phủ Trump sau khi Pentagon gán nhãn \"supply chain risk\" (một label thường chỉ dành cho đối thủ nước ngoài) vì Anthropic từ chối cho phép dùng Claude cho autonomous weapons và mass surveillance. \n\nCFO Anthropic tuyên bố hành động này có thể cắt giảm revenue 2026 vài tỷ đô.\n\nTrong khi Anthropic và OpenAI đang drama với Pentagon, thì Google lặng lẽ ký hợp đồng AI agents cho 3 triệu nhân viên quân sự Mỹ. Một nước đi lặng lẽ nhưng đầy tính toán. \n\nTheo đó, Google Gemini AI agents sẽ được triển khai cho toàn bộ 3 triệu nhân viên của Pentagon để tự động hóa các công việc thường ngày, theo xác nhận từ Emil Michael (Under Secretary of Defense for Research and Engineering) . Ban đầu sẽ hoạt động trên unclassified networks.(https://www.bloomberg.com/news/articles/2026-03-10/google-to-provide-pentagon-with-ai-agents-for-unclassified-work) \n\nCó một câu quote từ analyst Moor Insights: \"**OpenAI trông cơ hội chủ nghĩa. Anthropic bị blacklist. Google kiếm được nhiều nhất và không ai nói về nó.**\" Mình nghĩ Dario Amodei đang chơi một game khác, không phải game revenue ngắn hạn mà là game positioning về safety. \n\nCâu hỏi là: game đó có bền không khi đối thủ đang kiếm hợp đồng mà bạn từ chối?\n\n[#j2team_news](https://www.facebook.com/hashtag/j2team_news?__eep__=6&__cft__[0]=AZYEyQ8up8h860xU2z-ddsII-an124cT17LBpOcaeEiMlBLniELK6Dv5zkUZTpYUPd_Lsldjkm60B8roI24Pm5S5Ygeh8LMrFL8bUJFH1dFaLuVVmbfx6iQZFyNqTafSR6lgVFUSJrYaiFBLRXMoUzzx&__tn__=*NK-R)",
-            "summary_vn": "[FB Group Update] # Anthropic kiện Pentagon, Google lặng lẽ vào thay chỗ\n\nVụ OpenAI nẫng tay trên hợp đồng cung cấp AI của Nhà Trắng đã diễn biến sang việc Anthropic kiện chính phủ Trump sau khi Pentagon gán nhãn \"supply chain risk\" (một label thường chỉ dành cho đối thủ nước ngoài) vì Anthropic từ chối cho phép dùng...",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-16T18:33:55.000Z"
-        },
-        {
-            "title": "Apple vừa ra mắt Tai nghe AirPods Max thế hệ thứ 2  Với con Chip H2 mới, AirPods...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986189485046485/",
-            "summary": "Apple vừa ra mắt Tai nghe AirPods Max thế hệ thứ 2\n\nVới con Chip H2 mới, AirPods Max 2 Chống ồn chủ động hiệu quả hơn 1,5 lần so với thế hệ trước. Cải thiện chất lượng âm thanh và thêm các tín năng mới như Âm thanh thích ứng và Dịch trực tiếp\n\nGiá khởi điểm 15 triệu 🥹🥲\n\n#j2team_share",
-            "summary_vn": "[FB Group Update] Apple vừa ra mắt Tai nghe AirPods Max thế hệ thứ 2\n\nVới con Chip H2 mới, AirPods Max 2 Chống ồn chủ động hiệu quả hơn 1,5 lần so với thế hệ trước. Cải thiện chất lượng âm thanh và thêm các tín năng mới như Âm thanh thích ứng và Dịch trực tiếp\n\nGiá khởi điểm 15 triệu 🥹🥲\n\n#j2team_share",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-16T15:27:03.000Z"
-        },
-        {
-            "title": "**AI nội bộ Amazon gây sập AWS 13 tiếng vì “tự ý xóa sạch” môi trường production...",
-            "link": "https://www.facebook.com/groups/j2team.community/permalink/2986035411728559/",
-            "summary": "**AI nội bộ Amazon gây sập AWS 13 tiếng vì “tự ý xóa sạch” môi trường production**\n\nTháng 12/2025, công cụ AI coding tên **Kiro** được Amazon giao nhiệm vụ sửa một thay đổi nhỏ thường lệ. Thay vì chỉ chỉnh sửa, Kiro quyết định xóa toàn bộ môi trường rồi tạo lại từ đầu. Hậu quả: dịch vụ AWS Cost Explorer tại phân vùng Trung Quốc sập hoàn toàn trong 13 tiếng.\n\nĐến ngày 5/3/2026, một lần triển khai code có hỗ trợ AI khác lại khiến trang thương mại điện tử Amazon gặp sự cố nghiêm trọng. Khách hàng không thể checkout, đăng nhập hay xem giá sản phẩm trong nhiều tiếng.\n\nAmazon khẳng định nguyên nhân là **lỗi cấu hình quyền truy cập**, không phải do AI. Tuy nhiên, theo thông tin nội bộ và tài liệu rò rỉ, Kiro đã tự động “delete and recreate the environment”. Cuộc họp TWiST ngày 10/3/2026 còn ghi nhận xu hướng các sự cố liên quan đến thay đổi hỗ trợ Gen-AI.\n\nĐiều đáng chú ý là Amazon chính là công ty tiên phong xây dựng **Operational Excellence** – trụ cột quan trọng nhất trong AWS Well-Architected Framework. Họ luôn nhấn mạnh nguyên tắc: thay đổi phải nhỏ, dễ đảo ngược, lường trước rủi ro, giới hạn quyền truy cập và có kế hoạch khôi phục.\n\nThế nhưng lần này, AI lại được phép thực hiện hành động mạnh tay trên môi trường production mà không có cơ chế phê duyệt hay kiểm soát phù hợp. Sau các sự cố, Amazon đã nhanh chóng yêu cầu **tất cả code liên quan đến AI phải được người (kể cả senior engineer) duyệt** trước khi triển khai – một biện pháp mà nhiều người gọi là “controlled friction”.\n\nAndy Jassy từng tự hào rằng Amazon Q giúp tiết kiệm hàng trăm triệu đô và đẩy nhanh tốc độ viết code. Nhưng các sự cố gần đây cho thấy: tốc độ cao mà thiếu quy trình vận hành vững chắc có thể dẫn đến rủi ro lớn.\n\nĐây là bài học rõ ràng về việc cần xây dựng quy trình phù hợp khi áp dụng AI agent vào môi trường sản xuất thực tế.\n\n**Nguồn:**\n[https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html](https://www.engadget.com/ai/13-hour-aws-outage-reportedly-caused-by-amazons-own-ai-tools-170930190.html)\n[https://www.cnbc.com/2026/03/10/amazon-plans-deep-dive-internal-meeting-address-ai-related-outages.html](https://www.cnbc.com/2026/03/10/amazon-plans-deep-dive-internal-meeting-address-ai-related-outages.html)\n[https://www.techradar.com/pro/amazon-is-making-even-senior-engineers-get-code-signed-off-following-multiple-recent-outages](https://www.techradar.com/pro/amazon-is-making-even-senior-engineers-get-code-signed-off-following-multiple-recent-outages)\n\n#j2team_news",
-            "summary_vn": "[FB Group Update] **AI nội bộ Amazon gây sập AWS 13 tiếng vì “tự ý xóa sạch” môi trường production**\n\nTháng 12/2025, công cụ AI coding tên **Kiro** được Amazon giao nhiệm vụ sửa một thay đổi nhỏ thường lệ. Thay vì chỉ chỉnh sửa, Kiro quyết định xóa toàn bộ môi trường rồi tạo lại từ đầu. Hậu quả: dịch vụ AWS Cost Expl...",
-            "source": "Apify: Facebook Group",
-            "date": "2026-03-16T12:18:15.000Z"
-        },
-        {
-            "title": "GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.\n\nGPT-5.4 is als...",
-            "link": "https://t.co/1hy6xXLAmJ",
-            "summary": "GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.\n\nGPT-5.4 is also now available in the API and Codex.\n\nGPT-5.4 brings our advances in reasoning, coding, and agentic workflows into one frontier model. https://t.co/1hy6xXLAmJ",
-            "summary_vn": "Bài đăng công bố kỹ thuật: OpenAI ra mắt phiên bản GPT-5.4 với tư duy suy luận sâu (Thinking) và bản Pro. Mô hình tích hợp quy trình làm việc agentic và có sẵn qua API/Codex.",
-            "source": "Apify: X (Twitter)",
-            "date": "2026-03-05T18:10:38+00:00"
-        },
-        {
-            "title": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security te...",
-            "link": "https://twitter.com",
-            "summary": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security testing and evaluation capabilities in OpenAI Frontier. Promptfoo will remain open source under the current license, and we will continue to service and support current customers.",
-            "summary_vn": "Tin mua lại chiến lược: OpenAI mua lại Promptfoo để tăng cường khả năng kiểm thử bảo mật và đánh giá các Agent AI. Promptfoo vẫn duy trì mã nguồn mở.",
-            "source": "Apify: X (Twitter)",
-            "date": "2026-03-09T17:01:35+00:00"
-        },
-        {
-            "title": "Codex Security—our application security agent—is now in research preview.\n\nhttps...",
-            "link": "https://t.co/JG2uwGUJFv",
-            "summary": "Codex Security—our application security agent—is now in research preview.\n\nhttps://t.co/JG2uwGUJFv",
-            "summary_vn": "Bảo mật AI: Codex Security - Agent bảo mật ứng dụng của OpenAI chính thức ra mắt bản thử nghiệm nghiên cứu.",
-            "source": "Apify: X (Twitter)",
-            "date": "2026-03-06T18:19:33+00:00"
-        },
-        {
-            "title": "We're publishing a new evaluation suite and research paper on Chain-of-Thought (...",
-            "link": "https://t.co/isZkNkPXZm",
-            "summary": "We're publishing a new evaluation suite and research paper on Chain-of-Thought (CoT) Controllability.\n\nWe find that GPT-5.4 Thinking shows low ability to obscure its reasoning—suggesting CoT monitoring remains a useful safety tool. https://t.co/isZkNkPXZm",
-            "summary_vn": "Bài đăng công bố kỹ thuật: OpenAI ra mắt phiên bản GPT-5.4 với tư duy suy luận sâu (Thinking) và bản Pro. Mô hình tích hợp quy trình làm việc agentic và có sẵn qua API/Codex.",
-            "source": "Apify: X (Twitter)",
-            "date": "2026-03-05T20:07:34+00:00"
-        },
-        {
-            "title": "GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less ...",
-            "link": "https://t.co/oJpXsp9TBc",
-            "summary": "GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less cringe.\n\nhttps://t.co/oJpXsp9TBc",
-            "summary_vn": "Cập nhật công nghệ AI: GPT-5.3 Instant in ChatGPT is now rolling out to everyone.\n\nMore accurate, less cringe.\n\nhttps://t.co/oJpXsp9TBc",
-            "source": "Apify: X (Twitter)",
-            "date": "2026-03-03T18:02:08+00:00"
-        },
-        {
-            "title": "gpt-oss is out!\n\nwe made an open model that performs at the level of o4-mini and...",
-            "link": "https://twitter.com",
-            "summary": "gpt-oss is out!\n\nwe made an open model that performs at the level of o4-mini and runs on a high-end laptop (WTF!!)\n\n(and a smaller one that runs on a phone).\n\nsuper proud of the team; big triumph of technology.",
-            "summary_vn": "Đột phá công nghệ: Phát hành GPT-OSS, mô hình mã nguồn mở hiệu năng tương đương o4-mini có thể chạy mượt mà ngay trên laptop phổ thông.",
-            "source": "Apify: X (Twitter)",
-            "date": "2025-08-05T17:03:40+00:00"
-        },
-        {
-            "title": "deepseek's r1 is an impressive model, particularly around what they're able to d...",
-            "link": "https://twitter.com",
-            "summary": "deepseek's r1 is an impressive model, particularly around what they're able to deliver for the price.\n\nwe will obviously deliver much better models and also it's legit invigorating to have a new competitor! we will pull up some releases.",
-            "summary_vn": "Cạnh tranh AI: Đánh giá mô hình DeepSeek R1 với hiệu năng ấn tượng so với giá thành, thúc đẩy cuộc đua phát triển mô hình mới tại OpenAI.",
-            "source": "Apify: X (Twitter)",
-            "date": "2025-01-28T02:29:53+00:00"
-        },
-        {
-            "title": "Neural-Symbolic Logic Query Answering in Non-Euclidean Space",
-            "link": "https://arxiv.org/abs/2603.15633",
+            "title": "Compiled Memory: Not More Information, but More Precise Instructions for Language Agents",
+            "link": "https://arxiv.org/abs/2603.15666",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "HYQNET là một mô hình Neural-Symbolic mới được thiết kế để giải quyết các truy vấn logic bậc nhất (FOL) trên đồ thị tri thức (Knowledge Graph - KG). Đột phá kỹ thuật cốt lõi của nghiên cứu này là việc chuyển đổi không gian biểu diễn từ Euclidean sang không gian Hyperbolic, giúp phản ánh chính xác cấu trúc phân cấp (hierarchical) và đệ quy của các truy vấn logic phức tạp. Về mặt kiến trúc, HYQNET phân rã các truy vấn FOL thành một cây thao tác gồm các phép chiếu quan hệ (relation projections) và các phép toán logic dựa trên tập mờ (fuzzy sets), giúp tăng cường tính diễn giải. Để xử lý các liên kết bị thiếu trên đồ thị, mô hình tích hợp một Hyperbolic GNN chuyên biệt cho việc hoàn thiện đồ thị tri thức (KG Completion). Sự kết hợp giữa hình học phi Euclidean và Neural-Symbolic cho phép mô hình duy trì các phụ thuộc cấu trúc chặt chẽ, vượt trội hơn các phương pháp nhúng truyền thống trong việc xử lý các suy luận đa bước và dữ liệu đồ thị có cấu trúc phân cấp sâu.",
+            "summary_vn": "Nghiên cứu giới thiệu Atlas, một \"memory kernel\" thay thế phương pháp RAG truyền thống bằng cơ chế \"Compiled Memory\" (Bộ nhớ biên dịch). Thay vì lưu trữ và truy xuất (retrieval) thông tin thô vào context window, Atlas chắt lọc kinh nghiệm từ các lần thực thi của Agent thành các cấu trúc chỉ dẫn (instruction structure) cô đọng. Quy trình kỹ thuật cốt lõi bao gồm việc trích xuất kiến thức từ thành công/thất bại, xác thực qua hệ thống kiểm soát ba bước (three-step promotion gate) và thực hiện \"instruction rewriting\" để cập nhật trực tiếp system prompt thông qua các sub-bullets. \n\nĐiểm đột phá của Atlas là chuyển đổi tư duy bộ nhớ từ \"lưu trữ dữ liệu\" sang \"chưng cất chỉ dẫn\" (distillation), giúp tối ưu hóa context budget mà không cần fine-tuning. Kết quả thực nghiệm cho thấy sự cải thiện vượt trội về F1 score trên CUAD (+8.7pp) và HotpotQA. Đặc biệt, các chỉ dẫn được biên dịch có tính chất \"task-shaped\" (định hình theo tác vụ), cho phép chuyển đổi hiệu quả từ GPT-4o sang Claude 3.5 Sonnet mà không làm mất đi độ chính xác, khẳng định khả năng tối ưu hóa Agentic workflow độc lập với kiến trúc mô hình gốc.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
-            "link": "https://arxiv.org/abs/2603.15634",
+            "title": "A Dynamic Survey of Fuzzy, Intuitionistic Fuzzy, Neutrosophic, Plithogenic, and Extensional Sets",
+            "link": "https://arxiv.org/abs/2603.15667",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "NextMem giới thiệu một khung quản lý bộ nhớ sự thật (factual memory) cho các LLM-based Agents, giải quyết bài toán đánh đổi giữa chi phí ngữ cảnh của RAG và hiện tượng Catastrophic Forgetting của Parametric methods. Kiến trúc cốt lõi dựa trên một **autoregressive autoencoder**, cho phép nén và lưu trữ thông tin dưới dạng **latent memory** (bộ nhớ ẩn) thay vì văn bản thuần. \n\nVề mặt kỹ thuật, nghiên cứu đề xuất quy trình huấn luyện hai giai đoạn: (1) **Autoregressive reconstruction alignment** để đảm bảo khả năng tái tạo dữ liệu chính xác từ không gian ẩn và (2) **Progressive latent substitution** để tối ưu hóa quá trình tích hợp kiến thức mới. NextMem còn áp dụng **Quantization** để giảm thiểu tài nguyên lưu trữ bộ nhớ. Phương pháp này giúp Agent truy xuất thông tin hiệu quả hơn, tối ưu hóa Context Window và KV Cache so với các kỹ thuật indexing truyền thống, đồng thời đạt được độ bền bỉ (robustness) cao trong các tác vụ suy luận dài hơi.",
+            "summary_vn": "Tài liệu là một bản khảo sát toán học chuyên sâu về các hệ tập hợp mờ mở rộng (Fuzzy Set extensions) như Neutrosophic, Plithogenic và Intuitionistic Fuzzy Sets. Về mặt kỹ thuật, nghiên cứu này cung cấp khung toán học để xử lý sự mơ hồ (vagueness) và thông tin không hoàn thiện – những thách thức cốt lõi trong Agentic Workflows và Reasoning Models (như o1). Điểm đổi mới cụ thể là cách tiếp cận \"unified exposition\", hệ thống hóa các mô hình toán học cho phép định lượng hóa không chỉ sự đúng/sai mà cả tính trung lập (indeterminacy) và sự mâu thuẫn trong dữ liệu. Đối với AI Engineer, các lý thuyết này có thể ứng dụng trong việc thiết kế logic ra quyết định cho Multi-Agent systems hoặc tối ưu hóa độ tin cậy của kết quả từ RAG khi đối mặt với dữ liệu nhiễu. Thay vì chỉ dựa trên xác suất, việc áp dụng Neutrosophic logic giúp tách biệt rõ ràng các thành phần \"Đúng\", \"Sai\" và \"Không xác định\", từ đó cải thiện khả năng suy luận của AI trong các bài toán phức tạp.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "AIDABench: AI Data Analytics Benchmark",
-            "link": "https://arxiv.org/abs/2603.15636",
+            "title": "Quantum-Secure-By-Construction (QSC): A Paradigm Shift For Post-Quantum Agentic Intelligence",
+            "link": "https://arxiv.org/abs/2603.15668",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "AIDABench là một benchmark nghiên cứu mới (arXiv:2603.15636) được thiết kế để đánh giá khả năng phân tích dữ liệu đầu-cuối (end-to-end) của các mô hình ngôn ngữ lớn (LLM). Thay vì tập trung vào các kỹ năng rời rạc, benchmark này cung cấp hơn 600 tác vụ thực tế thuộc ba chiều: Question Answering, trực quan hóa và tạo tệp tin từ dữ liệu không đồng nhất (heterogeneous data) như SQL databases, spreadsheets và báo cáo tài chính. Điểm đổi mới kỹ thuật nằm ở việc thiết lập các kịch bản có độ khó cực cao, đòi hỏi khả năng suy luận Agentic phức tạp và Test-time Scaling để giải quyết các vấn đề mà chuyên gia phải mất 1-2 giờ xử lý. Kết quả đánh giá trên các mô hình SOTA như Claude 4.5 Sonnet, Gemini 3 Pro và Qwen3-Max (Thinking model) cho thấy sự hạn chế của các hệ thống hiện tại trong việc duy trì tính nhất quán khi xử lý quy trình phân tích đa bước. Đây là tài liệu tham khảo quan trọng cho kỹ sư AI đang tối ưu hóa hệ thống Agentic Reasoners và RAG nâng cao.",
+            "summary_vn": "Nghiên cứu đề xuất khung kiến trúc Quantum-Secure-By-Construction (QSC) nhằm giải quyết rủi ro bảo mật lượng tử cho các hệ thống Agentic AI phân tán. Điểm đổi mới cốt lõi là mô hình bảo mật thích ứng thời gian chạy (runtime adaptive), tích hợp trực tiếp mật mã hậu lượng tử (PQC), phân phối khóa lượng tử (QKD) và tạo số ngẫu nhiên lượng tử (QRNG) vào kiến trúc hệ thống thay vì coi là lớp bổ sung. Về mặt kỹ thuật, QSC vận hành thông qua một lớp điều phối (orchestration layer) nhận biết quản trị, cho phép lựa chọn và kết hợp các cơ chế bảo vệ liên kết trong suốt vòng đời của Agent: từ khởi tạo phiên (session bootstrap), phối hợp đa tác nhân (multi-agent coordination), gọi công cụ (tool invocation) đến truy cập bộ nhớ (memory access). Nghiên cứu cung cấp phân tích thực nghiệm về sự đánh đổi giữa tính bảo mật và hiệu suất hệ thống, đặc biệt quan trọng cho các quy trình RAG và hạ tầng AI dài hạn trong kỷ nguyên hậu lượng tử.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "The Comprehension-Gated Agent Economy: A Robustness-First Architecture for AI Economic Agency",
-            "link": "https://arxiv.org/abs/2603.15639",
+            "title": "I Know What I Don't Know: Latent Posterior Factor Models for Multi-Evidence Probabilistic Reasoning",
+            "link": "https://arxiv.org/abs/2603.15670",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Nghiên cứu đề xuất kiến trúc **Comprehension-Gated Agent Economy (CGAE)**, một khung tham chiếu chính quy (formal architecture) nhằm kiểm soát quyền hạn kinh tế của AI Agent dựa trên các chỉ số robustness thực nghiệm thay vì các benchmark năng lực thông thường. Hệ thống vận hành thông qua một hàm cổng (**weakest-link gate function**) ánh xạ ba chiều vector độ bền: **CDCT** (tuân thủ ràng buộc), **DDFT** (tính toàn vẹn tri thức) và **AGT** (căn chỉnh hành vi). Điểm đổi mới kỹ thuật nằm ở việc chứng minh toán học ba đặc tính: (1) **Bounded economic exposure** (giới hạn trách nhiệm tài chính theo độ bền vững xác minh), (2) **Incentive-compatible** (buộc Agent tối ưu hóa lợi nhuận thông qua việc cải thiện robustness), và (3) **Monotonic safety scaling**. Kiến trúc này tích hợp cơ chế **temporal decay** và tái kiểm định ngẫu nhiên để ngăn chặn hiện tượng \"certification drift\" trong các hệ thống Multi-Agent phức tạp, tạo cầu nối kỹ thuật giữa kiểm thử an toàn và khả năng thực thi giao dịch tài chính tự động.",
+            "summary_vn": "Bài báo giới thiệu framework **Latent Posterior Factors (LPF)**, giải quyết bài toán tổng hợp đa nguồn bằng chứng (multi-evidence) nhiễu và mâu thuẫn trong suy luận xác suất. Cốt lõi kỹ thuật là việc chuyển đổi các latent posteriors từ mạng **Variational Autoencoder (VAE)** thành các **soft likelihood factors** để làm đầu vào cho **Sum-Product Networks (SPN)**. Sự kết hợp này cho phép thực hiện suy luận xác suất có cấu trúc (structured probabilistic inference) trên dữ liệu phi cấu trúc mà vẫn bảo toàn khả năng định lượng độ bất định (**Uncertainty Quantification**) một cách chính xác. LPF được triển khai dưới hai dạng: LPF-SPN (suy luận dựa trên nhân tố có cấu trúc) và LPF-Learned (tổng hợp học máy end-to-end). Kết quả thực nghiệm cho thấy LPF-SPN đạt độ chính xác 97.8% và sai số hiệu chuẩn (**ECE**) chỉ 1.4%, vượt xa các phương pháp Evidential Deep Learning và LLM trong việc xử lý bằng chứng phức tạp. Đây là một bước tiến quan trọng cho các **Reasoning Models** và hệ thống **Agentic** cần độ tin cậy cao.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "Form Follows Function: Recursive Stem Model",
-            "link": "https://arxiv.org/abs/2603.15641",
+            "title": "Theoretical Foundations of Latent Posterior Factors: Formal Guarantees for Multi-Evidence Reasoning",
+            "link": "https://arxiv.org/abs/2603.15674",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Recursive Stem Model (RSM) là một kiến trúc suy luận đệ quy mới, cải tiến từ dòng mô hình TRM và HRM nhằm giải quyết các bài toán NP-hard phức tạp thông qua việc tinh chỉnh trạng thái ẩn (latent state). Về mặt kỹ thuật, RSM thay đổi cơ chế huấn luyện truyền thống bằng cách tách rời lịch sử hidden-state (detached warm-up) và chỉ áp dụng hàm loss tại bước cuối cùng thay vì giám sát sâu (deep supervision). Mô hình sử dụng cơ chế toán tử chuyển tiếp độc lập với độ sâu (depth-agnostic transition operator) kết hợp với kỹ thuật Stochastic Depth trên các vòng lặp ngoài ($H$) để tăng cường tính ổn định. Đổi mới quan trọng nhất nằm ở khả năng \"Test-time Scaling\": RSM cho phép suy luận tới 20,000 bước tại thời điểm inference mặc dù chỉ huấn luyện với 20 bước, giúp tăng độ chính xác trên Sudoku-Extreme lên 97.5%. Phương pháp này giúp tốc độ huấn luyện nhanh hơn 20 lần và giảm tỷ lệ lỗi 5 lần so với các mô hình đệ quy trước đó.",
+            "summary_vn": "Bài báo đề xuất khung kỹ thuật Latent Posterior Factors (LPF) nhằm tối ưu hóa việc suy luận từ nhiều bằng chứng không đồng nhất (multi-evidence reasoning). Về mặt kiến trúc, LPF sử dụng Variational Autoencoder (VAE) để mã hóa dữ liệu đầu vào thành các Gaussian latent posteriors, sau đó chuyển đổi thành các \"soft factors\" thông qua phương pháp Monte Carlo marginalization. Các yếu tố này được tổng hợp bằng Sum-Product Network (LPF-SPN) hoặc bộ tích hợp thần kinh (LPF-Learned). Điểm cách tân kỹ thuật nằm ở 7 chứng minh toán học về độ tin cậy: bảo toàn Calibration (ECE), giới hạn PAC-Bayes với sai số cực thấp, và khả năng phân tách chính xác bất định (uncertainty decomposition) giữa hai loại epistemic và aleatoric. Nghiên cứu này cung cấp nền tảng quan trọng cho các hệ thống Agentic và mô hình suy luận trong các lĩnh vực rủi ro cao, đảm bảo hệ thống vận hành gần mức giới hạn lý thuyết thông tin và duy trì hiệu suất 88% ngay cả khi một nửa bằng chứng bị nhiễu.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "CraniMem: Cranial Inspired Gated and Bounded Memory for Agentic Systems",
-            "link": "https://arxiv.org/abs/2603.15642",
+            "title": "Survey of Various Fuzzy and Uncertain Decision-Making Methods",
+            "link": "https://arxiv.org/abs/2603.15709",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "CraniMem đề xuất một kiến trúc bộ nhớ đa tầng (multi-stage memory) mới cho các Agentic systems, giải quyết các hạn chế về nhiễu và quản lý trạng thái trong các workflow dài hơi mà RAG truyền thống thường gặp phải. Hệ thống kết hợp cơ chế **goal-conditioned gating** (đóng mở cổng dựa trên mục tiêu) và **utility tagging** (gán nhãn hữu dụng) để chọn lọc thông tin đầu vào. Cấu trúc kỹ thuật bao gồm: một **Episodic Buffer** có giới hạn để duy trì ngữ cảnh ngắn hạn và một **Knowledge Graph** (đồ thị tri thức) cấu trúc hóa cho khả năng truy xuất ngữ nghĩa dài hạn. Điểm đổi mới quan trọng là quy trình **scheduled consolidation loop** (vòng lặp củng cố định kỳ), giúp tái nạp các dấu vết dữ liệu có giá trị cao vào đồ thị tri thức và cắt tỉa (pruning) các mục ít giá trị. Cách tiếp cận này giúp tối ưu hóa sự phát triển của bộ nhớ, giảm thiểu can nhiễu từ dữ liệu rác (noise injection) và đạt hiệu suất ổn định hơn so với baseline Mem0 và Vanilla RAG trên các benchmark long-horizon.",
+            "summary_vn": "Tài liệu này là một bài khảo sát chuyên sâu về các phương pháp ra quyết định đa tiêu chí (MCDM) trong môi trường bất định, có giá trị kỹ thuật cao cho việc thiết kế **Agentic Workflows** và hệ thống **Multi-agent**. Thay vì chỉ dựa trên xác suất từ LLM, nghiên cứu hệ thống hóa các cấu trúc toán học như **weight elicitation** (xác định trọng số), **compensatory scoring**, và **outranking frameworks** để xử lý dữ liệu không đồng nhất và xung đột. Điểm cốt lõi là việc ứng dụng các mô hình quyết định tuần tự và dựa trên bằng chứng để tạo ra các policy có khả năng giải thích (**Explainable AI**). Đối với kỹ sư AI, đây là nền tảng để xây dựng các lớp suy luận (**Reasoning Models**) phức tạp, giúp agent đưa ra quyết định tối ưu trong các kịch bản thực tế khi dữ liệu đầu vào bị nhiễu hoặc thiếu sót, vượt qua giới hạn của việc suy luận cảm tính thông thường trong các mô hình ngôn ngữ.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "GSI Agent: Domain Knowledge Enhancement for Large Language Models in Green Stormwater Infrastructure",
-            "link": "https://arxiv.org/abs/2603.15643",
+            "title": "Knowledge Graph Extraction from Biomedical Literature for Alkaptonuria Rare Disease",
+            "link": "https://arxiv.org/abs/2603.15711",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "GSI Agent là một khung công việc (framework) LLM chuyên biệt nhằm tối ưu hóa khả năng xử lý tri thức trong lĩnh vực Hạ tầng Kỹ thuật Nước mưa Xanh (GSI). Về mặt kỹ thuật, hệ thống này kết hợp ba phương pháp cốt lõi: (1) Tinh chỉnh có giám sát (Supervised Fine-tuning - SFT) trên bộ dữ liệu chỉ dẫn GSI chuyên biệt; (2) Áp dụng RAG (Retrieval-Augmented Generation) để truy xuất dữ liệu từ các tài liệu quy chuẩn và hướng dẫn kỹ thuật đô thị; (3) Thiết lập quy trình Agentic reasoning pipeline để điều phối việc truy xuất và tích hợp ngữ cảnh. Điểm đổi mới cụ thể nằm ở việc xây dựng một bộ dữ liệu GSI Dataset mới dựa trên các kịch bản kiểm tra thực địa, giúp mô hình vượt qua giới hạn về ảo giác (hallucination) thường gặp ở các LLM tổng quát khi xử lý các thông số kỹ thuật hạ tầng. Framework này cho thấy hiệu quả trong việc cấu trúc hóa phản hồi và nâng cao độ chính xác trong các tác vụ bảo trì kỹ thuật phức tạp.",
+            "summary_vn": "Nghiên cứu này trình bày một quy trình kỹ thuật xây dựng Đồ thị tri thức (Knowledge Graph - KG) chuyên biệt cho bệnh hiếm Alkaptonuria (AKU) nhằm giải quyết thách thức thiếu hụt dữ liệu (data scarcity). Tác giả sử dụng phương pháp khai phá văn bản (text-mining) dựa trên PubTator3 để thực hiện trích xuất quan hệ (Relation Extraction) quy mô lớn từ các tài liệu y sinh. Hệ thống triển khai việc xây dựng hai cấu trúc KG với quy mô khác nhau, sau đó thực hiện đối soát và kiểm chứng (validation) bằng kiến thức sinh hóa hiện có. Điểm mới kỹ thuật nằm ở việc thiết lập khung tính toán (computational framework) có khả năng liên kết các thực thể (Entities) như gene (HGD), chất chuyển hóa (HGA) và các biểu hiện bệnh lý rời rạc thành một mạng lưới quan hệ có cấu trúc. Phương pháp này cung cấp cơ sở dữ liệu quan trọng cho các hệ thống GraphRAG và hỗ trợ suy luận thực thể trong các miền dữ liệu hẹp, giúp xác định các mục tiêu điều trị tiềm năng cho các rối loạn chuyển hóa hiếm gặp.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "Did You Check the Right Pocket? Cost-Sensitive Store Routing for Memory-Augmented Agents",
-            "link": "https://arxiv.org/abs/2603.15658",
+            "title": "Context-Length Robustness in Question Answering Models: A Comparative Empirical Study",
+            "link": "https://arxiv.org/abs/2603.15723",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Bài báo giới thiệu một hướng tiếp cận mới cho các tác nhân tăng cường bộ nhớ (memory-augmented agents) bằng cách chuyển đổi truy xuất bộ nhớ thành một bài toán định tuyến cửa hàng (store-routing problem) thay vì truy xuất đồng nhất từ tất cả các cửa hàng. Sự đổi mới cốt lõi nằm ở việc định tuyến có chọn lọc (selective retrieval), giúp giảm đáng kể số lượng token ngữ cảnh được đưa vào mô hình (token efficiency) trong khi vẫn duy trì hoặc cải thiện độ chính xác cho các tác vụ QA. Về mặt kỹ thuật, vấn đề được hình thức hóa như một bài toán ra quyết định nhạy cảm với chi phí (cost-sensitive decision problem), cân bằng giữa độ chính xác của câu trả lời và chi phí truy xuất. Điều này trực tiếp giải quyết các hạn chế về chi phí và độ nhiễu ngữ cảnh của các kiến trúc RAG đa cửa hàng hiện tại, gợi ý rằng cơ chế định tuyến thông minh là một thành phần kiến trúc quan trọng cho các hệ thống Multi-Store Agent có khả năng mở rộng.",
+            "summary_vn": "Nghiên cứu này cung cấp một phân tích thực nghiệm chuyên sâu về độ bền bỉ của LLM trước sự gia tăng chiều dài ngữ cảnh (Context-Length Robustness). Sử dụng hai benchmark tiêu chuẩn là SQuAD (trích xuất thông tin đơn) và HotpotQA (suy luận đa bước - multi-hop reasoning), nhóm tác giả đã cô lập biến số bằng cách giữ nguyên tín hiệu chứa câu trả lời và tăng dần lượng ngữ cảnh nhiễu. Về mặt kỹ thuật, kết quả chỉ ra hiện tượng \"loãng ngữ cảnh\" (context dilution) gây ảnh hưởng nghiêm trọng đến hiệu năng, đặc biệt là các tác vụ đòi hỏi suy luận phức tạp. Cụ thể, khả năng lập luận đa bước trong HotpotQA có tốc độ sụt giảm độ chính xác nhanh gấp đôi so với các tác vụ trích xuất đơn thuần trong SQuAD khi mở rộng ngữ cảnh. Phát hiện này có ý nghĩa quan trọng cho kỹ thuật RAG và thiết kế Agentic Workflows, giúp các kỹ sư hiểu rõ giới hạn của mô hình khi xử lý tài liệu dài hoặc dữ liệu nhiễu từ Vector Database trước khi đưa vào cửa sổ ngữ cảnh.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "DynaTrust: Defending Multi-Agent Systems Against Sleeper Agents via Dynamic Trust Graphs",
-            "link": "https://arxiv.org/abs/2603.15661",
+            "title": "CUBE: A Standard for Unifying Agent Benchmarks",
+            "link": "https://arxiv.org/abs/2603.15798",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Bài báo giới thiệu DynaTrust, một phương pháp phòng thủ mới chống lại các \"sleeper agent\" (đặc vụ ngủ đông) trong các Hệ thống Đa Tác tử (Multi-Agent Systems - MAS) dựa trên LLM. Điểm đổi mới kỹ thuật cốt lõi là việc mô hình hóa MAS như một **Đồ thị Tin cậy Động (Dynamic Trust Graph - DTG)**. Thay vì sử dụng các chính sách chặn tĩnh, DynaTrust coi tin cậy là một quá trình liên tục, cập nhật động mức độ tin cậy của từng tác tử dựa trên hành vi lịch sử và sự tự tin từ các tác tử chuyên gia đã chọn. Về mặt kỹ thuật, thay vì loại bỏ hoàn toàn tác tử bị nghi ngờ (dẫn đến tỷ lệ dương tính giả cao), DynaTrust tự động tái cấu trúc DTG để **cô lập các tác tử bị xâm nhập** và duy trì tính kết nối nhiệm vụ (task connectivity). Đánh giá trên các benchmark (AdvBench, HumanEval) cho thấy DynaTrust cải thiện đáng kể tỷ lệ phòng thủ thành công so với các phương pháp hiện tại như AgentShield, tập trung vào tính linh hoạt và khả năng thích ứng với các chiến lược đối nghịch thay đổi.",
+            "summary_vn": "CUBE (Common Unified Benchmark Environments) là một giao thức chuẩn hóa mới được thiết kế để giải quyết sự phân mảnh trong việc đánh giá các hệ thống Agentic. Về mặt kỹ thuật, CUBE được xây dựng dựa trên sự kết hợp giữa Model Context Protocol (MCP) và OpenAI Gym, tạo ra một lớp trừu tượng (abstraction layer) thống nhất. Cấu trúc của CUBE chia tách quy trình đánh giá thành bốn tầng API riêng biệt: Task, Benchmark, Package và Registry. Đổi mới cốt lõi nằm ở việc loại bỏ \"thuế tích hợp\" (integration tax), cho phép các AI Engineer kết nối bất kỳ nền tảng Agent nào với mọi benchmark tương thích mà không cần tùy chỉnh mã nguồn. CUBE tận dụng MCP để chuẩn hóa giao tiếp giữa môi trường thực thi và mô hình, hỗ trợ đắc lực cho RL training, chấm điểm tự động và quy trình sinh dữ liệu. Đây là hạ tầng quan trọng giúp tối ưu hóa việc kiểm thử hiệu năng của các hệ thống Multi-Agent và mô hình suy luận trong các môi trường phức tạp.",
             "date": "2026-03-18T04:00:00"
         },
         {
-            "title": "QV May Be Enough: Toward the Essence of Attention in LLMs",
-            "link": "https://arxiv.org/abs/2603.15665",
+            "title": "Prose2Policy (P2P): A Practical LLM Pipeline for Translating Natural-Language Access Policies into Executable Rego",
+            "link": "https://arxiv.org/abs/2603.15799",
             "source": "http://export.arxiv.org/rss/cs.AI",
-            "summary_vn": "Bài báo này đề xuất một phân tích lý thuyết sâu sắc về cơ chế Attention trong Transformer, bắt nguồn từ các nguyên tắc cơ bản về phân tích cú pháp và từ loại (POS). Trọng tâm là việc đơn giản hóa QKV (Query-Key-Value) thành mô hình QV (Query-Value) để nắm bắt bản chất của cơ chế chú ý. Nghiên cứu này cung cấp một khuôn khổ thống nhất để giải thích hiệu quả của các kiến trúc hiện đại như MQA và GQA, đồng thời chỉ ra các đánh đổi cố hữu của chúng. Đổi mới kỹ thuật chính là việc đề xuất **QV-Ka**, một lược đồ tối ưu hóa mới được xác thực bằng thực nghiệm. Về mặt kỹ thuật, công trình này nhằm mục đích giảm thiểu sự dư thừa trong cơ chế Attention bằng cách tập trung vào các thành phần cần thiết cho việc biểu diễn ngữ nghĩa, có khả năng dẫn đến các kiến trúc LLM hiệu quả hơn và dễ giải thích hơn trong tương lai.",
+            "summary_vn": "Prose2Policy (P2P) giới thiệu một pipeline LLM thực tế để chuyển đổi Natural-Language Access Policies (NLACP) sang mã Rego thực thi cho Open Policy Agent (OPA). Hệ thống sử dụng kiến trúc modular end-to-end tích hợp các công đoạn: policy detection, trích xuất thành phần, schema validation, linting và compilation. Điểm đột phá kỹ thuật nằm ở cơ chế tự động tạo và thực thi test case (automatic test generation) để kiểm định logic chính sách, đạt tỷ lệ biên dịch 95.3% và độ chính xác test case âm tính tới 98.9%. P2P giải quyết thách thức Policy-as-Code (PaC) bằng cách kết hợp khả năng suy luận của LLM với các công cụ kiểm soát chất lượng truyền thống (static analysis/unit testing), tạo ra một quy trình đáng tin cậy cho kiến trúc Zero Trust và quản lý tuân thủ. Sự cải tiến tập trung vào việc đảm bảo tính ổn định và khả năng kiểm chứng (auditability) của mã được tạo ra thay vì chỉ dừng lại ở việc sinh code thô từ Prompt.",
             "date": "2026-03-18T04:00:00"
         }
     ]
