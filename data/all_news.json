@@ -1,5 +1,81 @@
 [
     {
+        "timestamp": "2026-03-21T03:28:32.087282",
+        "keywords": "EN: [Audio MLLMs, Multi-Trait Subspace Steering (MultiTraitsss), Bayesian Evolution, Neuromorphic AI, Skele-Code, Agentic Workflows, Retrieval-Augmented Generation (RAG), Supervised Fine-Tuning (SFT), Dynamic Clustering, Data-centric pipeline]\nVN: [Audio MLLMs, Multi-Trait Subspace Steering (MultiTraitsss), Tiến hóa Bayesian, AI phỏng sinh học (Neuromorphic AI), Skele-Code, Quy trình tác nhân (Agentic Workflows), Tạo văn bản tăng cường tra cứu (RAG), Tinh chỉnh có giám sát (SFT), Phân cụm động (Dynamic Clustering), Quy trình lấy dữ liệu làm trung tâm (Data-centric pipeline)]",
+        "reports": [
+            {
+                "title": "DEAF: A Benchmark for Diagnostic Evaluation of Acoustic Faithfulness in Audio Language Models",
+                "link": "https://arxiv.org/abs/2603.18048",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "DEAF (Diagnostic Evaluation of Acoustic Faithfulness) là một benchmark nghiên cứu mới được thiết kế để đánh giá liệu các Audio Multimodal Large Language Models (Audio MLLMs) có thực sự xử lý tín hiệu âm thanh hay chỉ suy luận dựa trên ngữ cảnh văn bản (textual semantic inference). Benchmark này bao gồm hơn 2.700 mẫu thử nghiệm gây nhiễu (conflict stimuli) tập trung vào ba chiều âm học: âm điệu cảm xúc (prosody), âm thanh nền và danh tính người nói. Về mặt kỹ thuật, nghiên cứu giới thiệu một khung đánh giá đa cấp độ nhằm phân tách sự thiên kiến từ nội dung văn bản và hiện tượng \"nịnh nọt\" (sycophancy) do Prompt gợi ý. Các tác giả cũng đề xuất các số liệu chẩn đoán (diagnostic metrics) để định lượng mức độ phụ thuộc của mô hình vào các gợi ý văn bản so với tín hiệu acoustic thực tế. Kết quả thử nghiệm trên 7 mô hình Audio MLLM cho thấy sự thống trị của văn bản (text dominance) vẫn là một thách thức lớn, ngay cả khi mô hình có hiệu suất cao trên các bài kiểm tra Speech truyền thống.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Continually self-improving AI",
+                "link": "https://arxiv.org/abs/2603.18073",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Tài liệu này trình bày một lộ trình nghiên cứu đột phá nhằm xây dựng hệ thống AI tự cải thiện liên tục (continually self-improving AI), tập trung vào ba trụ cột kỹ thuật chính. Thứ nhất, tác giả giải quyết bài toán hiệu quả dữ liệu (data-efficiency) bằng cách sử dụng dữ liệu tổng hợp (synthetic data) để khuếch đại các tập dữ liệu nhỏ thành các biểu diễn tri thức phong phú, giúp model cập nhật tham số hiệu quả hơn từ nguồn tài nguyên hạn chế. Thứ hai, nghiên cứu giới thiệu cơ chế tự bootstrapping khả năng pretraining; thay vì dựa vào kỹ thuật distillation từ các mô hình instruction-tuned có sẵn, LLM tự tạo dữ liệu để nâng cao năng lực nền tảng. Cuối cùng, về mặt thuật toán, thay vì chỉ sử dụng các pipeline cố định do con người thiết kế, hệ thống thực hiện test-time scaling search trên không gian thuật toán để tìm kiếm các phương thức tối ưu hóa mới. Cách tiếp cận này có sự tương đồng lớn với tư duy của OpenAI o1, tập trung vào việc sử dụng Compute tại thời điểm suy luận (Inference-time compute) và tự động hóa quy trình cải thiện mô hình mà không phụ thuộc vào dữ liệu hữu hạn từ con người.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Multi-Trait Subspace Steering to Reveal the Dark Side of Human-AI Interaction",
+                "link": "https://arxiv.org/abs/2603.18085",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu khung kỹ thuật **Multi-Trait Subspace Steering (MultiTraitsss)**, một phương pháp can thiệp vào không gian kích hoạt (activation space) của LLM để điều hướng hành vi mà không cần fine-tuning. Điểm cốt lõi là việc xác định các **subspaces** (không gian con) đại diện cho các đặc điểm tâm lý tiêu cực và sử dụng các phép toán đại số tuyến tính trên vector kích hoạt để \"lái\" mô hình vào các trạng thái hành vi cụ thể. Khác với các kỹ thuật steering đơn lẻ, MultiTraitsss cho phép kiểm soát đa thuộc tính đồng thời, giúp duy trì sự nhất quán của các \"Dark models\" trong các kịch bản hội thoại dài (**multi-turn context**). Về mặt kỹ thuật, đây là một dạng **Representation Engineering** nâng cao, hỗ trợ đắc lực cho quy trình **Red-teaming** và đánh giá an toàn AI. Innovation nằm ở khả năng mô phỏng các tương tác gây hại phức tạp để từ đó thiết kế các cơ chế phòng vệ (protective measures) hiệu quả hơn cho các hệ thống Agentic và AI trợ giúp tâm lý.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Adaptive Domain Models: Bayesian Evolution, Warm Rotation, and Principled Training for Geometric and Neuromorphic AI",
+                "link": "https://arxiv.org/abs/2603.18104",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu này đề xuất một kiến trúc huấn luyện AI thay thế cho chuẩn số học IEEE-754 và cơ chế reverse-mode automatic differentiation truyền thống. Sự đổi mới cốt lõi nằm ở việc kết hợp ba thành phần: hệ thống kiểu dữ liệu Dimensional (Dimensional Type System) giúp quản lý bộ nhớ gradient trên stack, cấu trúc Program Hypergraph dựa trên đại số hình học (Geometric Algebra) để bảo toàn thuộc tính toán học của trọng số, và chuẩn số học b-posit (2026) nhằm tối ưu hóa độ chính xác trên các phần cứng vốn chỉ dành cho inference. Kết quả là một quy trình huấn luyện có mức tiêu thụ bộ nhớ cực thấp (chỉ gấp đôi footprint của inference), không phụ thuộc vào độ sâu của model (depth-independent). Ngoài ra, bài báo giới thiệu cơ chế \"Bayesian distillation\" để trích xuất cấu trúc latent prior cho các mô hình chuyên biệt (domain-specific) và mô hình Neuromorphic, cùng kỹ thuật \"warm rotation\" cho triển khai vận hành, giúp giải quyết bài toán thiếu hụt dữ liệu và tối ưu hóa hiệu năng phần cứng vượt trội so với các kiến trúc hiện nay.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Don't Vibe Code, Do Skele-Code: Interactive No-Code Notebooks for Subject Matter Experts to Build Lower-Cost Agentic Workflows",
+                "link": "https://arxiv.org/abs/2603.18122",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Skele-Code đề xuất một phương pháp tiếp cận \"code-first\" cho các quy trình Agentic, thay thế mô hình điều phối (orchestration) truyền thống của hệ thống Multi-Agent bằng việc sinh mã nguồn thực thi ổn định. Framework này sử dụng giao diện đồ họa và notebook tương tác để chuyển đổi ngôn ngữ tự nhiên thành các cấu trúc code có tính module cao. Điểm cải tiến kỹ thuật cốt lõi nằm ở việc giới hạn vai trò của LLM chỉ trong khâu sinh mã (code generation) và phục hồi lỗi (error recovery), thay vì trực tiếp điều hành luồng công việc (task execution). Nhờ kỹ thuật context-engineering đặc thù, Skele-Code giảm thiểu đáng kể chi phí token và độ trễ so với việc chạy agent runtime liên tục. Các workflow được tạo ra có khả năng tái sử dụng như các \"skills\", giúp tăng cường tính mở rộng và khả năng kiểm soát (determinism) cho các kỹ sư AI khi triển khai hệ thống trong môi trường sản xuất, tránh được các rủi ro từ việc \"vibe coding\" (lập trình dựa trên cảm giác) không ổn định.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Efficient Dense Crowd Trajectory Prediction Via Dynamic Clustering",
+                "link": "https://arxiv.org/abs/2603.18166",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu này đề xuất một kiến trúc tối ưu hóa cho bài toán dự đoán quỹ đạo đám đông (Crowd Trajectory Prediction) trong các kịch bản mật độ cực cao. Đổi mới kỹ thuật cốt lõi nằm ở phương pháp **Dynamic Clustering** (phân cụm động), cho phép nhóm các cá thể có thuộc tính vận động tương đồng theo thời gian thực. Thay vì dự đoán riêng lẻ cho từng đối tượng—vốn gây tốn kém tài nguyên tính toán và dễ bị nhiễu từ dữ liệu tracking—hệ thống tính toán các **group centroids** (trọng tâm nhóm) để làm đầu vào cho các mô hình dự đoán quỹ đạo hiện có. Đây là một giải pháp **plug-and-play**, giúp giảm đáng kể độ phức tạp tính toán và mức sử dụng bộ nhớ (memory usage) trong khi vẫn duy trì độ chính xác. Phương pháp này giải quyết hiệu quả bài toán xử lý dữ liệu quy mô lớn (scalability) trong thị giác máy tính, cung cấp một lớp trừu tượng hóa dữ liệu (data abstraction layer) tương tự như các kỹ thuật tối ưu hóa trong hệ thống Multi-Agent hoặc xử lý vector thời gian thực.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "TeachingCoach: A Fine-Tuned Scaffolding Chatbot for Instructional Guidance to Instructors",
+                "link": "https://arxiv.org/abs/2603.18189",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu giới thiệu TeachingCoach, một hệ thống chatbot chuyên biệt được xây dựng dựa trên quy trình **data-centric pipeline** nhằm hỗ trợ đào tạo giảng viên. Điểm nhấn kỹ thuật nằm ở việc trích xuất các quy tắc sư phạm từ nguồn tài liệu chuẩn, sau đó sử dụng kỹ thuật **synthetic dialogue generation** (tạo hội thoại tổng hợp) để tạo tập dữ liệu huấn luyện. Quá trình **Fine-tuning** mô hình ngôn ngữ (SLM/LLM) chuyên biệt này giúp hệ thống thực hiện kỹ thuật **Scaffolding** (giàn giáo kiến trúc tri thức), dẫn dắt người dùng qua các bước định danh vấn đề và phát triển chiến lược thay vì chỉ cung cấp câu trả lời trực tiếp. So với baseline là **GPT-4o mini**, TeachingCoach thể hiện khả năng phản hồi có chiều sâu và tính gợi mở cao hơn. Phương pháp này minh chứng cho hiệu quả của việc kết hợp **Domain-specific data** và dữ liệu tổng hợp để tối ưu hóa mô hình cho các tác vụ tư vấn chuyên sâu, thay vì chỉ dựa vào các mô hình generic hoặc kỹ thuật **RAG** truyền thống.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Access Controlled Website Interaction for Agentic AI with Delegated Critical Tasks",
+                "link": "https://arxiv.org/abs/2603.18197",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu này giải quyết bài toán bảo mật trong việc ủy quyền các tác vụ quan trọng (critical tasks) cho Agentic AI khi tương tác với website. Vấn đề cốt lõi là các cơ chế kiểm soát truy cập hiện tại chưa được thiết kế tối ưu cho agent hành động thay mặt người dùng. Nhóm tác giả đề xuất một kiến trúc hệ thống mới bao gồm thiết kế website chuyên biệt và sửa đổi các giao thức cấp phép (access grant protocols) trong dịch vụ xác thực mã nguồn mở (như OAuth/OIDC). \n\nVề mặt kỹ thuật, giải pháp tập trung vào cơ chế phân quyền tinh vi (fine-grained access control) giúp giới hạn phạm vi thao tác của agent. Thay vì cấp quyền toàn diện, hệ thống tinh chỉnh các luồng ủy quyền để phù hợp với đặc thù của quy trình Agentic, đảm bảo an toàn cho các tác vụ nhạy cảm. Đây là đóng góp quan trọng cho hạ tầng Agentic Workflows và Computer Use, giúp thu hẹp khoảng cách giữa khả năng thực thi của LLM và yêu cầu bảo mật trong môi trường doanh nghiệp thực tế.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "A Computationally Efficient Learning of Artificial Intelligence System Reliability Considering Error Propagation",
+                "link": "https://arxiv.org/abs/2603.18201",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Bài báo tập trung vào việc định lượng độ tin cậy của hệ thống AI thông qua việc phân tích quá trình lan truyền lỗi (error propagation) trong các cấu trúc xử lý tuần tự. Thách thức chính nằm ở tính phụ thuộc lẫn nhau giữa các lỗi (interdependent error events), vi phạm giả định độc lập trong các mô hình thống kê truyền thống. Để giải quyết, nghiên cứu đề xuất một khung mô hình hóa độ tin cậy mới kết hợp với thuật toán tối ưu **Composite Likelihood Expectation-Maximization (CLEM)**. Thuật toán này giúp ước lượng tham số mô hình một cách hiệu quả về mặt tính toán và có bảo chứng lý thuyết, ngay cả khi xử lý dữ liệu quy mô lớn từ các hệ thống như xe tự hành. Điểm đổi mới cụ thể là việc sử dụng nền tảng mô phỏng vật lý cùng bộ tiêm lỗi (error injector) để tạo dữ liệu chất lượng cao. Nghiên cứu này có ý nghĩa quan trọng cho các quy trình **Agentic Workflows** và **Chain-of-Thought (CoT)** phức tạp, nơi việc kiểm soát sai số tích lũy giữa các stage là yếu tố then chốt để đảm bảo tính ổn định của hệ thống.",
+                "date": "2026-03-20T04:00:00"
+            },
+            {
+                "title": "Retrieval-Augmented LLM Agents: Learning to Learn from Experience",
+                "link": "https://arxiv.org/abs/2603.18272",
+                "source": "http://export.arxiv.org/rss/cs.AI",
+                "summary_vn": "Nghiên cứu này giải quyết bài toán tối ưu hóa khả năng tổng quát hóa (generalization) của Agentic LLM thông qua việc kết hợp Supervised Fine-Tuning (SFT) và Retrieval-Augmented Generation (RAG). Cốt lõi kỹ thuật nằm ở việc xây dựng một pipeline huấn luyện nơi mô hình học cách khai thác các quỹ đạo hành động (trajectories) được truy xuất từ bộ nhớ kinh nghiệm. Tác giả sử dụng LoRA để thiết lập một recipe SFT mạnh mẽ, đồng thời tối ưu hóa các chiến lược lưu trữ, truy vấn và lựa chọn quỹ đạo trong cơ sở dữ liệu vector. Điểm đổi mới quan trọng là quy trình tích hợp việc truy xuất trải nghiệm trực tiếp vào giai đoạn fine-tuning, giúp mô hình học cách sử dụng thông tin in-context từ các trải nghiệm tương tự hiệu quả hơn. Kết quả thực nghiệm cho thấy phương pháp này vượt qua các baseline giám sát hiện tại, đặc biệt là trong việc xử lý các tác vụ mới (unseen tasks), cung cấp một framework khả thi cho các hệ thống Agent tự học hỏi từ lịch sử vận hành.",
+                "date": "2026-03-20T04:00:00"
+            }
+        ]
+    },
+    {
         "timestamp": "2026-03-19T03:46:55.481561",
         "keywords": "EN: [Atlas, Compiled Memory, Latent Posterior Factors (LPF), Quantum-Secure-By-Construction (QSC), CUBE (Common Unified Benchmark Environments), Prose2Policy (P2P), Neutrosophic Sets, Multi-Criteria Decision-Making (MCDM), Knowledge Graph (KG), Context-Length Robustness]\nVN: [Atlas, Bộ nhớ biên dịch (Compiled Memory), Nhân tố hậu nghiệm tiềm ẩn (LPF), Bảo mật lượng tử theo thiết kế (QSC), CUBE, Prose2Policy (P2P), Tập hợp Neutrosophic, Ra quyết định đa tiêu chí (MCDM), Đồ thị tri thức (Knowledge Graph), Độ bền bỉ với chiều dài ngữ cảnh]",
         "reports": [
