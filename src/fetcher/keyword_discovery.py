@@ -50,7 +50,20 @@ def get_trending_keywords(languages=None):
     Keep keywords concise (1-3 words max).
     """
     
-    return rotator.generate_content(prompt)
+    try:
+        res = rotator.generate_content(prompt)
+        # Check if response is empty or an error message
+        if not res or "execut" in res.lower() or "exhaust" in res.lower() or "error" in res.lower():
+            raise ValueError(f"Invalid AI response: {res}")
+        return res
+    except Exception as e:
+        print(f"Warning: Keyword discovery failed ({e}). Using technical fallback...")
+        # High-signal fallback keywords to ensure search never stops
+        fallback = """
+        EN: [DeepSeek-V3, Claude 3.5, Gemini 2.0 Flash, Agentic Workflow, Large Language Models, RAG, Vector Database, NVIDIA, OpenAI, Anthropic]
+        VN: [Mô hình ngôn ngữ lớn, Kỹ thuật RAG, Cơ sở dữ liệu Vector, Quy trình Agentic, Trí tuệ nhân tạo, DeepSeek, Claude, n8n]
+        """
+        return fallback.strip()
 
 if __name__ == "__main__":
     # Test execution
