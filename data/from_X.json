@@ -54,5 +54,33 @@
     "retweet_count": 1153,
     "favorite_count": 61833,
     "created_at": "Sat Feb 22 22:12:00 +0000 2025"
+  },
+  {
+    "url": "https://x.com/HuggingModels/status/2036692317692985654",
+    "twitterUrl": "https://twitter.com/HuggingModels/status/2036692317692985654",
+    "id": "2036692317692985654",
+    "text": "Meet Granite-4.0-1B-Speech: a multilingual speech recognition model that's quietly changing how machines understand human voices. It's not just another ASR model. It's a compact powerhouse that understands multiple languages natively. Perfect for developers who need accuracy without massive compute.",
+    "retweetCount": 0,
+    "replyCount": 1,
+    "likeCount": 2,
+    "quoteCount": 0,
+    "createdAt": "Wed Mar 25 06:31:03 +0000 2026",
+    "bookmarkCount": 2,
+    "isRetweet": false,
+    "isQuote": false
+  },
+  {
+    "url": "https://x.com/HuggingModels/status/2036692353327718680",
+    "twitterUrl": "https://twitter.com/HuggingModels/status/2036692353327718680",
+    "id": "2036692353327718680",
+    "text": "Why developers love it: 37K+ downloads speak volumes. Handles 5 major languages out of the box. Lightweight enough for edge deployment. Transformer architecture ensures state-of-the-art accuracy. Perfect balance of size and capability for production speech applications.",
+    "retweetCount": 0,
+    "replyCount": 1,
+    "likeCount": 0,
+    "quoteCount": 0,
+    "createdAt": "Wed Mar 25 06:31:11 +0000 2026",
+    "bookmarkCount": 0,
+    "isRetweet": false,
+    "isQuote": false
   }
 ]
