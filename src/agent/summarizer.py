@@ -29,13 +29,25 @@ def summarize_news(news_list, trending_keywords):
         "cnn.com", "bbc.com", "nytimes.com", "reuters.com", "bloomberg.com"
     ]
     
+    # Step 3.6: Prioritize ScrapeGraph and Facebook FREE items manually in the processing list
+    # These are high-value deep scrapes that should always be processed first
+    def get_priority_score(item):
+        source = item.get("source", "").upper()
+        if "SCRAPEGRAPH" in source: return 0
+        if "FACEBOOK: FREE" in source: return 1
+        if "APIFY" in source: return 2
+        return 3
+
     filtered_list = [
         item for item in news_list 
         if not any(domain in item['link'] for domain in exclude_domains)
     ]
+
+    # Sort the list by priority score
+    filtered_list.sort(key=get_priority_score)
     
     # Process top candidates (expanded to reach 20+ final items as per user req)
-    items_to_process = filtered_list[:45] 
+    items_to_process = filtered_list[:50] 
     
     for i, item in enumerate(items_to_process):
         print(f"Processing item {i+1}/{len(items_to_process)}: {item['title'][:50]}...")

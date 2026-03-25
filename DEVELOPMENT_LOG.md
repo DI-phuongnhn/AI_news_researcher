@@ -36,6 +36,13 @@ Create a fully automated agent that:
 - **Validation**: Updated the fallback list to use verified identifiers (`gemini-flash-lite-latest`, etc.).
 - **Error Handling**: Broadened detection to catch `REMITTER_LIMIT` and `RATE_LIMIT` strings, ensuring the bot never stops until all options are exhausted.
 
+### 2026-03-18 (Final Cleanup & Refinement)
+- **Stricter Noise Filtering**: Re-implemented `filter_relevance` in `main.py` using Regex word boundaries (`\b`) to avoid false positives (e.g., matching "ai" in Vietnamese words like "gái").
+- **Noise Blacklist**: Added patterns to exclude entertainment news (Oscar, animation, movie) and common question phrases (help wanted, consultancy).
+- **Data Verifiction**: Successfully purged 4 off-topic items from the live dashboard via a cleanup script.
+- **Project Hygiene**: Removed all temporary processing and cleanup scripts from the `src/` directory to maintain a production-ready codebase.
+- **UI Logic Finalization**: Confirmed grouping by Scan Date and ArXiv density limits (max 5) are working correctly on GitHub Pages.
+
 ### Phase 5: High-Capacity & Technical Depth Expansion
 - **Source Expansion**: Multiplied search depth to target **20+ high-quality items** per day.
 - **Social Integration**: Added explicit targeted searches for **X (Twitter), Facebook, and Reddit** discussions.

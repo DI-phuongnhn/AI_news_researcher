@@ -29,6 +29,7 @@ from src.fetcher.apify_fetcher import (
     fetch_facebook_groups_apify, 
     fetch_x_profiles_apify
 )
+from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph
 from src.agent.summarizer import summarize_news
 
 def normalize_url(url):
@@ -46,12 +47,10 @@ def normalize_url(url):
 
 def normalize_text(text):
     """
-    Normalizes text by lowercase, removing non-alphanumerics, and stripping common prefixes.
+    Normalizes text by lowercase, removing non-alphanumerics.
     """
     if not text:
         return ""
-    # Remove brackets like [arXiv], [Social], etc.
-    text = re.sub(r'\[.*?\]', '', text)
     # Lowercase and remove all non-word characters except spaces
     text = re.sub(r'[^\w\s]', '', text.lower())
     # Collapse multiple spaces
@@ -87,12 +86,14 @@ def filter_relevance(news_list, search_keywords):
     ]
     
     # Normalize keywords for comparison and escape for regex
-    norm_keywords = [re.escape(normalize_text(kw)) for kw in search_keywords if normalize_text(kw)]
+    norm_keywords = [normalize_text(kw) for kw in search_keywords if normalize_text(kw)]
+    print(f"  Debug: Normalized keywords for filtering: {norm_keywords}")
     
     for item in news_list:
         title = item.get("title", "")
         summary = item.get("summary", "")
-        text_to_check = f"{title} {summary}".lower()
+        # Check against normalized full text
+        text_to_check = normalize_text(f"{title} {summary}")
         
         # 1. Strict Exclusion (Noise)
         is_noise = False
@@ -103,20 +104,18 @@ def filter_relevance(news_list, search_keywords):
         if is_noise:
             continue
 
-        # 2. Strict Keyword Matching (Word Boundaries)
+        # 2. Keyphrase Matching (Less strict, no \b for better non-ASCII support)
         is_relevant = False
         for kw in norm_keywords:
-            # Match exactly the word/phrase with boundaries
-            # Handle both English and Vietnamese characters in boundaries
-            pattern = rf"(?i)\b{kw}\b"
-            if re.search(pattern, text_to_check):
+            if kw in text_to_check: # Simpler inclusion check
                 is_relevant = True
                 break
         
-        # 3. Source-specific check (ArXiv remains trusted, Apify must now pass keywords)
+        # 3. Source-specific trust (ArXiv and ScrapeGraph are trusted/pre-filtered)
         source_lower = item.get("source", "").lower()
-        if not is_relevant and "arxiv" in source_lower:
-            is_relevant = True
+        if not is_relevant:
+            if "arxiv" in source_lower or "scrapegraph" in source_lower:
+                is_relevant = True
             
         if is_relevant:
             filtered.append(item)
@@ -197,6 +196,60 @@ def run_agent():
             social_news = search_technical_news(social_kws, max_results=5)
             all_raw_news.extend(social_news)
             print(f"  -> Found {len(social_news)} fallback social items.")
+        
+        # 2c. Deep Scrape with ScrapeGraphAI on top tech leads
+        print("  Enhancing top technical results with ScrapeGraphAI...")
+        top_tech_leads = raw_tech[:3] # Deep scan top 3 findings
+        for lead in top_tech_leads:
+            print(f"    Deep scraping: {lead['title']}...")
+            
+            # Use keywords for internal filtering during deep scrape
+            enhance_prompt = f"""
+            Analyze the following article and extract key technical information. 
+            ONLY return data if the article is related to these keywords: {', '.join(search_keywords)}.
+            If not related, return an empty object.
+            Fields to extract: 'title', 'summary' (technical depth).
+            """
+            deep_res = fetch_with_scrapegraph(lead['link'], prompt=enhance_prompt)
+            if deep_res and isinstance(deep_res, dict) and deep_res.get('title'):
+                # Update summary with high-quality AI extraction
+                lead['summary'] = deep_res.get('summary', lead['summary'])
+                lead['title'] = deep_res.get('title', lead['title']) # Sometimes useful
+        
+        # 2d. Scrape specific high-priority targets from config
+        print("  Scraping specific high-priority targets via ScrapeGraphAI...")
+        for target_url in Config.SCRAPEGRAPH_TARGETS:
+            print(f"    Scraping: {target_url}...")
+            # Prompt specifically to extract news items from a list/blog page
+            specific_prompt = f"""
+            Extract a list of the latest 3-5 news articles or blog posts. 
+            STRICT FILTER: ONLY include articles strictly related to these keywords: {', '.join(search_keywords)}.
+            For each relevant article, provide 'title', 'link', and 'summary'.
+            """
+            specific_res = fetch_with_scrapegraph(target_url, prompt=specific_prompt)
+            
+            if specific_res:
+                # Handle potential list or dict results from SmartScraperGraph
+                items = []
+                if isinstance(specific_res, list):
+                    items = specific_res
+                elif isinstance(specific_res, dict):
+                    # Try to find a list within the dict (common for SmartScraperGraph)
+                    for val in specific_res.values():
+                        if isinstance(val, list):
+                            items = val
+                            break
+                    if not items: items = [specific_res]
+                
+                for item in items:
+                    if isinstance(item, dict) and item.get('title') and item.get('link'):
+                        all_raw_news.append({
+                            "title": item.get('title'),
+                            "link": item.get('link'),
+                            "summary": item.get('summary', ''),
+                            "source": "ScrapeGraph: " + urlparse(target_url).netloc,
+                            "date": datetime.now().isoformat()
+                        })
     
     print("Step 3: Fetching news from RSS & Reddit...")
     # 3a. RSS Feeds (arXiv, OpenAI, IEEE, etc.)
@@ -212,17 +265,67 @@ def run_agent():
     all_raw_news.extend(reddit_items)
     print(f"    -> {len(reddit_items)} items.")
     
-    # 3c. Specialized Facebook Group Fetcher (via Apify)
-    print("  Fetching Facebook Groups via Apify...")
-    fb_items = fetch_facebook_groups_apify(keywords=search_keywords)
-    all_raw_news.extend(fb_items)
-    print(f"    -> {len(fb_items)} items.")
+    # 3c. Specialized Facebook Group Fetcher (via Apify and Fallback to ScrapeGraphAI)
+    print("  Fetching Facebook Groups...")
+    fb_items = []
+    
+    # Try Apify first if token exists (more reliable but paid)
+    if Config.APIFY_API_TOKEN:
+        print("    Using Apify for Facebook Groups...")
+        fb_items = fetch_facebook_groups_apify(keywords=search_keywords)
+        all_raw_news.extend(fb_items)
+        print(f"      -> Found {len(fb_items)} items via Apify.")
+    
+    # FREE FALLBACK: If Apify failed, returned 0 items, or no token exists
+    if not fb_items:
+        print("    Apify returned no results (or no token). Using FREE ScrapeGraphAI (Mobile URL) fallback...")
+        for fb_url in Config.FB_GROUPS:
+            # Transform to mobile link for easier scraping
+            mobile_url = fb_url.replace("www.facebook.com", "m.facebook.com")
+            print(f"      Scraping Mobile FB: {mobile_url}...")
+            
+            fb_prompt = f"""
+            Find recent public posts related to these keywords: {', '.join(search_keywords)}. 
+            STRICT FILTER: 
+            1. ONLY include posts sharing news, technical updates, or research.
+            2. IGNORE any posts that are:
+               - Questions or Q&A (e.g., "cho mình hỏi", "giúp em với", "tư vấn dùm", "Question", "How to")
+               - Discussion/Help requests (e.g., "ai biết cách", "fix lỗi", "cần tìm")
+               - Advertisements, personal life updates, or recruitment.
+            Return 'title' (first 80 chars), 'link' (absolute URL), and 'summary'.
+            """
+            fb_res = fetch_with_scrapegraph(mobile_url, prompt=fb_prompt)
+            
+            # Similar processing as Step 2d
+            items = []
+            if isinstance(fb_res, list): items = fb_res
+            elif isinstance(fb_res, dict):
+                for val in fb_res.values():
+                    if isinstance(val, list): items = val; break
+                if not items: items = [fb_res]
+            
+            for item in items:
+                if isinstance(item, dict) and item.get('title'):
+                    all_raw_news.append({
+                        "title": item.get('title'),
+                        "link": item.get('link') if item.get('link') else fb_url,
+                        "summary": item.get('summary', ''),
+                        "source": "Facebook: FREE (" + mobile_url + ")",
+                        "date": datetime.now().isoformat()
+                    })
     
     # 3d. Specialized X Profile Fetcher (via Apify)
     print("  Fetching X Profiles via Apify...")
     x_items = fetch_x_profiles_apify()
     all_raw_news.extend(x_items)
     print(f"    -> {len(x_items)} items.")
+    
+    # Ensure ScrapeGraph items are at the FRONT of all_raw_news for deduplication priority 
+    # (first seen is kept in current dedupe logic)
+    print("  Prioritizing ScrapeGraph items for deduplication...")
+    sg_items = [i for i in all_raw_news if "ScrapeGraph" in i.get("source", "")]
+    non_sg_items = [i for i in all_raw_news if "ScrapeGraph" not in i.get("source", "")]
+    all_raw_news = sg_items + non_sg_items
     
     print(f"Total raw items fetched: {len(all_raw_news)}")
 

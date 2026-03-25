@@ -2,7 +2,7 @@ name: Daily AI Technical Research
 
 on:
   schedule:
-    - cron: '0 1 * * 2,4,6' # 01:00 UTC = 08:00 AM VN (Tue, Thu, Sat)
+    - cron: '30 0 * * 1-5' # 00:30 UTC = 07:30 AM VN (Mon-Fri)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -23,6 +23,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          playwright install --with-deps chromium
           
       - name: Run Research Agent
         env:
@@ -36,5 +37,5 @@ jobs:
           git config --global user.name "AI Research Bot"
           git config --global user.email "bot@github.com"
           git add data/*.json index.html
-          git commit -m "Auto-update: Daily technical news research [T-Th-Sa schedule]" || echo "No changes to commit"
+          git commit -m "Auto-update: Daily technical news research [Mon-Fri schedule]" || echo "No changes to commit"
           git push origin main

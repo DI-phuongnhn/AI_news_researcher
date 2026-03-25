@@ -46,7 +46,6 @@ class Config:
     # --- News Source Configuration ---
     # RSS Feeds for official blogs and pre-prints
     RSS_FEEDS = {
-        "arXiv": "http://export.arxiv.org/rss/cs.AI",
         "OpenAI": "https://openai.com/news/rss.xml",
         "IEEE_Spectrum": "https://spectrum.ieee.org/rss/robotics/fulltext",
         "HuggingFace": "https://huggingface.co/blog/feed.xml"
@@ -64,8 +63,16 @@ class Config:
     
     # Facebook Groups (trimmed to 2 most relevant to conserve Apify credits)
     FB_GROUPS = [
-        "https://www.facebook.com/groups/874728723021553", # AI & Machine Learning group
-        "https://www.facebook.com/groups/binhdanhocai"     # Bình dân học AI
+        "https://www.facebook.com/groups/j2team.community",
+        "https://www.facebook.com/groups/1522144709086429/"
+    ]
+    
+    # Specific websites to deep scrape using ScrapeGraphAI
+    SCRAPEGRAPH_TARGETS = [
+        "https://huggingface.co/models",
+        "https://openai.com/news/",
+        "https://deepmind.google/blog/",
+        "https://anthropic.com/news"
     ]
     
     # --- Data Persistence ---
