@@ -224,6 +224,7 @@ def run_agent():
             specific_prompt = f"""
             Extract a list of the latest 3-5 news articles or blog posts. 
             STRICT FILTER: ONLY include articles strictly related to these keywords: {', '.join(search_keywords)}.
+            CRITICAL: If scanning Anthropic's news page, ONLY extract articles explicitly categorized as 'Product' (e.g., model releases like Claude updates, api updates). Skip 'Company' or 'Research' or generic news.
             For each relevant article, provide 'title', 'link', and 'summary'.
             """
             specific_res = fetch_with_scrapegraph(target_url, prompt=specific_prompt)
