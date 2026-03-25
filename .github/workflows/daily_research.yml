@@ -2,7 +2,7 @@ name: Daily AI Technical Research
 
 on:
   schedule:
-    - cron: '30 0 * * 1-5' # 00:30 UTC = 07:30 AM VN (Mon-Fri)
+    - cron: '30 0 * * 2,4,6' # 00:30 UTC = 07:30 AM VN (Tue, Thu, Sat)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
