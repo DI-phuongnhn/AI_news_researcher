@@ -74,7 +74,8 @@ class Config:
         "https://huggingface.co/models",
         "https://openai.com/news/",
         "https://deepmind.google/blog/",
-        "https://anthropic.com/news"
+        "https://anthropic.com/news",
+        "https://build.nvidia.com/explore/discover"
     ]
     
     # --- Data Persistence ---
