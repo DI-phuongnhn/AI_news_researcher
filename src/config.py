@@ -47,7 +47,6 @@ class Config:
     # RSS Feeds for official blogs and pre-prints
     RSS_FEEDS = {
         "OpenAI": "https://openai.com/news/rss.xml",
-        "IEEE_Spectrum": "https://spectrum.ieee.org/rss/robotics/fulltext",
         "HuggingFace": "https://huggingface.co/blog/feed.xml"
     }
     

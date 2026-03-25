@@ -10,7 +10,7 @@ from src.config import Config
 
 def test_fb():
     fb_url = "https://m.facebook.com/groups/j2team.community"
-    search_keywords = ["DeepSeek", "Claude", "AI", "Agent"]
+    search_keywords = ["DeepSeek", "Claude", "AI", "Agent", "ByteDance", "n8n", "nvidia", "gemini","framework","openrouter","x-ai","openai", "agentic workflow"]
     
     prompt = f"""
     Find recent public posts related to these keywords: {', '.join(search_keywords)}. 
