@@ -271,7 +271,7 @@ def run_agent():
     fb_items = []
     
     # Try Apify first if token exists (more reliable but paid)
-    if Config.APIFY_API_TOKEN:
+    if Config.APIFY_API_TOKENS:
         print("    Using Apify for Facebook Groups...")
         fb_items = fetch_facebook_groups_apify(keywords=search_keywords)
         all_raw_news.extend(fb_items)
