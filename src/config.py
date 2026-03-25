@@ -26,7 +26,10 @@ class Config:
     ]
     
     # --- Apify Configuration ---
-    APIFY_API_TOKEN = os.getenv("APIFY_API_TOKEN", "")
+    APIFY_API_TOKENS = [
+        k.strip() for k in os.getenv("APIFY_API_TOKENS", os.getenv("APIFY_API_TOKEN", "")).split(",") 
+        if k.strip()
+    ]
     
     # Budget control: limit items per actor call to conserve $5/month free credits
     # With 13 runs/month, keeping total Apify cost under $0.30/run = ~$3.90/month (safe margin)

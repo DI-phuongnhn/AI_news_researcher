@@ -20,52 +20,52 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
     Returns:
         list: A list of unified post dictionaries.
     """
-    if not Config.APIFY_API_TOKEN:
-        print(f"[{platform_name}] APIFY_API_TOKEN is not set. Skipping Apify fetch.")
+    if not Config.APIFY_API_TOKENS:
+        print(f"[{platform_name}] APIFY_API_TOKENS is not set. Skipping Apify fetch.")
         return []
 
-    client = ApifyClient(Config.APIFY_API_TOKEN)
     posts = []
     
-    try:
-        print(f"  Starting Apify Actor: {actor_id} for {platform_name}...")
-        print(f"  Input: {run_input}")
-        # Run the actor and wait for it to finish
-        run = client.actor(actor_id).call(run_input=run_input)
-        
-        # Fetch results from the actor's default dataset
-        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
-            # Standardize output format
-            # Different actors have different output schemas; we extract common conceptual fields
+    for token in Config.APIFY_API_TOKENS:
+        try:
+            client = ApifyClient(token)
+            print(f"  Starting Apify Actor: {actor_id} for {platform_name} (Token: {token[:4]}...)...")
+            print(f"  Input: {run_input}")
+            # Run the actor and wait for it to finish
+            run = client.actor(actor_id).call(run_input=run_input)
             
-            # Example heuristic mapping for typical social media actors:
-            # - tweet/post text is usually in 'full_text', 'text', or 'content'
-            # - URLs are usually in 'url', 'post_url'
-            # - dates are usually 'created_at', 'timestamp'
-            
-            text_content = item.get("full_text") or item.get("text") or item.get("message") or item.get("content") or ""
-            url = item.get("url") or item.get("post_url") or item.get("postUrl") or ""
-            date_raw = item.get("created_at") or item.get("date") or item.get("time") or datetime.now().isoformat()
-            
-            # Use the first 50 chars of text as title if title is missing
-            title = item.get("title")
-            if not title:
-                title = text_content[:80] + "..." if text_content else "No Title"
+            # Fetch results from the actor's default dataset
+            for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+                text_content = item.get("full_text") or item.get("text") or item.get("message") or item.get("content") or ""
+                url = item.get("url") or item.get("post_url") or item.get("postUrl") or ""
+                date_raw = item.get("created_at") or item.get("date") or item.get("time") or datetime.now().isoformat()
                 
-            posts.append({
-                "title": title,
-                "link": url,
-                "summary": text_content[:500],  # Keep a snippet
-                "source": f"Apify: {platform_name}",
-                "date": date_raw
-            })
+                title = item.get("title")
+                if not title:
+                    title = text_content[:80] + "..." if text_content else "No Title"
+                    
+                posts.append({
+                    "title": title,
+                    "link": url,
+                    "summary": text_content[:500],
+                    "source": f"Apify: {platform_name}",
+                    "date": date_raw
+                })
+                
+            print(f"  [{platform_name}] Successfully fetched {len(posts)} items from Apify.")
+            return posts
             
-        print(f"  [{platform_name}] Successfully fetched {len(posts)} items from Apify.")
-        return posts
-        
-    except Exception as e:
-        print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {type(e).__name__}: {e}")
-        return []
+        except Exception as e:
+            err_msg = str(e).lower()
+            print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {type(e).__name__}: {e}")
+            if "limit exceeded" in err_msg or "quota" in err_msg or "unauthorized" in err_msg:
+                print("  -> Token exhausted or unauthorized. Trying next Apify token...")
+                continue
+            else:
+                break
+                
+    print(f"  [{platform_name}] All Apify tokens exhausted or failed.")
+    return []
 
 def search_x_apify(keywords_list, max_items=None):
     """
