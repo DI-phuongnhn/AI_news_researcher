@@ -371,6 +371,37 @@
             color: var(--text-dim);
             font-size: 0.9rem;
         }
+
+        .status-bar {
+            background: rgba(168, 216, 234, 0.1);
+            border: 1px solid var(--border);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .status-dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .empty-status {
+            grid-column: 1 / -1;
+            padding: 2rem;
+            text-align: center;
+            background: var(--card-bg);
+            border: 2px dashed var(--border);
+            border-radius: 20px;
+            color: var(--text-dim);
+        }
     </style>
 </head>
 
@@ -482,6 +513,17 @@
                     arxivCountPerDay[displayGroupDate] = 0;
                 }
 
+                // Add at least one entry even if reports are empty to ensure the date shows up
+                if (dayEntry.reports.length === 0) {
+                    flattenedReports.push({
+                        isEmpty: true,
+                        sortToken: scanDate.getTime(),
+                        displayDate: displayGroupDate,
+                        runTimestamp: dayEntry.timestamp,
+                        debug_stats: dayEntry.debug_stats
+                    });
+                }
+
                 dayEntry.reports.forEach(report => {
                     const src = (report.source || "").toLowerCase();
                     const isArxiv = src.includes('arxiv.org');
@@ -507,25 +549,25 @@
                         priority: priority,
                         runTimestamp: dayEntry.timestamp,
                         displayDate: displayGroupDate,
-                        keywords: dayEntry.keywords 
+                        keywords: dayEntry.keywords,
+                        debug_stats: dayEntry.debug_stats // Attach stats to every report for the header logic
                     });
                 });
             });
 
             // Sort logic: Scan Run (newest first) -> Priority (Social first) -> Post Date
             flattenedReports.sort((a, b) => {
-                // Secondary sort by Priority (Social > Search > Others) within the same date
                 if (b.displayDate === a.displayDate) {
-                    if (b.priority !== a.priority) {
-                        return b.priority - a.priority;
-                    }
-                    // Sort by scan run time within the same day
                     if (b.sortToken !== a.sortToken) {
                         return b.sortToken - a.sortToken;
                     }
+                    if (a.isEmpty) return 1;
+                    if (b.isEmpty) return -1;
+                    if (b.priority !== a.priority) {
+                        return b.priority - a.priority;
+                    }
                     return b.itemSortToken - a.itemSortToken;
                 }
-                // Primary sort by Scan Date
                 return b.sortToken - a.sortToken;
             });
         }
@@ -571,9 +613,14 @@
             const end = start + itemsPerPage;
             const pageData = flattenedReports.slice(start, end);
 
-            if (pageData.length > 0) {
-                document.getElementById('last-updated').innerText = `Dữ liệu trang ${page} (Mới nhất: ${new Date(flattenedReports[0].runTimestamp).toLocaleString('vi-VN')})`;
+            // Fix Last Updated to always show the latest run from allHistoricalData
+            if (allHistoricalData.length > 0) {
+                const latestRun = allHistoricalData[0];
+                const latestRunTime = new Date(latestRun.timestamp).toLocaleString('vi-VN');
+                document.getElementById('last-updated').innerText = `Cập nhật lần cuối: ${latestRunTime} (Trang ${page})`;
+            }
 
+            if (pageData.length > 0) {
                 const uniqueRuns = [...new Set(pageData.map(d => d.runTimestamp))];
                 const activeKeywords = allHistoricalData
                     .filter(d => uniqueRuns.includes(d.timestamp))
@@ -585,8 +632,13 @@
             const list = document.getElementById('news-list');
             list.innerHTML = '';
 
-            if (pageData.length === 0) {
-                list.innerHTML = '<div class="loading">Hiện chưa có dữ liệu nào được tổng hợp.</div>';
+            if (flattenedReports.length === 0) {
+                list.innerHTML = `
+                    <div class="loading">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📭</div>
+                        <h3>Hiện chưa có dữ liệu kỹ thuật nào được tổng hợp.</h3>
+                        <p>Bot vừa chạy nhưng có thể không có tin tức nào đạt tiêu chí kỹ thuật hôm nay.</p>
+                    </div>`;
                 return;
             }
 
@@ -595,9 +647,37 @@
                 if (item.displayDate !== lastDate) {
                     const header = document.createElement('div');
                     header.className = 'date-section';
-                    header.innerHTML = `<h2 class="date-header-text">Nghiên cứu ngày: ${item.displayDate}</h2>`;
+                    
+                    let statsHtml = '';
+                    if (item.debug_stats) {
+                        statsHtml = `
+                            <div class="status-bar">
+                                <span><span class="status-dot"></span> <b>Tổng hợp:</b> Tìm thấy ${item.debug_stats.raw_total} tin</span>
+                                <span>|</span>
+                                <span>Lọc ${item.debug_stats.duplicates} tin trùng</span>
+                                <span>|</span>
+                                <span>Giữ lại ${item.debug_stats.final} tin chuyên sâu</span>
+                            </div>
+                        `;
+                    }
+
+                    header.innerHTML = `
+                        <h2 class="date-header-text">Nghiên cứu ngày: ${item.displayDate}</h2>
+                        ${statsHtml}
+                    `;
                     list.appendChild(header);
                     lastDate = item.displayDate;
+                }
+
+                if (item.isEmpty) {
+                    const emptyCard = document.createElement('div');
+                    emptyCard.className = 'empty-status';
+                    emptyCard.innerHTML = `
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔍</div>
+                        <p>Bản tin ngày ${item.displayDate} đã hoàn tất. <br> Không tìm thấy tin tức mới đạt tiêu chí kỹ thuật chuyên sâu.</p>
+                    `;
+                    list.appendChild(emptyCard);
+                    return;
                 }
 
                 const card = document.createElement('div');

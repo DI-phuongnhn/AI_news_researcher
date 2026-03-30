@@ -46,7 +46,16 @@ def fetch_with_scrapegraph(url, prompt=None):
 if __name__ == "__main__":
     # Test with a known technical blog post
     test_url = "https://openai.com/index/hello-gpt-4o/"
-    test_prompt = "Extract the 'title', 'summary' (max 2 sentences), and 'release_date' from this post."
+    test_prompt = """
+    Extract the latest 3-5 technical AI news articles, blog posts, or model releases from this page.
+    For each item, provide:
+    - 'title': The headline
+    - 'summary': A concise 1-2 sentence technical summary
+    - 'release_date': The date of the news (if available) or the current date.
+    
+    IMPORTANT: Focus ONLY on technical news like new LLMs, AI agents, architecture, or developer tools. Ignore company culture, hiring, or marketing fluff.
+    CRITICAL: If scanning Anthropic's news page, ONLY extract articles explicitly categorized as 'Product' (e.g., model releases like Claude 3.5/3.7, api updates, computer use). Skip 'Company' or generic news.
+    """
     print(f"Testing ScrapeGraphAI on: {test_url}")
     res = fetch_with_scrapegraph(test_url, test_prompt)
     print(res)

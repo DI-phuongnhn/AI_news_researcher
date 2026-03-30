@@ -50,12 +50,12 @@ class Config:
     # RSS Feeds for official blogs and pre-prints
     RSS_FEEDS = {
         "OpenAI": "https://openai.com/news/rss.xml",
-        "HuggingFace": "https://huggingface.co/blog/feed.xml"
+        "HuggingFace": "https://huggingface.co/models"
     }
     
     # Top AI thought leaders (Technical focuses)
     X_ACCOUNTS = [
-        "ai_hakase_", "AndrewYNg", "Kohaku_NFT",
+        "ai_hakase_", "so_ainsight", "Kohaku_NFT",
         "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface",
         "fchollet", "drfeifei", "AravSrinivas", "gdb"
     ]

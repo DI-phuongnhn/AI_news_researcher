@@ -38,6 +38,10 @@ def summarize_news(news_list, trending_keywords):
         if "APIFY" in source: return 2
         return 3
 
+    # Sources that we TRUST to be technical (ArXiv, official blogs)
+    # These will bypass the strict "TECHNICAL: YES" check if AI fails or is uncertain
+    trusted_sources = ["ARXIV", "SCRAPEGRAPH", "OPENAI", "DEEPMIND", "ANTHROPIC", "NVIDIA"]
+
     filtered_list = [
         item for item in news_list 
         if not any(domain in item['link'] for domain in exclude_domains)
@@ -51,6 +55,10 @@ def summarize_news(news_list, trending_keywords):
     
     for i, item in enumerate(items_to_process):
         print(f"Processing item {i+1}/{len(items_to_process)}: {item['title'][:50]}...")
+        
+        # Check if source is trusted
+        source_upper = item.get("source", "").upper()
+        is_trusted = any(ts in source_upper for ts in trusted_sources)
             
         prompt = f"""
         You are an Expert Technical AI Researcher / Senior Software Architect.
@@ -73,7 +81,6 @@ def summarize_news(news_list, trending_keywords):
         REJECT ('TECHNICAL: NO') IF:
         - It is just social impact, ethics, or general news.
         - It is "AI Hype" or high-level product announcements without technical documentation.
-        - It is a generic news site (CNN, TechCrunch) reporting on a "cool new tool" without technical details.
         - It is merely a fundraising announcement or executive hire.
         
         5. SUMMARIZE (VIETNAMESE):
@@ -86,18 +93,48 @@ def summarize_news(news_list, trending_keywords):
         SUMMARY: [Vietnamese summary here]
         """
         
-        # Rotator handles key rotation internally if 429 occurs
-        result = rotator.generate_content(prompt)
-        
-        if "TECHNICAL: YES" in result.upper():
-            summary_content = result.split("SUMMARY:")[-1].strip()
-            summaries.append({
-                "title": item['title'],
-                "link": item['link'],
-                "source": item['source'],
-                "summary_vn": summary_content,
-                "date": item.get('date', '')
-            })
+        try:
+            # Rotator handles key rotation internally if 429 occurs
+            result = rotator.generate_content(prompt)
+            
+            # Detect AI failure string from rotator
+            is_ai_failure = result.startswith("Error:") or result.startswith("Execution failed:")
+            
+            if is_ai_failure:
+                print(f"  !!! AI Failure for this item. Fallback triggered. Reason: {result[:50]}...")
+                # FALLBACK: If it's a trusted source, we MUST keep it even if AI failed
+                if is_trusted:
+                    summaries.append({
+                        "title": item['title'],
+                        "link": item['link'],
+                        "source": item['source'],
+                        "summary_vn": item['summary'] if item['summary'] else "AI summarization failed. High-trust source kept as fallback.",
+                        "date": item.get('date', '')
+                    })
+                continue
+
+            if "TECHNICAL: YES" in result.upper() or (is_trusted and "TECHNICAL: NO" not in result.upper()):
+                summary_content = result.split("SUMMARY:")[-1].strip()
+                if not summary_content or len(summary_content) < 10:
+                    summary_content = item['summary'] # Fallback to original summary if AI output is broken
+                
+                summaries.append({
+                    "title": item['title'],
+                    "link": item['link'],
+                    "source": item['source'],
+                    "summary_vn": summary_content,
+                    "date": item.get('date', '')
+                })
+        except Exception as e:
+            print(f"  !!! Critical error processing item: {e}")
+            if is_trusted:
+                summaries.append({
+                    "title": item['title'],
+                    "link": item['link'],
+                    "source": item['source'],
+                    "summary_vn": item['summary'],
+                    "date": item.get('date', '')
+                })
             
     print(f"AI Filtering complete. Kept {len(summaries)} out of {len(items_to_process)} technical items.")
     return summaries

@@ -82,7 +82,7 @@ def filter_relevance(news_list, search_keywords):
         r"\bbán hàng\b", r"\bgom đơn\b", r"\bquảng cáo\b", r"\bkhóa học\b",
         r"\bmovie\b", r"\bcinema\b", r"\bphim\b",
         r"có được không", r"ai có ý tưởng", r"dạy làm", r"tìm người", r"cần tư vấn",
-        r"hỏi đáp", r"giúp em", r"giúp mình"
+        r"hỏi đáp", r"giúp em", r"giúp mình", r"ask", r"hỏi"
     ]
     
     # Normalize keywords for comparison and escape for regex
@@ -253,7 +253,7 @@ def run_agent():
                         })
     
     print("Step 3: Fetching news from RSS & Reddit...")
-    # 3a. RSS Feeds (arXiv, OpenAI, IEEE, etc.)
+    # 3a. RSS Feeds (OpenAI, etc.)
     for name, url in Config.RSS_FEEDS.items():
         print(f"  Fetching {name}...")
         rss_items = fetch_rss_news(url)
@@ -389,16 +389,33 @@ def run_agent():
     print(f"  Priority (Social/Apify): {len(social_items)}")
     print(f"  ArXiv (Limited): {len(limited_arxiv)} (from {len(arxiv_items)})")
     print(f"  Others: {len(other_items)}")
+    print("Step 3.7: Pre-AI Relevance filtering... (TEMPORARILY SKIPPED BY USER REQUEST)")
+    # TEMPORARY BYPASS: Assign diverse_news directly but limit to top 15 to prevent burning API quota
+    filtered_news = diverse_news[:15]
     
-    # Step 3.7: Pre-AI Relevance Filtering
-    # Filter diverse_news by discovered keywords before calling AI to save quota and improve relevance
-    print("Step 3.7: Pre-AI Relevance filtering...")
-    filtered_news = filter_relevance(diverse_news, search_keywords)
+    # DEBUG: Save the raw diverse news to a file before summarization
+    print("  -> Saving RAW unfiltered news to data/raw_debug_news.json for inspection...")
+    import json
+    with open("data/raw_debug_news.json", "w", encoding="utf-8") as f:
+        json.dump(diverse_news, f, indent=4, ensure_ascii=False)
     
     print("Step 4: Filtering & Summarizing with AI (Vietnamese)...")
     # Filters out general news sites and low-signal content
     final_reports = summarize_news(filtered_news, keywords)
     
+    # --- NO-AI FALLBACK ---
+    # If AI filter was too strict or all items failed, take top 5 raw items to avoid blank UI
+    if not final_reports and filtered_news:
+        print("  !!! AI Fallback: Summarizer returned 0 items. Taking top 5 raw items to ensure UI visibility...")
+        for raw_item in filtered_news[:5]:
+            final_reports.append({
+                "title": raw_item['title'],
+                "link": raw_item['link'],
+                "source": raw_item.get('source', 'Unknown'),
+                "summary_vn": raw_item.get('summary', '')[:300] + "...",
+                "date": raw_item.get('date', '')
+            })
+
     # Step 4.5: Post-Fetch Keyword Extraction (Actual found news)
     print("Step 4.5: Extracting actual keywords from fetched news...")
     actual_keywords = "N/A"
@@ -418,7 +435,15 @@ def run_agent():
         """
         try:
             from src.agent.model_rotator import get_rotator
-            actual_keywords = get_rotator().generate_content(extraction_prompt)
+            ai_res = get_rotator().generate_content(extraction_prompt)
+            
+            # Sanitize response: if it contains error/exhaustion strings, use the discovery keywords
+            bad_signals = ["ERROR:", "EXECUTION FAILED:", "ALL (API KEY + MODEL) COMBINATIONS EXHAUSTED"]
+            if any(bs in ai_res.upper() for bs in bad_signals):
+                print(f"  !!! Keyword extraction AI failed. Using discovery keywords as fallback.")
+                actual_keywords = keywords 
+            else:
+                actual_keywords = ai_res
         except Exception as e:
             print(f"Warning: Could not extract final keywords: {e}")
             actual_keywords = keywords # Fallback to discovery phase keywords
@@ -428,7 +453,12 @@ def run_agent():
     output_data = {
         "timestamp": run_time.isoformat(),
         "keywords": actual_keywords, # Use refined keywords
-        "reports": final_reports
+        "reports": final_reports,
+        "debug_stats": {
+            "raw_total": len(all_raw_news),
+            "duplicates": duplicate_count,
+            "final": len(final_reports)
+        }
     }
     
     # Step 5: Data Persistence & 14-day Retention
