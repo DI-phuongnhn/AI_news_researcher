@@ -395,7 +395,6 @@ def run_agent():
     
     # DEBUG: Save the raw diverse news to a file before summarization
     print("  -> Saving RAW unfiltered news to data/raw_debug_news.json for inspection...")
-    import json
     with open("data/raw_debug_news.json", "w", encoding="utf-8") as f:
         json.dump(diverse_news, f, indent=4, ensure_ascii=False)
     
