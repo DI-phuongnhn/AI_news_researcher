@@ -1,177 +1,128 @@
 [
     {
-        "title": "[P] Best approach for online crowd density prediction from noisy video counts? (no training data)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s32g40/p_best_approach_for_online_crowd_density/",
-        "summary": "I have per-frame head counts from P2PNet running on crowd video clips. Counts are stable but noisy (±10%). I need to predict density 5-10 frames ahead per zone, and estimate time-to-critical-threshold.\n\nCurrently using EMA-smoothed Gaussian-weighted linear extrapolation. MAE \\~20 on 55 frames. Direction accuracy 49% (basically coin flip on reversals).\n\nNo historical training data available. Must run online/real-time on CPU.\n\nWhat would you try? Kalman filter? Double exponential smoothing? Someth",
+        "title": "[R] looking for academic collaborators",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7tdze/r_looking_for_academic_collaborators/",
+        "summary": "hey there, i am currently working with a research group at auckland university. we are currently working on neurodegenerative diseases - drug discovery using machine learning and deep learning. if you are a bachelors or masters student and looking forward to publish a paper - pm me!",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-25T12:52:42"
+        "date": "2026-03-30T22:14:34"
     },
     {
-        "title": "[P] Cold Validation: Open-source system where one AI agent audits another with zero shared context",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s3026s/p_cold_validation_opensource_system_where_one_ai/",
-        "summary": "    We released an open-source architecture for independent AI agent verification. \n    \n    The core idea: the agent that built something should never review it.\n    \n    Cold validation uses two agents with strict separation\n    - Builder (Claude Code) produces plans and code\n    - Reviewer (Codex CLI) audits only artifacts — never sees reasoning\n    - An orchestrator enforces phase gates and convergence\n    \n    The reviewer runs filesystem-isolated (temp dir, no repo access). Findings are tr",
+        "title": "[R] An attack class that passes every current LLM filter  - no payload, no injection signature, no log trace",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7t7w7/r_an_attack_class_that_passes_every_current_llm/",
+        "summary": "[https://shapingrooms.com/research](https://shapingrooms.com/research)\n\nI've been documenting what I'm calling postural manipulation: a specific class of language that installs an interpretive stance before a task arrives, producing measurably larger directional shifts in model outputs than matched control text of identical length and semantic similarity.\n\nThe core empirical claim: this is not ordinary context sensitivity. Matched controls produced significantly smaller shifts. Binary decision r",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-25T10:45:32"
+        "date": "2026-03-30T22:08:22"
     },
     {
-        "title": "[R] KALAVAI: Predicting When Independent Specialist Fusion Works (gain = 0.82 × divergence − 2.72, R² = 0.856, tested 410M–6.9B)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s2yr9b/r_kalavai_predicting_when_independent_specialist/",
-        "summary": "Hey all,\n\nI've been working on this for a few months and just put the paper on arXiv: https://arxiv.org/abs/2603.22755\n\nProject page: https://murailabs.com/kalavai/\n\nCode + scripts: https://github.com/mechramc/Kalavai\n\nThe basic idea: take a base checkpoint, give copies to a bunch of people, each person fine-tunes on their own domain or language independently (no communication, no shared gradients, nothing), then you collect all the checkpoints and train a lightweight MoE router on top in about ",
+        "title": "[P] Using YouTube as a data source (lessons from building a coffee domain dataset)",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7r3ln/p_using_youtube_as_a_data_source_lessons_from/",
+        "summary": "I started working on a small coffee coaching app recently - something that could answer questions around brew methods, grind size, extraction, etc.\n\nI was looking for good data and realized most written sources are either shallow or scattered. YouTube, on the other hand, has insanely high-quality content (James Hoffmann, Lance Hedrick, etc.), but it’s not usable out of the box for RAG.\n\nTranscripts are messy, chunking is inconsistent, getting everything into a usable format took way more effort ",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-25T09:42:47"
+        "date": "2026-03-30T20:48:33"
     },
     {
-        "title": "[P] AgentGuard – a policy engine + proxy to control what AI agents are allowed to do",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s2x252/p_agentguard_a_policy_engine_proxy_to_control/",
-        "summary": "I’ve been seeing a trend where AI agents are getting more and more autonomy, running shell commands, calling APIs, even handling sensitive operations.\n\nBut most setups I’ve seen have basically no enforcement layer. It’s just “hope the agent behaves.”\n\nSo I built a project called [AictionGuard](https://github.com/Caua-ferraz/AictionGuard).\n\nIt sits between the agent and the tools and enforces a policy before anything executes.\n\nSome examples:\n\n* Block commands like `rm -rf *` before they run\n* Re",
+        "title": "[D] CVPR oral/poster decisions?",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7qars/d_cvpr_oralposter_decisions/",
+        "summary": "Can anyone shed any light on the timeframes for CVPR oral/poster decisions? Have I missed these? Or are they extremely delayed?   \nThanks",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-25T08:28:20"
+        "date": "2026-03-30T20:16:27"
     },
     {
-        "title": "[R] How are you managing long-running preprocessing jobs at scale? Curious what's actually working",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s2qham/r_how_are_you_managing_longrunning_preprocessing/",
-        "summary": "We're a small ML team for a project and we keep running into the same wall: large preprocessing jobs (think 50–100GB datasets) running on a single machine take hours, and when something fails halfway through, it's painful.\n\n\n\nWe've looked at Prefect, Temporal, and a few others — but they all feel like they require a full-time DevOps person to set up and maintain properly. And most of our team is focused on the models, not the infrastructure.\n\n\n\nCurious how other teams are handling this:\n\n\n\n\\- Ar",
+        "title": "TRACER: Learn-to-Defer for LLM Classification with Formal Teacher-Agreement Guarantees",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7p0au/tracer_learntodefer_for_llm_classification_with/",
+        "summary": "I'm releasing TRACER (Trace-Based Adaptive Cost-Efficient Routing), a library for learning cost-efficient routing policies from LLM traces.\n\nThe setup: you have an LLM handling classification tasks. You want to replace a fraction of calls with a cheap local surrogate, with a formal guarantee that the surrogate agrees with the LLM at least X% of the time on handled traffic.\n\nTechnical core:\n\n* Three pipeline families: Global (accept-all), L2D (surrogate + conformal acceptor gate), RSB (Residual S",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-25T04:07:11"
+        "date": "2026-03-30T19:21:53"
     },
     {
-        "title": "[R] Evaluating MLLMs with Child-Inspired Cognitive Tasks",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s2clxr/r_evaluating_mllms_with_childinspired_cognitive/",
-        "summary": "Hey there, we’re sharing KidGym, an interactive 2D grid-based benchmark for evaluating MLLMs in continuous, trajectory-based interaction, accepted to **ICLR 2026**.\n\nMotivation: Many existing MLLM benchmarks are static and focus on isolated skills, which makes them less faithful for characterizing model capabilities in continuous interactive settings. Inspired by the **Wechsler Intelligence Scale for Children (WISC)**, we organize evaluation into five cognitive dimensions and design tasks to pro",
+        "title": "[D] thoughts on the controversy about Google's new paper?",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7m7rn/d_thoughts_on_the_controversy_about_googles_new/",
+        "summary": "Openreview: [https://openreview.net/forum?id=tO3ASKZlok](https://openreview.net/forum?id=tO3ASKZlok)\n\nIt's sad to see almost no one mention this on Reddit and people are being mean to people who point out concerns\n\n  \nEdit: google is allegedly doing this in their trending TurboQuant paper\n\n1. Did not attribute a pervious work RaBitQ fully\n\n2. Did unfair comparison with RaBitQ (single core CPU vs GPU)\n\n",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T19:39:35"
+        "date": "2026-03-30T16:57:30"
     },
     {
-        "title": "[D] Matryoshka Representation Learning",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s27pnk/d_matryoshka_representation_learning/",
-        "summary": "Hey everyone,\n\nMatryoshka Representation Learning (MRL) has gained a lot of traction for its ability to maintain strong downstream performance even under aggressive embedding compression. That said, I’m curious about its limitations.\n\nWhile I’ve come across some recent work highlighting degraded performance in certain retrieval-based tasks, I’m wondering if there are other settings where MRL struggles.\n\nWould love to hear about any papers, experiments, or firsthand observations that explore wher",
+        "title": "[R] Editing ICML Rebuttal",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s7eren/r_editing_icml_rebuttal/",
+        "summary": "Hi guys, \n\nIf I submit my ICML rebuttal now on OpenReview, can I edit it afterwards until the deadline.",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T15:06:50"
+        "date": "2026-03-30T09:46:32"
     },
     {
-        "title": "[R] Causal self-attention as a probabilistic model over embeddings",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s248e0/r_causal_selfattention_as_a_probabilistic_model/",
-        "summary": "We’ve been working on a probabilistic interpretation of causal self-attention where token embeddings are treated as latent variables. In that view, the attention map induces a change-of-variables term, which leads to a barrier / degeneracy boundary in embedding space.\n\nThe resulting picture is:\n\n* a stability-margin interpretation of causal attention\n* “support tokens,” i.e. the positions closest to the degeneracy boundary\n* a simple MAP-style training penalty: standard cross-entropy plus a smoo",
+        "title": "[P] Implemented TurboQuant in Python",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s73sbf/p_implemented_turboquant_in_python/",
+        "summary": "Spent \\~2 days implementing this paper: *TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate*\n\nRepo: [github.com/yashkc2025/turboquant](http://github.com/yashkc2025/turboquant?utm_source=chatgpt.com)\n\nMost quantization stuff I’ve worked with usually falls into one of these:\n\n* you need calibration data (k-means, clipping ranges, etc.)\n* or you go naive (uniform quant) and take the quality hit\n\nThis paper basically says: *what if we just… don’t do either?*\n\nThe main idea is w",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T11:37:53"
+        "date": "2026-03-30T02:03:15"
     },
     {
-        "title": "[D] Decoding backchannel info: Is a PI being \"aggressive in research\" a massive red flag? (C1 vs Siemens AI Lab)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s20svb/d_decoding_backchannel_info_is_a_pi_being/",
-        "summary": "Hey everyone, 4th year Physics PhD here doing applied ML (surrogate models for fluid dynamics). I’m trying to finalize my summer 2026 internship and I'm totally torn between two offers, mostly because of some digging around I did.\n\nOffer 1: Capital One DSIP. $\\~13k/month, McLean HQ. Great money, super structured, likely return offer. But I'll be doing tabular data/GBMs for credit risk, which honestly sounds a bit soul-crushing compared to my physics work. Work itself is interesting and I have ne",
+        "title": "[D] Data curation and targeted replacement as a pre-training alignment and controllability method",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s73jb1/d_data_curation_and_targeted_replacement_as_a/",
+        "summary": "Hi, r/MachineLearning: has much research been done in large-scale training scenarios where undesirable data has been replaced before training, such as any instances of violence, lying, or deception in the dataset?\n\nMost controllability work, like RLHF or constitutional AI, seems to be done post-training. What I'm considering is intentionally training models on more carefully chosen data, and not letting it train on undesirable data at all. This is a literal application of Mo Gawdat's proposal to",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T08:54:11"
+        "date": "2026-03-30T01:53:52"
     },
     {
-        "title": "[D] ICML 2026 Review Discussion",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1yz2t/d_icml_2026_review_discussion/",
-        "summary": "ICML 2026 reviews will release today (24-March AoE), This thread is open to discuss about reviews and importantly celebrate successful reviews.\n\nLet us all remember that review system is noisy and we all suffer from it and this doesn't define our research impact. Let's all prioritise reviews which enhance our papers. Feel free to discuss your experiences",
+        "title": "[P] I tested Meta’s brain-response model on posts. It predicted the Elon one almost perfectly.",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s6ylp1/p_i_tested_metas_brainresponse_model_on_posts_it/",
+        "summary": "I built an experimental UI and visualization layer around Meta’s open brain-response model just to see whether this stuff actually works on real content.\n\nIt does.\n\nAnd that’s exactly why it’s both exciting and a little scary.\n\nThe basic idea is that you can feed in content, estimate a predicted brain-response footprint, compare patterns across posts, and start optimizing against that signal.\n\nThis is not just sentiment analysis with better branding. It feels like a totally different class of fe",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T07:35:01"
+        "date": "2026-03-29T22:47:38"
     },
     {
-        "title": "[R] VLouvain: Louvain Community Detection Directly on Vectors, No Graph Construction",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1ynf8/r_vlouvain_louvain_community_detection_directly/",
-        "summary": "You have embeddings for your objects. You want to build a similarity graph and find communities, whether for GraphRAG, a recommender system, or just finding structure in your data. So you compute pairwise similarities, build the graph, run Louvain. Except now you have O(n\\^2) edges and everything crashes above \\~15K nodes.\n\nVLouvain reformulates Louvain to work directly on the embedding matrix. Degrees and modularity gains are computed from community-level vector sums, no edges involved. You mai",
+        "title": "[D] Why does it seem like open source materials on ML are incomplete? this is not enough...",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s6wswn/d_why_does_it_seem_like_open_source_materials_on/",
+        "summary": "Many times when I try to deeply understand a topic in machine learning — whether it's a new architecture, a quantization method, a full training pipeline, or simply reproducing someone’s experiment — I find that the available open source materials are clearly insufficient.\nOften I notice:\n\nRepositories lack complete code needed to reproduce the results\nMissing critical training details (datasets, hyperparameters, preprocessing steps, random seeds, etc.)\nDocumentation is superficial or outdated\nB",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T07:21:41"
+        "date": "2026-03-29T21:38:29"
     },
     {
-        "title": "[P] Prompt optimization for analog circuit placement — 97% of expert quality, zero training data",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1uvfr/p_prompt_optimization_for_analog_circuit/",
-        "summary": "Analog IC layout is a notoriously hard AI benchmark: spatial reasoning, multi-objective optimization (matching, parasitics, routing), and no automated P&amp;R tools like digital design has.\n\nWe evaluated VizPy's prompt optimization on this task. The optimizer learns from failure→success pairs and improves the LLM's layout reasoning across iterations — no domain-specific training data required.\n\nResults and methodology: https://vizops.ai/blog/prompt-optimization-analog-circuit-placement/\n\nHappy t",
+        "title": "[P] I trained an AI to play Resident Evil 4 Remake using Behavioral Cloning + LSTM",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s6wfde/p_i_trained_an_ai_to_play_resident_evil_4_remake/",
+        "summary": "I recorded gameplay trajectories in RE4's village — running, shooting, reloading, dodging — and used Behavioral Cloning to train a model to imitate my decisions. Added LSTM so the AI could carry memory across time steps, not just react to the current frame.\n\nThe most interesting result: the AI handled single enemies reasonably well, but struggled with the fight-or-flee decision when multiple enemies were on screen simultaneously. That nuance was hard to imitate without more data.\n\nFull video bre",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-24T04:52:51"
+        "date": "2026-03-29T21:23:32"
     },
     {
-        "title": "[R] Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation Fails (arXiv 2603.18280)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1j4tr/r_detection_is_cheap_routing_is_learned_why/",
-        "summary": "**Paper:** [https://arxiv.org/abs/2603.18280](https://arxiv.org/abs/2603.18280)\n\n**TL;DR:** Current alignment evaluation measures concept detection (probing) and refusal (benchmarking), but alignment primarily operates through a learned routing mechanism between these - and that routing is lab-specific, fragile, and invisible to refusal-based benchmarks. We use political censorship in Chinese-origin LLMs as a natural experiment because it gives us known ground truth and wide behavioral variation",
+        "title": "[D] Data Science at Auxia",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s69jpk/d_data_science_at_auxia/",
+        "summary": "Can someone tell me about their experience at Auxia during the interviews or working there? Seems like a new company but team looks pretty strong.\n\nHow was your experience?",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T21:55:48"
+        "date": "2026-03-29T02:27:13"
     },
     {
-        "title": "[N] Understanding &amp; Fine-tuning Vision Transformers",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1h8fw/n_understanding_finetuning_vision_transformers/",
-        "summary": "A neat blog post by Mayank Pratap Singh with excellent visuals introducing ViTs from the ground up. The post covers:   \n\n* Patch embedding\n* Positional encodings for Vision Transformers\n* Encoder-only models ViTs for classification\n* Benefits, drawbacks, &amp; real-world applications for ViTs\n* Fine-tuning a ViT for image classification.\n\nFull blogpost here:   \nhttps://www.vizuaranewsletter.com/p/vision-transformers\n\nAdditional Resources:   \n\n* An Image is Worth 16x16 Words https://arxiv.org/abs",
+        "title": "[P] TurboQuant for weights: near‑optimal 4‑bit LLM quantization with lossless 8‑bit residual – 3.2× memory savings",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s634wk/p_turboquant_for_weights_nearoptimal_4bit_llm/",
+        "summary": "An adaptation of the recent **TurboQuant** algorithm (Zandieh et al., 2025) from **KV‑cache quantization to model weight compression**. It gives you a **drop‑in replacement for** `nn.Linear` with near‑optimal distortion.\n\n**Benchmarks (Qwen3.5‑0.8B, WikiText‑103)**\n\n|Config|Bits|PPL|Δ PPL|Compressed Size|\n|:-|:-|:-|:-|:-|\n||\n|Baseline bf16|16|14.29|–|1,504 MB|\n|**4+4 residual**|**8**|**14.29**|**0.00**|**762 MB**|\n|4‑bit (group=full)|4|16.23|\\+1.94|361 MB|\n|4‑bit (group=128)|4|16.57|\\+2.28|381 M",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T20:42:53"
+        "date": "2026-03-28T22:19:49"
     },
     {
-        "title": "[D] The \"serverless GPU\" market is getting crowded — a breakdown of how different platforms actually differ",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s1aw7u/d_the_serverless_gpu_market_is_getting_crowded_a/",
-        "summary": "ok so I’ve been going down a rabbit hole on this for the past few weeks for a piece I’m writing and honestly the amount of marketing BS in this space is kind of impressive. figured I’d share the framework I ended up with because I kept seeing the same confused questions pop up in my interviews.\n\nthe tl;dr is that “serverless GPU” means like four different things depending on who’s saying it\n\nthing 1: what’s the actual elasticity model\n\nVast.ai is basically a GPU marketplace. you get access to di",
+        "title": "[D] Litellm supply chain attack and what it means for api key management",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s62taq/d_litellm_supply_chain_attack_and_what_it_means/",
+        "summary": "If you missed it, litellm versions 1.82.7 and 1.82.8 on pypi got compromised. malicious .pth file that runs on every python process start, no import needed. it scrapes ssh keys, aws/gcp creds, k8s secrets, crypto wallets, env vars (aka all your api keys). karpathy posted about it.\n\nthe attacker got in through trivy (a vuln scanner ironically) and stole litellm's publish token. 2000+ packages depend on litellm downstream including dspy and mlflow. the only reason anyone caught it was because the ",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T15:09:58"
+        "date": "2026-03-28T22:07:16"
     },
     {
-        "title": "[D] Modeling online discourse escalation as a state machine (dataset + labeling approach)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s147rf/d_modeling_online_discourse_escalation_as_a_state/",
-        "summary": "Hi,\n\nI’ve been working on a framework to model how online discussions escalate into conflict, and I’m exploring whether it can be framed as a classification / sequence modeling problem.\n\nThe core idea is to treat discourse as a state machine with observable transitions.\n\n# States (proposed)\n\n* **Neutral** — information exchange without clear antagonism\n* **Disagreement** — opposing views or correction without personal targeting\n* **Identity Activation** — references to personal, ideological, or ",
+        "title": "[R] Lag state in citation graphs: a systematic indexing blind spot with implications for lit review automation",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s611t3/r_lag_state_in_citation_graphs_a_systematic/",
+        "summary": "Something kept showing up in our citation graph analysis that didn't have a name: papers actively referenced in recently published work but whose references haven't propagated into the major indices yet. We're calling it the **lag state** — it's a structural feature of the graph, not just a data quality issue.\n\nThe practical implication: if you're building automated literature review pipelines on Semantic Scholar or similar, you're working with a surface that has systematic holes — and those hol",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T09:00:30"
+        "date": "2026-03-28T20:57:22"
     },
     {
-        "title": "[D] Training a classifier entirely in SQL (no iterative optimization)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0y1n2/d_training_a_classifier_entirely_in_sql_no/",
-        "summary": "I implemented SEFR, which is a lightweight linear classifier, entirely in SQL (in Google BigQuery), and benchmarked it against Logistic Regression.\n\nOn a 55k fraud detection dataset, SEFR achieves AUC 0.954 vs. 0.986 of Logistic Regression, but SEFR is \\~18× faster due to its fully parallelizable formulation (it has no iterative optimization).",
+        "title": "[D] Thinking about augmentation as invariance assumptions",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s5nxwc/d_thinking_about_augmentation_as_invariance/",
+        "summary": "Data augmentation is still used much more heuristically than it should be.\n\nA training pipeline can easily turn into a stack of intuition, older project defaults, and transforms borrowed from papers or blog posts. The hard part is not adding augmentations. The hard part is reasoning about them: what invariance is each transform trying to impose, when is that invariance valid, how strong should the transform be, and when does it start corrupting the training signal instead of improving generaliza",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T04:35:13"
+        "date": "2026-03-28T09:12:26"
     },
     {
-        "title": "[R] Designing AI Chip Software and Hardware",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0y008/r_designing_ai_chip_software_and_hardware/",
-        "summary": "This is a detailed document on how to design an AI chip, both software and hardware.\n\nI used to work at Google on TPUs and at Nvidia on GPUs, so I have some idea about this, though the design I suggest is not the same as TPUs or GPUs.\n\nI also included many anecdotes from my career in Silicon Valley.\n\n**Background** This doc came to be because I was considering making an AI hw startup and this was to be my plan. I decided against it for personal reasons. So if you're running an AI hardware compan",
+        "title": "[Project] PentaNet: Pushing beyond BitNet with Native Pentanary {-2, -1, 0, 1, 2} Quantization (124M, zero-multiplier inference)",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1s5l5l2/project_pentanet_pushing_beyond_bitnet_with/",
+        "summary": "Hey everyone,\n\nI've been experimenting with extreme LLM quantization following the BitNet 1.58b paper. While ternary quantization {-1, 0, 1} is great for replacing costly matrix multiplications with simple additions, I wondered if we were leaving too much model capacity on the table by overly restricting the weights.\n\nSo, I built and trained PentaNet from scratch — a custom architecture that expands the weight states to pentanary: {-2, -1, 0, +1, +2}.\n\nWhy ±2? Because multiplying by 2 doesn't re",
         "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T04:33:21"
-    },
-    {
-        "title": "Arc Institute introduces BioReason-Pro, targeting the vast majority of proteins lacking experimental annotations",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0uxom/arc_institute_introduces_bioreasonpro_targeting/",
-        "summary": "",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-23T02:33:17"
-    },
-    {
-        "title": "[N] MIT Flow Matching and Diffusion Lecture 2026",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0qi41/n_mit_flow_matching_and_diffusion_lecture_2026/",
-        "summary": "Peter Holderrieth and Ezra Erives just released their new MIT 2026 course on flow matching and diffusion models! It introduces the full stack of modern AI image, video, protein generators - theory &amp; practice. It includes:\n\n* Lecture Videos: Introducing theory &amp; step-by-step derivations.\n* Lecture Notes: Mathematically self-contained.  \n* Coding: Hands-on exercises for every component.  \n\nThey improved upon last years' iteration and added new topics:   \nLatent spaces, diffusion transforme",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T23:44:13"
-    },
-    {
-        "title": "[P] Visualizing LM's Architecture and data flow with Q subspace projection",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0ov8e/p_visualizing_lms_architecture_and_data_flow_with/",
-        "summary": "Hey guys, I did something hella entertaining. With some black magic and vodoo I was able to extract pretty cool images that are like an *MRI* from the model. I'm not stating anything, I have some hypothesis about it... It is mostly because it is just so pretty and mind bogging.\n\nI stumbled up a way to visualize LM's *structure of structure structures* in a 3D volume.\n\nHere is the [Gist Link](https://gist.github.com/y3i12/393410d8b3124572dec15b4af0f41ff5) with a speed run of the idea.\n\nSome image",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T22:40:55"
-    },
-    {
-        "title": "[D] rtx 3060 323$ vs rtx 5050 294$",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0l3zh/d_rtx_3060_323_vs_rtx_5050_294/",
-        "summary": "My friends, I'm in a real dilemma. I don't know what to choose. Both graphics cards are new, but unfortunately, the RTX 3060 is more expensive, and I don't know why. I'm going to play games and learn AI, and AI recommended the RTX 3060 to me.",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T20:04:37"
-    },
-    {
-        "title": "[D] Accepted ICCV25 workshop paper somehow never made it into proceedings",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0ibro/d_accepted_iccv25_workshop_paper_somehow_never/",
-        "summary": "A paper from our group was accepted to an ICCV25 workshop. Copyright transfer was completed, registration was completed, and the paper was presented at the workshop. In 2026 March (by random chance) we found out that it never appeared in the proceedings. We asked the ICCV workshop group about it, and they simply stated that the paper had been removed because it was “not registered.” But it was registered, and we have documentation for that. No explanation was given beyond that. We still do not k",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T17:35:02"
-    },
-    {
-        "title": "[D] Has industry effectively killed off academic machine learning research in 2026?",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0hcit/d_has_industry_effectively_killed_off_academic/",
-        "summary": "This wasn't always the case, but now almost any research topic in machine learning that you can imagine is now being done MUCH BETTER in industry due to a glut of compute and endless international talents.\n\nThe only ones left in academia seems to be:\n\n1. niche research that delves very deeply into how some older models work (e.g., GAN, spiking NN), knowing full-well they will never see the light of day in actual applications, because those very applications are being done better by whatever indu",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T16:34:10"
-    },
-    {
-        "title": "[D] Solving the \"Liquid-Solid Interface\" Problem: 116 High-Fidelity Datasets of Coastal Physics (Waves, Saturated Sand, Light Transport)",
-        "link": "https://www.reddit.com/r/MachineLearning/comments/1s0ea4v/d_solving_the_liquidsolid_interface_problem_116/",
-        "summary": "Modern generative models (Sora, Runway, Kling) still struggle with the complex physics of the shoreline. I’ve spent months capturing **116 datasets** from the Arabian Sea to document phenomena that are currently poorly understood by AI:\n\n* **Wave-Object Interaction:** Real-world flow around obstacles and backwash dynamics.\n* **Phase Transitions:** The precise moment of water receding and sand drying (albedo/specular decay).\n* **Multi-Layer Light Transport:** Transparency and subsurface scatterin",
-        "source": "Reddit r/MachineLearning",
-        "date": "2026-03-22T13:19:48"
+        "date": "2026-03-28T07:05:50"
     }
 ]

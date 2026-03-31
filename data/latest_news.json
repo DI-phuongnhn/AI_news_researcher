@@ -1,5 +1,74 @@
 {
-    "timestamp": "2026-03-31T03:40:21.805337",
-    "keywords": "N/A",
-    "reports": []
+    "timestamp": "2026-03-30T22:38:03.386451",
+    "keywords": "EN: [Postural Manipulation, TRACER, TurboQuant, Vector Quantization, Pre-training Intervention, Behavioral Cloning, LSTM, LLM Quantization, Supply Chain Security, LLM Classification]\nVN: [Postural Manipulation, TRACER, TurboQuant, Lượng tử hóa Vector, Can thiệp tiền huấn luyện, Behavioral Cloning, LSTM, Lượng tử hóa LLM, Bảo mật chuỗi cung ứng, Phân loại LLM]",
+    "reports": [
+        {
+            "title": "[R] An attack class that passes every current LLM filter  - no payload, no injection signature, no log trace",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s7t7w7/r_an_attack_class_that_passes_every_current_llm/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Nghiên cứu giới thiệu một lớp tấn công mới gọi là \"Postural Manipulation\", tập trung vào việc thay đổi hành vi của LLM mà không cần payload độc hại hay dấu hiệu injection truyền thống. Về mặt kỹ thuật, phương pháp này cài đặt một \"thế đứng diễn giải\" (interpretive stance) thông qua các token định hướng trước khi tác vụ chính xuất hiện. Các thử nghiệm cho thấy kỹ thuật này tạo ra sự dịch chuyển hướng (directional shifts) trong không gian ẩn (latent space) và phân phối xác suất đầu ra mạnh hơn đáng kể so với các văn bản đối chứng có cùng độ dài và độ tương đồng ngữ nghĩa. Điểm đổi mới nằm ở việc khai thác sự nhạy cảm của cơ chế Attention đối với ngữ cảnh mồi mà không vi phạm các bộ lọc dựa trên từ khóa hoặc chữ ký (signature-based filters). Điều này gây rủi ro lớn cho các hệ thống Agentic RAG và các lớp Guardrails hiện nay, vì cuộc tấn công không để lại dấu vết rõ ràng trong log hay KV Cache nhưng vẫn kiểm soát được thiên kiến (bias) của mô hình.",
+            "date": "2026-03-30T22:08:22"
+        },
+        {
+            "title": "TRACER: Learn-to-Defer for LLM Classification with Formal Teacher-Agreement Guarantees",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s7p0au/tracer_learntodefer_for_llm_classification_with/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "TRACER là một thư viện mới nhằm tối ưu hóa chi phí trong các tác vụ phân loại LLM bằng cách định tuyến thông minh giữa LLM chính (đắt tiền) và mô hình đại diện (surrogate model) giá rẻ. Đổi mới kỹ thuật cốt lõi là cơ chế \"Learn-to-Defer\" (Học cách trì hoãn/chuyển tiếp), nơi hệ thống học một chính sách định tuyến (routing policy) dựa trên các vết truy vết (traces) của LLM. Mục tiêu là thay thế một phần các yêu cầu bằng mô hình rẻ hơn, đồng thời duy trì một **đảm bảo đồng thuận chính thức (formal teacher-agreement guarantee)**, đảm bảo mô hình đại diện đồng ý với kết quả của LLM chính ít nhất $X\\%$ thời gian trên lưu lượng được xử lý. Về mặt kỹ thuật, nó đề xuất ba họ đường ống: Global (chấp nhận tất cả), L2D (mô hình đại diện + cổng chấp nhận conformal), và RSB (Residual Stream Backpropagation). Đây là một tiến bộ trong kỹ thuật tối ưu hóa suy luận (inference optimization) và quản lý chi phí LLM thông qua việc áp dụng lý thuyết điều khiển thống kê (statistical control theory) vào định tuyến tác vụ.",
+            "date": "2026-03-30T19:21:53"
+        },
+        {
+            "title": "[D] thoughts on the controversy about Google's new paper?",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s7m7rn/d_thoughts_on_the_controversy_about_googles_new/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài đăng Reddit đề cập đến những tranh cãi xoay quanh bài báo \"TurboQuant\" của Google, được đăng tải trên OpenReview. Đây là vấn đề kỹ thuật nghiêm trọng vì nó liên quan đến các cáo buộc về đạo văn và thực hiện so sánh hiệu suất không công bằng trong lĩnh vực tối ưu hóa mô hình ngôn ngữ lớn (LLM). Cụ thể, nhóm nghiên cứu bị cáo buộc không ghi nhận đầy đủ công trình trước đó là \"RaBitQ\" (liên quan đến kỹ thuật lượng tử hóa/quantization). Nghiêm trọng hơn, họ bị cáo buộc so sánh hiệu suất không minh bạch: đánh giá tốc độ suy luận của mô hình TurboQuant trên GPU trong khi so sánh với hiệu suất của RaBitQ chỉ chạy trên CPU đơn nhân. Đối với kỹ sư AI, điều này ảnh hưởng trực tiếp đến việc đánh giá độ tin cậy của các kỹ thuật lượng tử hóa (như một hình thức tối ưu hóa hiệu năng) và độ chính xác của các benchmark hiệu suất suy luận (inference performance benchmarks). Sự đổi mới kỹ thuật thực sự nằm ở các thuật toán lượng tử hóa mới, nhưng tính hợp lệ của chúng bị nghi ngờ do phương pháp đánh giá không chuẩn.",
+            "date": "2026-03-30T16:57:30"
+        },
+        {
+            "title": "[P] Implemented TurboQuant in Python",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s73sbf/p_implemented_turboquant_in_python/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài đăng Reddit này đề cập đến việc triển khai mã nguồn mở của **TurboQuant**, một phương pháp **Vector Quantization (Lượng tử hóa Vector)** trực tuyến mới. Đổi mới kỹ thuật cốt lõi là khả năng lượng tử hóa mà không cần dữ liệu hiệu chuẩn (như K-means) hoặc áp dụng phương pháp đơn giản (lượng tử hóa đồng nhất). Về mặt kỹ thuật, TurboQuant đề xuất một cách tiếp cận để ước tính các ngưỡng lượng tử hóa một cách linh hoạt và liên tục trong quá trình huấn luyện hoặc suy luận, nhằm đạt được tỷ lệ méo mó (distortion rate) gần tối ưu. Điều này trực tiếp liên quan đến tối ưu hóa hiệu suất và giảm kích thước mô hình, phù hợp với xu hướng tối ưu hóa mô hình (giống như các kỹ thuật tiết kiệm bộ nhớ KV Cache hoặc các mô hình 1-bit như BitNet b1.58). Việc triển khai mã nguồn mở cho phép các kỹ sư đánh giá hiệu quả của thuật toán lượng tử hóa không giám sát này.",
+            "date": "2026-03-30T02:03:15"
+        },
+        {
+            "title": "[D] Data curation and targeted replacement as a pre-training alignment and controllability method",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s73jb1/d_data_curation_and_targeted_replacement_as_a/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài đăng đề xuất một phương pháp kiểm soát và căn chỉnh mô hình (alignment) bằng cách *can thiệp tiền huấn luyện* (pre-training intervention) thông qua **lọc và thay thế dữ liệu mục tiêu** (targeted data curation and replacement), thay vì chỉ sử dụng các phương pháp hậu huấn luyện như RLHF hay Constitutional AI. Cụ thể, ý tưởng là chủ động loại bỏ hoặc thay thế các mẫu dữ liệu không mong muốn (ví dụ: bạo lực, lừa dối) khỏi tập huấn luyện quy mô lớn trước khi mô hình được đào tạo ban đầu. Đây là một sự khác biệt kiến trúc về mặt quy trình huấn luyện (training pipeline) vì nó nhắm đến việc định hình hành vi của mô hình ngay từ giai đoạn học tập cơ bản (foundation learning), có khả năng giảm thiểu sự cần thiết của các lớp điều chỉnh (fine-tuning layers) phức tạp sau này. Sự đổi mới kỹ thuật nằm ở việc áp dụng kỹ thuật **kiểm soát dữ liệu ở quy mô lớn** như một phương pháp căn chỉnh tiên phong.",
+            "date": "2026-03-30T01:53:52"
+        },
+        {
+            "title": "[P] I tested Meta’s brain-response model on posts. It predicted the Elon one almost perfectly.",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s6ylp1/p_i_tested_metas_brainresponse_model_on_posts_it/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài đăng đề cập đến việc sử dụng một \"mô hình phản hồi não bộ\" (brain-response model) mở của Meta. Về mặt kỹ thuật, sự đổi mới nằm ở khả năng ước tính một \"dấu chân phản hồi não bộ\" (predicted brain-response footprint) từ nội dung đầu vào (text). Điều này khác biệt cơ bản so với phân tích cảm xúc (sentiment analysis) truyền thống. Về mặt ứng dụng, người dùng đã xây dựng giao diện thử nghiệm để so sánh các mẫu dấu chân này giữa các bài đăng khác nhau, ngụ ý một cơ chế mô hình hóa phản ứng nhận thức sâu hơn. Mặc dù chi tiết kiến trúc cụ thể của mô hình Meta chưa được tiết lộ trong đoạn trích, việc có thể lượng hóa và so sánh các phản hồi nhận thức này mở ra tiềm năng cho các hệ thống **Agentic** hoặc **Multi-Agent** tối ưu hóa hành vi dựa trên tín hiệu phản hồi tâm lý phức tạp, vượt ra ngoài các mô hình ngôn ngữ tiêu chuẩn.",
+            "date": "2026-03-29T22:47:38"
+        },
+        {
+            "title": "[P] I trained an AI to play Resident Evil 4 Remake using Behavioral Cloning + LSTM",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s6wfde/p_i_trained_an_ai_to_play_resident_evil_4_remake/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài đăng này trình bày một ứng dụng kỹ thuật cụ thể của **Behavioral Cloning (BC)** kết hợp với mạng **LSTM** để huấn luyện một tác nhân AI điều khiển trò chơi (Agent) trong *Resident Evil 4 Remake*. Về mặt kỹ thuật, phương pháp này sử dụng dữ liệu quan sát (các khung hình trò chơi) và hành động tương ứng để học một chính sách ánh xạ trạng thái sang hành động. Việc tích hợp **LSTM** là đổi mới chính, cho phép mô hình duy trì **bộ nhớ trạng thái (state memory)** qua các bước thời gian, khác biệt với BC truyền thống chỉ dựa trên khung hình hiện tại. Điều này giúp AI xử lý các chuỗi hành động phức tạp hơn (như chạy, bắn, nạp đạn). Tuy nhiên, kết quả cho thấy mô hình vẫn gặp khó khăn trong việc mô phỏng các quyết định chiến thuật phức tạp (chiến đấu so với bỏ chạy) khi đối mặt với nhiều kẻ địch, cho thấy sự thiếu hụt dữ liệu đa dạng trong tập huấn luyện. Đây là một ví dụ về **Học tăng cường dựa trên mô phỏng (Imitation Learning)** ứng dụng trong môi trường game phức tạp.",
+            "date": "2026-03-29T21:23:32"
+        },
+        {
+            "title": "[P] TurboQuant for weights: near‑optimal 4‑bit LLM quantization with lossless 8‑bit residual – 3.2× memory savings",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s634wk/p_turboquant_for_weights_nearoptimal_4bit_llm/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Bài báo giới thiệu TurboQuant cho nén trọng số mô hình, chuyển đổi từ ứng dụng tối ưu hóa KV-cache sang nén trọng số mô hình. Về mặt kỹ thuật, đây là một phương pháp lượng tử hóa trọng số thành 4-bit với độ méo gần như tối ưu (near-optimal distortion), sử dụng một phần dư (residual) 8-bit không mất mát (lossless) để duy trì độ chính xác. Sự đổi mới cốt lõi là việc cung cấp một giải pháp thay thế (drop-in replacement) cho `nn.Linear` tiêu chuẩn, đạt được mức tiết kiệm bộ nhớ gấp 3.2 lần so với định dạng `bf16` cơ bản (từ 1,504 MB xuống 762 MB) trong khi giữ nguyên PPL (Perplexity) gần như hoàn hảo (14.29). Điều này cho phép triển khai LLM hiệu quả hơn trên các tài nguyên phần cứng hạn chế, tương đương với các kỹ thuật tối ưu hóa cấp độ kiến trúc cho suy luận.",
+            "date": "2026-03-28T22:19:49"
+        },
+        {
+            "title": "[D] Litellm supply chain attack and what it means for api key management",
+            "link": "https://www.reddit.com/r/MachineLearning/comments/1s62taq/d_litellm_supply_chain_attack_and_what_it_means/",
+            "source": "Reddit r/MachineLearning",
+            "summary_vn": "Tin tức này có tính kỹ thuật cao vì nó liên quan trực tiếp đến bảo mật chuỗi cung ứng phần mềm (Supply Chain Security) trong môi trường AI/ML. Sự cố xảy ra khi các phiên bản `litellm` (một thư viện phổ biến để trừu tượng hóa các API LLM) bị xâm phạm, chèn một tệp `.pth` độc hại. Kỹ thuật tấn công rất nguy hiểm: tệp này tự động thực thi khi bất kỳ tiến trình Python nào bắt đầu, không cần lệnh `import` tường minh, cho phép đánh cắp thông tin nhạy cảm như khóa SSH, thông tin xác thực cloud (AWS/GCP), và API keys (rất quan trọng cho các hệ thống Agentic RAG, triển khai mô hình, hoặc truy cập dịch vụ). Việc xâm nhập token xuất bản qua công cụ quét lỗ hổng Trivy (một nghịch lý) nhấn mạnh sự cần thiết phải tăng cường bảo mật cho các quy trình CI/CD và quản lý khóa bí mật. Đây là một bài học nghiêm khắc về việc quản lý khóa API và tính toàn vẹn của các thư viện phụ thuộc (dependency integrity) trong các kiến trúc AI/ML phức tạp.",
+            "date": "2026-03-28T22:07:16"
+        }
+    ],
+    "debug_stats": {
+        "raw_total": 25,
+        "duplicates": 7,
+        "final": 9
+    }
 }
