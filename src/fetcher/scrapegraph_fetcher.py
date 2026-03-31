@@ -14,32 +14,40 @@ def fetch_with_scrapegraph(url, prompt=None):
         print("Error: No GEMINI_API_KEYS found in Config.")
         return None
 
-    for i, api_key in enumerate(keys):
-        graph_config = {
-            "llm": {
-                "api_key": api_key,
-                "model": "google_genai/gemini-2.0-flash",
-            },
-            "verbose": False,
-            "headless": True
-        }
-
-        try:
-            print(f"  ScrapeGraphAI: Trying with Key Index {i}...")
-            smart_scraper_graph = SmartScraperGraph(
-                prompt=prompt,
-                source=url,
-                config=graph_config
-            )
+    for api_key in keys:
+        for model_name in Config.GEMINI_MODELS_FALLBACK:
+            full_model_name = f"google_genai/{model_name}"
             
-            result = smart_scraper_graph.run()
-            if result:
-                return result
-        except Exception as e:
-            if "RESOURCE_EXHAUSTED" in str(e) or "429" in str(e):
-                print(f"  Key {i} exhausted. Rotating...")
-                continue
-            print(f"ScrapeGraphAI error for {url} with Key {i}: {e}")
+            graph_config = {
+                "llm": {
+                    "api_key": api_key,
+                    "model": full_model_name,
+                },
+                "verbose": False,
+                "headless": True
+            }
+
+            try:
+                print(f"  ScrapeGraphAI: Trying {model_name}...")
+                smart_scraper_graph = SmartScraperGraph(
+                    prompt=prompt,
+                    source=url,
+                    config=graph_config
+                )
+                
+                result = smart_scraper_graph.run()
+                if result:
+                    return result
+            except Exception as e:
+                err_msg = str(e).upper()
+                if "RESOURCE_EXHAUSTED" in err_msg or "429" in err_msg or "TOKEN" in err_msg:
+                    print(f"  {model_name} exhausted or rate limited. Waiting 10s then rotating...")
+                    import time
+                    time.sleep(10)
+                    continue
+                print(f"ScrapeGraphAI error for {url} with {model_name}: {e}")
+                
+    return None
             
     return None
 
