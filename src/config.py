@@ -75,7 +75,10 @@ class Config:
         "https://openai.com/news/",
         "https://deepmind.google/blog/",
         "https://anthropic.com/news",
-        "https://build.nvidia.com/explore/discover"
+        "https://build.nvidia.com/explore/discover",
+        "https://qwen.ai/research#research_latest_advancements",
+        "https://mistral.ai/news/",
+        "https://ai.meta.com/blog/"
     ]
     
     # --- Data Persistence ---

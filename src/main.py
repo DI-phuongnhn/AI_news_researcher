@@ -222,10 +222,14 @@ def run_agent():
             print(f"    Scraping: {target_url}...")
             # Prompt specifically to extract news items from a list/blog page
             specific_prompt = f"""
-            Extract a list of the latest 3-5 news articles or blog posts. 
+            Extract a list of the latest 3-5 news articles, blog posts, or model releases. 
             STRICT FILTER: ONLY include articles strictly related to these keywords: {', '.join(search_keywords)}.
-            CRITICAL: If scanning Anthropic's news page, ONLY extract articles explicitly categorized as 'Product' (e.g., model releases like Claude updates, api updates). Skip 'Company' or 'Research' or generic news.
-            For each relevant article, provide 'title', 'link', and 'summary'.
+            
+            SOURCE SPECIFIC RULES:
+            - Anthropic: ONLY extract 'Product' articles (Claude releases, API updates, computer use). Skip 'Company' or 'Research'.
+            - Qwen/Mistral/Meta: Focus on model weights, paper releases, and technical advancements.
+            
+            For each relevant article, provide 'title', 'link', and 'summary' (technical depth).
             """
             specific_res = fetch_with_scrapegraph(target_url, prompt=specific_prompt)
             
