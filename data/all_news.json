@@ -1,5 +1,51 @@
 [
     {
+        "timestamp": "2026-04-02T03:38:30.944864",
+        "keywords": "EN: [Google AI PRO, Antigravity, WPA, WPA2, Apple M1, x64, MacOS, Windows, Quota, Anonymous viewing]\nVN: [Google AI PRO, Antigravity, WPA, WPA2, Apple M1, x64, MacOS, Windows, Quota, Xem ẩn danh]",
+        "reports": [
+            {
+                "title": "# Google AI PRO tăng dung lượng lưu trữ từ 2TB lên 5TB bắt đầu từ hôm nay 2/4 - ...",
+                "link": "https://www.facebook.com/groups/j2team.community/permalink/3003378329994267/",
+                "source": "Apify: Facebook Group",
+                "summary_vn": "# Google AI PRO tăng dung lượng lưu trữ từ 2TB lên 5TB bắt đầu từ hôm nay 2/4 - Không tốn thêm phí\n\n💻Mọi người vào kiểm tra thì sẽ thấy dung lượng vẫn là 2TB nhưng nếu kiểm tra tại cổng thanh toán Google One sẽ thấy đã tăng lên thành 5TB. Thông báo chính thức đã có trên các trang thông tin X của Goo...",
+                "date": "2026-04-02T02:40:56.000Z"
+            },
+            {
+                "title": "Instagram Plus: Trả phí để có đặc quyền \"tàng hình\"\n\nInstagram đang thử nghiệm g...",
+                "link": "https://www.facebook.com/groups/j2team.community/permalink/3002217843443649/",
+                "source": "Apify: Facebook Group",
+                "summary_vn": "Instagram Plus: Trả phí để có đặc quyền \"tàng hình\"\n\nInstagram đang thử nghiệm gói Instagram Plus với tính năng: Xem Story ẩn danh. Bạn có thể thoải mái lướt tin người khác mà tên mình không bao giờ hiện trong danh sách người xem. Chưa hết, Story của bạn sẽ tồn tại hẳn 48 giờ thay vì 24 giờ như trướ...",
+                "date": "2026-04-01T17:06:06.000Z"
+            },
+            {
+                "title": "# 🎉 Chia sẻ công cụ quét mật khẩu Wifi cực ngon. Hỗ trợ WPA/WPA2!\n\n⚠️ Chỉ share ...",
+                "link": "https://www.facebook.com/groups/j2team.community/permalink/3002956273369806/",
+                "source": "Apify: Facebook Group",
+                "summary_vn": "# 🎉 Chia sẻ công cụ quét mật khẩu Wifi cực ngon. Hỗ trợ WPA/WPA2!\n\n⚠️ Chỉ share tại **J2TEAM Community**. Vui lòng để nguồn khi chia sẻ!\n## \n**TẢI VỀ:**\n* Windows Installer (x64): chưa có\n* MacOS (Apple Silicon): [https://j2c.cc/wifi-scanner-2026-mac-installer](https://j2c.cc/wifi-scanner-2026-mac-i...",
+                "date": "2026-04-01T16:21:17.000Z"
+            },
+            {
+                "title": "cho mình hỏi có ai bị tình trạng bấm sign in không được không?...",
+                "link": "https://www.facebook.com/groups/antigravityvn/permalink/1595943808373185/",
+                "source": "Apify: Facebook Group",
+                "summary_vn": "cho mình hỏi có ai bị tình trạng bấm sign in không được không?...",
+                "date": "2026-04-02T03:23:45.000Z"
+            },
+            {
+                "title": "Chào mng, hôm nay mình dùng antigravity cho macbook m1 khi chat thì không có phả...",
+                "link": "https://www.facebook.com/groups/antigravityvn/permalink/1595935261707373/",
+                "source": "Apify: Facebook Group",
+                "summary_vn": "Chào mng, hôm nay mình dùng antigravity cho macbook m1 khi chat thì không có phản hồi là sao mng nhỉ? Mặc dù quota vẫn đang còn. Mình thử antigravity trên window cùng tài khoản thì bình thường. Có ai gặp tình trạng như mình không?...",
+                "date": "2026-04-02T03:09:22.000Z"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 246,
+            "duplicates": 5,
+            "final": 5
+        }
+    },
+    {
         "timestamp": "2026-04-01T10:43:40.168857",
         "keywords": "EN: [LLM, Generative AI, NLP, Machine Learning, Model Weights, MoE]\nVN: [Lượng tử hóa, Kiến trúc mô hình, Trọng số mới, MoE]",
         "reports": [
