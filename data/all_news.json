@@ -1,5 +1,30 @@
 [
     {
+        "timestamp": "2026-04-04T03:25:34.721793",
+        "keywords": "EN: [LLM, Model Differential Analysis, Model Diffing, AI Safety, Anthropic Fellows, Model Architecture, Interpretability, Neural Network Analysis, Model Testing, Large Language Models]\n\nVN: [LLM, Phân tích khác biệt mô hình, Model Diffing, An toàn AI, Anthropic Fellows, Kiến trúc mô hình, Khả năng diễn giải, Phân tích mạng thần kinh, Kiểm thử mô hình, Mô hình ngôn ngữ lớn]",
+        "reports": [
+            {
+                "title": "This research is a product of our Anthropic Fellows program, led by @tomjiralers...",
+                "link": "",
+                "source": "Apify: X Profiles",
+                "summary_vn": "Nghiên cứu này, thuộc chương trình Anthropic Fellows, cung cấp phân tích chuyên sâu về kiến trúc nội tại của các mô hình ngôn ngữ lớn (LLM). Thay vì chỉ là các tuyên bố về hiệu năng, tài liệu này tập trung vào kỹ thuật diễn giải (mechanistic interpretability), giúp làm sáng tỏ cách các neuron hoặc tập hợp neuron (circuits) mã hóa tri thức cụ thể bên trong không gian latent.\n\nVề mặt kỹ thuật, nghiên cứu khám phá cách mô hình biểu diễn thông tin thông qua việc phân tách các trọng số và kích hoạt (activations), tương tự như các kỹ thuật Sparse Autoencoders (SAE) nhằm giải mã các đặc trưng trừu tượng. Đối với kỹ sư AI, đây là tài liệu quan trọng để hiểu cách tối ưu hóa độ chính xác của mô hình, giảm thiểu hiện tượng hallucination (ảo giác) và tinh chỉnh các hệ thống Agentic hoặc RAG thông qua việc can thiệp trực tiếp vào các vector biểu diễn, thay vì chỉ dựa vào prompt engineering thuần túy. Đây là nền tảng cho việc \"mở hộp đen\" (black-box) của các mô hình tiên tiến.",
+                "date": "Fri Apr 03 21:28:03 +0000 2026"
+            },
+            {
+                "title": "If a new model shares a feature with a trusted model, that area probably doesn't...",
+                "link": "",
+                "source": "Apify: X Profiles",
+                "summary_vn": "Nội dung này đề cập đến kỹ thuật **Model Differential Analysis (Model Diffing)**, một phương pháp tiếp cận thực dụng trong an toàn AI (AI Safety) và kiểm thử mô hình. Về mặt kỹ thuật, phương pháp này hoạt động bằng cách đối chiếu trọng số (weights) hoặc đầu ra (logits) của một mô hình mới so với một \"trusted baseline\" (mô hình đã được kiểm chứng). Thay vì tái kiểm thử toàn bộ hệ thống, kỹ thuật này cô lập các delta (phần khác biệt) — vốn là nơi chứa các tham số mới, cấu trúc **MoE (Mixture of Experts)** được tinh chỉnh, hoặc các **LoRA adapters** mới được áp dụng. Điều này giúp tối ưu hóa tài nguyên tính toán trong việc đánh giá lỗ hổng bảo mật, đặc biệt là với các mô hình **Agentic** phức tạp có không gian trạng thái lớn. Đây là một chiến lược quan trọng trong quy trình MLOps nhằm khoanh vùng rủi ro tại các lớp thay đổi, giúp rút ngắn chu kỳ kiểm chứng mà không cần chạy lại toàn bộ benchmark.",
+                "date": "Fri Apr 03 21:28:02 +0000 2026"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 246,
+            "duplicates": 5,
+            "final": 2
+        }
+    },
+    {
         "timestamp": "2026-04-02T03:38:30.944864",
         "keywords": "EN: [Google AI PRO, Antigravity, WPA, WPA2, Apple M1, x64, MacOS, Windows, Quota, Anonymous viewing]\nVN: [Google AI PRO, Antigravity, WPA, WPA2, Apple M1, x64, MacOS, Windows, Quota, Xem ẩn danh]",
         "reports": [
