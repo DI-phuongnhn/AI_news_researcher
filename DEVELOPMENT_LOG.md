@@ -72,11 +72,33 @@ A performant Vanilla JS frontend hỗ trợ phân trang, xem lại dữ liệu l
 
 ---
 
-## Technical Debt & Future Work
-- **Performance**: Khi `all_news.json` phình to, việc chuyển sang database (SQLite) hoặc tối ưu hóa load dữ liệu client-side sẽ là cần thiết.
-- **Translation Fidelity**: Nghiên cứu các mô hình dịch chuyên sâu cho thuật ngữ AI chuyên ngành (vd: "Mixture-of-Experts").
-- **Automated Verification**: Cài đặt unit tests để đảm bảo fetcher hoạt động ổn định trước thay đổi layout của các công cụ tìm kiếm.
+### Phase 6: Modular Excellence & Data Recovery (April 2026)
+- **Refactoring**: Decoupled `src/main.py`. Introduced `ResearchPipeline` for orchestration, `DataManager` for persistence/retention, and `text_utils` for shared logic.
+- **Resilience**: Resolved critical Git merge conflicts in `all_news.json` and `latest_news.json` that caused JSON syntax errors.
+- **Secret Syncing**: Synchronized GitHub Action secrets (standardized on `GEMINI_API_KEY` singular) to match repository settings and expanded environment variables to include `PERSONAL_ACCESS_TOKEN`.
+- **Enhanced ScrapeGraphAI**: Integrated deep scraping fallback for Facebook Groups to ensure data availability even when specialized APIs reach quotas.
+- **Teams Notification**: Real-time alerting for high-priority technical news from official labs (OpenAI, DeepSeek, etc.).
 
 ---
-*Updated: March 2026*
+
+## Key Technical Components
+
+### 1. `src/agent/pipeline.py` (`ResearchPipeline`)
+A high-level orchestrator that manages the flow between discovery, multi-source fetching, and AI processing. It provides a single point of control for the entire bot's lifecycle.
+
+### 2. `src/utils/data_manager.py`
+Centralized management for the 14-day data retention policy and complex cross-run deduplication (URL, Title, and Snippet similarity).
+
+### 3. `src/agent/model_rotator.py`
+Continuously optimized to handle 429 Rate Limits by cycling through both API Keys and multiple Gemini models (1.5 Flash, 2.0 Flash, Pro, Lite).
+
+---
+
+## Technical Debt & Future Work
+- **Database Migration**: The JSON files are growing; SQLite will be the next step for better performance.
+- **Frontend PWA**: Converting the dashboard to a PWA for offline viewing and mobile app experience.
+- **Self-Correction**: Implementing AI-driven self-correction for failed scrapes.
+
+---
+*Updated: April 2026*
 *Created by [Antigravity AI Agent] for [NguyenHaNhatPhuong]*

@@ -1,64 +1,10 @@
 {
-<<<<<<< HEAD
-    "timestamp": "2026-04-04T03:25:34.721793",
-    "keywords": "EN: [LLM, Model Differential Analysis, Model Diffing, AI Safety, Anthropic Fellows, Model Architecture, Interpretability, Neural Network Analysis, Model Testing, Large Language Models]\n\nVN: [LLM, Phân tích khác biệt mô hình, Model Diffing, An toàn AI, Anthropic Fellows, Kiến trúc mô hình, Khả năng diễn giải, Phân tích mạng thần kinh, Kiểm thử mô hình, Mô hình ngôn ngữ lớn]",
-    "reports": [
-        {
-            "title": "This research is a product of our Anthropic Fellows program, led by @tomjiralers...",
-            "link": "",
-            "source": "Apify: X Profiles",
-            "summary_vn": "Nghiên cứu này, thuộc chương trình Anthropic Fellows, cung cấp phân tích chuyên sâu về kiến trúc nội tại của các mô hình ngôn ngữ lớn (LLM). Thay vì chỉ là các tuyên bố về hiệu năng, tài liệu này tập trung vào kỹ thuật diễn giải (mechanistic interpretability), giúp làm sáng tỏ cách các neuron hoặc tập hợp neuron (circuits) mã hóa tri thức cụ thể bên trong không gian latent.\n\nVề mặt kỹ thuật, nghiên cứu khám phá cách mô hình biểu diễn thông tin thông qua việc phân tách các trọng số và kích hoạt (activations), tương tự như các kỹ thuật Sparse Autoencoders (SAE) nhằm giải mã các đặc trưng trừu tượng. Đối với kỹ sư AI, đây là tài liệu quan trọng để hiểu cách tối ưu hóa độ chính xác của mô hình, giảm thiểu hiện tượng hallucination (ảo giác) và tinh chỉnh các hệ thống Agentic hoặc RAG thông qua việc can thiệp trực tiếp vào các vector biểu diễn, thay vì chỉ dựa vào prompt engineering thuần túy. Đây là nền tảng cho việc \"mở hộp đen\" (black-box) của các mô hình tiên tiến.",
-            "date": "Fri Apr 03 21:28:03 +0000 2026"
-        },
-        {
-            "title": "If a new model shares a feature with a trusted model, that area probably doesn't...",
-            "link": "",
-            "source": "Apify: X Profiles",
-            "summary_vn": "Nội dung này đề cập đến kỹ thuật **Model Differential Analysis (Model Diffing)**, một phương pháp tiếp cận thực dụng trong an toàn AI (AI Safety) và kiểm thử mô hình. Về mặt kỹ thuật, phương pháp này hoạt động bằng cách đối chiếu trọng số (weights) hoặc đầu ra (logits) của một mô hình mới so với một \"trusted baseline\" (mô hình đã được kiểm chứng). Thay vì tái kiểm thử toàn bộ hệ thống, kỹ thuật này cô lập các delta (phần khác biệt) — vốn là nơi chứa các tham số mới, cấu trúc **MoE (Mixture of Experts)** được tinh chỉnh, hoặc các **LoRA adapters** mới được áp dụng. Điều này giúp tối ưu hóa tài nguyên tính toán trong việc đánh giá lỗ hổng bảo mật, đặc biệt là với các mô hình **Agentic** phức tạp có không gian trạng thái lớn. Đây là một chiến lược quan trọng trong quy trình MLOps nhằm khoanh vùng rủi ro tại các lớp thay đổi, giúp rút ngắn chu kỳ kiểm chứng mà không cần chạy lại toàn bộ benchmark.",
-            "date": "Fri Apr 03 21:28:02 +0000 2026"
-        }
-    ],
-    "debug_stats": {
-        "raw_total": 246,
-        "duplicates": 5,
-        "final": 2
-=======
-    "timestamp": "2026-04-03T17:11:51.513554",
-    "keywords": "EN: [Promptfoo, LLM, CLI, Chain-of-Thought, CoT, Granite-4.0-1B-Speech, SLM, ASR, Evaluation Suite, Claude]\nVN: [Promptfoo, LLM, CLI, Chuỗi suy luận, CoT, Granite-4.0-1B-Speech, SLM, ASR, Bộ công cụ đánh giá, Claude]",
-    "reports": [
-        {
-            "title": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security te...",
-            "link": "",
-            "source": "Apify: Manual Import",
-            "summary_vn": "OpenAI đã mua lại Promptfoo, một framework mã nguồn mở hàng đầu chuyên về **evaluation** và **security testing** cho LLMs. Về mặt kỹ thuật, Promptfoo cung cấp bộ công cụ CLI mạnh mẽ cho phép các AI Engineer thực hiện **automated testing**, **red-teaming** và đánh giá chất lượng đầu ra của các **Agentic workflows**. Cốt lõi của công nghệ này nằm ở khả năng tự động hóa quy trình kiểm thử các lỗ hổng bảo mật như **prompt injection**, rò rỉ dữ liệu và sai lệch phản hồi thông qua các bộ tiêu chí tùy chỉnh (**assertions**) và **model-graded evaluations**. Việc tích hợp vào OpenAI Frontier sẽ giúp tối ưu hóa quy trình **CI/CD cho AI**, cho phép chấm điểm hệ thống (scoring) và so sánh hiệu suất giữa các phiên bản model/prompt. Đây là bước tiến quan trọng trong việc xây dựng các hệ thống **Multi-Agent** an toàn, đảm bảo khả năng kiểm soát hành vi mô hình trong các môi trường triển khai thực tế phức tạp.",
-            "date": "Mon Mar 09 17:01:35 +0000 2026"
-        },
-        {
-            "title": "We're publishing a new evaluation suite and research paper on Chain-of-Thought (...",
-            "link": "",
-            "source": "Apify: Manual Import",
-            "summary_vn": "Nghiên cứu này giới thiệu một bộ công cụ đánh giá (evaluation suite) và bài báo khoa học tập trung vào tính khả kiểm soát của Chuỗi suy luận (Chain-of-Thought - CoT). Cốt lõi kỹ thuật nằm ở việc định lượng khả năng của các mô hình ngôn ngữ lớn (như các dòng GPT thế hệ mới) trong việc che giấu hoặc thao túng logic suy luận nội bộ (reasoning) nhằm đánh lừa các hệ thống giám sát an toàn. \n\nKết quả cho thấy các mô hình có khả năng \"obscure\" (che giấu) suy luận thấp, điều này củng cố giả thuyết rằng việc giám sát CoT là một cơ chế an toàn hiệu quả cho các hệ thống Agentic và lý luận phức tạp. Cải tiến kỹ thuật này cung cấp một framework để đo lường độ trung thực của tiến trình suy luận so với kết quả đầu ra cuối cùng, ngăn chặn rủi ro về \"steganography\" (ẩn dấu thông tin độc hại trong các bước suy luận trung gian) và đảm bảo tính minh bạch cho các mô hình sử dụng kỹ thuật Latent Reasoning hoặc Long CoT.",
-            "date": "Thu Mar 05 20:07:34 +0000 2026"
-        },
-        {
-            "title": "Meet Granite-4.0-1B-Speech: a multilingual speech recognition model that's quiet...",
-            "link": "https://x.com/HuggingModels/status/2036692317692985654",
-            "source": "Apify: Manual Import",
-            "summary_vn": "Granite-4.0-1B-Speech là một mô hình Small Language Model (SLM) chuyên biệt cho nhiệm vụ nhận dạng giọng nói đa ngôn ngữ (ASR) từ IBM. Với quy mô 1 tỷ tham số, mô hình này tập trung vào tối ưu hóa hiệu năng trên các thiết bị có tài nguyên phần cứng hạn chế (Edge Computing) và giảm thiểu độ trễ Inference. Về mặt kỹ thuật, Granite-4.0 sử dụng kiến trúc Transformer tối ưu để xử lý trực tiếp đặc trưng âm thanh và chuyển đổi sang văn bản mà không cần qua nhiều bước trung gian phức tạp. Cải tiến quan trọng nằm ở khả năng huấn luyện đa ngôn ngữ \"native\", giúp duy trì độ chính xác cao trong khi vẫn tiết kiệm VRAM và băng thông tính toán. Đây là thành phần lý tưởng cho các Agentic workflows yêu cầu giao tiếp giọng nói thời gian thực, cho phép tích hợp vào các hệ thống RAG đa phương thức hoặc pipeline xử lý AI mà không gây nghẽn cổ chai hệ thống, đồng thời hỗ trợ tốt cho việc tối ưu hóa KV Cache khi kết hợp cùng các mô hình ngôn ngữ lớn khác.",
-            "date": "Wed Mar 25 06:31:03 +0000 2026"
-        },
-        {
-            "title": "No Title",
-            "link": "https://www.facebook.com/api/graphql/",
-            "source": "Apify: Facebook Group (Latest Run)",
-            "summary_vn": "Nội dung tin tức không được cung cấp (trống), do đó không thể thực hiện phân tích kỹ thuật chuyên sâu. Mặc dù phần ngữ cảnh xu hướng (Trending Context) đề cập đến nhiều công nghệ quan trọng như Claude 3.5 Sonnet, LangGraph, Agentic Workflows và Mixture of Experts, nhưng việc thiếu hụt nội dung cụ thể từ nguồn \"Facebook Group\" khiến việc đánh giá tính mới trong kiến trúc, các bản cập nhật framework hay kết quả benchmark là không thể. Để đạt tiêu chí \"TECHNICAL: YES\", tin tức cần chứa các chi tiết về tối ưu hóa thuật toán (như Flash Attention 3), cấu trúc đồ thị trong RAG, hoặc các thông số kỹ thuật cụ thể của mô hình. Hiện tại, đây chỉ là một danh sách các từ khóa xu hướng, không mang giá trị thực thi cho kỹ sư AI.",
-            "date": "2026-04-03T17:03:15.152674"
-        }
-    ],
+    "timestamp": "2026-04-06T16:11:24.591926",
+    "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), Agentic Reasoning, Test-time Compute, GraphRAG, LangGraph, Mixture of Experts, Qwen 2.5-Coder, Llama-Stack, n8n, GGUF Quantization, BitNet, Small Language Models]\n\nJP: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), 推論モデル, エージェントワークフロー, GraphRAG, LangGraph, MoE (混合エキスパート), Qwen 2.5, Dify, 量子化, PLaMo, Sakana AI, ローカルLLM]",
+    "reports": [],
     "debug_stats": {
         "raw_total": 352,
-        "duplicates": 11,
-        "final": 4
->>>>>>> faeb9ae (Refactor: Noise filtering, Teams notification, and repo cleanup)
+        "duplicates": 15,
+        "final": 0
     }
 }

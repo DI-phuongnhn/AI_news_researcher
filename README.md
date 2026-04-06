@@ -14,10 +14,11 @@ Một hệ thống tự trị chuyên nghiên cứu và tổng hợp tin tức A
 ## 🛠️ Công nghệ sử dụng
 
 - **Ngôn ngữ**: Python 3.10+
-- **AI Engine**: Google Gemini API (GenAI SDK)
-- **Data Fetching**: Feedparser, DuckDuckGo Search, Requests, BeautifulSoup4
-- **Frontend**: HTML5, Vanilla CSS, JavaScript (Static Site)
-- **CI/CD**: GitHub Actions (Tự động chạy hàng ngày)
+- **AI Engine**: Google Gemini API (GenAI SDK) với cơ chế xoay vòng Key/Model.
+- **Data Fetching**: ScrapeGraphAI (Deep Scraping), Apify (X/FB/Reddit), Feedparser, DuckDuckGo.
+- **Notification**: Microsoft Teams Webhook.
+- **Frontend**: HTML5, Vanilla CSS, JavaScript (Static Site).
+- **CI/CD**: GitHub Actions (Tự động chạy hàng ngày).
 
 ## 📂 Cấu trúc dự án
 
@@ -25,20 +26,26 @@ Một hệ thống tự trị chuyên nghiên cứu và tổng hợp tin tức A
 AI_news_researcher/
 ├── src/
 │   ├── agent/
-│   │   ├── model_rotator.py   # Xoay vòng Key/Model thông minh
-│   │   └── summarizer.py      # Lọc và tóm tắt nội dung kỹ thuật
+│   │   ├── pipeline.py       # Orchestrator chính (New)
+│   │   ├── model_rotator.py  # Xoay vòng Key/Model thông minh
+│   │   └── summarizer.py     # Lọc và tóm tắt nội dung kỹ thuật
 │   ├── fetcher/
-│   │   ├── keyword_discovery.py # Khám phá xu hướng AI
-│   │   ├── rss_fetcher.py       # Lấy tin từ arXiv, IEEE, v.v.
-│   │   ├── reddit_fetcher.py    # Lấy tin từ Reddit
-│   │   └── search_fetcher.py    # Tìm kiếm Google/Social Media
-│   ├── config.py              # Cấu hình tập trung
-│   └── main.py                # Entry point vận hành pipeline
+│   │   ├── keyword_discovery.py
+│   │   ├── rss_fetcher.py
+│   │   ├── reddit_fetcher.py
+│   │   ├── apify_fetcher.py
+│   │   └── scrapegraph_fetcher.py
+│   ├── utils/
+│   │   ├── data_manager.py   # Quản lý JSON & Deduplication (New)
+│   │   ├── text_utils.py     # Tiện ích xử lý văn bản (New)
+│   │   └── notifier.py       # Thông báo Microsoft Teams
+│   ├── config.py
+│   └── main.py              # Entry point (Slim version)
 ├── data/
-│   ├── latest_news.json       # Kết quả chạy mới nhất
-│   └── all_news.json          # Lưu trữ lịch sử (Historical data)
-├── index.html                 # Dashboard UI
-└── .env                       # Chứa GEMINI_API_KEYS (Không push lên Git)
+│   ├── latest_news.json
+│   └── all_news.json
+├── index.html
+└── .env                     # GEMINI_API_KEY, APIFY_API_TOKEN, v.v.
 ```
 
 ## ⚙️ Hướng dẫn cài đặt

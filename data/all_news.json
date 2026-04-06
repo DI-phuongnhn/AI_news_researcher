@@ -1,6 +1,15 @@
 [
     {
-<<<<<<< HEAD
+        "timestamp": "2026-04-06T16:11:24.591926",
+        "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), Agentic Reasoning, Test-time Compute, GraphRAG, LangGraph, Mixture of Experts, Qwen 2.5-Coder, Llama-Stack, n8n, GGUF Quantization, BitNet, Small Language Models]\n\nJP: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), 推論モデル, エージェントワークフロー, GraphRAG, LangGraph, MoE (混合エキスパート), Qwen 2.5, Dify, 量子化, PLaMo, Sakana AI, ローカルLLM]",
+        "reports": [],
+        "debug_stats": {
+            "raw_total": 352,
+            "duplicates": 15,
+            "final": 0
+        }
+    },
+    {
         "timestamp": "2026-04-04T03:25:34.721793",
         "keywords": "EN: [LLM, Model Differential Analysis, Model Diffing, AI Safety, Anthropic Fellows, Model Architecture, Interpretability, Neural Network Analysis, Model Testing, Large Language Models]\n\nVN: [LLM, Phân tích khác biệt mô hình, Model Diffing, An toàn AI, Anthropic Fellows, Kiến trúc mô hình, Khả năng diễn giải, Phân tích mạng thần kinh, Kiểm thử mô hình, Mô hình ngôn ngữ lớn]",
         "reports": [
@@ -69,9 +78,11 @@
             "raw_total": 246,
             "duplicates": 5,
             "final": 5
-=======
+        }
+    },
+    {
         "timestamp": "2026-04-03T17:11:51.513554",
-        "keywords": "EN: [Promptfoo, LLM, CLI, Chain-of-Thought, CoT, Granite-4.0-1B-Speech, SLM, ASR, Evaluation Suite, Claude]\nVN: [Promptfoo, LLM, CLI, Chuỗi suy luận, CoT, Granite-4.0-1B-Speech, SLM, ASR, Bộ công cụ đánh giá, Claude]",
+        "keywords": "EN: [Promptfoo, LLM, CLI, Chain-of-Thought, CoT, Granite-4.0-1B-Speech, SLM, ASR, Evaluation Suite, Claude]\nVN: [Promptfoo, LLM, CLI, Chuới suy luận, CoT, Granite-4.0-1B-Speech, SLM, ASR, Bộ công cụ đánh giá, Claude]",
         "reports": [
             {
                 "title": "We’re acquiring Promptfoo.\n\nTheir technology will strengthen agentic security te...",
@@ -106,7 +117,6 @@
             "raw_total": 352,
             "duplicates": 11,
             "final": 4
->>>>>>> faeb9ae (Refactor: Noise filtering, Teams notification, and repo cleanup)
         }
     },
     {
