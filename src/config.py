@@ -21,13 +21,13 @@ class Config:
     # --- Gemini API Configuration ---
     # Supports multiple keys separated by commas in GEMINI_API_KEYS or a single GEMINI_API_KEY
     GEMINI_API_KEYS = [
-        k.strip() for k in os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", "")).split(",") 
+        k.strip() for k in os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", "")).replace("\n", ",").split(",") 
         if k.strip()
     ]
     
     # --- Apify Configuration ---
     APIFY_API_TOKENS = [
-        k.strip() for k in os.getenv("APIFY_API_TOKENS", os.getenv("APIFY_API_TOKEN", "")).split(",") 
+        k.strip() for k in os.getenv("APIFY_API_TOKENS", os.getenv("APIFY_API_TOKEN", "")).replace("\n", ",").split(",") 
         if k.strip()
     ]
     
@@ -73,13 +73,19 @@ class Config:
     SCRAPEGRAPH_TARGETS = [
         "https://huggingface.co/models",
         "https://openai.com/news/",
+        "https://openai.com/blog",
         "https://deepmind.google/blog/",
         "https://anthropic.com/news",
+        "https://deepseek.com/en/blog",
         "https://build.nvidia.com/explore/discover",
+        "https://developer.nvidia.com/blog/",
         "https://qwen.ai/research#research_latest_advancements",
         "https://mistral.ai/news/",
         "https://ai.meta.com/blog/"
     ]
+    
+    # Teams Webhook Notification
+    TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL", "")
     
     # --- Data Persistence ---
     DATA_FILE = "data/latest_news.json"

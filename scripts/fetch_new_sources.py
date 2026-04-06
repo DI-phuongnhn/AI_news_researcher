@@ -14,7 +14,13 @@ def fetch_and_summary_new_sources():
     new_sources = [
         "https://qwen.ai/research#research_latest_advancements",
         "https://mistral.ai/news/",
-        "https://ai.meta.com/blog/"
+        "https://ai.meta.com/blog/",
+        "https://huggingface.co/blog",
+        "https://deepseek.com/en/blog",
+        "https://openai.com/blog",
+        "https://deepmind.google/blog/",
+        "https://www.anthropic.com/news",
+        "https://developer.nvidia.com/blog/"
     ]
     
     search_keywords = ["LLM", "Generative AI", "NLP", "Machine Learning", "Model Weights", "MoE"]

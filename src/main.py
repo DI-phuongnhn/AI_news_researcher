@@ -27,7 +27,8 @@ from src.fetcher.search_fetcher import search_technical_news
 from src.fetcher.apify_fetcher import (
     search_x_apify, 
     fetch_facebook_groups_apify, 
-    fetch_x_profiles_apify
+    fetch_x_profiles_apify,
+    load_manual_apify_data
 )
 from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph
 from src.agent.summarizer import summarize_news
@@ -76,13 +77,15 @@ def filter_relevance(news_list, search_keywords):
         return news_list
         
     filtered = []
-    # Keywords to EXCLUDE (Noise blacklist)
+    # Keywords to EXCLUDE (Noise/Troubleshooting blacklist)
     excluded_patterns = [
         r"\boscar\b", r"\bhoạt hình\b", r"\bstopmotion\b", r"\banimation\b",
         r"\bbán hàng\b", r"\bgom đơn\b", r"\bquảng cáo\b", r"\bkhóa học\b",
         r"\bmovie\b", r"\bcinema\b", r"\bphim\b",
         r"có được không", r"ai có ý tưởng", r"dạy làm", r"tìm người", r"cần tư vấn",
-        r"hỏi đáp", r"giúp em", r"giúp mình", r"ask", r"hỏi"
+        r"hỏi đáp", r"giúp em", r"giúp mình", r"ask", r"hỏi",
+        r"bấm sign in", r"không được", r"không phản hồi", r"quota", r"tình trạng", 
+        r"có ai bị", r"ai gặp", r"lỗi rồi", r"nhờ hỗ trợ", r"chào mng", r"mọi người ơi"
     ]
     
     # Normalize keywords for comparison and escape for regex
@@ -191,11 +194,16 @@ def run_agent():
             all_raw_news.extend(apify_posts)
             print(f"  -> Found {len(apify_posts)} Apify social posts.")
         else:
-            print("  -> Apify social search returned 0 items, falling back to DuckDuckGo social...")
-            social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
-            social_news = search_technical_news(social_kws, max_results=5)
-            all_raw_news.extend(social_news)
-            print(f"  -> Found {len(social_news)} fallback social items.")
+            print("  -> Apify social search returned 0 items, falling back to manual import or DuckDuckGo...")
+            manual_data = load_manual_apify_data("data/manual_import.json")
+            if manual_data:
+                all_raw_news.extend(manual_data)
+                print(f"      -> Loaded {len(manual_data)} items from manual import feed.")
+            else:
+                social_kws = [f"{k} site:x.com OR site:facebook.com OR site:reddit.com" for k in search_keywords[:2]]
+                social_news = search_technical_news(social_kws, max_results=5)
+                all_raw_news.extend(social_news)
+                print(f"      -> Found {len(social_news)} fallback social items via search.")
         
         # 2c. Deep Scrape with ScrapeGraphAI on top tech leads
         print("  Enhancing top technical results with ScrapeGraphAI...")
@@ -226,8 +234,9 @@ def run_agent():
             STRICT FILTER: ONLY include articles strictly related to these keywords: {', '.join(search_keywords)}.
             
             SOURCE SPECIFIC RULES:
-            - Anthropic: ONLY extract 'Product' articles (Claude releases, API updates, computer use). Skip 'Company' or 'Research'.
-            - Qwen/Mistral/Meta: Focus on model weights, paper releases, and technical advancements.
+            - Anthropic: ONLY extract 'Product' articles (Claude releases, API updates, computer use). 
+              STRICT: Skip "Company", "Personal", and "Research" unless it explicitly describes a new product release.
+            - Qwen/Mistral/Meta/DeepSeek/Nvidia: Focus on model weights, paper releases, and technical advancements.
             
             For each relevant article, provide 'title', 'link', and 'summary' (technical depth).
             """
@@ -318,6 +327,9 @@ def run_agent():
                         "source": "Facebook: FREE (" + mobile_url + ")",
                         "date": datetime.now().isoformat()
                     })
+
+    # 3cc. Manual Import Fallback (already handled in 2b if Apify failed, but keeping for standalone runs)
+    # This now uses the unified manual_import.json
     
     # 3d. Specialized X Profile Fetcher (via Apify)
     print("  Fetching X Profiles via Apify...")
@@ -338,6 +350,9 @@ def run_agent():
     print("Step 3.5: Extreme Deduplicating (Strict URL, Normalized Title & Snippets)...")
     unique_raw_news = []
     duplicate_count = 0
+    seen_urls = set()
+    seen_titles = []
+    seen_summaries = []
 
     for item in all_raw_news:
         url = normalize_url(item.get("link", ""))
@@ -393,9 +408,9 @@ def run_agent():
     print(f"  Priority (Social/Apify): {len(social_items)}")
     print(f"  ArXiv (Limited): {len(limited_arxiv)} (from {len(arxiv_items)})")
     print(f"  Others: {len(other_items)}")
-    print("Step 3.7: Pre-AI Relevance filtering... (TEMPORARILY SKIPPED BY USER REQUEST)")
-    # TEMPORARY BYPASS: Assign diverse_news directly but limit to top 15 to prevent burning API quota
-    filtered_news = diverse_news[:15]
+    print("Step 3.7: Pre-AI Relevance filtering...")
+    # Re-enabled to solve "linh tinh" issues as per user request
+    filtered_news = filter_relevance(diverse_news, search_keywords)[:20]
     
     # DEBUG: Save the raw diverse news to a file before summarization
     print("  -> Saving RAW unfiltered news to data/raw_debug_news.json for inspection...")
@@ -418,6 +433,28 @@ def run_agent():
                 "summary_vn": raw_item.get('summary', '')[:300] + "...",
                 "date": raw_item.get('date', '')
             })
+
+    # Step 4.2: Real-time Notification to Microsoft Teams
+    print("Step 4.2: Pushing final technical news to Microsoft Teams...")
+    try:
+        from src.utils.notifier import send_teams_notification
+        
+        # Priority labs for Teams: Meta, Qwen, Mistral, Nvidia, OpenAI, DeepMind, Anthropic, DeepSeek, ArXiv
+        official_labs = ["meta", "qwen", "mistral", "nvidia", "openai", "deepmind", "anthropic", "deepseek", "arxiv"]
+        
+        def dict_priority(item):
+            src = item.get("source", "").lower()
+            lnk = item.get("link", "").lower()
+            for lab in official_labs:
+                if lab in src or lab in lnk:
+                    return 0 # Higher priority
+            return 1 # Lower priority
+            
+        # Create a copy and sort by priority for the notification
+        teams_items = sorted(final_reports, key=dict_priority)
+        send_teams_notification(teams_items)
+    except Exception as e:
+        print(f"Warning: Failed to send Teams notification: {str(e)}")
 
     # Step 4.5: Post-Fetch Keyword Extraction (Actual found news)
     print("Step 4.5: Extracting actual keywords from fetched news...")

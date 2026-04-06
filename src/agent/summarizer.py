@@ -82,6 +82,9 @@ def summarize_news(news_list, trending_keywords):
         - It is just social impact, ethics, or general news.
         - It is "AI Hype" or high-level product announcements without technical documentation.
         - It is merely a fundraising announcement or executive hire.
+        - **IMPORTANT: REJECT Community Q&A / Technical Support / Troubleshooting / Bug Reports.**
+          Examples: "How to sign in?", "Antigravity not working on M1", "Is anyone experiencing login issues?", "Need help with API quota", "Can someone help me fix this?".
+          Reject even if it mentions technical terms like MacBook, M1, vLLM, or Sign-in.
         
         5. SUMMARIZE (VIETNAMESE):
            - Provide a high-density technical summary (100-150 words).
