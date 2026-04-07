@@ -5,6 +5,7 @@ Provides normalization and similarity comparison for URLs and news content.
 
 import re
 import difflib
+import unicodedata
 from urllib.parse import urlparse, urlunparse
 
 def normalize_url(url):
@@ -22,12 +23,17 @@ def normalize_url(url):
 
 def normalize_text(text):
     """
-    Normalizes text by lowercase, removing non-alphanumerics.
+    Normalizes text by lowercase, stripping accents, and removing non-alphanumerics.
     """
     if not text:
         return ""
+    # Strip accents
+    text = ''.join(c for c in unicodedata.normalize('NFD', text.lower())
+                  if unicodedata.category(c) != 'Mn')
+    # Replace common Vietnamese-specific characters not handled by Mn (like đ)
+    text = text.replace('đ', 'd')
     # Lowercase and remove all non-word characters except spaces
-    text = re.sub(r'[^\w\s]', '', text.lower())
+    text = re.sub(r'[^\w\s]', '', text)
     # Collapse multiple spaces
     text = re.sub(r'\s+', ' ', text)
     return text.strip()

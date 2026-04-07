@@ -38,5 +38,5 @@ jobs:
           git config --global user.name "AI Research Bot"
           git config --global user.email "bot@github.com"
           git add data/*.json index.html
-          git commit -m "Auto-update: Daily technical news research [Mon-Fri schedule]" || echo "No changes to commit"
+          git commit -m "Auto-update: Daily technical news research [Tue,Thu,Sat schedule]" || echo "No changes to commit"
           git push origin main

@@ -7,3 +7,6 @@ __pycache__/
 models_available.txt
 models_list.txt
 /tmp/
+data/raw_debug_news.json
+data/from_*.json
+/reports/

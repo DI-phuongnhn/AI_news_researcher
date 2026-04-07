@@ -9,9 +9,9 @@ import time
 from src.config import Config
 from src.agent.model_rotator import get_rotator
 
-def summarize_news(news_list, trending_keywords):
+def summarize_news(news_list, trending_keywords, known_models=None):
     """
-    Filters and summarizes news items based on technical signal and global trends.
+    Filters and summarizes news items based on technical signal, global trends, and known models.
     
     Args:
         news_list (list): Raw news items from various fetchers.
@@ -60,6 +60,12 @@ def summarize_news(news_list, trending_keywords):
         source_upper = item.get("source", "").upper()
         is_trusted = any(ts in source_upper for ts in trusted_sources)
             
+        models_context = ""
+        if known_models:
+            import random
+            sample_models = random.sample(known_models, min(15, len(known_models)))
+            models_context = f"\n        KNOWN AI MODELS: {', '.join(sample_models)} (and others)"
+
         prompt = f"""
         You are an Expert Technical AI Researcher / Senior Software Architect.
         
@@ -70,13 +76,14 @@ def summarize_news(news_list, trending_keywords):
         - Source: {item['source']}
         - Content: {item['summary'][:1500]}
         
-        TRENDING CONTEXT: {trending_keywords}
+        TRENDING CONTEXT: {trending_keywords}{models_context}
         
         CRITERIA FOR 'TECHNICAL: YES':
         1. Architectural novelty: New model architectures (e.g. MLA, MoE updates), training techniques, or optimization algorithms.
         2. Frameworks/Ops: Major updates to Agentic frameworks (LangGraph, CrewAI, Autogen) or AI Infrastructure (vLLM, SGLang).
         3. Research: Math, papers (arXiv), or technical breakdowns from official labs (OpenAI, DeepSeek, Anthropic).
-        4. Benchmarks/Performance: Quantitative technical benchmarks (not just "AI is better now").
+        4. Benchmarks/Performance: Quantitative technical benchmarks.
+        5. Implicit AI Context: If an item discusses KNOWN AI MODELS performing technical tasks (e.g., segmentation, routing, vision), mark it TECHNICAL: YES even if 'AI' or 'model' is missing.
         
         REJECT ('TECHNICAL: NO') IF:
         - It is just social impact, ethics, or general news.

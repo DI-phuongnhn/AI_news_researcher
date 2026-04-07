@@ -53,5 +53,5 @@ def search_technical_news(keywords_list, max_results=5):
 
 if __name__ == "__main__":
     # Test search
-    test_kws = ["DeepSeek-V3 architecture", "Mamba-2 efficiency"]
+    test_kws = ["nvidia", "NemoClaw"]
     print(search_technical_news(test_kws, max_results=2))
