@@ -32,10 +32,11 @@ class Config:
     ]
     
     # Budget control: limit items per actor call to conserve $5/month free credits
-    # With 13 runs/month, keeping total Apify cost under $0.30/run = ~$3.90/month (safe margin)
-    APIFY_X_SEARCH_MAX = 3        # tweets from keyword search
-    APIFY_X_PROFILE_MAX = 2       # tweets per profile handle
-    APIFY_FB_MAX = 5              # posts per Facebook target run
+    # Target: Stay under $0.10 for each run (X: $0.40/1k, FB: $5.00/1k)
+    APIFY_X_SEARCH_MAX = 20       # tweets total (~$0.008)
+    APIFY_X_PROFILE_MAX = 2        # tweets per profile (~$0.009 for all)
+    APIFY_FB_MAX = 10             # posts total from all targets (~$0.050)
+    # Estimated Apify Total: ~$0.067/run (with ~33% buffer for initialization/proxies)
     
     # Models to cycle through to maximize Free Tier quota
     GEMINI_MODELS_FALLBACK = [
