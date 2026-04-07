@@ -145,35 +145,36 @@ def search_x_apify(keywords_list, max_items=None):
     }
     return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
 
-def fetch_facebook_groups_apify(group_urls=None, max_items=None, keywords=None):
+def fetch_facebook_posts_apify(target_urls=None, max_items=None):
     """
-    Scrape posts from Facebook Groups using the official Apify Facebook Groups Scraper.
-    Actor: apify/facebook-groups-scraper
+    Scrape posts from Facebook Pages or Groups using the official Facebook Posts Scraper.
+    Actor: apify/facebook-posts-scraper
     """
     if max_items is None:
         max_items = Config.APIFY_FB_MAX
     
-    if not group_urls:
-        group_urls = Config.FB_GROUPS
+    if not target_urls:
+        target_urls = Config.FB_URLS
         
-    if not group_urls:
-        print("  [Facebook Group] No group URLs configured. Skipping.")
+    if not target_urls:
+        print("  [Facebook Post] No target URLs configured. Skipping.")
         return []
-
-    actor_id = "apify/facebook-groups-scraper"
+        
+    # Standardize to {url: ...} format for the official scraper
+    urls_input = [{"url": url} for url in target_urls if url]
     
-    # Standardize input for the official Facebook Groups Scraper
+    actor_id = "apify/facebook-posts-scraper"
     run_input = {
-        "startUrls": [{"url": url} for url in group_urls if url],
+        "startUrls": urls_input,
         "resultsLimit": max_items,
     }
     
-    return fetch_apify_posts(actor_id, run_input, "Facebook Group")
+    return fetch_apify_posts(actor_id, run_input, "Facebook")
 
 def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     """
-    Scrapes specific X (Twitter) profiles by their handles using the Fast Scraper.
-    Actor: u6ppkMWAx2E2MpEuF
+    Scrapes specific X (Twitter) profiles by their handles using the apidojo scraper.
+    Actor: apidojo/tweet-scraper
     """
     if max_items_per_profile is None:
         max_items_per_profile = Config.APIFY_X_PROFILE_MAX
@@ -184,18 +185,16 @@ def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     if not handles:
         return []
 
-    actor_id = "u6ppkMWAx2E2MpEuF"
+    actor_id = "apidojo/tweet-scraper"
     
-    # Use 'handles' and 'tweetsDesired' for the Fast Scraper
+    # Update to newer schema: twitterHandles and maxItems
     run_input = {
-        "handles": handles,
-        "tweetsDesired": max_items_per_profile * len(handles),
-        "addUserInfo": True,
-        "startUrls": [],
-        "proxyConfig": { "useApifyProxy": True }
+        "twitterHandles": handles,
+        "maxItems": max_items_per_profile * len(handles),
+        "sort": "Latest",
+        "tweetLanguage": "en"
     }
     
-    # Note: Fast Scraper might use 'fullText' instead of 'full_text'
     return fetch_apify_posts(actor_id, run_input, "X Profiles")
 
 def load_manual_apify_data(file_path="data/manual_import.json"):

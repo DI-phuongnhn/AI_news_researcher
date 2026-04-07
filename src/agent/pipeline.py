@@ -14,7 +14,7 @@ from src.fetcher.reddit_fetcher import fetch_reddit_ml_news
 from src.fetcher.search_fetcher import search_technical_news
 from src.fetcher.apify_fetcher import (
     search_x_apify, 
-    fetch_facebook_groups_apify, 
+    fetch_facebook_posts_apify, 
     fetch_x_profiles_apify,
     load_manual_apify_data
 )
@@ -185,7 +185,7 @@ class ResearchPipeline:
         
         all_raw_news.extend(fetch_reddit_ml_news())
         if Config.APIFY_API_TOKENS:
-            all_raw_news.extend(fetch_facebook_groups_apify(keywords=search_keywords))
+            all_raw_news.extend(fetch_facebook_posts_apify())
         all_raw_news.extend(fetch_x_profiles_apify())
         
         return all_raw_news

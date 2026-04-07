@@ -35,7 +35,7 @@ class Config:
     # With 13 runs/month, keeping total Apify cost under $0.30/run = ~$3.90/month (safe margin)
     APIFY_X_SEARCH_MAX = 3        # tweets from keyword search
     APIFY_X_PROFILE_MAX = 2       # tweets per profile handle
-    APIFY_FB_MAX = 5              # posts per Facebook group run
+    APIFY_FB_MAX = 5              # posts per Facebook target run
     
     # Models to cycle through to maximize Free Tier quota
     GEMINI_MODELS_FALLBACK = [
@@ -63,8 +63,9 @@ class Config:
     # Targeted subreddits for technical AI/ML discussions
     REDDIT_SUBREDDITS = ["MachineLearning"]
     
-    # Facebook Groups (trimmed to 2 most relevant to conserve Apify credits)
-    FB_GROUPS = [
+    # Facebook Targets (Pages or Groups)
+    FB_URLS = [
+        "https://www.facebook.com/tinix.vn/",
         "https://www.facebook.com/groups/j2team.community",
         "https://www.facebook.com/groups/1522144709086429/"
     ]
