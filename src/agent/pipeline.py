@@ -154,7 +154,7 @@ class ResearchPipeline:
                 if manual_data:
                     all_raw_news.extend(manual_data)
                 else:
-                    social_kws = [f"{k} site:x.com OR site:facebook.com" for k in search_keywords[:2]]
+                    social_kws = [f"{k} site:x.com" for k in search_keywords[:2]]
                     all_raw_news.extend(search_technical_news(social_kws, max_results=5))
 
         # 2b. Active Model Trackers (OR-batching to save quota)
