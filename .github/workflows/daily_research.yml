@@ -1,11 +1,8 @@
 name: Daily AI Technical Research
 
 on:
-  push:
-    branches: [ main ]
   schedule:
-    - cron: '0 1 * * 2,4,6'  # 01:00 UTC = 08:00 AM VN (Tue, Thu, Sat)
-    - cron: '0 1 8 4 *'      # ONE-TIME TEST: 08:00 AM VN on April 8th only
+    - cron: '30 0 * * 2,4,6'  # 00:30 UTC = 07:30 AM VN (Tue, Thu, Sat)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
