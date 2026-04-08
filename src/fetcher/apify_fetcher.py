@@ -134,8 +134,8 @@ def search_x_apify(keywords_list, max_items=None):
     if max_items is None:
         max_items = Config.APIFY_X_SEARCH_MAX
     
-    # Updated to use apidojo/tweet-scraper (official successor to the deprecated one)
-    actor_id = "apidojo/tweet-scraper"
+    # Updated to use apidojo/twitter-scraper-lite (newer, more efficient version)
+    actor_id = "apidojo/twitter-scraper-lite"
     
     run_input = {
         "searchTerms": keywords_list,
@@ -185,7 +185,7 @@ def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
     if not handles:
         return []
 
-    actor_id = "apidojo/tweet-scraper"
+    actor_id = "apidojo/twitter-scraper-lite"
     
     # Update to newer schema: twitterHandles and maxItems
     run_input = {
