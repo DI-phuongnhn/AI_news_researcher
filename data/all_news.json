@@ -1,5 +1,15 @@
 [
     {
+        "timestamp": "2026-04-11T03:27:43.288410",
+        "keywords": "EN: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, GRPO, Test-time Compute, Agentic RAG, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, Mixture of Experts, Dify, Llama 3.3 70B, Small Language Models]\n\nJP: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, MCP, 推論モデル, GRPO, エージェント実装, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, 混合専門家モデル, Dify, ローカルLLM, 長文コンテキスト]",
+        "reports": [],
+        "debug_stats": {
+            "raw_total": 40,
+            "duplicates": 30,
+            "final": 0
+        }
+    },
+    {
         "timestamp": "2026-04-09T03:38:21.537327",
         "keywords": "EN: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, Agentic Reasoners, LangGraph, Multi-head Latent Attention, Sparse MoE, GraphRAG, n8n, Llama 3.2, Computer Use, Chain-of-Thought, Vector Databases, SLM]\n\nJP: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, エージェント推論, LangGraph, 多頭潜在アテンション, 混合専門家モデル, グラフRAG, n8n, Llama 3.2, コンピュータ・ユース, 推論の連鎖, ベクトルデータベース, 小型言語モデル]",
         "reports": [
@@ -311,30 +321,5 @@
         "timestamp": "2026-03-28T03:23:45.317409",
         "keywords": "N/A",
         "reports": []
-    },
-    {
-        "timestamp": "2026-03-26T03:36:20.547422",
-        "keywords": "N/A",
-        "reports": []
-    },
-    {
-        "timestamp": "2026-03-25T14:18:09.567019",
-        "keywords": "EN: [Cold Validation, Agentic Workflows, KALAVAI, MoE, AgentGuard, MLLMs, Matryoshka Representation Learning, Causal Self-Attention, VLouvain, Vision Transformers]\nVN: [Cold Validation, Agentic Workflows, KALAVAI, MoE, AgentGuard, MLLMs, Matryoshka Representation Learning, Causal Self-Attention, VLouvain, Vision Transformers]",
-        "reports": [
-            {
-                "title": "[P] Cold Validation: Open-source system where one AI agent audits another with zero shared context",
-                "link": "https://www.reddit.com/r/MachineLearning/comments/1rwnasw/p_cold_validation_opensource_system_where_one_ai/",
-                "source": "Reddit r/MachineLearning",
-                "summary_vn": "Hệ thống mã nguồn mở này giới thiệu kiến trúc **Cold Validation** cho các **Agentic Workflows**, tập trung vào việc xác thực độc lập giữa các AI agent. Cấu trúc gồm hai thành phần tách biệt: **Builder** (chịu trách nhiệm lập kế hoạch và sinh mã) và **Reviewer** (kiểm định artifact). Đổi mới kỹ thuật cốt lõi nằm ở việc thực thi **Zero Shared Context**: Reviewer hoàn toàn bị cô lập với chuỗi suy luận (**Chain-of-Thought**) của Builder, chỉ đánh giá sản phẩm cuối cùng trong một môi trường **filesystem-isolated** (sandbox). Một bộ điều phối (**Orchestrator**) quản lý việc giao tiếp tối thiểu giữa hai tác nhân này. Cách tiếp cận này giúp triệt tiêu hiện tượng \"lây lan ảo giác\" (hallucination contagion) và đảm bảo các tệp tin thực thi đáp ứng đúng yêu cầu thông số kỹ thuật mà không bị ảnh hưởng bởi logic sai lệch của tác nhân tạo lập.",
-                "date": "2026-03-25T14:04:16"
-            },
-            {
-                "title": "[R] KALAVAI: Predicting When Independent Specialist Fusion Works (gain = 0.82 × divergence − 2.72, R² = 0.856, tested 410M–6.9B)",
-                "link": "https://www.reddit.com/r/MachineLearning/comments/1rweiq5/r_kalavai_predicting_when_independent_specialist/",
-                "source": "Reddit r/MachineLearning",
-                "summary_vn": "KALAVAI giới thiệu một phương pháp mới để hợp nhất các mô hình (model merging) được tinh chỉnh độc lập dựa trên kiến trúc Mixture of Experts (MoE). Quy trình kỹ thuật bắt đầu từ một mô hình cơ sở (base checkpoint), sau đó các bản sao được fine-tune riêng biệt trên các domain khác nhau mà không cần chia sẻ gradient hay giao tiếp trong quá trình huấn luyện. Đổi mới cốt lõi là việc huấn luyện một bộ định tuyến (lightweight MoE router) trên các chuyên gia (experts) trung gian thu được từ quá trình merge. Về mặt toán học, nghiên cứu đưa ra công thức dự đoán hiệu quả hợp nhất dựa trên độ phân kỳ (divergence) giữa các mô hình, đạt độ chính xác R² = 0.856 trên các quy mô từ 410M đến 6.9B tham số. Đây là kỹ thuật quan trọng giúp tối ưu hóa việc tái sử dụng các mô hình chuyên biệt mà không cần huấn luyện lại từ đầu.",
-                "date": "2026-03-25T08:14:48"
-            }
-        ]
     }
 ]

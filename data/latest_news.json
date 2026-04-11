@@ -1,18 +1,10 @@
 {
-    "timestamp": "2026-04-09T03:38:21.537327",
-    "keywords": "EN: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, Agentic Reasoners, LangGraph, Multi-head Latent Attention, Sparse MoE, GraphRAG, n8n, Llama 3.2, Computer Use, Chain-of-Thought, Vector Databases, SLM]\n\nJP: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, エージェント推論, LangGraph, 多頭潜在アテンション, 混合専門家モデル, グラフRAG, n8n, Llama 3.2, コンピュータ・ユース, 推論の連鎖, ベクトルデータベース, 小型言語モデル]",
-    "reports": [
-        {
-            "title": "The next phase of enterprise AI",
-            "link": "https://openai.com/index/next-phase-of-enterprise-ai",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.",
-            "date": "2026-04-08T14:00:00"
-        }
-    ],
+    "timestamp": "2026-04-11T03:27:43.288410",
+    "keywords": "EN: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, GRPO, Test-time Compute, Agentic RAG, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, Mixture of Experts, Dify, Llama 3.3 70B, Small Language Models]\n\nJP: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, MCP, 推論モデル, GRPO, エージェント実装, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, 混合専門家モデル, Dify, ローカルLLM, 長文コンテキスト]",
+    "reports": [],
     "debug_stats": {
-        "raw_total": 42,
+        "raw_total": 40,
         "duplicates": 30,
-        "final": 1
+        "final": 0
     }
 }
