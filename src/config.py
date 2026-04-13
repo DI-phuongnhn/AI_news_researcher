@@ -57,7 +57,7 @@ class Config:
     # Top AI thought leaders (Technical focuses)
     X_ACCOUNTS = [
         "ai_hakase_", "so_ainsight", "Kohaku_NFT",
-        "OpenAI", "AnthropicAI", "GoogleDeepMind", "huggingface",
+        "OpenAI", "AnthropicAI", "claudeai", "GoogleDeepMind", "huggingface",
         "fchollet", "drfeifei", "AravSrinivas", "gdb"
     ]
     
@@ -73,18 +73,17 @@ class Config:
     
     # Specific websites to deep scrape using ScrapeGraphAI
     SCRAPEGRAPH_TARGETS = [
-        "https://huggingface.co/models",
         "https://openai.com/news/",
-        "https://openai.com/blog",
         "https://deepmind.google/blog/",
         "https://anthropic.com/news",
         "https://deepseek.com/en/blog",
         "https://build.nvidia.com/explore/discover",
-        "https://developer.nvidia.com/blog/",
         "https://qwen.ai/research#research_latest_advancements",
         "https://mistral.ai/news/",
-        "https://ai.meta.com/blog/"
+        "https://ai.meta.com/blog/",
+        "https://huggingface.co/blog"
     ]
+    MAX_SCRAPE_TARGETS_PER_RUN = 5 # Increased to focus on ScrapeGraphAI fallback
     
     # Teams Webhook Notification
     TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL", "")

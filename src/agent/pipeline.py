@@ -6,6 +6,7 @@ Coordinates the end-to-end flow from discovery to notification.
 import os
 import json
 import time
+import random
 from datetime import datetime
 from src.config import Config
 from src.fetcher.keyword_discovery import get_trending_keywords
@@ -15,10 +16,9 @@ from src.fetcher.search_fetcher import search_technical_news
 from src.fetcher.apify_fetcher import (
     search_x_apify, 
     fetch_facebook_posts_apify, 
-    fetch_x_profiles_apify,
-    load_manual_apify_data
+    fetch_x_profiles_apify
 )
-from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph
+from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph, fetch_technical_blog_posts
 from src.agent.summarizer import summarize_news
 from src.agent.model_rotator import get_rotator
 from src.utils.data_manager import DataManager
@@ -80,9 +80,20 @@ class ResearchPipeline:
                         is_relevant = True
                         break
             
+            # Source-based bypass for Official Leads and Trusted Social Profiles
             source_lower = item.get("source", "").lower()
             if not is_relevant:
+                # 1. Official Lab Blogs (ScrapeGraph) or ArXiv
                 if "arxiv" in source_lower or "scrapegraph" in source_lower:
+                    is_relevant = True
+                
+                # 2. Trusted Social Profiles (X Profile handles)
+                if "x profile" in source_lower:
+                    is_relevant = True
+
+                # 3. Known Official Keyword Match
+                official_labs = ["openai", "anthropic", "google", "meta", "nvidia", "deepseek", "mistral", "qwen", "huggingface"]
+                if any(lab in source_lower or lab in item.get("link", "").lower() for lab in official_labs):
                     is_relevant = True
                 
             if is_relevant:
@@ -150,12 +161,23 @@ class ResearchPipeline:
             if apify_posts:
                 all_raw_news.extend(apify_posts)
             else:
-                manual_data = load_manual_apify_data("data/manual_import.json")
-                if manual_data:
-                    all_raw_news.extend(manual_data)
-                else:
-                    social_kws = [f"{k} site:x.com" for k in search_keywords[:2]]
-                    all_raw_news.extend(search_technical_news(social_kws, max_results=5))
+                # Scraper AI Fallback: Use ScrapeGraph to get news from high-signal sites
+                # instead of manual import.
+                print("  Apify failed. Using ScrapeGraphAI fallback for technical leads...")
+                # We reuse the first few targets from config if available, or use fixed ones
+                fallback_targets = ["https://simonwillison.net/", "https://arxiv.org/list/cs.AI/recent"]
+                if hasattr(Config, "SCRAPEGRAPH_TARGETS") and Config.SCRAPEGRAPH_TARGETS:
+                    fallback_targets = Config.SCRAPEGRAPH_TARGETS[:2]
+                
+                for url in fallback_targets:
+                    try:
+                        all_raw_news.extend(fetch_technical_blog_posts(url, max_items=2))
+                    except Exception as e:
+                        print(f"    Fallback ScrapeGraph failed for {url}: {e}")
+                
+                # Second fallback: Search-based X discovery via Search Engine
+                social_kws = [f"{k} site:x.com" for k in search_keywords[:2]]
+                all_raw_news.extend(search_technical_news(social_kws, max_results=5))
 
         # 2b. Active Model Trackers (OR-batching to save quota)
         if active_models:
@@ -178,6 +200,29 @@ class ResearchPipeline:
             deep_res = fetch_with_scrapegraph(lead['link'], prompt=enhance_prompt)
             if deep_res and isinstance(deep_res, dict) and deep_res.get('title'):
                 lead['summary'] = deep_res.get('summary', lead['summary'])
+
+        # 2d. SCRAPEGRAPH Deep Blog Scraping (Rotating targets to save quota)
+        if hasattr(Config, "SCRAPEGRAPH_TARGETS") and Config.SCRAPEGRAPH_TARGETS:
+            num_targets = getattr(Config, "MAX_SCRAPE_TARGETS_PER_RUN", 3)
+            
+            # Prioritize Hugging Face Blog as requested (it aggregates many others)
+            hf_url = "https://huggingface.co/blog"
+            other_targets = [t for t in Config.SCRAPEGRAPH_TARGETS if t != hf_url]
+            
+            targets = [hf_url] if hf_url in Config.SCRAPEGRAPH_TARGETS else []
+            num_needed = num_targets - len(targets)
+            
+            if num_needed > 0 and other_targets:
+                targets.extend(random.sample(other_targets, min(len(other_targets), num_needed)))
+                
+            print(f"  ScrapeGraphAI: Scraping {len(targets)} technical blogs (HF Priority: YES)...")
+            for blog_url in targets:
+                try:
+                    blog_news = fetch_technical_blog_posts(blog_url)
+                    if blog_news:
+                        all_raw_news.extend(blog_news)
+                except Exception as e:
+                    print(f"    Warning: ScrapeGraph failed for {blog_url}: {e}")
 
         # 3. Static Sources (RSS, Reddit, Social Profiles)
         for name, url in Config.RSS_FEEDS.items():
@@ -204,11 +249,21 @@ class ResearchPipeline:
         print(f"  Pipeline: Removed {duplicate_count} duplicates. {len(unique_news)} unique remaining.")
 
         # Diverse Filtering
-        social_items = [i for i in unique_news if "Apify" in i.get("source", "")]
-        arxiv_items = [i for i in unique_news if "arxiv" in i.get("source", "").lower()][:10]
-        other_items = [i for i in unique_news if i not in social_items and i not in arxiv_items]
+        # Diverse Filtering and Re-ordering
+        # Priority 1: Technical Blogs (ScrapeGraph) & ArXiv
+        tech_leads = [i for i in unique_news if "scrapegraph" in i.get("source", "").lower() or "arxiv" in i.get("source", "").lower()]
         
-        diverse_news = social_items + arxiv_items + other_items
+        # Priority 2: General Technical Search
+        search_leads = [i for i in unique_news if "search" in i.get("source", "").lower() and i not in tech_leads]
+        
+        # Priority 3: Social Media (Apify) - Limited to ensure variety
+        social_items = [i for i in unique_news if "apify" in i.get("source", "").lower()]
+        
+        # Priority 4: Everything else (RSS, Reddit)
+        other_items = [i for i in unique_news if i not in tech_leads and i not in search_leads and i not in social_items]
+        
+        # Re-concatenate in order of "Technical Depth"
+        diverse_news = tech_leads + search_leads + other_items + social_items
         filtered_news = self.filter_relevance(diverse_news, search_keywords, all_models)[:20]
         return unique_news, filtered_news, duplicate_count
 

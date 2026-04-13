@@ -1,3 +1,4 @@
+from datetime import datetime
 from scrapegraphai.graphs import SmartScraperGraph
 from src.config import Config
 
@@ -49,7 +50,54 @@ def fetch_with_scrapegraph(url, prompt=None):
                 
     return None
             
-    return None
+def fetch_technical_blog_posts(url, max_items=3):
+    """
+    Specifically designed for ScrapeGraphAI to extract a LIST of recent technical 
+    news items from a blog landing page.
+    """
+    prompt = f"""
+    Find the latest {max_items} technical AI/ML blog posts or model releases from this page.
+    STRICT TECHNICAL FILTER: ONLY include articles about model architectures, new LLM weights, 
+    training methods, or deep-dive optimizations. Skip 'Company News', 'Culture', or 'Hiring'.
+    
+    For each valid item, extract:
+    - 'title': The technical headline.
+    - 'link': The absolute URL to the article.
+    - 'summary': A 2-sentence technical summary in English.
+    
+    Format: Return a JSON list of objects.
+    """
+    
+    raw_res = fetch_with_scrapegraph(url, prompt=prompt)
+    if not raw_res:
+        return []
+        
+    # Standardize result format (ScrapeGraph sometimes returns nested dicts or lists)
+    items = []
+    if isinstance(raw_res, list):
+        items = raw_res
+    elif isinstance(raw_res, dict):
+        # Look for the first list value in the dict
+        for val in raw_res.values():
+            if isinstance(val, list):
+                items = val
+                break
+        if not items:
+            items = [raw_res]
+            
+    # Post-process to ensure source is tagged correctly
+    domain = url.split("//")[-1].split("/")[0]
+    final_items = []
+    for it in items:
+        if isinstance(it, dict) and it.get('title'):
+            final_items.append({
+                "title": it.get('title'),
+                "link": it.get('link') if it.get('link') and it.get('link').startswith("http") else url,
+                "summary": it.get('summary', ''),
+                "source": "ScrapeGraph: " + domain,
+                "date": datetime.now().isoformat()
+            })
+    return final_items
 
 if __name__ == "__main__":
     # Test with a known technical blog post
