@@ -27,7 +27,10 @@
         "OpenAI",
         "KIV",
         "Claude Code",
-        "TurboQuant"
+        "TurboQuant",
+        "Waypoint-1.5",
+        "Gemma 4",
+        "Gemini 3.1 Flash Live"
     ],
     "legacy": [
         "GPT-4",
