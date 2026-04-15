@@ -40,7 +40,8 @@ def get_trending_keywords(languages=None):
     2. MODEL FOCUS: Always identify specific model versions or products (e.g., 'Claude 3.5 Opus', 'Claude 3.7', 'DeepSeek-V3', 'OpenClaw', 'Llama-4', 'SeeDance', 'Qwen').
     3. TECHNICAL DEPTH: Focus on architectural novelty (e.g., 'Linear Attention', 'Sparse Mixture of Experts', 'Agentic Reasoners', 'Robotics', 'Open-source LLM').
     4. ECOSYSTEM & TOOLS: Look for AI infrastructure, Orchestration & Automation tools (e.g., 'n8n', 'LangGraph', 'CrewAI', 'Flowise', 'Vector Databases', 'Dify').
-    5. Provide keywords for these languages: {', '.join(languages)}.
+    5. SECURITY: Include AI cybersecurity + critical software security (e.g., 'Project Glasswing', SBOM, SLSA, provenance, code signing, secure builds, supply chain attacks).
+    6. Provide keywords for these languages: {', '.join(languages)}.
     
     OUTPUT FORMAT:
     EN: [keyword1, keyword2, keyword3, ...]
@@ -59,7 +60,7 @@ def get_trending_keywords(languages=None):
         print(f"Warning: Keyword discovery failed ({e}). Using technical fallback...")
         # High-signal fallback keywords to ensure search never stops
         fallback = """
-        EN: [LLM, Claude, Agentic Workflow, 'Qwen', HyperAgent NVIDIA, OpenAI, Anthropic, n8n, NemoClaw, OpenClaw, Robotics]
+        EN: [LLM, Claude, Agentic Workflow, Qwen, OpenAI, Anthropic, Project Glasswing, Glasswing, Critical Software, Supply Chain, SBOM, SLSA, Provenance, Code Signing, Secure Build, Dependency Confusion, CVE, n8n, LangGraph, CrewAI, Robotics]
         """
         return fallback.strip()
 
