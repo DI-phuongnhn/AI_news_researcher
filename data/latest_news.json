@@ -1,53 +1,10 @@
 {
-    "timestamp": "2026-04-13T14:41:23.157643",
-    "keywords": "EN: [World Model, Diffusion structure, Multimodal Embedding, Reranker Models, Mixture-of-Experts (MoE), Multi-head Latent Attention, Model Context Protocol (MCP), Open-weights, Parameter efficiency, Real-time interaction]\n\nVN: [Mô hình thế giới, Cấu trúc khuếch tán, Nhúng đa phương thức, Mô hình xếp hạng lại, Kiến trúc hỗn hợp chuyên gia (MoE), Cơ chế chú ý tiềm ẩn đa đầu, Giao thức ngữ cảnh mô hình (MCP), Trọng số mở, Hiệu suất tham số, Tương tác thời gian thực]\n\nMODELS: [Waypoint-1.5, DeepSeek-V3, Gemma 4, Gemini 3.1 Flash Live]",
-    "reports": [
-        {
-            "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
-            "link": "https://huggingface.co/blog/waypoint-1-5",
-            "source": "ScrapeGraph: huggingface.co",
-            "summary_vn": "Waypoint-1.5 là một mô hình thế giới (World Model) dựa trên cấu trúc diffusion, được thiết kế để tạo ra các môi trường tương tác độ trung thực cao (high-fidelity) trên các dòng GPU phổ thông. Cải tiến kỹ thuật trọng tâm nằm ở việc tối ưu hóa kiến trúc mạng để vượt qua các rào cản về tài nguyên của mô hình diffusion truyền thống, cho phép mô phỏng thế giới ở độ phân giải cao với chi phí tính toán thấp. Điểm đổi mới cụ thể là khả năng duy trì tính nhất quán về không gian và thời gian (spatiotemporal consistency) trong môi trường động, điều vốn cực kỳ tốn kém bộ nhớ. Waypoint-1.5 hỗ trợ đắc lực cho việc huấn luyện các hệ thống Agentic Workflows và Vision-Language-Action bằng cách cung cấp môi trường mô phỏng tương tác thực tế. Việc tối ưu hóa cơ chế Latent Space hoặc các kỹ thuật nén dữ liệu giúp mô hình đạt hiệu suất cao mà không cần đến các cụm máy chủ đắt tiền, đánh dấu bước tiến quan trọng trong việc dân chủ hóa công nghệ World Models cho cộng đồng kỹ sư AI.",
-            "date": "2026-04-13T14:29:57.498443"
-        },
-        {
-            "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-            "link": "https://huggingface.co/blog/multimodal-sentence-transformers",
-            "source": "ScrapeGraph: huggingface.co",
-            "summary_vn": "Thư viện Sentence Transformers (v3.2+) đã chính thức hỗ trợ các dòng mô hình Multimodal Embedding và Reranker, cho phép xử lý văn bản và hình ảnh trong cùng một không gian vector thống nhất (unified embedding space). Cải tiến này tận dụng các kiến trúc nền tảng như CLIP hoặc SigLIP để thực hiện các tác vụ cross-modal retrieval (truy xuất chéo phương thức). Điểm cốt lõi kỹ thuật nằm ở việc tích hợp các mô hình Cross-Encoder đa phương thức, giúp tinh chỉnh kết quả tìm kiếm bằng cách phân tích tương quan trực tiếp giữa câu lệnh (text query) và dữ liệu hình ảnh/văn bản. Điều này hỗ trợ trực tiếp cho kiến trúc RAG 2.0, cho phép các Agentic Workflows xử lý dữ liệu phi cấu trúc phức tạp hơn. Việc chuẩn hóa quy trình huấn luyện và triển khai thông qua API quen thuộc của Sentence Transformers giúp tối ưu hóa hiệu suất tính toán khi xử lý các tập dữ liệu đa phương thức lớn, đồng thời cải thiện độ chính xác cho các hệ thống tìm kiếm ngữ nghĩa và thị giác máy tính.",
-            "date": "2026-04-13T14:29:57.498464"
-        },
-        {
-            "title": "DeepSeek V3",
-            "link": "https://github.com/deepseek-ai/DeepSeek-V3",
-            "source": "ScrapeGraph: deepseek.com",
-            "summary_vn": "DeepSeek-V3 là một mô hình ngôn ngữ lớn (LLM) dựa trên kiến trúc Mixture-of-Experts (MoE) với tổng cộng 671 tỷ tham số (37 tỷ tham số kích hoạt). Sự đổi mới kỹ thuật cốt lõi nằm ở cơ chế Multi-head Latent Attention (MLA), giúp nén KV Cache một cách hiệu quả, từ đó tăng tốc độ suy luận và giảm độ trễ đáng kể so với kiến trúc Attention truyền thống. Về mặt huấn luyện, DeepSeek-V3 áp dụng kỹ thuật Multi-Token Prediction (MTP) nhằm nâng cao khả năng lập luận và độ hội tụ của mô hình. Ngoài ra, mô hình sử dụng chiến lược Load Balancing không phụ thuộc vào auxiliary loss để tránh làm giảm chất lượng dự đoán, kết hợp với quy trình huấn luyện FP8 mixed-precision giúp tối ưu hóa tài nguyên GPU. Với khả năng tương thích tốt trên các framework như vLLM và SGLang, DeepSeek-V3 thiết lập một tiêu chuẩn mới về hiệu suất/chi phí cho các mô hình mã nguồn mở, cạnh tranh trực tiếp với GPT-4o và Claude 3.5 Sonnet.",
-            "date": "2026-04-13T14:32:03.165209"
-        },
-        {
-            "title": "NA",
-            "link": "https://anthropic.com/news",
-            "source": "ScrapeGraph: anthropic.com",
-            "summary_vn": "Anthropic đã công bố Model Context Protocol (MCP), một tiêu chuẩn mở mang tính đột phá nhằm giải quyết vấn đề phân mảnh dữ liệu trong các hệ thống AI. Về mặt kiến trúc, MCP hoạt động dựa trên giao thức JSON-RPC, thiết lập một lớp trừu tượng (abstraction layer) giữa các mô hình AI (như Claude 3.5 Sonnet) và các nguồn dữ liệu ngoại vi (Google Drive, Slack, GitHub, cơ sở dữ liệu). Hệ thống bao gồm ba thành phần chính: MCP Hosts, MCP Clients và MCP Servers. Đổi mới kỹ thuật cốt lõi nằm ở khả năng thay thế các quy trình tích hợp điểm-đến-điểm (point-to-point) phức tạp bằng một giao diện hợp nhất, cho phép AI truy xuất context và thực thi công cụ (Tool-use) một cách nhất quán. MCP hỗ trợ mạnh mẽ cho Agentic Workflows và RAG bằng cách tiêu chuẩn hóa cách thức mô hình tương tác với tài nguyên cục bộ và đám mây, giúp tối ưu hóa việc quản lý KV Cache và giảm thiểu độ trễ trong các ứng dụng AI đa tác vụ.",
-            "date": "2026-04-13T14:37:13.730552"
-        },
-        {
-            "title": "Gemma 4: Byte for byte, the most capable open models",
-            "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
-            "source": "ScrapeGraph: deepmind.google",
-            "summary_vn": "Gemma 4 là thế hệ mô hình ngôn ngữ mở (open-weights) mới nhất từ Google DeepMind, tập trung vào việc tối ưu hóa tỷ lệ hiệu suất trên mỗi tham số (parameter efficiency). Điểm nhấn kỹ thuật nằm ở việc tinh chỉnh kiến trúc để tối đa hóa khả năng suy luận (reasoning capabilities), tương tự như các tiến bộ về Test-time Compute và chuỗi suy nghĩ (Chain-of-Thought) hiện nay. Mô hình được thiết kế để tương thích cao với các framework triển khai như vLLM và hỗ trợ đa dạng cấu hình phần cứng từ thiết bị biên đến các cụm máy chủ đám mây. Cải tiến này cho phép tích hợp hiệu quả vào các Agentic Workflows và hệ thống RAG 2.0 nhờ việc giảm thiểu độ trễ và tối ưu hóa quản lý KV Cache. Với phương châm \"byte for byte\", Gemma 4 mang lại sức mạnh xử lý vượt trội so với các đối thủ cùng kích thước, hỗ trợ đắc lực cho các tác vụ yêu cầu logic phức tạp và tối ưu hóa tài nguyên thông qua các kỹ thuật Quantization (như GGUF) tiên tiến.",
-            "date": "2026-04-13T14:39:29.661805"
-        },
-        {
-            "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-            "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
-            "source": "ScrapeGraph: deepmind.google",
-            "summary_vn": "Gemini 3.1 Flash Live đại diện cho một bước tiến quan trọng trong tối ưu hóa kiến trúc (architectural refinements) dành riêng cho các tương tác đa phương thức (multimodal) thời gian thực. Mô hình tập trung vào việc giảm thiểu độ trễ (low-latency) và nâng cao độ trung thực (high-fidelity) trong xử lý tín hiệu âm thanh đầu vào và đầu ra. Về mặt kỹ thuật, các cải tiến này nhắm vào cơ chế luồng dữ liệu (streaming mechanism) và tối ưu hóa quá trình suy luận (inference optimization) để đảm bảo tính nhất quán và tự nhiên của phản hồi giọng nói. Điểm đổi mới đặc biệt nằm ở việc tích hợp các tính năng tin cậy (reliability features) giúp kiểm soát chất lượng phản hồi trong các Agentic Workflows dựa trên giọng nói, giảm thiểu hiện tượng trễ nhịp hoặc mất ngữ cảnh. Đây là công cụ quan trọng cho các kỹ sư xây dựng hệ thống Voice AI đòi hỏi phản hồi tức thì (near-instantaneous) với độ ổn định cao, vượt qua các giới hạn của các mô hình Flash thế hệ trước.",
-            "date": "2026-04-13T14:39:29.661821"
-        }
-    ],
+    "timestamp": "2026-04-14T03:51:23.965236",
+    "keywords": "EN: [DeepSeek-V3, Claude 3.5 Sonnet, OpenAI o1-pro, Qwen-2.5-Coder, Llama-3.3-70B, Agentic Workflow, Test-time Compute, LangGraph, PydanticAI, Dify, Mixture of Experts, Speculative Decoding, vLLM, Long Context, RAG 2.0, n8n, Compound AI Systems, BitNet]\n\nJP: [DeepSeek-V3, クロード 3.5, OpenAI o1, 思考の連鎖, エージェントワークフロー, テスト時計算量, LangGraph, PydanticAI, Dify, 混合専門家モデル, 量子化LLM, ローカルLLM, 長文コンテキスト, ELYZA-Llama-3, 日本語特化型LLM, n8n, グラフRAG]",
+    "reports": [],
     "debug_stats": {
-        "raw_total": 77,
-        "duplicates": 34,
-        "final": 6
+        "raw_total": 41,
+        "duplicates": 30,
+        "final": 0
     }
 }
