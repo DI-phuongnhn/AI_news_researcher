@@ -6,7 +6,6 @@ to find high-depth technical articles, excluding general news sites.
 
 import time
 from duckduckgo_search import DDGS
-from datetime import datetime
 
 def search_technical_news(keywords_list, max_results=5):
     """
@@ -42,7 +41,7 @@ def search_technical_news(keywords_list, max_results=5):
                     "link": r['href'],
                     "summary": r['body'],
                     "source": "Search: " + kw,
-                    "date": datetime.now().isoformat()
+                    "date": r.get('date')
                 })
             # Respect search engine rate limits
             time.sleep(1) 

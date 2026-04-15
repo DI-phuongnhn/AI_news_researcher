@@ -39,13 +39,13 @@ def fetch_rss_news(rss_url, days=1):
                     "date": published_time.isoformat()
                 })
         else:
-            # Fallback for feeds without parseable dates
+            # Keep undated items explicit so freshness enforcement can discard them.
             news_items.append({
                 "title": entry.title,
                 "link": entry.link,
                 "summary": entry.get("summary", ""),
                 "source": rss_url,
-                "date": datetime.now().isoformat()
+                "date": None
             })
             
     return news_items

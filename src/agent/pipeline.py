@@ -3,11 +3,9 @@ Research Pipeline Orchestrator.
 Coordinates the end-to-end flow from discovery to notification.
 """
 
-import os
-import json
 import time
 import random
-from datetime import datetime, timedelta
+from datetime import datetime
 from src.config import Config
 from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.rss_fetcher import fetch_rss_news
@@ -22,7 +20,7 @@ from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph, fetch_techni
 from src.agent.summarizer import summarize_news
 from src.agent.model_rotator import get_rotator
 from src.utils.data_manager import DataManager
-from src.utils.text_utils import normalize_text, normalize_url, parse_flexible_date
+from src.utils.text_utils import normalize_text, parse_flexible_date
 from src.utils.notifier import send_teams_notification
 
 class ResearchPipeline:
@@ -237,42 +235,23 @@ class ResearchPipeline:
 
     def _process_news(self, all_raw_news, search_keywords, all_models):
         """Step 3.5 & 3.6: Deduplication, Ordering, and Relevance Filtering."""
-        # 1. Date Filtering (Strict 4-Day limit)
-        recent_news = []
-        max_days = getattr(Config, "MAX_NEWS_AGE_DAYS", 4)
-        now = datetime.now()
-        cutoff = now - timedelta(days=max_days)
-        
-        removed_old = 0
-        removed_no_date = 0
-        
-        for item in all_raw_news:
-            date_val = parse_flexible_date(item.get('date'))
-            
-            if not date_val:
-                removed_no_date += 1
-                continue # Discard items with no verifiable date
-                
-            if date_val < cutoff:
-                removed_old += 1
-                continue # Discard items older than threshold
-                
-            recent_news.append(item)
-            
-        if removed_old > 0 or removed_no_date > 0:
-            print(f"  Filtering: Removed {removed_old} old items and {removed_no_date} items with unknown date.")
+        # Freshness gate runs before deduplication so stale items never enter the pipeline.
+        fresh_news, stale_count, undated_count = self._filter_recent_news(all_raw_news)
+        print(
+            f"  Pipeline: Removed {stale_count} stale items and {undated_count} items without a trusted date. "
+            f"{len(fresh_news)} candidates remain."
+        )
 
-        # 2. Deduplication
+        # Deduplication
         unique_news = []
         duplicate_count = 0
-        for item in recent_news:
+        for item in fresh_news:
             if not self.data_manager.is_duplicate(item):
                 unique_news.append(item)
                 self.data_manager.add_to_seen(item)
             else:
                 duplicate_count += 1
         print(f"  Pipeline: Removed {duplicate_count} duplicates. {len(unique_news)} unique remaining.")
-        return unique_news
 
         # Diverse Filtering
         # Diverse Filtering and Re-ordering
@@ -292,6 +271,31 @@ class ResearchPipeline:
         diverse_news = tech_leads + search_leads + other_items + social_items
         filtered_news = self.filter_relevance(diverse_news, search_keywords, all_models)[:20]
         return unique_news, filtered_news, duplicate_count
+
+    def _filter_recent_news(self, news_items):
+        """Keep only items with a trusted date inside the configured freshness window."""
+        max_age_days = getattr(Config, "MAX_NEWS_AGE_DAYS", 4)
+        now = datetime.now()
+        fresh_items = []
+        stale_count = 0
+        undated_count = 0
+
+        for item in news_items:
+            parsed_date = parse_flexible_date(item.get("date"))
+            if parsed_date is None:
+                undated_count += 1
+                continue
+
+            age_days = (now - parsed_date).total_seconds() / 86400
+            if age_days < 0 or age_days > max_age_days:
+                stale_count += 1
+                continue
+
+            normalized_item = dict(item)
+            normalized_item["date"] = parsed_date.isoformat()
+            fresh_items.append(normalized_item)
+
+        return fresh_items, stale_count, undated_count
 
     def _summarize_and_notify(self, filtered_news, keywords, all_models):
         """Step 4 & 4.2: AI Summarization and Teams Ping."""

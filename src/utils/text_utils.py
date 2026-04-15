@@ -7,7 +7,7 @@ import re
 import difflib
 import unicodedata
 from datetime import datetime, timedelta
-from dateutil import parser
+from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse, urlunparse
 
 def normalize_url(url):
@@ -50,44 +50,82 @@ def calculate_similarity(text1, text2):
         return 0.0
     return difflib.SequenceMatcher(None, n1, n2).ratio()
 
+
 def parse_flexible_date(date_input):
     """
-    Robustly parses various date formats into a standard datetime object.
-    Supports ISO, relative strings ('2 days ago', '4h'), and standard dates.
-    Returns None if parsing fails.
+    Parse common absolute and relative date formats into a naive local datetime.
+    Returns None when the input cannot be trusted as a publication date.
     """
-    if not date_input:
+    if date_input in (None, ""):
         return None
-        
-    if isinstance(date_input, (int, float)):
-        # Handle UNIX timestamp
-        try:
-            return datetime.fromtimestamp(date_input)
-        except:
-            return None
-            
+
     if isinstance(date_input, datetime):
-        return date_input
+        parsed = date_input
+    elif isinstance(date_input, (int, float)):
+        try:
+            parsed = datetime.fromtimestamp(date_input)
+        except (OverflowError, OSError, ValueError):
+            return None
+    else:
+        text = str(date_input).strip()
+        if not text:
+            return None
 
-    date_str = str(date_input).strip()
-    
-    # Handle relative dates (very common in social media)
-    now = datetime.now()
-    try:
-        if 'ago' in date_str.lower() or 'h' in date_str.lower() or 'd' in date_str.lower():
-            match = re.search(r'(\d+)\s*(d|h|m|s|day|hour|min|sec)', date_str.lower())
-            if match:
-                val = int(match.group(1))
-                unit = match.group(2)
-                if unit.startswith('d'): return now - timedelta(days=val)
-                if unit.startswith('h'): return now - timedelta(hours=val)
-                if unit.startswith('m'): return now - timedelta(minutes=val)
-                if unit.startswith('s'): return now - timedelta(seconds=val)
-    except:
-        pass
+        normalized = text.lower()
+        relative_match = re.fullmatch(
+            r"(?:(?P<a>an?|one)\s+)?(?P<value>\d+|an?|one)?\s*"
+            r"(?P<unit>minute|minutes|min|hour|hours|day|days|week|weeks|month|months)"
+            r"\s+ago",
+            normalized,
+        )
+        if relative_match:
+            raw_value = relative_match.group("value") or relative_match.group("a") or "1"
+            value = 1 if raw_value in {"a", "an", "one"} else int(raw_value)
+            unit = relative_match.group("unit")
+            if unit.startswith("min"):
+                delta = timedelta(minutes=value)
+            elif unit.startswith("hour"):
+                delta = timedelta(hours=value)
+            elif unit.startswith("day"):
+                delta = timedelta(days=value)
+            elif unit.startswith("week"):
+                delta = timedelta(weeks=value)
+            else:
+                delta = timedelta(days=value * 30)
+            return datetime.now() - delta
 
-    # Fallback to dateutil parser
-    try:
-        return parser.parse(date_str)
-    except:
+        iso_candidate = text.replace("Z", "+00:00")
+        try:
+            parsed = datetime.fromisoformat(iso_candidate)
+        except ValueError:
+            parsed = None
+
+        if parsed is None:
+            for fmt in (
+                "%Y-%m-%d",
+                "%Y/%m/%d",
+                "%d/%m/%Y",
+                "%b %d, %Y",
+                "%B %d, %Y",
+                "%d %b %Y",
+                "%d %B %Y",
+            ):
+                try:
+                    parsed = datetime.strptime(text, fmt)
+                    break
+                except ValueError:
+                    continue
+
+        if parsed is None:
+            try:
+                parsed = parsedate_to_datetime(text)
+            except (TypeError, ValueError):
+                return None
+
+    if parsed.tzinfo is not None:
+        parsed = parsed.astimezone().replace(tzinfo=None)
+
+    if parsed > datetime.now() + timedelta(days=1):
         return None
+
+    return parsed

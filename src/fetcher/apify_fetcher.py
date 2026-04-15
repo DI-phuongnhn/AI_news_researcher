@@ -1,6 +1,5 @@
 from apify_client import ApifyClient
 from src.config import Config
-from datetime import datetime
 import json
 import os
 
@@ -32,7 +31,7 @@ def fetch_latest_run_dataset(actor_id: str, platform_name: str):
             for item in client.dataset(dataset_id).iterate_items():
                 text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
                 url = item.get("url") or item.get("post_url") or item.get("postUrl") or item.get("twitterUrl") or ""
-                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt") or datetime.now().isoformat()
+                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
                 
                 title = item.get("title")
                 if not title:
@@ -86,7 +85,7 @@ def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
             for item in client.dataset(run["defaultDatasetId"]).iterate_items():
                 text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
                 url = item.get("url") or item.get("post_url") or item.get("postUrl") or item.get("twitterUrl") or ""
-                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt") or datetime.now().isoformat()
+                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
                 
                 title = item.get("title")
                 if not title:
@@ -215,7 +214,7 @@ def load_manual_apify_data(file_path="data/manual_import.json"):
         for item in raw_data:
             text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
             url = item.get("url") or item.get("post_url") or item.get("postUrl") or ""
-            date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt") or datetime.now().isoformat()
+            date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
             
             title = item.get("title")
             if not title:

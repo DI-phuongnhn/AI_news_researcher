@@ -1,4 +1,3 @@
-from datetime import datetime
 from scrapegraphai.graphs import SmartScraperGraph
 from src.config import Config
 
@@ -64,8 +63,9 @@ def fetch_technical_blog_posts(url, max_items=3):
     - 'title': The technical headline.
     - 'link': The absolute URL to the article.
     - 'summary': A 2-sentence technical summary in English.
-    - 'date': The publication date of the article (e.g. '2024-04-12').
-    
+    - 'date': The publication date as it appears on the page. Use ISO-8601 when explicit.
+
+    IMPORTANT: If a post does not have a clear publication date, set 'date' to null.
     Format: Return a JSON list of objects.
     """
     
@@ -91,15 +91,12 @@ def fetch_technical_blog_posts(url, max_items=3):
     final_items = []
     for it in items:
         if isinstance(it, dict) and it.get('title'):
-            # Extract date - priority to what AI found
-            article_date = it.get('date') or it.get('release_date')
-            
             final_items.append({
                 "title": it.get('title'),
                 "link": it.get('link') if it.get('link') and it.get('link').startswith("http") else url,
                 "summary": it.get('summary', ''),
                 "source": "ScrapeGraph: " + domain,
-                "date": article_date # Leave as is, pipeline will filter
+                "date": it.get('date')
             })
     return final_items
 
@@ -111,7 +108,7 @@ if __name__ == "__main__":
     For each item, provide:
     - 'title': The headline
     - 'summary': A concise 1-2 sentence technical summary
-    - 'release_date': The date of the news (if available) or the current date.
+    - 'date': The publication date if explicitly available on the page, otherwise null.
     
     IMPORTANT: Focus ONLY on technical news like new LLMs, AI agents, architecture, or developer tools. Ignore company culture, hiring, or marketing fluff.
     CRITICAL: If scanning Anthropic's news page, ONLY extract articles explicitly categorized as 'Product' (e.g., model releases like Claude 3.5/3.7, api updates, computer use). Skip 'Company' or generic news.
