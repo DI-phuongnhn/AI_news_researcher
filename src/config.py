@@ -84,6 +84,7 @@ class Config:
         "https://huggingface.co/blog"
     ]
     MAX_SCRAPE_TARGETS_PER_RUN = 5 # Increased to focus on ScrapeGraphAI fallback
+    MAX_NEWS_AGE_DAYS = 4         # Only articles from the last 4 days are processed
     
     # Teams Webhook Notification
     TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL", "")

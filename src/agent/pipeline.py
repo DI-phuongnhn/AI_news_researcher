@@ -7,7 +7,7 @@ import os
 import json
 import time
 import random
-from datetime import datetime
+from datetime import datetime, timedelta
 from src.config import Config
 from src.fetcher.keyword_discovery import get_trending_keywords
 from src.fetcher.rss_fetcher import fetch_rss_news
@@ -22,7 +22,7 @@ from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph, fetch_techni
 from src.agent.summarizer import summarize_news
 from src.agent.model_rotator import get_rotator
 from src.utils.data_manager import DataManager
-from src.utils.text_utils import normalize_text, normalize_url
+from src.utils.text_utils import normalize_text, normalize_url, parse_flexible_date
 from src.utils.notifier import send_teams_notification
 
 class ResearchPipeline:
@@ -237,16 +237,42 @@ class ResearchPipeline:
 
     def _process_news(self, all_raw_news, search_keywords, all_models):
         """Step 3.5 & 3.6: Deduplication, Ordering, and Relevance Filtering."""
-        # Deduplication
+        # 1. Date Filtering (Strict 4-Day limit)
+        recent_news = []
+        max_days = getattr(Config, "MAX_NEWS_AGE_DAYS", 4)
+        now = datetime.now()
+        cutoff = now - timedelta(days=max_days)
+        
+        removed_old = 0
+        removed_no_date = 0
+        
+        for item in all_raw_news:
+            date_val = parse_flexible_date(item.get('date'))
+            
+            if not date_val:
+                removed_no_date += 1
+                continue # Discard items with no verifiable date
+                
+            if date_val < cutoff:
+                removed_old += 1
+                continue # Discard items older than threshold
+                
+            recent_news.append(item)
+            
+        if removed_old > 0 or removed_no_date > 0:
+            print(f"  Filtering: Removed {removed_old} old items and {removed_no_date} items with unknown date.")
+
+        # 2. Deduplication
         unique_news = []
         duplicate_count = 0
-        for item in all_raw_news:
+        for item in recent_news:
             if not self.data_manager.is_duplicate(item):
                 unique_news.append(item)
                 self.data_manager.add_to_seen(item)
             else:
                 duplicate_count += 1
         print(f"  Pipeline: Removed {duplicate_count} duplicates. {len(unique_news)} unique remaining.")
+        return unique_news
 
         # Diverse Filtering
         # Diverse Filtering and Re-ordering

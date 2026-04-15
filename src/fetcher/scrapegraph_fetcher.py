@@ -64,6 +64,7 @@ def fetch_technical_blog_posts(url, max_items=3):
     - 'title': The technical headline.
     - 'link': The absolute URL to the article.
     - 'summary': A 2-sentence technical summary in English.
+    - 'date': The publication date of the article (e.g. '2024-04-12').
     
     Format: Return a JSON list of objects.
     """
@@ -90,12 +91,15 @@ def fetch_technical_blog_posts(url, max_items=3):
     final_items = []
     for it in items:
         if isinstance(it, dict) and it.get('title'):
+            # Extract date - priority to what AI found
+            article_date = it.get('date') or it.get('release_date')
+            
             final_items.append({
                 "title": it.get('title'),
                 "link": it.get('link') if it.get('link') and it.get('link').startswith("http") else url,
                 "summary": it.get('summary', ''),
                 "source": "ScrapeGraph: " + domain,
-                "date": datetime.now().isoformat()
+                "date": article_date # Leave as is, pipeline will filter
             })
     return final_items
 
