@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2026-04-16T03:56:13.864614",
+        "keywords": "EN: [Agents SDK, Agentic workflows, Native sandbox execution, Architecture, Optimization, Software Development Kit, Execution environment, Integration, Technical breakthrough, Agents]\nVN: [Agents SDK, Luồng công việc Agentic, Thực thi sandbox gốc, Kiến trúc, Tối ưu hóa, Bộ công cụ phát triển phần mềm, Môi trường thực thi, Tích hợp, Đột phá kỹ thuật, Tác tử]\nMODELS: [None mentioned]",
+        "reports": [
+            {
+                "title": "The next evolution of the Agents SDK",
+                "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+                "source": "https://openai.com/news/rss.xml",
+                "summary_vn": "OpenAI đã nâng cấp Agents SDK với những cải tiến quan trọng về kiến trúc nhằm tối ưu hóa Agentic workflows. Điểm đột phá kỹ thuật nằm ở việc tích hợp \"native sandbox execution\", cho phép các agent thực thi mã lập trình (code execution) trong môi trường cách ly bảo mật ngay trên nền tảng, hỗ trợ xử lý file và các tác vụ chạy ngầm (long-running agents) hiệu quả. SDK mới giới thiệu \"model-native harness\", một lớp trừu tượng hóa giúp thắt chặt sự phối hợp giữa khả năng suy luận của mô hình (như o1, GPT-4o) và việc gọi công cụ (tool calling), giảm thiểu sai lệch trong quá trình định tuyến tác vụ. Cải tiến này giải quyết bài toán quản lý trạng thái (state management) trong các hệ thống Multi-Agent, cho phép duy trì ngữ cảnh nhất quán khi thực hiện các chuỗi hành động phức tạp. Đây là bước tiến từ việc chỉ gọi API đơn thuần sang một khung vận hành agent hoàn chỉnh, bảo mật chống lại các rủi ro thực thi mã ngoài ý muốn.",
+                "date": "2026-04-15T10:00:00"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 41,
+            "duplicates": 0,
+            "final": 1
+        }
+    },
+    {
         "timestamp": "2026-04-15T14:06:53.838592",
         "keywords": "EN: [Project Glasswing, Glasswing, SBOM, SLSA, Supply Chain, Code Signing, Provenance, Secure Build, CVE]",
         "reports": [
