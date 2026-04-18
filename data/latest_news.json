@@ -1,17 +1,17 @@
 {
-    "timestamp": "2026-04-16T03:56:13.864614",
-    "keywords": "EN: [Agents SDK, Agentic workflows, Native sandbox execution, Architecture, Optimization, Software Development Kit, Execution environment, Integration, Technical breakthrough, Agents]\nVN: [Agents SDK, Luồng công việc Agentic, Thực thi sandbox gốc, Kiến trúc, Tối ưu hóa, Bộ công cụ phát triển phần mềm, Môi trường thực thi, Tích hợp, Đột phá kỹ thuật, Tác tử]\nMODELS: [None mentioned]",
+    "timestamp": "2026-04-18T03:39:33.519515",
+    "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, OpenAI o1, Model Context Protocol, Test-time Compute, Sparse MoE, LangGraph, Multi-token Prediction, DeepSeek-V3, n8n, Dify, Project Glasswing, AI-BOM, SLSA, vLLM, Agentic Workflows, Llama-3.1-405B, Linear Attention, Qwen-2.5-Coder, Software Supply Chain]\n\nJP: [DeepSeek-R1, クロード 3.5, OpenAI o1, モデル文脈プロトコル, 推論時計算, 混合エキスパート, LangGraph, マルチトークン予測, DeepSeek-V3, n8n, Dify, プロジェクトGlasswing, AI-BOM, SLSA, vLLM, エージェント型ワークフロー, Llama-3.1, 線形注意機構, Qwen-2.5, サプライチェーン攻撃]",
     "reports": [
         {
-            "title": "The next evolution of the Agents SDK",
-            "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI đã nâng cấp Agents SDK với những cải tiến quan trọng về kiến trúc nhằm tối ưu hóa Agentic workflows. Điểm đột phá kỹ thuật nằm ở việc tích hợp \"native sandbox execution\", cho phép các agent thực thi mã lập trình (code execution) trong môi trường cách ly bảo mật ngay trên nền tảng, hỗ trợ xử lý file và các tác vụ chạy ngầm (long-running agents) hiệu quả. SDK mới giới thiệu \"model-native harness\", một lớp trừu tượng hóa giúp thắt chặt sự phối hợp giữa khả năng suy luận của mô hình (như o1, GPT-4o) và việc gọi công cụ (tool calling), giảm thiểu sai lệch trong quá trình định tuyến tác vụ. Cải tiến này giải quyết bài toán quản lý trạng thái (state management) trong các hệ thống Multi-Agent, cho phép duy trì ngữ cảnh nhất quán khi thực hiện các chuỗi hành động phức tạp. Đây là bước tiến từ việc chỉ gọi API đơn thuần sang một khung vận hành agent hoàn chỉnh, bảo mật chống lại các rủi ro thực thi mã ngoài ý muốn.",
-            "date": "2026-04-15T10:00:00"
+            "title": "HashIndex – Index siêu nhanh bằng hash cho RAG & search\n\nHashIndex là thư viện g...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02XhDkjKNE7oukAfx7Fo7EU6ynX8PDReKRFfSHJozkN4umZyqevEfXsm9rmxhxiYqWl",
+            "source": "Apify: Facebook",
+            "summary_vn": "HashIndex là một thư viện tối ưu hóa hiệu suất truy xuất thông tin bằng cách triển khai cấu trúc **Inverted Index** dựa trên **Hash Map**. Thay vì phụ thuộc hoàn toàn vào **Vector Search** (thường có độ trễ cao và chi phí tính toán lớn), HashIndex cung cấp khả năng tra cứu từ khóa với độ phức tạp thời gian tiệm cận **O(1)**. Về mặt kỹ thuật, thư viện hỗ trợ quy trình **Tokenization** và cho phép trích xuất các đặc trưng **TF-IDF**, phục vụ trực tiếp cho các tác vụ Machine Learning. Trong các kiến trúc **RAG (Retrieval-Augmented Generation)** hiện đại, HashIndex đóng vai trò là một lớp **Pre-filter** hiệu quả, giúp lọc nhanh tập dữ liệu thô trước khi chuyển qua bước tìm kiếm ngữ nghĩa (semantic search) trên **Vector Database**. Sự đổi mới này tập trung vào việc giảm thiểu tài nguyên hệ thống (lightweight) và tối ưu hóa tốc độ cho các pipeline dữ liệu cần xử lý tìm kiếm văn bản quy mô lớn mà không cần overhead phức tạp của các hệ quản trị cơ sở dữ liệu truyền thống.",
+            "date": "2026-04-16T08:44:54"
         }
     ],
     "debug_stats": {
-        "raw_total": 41,
+        "raw_total": 40,
         "duplicates": 0,
         "final": 1
     }
