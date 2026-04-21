@@ -86,7 +86,7 @@ class Config:
     MAX_SCRAPE_TARGETS_PER_RUN = 5 # Increased to focus on ScrapeGraphAI fallback
     
     # Teams Webhook Notification
-    TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL", "")
+    TEAMS_WEBHOOK_URL = os.getenv("TEAMS_CHAT_WEBHOOK_URL", os.getenv("TEAMS_WEBHOOK_URL", ""))
     
     # --- Data Persistence ---
     DATA_FILE = "data/latest_news.json"

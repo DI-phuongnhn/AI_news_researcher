@@ -29,34 +29,64 @@ def send_teams_notification(news_items):
     # Constructing a legacy MessageCard (widely supported by Teams Incoming Webhooks)
     # We use a structured format with sections for better readability
     
-    sections = []
+    # Construct an Adaptive Card as the root object for best integration with Power Automate Flow Bot
+    body_elements = [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "🚀 Top Technical AI News Today"
+        },
+        {
+            "type": "TextBlock",
+            "wrap": True,
+            "text": f"Found {len(news_items)} relevant items. Here are the top 5 priority technical updates."
+        }
+    ]
+
     for item in top_items:
-        sections.append({
-            "activityTitle": f"**{item['title']}**",
-            "activitySubtitle": f"Source: {item['source']} | {item.get('date', 'Recent')[:10]}",
-            "text": item['summary_vn'],
-            "potentialAction": [
+        body_elements.append({
+            "type": "Container",
+            "items": [
                 {
-                    "@type": "OpenUri",
-                    "name": "Read Original",
-                    "targets": [{"os": "default", "uri": item['link']}]
+                    "type": "TextBlock",
+                    "weight": "Bolder",
+                    "text": item['title'],
+                    "wrap": True
+                },
+                {
+                    "type": "TextBlock",
+                    "spacing": "None",
+                    "text": f"Source: {item['source']} | {item.get('date', 'Recent')[:10]}",
+                    "isSubtle": True,
+                    "wrap": True
+                },
+                {
+                    "type": "TextBlock",
+                    "text": item['summary_vn'],
+                    "wrap": True
+                }
+            ],
+            "style": "default",
+            "spacing": "Medium"
+        })
+        body_elements.append({
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Read Original",
+                    "url": item['link']
                 }
             ]
         })
 
+    # The payload is now a pure Adaptive Card object, which satisfies the Flow Bot's JSON requirement
     payload = {
-        "@type": "MessageCard",
-        "@context": "http://schema.org/extensions",
-        "themeColor": "0078D7",
-        "summary": "Daily Technical AI News Summary",
-        "sections": [
-            {
-                "startGroup": True,
-                "title": "🚀 Top Technical AI News Today",
-                "text": f"Found {len(news_items)} relevant items. Here are the top 5 priority technical updates."
-            },
-            *sections
-        ]
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.4",
+        "body": body_elements
     }
 
     try:
@@ -66,7 +96,7 @@ def send_teams_notification(news_items):
             headers={'Content-Type': 'application/json'},
             timeout=10
         )
-        if response.status_code == 200:
+        if response.status_code in (200, 202):
             print(f"[Teams Notifier] Successfully pushed {len(top_items)} items to Teams.")
             return True
         else:
@@ -80,10 +110,10 @@ if __name__ == "__main__":
     # Test notification
     test_items = [
         {
-            "title": "{Test} DeepSeek-V3 Released",
-            "source": "Manual Test",
-            "summary_vn": "DeepSeek-V3 là mô hình Mixture-of-Experts (MoE) mạnh mẽ với 671 tỷ tham số, tối ưu hóa cho suy luận và mã nguồn.",
-            "link": "https://github.com/deepseek-ai/DeepSeek-V3"
+            "title": "[Test] Connection Verification",
+            "source": "System",
+            "summary_vn": "This is a simplified test message to verify the Microsoft Teams chat webhook is active and working.",
+            "link": "https://github.com/DI-phuongnhn/AI_news_researcher"
         }
     ]
     send_teams_notification(test_items)
