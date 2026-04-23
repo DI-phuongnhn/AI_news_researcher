@@ -1,32 +1,46 @@
 {
-    "timestamp": "2026-04-21T03:54:49.514156",
-    "keywords": "EN: [Quantization, 1.58-bit, SLM (Small Language Model), Architecture, Open source, Deployment, LLM APIs, Free Tier, Compatibility, Template]\n\nVN: [Định lượng, 1.58-bit, Mô hình ngôn ngữ nhỏ, Kiến trúc, Mã nguồn mở, Triển khai, API mô hình ngôn ngữ lớn, Gói miễn phí, Khả năng tương thích, Bản mẫu]\n\nMODELS: [Ternary Bonsai (8B), Qwen, SLM 8B]",
+    "timestamp": "2026-04-23T03:58:12.654235",
+    "keywords": "EN: [Agentic Workflow, Model Context Protocol (MCP), WebSockets, Responses API, Agent loop, Stateless HTTP, Agent skill, Local AI, First-class collaborator, Workspace agents]\nVN: [Quy trình làm việc tự trị, Giao thức ngữ cảnh mô hình, WebSockets, API phản hồi, Vòng lặp tác vụ, HTTP không trạng thái, Kỹ năng của Agent, AI cục bộ, Cộng tác viên ưu tiên, Agent cho không gian làm việc]\nMODELS: [Claude Code, Codex, ChatGPT, Cursor]",
     "reports": [
         {
-            "title": "🚀 Model SLM 8B 1.58-bit: nhỏ hơn 9 lần nhưng vẫn “thông minh”, hỗ trợ tốt tiếng ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ZqPud9beJVGRsPf37Uou5it7MA7Zy7jL8ebSag5VCUSJqRzH1daEcma1R7qrAAJNl",
+            "title": "Nguồn mở AI điều khiển trình duyệt Web như hành vi con người\n\nWeb-access là một ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02pErSv3LgR8tk3pd6oywW3vPwQkyxbknynhCnKFbpTWHa8UqNYBCaFQn5SK7Nk3nQl",
             "source": "Apify: Facebook",
-            "summary_vn": "Mô hình Ternary Bonsai (8B) do PrismML phát triển là một bước tiến quan trọng trong kỹ thuật định lượng (quantization) 1.58-bit, được tinh chỉnh dựa trên kiến trúc Qwen. Cốt lõi kỹ thuật nằm ở việc chuyển đổi trọng số từ định dạng FP16 truyền thống sang hệ tam phân (ternary weights) {-1, 0, +1}. Phương pháp này cho phép thay thế các phép nhân ma trận (MatMul) tốn kém bằng các phép cộng và trừ đơn giản, giúp giảm kích thước mô hình xuống gần 9 lần và tối ưu hóa cực mạnh băng thông bộ nhớ cũng như mức tiêu thụ năng lượng. Điểm đột phá của Ternary Bonsai là duy trì được hiệu suất (perplexity) tiệm cận với mô hình 8B gốc trong khi vẫn đảm bảo khả năng suy luận tốc độ cao trên phần cứng phổ thông. Đây là sự hiện thực hóa nghiên cứu BitNet b1.58 trên các mô hình ngôn ngữ nhỏ (SLM), hỗ trợ tối ưu cho các tác vụ ngôn ngữ tiếng Việt và triển khai thực tế trong các Agentic Workflow cần độ trễ thấp.",
-            "date": "2026-04-21T03:20:32"
+            "summary_vn": "Web-access là một công cụ mã nguồn mở từ Apify, được thiết kế như một agent skill tương thích với các hệ sinh thái như Claude Code, Cursor và Model Context Protocol (MCP). Về mặt kỹ thuật, công cụ này triển khai kiến trúc truy cập phân cấp (tiered access) gồm ba cấp độ: Fetch (HTTP request đơn giản), DOM (phân tích cấu trúc HTML) và Full Browser (sử dụng trình duyệt headless để xử lý các ứng dụng web động như React/SPA). Cải tiến quan trọng nằm ở khả năng tích hợp vào Agentic Workflows, cho phép AI tự quyết định phương thức truy cập dựa trên độ phức tạp của trang web, duy trì session (login, cookies) và hỗ trợ Multi-agent orchestration để xử lý tác vụ song song. Thay vì chỉ đọc dữ liệu tĩnh, hệ thống này cung cấp khả năng tương tác UI thực thụ (click, scroll), giúp mở rộng khả năng của AI trong việc thực hiện các nhiệm vụ tự động hóa phức tạp và thu thập dữ liệu trong môi trường web hiện đại.",
+            "date": "2026-04-23T00:26:18"
         },
         {
-            "title": "🎉 Kho nguồn mở 100k⭐️ với 100+ project AI thực chiến cho dev\n\nawesome-llm-apps l...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid09Z8YvWej8zkowyoUt6WTdg8FMniEsf1BFKKVWSkvfDMjGwrcJhx5EJDG4YWF4Dk5l",
+            "title": "🚀 Nguồn mở thay thế Claude for Word với giao diện đẹp hỗ trợ mạnh Local AI tiết ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02URR8txkjKz77co8rMAbnfJZGtUREW8QzmKii6Q2oNpMtMm83MwUE9GvvK5WBHHfBl",
             "source": "Apify: Facebook",
-            "summary_vn": "Dự án \"awesome-llm-apps\" là một kho lưu trữ kỹ thuật mã nguồn mở tập trung vào việc hiện thực hóa các kiến trúc AI tiên tiến. Về mặt kỹ thuật, tài nguyên này cung cấp các template triển khai thực tế cho **Agentic Workflow** và hệ thống **Multi-agent**, cho phép các đại lý AI tương tác và thực hiện nhiệm vụ phức tạp. Điểm cốt lõi nằm ở việc tối ưu hóa các pipeline **RAG (Retrieval-Augmented Generation)**, tích hợp với **Vector Databases** và các cơ chế **Memory-based** để quản lý ngữ cảnh (context) dài hạn. Ngoài ra, dự án còn đi sâu vào các kỹ thuật **Fine-tuning** và tối ưu hóa hiệu suất mô hình cho các tác vụ chuyên biệt như Voice AI và nghiên cứu tài chính. Sự đổi mới cụ thể ở đây là việc cung cấp cấu trúc code \"ready-to-deploy\", giúp kỹ sư AI bỏ qua giai đoạn boilerplate để tập trung vào tinh chỉnh tham số, tối ưu hóa **KV Cache**, hoặc tích hợp các framework như LangGraph và CrewAI vào môi trường production.",
-            "date": "2026-04-19T18:11:59"
+            "summary_vn": "AOSE (AI Open Source Editor) là một bộ công cụ văn phòng mã nguồn mở được thiết kế xoay quanh kiến trúc **Agentic Workflow**, cho phép AI Agent tương tác như một \"first-class collaborator\". Điểm đổi mới kỹ thuật cốt lõi nằm ở việc chuyển dịch từ giao diện Chatbot truyền thống sang mô hình Agent có khả năng can thiệp trực tiếp vào cấu trúc dữ liệu của tài liệu (Docs), Database, Slides và Flowchart. Hệ thống hỗ trợ tích hợp **Local AI**, cho phép kỹ sư cấu hình các mô hình ngôn ngữ lớn chạy cục bộ để tối ưu hóa chi phí token và đảm bảo quyền riêng tư dữ liệu. Về mặt kỹ thuật, AOSE thực hiện việc theo dõi lịch sử thay đổi (version control) do Agent tạo ra và sử dụng cơ chế kích hoạt tác vụ qua **@mention**, biến AI thành một thực thể có trạng thái (**stateful agent**) trong môi trường soạn thảo cộng tác. Đây là giải pháp thay thế mã nguồn mở tiềm năng cho các hệ thống đóng như Claude for Word, tập trung vào khả năng tùy biến luồng công việc của Agent.",
+            "date": "2026-04-21T07:55:43"
         },
         {
-            "title": "🚀 Free LLM APIs 04/2026– “mỏ vàng” cho dev build AI không tốn tiền (dùng để test...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid05NU1mRGc9C3VEr9h3SumBajBCQtCRP8FBwocQDCpVPC3Q876QFfN9jajHJxJNAayl",
-            "source": "Apify: Facebook",
-            "summary_vn": "Nội dung cung cấp danh sách các nhà cung cấp LLM API có chính sách miễn phí (Free Tier) bền vững thông qua repo \"awesome-free-llm-apis\". Về mặt kỹ thuật, điểm cốt lõi là khả năng tương thích hoàn toàn với OpenAI SDK, cho phép các kỹ sư AI thực hiện cơ chế \"plug-and-play\" khi tích hợp vào các Agentic Workflow hoặc hệ thống RAG mà không cần chỉnh sửa logic mã nguồn phức tạp. Tài liệu liệt kê hơn 15 providers hỗ trợ các dòng model tiên tiến như DeepSeek-R1, Qwen-Max, Llama 3 và Mistral. Việc tận dụng các đầu cuối (endpoints) này giúp tối ưu hóa quá trình prototyping, thử nghiệm hàm suy luận (Inference-as-a-Service) và kiểm soát chi phí hạ tầng ban đầu. Ngoài ra, nội dung giúp dev phân loại giữa nhóm tự huấn luyện model (như Cohere) và nhóm chuyên tối ưu hóa tốc độ suy luận (như Groq), hỗ trợ tốt cho việc lựa chọn dựa trên yêu cầu về độ trễ (latency) và cửa sổ ngữ cảnh (context window).",
-            "date": "2026-04-19T14:08:21"
+            "title": "Workspace agents",
+            "link": "https://openai.com/academy/workspace-agents",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "OpenAI giới thiệu giải pháp xây dựng và mở rộng Workspace Agents, tập trung vào việc thiết lập các Agentic Workflows trong môi trường doanh nghiệp. Về mặt kiến trúc, các Agent này hoạt động dựa trên cơ chế Tool-use (Function Calling) để kết nối với các API và cơ sở dữ liệu nội bộ. Kỹ thuật triển khai bao gồm việc cấu hình Actions thông qua các schema chuẩn hóa, quản lý trạng thái (State management) cho các luồng công việc phức tạp và tối ưu hóa RAG (Retrieval Augmented Generation) để truy xuất tri thức từ workspace. Điểm đổi mới nằm ở khả năng điều phối đa tác vụ (Multi-agent orchestration), cho phép các Agent tự động hóa các quy trình lặp lại bằng cách tận dụng khả năng suy luận của các mô hình như o1. Ngoài ra, việc mở rộng (scaling) yêu cầu quản lý phân quyền, xác thực OAuth và đảm bảo tính bảo mật trong Software Supply Chain khi tích hợp các công cụ bên thứ ba vào luồng xử lý của LLM.",
+            "date": "2026-04-22T10:00:00"
+        },
+        {
+            "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+            "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "OpenAI công bố cải tiến cho Agentic Workflows thông qua việc tích hợp WebSockets vào Responses API, tập trung tối ưu hóa vòng lặp tác vụ (agent loop). Thay vì sử dụng các yêu cầu HTTP không trạng thái (stateless), việc duy trì kết nối WebSocket cho phép triển khai cơ chế \"connection-scoped caching\", giúp giảm thiểu đáng kể độ trễ (latency) và chi phí tài nguyên (overhead) khi giao tiếp với mô hình. Cụ thể, kỹ thuật này tối ưu hóa cách quản lý trạng thái trong các phiên làm việc kéo dài, cho phép Agent truy cập nhanh vào ngữ cảnh trước đó mà không cần xử lý lại toàn bộ token, tương tự như việc tối ưu hóa KV Cache trên server-side. Đổi mới này đặc biệt hiệu quả trong các kịch bản Multi-Agent và Tool-calling phức tạp, nơi việc phản hồi nhanh và duy trì tính nhất quán của hội thoại là yếu tố then chốt để nâng cao trải nghiệm người dùng và hiệu suất hệ thống.",
+            "date": "2026-04-22T10:00:00"
+        },
+        {
+            "title": "Introducing workspace agents in ChatGPT",
+            "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "OpenAI giới thiệu Workspace Agents, đánh dấu sự chuyển dịch từ chatbot truyền thống sang hệ sinh thái Agentic Workflows toàn diện. Về mặt kỹ thuật, các agent này tận dụng mô hình Codex-powered để thực thi mã và xử lý các tác vụ logic phức tạp trong môi trường sandbox bảo mật chạy trên cloud. Điểm đổi mới cốt lõi nằm ở khả năng điều phối (orchestration) đa công cụ và tích hợp sâu với các API doanh nghiệp, cho phép tự động hóa quy trình làm việc (workflow automation) thay vì chỉ truy vấn thông tin đơn thuần. Cơ chế này hỗ trợ việc lập kế hoạch (planning) và phân tách tác vụ (task decomposition) hiệu quả, tương tự như cách tiếp cận của Model Context Protocol (MCP). Hệ thống cho phép các kỹ sư cấu hình các \"agent chuyên biệt\" có khả năng truy cập vào cơ sở dữ liệu nội bộ thông qua RAG và thực thi các script tùy chỉnh, tối ưu hóa hiệu suất làm việc nhóm thông qua khả năng xử lý bất đồng bộ và mở rộng quy mô tính toán mà không cần quản lý hạ tầng thủ công.",
+            "date": "2026-04-22T10:00:00"
         }
     ],
     "debug_stats": {
-        "raw_total": 40,
-        "duplicates": 0,
-        "final": 3
+        "raw_total": 44,
+        "duplicates": 1,
+        "final": 5
     }
 }

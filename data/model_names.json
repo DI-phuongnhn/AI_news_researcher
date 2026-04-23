@@ -34,7 +34,10 @@
         "Project Glasswing",
         "None mentioned",
         "Ternary Bonsai (8B)",
-        "SLM 8B"
+        "SLM 8B",
+        "Codex",
+        "ChatGPT",
+        "Cursor"
     ],
     "legacy": [
         "GPT-4",
