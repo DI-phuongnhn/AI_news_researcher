@@ -1,5 +1,51 @@
 [
     {
+        "timestamp": "2026-04-25T03:43:52.551697",
+        "keywords": "EN: [Agentic Workflow, Mixture-of-Experts (MoE), Infrastructure Proxy, Reasoning, CLI (Command Line Interface), Inference, OCR (Optical Character Recognition), API Endpoint, Document AI, Open-source]\n\nVN: [Quy trình tác vụ Agentic, Kiến trúc Mixture-of-Experts, Hạ tầng Proxy, Khả năng suy luận (Reasoning), Giao diện dòng lệnh (CLI), Suy luận (Inference), Nhận dạng ký tự quang học, Điểm cuối API, AI cho tài liệu, Mã nguồn mở]\n\nMODELS: [Claude Code, DeepSeek V4, DeepSeek V4-Pro, DeepSeek V4-Flash, ChatGPT, Gemini, Claude, Cursor, Copilot, GPT Image 2, PaddleOCR v3.5]",
+        "reports": [
+            {
+                "title": "Nguồn mở “kỳ lạ” Free Claude Code – Dùng Claude Code miễn phí ngay trong Termina...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid07anojjHJB4gNFs8kszQZaZgjtg7DN7UKEPDQvJ27QAzFxZPKv4kgo3CdTb2e3TDcl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Dự án `free-claude-code` là một giải pháp hạ tầng (infrastructure) dưới dạng Proxy Trung gian, được thiết kế để can thiệp và điều phối luồng dữ liệu của Claude Code CLI—một công cụ Agentic Workflow mạnh mẽ từ Anthropic. Về mặt kỹ thuật, dự án này triển khai một API Gateway cục bộ giúp giả lập (emulation) các endpoint chính thức của Anthropic. Cốt lõi của hệ thống là cơ chế xoay vòng (rotation) tự động các API Key và nguồn tài nguyên miễn phí, cho phép duy trì các tác vụ phức tạp như phân tích mã nguồn, lập kế hoạch và thực thi terminal mà không bị giới hạn bởi quota cá nhân. Công cụ này tối ưu hóa việc định tuyến (routing) các yêu cầu từ VSCode Extension hoặc CLI đến các backend thay thế, đảm bảo tính tương thích với cấu trúc phản hồi của mô hình Claude 3.5 Sonnet, đồng thời quản lý trạng thái phiên (session management) để bảo toàn ngữ cảnh trong các chuỗi suy luận dài của Agent.",
+                "date": "2026-04-24T11:46:42"
+            },
+            {
+                "title": "DeepSeek V4 – Model open-source mới “đánh thẳng” vào ChatGPT & Gemini\n\n🚀 Điểm ch...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02dqaTAyTqnWHNBBUvmEvMnrDwta2Kiaoyt8FKWnVEXiLuUgG1KAkWjEXaKBTcWZqrl",
+                "source": "Apify: Facebook",
+                "summary_vn": "DeepSeek V4 giới thiệu những cải tiến quan trọng trong kiến trúc Mixture-of-Experts (MoE) với hai biến thể: V4-Pro tập trung vào khả năng Reasoning (suy luận phức tạp) và V4-Flash tối ưu hóa cho tốc độ xử lý. Điểm nhấn kỹ thuật cốt lõi nằm ở cơ chế Attention mới giúp giảm tải đáng kể tài nguyên Compute và Memory, cho phép duy trì hiệu năng ổn định ngay cả với Context Window lên tới 1 triệu token. Model này được tinh chỉnh đặc biệt cho các tác vụ Coding và Agentic Workflow, tối ưu hóa việc gọi hàm và xử lý logic đa bước. Việc nâng cấp hạ tầng giúp giảm chi phí vận hành, biến V4 thành đối thủ trực tiếp của các mô hình đóng trong việc triển khai các hệ thống RAG quy mô lớn và Multi-Agent system. Đây là bước tiến về tối ưu hóa KV Cache và hiệu quả phân bổ chuyên gia (Expert Routing) trong môi trường thực tế.",
+                "date": "2026-04-24T05:44:08"
+            },
+            {
+                "title": "Andrej Karpathy Skills – bộ Skills nguồn mở 80k ⭐️ nạp tư duy Karpathy” vào AI a...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid021teXV5TY7rdzqfaBuN7LpB7T5LuFt4pi1EgBg3e9VhYLwX3xi3r2KPzwPkrV4RXvl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Đây là một bộ tài liệu kỹ thuật (dạng `SKILL.md`) được thiết kế để chuẩn hóa và tối ưu hóa **Agentic Workflow** cho các AI Agent như Claude, Cursor và Copilot. Về mặt kỹ thuật, dự án này đóng gói các **Mental Models** và quy trình suy luận (Reasoning) của Andrej Karpathy thành các chỉ dẫn hệ thống (System Prompts) có cấu trúc. Thay vì sử dụng prompt rời rạc, bộ skill này áp dụng phương pháp **Chain-of-Thought (CoT)** và định nghĩa rõ ràng các bước thực hiện công việc (workflow), giúp AI duy trì ngữ cảnh sâu hơn và tạo ra đầu ra có cấu trúc chặt chẽ. Điểm cốt lõi là việc chuẩn hóa giao thức tương tác giữa người dùng và Agent, tối ưu hóa khả năng giải quyết vấn đề phức tạp trong lập trình và thiết kế hệ thống bằng cách áp dụng các nguyên lý **Prompt Engineering** nâng cao, giúp giảm thiểu sự mơ hồ và tăng tính nhất quán của mô hình ngôn ngữ lớn (LLM).",
+                "date": "2026-04-23T23:54:25"
+            },
+            {
+                "title": "Nguồn mở của pháp sự biến ChatGPT Web thành OpenAI API hỗ trợ GPT Image 2 (dùng ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0DZCsRpwWoUgP76Z4qSzPz49RNJonaJT9Gzofo5xpThja5bdHzZ5Ud41S1WuXkzBUl",
+                "source": "Apify: Facebook",
+                "summary_vn": "`chatgpt2api` là một giải pháp hạ tầng mã nguồn mở giúp chuyển đổi (proxy) giao diện web của ChatGPT thành một API endpoint tương thích hoàn toàn với cấu trúc OpenAI API (`/v1/chat/completions`). Về mặt kỹ thuật, công cụ này hoạt động như một lớp trung gian (middleware) thực hiện việc đóng gói các request, xử lý xác thực thông qua session token/cookie và mô phỏng tương tác người dùng trên nền tảng web để truy xuất dữ liệu từ các model (bao gồm cả khả năng xử lý hình ảnh với GPT Vision). Điểm đổi mới cụ thể là khả năng chuẩn hóa (standardization) một giao diện web không chính thức thành một dịch vụ backend ổn định, cho phép các kỹ sư AI tích hợp trực tiếp vào các Agentic Workflow hoặc hệ thống RAG mà không cần API Key chính thức. Giải pháp hỗ trợ đầy đủ cơ chế truyền tải dữ liệu dạng stream và tương thích plug-and-play với các framework AI phổ biến, giúp tối ưu hóa chi phí trong giai đoạn phát triển ứng dụng và thử nghiệm tính năng Vision.",
+                "date": "2026-04-23T17:01:26"
+            },
+            {
+                "title": "PaddleOCR v3.5 vừa ra mắt có thể chạy ngay OCR trên trình duyệt, nâng cấp lớn ch...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02uauFZtK3jiY1aY4eM9sDTfy7CCpSv3dnqxw3obgUNr2wCAp5xwhcCuRtCtviCZgnl",
+                "source": "Apify: Facebook",
+                "summary_vn": "PaddleOCR v3.5 mang đến những nâng cấp kiến trúc quan trọng tập trung vào tính linh hoạt của inference và tối ưu hóa cho Document AI. Điểm cải tiến kỹ thuật cốt lõi là khả năng chạy inference trực tiếp trên trình duyệt, giúp giảm latency và tăng quyền riêng tư dữ liệu. Phiên bản này giới thiệu cơ chế Flexible Inference Backends, cho phép kỹ sư chuyển đổi mượt mà giữa Paddle static graph (tối ưu hiệu năng), dynamic graph (thuận tiện debug) và đặc biệt là tích hợp sâu với thư viện Transformers của Hugging Face. Sự đổi mới này giúp chuẩn hóa output dữ liệu tài liệu, tạo tiền đề quan trọng cho các pipeline RAG và Agentic Workflow xử lý văn bản phi cấu trúc. Việc hỗ trợ đa dạng backend và môi trường thực thi (từ server đến browser) giúp tối ưu hóa tài nguyên tính toán và đơn giản hóa việc triển khai các mô hình Document AI phức tạp vào hệ sinh thái LLM hiện đại.",
+                "date": "2026-04-23T12:53:39"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 41,
+            "duplicates": 0,
+            "final": 5
+        }
+    },
+    {
         "timestamp": "2026-04-23T03:58:12.654235",
         "keywords": "EN: [Agentic Workflow, Model Context Protocol (MCP), WebSockets, Responses API, Agent loop, Stateless HTTP, Agent skill, Local AI, First-class collaborator, Workspace agents]\nVN: [Quy trình làm việc tự trị, Giao thức ngữ cảnh mô hình, WebSockets, API phản hồi, Vòng lặp tác vụ, HTTP không trạng thái, Kỹ năng của Agent, AI cục bộ, Cộng tác viên ưu tiên, Agent cho không gian làm việc]\nMODELS: [Claude Code, Codex, ChatGPT, Cursor]",
         "reports": [
@@ -245,24 +291,6 @@
             "raw_total": 40,
             "duplicates": 30,
             "final": 0
-        }
-    },
-    {
-        "timestamp": "2026-04-09T03:38:21.537327",
-        "keywords": "EN: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, Agentic Reasoners, LangGraph, Multi-head Latent Attention, Sparse MoE, GraphRAG, n8n, Llama 3.2, Computer Use, Chain-of-Thought, Vector Databases, SLM]\n\nJP: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, エージェント推論, LangGraph, 多頭潜在アテンション, 混合専門家モデル, グラフRAG, n8n, Llama 3.2, コンピュータ・ユース, 推論の連鎖, ベクトルデータベース, 小型言語モデル]",
-        "reports": [
-            {
-                "title": "The next phase of enterprise AI",
-                "link": "https://openai.com/index/next-phase-of-enterprise-ai",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.",
-                "date": "2026-04-08T14:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 42,
-            "duplicates": 30,
-            "final": 1
         }
     }
 ]

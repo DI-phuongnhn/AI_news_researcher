@@ -37,7 +37,13 @@
         "SLM 8B",
         "Codex",
         "ChatGPT",
-        "Cursor"
+        "Cursor",
+        "DeepSeek V4",
+        "DeepSeek V4-Pro",
+        "DeepSeek V4-Flash",
+        "Copilot",
+        "GPT Image 2",
+        "PaddleOCR v3.5"
     ],
     "legacy": [
         "GPT-4",

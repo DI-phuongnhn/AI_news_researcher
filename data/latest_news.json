@@ -1,46 +1,46 @@
 {
-    "timestamp": "2026-04-23T03:58:12.654235",
-    "keywords": "EN: [Agentic Workflow, Model Context Protocol (MCP), WebSockets, Responses API, Agent loop, Stateless HTTP, Agent skill, Local AI, First-class collaborator, Workspace agents]\nVN: [Quy trình làm việc tự trị, Giao thức ngữ cảnh mô hình, WebSockets, API phản hồi, Vòng lặp tác vụ, HTTP không trạng thái, Kỹ năng của Agent, AI cục bộ, Cộng tác viên ưu tiên, Agent cho không gian làm việc]\nMODELS: [Claude Code, Codex, ChatGPT, Cursor]",
+    "timestamp": "2026-04-25T03:43:52.551697",
+    "keywords": "EN: [Agentic Workflow, Mixture-of-Experts (MoE), Infrastructure Proxy, Reasoning, CLI (Command Line Interface), Inference, OCR (Optical Character Recognition), API Endpoint, Document AI, Open-source]\n\nVN: [Quy trình tác vụ Agentic, Kiến trúc Mixture-of-Experts, Hạ tầng Proxy, Khả năng suy luận (Reasoning), Giao diện dòng lệnh (CLI), Suy luận (Inference), Nhận dạng ký tự quang học, Điểm cuối API, AI cho tài liệu, Mã nguồn mở]\n\nMODELS: [Claude Code, DeepSeek V4, DeepSeek V4-Pro, DeepSeek V4-Flash, ChatGPT, Gemini, Claude, Cursor, Copilot, GPT Image 2, PaddleOCR v3.5]",
     "reports": [
         {
-            "title": "Nguồn mở AI điều khiển trình duyệt Web như hành vi con người\n\nWeb-access là một ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02pErSv3LgR8tk3pd6oywW3vPwQkyxbknynhCnKFbpTWHa8UqNYBCaFQn5SK7Nk3nQl",
+            "title": "Nguồn mở “kỳ lạ” Free Claude Code – Dùng Claude Code miễn phí ngay trong Termina...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid07anojjHJB4gNFs8kszQZaZgjtg7DN7UKEPDQvJ27QAzFxZPKv4kgo3CdTb2e3TDcl",
             "source": "Apify: Facebook",
-            "summary_vn": "Web-access là một công cụ mã nguồn mở từ Apify, được thiết kế như một agent skill tương thích với các hệ sinh thái như Claude Code, Cursor và Model Context Protocol (MCP). Về mặt kỹ thuật, công cụ này triển khai kiến trúc truy cập phân cấp (tiered access) gồm ba cấp độ: Fetch (HTTP request đơn giản), DOM (phân tích cấu trúc HTML) và Full Browser (sử dụng trình duyệt headless để xử lý các ứng dụng web động như React/SPA). Cải tiến quan trọng nằm ở khả năng tích hợp vào Agentic Workflows, cho phép AI tự quyết định phương thức truy cập dựa trên độ phức tạp của trang web, duy trì session (login, cookies) và hỗ trợ Multi-agent orchestration để xử lý tác vụ song song. Thay vì chỉ đọc dữ liệu tĩnh, hệ thống này cung cấp khả năng tương tác UI thực thụ (click, scroll), giúp mở rộng khả năng của AI trong việc thực hiện các nhiệm vụ tự động hóa phức tạp và thu thập dữ liệu trong môi trường web hiện đại.",
-            "date": "2026-04-23T00:26:18"
+            "summary_vn": "Dự án `free-claude-code` là một giải pháp hạ tầng (infrastructure) dưới dạng Proxy Trung gian, được thiết kế để can thiệp và điều phối luồng dữ liệu của Claude Code CLI—một công cụ Agentic Workflow mạnh mẽ từ Anthropic. Về mặt kỹ thuật, dự án này triển khai một API Gateway cục bộ giúp giả lập (emulation) các endpoint chính thức của Anthropic. Cốt lõi của hệ thống là cơ chế xoay vòng (rotation) tự động các API Key và nguồn tài nguyên miễn phí, cho phép duy trì các tác vụ phức tạp như phân tích mã nguồn, lập kế hoạch và thực thi terminal mà không bị giới hạn bởi quota cá nhân. Công cụ này tối ưu hóa việc định tuyến (routing) các yêu cầu từ VSCode Extension hoặc CLI đến các backend thay thế, đảm bảo tính tương thích với cấu trúc phản hồi của mô hình Claude 3.5 Sonnet, đồng thời quản lý trạng thái phiên (session management) để bảo toàn ngữ cảnh trong các chuỗi suy luận dài của Agent.",
+            "date": "2026-04-24T11:46:42"
         },
         {
-            "title": "🚀 Nguồn mở thay thế Claude for Word với giao diện đẹp hỗ trợ mạnh Local AI tiết ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02URR8txkjKz77co8rMAbnfJZGtUREW8QzmKii6Q2oNpMtMm83MwUE9GvvK5WBHHfBl",
+            "title": "DeepSeek V4 – Model open-source mới “đánh thẳng” vào ChatGPT & Gemini\n\n🚀 Điểm ch...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02dqaTAyTqnWHNBBUvmEvMnrDwta2Kiaoyt8FKWnVEXiLuUgG1KAkWjEXaKBTcWZqrl",
             "source": "Apify: Facebook",
-            "summary_vn": "AOSE (AI Open Source Editor) là một bộ công cụ văn phòng mã nguồn mở được thiết kế xoay quanh kiến trúc **Agentic Workflow**, cho phép AI Agent tương tác như một \"first-class collaborator\". Điểm đổi mới kỹ thuật cốt lõi nằm ở việc chuyển dịch từ giao diện Chatbot truyền thống sang mô hình Agent có khả năng can thiệp trực tiếp vào cấu trúc dữ liệu của tài liệu (Docs), Database, Slides và Flowchart. Hệ thống hỗ trợ tích hợp **Local AI**, cho phép kỹ sư cấu hình các mô hình ngôn ngữ lớn chạy cục bộ để tối ưu hóa chi phí token và đảm bảo quyền riêng tư dữ liệu. Về mặt kỹ thuật, AOSE thực hiện việc theo dõi lịch sử thay đổi (version control) do Agent tạo ra và sử dụng cơ chế kích hoạt tác vụ qua **@mention**, biến AI thành một thực thể có trạng thái (**stateful agent**) trong môi trường soạn thảo cộng tác. Đây là giải pháp thay thế mã nguồn mở tiềm năng cho các hệ thống đóng như Claude for Word, tập trung vào khả năng tùy biến luồng công việc của Agent.",
-            "date": "2026-04-21T07:55:43"
+            "summary_vn": "DeepSeek V4 giới thiệu những cải tiến quan trọng trong kiến trúc Mixture-of-Experts (MoE) với hai biến thể: V4-Pro tập trung vào khả năng Reasoning (suy luận phức tạp) và V4-Flash tối ưu hóa cho tốc độ xử lý. Điểm nhấn kỹ thuật cốt lõi nằm ở cơ chế Attention mới giúp giảm tải đáng kể tài nguyên Compute và Memory, cho phép duy trì hiệu năng ổn định ngay cả với Context Window lên tới 1 triệu token. Model này được tinh chỉnh đặc biệt cho các tác vụ Coding và Agentic Workflow, tối ưu hóa việc gọi hàm và xử lý logic đa bước. Việc nâng cấp hạ tầng giúp giảm chi phí vận hành, biến V4 thành đối thủ trực tiếp của các mô hình đóng trong việc triển khai các hệ thống RAG quy mô lớn và Multi-Agent system. Đây là bước tiến về tối ưu hóa KV Cache và hiệu quả phân bổ chuyên gia (Expert Routing) trong môi trường thực tế.",
+            "date": "2026-04-24T05:44:08"
         },
         {
-            "title": "Workspace agents",
-            "link": "https://openai.com/academy/workspace-agents",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI giới thiệu giải pháp xây dựng và mở rộng Workspace Agents, tập trung vào việc thiết lập các Agentic Workflows trong môi trường doanh nghiệp. Về mặt kiến trúc, các Agent này hoạt động dựa trên cơ chế Tool-use (Function Calling) để kết nối với các API và cơ sở dữ liệu nội bộ. Kỹ thuật triển khai bao gồm việc cấu hình Actions thông qua các schema chuẩn hóa, quản lý trạng thái (State management) cho các luồng công việc phức tạp và tối ưu hóa RAG (Retrieval Augmented Generation) để truy xuất tri thức từ workspace. Điểm đổi mới nằm ở khả năng điều phối đa tác vụ (Multi-agent orchestration), cho phép các Agent tự động hóa các quy trình lặp lại bằng cách tận dụng khả năng suy luận của các mô hình như o1. Ngoài ra, việc mở rộng (scaling) yêu cầu quản lý phân quyền, xác thực OAuth và đảm bảo tính bảo mật trong Software Supply Chain khi tích hợp các công cụ bên thứ ba vào luồng xử lý của LLM.",
-            "date": "2026-04-22T10:00:00"
+            "title": "Andrej Karpathy Skills – bộ Skills nguồn mở 80k ⭐️ nạp tư duy Karpathy” vào AI a...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid021teXV5TY7rdzqfaBuN7LpB7T5LuFt4pi1EgBg3e9VhYLwX3xi3r2KPzwPkrV4RXvl",
+            "source": "Apify: Facebook",
+            "summary_vn": "Đây là một bộ tài liệu kỹ thuật (dạng `SKILL.md`) được thiết kế để chuẩn hóa và tối ưu hóa **Agentic Workflow** cho các AI Agent như Claude, Cursor và Copilot. Về mặt kỹ thuật, dự án này đóng gói các **Mental Models** và quy trình suy luận (Reasoning) của Andrej Karpathy thành các chỉ dẫn hệ thống (System Prompts) có cấu trúc. Thay vì sử dụng prompt rời rạc, bộ skill này áp dụng phương pháp **Chain-of-Thought (CoT)** và định nghĩa rõ ràng các bước thực hiện công việc (workflow), giúp AI duy trì ngữ cảnh sâu hơn và tạo ra đầu ra có cấu trúc chặt chẽ. Điểm cốt lõi là việc chuẩn hóa giao thức tương tác giữa người dùng và Agent, tối ưu hóa khả năng giải quyết vấn đề phức tạp trong lập trình và thiết kế hệ thống bằng cách áp dụng các nguyên lý **Prompt Engineering** nâng cao, giúp giảm thiểu sự mơ hồ và tăng tính nhất quán của mô hình ngôn ngữ lớn (LLM).",
+            "date": "2026-04-23T23:54:25"
         },
         {
-            "title": "Speeding up agentic workflows with WebSockets in the Responses API",
-            "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI công bố cải tiến cho Agentic Workflows thông qua việc tích hợp WebSockets vào Responses API, tập trung tối ưu hóa vòng lặp tác vụ (agent loop). Thay vì sử dụng các yêu cầu HTTP không trạng thái (stateless), việc duy trì kết nối WebSocket cho phép triển khai cơ chế \"connection-scoped caching\", giúp giảm thiểu đáng kể độ trễ (latency) và chi phí tài nguyên (overhead) khi giao tiếp với mô hình. Cụ thể, kỹ thuật này tối ưu hóa cách quản lý trạng thái trong các phiên làm việc kéo dài, cho phép Agent truy cập nhanh vào ngữ cảnh trước đó mà không cần xử lý lại toàn bộ token, tương tự như việc tối ưu hóa KV Cache trên server-side. Đổi mới này đặc biệt hiệu quả trong các kịch bản Multi-Agent và Tool-calling phức tạp, nơi việc phản hồi nhanh và duy trì tính nhất quán của hội thoại là yếu tố then chốt để nâng cao trải nghiệm người dùng và hiệu suất hệ thống.",
-            "date": "2026-04-22T10:00:00"
+            "title": "Nguồn mở của pháp sự biến ChatGPT Web thành OpenAI API hỗ trợ GPT Image 2 (dùng ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0DZCsRpwWoUgP76Z4qSzPz49RNJonaJT9Gzofo5xpThja5bdHzZ5Ud41S1WuXkzBUl",
+            "source": "Apify: Facebook",
+            "summary_vn": "`chatgpt2api` là một giải pháp hạ tầng mã nguồn mở giúp chuyển đổi (proxy) giao diện web của ChatGPT thành một API endpoint tương thích hoàn toàn với cấu trúc OpenAI API (`/v1/chat/completions`). Về mặt kỹ thuật, công cụ này hoạt động như một lớp trung gian (middleware) thực hiện việc đóng gói các request, xử lý xác thực thông qua session token/cookie và mô phỏng tương tác người dùng trên nền tảng web để truy xuất dữ liệu từ các model (bao gồm cả khả năng xử lý hình ảnh với GPT Vision). Điểm đổi mới cụ thể là khả năng chuẩn hóa (standardization) một giao diện web không chính thức thành một dịch vụ backend ổn định, cho phép các kỹ sư AI tích hợp trực tiếp vào các Agentic Workflow hoặc hệ thống RAG mà không cần API Key chính thức. Giải pháp hỗ trợ đầy đủ cơ chế truyền tải dữ liệu dạng stream và tương thích plug-and-play với các framework AI phổ biến, giúp tối ưu hóa chi phí trong giai đoạn phát triển ứng dụng và thử nghiệm tính năng Vision.",
+            "date": "2026-04-23T17:01:26"
         },
         {
-            "title": "Introducing workspace agents in ChatGPT",
-            "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI giới thiệu Workspace Agents, đánh dấu sự chuyển dịch từ chatbot truyền thống sang hệ sinh thái Agentic Workflows toàn diện. Về mặt kỹ thuật, các agent này tận dụng mô hình Codex-powered để thực thi mã và xử lý các tác vụ logic phức tạp trong môi trường sandbox bảo mật chạy trên cloud. Điểm đổi mới cốt lõi nằm ở khả năng điều phối (orchestration) đa công cụ và tích hợp sâu với các API doanh nghiệp, cho phép tự động hóa quy trình làm việc (workflow automation) thay vì chỉ truy vấn thông tin đơn thuần. Cơ chế này hỗ trợ việc lập kế hoạch (planning) và phân tách tác vụ (task decomposition) hiệu quả, tương tự như cách tiếp cận của Model Context Protocol (MCP). Hệ thống cho phép các kỹ sư cấu hình các \"agent chuyên biệt\" có khả năng truy cập vào cơ sở dữ liệu nội bộ thông qua RAG và thực thi các script tùy chỉnh, tối ưu hóa hiệu suất làm việc nhóm thông qua khả năng xử lý bất đồng bộ và mở rộng quy mô tính toán mà không cần quản lý hạ tầng thủ công.",
-            "date": "2026-04-22T10:00:00"
+            "title": "PaddleOCR v3.5 vừa ra mắt có thể chạy ngay OCR trên trình duyệt, nâng cấp lớn ch...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02uauFZtK3jiY1aY4eM9sDTfy7CCpSv3dnqxw3obgUNr2wCAp5xwhcCuRtCtviCZgnl",
+            "source": "Apify: Facebook",
+            "summary_vn": "PaddleOCR v3.5 mang đến những nâng cấp kiến trúc quan trọng tập trung vào tính linh hoạt của inference và tối ưu hóa cho Document AI. Điểm cải tiến kỹ thuật cốt lõi là khả năng chạy inference trực tiếp trên trình duyệt, giúp giảm latency và tăng quyền riêng tư dữ liệu. Phiên bản này giới thiệu cơ chế Flexible Inference Backends, cho phép kỹ sư chuyển đổi mượt mà giữa Paddle static graph (tối ưu hiệu năng), dynamic graph (thuận tiện debug) và đặc biệt là tích hợp sâu với thư viện Transformers của Hugging Face. Sự đổi mới này giúp chuẩn hóa output dữ liệu tài liệu, tạo tiền đề quan trọng cho các pipeline RAG và Agentic Workflow xử lý văn bản phi cấu trúc. Việc hỗ trợ đa dạng backend và môi trường thực thi (từ server đến browser) giúp tối ưu hóa tài nguyên tính toán và đơn giản hóa việc triển khai các mô hình Document AI phức tạp vào hệ sinh thái LLM hiện đại.",
+            "date": "2026-04-23T12:53:39"
         }
     ],
     "debug_stats": {
-        "raw_total": 44,
-        "duplicates": 1,
+        "raw_total": 41,
+        "duplicates": 0,
         "final": 5
     }
 }
