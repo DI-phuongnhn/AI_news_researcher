@@ -43,7 +43,8 @@
         "DeepSeek V4-Flash",
         "Copilot",
         "GPT Image 2",
-        "PaddleOCR v3.5"
+        "PaddleOCR v3.5",
+        "ML Intern"
     ],
     "legacy": [
         "GPT-4",
