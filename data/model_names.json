@@ -44,7 +44,12 @@
         "Copilot",
         "GPT Image 2",
         "PaddleOCR v3.5",
-        "ML Intern"
+        "ML Intern",
+        "Box AI Suite",
+        "Qwen-Scope",
+        "Qwen 2.5",
+        "Qwen 2.5 2B",
+        "Qwen 2.5 35B MoE"
     ],
     "legacy": [
         "GPT-4",

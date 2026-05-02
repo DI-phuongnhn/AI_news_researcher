@@ -1,5 +1,30 @@
 [
     {
+        "timestamp": "2026-05-02T04:03:05.569359",
+        "keywords": "EN: [Multimodal, Small Language Models (SLMs), Sparse Autoencoders (SAEs), Mixture of Experts (MoE), Open source, Offline deployment, Optimization, Large-scale, Model variants, Integration]\n\nVN: [Đa phương thức, Mô hình ngôn ngữ nhỏ (SLMs), Bộ tự mã hóa thưa thớt (SAEs), Mô hình kết hợp các chuyên gia (MoE), Nguồn mở, Triển khai ngoại tuyến, Tối ưu hóa, Quy mô lớn, Các biến thể mô hình, Tích hợp]\n\nMODELS: [Box AI Suite, Qwen-Scope, Qwen 2.5, Qwen 2.5 2B, Qwen 2.5 35B MoE]",
+        "reports": [
+            {
+                "title": "📦 Box AI Suite nguồn mở offline mạnh nhất cho Android, tất cả mọi thứ trong APP\n...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02nD2A6Bf4nLFGaWHLeqtzytx3vu9K5Td8jjB1GsAxd2sSek7B6jiHPAStcCMMreS6l",
+                "source": "Apify: Facebook",
+                "summary_vn": "Box là một giải pháp mã nguồn mở tích hợp khả năng AI đa phương thức (multimodal) chạy hoàn toàn offline trên Android. Về mặt kỹ thuật, dự án này tối ưu hóa việc triển khai các Small Language Models (SLM) và mô hình sinh hình ảnh bằng cách đóng gói các backend suy luận C++ hiệu năng cao gồm `llama.cpp`, `whisper.cpp` và `stable-diffusion.cpp`. Hệ thống hỗ trợ định dạng GGUF, cho phép tận dụng kỹ thuật Quantization (lượng tử hóa) để giảm tải cho RAM và CPU/GPU trên SoC di động. Cấu trúc của Box cho phép thiết lập các pipeline Agentic cục bộ: từ nhận diện giọng nói (STT), suy luận văn bản/thị giác (Vision LLM) đến tạo ảnh mà không cần kết nối Internet. Đây là một bước tiến trong việc đưa Edge AI vào thực tế, giúp giải quyết vấn đề độ trễ (latency) và bảo mật dữ liệu tuyệt đối bằng cách xử lý on-device thay vì dựa vào kiến trúc Cloud tập trung.",
+                "date": "2026-04-30T12:21:28"
+            },
+            {
+                "title": "🧠 Qwen Team vừa công bố Qwen-Scope — bộ Sparse Autoencoders (SAEs) chính thức ch...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0qsSD7bWstnGgZQBYCa2c6KAMMeVgksk5cQmGvtcdrdL5DTBNWJBmdYMQCL1WPHf8l",
+                "source": "Apify: Facebook",
+                "summary_vn": "Qwen Team vừa công bố Qwen-Scope, một bộ Sparse Autoencoders (SAEs) quy mô lớn dành cho dòng mô hình Qwen 2.5, bao gồm các biến thể từ 2B đến 35B MoE. Về mặt kỹ thuật, đây là một bước tiến quan trọng trong lĩnh vực Mechanistic Interpretability. Qwen-Scope cho phép phân rã các hidden states (activations) dày đặc và khó hiểu của LLM thành các \"features\" thưa thớt (sparse) có ý nghĩa ngữ nghĩa cụ thể (như legal reasoning, coding). Thay vì can thiệp vào xác suất token ở đầu ra inference, SAEs cho phép các kỹ sư AI thực hiện \"feature steering\" – điều hướng mô hình bằng cách tác động trực tiếp vào không gian đặc trưng bên trong. Cải tiến này đặc biệt quan trọng đối với kiến trúc Mixture of Experts (MoE), giúp giải mã cách các chuyên gia (experts) xử lý thông tin và giảm hiện tượng polysemanticity (một neuron đảm nhiệm quá nhiều khái niệm), từ đó tối ưu hóa độ chính xác và khả năng kiểm soát mô hình.",
+                "date": "2026-04-30T10:47:00"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 40,
+            "duplicates": 0,
+            "final": 2
+        }
+    },
+    {
         "timestamp": "2026-04-30T04:15:25.495454",
         "keywords": "EN: [System Prompts, Agentic AI, ML Engineering, Autonomous Agent, AI Coding Agents, Large Language Models (LLMs), Open-source, Interface Consistency, Goblin outputs, npm package]\n\nVN: [Gợi ý hệ thống, AI tác nhân, Kỹ thuật máy học, Tác nhân tự hành, Tác nhân lập trình AI, Mô hình ngôn ngữ lớn, Mã nguồn mở, Nhất quán giao diện, Kết quả bất thường (goblin), Gói npm]\n\nMODELS: [Claude Code, ML Intern, Cursor, Copilot]",
         "reports": [
@@ -196,53 +221,6 @@
             "raw_total": 40,
             "duplicates": 0,
             "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-04-16T03:56:13.864614",
-        "keywords": "EN: [Agents SDK, Agentic workflows, Native sandbox execution, Architecture, Optimization, Software Development Kit, Execution environment, Integration, Technical breakthrough, Agents]\nVN: [Agents SDK, Luồng công việc Agentic, Thực thi sandbox gốc, Kiến trúc, Tối ưu hóa, Bộ công cụ phát triển phần mềm, Môi trường thực thi, Tích hợp, Đột phá kỹ thuật, Tác tử]\nMODELS: [None mentioned]",
-        "reports": [
-            {
-                "title": "The next evolution of the Agents SDK",
-                "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI đã nâng cấp Agents SDK với những cải tiến quan trọng về kiến trúc nhằm tối ưu hóa Agentic workflows. Điểm đột phá kỹ thuật nằm ở việc tích hợp \"native sandbox execution\", cho phép các agent thực thi mã lập trình (code execution) trong môi trường cách ly bảo mật ngay trên nền tảng, hỗ trợ xử lý file và các tác vụ chạy ngầm (long-running agents) hiệu quả. SDK mới giới thiệu \"model-native harness\", một lớp trừu tượng hóa giúp thắt chặt sự phối hợp giữa khả năng suy luận của mô hình (như o1, GPT-4o) và việc gọi công cụ (tool calling), giảm thiểu sai lệch trong quá trình định tuyến tác vụ. Cải tiến này giải quyết bài toán quản lý trạng thái (state management) trong các hệ thống Multi-Agent, cho phép duy trì ngữ cảnh nhất quán khi thực hiện các chuỗi hành động phức tạp. Đây là bước tiến từ việc chỉ gọi API đơn thuần sang một khung vận hành agent hoàn chỉnh, bảo mật chống lại các rủi ro thực thi mã ngoài ý muốn.",
-                "date": "2026-04-15T10:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-04-15T14:06:53.838592",
-        "keywords": "EN: [Project Glasswing, Glasswing, SBOM, SLSA, Supply Chain, Code Signing, Provenance, Secure Build, CVE]",
-        "reports": [
-            {
-                "title": "Anthropic Launches Project Glasswing for Cybersecurity",
-                "link": "https://www.satellitetoday.com/cybersecurity/2026/04/12/anthropic-launches-project-glasswing-for-cybersecurity/",
-                "source": "Search: Glasswing",
-                "summary_vn": "Photo: Shutterstock Anthropic has announced an ambitious new project as it looks to play a key role in securing the world’s most critical software. It is teaming up with Amazon Web Services , Apple , Broadcom , Cisco , CrowdStrike , Google , JPMorganChase , the Linux Foundation , Microsoft , NVIDIA , and Palo Alto Networks to work on Project Glasswing, a new initiative. Anthropic announced details of Project Glasswing, April 7. The company has formed Project Glasswing because of capabilities it has observed in a new frontier model trained by Anthropic that it believes could reshape cybersecurity. As part of Project Glasswing, the launch partners will use Mythos Preview as part of their defensive security work.",
-                "summary_en": "Photo: Shutterstock Anthropic has announced an ambitious new project as it looks to play a key role in securing the world’s most critical software. It is teaming up with Amazon Web Services , Apple , Broadcom , Cisco , CrowdStrike , Google , JPMorganChase , the Linux Foundation , Microsoft , NVIDIA , and Palo Alto Networks to work on Project Glasswing, a new initiative. Anthropic announced details of Project Glasswing, April 7. The company has formed Project Glasswing because of capabilities it has observed in a new frontier model trained by Anthropic that it believes could reshape cybersecurity. As part of Project Glasswing, the launch partners will use Mythos Preview as part of their defensive security work.",
-                "date": "2026-04-13T05:22:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 1,
-            "duplicates": 0,
-            "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-04-15T12:34:00.054250",
-        "keywords": "EN: [Claude 3.7 Sonnet, Grok-3, Model Context Protocol, DeepSeek-R1, LangGraph, Agentic Reasoning, Mixture of Experts, GraphRAG, vLLM, Project Glasswing, SBOM, Multi-LoRA, Qwen-2.5-Max, Sora, Speculative Decoding, n8n, Vector Databases, SLSA, KV Cache Optimization, Open-source LLM]\n\nJP: [Claude 3.7 Sonnet, Grok-3, Model Context Protocol, DeepSeek-R1, LangGraph, エージェント的推論, MoE, GraphRAG, vLLM, Project Glasswing, SBOM, Multi-LoRA, Qwen-2.5-Max, Sora, 推測的デコード, n8n, ベクトルデータベース, SLSA, KVキャッシュ最適化, ローカルLLM]",
-        "reports": [],
-        "debug_stats": {
-            "raw_total": 72,
-            "duplicates": 2,
-            "final": 0
         }
     }
 ]
