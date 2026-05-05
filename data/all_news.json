@@ -1,5 +1,51 @@
 [
     {
+        "timestamp": "2026-05-05T04:00:22.628435",
+        "keywords": "EN: [Orchestration framework, Audio/video pipeline, Infrastructure as Code (IaC), Retrieval-Augmented Generation (RAG), Agentic Workspace, AI Agent, Voice cloning, End-to-end workflow, SOTA models, Multi-stage pipeline]\n\nVN: [Framework điều phối, Pipeline xử lý âm thanh/video, Hạ tầng dưới dạng mã, Thế hệ tăng cường truy xuất (RAG), Không gian làm việc Agentic, Tác nhân AI, Nhân bản giọng nói, Quy trình công việc đầu-cuối, Các mô hình tiên tiến nhất (SOTA), Pipeline đa tầng]\n\nMODELS: [DeepSeek V4, Claude Code, Codex]",
+        "reports": [
+            {
+                "title": "7.9k ⭐️ Một dự án open-source rất mạnh trong mảng AI audio/video, đóng vai trò n...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ucDfiqDv4fTbDnfZrLTJdTwwshTLQGamhNNk9MxBRM8QLvPTgut5CCsGgaBTBqf3l",
+                "source": "Apify: Facebook",
+                "summary_vn": "Voice-Pro là một dự án mã nguồn mở mạnh mẽ, đóng vai trò như một framework điều phối (orchestration) toàn diện cho pipeline xử lý audio và video. Về mặt kỹ thuật, dự án tích hợp các mô hình SOTA (State-of-the-art) như WhisperX và Faster-Whisper để xử lý Speech-to-Text (STT) với khả năng căn chỉnh thời gian (word-level alignment) chính xác. Điểm đổi mới quan trọng nằm ở việc ứng dụng các kiến trúc Zero-shot Voice Cloning hiện đại như F5-TTS, E2-TTS và CosyVoice, cho phép sao chép giọng nói chỉ từ một mẫu audio ngắn mà không cần quá trình fine-tuning phức tạp. Hệ thống tối ưu hóa quy trình từ khâu tách nguồn âm thanh (source separation), dịch thuật cho đến tổng hợp giọng nói (TTS) trong một workflow duy nhất. Đây là công cụ giá trị cho AI Engineers trong việc xây dựng các Agentic workflows liên quan đến xử lý ngôn ngữ tự nhiên và chuyển đổi đa phương tiện, giúp giảm thiểu độ trễ inference và đơn giản hóa việc triển khai các mô hình audio phức tạp.",
+                "date": "2026-05-04T14:41:31"
+            },
+            {
+                "title": "👍 Nguồn mở framework tạo slide theo hướng “slides as code”, nơi mỗi slide là một...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02hn3tf1gfr5WgX6BF58xbVgSrdw2KH2W35BMCfh8N3HLrB3joqUEL8hHsdY8hCsMNl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Framework mã nguồn mở này chuyển đổi phương thức tạo bài thuyết trình truyền thống sang mô hình \"Slides as code\", tương tự như triết lý Infrastructure as Code (IaC). Về mặt kỹ thuật, mỗi slide được định nghĩa là một React component độc lập, cho phép áp dụng quy trình Version Control (Git) và CI/CD vào nội dung trình chiếu. Điểm đổi mới cốt lõi nằm ở kiến trúc \"Agent-first workflow\", được tối ưu hóa để các AI Agent (như Claude 3.5 Sonnet hoặc Codex) có thể can thiệp trực tiếp vào mã nguồn để thực hiện các tác vụ suy luận (reasoning), chỉnh sửa logic UI và thuộc tính CSS. Thay vì thao tác trên các định dạng nhị phân đóng kín (như .pptx), Agent tương tác với cấu trúc code tường minh, giúp việc map yêu cầu người dùng vào giao diện đạt độ chính xác cao hơn. Hệ thống cho phép tích hợp dữ liệu thời gian thực thông qua API trực tiếp vào slide, hỗ trợ tối đa cho các Agentic Workflows trong việc tự động hóa báo cáo và thuyết trình kỹ thuật.",
+                "date": "2026-05-04T06:22:49"
+            },
+            {
+                "title": "Nguồn mở kéo thả và xây dựng hệ tri thức RAGFlow phiên bản mới đã hỗ trợ DeepSee...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0QzSgRT82s6WtcGAoCkL6e1vcB6D5mveBMeD6H4SPkdiD1Atfb7KZmJFZ1Nk2eAK6l",
+                "source": "Apify: Facebook",
+                "summary_vn": "RAGFlow, một nền tảng RAG (Retrieval-Augmented Generation) mã nguồn mở dựa trên cơ chế kéo thả, vừa công bố bản cập nhật quan trọng tích hợp hỗ trợ cho mô hình DeepSeek V4. Cốt lõi kỹ thuật của RAGFlow nằm ở khả năng \"Deep document understanding\", cho phép trích xuất tri thức từ các định dạng dữ liệu phi cấu trúc phức tạp như PDF, slide và ảnh quét thông qua các pipeline xử lý ngôn ngữ và thị giác máy tính chuyên sâu. Việc hỗ trợ DeepSeek V4 giúp hệ thống tối ưu hóa khả năng reasoning (suy luận) và xử lý context dài, đáp ứng các workload lớn trong doanh nghiệp. Ngoài ra, RAGFlow triển khai một Context Engine hợp nhất, đóng vai trò như lớp trung gian quản lý ngữ cảnh cho LLM, giúp tăng độ chính xác của vector retrieval và giảm thiểu hiện tượng hallucination (ảo tưởng). Đây là bước tiến trong việc xây dựng các Agentic RAG workflow có khả năng tự điều chỉnh dựa trên cấu trúc tài liệu thực tế thay vì chỉ phân tách văn bản thô (chunking) thông thường.",
+                "date": "2026-05-04T01:10:06"
+            },
+            {
+                "title": "10k ⭐️ dự án nguồn mở Claudian là một plugin cho Obsidian giúp biến toàn bộ vaul...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid01TY28WSk6ioMUN9YoVTnLZsM8QVgEDBPrQV7o4Nvmn6hThKUFkTAnG35AJo3Tu5bl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Claudian là một plugin mã nguồn mở dành cho Obsidian, chuyển đổi một Vault ghi chú thông thường thành một **Agentic Workspace** dành cho các AI Agent như Claude Code và Codex. Về mặt kỹ thuật, plugin này cho phép LLM tương tác sâu với hệ thống tệp cục bộ thông qua các khả năng **Tool-calling** như đọc/ghi file, thực thi lệnh terminal (Bash) và quản lý **multi-step workflows** trực tiếp trong môi trường ghi chú. Điểm đổi mới cụ thể là việc tích hợp luồng công việc của Agentic AI vào cấu trúc dữ liệu của Obsidian, cho phép AI truy cập ngữ cảnh toàn diện để thực hiện các tác vụ kỹ thuật phức tạp (như lập trình hoặc tự động hóa quy trình) mà không cần rời khỏi ứng dụng. Đây là một bước tiến trong việc áp dụng mô hình **Agent-centric** vào quản lý tri thức cá nhân, hỗ trợ **Inline editing** thông minh và tận dụng tối đa khả năng xử lý của các mô hình ngôn ngữ lớn hiện đại trong việc thao tác với hệ thống.",
+                "date": "2026-05-03T17:16:46"
+            },
+            {
+                "title": "🚀 Công cụ AI nguồn mở 9.9k ⭐️ dịch video + lồng tiếng + voice clone all-in-one c...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02kJ4iuDQSvDUeZhoB76CaRsQwkXiqhZ66SqNYh6FGCDyooDrN4QYguAyMAPmA9C3wl",
+                "source": "Apify: Facebook",
+                "summary_vn": "KrillinAI là một công cụ mã nguồn mở tích hợp quy trình (workflow) xử lý video đầu-cuối (end-to-end) dựa trên các kiến trúc AI hiện đại. Về mặt kỹ thuật, hệ thống triển khai một pipeline đa tầng: đầu tiên sử dụng OpenAI Whisper hoặc FasterWhisper (tối ưu hóa qua CTranslate2) để thực hiện tác vụ Speech-to-Text (ASR) với độ chính xác cao và timestamp chính xác. Giai đoạn dịch thuật được đảm nhiệm bởi các LLM (Large Language Models) giúp bảo toàn ngữ cảnh và sắc thái ngôn ngữ thay vì dịch máy truyền thống. Cuối cùng, hệ thống tích hợp công nghệ Voice Cloning và AI Dubbing (TTS) để tái tạo giọng nói đặc trưng. Sự đổi mới cụ thể nằm ở việc đóng gói các Agentic Workflows phức tạp vào một công cụ duy nhất, xử lý tự động việc căn chỉnh thời gian (alignment) giữa văn bản dịch và âm thanh lồng tiếng, đồng thời tối ưu hóa cho cả môi trường local và cloud. Đây là một giải pháp hữu ích cho các kỹ sư muốn tìm hiểu về tích hợp đa mô hình (Multi-modal integration) trong xử lý phương tiện truyền thông.",
+                "date": "2026-05-03T11:18:26"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 40,
+            "duplicates": 0,
+            "final": 5
+        }
+    },
+    {
         "timestamp": "2026-05-02T04:03:05.569359",
         "keywords": "EN: [Multimodal, Small Language Models (SLMs), Sparse Autoencoders (SAEs), Mixture of Experts (MoE), Open source, Offline deployment, Optimization, Large-scale, Model variants, Integration]\n\nVN: [Đa phương thức, Mô hình ngôn ngữ nhỏ (SLMs), Bộ tự mã hóa thưa thớt (SAEs), Mô hình kết hợp các chuyên gia (MoE), Nguồn mở, Triển khai ngoại tuyến, Tối ưu hóa, Quy mô lớn, Các biến thể mô hình, Tích hợp]\n\nMODELS: [Box AI Suite, Qwen-Scope, Qwen 2.5, Qwen 2.5 2B, Qwen 2.5 35B MoE]",
         "reports": [
@@ -203,24 +249,6 @@
             "raw_total": 40,
             "duplicates": 0,
             "final": 3
-        }
-    },
-    {
-        "timestamp": "2026-04-18T03:39:33.519515",
-        "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, OpenAI o1, Model Context Protocol, Test-time Compute, Sparse MoE, LangGraph, Multi-token Prediction, DeepSeek-V3, n8n, Dify, Project Glasswing, AI-BOM, SLSA, vLLM, Agentic Workflows, Llama-3.1-405B, Linear Attention, Qwen-2.5-Coder, Software Supply Chain]\n\nJP: [DeepSeek-R1, クロード 3.5, OpenAI o1, モデル文脈プロトコル, 推論時計算, 混合エキスパート, LangGraph, マルチトークン予測, DeepSeek-V3, n8n, Dify, プロジェクトGlasswing, AI-BOM, SLSA, vLLM, エージェント型ワークフロー, Llama-3.1, 線形注意機構, Qwen-2.5, サプライチェーン攻撃]",
-        "reports": [
-            {
-                "title": "HashIndex – Index siêu nhanh bằng hash cho RAG & search\n\nHashIndex là thư viện g...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02XhDkjKNE7oukAfx7Fo7EU6ynX8PDReKRFfSHJozkN4umZyqevEfXsm9rmxhxiYqWl",
-                "source": "Apify: Facebook",
-                "summary_vn": "HashIndex là một thư viện tối ưu hóa hiệu suất truy xuất thông tin bằng cách triển khai cấu trúc **Inverted Index** dựa trên **Hash Map**. Thay vì phụ thuộc hoàn toàn vào **Vector Search** (thường có độ trễ cao và chi phí tính toán lớn), HashIndex cung cấp khả năng tra cứu từ khóa với độ phức tạp thời gian tiệm cận **O(1)**. Về mặt kỹ thuật, thư viện hỗ trợ quy trình **Tokenization** và cho phép trích xuất các đặc trưng **TF-IDF**, phục vụ trực tiếp cho các tác vụ Machine Learning. Trong các kiến trúc **RAG (Retrieval-Augmented Generation)** hiện đại, HashIndex đóng vai trò là một lớp **Pre-filter** hiệu quả, giúp lọc nhanh tập dữ liệu thô trước khi chuyển qua bước tìm kiếm ngữ nghĩa (semantic search) trên **Vector Database**. Sự đổi mới này tập trung vào việc giảm thiểu tài nguyên hệ thống (lightweight) và tối ưu hóa tốc độ cho các pipeline dữ liệu cần xử lý tìm kiếm văn bản quy mô lớn mà không cần overhead phức tạp của các hệ quản trị cơ sở dữ liệu truyền thống.",
-                "date": "2026-04-16T08:44:54"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 40,
-            "duplicates": 0,
-            "final": 1
         }
     }
 ]
