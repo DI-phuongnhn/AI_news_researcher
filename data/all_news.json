@@ -1,5 +1,37 @@
 [
     {
+        "timestamp": "2026-05-07T04:16:45.044411",
+        "keywords": "EN: [Multi-Token Prediction (MTP), Local LLM, Multimodal Pipeline, Video Understanding, Reverse-engineering, Middleware, Framework, Open-source, API Compatibility, Web Protocol]\nVN: [Dự đoán đa Token, LLM chạy cục bộ, Quy trình đa phương thức, Hiểu video, Kỹ thuật đảo ngược, Phần mềm trung gian, Khung phần mềm, Mã nguồn mở, Tương thích API, Giao thức web]\nMODELS: [Gemma 4, Qwen 3.6 27B, Qwen 2.5 27B, Gemma 2, Claude Video, Claude 3.5 Sonnet, DeepSeek v4, ds2api]",
+        "reports": [
+            {
+                "title": "Sau Gemma 4 có phiên bản MTP thì giờ cũng có phiên bản Qwen 3.6 27B + MTP (llama...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02CpWWotXyyH7Eicr14rPHpsPgGeAJauHhgFGyxcQTkeRCnQ6egqi6JshWBnMVdjUul",
+                "source": "Apify: Facebook",
+                "summary_vn": "Nội dung đề cập đến việc triển khai kỹ thuật Multi-Token Prediction (MTP) cho các mô hình ngôn ngữ lớn chạy cục bộ (local LLM) như Qwen 2.5 27B và Gemma 2 thông qua framework llama.cpp. Về mặt kỹ thuật, MTP thay đổi cơ chế giải mã truyền thống (sequential decoding) bằng cách tận dụng các head đã được huấn luyện để dự đoán đồng thời nhiều token trong mỗi bước suy luận. Các token dự đoán này sau đó được xác thực song song (parallel verification), giúp giảm số lượng bước giải mã cần thiết và tối ưu hóa throughput. Cải tiến này giải quyết trực tiếp vấn đề lớn nhất của các mô hình local là độ trễ (latency), biến các model tầm trung (như 27B) thành các Agentic coding hiệu quả với tốc độ phản hồi nhanh. Việc tích hợp MTP vào llama.cpp đánh dấu bước tiến quan trọng trong tối ưu hóa Inference Engine, cho phép thực thi các workflow phức tạp mà không cần dựa vào Cloud API.",
+                "date": "2026-05-06T15:11:58"
+            },
+            {
+                "title": "Claude Video là một dự án open-source khá thú vị, mở rộng khả năng của AI từ “đọ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02Bpr3FePsx3EGaoo8QBDQ2FoR93eEdjHDXHeowWovLN9DyJQAER7cyHHSMm6r2DEFl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Claude Video là một dự án open-source cung cấp pipeline tiền xử lý multimodal, cho phép các LLM (như Claude 3.5 Sonnet) thực hiện tác vụ Video Understanding dù không hỗ trợ input video trực tiếp. Về mặt kỹ thuật, công cụ này hoạt động như một lớp Perceptual Layer thông qua các bước: (1) Trích xuất frame ảnh theo timestamp (Visual Sampling); (2) Chuyển đổi âm thanh thành văn bản (ASR/Transcription); (3) Tổng hợp dữ liệu hình ảnh và văn bản vào Context Window của mô hình. Cải tiến cụ thể nằm ở việc chuyển đổi video thành dạng chuỗi Vision-Language tokens mà LLM có thể hiểu được, cho phép thực hiện suy luận temporal (thời gian) và phân tích nội dung dựa trên logic của Agentic workflows. Đây là một giải pháp thiết thực để mở rộng khả năng của mô hình chỉ hỗ trợ Vision-Text sang xử lý dữ liệu video thực tế mà không cần huấn luyện lại (Retraining).",
+                "date": "2026-05-06T12:02:16"
+            },
+            {
+                "title": "🎉 Dùng DeepSeek v4 miễn phí với API, một dự án open-source rất đáng chú ý trong ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0254teNGek2nTWHQYtzLq64wf9MtjWEznsxvh39VKukReughfrtxx2o1zJQDvtfYHXl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Dự án ds2api là một công cụ middleware mã nguồn mở được thiết kế để thực hiện reverse-engineering giao thức web của DeepSeek, sau đó chuyển đổi và expose dữ liệu dưới dạng API tương thích với chuẩn OpenAI, Claude và Gemini. Về mặt kỹ thuật, đây là một dạng \"API Wrapper\" giúp ánh xạ các yêu cầu từ SDK chuẩn hoặc các Agentic framework (như LangChain, n8n) sang giao thức nội bộ của DeepSeek Web. Giải pháp này cho phép các AI Engineer tích hợp trực tiếp khả năng lý luận của model vào các công cụ phát triển như Cursor hoặc các ứng dụng AI tự tùy chỉnh mà không phụ thuộc vào cổng API trả phí chính thức. Điểm đổi mới cụ thể nằm ở khả năng xử lý stream dữ liệu và duy trì session để giả lập tương tác người dùng, biến một giao diện web tĩnh thành một endpoint có thể lập trình được, hỗ trợ tối ưu cho các quy trình tự động hóa và tích hợp hạ tầng AI linh hoạt.",
+                "date": "2026-05-05T15:31:27"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 40,
+            "duplicates": 0,
+            "final": 3
+        }
+    },
+    {
         "timestamp": "2026-05-05T04:00:22.628435",
         "keywords": "EN: [Orchestration framework, Audio/video pipeline, Infrastructure as Code (IaC), Retrieval-Augmented Generation (RAG), Agentic Workspace, AI Agent, Voice cloning, End-to-end workflow, SOTA models, Multi-stage pipeline]\n\nVN: [Framework điều phối, Pipeline xử lý âm thanh/video, Hạ tầng dưới dạng mã, Thế hệ tăng cường truy xuất (RAG), Không gian làm việc Agentic, Tác nhân AI, Nhân bản giọng nói, Quy trình công việc đầu-cuối, Các mô hình tiên tiến nhất (SOTA), Pipeline đa tầng]\n\nMODELS: [DeepSeek V4, Claude Code, Codex]",
         "reports": [
@@ -217,38 +249,6 @@
             "raw_total": 44,
             "duplicates": 1,
             "final": 5
-        }
-    },
-    {
-        "timestamp": "2026-04-21T03:54:49.514156",
-        "keywords": "EN: [Quantization, 1.58-bit, SLM (Small Language Model), Architecture, Open source, Deployment, LLM APIs, Free Tier, Compatibility, Template]\n\nVN: [Định lượng, 1.58-bit, Mô hình ngôn ngữ nhỏ, Kiến trúc, Mã nguồn mở, Triển khai, API mô hình ngôn ngữ lớn, Gói miễn phí, Khả năng tương thích, Bản mẫu]\n\nMODELS: [Ternary Bonsai (8B), Qwen, SLM 8B]",
-        "reports": [
-            {
-                "title": "🚀 Model SLM 8B 1.58-bit: nhỏ hơn 9 lần nhưng vẫn “thông minh”, hỗ trợ tốt tiếng ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ZqPud9beJVGRsPf37Uou5it7MA7Zy7jL8ebSag5VCUSJqRzH1daEcma1R7qrAAJNl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Mô hình Ternary Bonsai (8B) do PrismML phát triển là một bước tiến quan trọng trong kỹ thuật định lượng (quantization) 1.58-bit, được tinh chỉnh dựa trên kiến trúc Qwen. Cốt lõi kỹ thuật nằm ở việc chuyển đổi trọng số từ định dạng FP16 truyền thống sang hệ tam phân (ternary weights) {-1, 0, +1}. Phương pháp này cho phép thay thế các phép nhân ma trận (MatMul) tốn kém bằng các phép cộng và trừ đơn giản, giúp giảm kích thước mô hình xuống gần 9 lần và tối ưu hóa cực mạnh băng thông bộ nhớ cũng như mức tiêu thụ năng lượng. Điểm đột phá của Ternary Bonsai là duy trì được hiệu suất (perplexity) tiệm cận với mô hình 8B gốc trong khi vẫn đảm bảo khả năng suy luận tốc độ cao trên phần cứng phổ thông. Đây là sự hiện thực hóa nghiên cứu BitNet b1.58 trên các mô hình ngôn ngữ nhỏ (SLM), hỗ trợ tối ưu cho các tác vụ ngôn ngữ tiếng Việt và triển khai thực tế trong các Agentic Workflow cần độ trễ thấp.",
-                "date": "2026-04-21T03:20:32"
-            },
-            {
-                "title": "🎉 Kho nguồn mở 100k⭐️ với 100+ project AI thực chiến cho dev\n\nawesome-llm-apps l...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid09Z8YvWej8zkowyoUt6WTdg8FMniEsf1BFKKVWSkvfDMjGwrcJhx5EJDG4YWF4Dk5l",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dự án \"awesome-llm-apps\" là một kho lưu trữ kỹ thuật mã nguồn mở tập trung vào việc hiện thực hóa các kiến trúc AI tiên tiến. Về mặt kỹ thuật, tài nguyên này cung cấp các template triển khai thực tế cho **Agentic Workflow** và hệ thống **Multi-agent**, cho phép các đại lý AI tương tác và thực hiện nhiệm vụ phức tạp. Điểm cốt lõi nằm ở việc tối ưu hóa các pipeline **RAG (Retrieval-Augmented Generation)**, tích hợp với **Vector Databases** và các cơ chế **Memory-based** để quản lý ngữ cảnh (context) dài hạn. Ngoài ra, dự án còn đi sâu vào các kỹ thuật **Fine-tuning** và tối ưu hóa hiệu suất mô hình cho các tác vụ chuyên biệt như Voice AI và nghiên cứu tài chính. Sự đổi mới cụ thể ở đây là việc cung cấp cấu trúc code \"ready-to-deploy\", giúp kỹ sư AI bỏ qua giai đoạn boilerplate để tập trung vào tinh chỉnh tham số, tối ưu hóa **KV Cache**, hoặc tích hợp các framework như LangGraph và CrewAI vào môi trường production.",
-                "date": "2026-04-19T18:11:59"
-            },
-            {
-                "title": "🚀 Free LLM APIs 04/2026– “mỏ vàng” cho dev build AI không tốn tiền (dùng để test...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid05NU1mRGc9C3VEr9h3SumBajBCQtCRP8FBwocQDCpVPC3Q876QFfN9jajHJxJNAayl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Nội dung cung cấp danh sách các nhà cung cấp LLM API có chính sách miễn phí (Free Tier) bền vững thông qua repo \"awesome-free-llm-apis\". Về mặt kỹ thuật, điểm cốt lõi là khả năng tương thích hoàn toàn với OpenAI SDK, cho phép các kỹ sư AI thực hiện cơ chế \"plug-and-play\" khi tích hợp vào các Agentic Workflow hoặc hệ thống RAG mà không cần chỉnh sửa logic mã nguồn phức tạp. Tài liệu liệt kê hơn 15 providers hỗ trợ các dòng model tiên tiến như DeepSeek-R1, Qwen-Max, Llama 3 và Mistral. Việc tận dụng các đầu cuối (endpoints) này giúp tối ưu hóa quá trình prototyping, thử nghiệm hàm suy luận (Inference-as-a-Service) và kiểm soát chi phí hạ tầng ban đầu. Ngoài ra, nội dung giúp dev phân loại giữa nhóm tự huấn luyện model (như Cohere) và nhóm chuyên tối ưu hóa tốc độ suy luận (như Groq), hỗ trợ tốt cho việc lựa chọn dựa trên yêu cầu về độ trễ (latency) và cửa sổ ngữ cảnh (context window).",
-                "date": "2026-04-19T14:08:21"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 40,
-            "duplicates": 0,
-            "final": 3
         }
     }
 ]

@@ -49,7 +49,12 @@
         "Qwen-Scope",
         "Qwen 2.5",
         "Qwen 2.5 2B",
-        "Qwen 2.5 35B MoE"
+        "Qwen 2.5 35B MoE",
+        "Qwen 3.6 27B",
+        "Qwen 2.5 27B",
+        "Claude Video",
+        "Claude 3.5 Sonnet",
+        "ds2api"
     ],
     "legacy": [
         "GPT-4",

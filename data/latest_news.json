@@ -1,46 +1,32 @@
 {
-    "timestamp": "2026-05-05T04:00:22.628435",
-    "keywords": "EN: [Orchestration framework, Audio/video pipeline, Infrastructure as Code (IaC), Retrieval-Augmented Generation (RAG), Agentic Workspace, AI Agent, Voice cloning, End-to-end workflow, SOTA models, Multi-stage pipeline]\n\nVN: [Framework điều phối, Pipeline xử lý âm thanh/video, Hạ tầng dưới dạng mã, Thế hệ tăng cường truy xuất (RAG), Không gian làm việc Agentic, Tác nhân AI, Nhân bản giọng nói, Quy trình công việc đầu-cuối, Các mô hình tiên tiến nhất (SOTA), Pipeline đa tầng]\n\nMODELS: [DeepSeek V4, Claude Code, Codex]",
+    "timestamp": "2026-05-07T04:16:45.044411",
+    "keywords": "EN: [Multi-Token Prediction (MTP), Local LLM, Multimodal Pipeline, Video Understanding, Reverse-engineering, Middleware, Framework, Open-source, API Compatibility, Web Protocol]\nVN: [Dự đoán đa Token, LLM chạy cục bộ, Quy trình đa phương thức, Hiểu video, Kỹ thuật đảo ngược, Phần mềm trung gian, Khung phần mềm, Mã nguồn mở, Tương thích API, Giao thức web]\nMODELS: [Gemma 4, Qwen 3.6 27B, Qwen 2.5 27B, Gemma 2, Claude Video, Claude 3.5 Sonnet, DeepSeek v4, ds2api]",
     "reports": [
         {
-            "title": "7.9k ⭐️ Một dự án open-source rất mạnh trong mảng AI audio/video, đóng vai trò n...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ucDfiqDv4fTbDnfZrLTJdTwwshTLQGamhNNk9MxBRM8QLvPTgut5CCsGgaBTBqf3l",
+            "title": "Sau Gemma 4 có phiên bản MTP thì giờ cũng có phiên bản Qwen 3.6 27B + MTP (llama...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02CpWWotXyyH7Eicr14rPHpsPgGeAJauHhgFGyxcQTkeRCnQ6egqi6JshWBnMVdjUul",
             "source": "Apify: Facebook",
-            "summary_vn": "Voice-Pro là một dự án mã nguồn mở mạnh mẽ, đóng vai trò như một framework điều phối (orchestration) toàn diện cho pipeline xử lý audio và video. Về mặt kỹ thuật, dự án tích hợp các mô hình SOTA (State-of-the-art) như WhisperX và Faster-Whisper để xử lý Speech-to-Text (STT) với khả năng căn chỉnh thời gian (word-level alignment) chính xác. Điểm đổi mới quan trọng nằm ở việc ứng dụng các kiến trúc Zero-shot Voice Cloning hiện đại như F5-TTS, E2-TTS và CosyVoice, cho phép sao chép giọng nói chỉ từ một mẫu audio ngắn mà không cần quá trình fine-tuning phức tạp. Hệ thống tối ưu hóa quy trình từ khâu tách nguồn âm thanh (source separation), dịch thuật cho đến tổng hợp giọng nói (TTS) trong một workflow duy nhất. Đây là công cụ giá trị cho AI Engineers trong việc xây dựng các Agentic workflows liên quan đến xử lý ngôn ngữ tự nhiên và chuyển đổi đa phương tiện, giúp giảm thiểu độ trễ inference và đơn giản hóa việc triển khai các mô hình audio phức tạp.",
-            "date": "2026-05-04T14:41:31"
+            "summary_vn": "Nội dung đề cập đến việc triển khai kỹ thuật Multi-Token Prediction (MTP) cho các mô hình ngôn ngữ lớn chạy cục bộ (local LLM) như Qwen 2.5 27B và Gemma 2 thông qua framework llama.cpp. Về mặt kỹ thuật, MTP thay đổi cơ chế giải mã truyền thống (sequential decoding) bằng cách tận dụng các head đã được huấn luyện để dự đoán đồng thời nhiều token trong mỗi bước suy luận. Các token dự đoán này sau đó được xác thực song song (parallel verification), giúp giảm số lượng bước giải mã cần thiết và tối ưu hóa throughput. Cải tiến này giải quyết trực tiếp vấn đề lớn nhất của các mô hình local là độ trễ (latency), biến các model tầm trung (như 27B) thành các Agentic coding hiệu quả với tốc độ phản hồi nhanh. Việc tích hợp MTP vào llama.cpp đánh dấu bước tiến quan trọng trong tối ưu hóa Inference Engine, cho phép thực thi các workflow phức tạp mà không cần dựa vào Cloud API.",
+            "date": "2026-05-06T15:11:58"
         },
         {
-            "title": "👍 Nguồn mở framework tạo slide theo hướng “slides as code”, nơi mỗi slide là một...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02hn3tf1gfr5WgX6BF58xbVgSrdw2KH2W35BMCfh8N3HLrB3joqUEL8hHsdY8hCsMNl",
+            "title": "Claude Video là một dự án open-source khá thú vị, mở rộng khả năng của AI từ “đọ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02Bpr3FePsx3EGaoo8QBDQ2FoR93eEdjHDXHeowWovLN9DyJQAER7cyHHSMm6r2DEFl",
             "source": "Apify: Facebook",
-            "summary_vn": "Framework mã nguồn mở này chuyển đổi phương thức tạo bài thuyết trình truyền thống sang mô hình \"Slides as code\", tương tự như triết lý Infrastructure as Code (IaC). Về mặt kỹ thuật, mỗi slide được định nghĩa là một React component độc lập, cho phép áp dụng quy trình Version Control (Git) và CI/CD vào nội dung trình chiếu. Điểm đổi mới cốt lõi nằm ở kiến trúc \"Agent-first workflow\", được tối ưu hóa để các AI Agent (như Claude 3.5 Sonnet hoặc Codex) có thể can thiệp trực tiếp vào mã nguồn để thực hiện các tác vụ suy luận (reasoning), chỉnh sửa logic UI và thuộc tính CSS. Thay vì thao tác trên các định dạng nhị phân đóng kín (như .pptx), Agent tương tác với cấu trúc code tường minh, giúp việc map yêu cầu người dùng vào giao diện đạt độ chính xác cao hơn. Hệ thống cho phép tích hợp dữ liệu thời gian thực thông qua API trực tiếp vào slide, hỗ trợ tối đa cho các Agentic Workflows trong việc tự động hóa báo cáo và thuyết trình kỹ thuật.",
-            "date": "2026-05-04T06:22:49"
+            "summary_vn": "Claude Video là một dự án open-source cung cấp pipeline tiền xử lý multimodal, cho phép các LLM (như Claude 3.5 Sonnet) thực hiện tác vụ Video Understanding dù không hỗ trợ input video trực tiếp. Về mặt kỹ thuật, công cụ này hoạt động như một lớp Perceptual Layer thông qua các bước: (1) Trích xuất frame ảnh theo timestamp (Visual Sampling); (2) Chuyển đổi âm thanh thành văn bản (ASR/Transcription); (3) Tổng hợp dữ liệu hình ảnh và văn bản vào Context Window của mô hình. Cải tiến cụ thể nằm ở việc chuyển đổi video thành dạng chuỗi Vision-Language tokens mà LLM có thể hiểu được, cho phép thực hiện suy luận temporal (thời gian) và phân tích nội dung dựa trên logic của Agentic workflows. Đây là một giải pháp thiết thực để mở rộng khả năng của mô hình chỉ hỗ trợ Vision-Text sang xử lý dữ liệu video thực tế mà không cần huấn luyện lại (Retraining).",
+            "date": "2026-05-06T12:02:16"
         },
         {
-            "title": "Nguồn mở kéo thả và xây dựng hệ tri thức RAGFlow phiên bản mới đã hỗ trợ DeepSee...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0QzSgRT82s6WtcGAoCkL6e1vcB6D5mveBMeD6H4SPkdiD1Atfb7KZmJFZ1Nk2eAK6l",
+            "title": "🎉 Dùng DeepSeek v4 miễn phí với API, một dự án open-source rất đáng chú ý trong ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0254teNGek2nTWHQYtzLq64wf9MtjWEznsxvh39VKukReughfrtxx2o1zJQDvtfYHXl",
             "source": "Apify: Facebook",
-            "summary_vn": "RAGFlow, một nền tảng RAG (Retrieval-Augmented Generation) mã nguồn mở dựa trên cơ chế kéo thả, vừa công bố bản cập nhật quan trọng tích hợp hỗ trợ cho mô hình DeepSeek V4. Cốt lõi kỹ thuật của RAGFlow nằm ở khả năng \"Deep document understanding\", cho phép trích xuất tri thức từ các định dạng dữ liệu phi cấu trúc phức tạp như PDF, slide và ảnh quét thông qua các pipeline xử lý ngôn ngữ và thị giác máy tính chuyên sâu. Việc hỗ trợ DeepSeek V4 giúp hệ thống tối ưu hóa khả năng reasoning (suy luận) và xử lý context dài, đáp ứng các workload lớn trong doanh nghiệp. Ngoài ra, RAGFlow triển khai một Context Engine hợp nhất, đóng vai trò như lớp trung gian quản lý ngữ cảnh cho LLM, giúp tăng độ chính xác của vector retrieval và giảm thiểu hiện tượng hallucination (ảo tưởng). Đây là bước tiến trong việc xây dựng các Agentic RAG workflow có khả năng tự điều chỉnh dựa trên cấu trúc tài liệu thực tế thay vì chỉ phân tách văn bản thô (chunking) thông thường.",
-            "date": "2026-05-04T01:10:06"
-        },
-        {
-            "title": "10k ⭐️ dự án nguồn mở Claudian là một plugin cho Obsidian giúp biến toàn bộ vaul...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid01TY28WSk6ioMUN9YoVTnLZsM8QVgEDBPrQV7o4Nvmn6hThKUFkTAnG35AJo3Tu5bl",
-            "source": "Apify: Facebook",
-            "summary_vn": "Claudian là một plugin mã nguồn mở dành cho Obsidian, chuyển đổi một Vault ghi chú thông thường thành một **Agentic Workspace** dành cho các AI Agent như Claude Code và Codex. Về mặt kỹ thuật, plugin này cho phép LLM tương tác sâu với hệ thống tệp cục bộ thông qua các khả năng **Tool-calling** như đọc/ghi file, thực thi lệnh terminal (Bash) và quản lý **multi-step workflows** trực tiếp trong môi trường ghi chú. Điểm đổi mới cụ thể là việc tích hợp luồng công việc của Agentic AI vào cấu trúc dữ liệu của Obsidian, cho phép AI truy cập ngữ cảnh toàn diện để thực hiện các tác vụ kỹ thuật phức tạp (như lập trình hoặc tự động hóa quy trình) mà không cần rời khỏi ứng dụng. Đây là một bước tiến trong việc áp dụng mô hình **Agent-centric** vào quản lý tri thức cá nhân, hỗ trợ **Inline editing** thông minh và tận dụng tối đa khả năng xử lý của các mô hình ngôn ngữ lớn hiện đại trong việc thao tác với hệ thống.",
-            "date": "2026-05-03T17:16:46"
-        },
-        {
-            "title": "🚀 Công cụ AI nguồn mở 9.9k ⭐️ dịch video + lồng tiếng + voice clone all-in-one c...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02kJ4iuDQSvDUeZhoB76CaRsQwkXiqhZ66SqNYh6FGCDyooDrN4QYguAyMAPmA9C3wl",
-            "source": "Apify: Facebook",
-            "summary_vn": "KrillinAI là một công cụ mã nguồn mở tích hợp quy trình (workflow) xử lý video đầu-cuối (end-to-end) dựa trên các kiến trúc AI hiện đại. Về mặt kỹ thuật, hệ thống triển khai một pipeline đa tầng: đầu tiên sử dụng OpenAI Whisper hoặc FasterWhisper (tối ưu hóa qua CTranslate2) để thực hiện tác vụ Speech-to-Text (ASR) với độ chính xác cao và timestamp chính xác. Giai đoạn dịch thuật được đảm nhiệm bởi các LLM (Large Language Models) giúp bảo toàn ngữ cảnh và sắc thái ngôn ngữ thay vì dịch máy truyền thống. Cuối cùng, hệ thống tích hợp công nghệ Voice Cloning và AI Dubbing (TTS) để tái tạo giọng nói đặc trưng. Sự đổi mới cụ thể nằm ở việc đóng gói các Agentic Workflows phức tạp vào một công cụ duy nhất, xử lý tự động việc căn chỉnh thời gian (alignment) giữa văn bản dịch và âm thanh lồng tiếng, đồng thời tối ưu hóa cho cả môi trường local và cloud. Đây là một giải pháp hữu ích cho các kỹ sư muốn tìm hiểu về tích hợp đa mô hình (Multi-modal integration) trong xử lý phương tiện truyền thông.",
-            "date": "2026-05-03T11:18:26"
+            "summary_vn": "Dự án ds2api là một công cụ middleware mã nguồn mở được thiết kế để thực hiện reverse-engineering giao thức web của DeepSeek, sau đó chuyển đổi và expose dữ liệu dưới dạng API tương thích với chuẩn OpenAI, Claude và Gemini. Về mặt kỹ thuật, đây là một dạng \"API Wrapper\" giúp ánh xạ các yêu cầu từ SDK chuẩn hoặc các Agentic framework (như LangChain, n8n) sang giao thức nội bộ của DeepSeek Web. Giải pháp này cho phép các AI Engineer tích hợp trực tiếp khả năng lý luận của model vào các công cụ phát triển như Cursor hoặc các ứng dụng AI tự tùy chỉnh mà không phụ thuộc vào cổng API trả phí chính thức. Điểm đổi mới cụ thể nằm ở khả năng xử lý stream dữ liệu và duy trì session để giả lập tương tác người dùng, biến một giao diện web tĩnh thành một endpoint có thể lập trình được, hỗ trợ tối ưu cho các quy trình tự động hóa và tích hợp hạ tầng AI linh hoạt.",
+            "date": "2026-05-05T15:31:27"
         }
     ],
     "debug_stats": {
         "raw_total": 40,
         "duplicates": 0,
-        "final": 5
+        "final": 3
     }
 }
