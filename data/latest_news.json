@@ -1,32 +1,18 @@
 {
-    "timestamp": "2026-05-07T04:16:45.044411",
-    "keywords": "EN: [Multi-Token Prediction (MTP), Local LLM, Multimodal Pipeline, Video Understanding, Reverse-engineering, Middleware, Framework, Open-source, API Compatibility, Web Protocol]\nVN: [Dự đoán đa Token, LLM chạy cục bộ, Quy trình đa phương thức, Hiểu video, Kỹ thuật đảo ngược, Phần mềm trung gian, Khung phần mềm, Mã nguồn mở, Tương thích API, Giao thức web]\nMODELS: [Gemma 4, Qwen 3.6 27B, Qwen 2.5 27B, Gemma 2, Claude Video, Claude 3.5 Sonnet, DeepSeek v4, ds2api]",
+    "timestamp": "2026-05-09T04:07:09.917665",
+    "keywords": "EN: [Security infrastructure, Code execution, Coding agents, Sandboxing, Isolation, Environment, Infrastructure, Security, System, Technical]\nVN: [Hạ tầng bảo mật, Thực thi mã nguồn, Tác nhân lập trình, Sandboxing, Cách ly, Môi trường, Hạ tầng, Bảo mật, Hệ thống, Kỹ thuật]\nMODELS: [Codex]",
     "reports": [
         {
-            "title": "Sau Gemma 4 có phiên bản MTP thì giờ cũng có phiên bản Qwen 3.6 27B + MTP (llama...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02CpWWotXyyH7Eicr14rPHpsPgGeAJauHhgFGyxcQTkeRCnQ6egqi6JshWBnMVdjUul",
-            "source": "Apify: Facebook",
-            "summary_vn": "Nội dung đề cập đến việc triển khai kỹ thuật Multi-Token Prediction (MTP) cho các mô hình ngôn ngữ lớn chạy cục bộ (local LLM) như Qwen 2.5 27B và Gemma 2 thông qua framework llama.cpp. Về mặt kỹ thuật, MTP thay đổi cơ chế giải mã truyền thống (sequential decoding) bằng cách tận dụng các head đã được huấn luyện để dự đoán đồng thời nhiều token trong mỗi bước suy luận. Các token dự đoán này sau đó được xác thực song song (parallel verification), giúp giảm số lượng bước giải mã cần thiết và tối ưu hóa throughput. Cải tiến này giải quyết trực tiếp vấn đề lớn nhất của các mô hình local là độ trễ (latency), biến các model tầm trung (như 27B) thành các Agentic coding hiệu quả với tốc độ phản hồi nhanh. Việc tích hợp MTP vào llama.cpp đánh dấu bước tiến quan trọng trong tối ưu hóa Inference Engine, cho phép thực thi các workflow phức tạp mà không cần dựa vào Cloud API.",
-            "date": "2026-05-06T15:11:58"
-        },
-        {
-            "title": "Claude Video là một dự án open-source khá thú vị, mở rộng khả năng của AI từ “đọ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02Bpr3FePsx3EGaoo8QBDQ2FoR93eEdjHDXHeowWovLN9DyJQAER7cyHHSMm6r2DEFl",
-            "source": "Apify: Facebook",
-            "summary_vn": "Claude Video là một dự án open-source cung cấp pipeline tiền xử lý multimodal, cho phép các LLM (như Claude 3.5 Sonnet) thực hiện tác vụ Video Understanding dù không hỗ trợ input video trực tiếp. Về mặt kỹ thuật, công cụ này hoạt động như một lớp Perceptual Layer thông qua các bước: (1) Trích xuất frame ảnh theo timestamp (Visual Sampling); (2) Chuyển đổi âm thanh thành văn bản (ASR/Transcription); (3) Tổng hợp dữ liệu hình ảnh và văn bản vào Context Window của mô hình. Cải tiến cụ thể nằm ở việc chuyển đổi video thành dạng chuỗi Vision-Language tokens mà LLM có thể hiểu được, cho phép thực hiện suy luận temporal (thời gian) và phân tích nội dung dựa trên logic của Agentic workflows. Đây là một giải pháp thiết thực để mở rộng khả năng của mô hình chỉ hỗ trợ Vision-Text sang xử lý dữ liệu video thực tế mà không cần huấn luyện lại (Retraining).",
-            "date": "2026-05-06T12:02:16"
-        },
-        {
-            "title": "🎉 Dùng DeepSeek v4 miễn phí với API, một dự án open-source rất đáng chú ý trong ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0254teNGek2nTWHQYtzLq64wf9MtjWEznsxvh39VKukReughfrtxx2o1zJQDvtfYHXl",
-            "source": "Apify: Facebook",
-            "summary_vn": "Dự án ds2api là một công cụ middleware mã nguồn mở được thiết kế để thực hiện reverse-engineering giao thức web của DeepSeek, sau đó chuyển đổi và expose dữ liệu dưới dạng API tương thích với chuẩn OpenAI, Claude và Gemini. Về mặt kỹ thuật, đây là một dạng \"API Wrapper\" giúp ánh xạ các yêu cầu từ SDK chuẩn hoặc các Agentic framework (như LangChain, n8n) sang giao thức nội bộ của DeepSeek Web. Giải pháp này cho phép các AI Engineer tích hợp trực tiếp khả năng lý luận của model vào các công cụ phát triển như Cursor hoặc các ứng dụng AI tự tùy chỉnh mà không phụ thuộc vào cổng API trả phí chính thức. Điểm đổi mới cụ thể nằm ở khả năng xử lý stream dữ liệu và duy trì session để giả lập tương tác người dùng, biến một giao diện web tĩnh thành một endpoint có thể lập trình được, hỗ trợ tối ưu cho các quy trình tự động hóa và tích hợp hạ tầng AI linh hoạt.",
-            "date": "2026-05-05T15:31:27"
+            "title": "Running Codex safely at OpenAI",
+            "link": "https://openai.com/index/running-codex-safely",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "Bài viết phân tích hạ tầng bảo mật của OpenAI dành cho việc thực thi mã nguồn thông qua Codex và các coding agents. Về mặt kỹ thuật, hệ thống sử dụng cơ chế **sandboxing** nghiêm ngặt để cách ly môi trường thực thi, kết hợp với các **Network Policies** nhằm kiểm soát chặt chẽ lưu lượng truy cập mạng. Điểm đổi mới quan trọng là việc triển khai hệ thống **agent-native telemetry**, cho phép ghi nhận và phân tích các hành vi của agent theo thời gian thực để phát hiện các dấu hiệu bất thường trong quá trình tương tác với hệ thống. Kiến trúc này hỗ trợ các **Agentic workflows** phức tạp, cho phép mô hình tự động thực hiện các tác vụ lập trình mà vẫn đảm bảo tuân thủ tiêu chuẩn bảo mật doanh nghiệp. Việc tích hợp quy trình phê duyệt (approvals) dựa trên mức độ rủi ro giúp tối ưu hóa sự cân bằng giữa tính linh hoạt của AI và an toàn hệ thống, giải quyết các thách thức về bảo mật trong kỷ nguyên các đại lý AI tự trị.",
+            "date": "2026-05-08T12:30:00"
         }
     ],
     "debug_stats": {
-        "raw_total": 40,
+        "raw_total": 41,
         "duplicates": 0,
-        "final": 3
+        "final": 1
     }
 }

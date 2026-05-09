@@ -1,5 +1,23 @@
 [
     {
+        "timestamp": "2026-05-09T04:07:09.917665",
+        "keywords": "EN: [Security infrastructure, Code execution, Coding agents, Sandboxing, Isolation, Environment, Infrastructure, Security, System, Technical]\nVN: [Hạ tầng bảo mật, Thực thi mã nguồn, Tác nhân lập trình, Sandboxing, Cách ly, Môi trường, Hạ tầng, Bảo mật, Hệ thống, Kỹ thuật]\nMODELS: [Codex]",
+        "reports": [
+            {
+                "title": "Running Codex safely at OpenAI",
+                "link": "https://openai.com/index/running-codex-safely",
+                "source": "https://openai.com/news/rss.xml",
+                "summary_vn": "Bài viết phân tích hạ tầng bảo mật của OpenAI dành cho việc thực thi mã nguồn thông qua Codex và các coding agents. Về mặt kỹ thuật, hệ thống sử dụng cơ chế **sandboxing** nghiêm ngặt để cách ly môi trường thực thi, kết hợp với các **Network Policies** nhằm kiểm soát chặt chẽ lưu lượng truy cập mạng. Điểm đổi mới quan trọng là việc triển khai hệ thống **agent-native telemetry**, cho phép ghi nhận và phân tích các hành vi của agent theo thời gian thực để phát hiện các dấu hiệu bất thường trong quá trình tương tác với hệ thống. Kiến trúc này hỗ trợ các **Agentic workflows** phức tạp, cho phép mô hình tự động thực hiện các tác vụ lập trình mà vẫn đảm bảo tuân thủ tiêu chuẩn bảo mật doanh nghiệp. Việc tích hợp quy trình phê duyệt (approvals) dựa trên mức độ rủi ro giúp tối ưu hóa sự cân bằng giữa tính linh hoạt của AI và an toàn hệ thống, giải quyết các thách thức về bảo mật trong kỷ nguyên các đại lý AI tự trị.",
+                "date": "2026-05-08T12:30:00"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 41,
+            "duplicates": 0,
+            "final": 1
+        }
+    },
+    {
         "timestamp": "2026-05-07T04:16:45.044411",
         "keywords": "EN: [Multi-Token Prediction (MTP), Local LLM, Multimodal Pipeline, Video Understanding, Reverse-engineering, Middleware, Framework, Open-source, API Compatibility, Web Protocol]\nVN: [Dự đoán đa Token, LLM chạy cục bộ, Quy trình đa phương thức, Hiểu video, Kỹ thuật đảo ngược, Phần mềm trung gian, Khung phần mềm, Mã nguồn mở, Tương thích API, Giao thức web]\nMODELS: [Gemma 4, Qwen 3.6 27B, Qwen 2.5 27B, Gemma 2, Claude Video, Claude 3.5 Sonnet, DeepSeek v4, ds2api]",
         "reports": [
@@ -202,52 +220,6 @@
         "debug_stats": {
             "raw_total": 41,
             "duplicates": 0,
-            "final": 5
-        }
-    },
-    {
-        "timestamp": "2026-04-23T03:58:12.654235",
-        "keywords": "EN: [Agentic Workflow, Model Context Protocol (MCP), WebSockets, Responses API, Agent loop, Stateless HTTP, Agent skill, Local AI, First-class collaborator, Workspace agents]\nVN: [Quy trình làm việc tự trị, Giao thức ngữ cảnh mô hình, WebSockets, API phản hồi, Vòng lặp tác vụ, HTTP không trạng thái, Kỹ năng của Agent, AI cục bộ, Cộng tác viên ưu tiên, Agent cho không gian làm việc]\nMODELS: [Claude Code, Codex, ChatGPT, Cursor]",
-        "reports": [
-            {
-                "title": "Nguồn mở AI điều khiển trình duyệt Web như hành vi con người\n\nWeb-access là một ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02pErSv3LgR8tk3pd6oywW3vPwQkyxbknynhCnKFbpTWHa8UqNYBCaFQn5SK7Nk3nQl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Web-access là một công cụ mã nguồn mở từ Apify, được thiết kế như một agent skill tương thích với các hệ sinh thái như Claude Code, Cursor và Model Context Protocol (MCP). Về mặt kỹ thuật, công cụ này triển khai kiến trúc truy cập phân cấp (tiered access) gồm ba cấp độ: Fetch (HTTP request đơn giản), DOM (phân tích cấu trúc HTML) và Full Browser (sử dụng trình duyệt headless để xử lý các ứng dụng web động như React/SPA). Cải tiến quan trọng nằm ở khả năng tích hợp vào Agentic Workflows, cho phép AI tự quyết định phương thức truy cập dựa trên độ phức tạp của trang web, duy trì session (login, cookies) và hỗ trợ Multi-agent orchestration để xử lý tác vụ song song. Thay vì chỉ đọc dữ liệu tĩnh, hệ thống này cung cấp khả năng tương tác UI thực thụ (click, scroll), giúp mở rộng khả năng của AI trong việc thực hiện các nhiệm vụ tự động hóa phức tạp và thu thập dữ liệu trong môi trường web hiện đại.",
-                "date": "2026-04-23T00:26:18"
-            },
-            {
-                "title": "🚀 Nguồn mở thay thế Claude for Word với giao diện đẹp hỗ trợ mạnh Local AI tiết ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02URR8txkjKz77co8rMAbnfJZGtUREW8QzmKii6Q2oNpMtMm83MwUE9GvvK5WBHHfBl",
-                "source": "Apify: Facebook",
-                "summary_vn": "AOSE (AI Open Source Editor) là một bộ công cụ văn phòng mã nguồn mở được thiết kế xoay quanh kiến trúc **Agentic Workflow**, cho phép AI Agent tương tác như một \"first-class collaborator\". Điểm đổi mới kỹ thuật cốt lõi nằm ở việc chuyển dịch từ giao diện Chatbot truyền thống sang mô hình Agent có khả năng can thiệp trực tiếp vào cấu trúc dữ liệu của tài liệu (Docs), Database, Slides và Flowchart. Hệ thống hỗ trợ tích hợp **Local AI**, cho phép kỹ sư cấu hình các mô hình ngôn ngữ lớn chạy cục bộ để tối ưu hóa chi phí token và đảm bảo quyền riêng tư dữ liệu. Về mặt kỹ thuật, AOSE thực hiện việc theo dõi lịch sử thay đổi (version control) do Agent tạo ra và sử dụng cơ chế kích hoạt tác vụ qua **@mention**, biến AI thành một thực thể có trạng thái (**stateful agent**) trong môi trường soạn thảo cộng tác. Đây là giải pháp thay thế mã nguồn mở tiềm năng cho các hệ thống đóng như Claude for Word, tập trung vào khả năng tùy biến luồng công việc của Agent.",
-                "date": "2026-04-21T07:55:43"
-            },
-            {
-                "title": "Workspace agents",
-                "link": "https://openai.com/academy/workspace-agents",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI giới thiệu giải pháp xây dựng và mở rộng Workspace Agents, tập trung vào việc thiết lập các Agentic Workflows trong môi trường doanh nghiệp. Về mặt kiến trúc, các Agent này hoạt động dựa trên cơ chế Tool-use (Function Calling) để kết nối với các API và cơ sở dữ liệu nội bộ. Kỹ thuật triển khai bao gồm việc cấu hình Actions thông qua các schema chuẩn hóa, quản lý trạng thái (State management) cho các luồng công việc phức tạp và tối ưu hóa RAG (Retrieval Augmented Generation) để truy xuất tri thức từ workspace. Điểm đổi mới nằm ở khả năng điều phối đa tác vụ (Multi-agent orchestration), cho phép các Agent tự động hóa các quy trình lặp lại bằng cách tận dụng khả năng suy luận của các mô hình như o1. Ngoài ra, việc mở rộng (scaling) yêu cầu quản lý phân quyền, xác thực OAuth và đảm bảo tính bảo mật trong Software Supply Chain khi tích hợp các công cụ bên thứ ba vào luồng xử lý của LLM.",
-                "date": "2026-04-22T10:00:00"
-            },
-            {
-                "title": "Speeding up agentic workflows with WebSockets in the Responses API",
-                "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI công bố cải tiến cho Agentic Workflows thông qua việc tích hợp WebSockets vào Responses API, tập trung tối ưu hóa vòng lặp tác vụ (agent loop). Thay vì sử dụng các yêu cầu HTTP không trạng thái (stateless), việc duy trì kết nối WebSocket cho phép triển khai cơ chế \"connection-scoped caching\", giúp giảm thiểu đáng kể độ trễ (latency) và chi phí tài nguyên (overhead) khi giao tiếp với mô hình. Cụ thể, kỹ thuật này tối ưu hóa cách quản lý trạng thái trong các phiên làm việc kéo dài, cho phép Agent truy cập nhanh vào ngữ cảnh trước đó mà không cần xử lý lại toàn bộ token, tương tự như việc tối ưu hóa KV Cache trên server-side. Đổi mới này đặc biệt hiệu quả trong các kịch bản Multi-Agent và Tool-calling phức tạp, nơi việc phản hồi nhanh và duy trì tính nhất quán của hội thoại là yếu tố then chốt để nâng cao trải nghiệm người dùng và hiệu suất hệ thống.",
-                "date": "2026-04-22T10:00:00"
-            },
-            {
-                "title": "Introducing workspace agents in ChatGPT",
-                "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI giới thiệu Workspace Agents, đánh dấu sự chuyển dịch từ chatbot truyền thống sang hệ sinh thái Agentic Workflows toàn diện. Về mặt kỹ thuật, các agent này tận dụng mô hình Codex-powered để thực thi mã và xử lý các tác vụ logic phức tạp trong môi trường sandbox bảo mật chạy trên cloud. Điểm đổi mới cốt lõi nằm ở khả năng điều phối (orchestration) đa công cụ và tích hợp sâu với các API doanh nghiệp, cho phép tự động hóa quy trình làm việc (workflow automation) thay vì chỉ truy vấn thông tin đơn thuần. Cơ chế này hỗ trợ việc lập kế hoạch (planning) và phân tách tác vụ (task decomposition) hiệu quả, tương tự như cách tiếp cận của Model Context Protocol (MCP). Hệ thống cho phép các kỹ sư cấu hình các \"agent chuyên biệt\" có khả năng truy cập vào cơ sở dữ liệu nội bộ thông qua RAG và thực thi các script tùy chỉnh, tối ưu hóa hiệu suất làm việc nhóm thông qua khả năng xử lý bất đồng bộ và mở rộng quy mô tính toán mà không cần quản lý hạ tầng thủ công.",
-                "date": "2026-04-22T10:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 44,
-            "duplicates": 1,
             "final": 5
         }
     }
