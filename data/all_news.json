@@ -1,5 +1,37 @@
 [
     {
+        "timestamp": "2026-05-12T04:18:15.458076",
+        "keywords": "EN: [Serverless, Long-term Memory, Text-to-Speech (TTS), Voice Cloning, Music Generation, Pixel-Level Unified Transformer (PUT), Latent Diffusion, Pipeline, Open source, Architecture]\n\nVN: [Kiến trúc Serverless, Bộ nhớ dài hạn, Chuyển đổi văn bản thành giọng nói, Nhân bản giọng nói, Tạo nhạc tự động, Transformer thống nhất cấp độ pixel, Khuếch tán tiềm ẩn, Quy trình xử lý, Mã nguồn mở, Kiến trúc hệ thống]\n\nMODELS: [HiDream-O1-Image, Stable Diffusion]",
+        "reports": [
+            {
+                "title": "Second Brain trên Cloudflare Workers: Lớp bộ nhớ cá nhân bền vững cho AI – Dự án...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid025FhvkYLzrwvn7tcwgtaq76xQ2WswU2DnqCK9pcAtgPNVAAe3z74mWhQdPvjfwgVvl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Dự án \"Second Brain\" này thiết lập một lớp bộ nhớ dài hạn (Long-term Memory) cho AI bằng cách tận dụng kiến trúc **Serverless** trên Cloudflare Workers. Về mặt kỹ thuật, hệ thống triển khai quy trình **RAG (Retrieval-Augmented Generation)** thông qua việc chuyển đổi dữ liệu người dùng thành **Vector Embeddings** và lưu trữ chúng để thực hiện **Semantic Search** (tìm kiếm ngữ nghĩa). Thay vì phụ thuộc vào Context Window hữu hạn của các mô hình như Claude 3.5 Sonnet, giải pháp này cung cấp một **Persistent Memory Layer** giúp AI duy trì trạng thái (statefulness) qua nhiều phiên làm việc khác nhau. Việc triển khai trên Cloudflare Workers giúp tối ưu hóa độ trễ ở phía Edge, đồng thời cho phép tích hợp linh hoạt vào các **Agentic workflows** thông qua API. Đây là một hướng tiếp cận thực tế để giải quyết vấn đề \"mất trí nhớ\" của LLM, hỗ trợ các tác vụ phức tạp đòi hỏi sự kế thừa thông tin từ các kiến trúc hệ thống và sở thích cá nhân đã thiết lập trước đó.",
+                "date": "2026-05-11T07:04:32"
+            },
+            {
+                "title": "🎙️ Một repo đang được rất nhiều dev AI Audio bookmark vì… gần như gom toàn bộ th...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid028DbwHYJG7Y3a8iYGCAhcneiNz5U31thjKR87z8MCBRyYuDgrMZos2oTq1ZVbcC3Cl",
+                "source": "Apify: Facebook",
+                "summary_vn": "Nội dung đề cập đến một \"Awesome List\" chuyên biệt cho lĩnh vực AI Audio, tập trung vào mã nguồn mở cho Text-to-Speech (TTS), Voice Cloning, và Music Generation. Đối với các kỹ sư AI, đây là tài nguyên quan trọng để tiếp cận các kiến trúc hiện đại như Zero-shot Voice Cloning, Speech-to-Speech (S2S), và hệ thống ASR (Automatic Speech Recognition). Tài liệu này cung cấp các giải pháp triển khai local, giúp tối ưu hóa inference thời gian thực (Real-time) và khôi phục âm thanh (Audio Restoration). Về mặt kỹ thuật, danh sách này tổng hợp các mô hình sử dụng kỹ thuật tách biệt speaker embedding, nén audio codec (như VQ-VAE, HiFi-GAN) và các phương pháp fine-tuning hiệu quả như LoRA cho giọng nói. Nó hỗ trợ đắc lực cho việc xây dựng các Voice Agents tích hợp Agentic Reasoning, cho phép so sánh định lượng về độ trễ (latency) và chất lượng (MOS) giữa các mô hình như GPT-soVITS, Fish Speech hoặc các bản clone mã nguồn mở của ElevenLabs.",
+                "date": "2026-05-11T02:06:37"
+            },
+            {
+                "title": "🚀 Một model AI tạo ảnh mới ra đang khiến cộng đồng Stable Diffusion bàn tán vì… ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0n5vnuP2r9VDkyXUAnhwNC9fQNPFyiX9hvkCfDeSCjvoGHW6hF6T2SAG3AbP4KZW7l",
+                "source": "Apify: Facebook",
+                "summary_vn": "HiDream-O1-Image là một mô hình tạo ảnh đột phá sử dụng kiến trúc \"Pixel-Level Unified Transformer\" (PUT), đánh dấu sự dịch chuyển khỏi pipeline Latent Diffusion truyền thống. Cải tiến kỹ thuật quan trọng nhất của mô hình này là việc loại bỏ hoàn toàn VAE (Variational Autoencoder) và các bộ mã hóa văn bản (text encoder) rời rạc, cho phép xử lý trực tiếp trên dữ liệu cấp độ pixel. Cách tiếp cận này giúp loại bỏ hiện tượng mất mát dữ liệu khi nén/giải nén trong không gian latent, đồng thời tối ưu hóa khả năng hiểu ngữ nghĩa văn bản ngay trong Transformer backbone. Đây là một mô hình thống nhất (Unified Model) đa tác vụ, hỗ trợ từ Text-to-Image, Image Editing cho đến Subject Personalization mà không cần các module bổ trợ phức tạp. Với việc đứng thứ 8 trên bảng xếp hạng hiệu năng, HiDream-O1-Image chứng minh rằng kiến trúc Transformer thuần túy trên pixel có thể cạnh tranh sòng phẳng với các mô hình Diffusion dựa trên VAE hiện nay.",
+                "date": "2026-05-10T16:13:06"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 44,
+            "duplicates": 0,
+            "final": 3
+        }
+    },
+    {
         "timestamp": "2026-05-09T04:07:09.917665",
         "keywords": "EN: [Security infrastructure, Code execution, Coding agents, Sandboxing, Isolation, Environment, Infrastructure, Security, System, Technical]\nVN: [Hạ tầng bảo mật, Thực thi mã nguồn, Tác nhân lập trình, Sandboxing, Cách ly, Môi trường, Hạ tầng, Bảo mật, Hệ thống, Kỹ thuật]\nMODELS: [Codex]",
         "reports": [
@@ -175,52 +207,6 @@
             "raw_total": 42,
             "duplicates": 0,
             "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-04-25T03:43:52.551697",
-        "keywords": "EN: [Agentic Workflow, Mixture-of-Experts (MoE), Infrastructure Proxy, Reasoning, CLI (Command Line Interface), Inference, OCR (Optical Character Recognition), API Endpoint, Document AI, Open-source]\n\nVN: [Quy trình tác vụ Agentic, Kiến trúc Mixture-of-Experts, Hạ tầng Proxy, Khả năng suy luận (Reasoning), Giao diện dòng lệnh (CLI), Suy luận (Inference), Nhận dạng ký tự quang học, Điểm cuối API, AI cho tài liệu, Mã nguồn mở]\n\nMODELS: [Claude Code, DeepSeek V4, DeepSeek V4-Pro, DeepSeek V4-Flash, ChatGPT, Gemini, Claude, Cursor, Copilot, GPT Image 2, PaddleOCR v3.5]",
-        "reports": [
-            {
-                "title": "Nguồn mở “kỳ lạ” Free Claude Code – Dùng Claude Code miễn phí ngay trong Termina...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid07anojjHJB4gNFs8kszQZaZgjtg7DN7UKEPDQvJ27QAzFxZPKv4kgo3CdTb2e3TDcl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dự án `free-claude-code` là một giải pháp hạ tầng (infrastructure) dưới dạng Proxy Trung gian, được thiết kế để can thiệp và điều phối luồng dữ liệu của Claude Code CLI—một công cụ Agentic Workflow mạnh mẽ từ Anthropic. Về mặt kỹ thuật, dự án này triển khai một API Gateway cục bộ giúp giả lập (emulation) các endpoint chính thức của Anthropic. Cốt lõi của hệ thống là cơ chế xoay vòng (rotation) tự động các API Key và nguồn tài nguyên miễn phí, cho phép duy trì các tác vụ phức tạp như phân tích mã nguồn, lập kế hoạch và thực thi terminal mà không bị giới hạn bởi quota cá nhân. Công cụ này tối ưu hóa việc định tuyến (routing) các yêu cầu từ VSCode Extension hoặc CLI đến các backend thay thế, đảm bảo tính tương thích với cấu trúc phản hồi của mô hình Claude 3.5 Sonnet, đồng thời quản lý trạng thái phiên (session management) để bảo toàn ngữ cảnh trong các chuỗi suy luận dài của Agent.",
-                "date": "2026-04-24T11:46:42"
-            },
-            {
-                "title": "DeepSeek V4 – Model open-source mới “đánh thẳng” vào ChatGPT & Gemini\n\n🚀 Điểm ch...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02dqaTAyTqnWHNBBUvmEvMnrDwta2Kiaoyt8FKWnVEXiLuUgG1KAkWjEXaKBTcWZqrl",
-                "source": "Apify: Facebook",
-                "summary_vn": "DeepSeek V4 giới thiệu những cải tiến quan trọng trong kiến trúc Mixture-of-Experts (MoE) với hai biến thể: V4-Pro tập trung vào khả năng Reasoning (suy luận phức tạp) và V4-Flash tối ưu hóa cho tốc độ xử lý. Điểm nhấn kỹ thuật cốt lõi nằm ở cơ chế Attention mới giúp giảm tải đáng kể tài nguyên Compute và Memory, cho phép duy trì hiệu năng ổn định ngay cả với Context Window lên tới 1 triệu token. Model này được tinh chỉnh đặc biệt cho các tác vụ Coding và Agentic Workflow, tối ưu hóa việc gọi hàm và xử lý logic đa bước. Việc nâng cấp hạ tầng giúp giảm chi phí vận hành, biến V4 thành đối thủ trực tiếp của các mô hình đóng trong việc triển khai các hệ thống RAG quy mô lớn và Multi-Agent system. Đây là bước tiến về tối ưu hóa KV Cache và hiệu quả phân bổ chuyên gia (Expert Routing) trong môi trường thực tế.",
-                "date": "2026-04-24T05:44:08"
-            },
-            {
-                "title": "Andrej Karpathy Skills – bộ Skills nguồn mở 80k ⭐️ nạp tư duy Karpathy” vào AI a...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid021teXV5TY7rdzqfaBuN7LpB7T5LuFt4pi1EgBg3e9VhYLwX3xi3r2KPzwPkrV4RXvl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Đây là một bộ tài liệu kỹ thuật (dạng `SKILL.md`) được thiết kế để chuẩn hóa và tối ưu hóa **Agentic Workflow** cho các AI Agent như Claude, Cursor và Copilot. Về mặt kỹ thuật, dự án này đóng gói các **Mental Models** và quy trình suy luận (Reasoning) của Andrej Karpathy thành các chỉ dẫn hệ thống (System Prompts) có cấu trúc. Thay vì sử dụng prompt rời rạc, bộ skill này áp dụng phương pháp **Chain-of-Thought (CoT)** và định nghĩa rõ ràng các bước thực hiện công việc (workflow), giúp AI duy trì ngữ cảnh sâu hơn và tạo ra đầu ra có cấu trúc chặt chẽ. Điểm cốt lõi là việc chuẩn hóa giao thức tương tác giữa người dùng và Agent, tối ưu hóa khả năng giải quyết vấn đề phức tạp trong lập trình và thiết kế hệ thống bằng cách áp dụng các nguyên lý **Prompt Engineering** nâng cao, giúp giảm thiểu sự mơ hồ và tăng tính nhất quán của mô hình ngôn ngữ lớn (LLM).",
-                "date": "2026-04-23T23:54:25"
-            },
-            {
-                "title": "Nguồn mở của pháp sự biến ChatGPT Web thành OpenAI API hỗ trợ GPT Image 2 (dùng ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0DZCsRpwWoUgP76Z4qSzPz49RNJonaJT9Gzofo5xpThja5bdHzZ5Ud41S1WuXkzBUl",
-                "source": "Apify: Facebook",
-                "summary_vn": "`chatgpt2api` là một giải pháp hạ tầng mã nguồn mở giúp chuyển đổi (proxy) giao diện web của ChatGPT thành một API endpoint tương thích hoàn toàn với cấu trúc OpenAI API (`/v1/chat/completions`). Về mặt kỹ thuật, công cụ này hoạt động như một lớp trung gian (middleware) thực hiện việc đóng gói các request, xử lý xác thực thông qua session token/cookie và mô phỏng tương tác người dùng trên nền tảng web để truy xuất dữ liệu từ các model (bao gồm cả khả năng xử lý hình ảnh với GPT Vision). Điểm đổi mới cụ thể là khả năng chuẩn hóa (standardization) một giao diện web không chính thức thành một dịch vụ backend ổn định, cho phép các kỹ sư AI tích hợp trực tiếp vào các Agentic Workflow hoặc hệ thống RAG mà không cần API Key chính thức. Giải pháp hỗ trợ đầy đủ cơ chế truyền tải dữ liệu dạng stream và tương thích plug-and-play với các framework AI phổ biến, giúp tối ưu hóa chi phí trong giai đoạn phát triển ứng dụng và thử nghiệm tính năng Vision.",
-                "date": "2026-04-23T17:01:26"
-            },
-            {
-                "title": "PaddleOCR v3.5 vừa ra mắt có thể chạy ngay OCR trên trình duyệt, nâng cấp lớn ch...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02uauFZtK3jiY1aY4eM9sDTfy7CCpSv3dnqxw3obgUNr2wCAp5xwhcCuRtCtviCZgnl",
-                "source": "Apify: Facebook",
-                "summary_vn": "PaddleOCR v3.5 mang đến những nâng cấp kiến trúc quan trọng tập trung vào tính linh hoạt của inference và tối ưu hóa cho Document AI. Điểm cải tiến kỹ thuật cốt lõi là khả năng chạy inference trực tiếp trên trình duyệt, giúp giảm latency và tăng quyền riêng tư dữ liệu. Phiên bản này giới thiệu cơ chế Flexible Inference Backends, cho phép kỹ sư chuyển đổi mượt mà giữa Paddle static graph (tối ưu hiệu năng), dynamic graph (thuận tiện debug) và đặc biệt là tích hợp sâu với thư viện Transformers của Hugging Face. Sự đổi mới này giúp chuẩn hóa output dữ liệu tài liệu, tạo tiền đề quan trọng cho các pipeline RAG và Agentic Workflow xử lý văn bản phi cấu trúc. Việc hỗ trợ đa dạng backend và môi trường thực thi (từ server đến browser) giúp tối ưu hóa tài nguyên tính toán và đơn giản hóa việc triển khai các mô hình Document AI phức tạp vào hệ sinh thái LLM hiện đại.",
-                "date": "2026-04-23T12:53:39"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 5
         }
     }
 ]

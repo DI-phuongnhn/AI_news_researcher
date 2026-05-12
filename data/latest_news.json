@@ -1,18 +1,32 @@
 {
-    "timestamp": "2026-05-09T04:07:09.917665",
-    "keywords": "EN: [Security infrastructure, Code execution, Coding agents, Sandboxing, Isolation, Environment, Infrastructure, Security, System, Technical]\nVN: [Hạ tầng bảo mật, Thực thi mã nguồn, Tác nhân lập trình, Sandboxing, Cách ly, Môi trường, Hạ tầng, Bảo mật, Hệ thống, Kỹ thuật]\nMODELS: [Codex]",
+    "timestamp": "2026-05-12T04:18:15.458076",
+    "keywords": "EN: [Serverless, Long-term Memory, Text-to-Speech (TTS), Voice Cloning, Music Generation, Pixel-Level Unified Transformer (PUT), Latent Diffusion, Pipeline, Open source, Architecture]\n\nVN: [Kiến trúc Serverless, Bộ nhớ dài hạn, Chuyển đổi văn bản thành giọng nói, Nhân bản giọng nói, Tạo nhạc tự động, Transformer thống nhất cấp độ pixel, Khuếch tán tiềm ẩn, Quy trình xử lý, Mã nguồn mở, Kiến trúc hệ thống]\n\nMODELS: [HiDream-O1-Image, Stable Diffusion]",
     "reports": [
         {
-            "title": "Running Codex safely at OpenAI",
-            "link": "https://openai.com/index/running-codex-safely",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "Bài viết phân tích hạ tầng bảo mật của OpenAI dành cho việc thực thi mã nguồn thông qua Codex và các coding agents. Về mặt kỹ thuật, hệ thống sử dụng cơ chế **sandboxing** nghiêm ngặt để cách ly môi trường thực thi, kết hợp với các **Network Policies** nhằm kiểm soát chặt chẽ lưu lượng truy cập mạng. Điểm đổi mới quan trọng là việc triển khai hệ thống **agent-native telemetry**, cho phép ghi nhận và phân tích các hành vi của agent theo thời gian thực để phát hiện các dấu hiệu bất thường trong quá trình tương tác với hệ thống. Kiến trúc này hỗ trợ các **Agentic workflows** phức tạp, cho phép mô hình tự động thực hiện các tác vụ lập trình mà vẫn đảm bảo tuân thủ tiêu chuẩn bảo mật doanh nghiệp. Việc tích hợp quy trình phê duyệt (approvals) dựa trên mức độ rủi ro giúp tối ưu hóa sự cân bằng giữa tính linh hoạt của AI và an toàn hệ thống, giải quyết các thách thức về bảo mật trong kỷ nguyên các đại lý AI tự trị.",
-            "date": "2026-05-08T12:30:00"
+            "title": "Second Brain trên Cloudflare Workers: Lớp bộ nhớ cá nhân bền vững cho AI – Dự án...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid025FhvkYLzrwvn7tcwgtaq76xQ2WswU2DnqCK9pcAtgPNVAAe3z74mWhQdPvjfwgVvl",
+            "source": "Apify: Facebook",
+            "summary_vn": "Dự án \"Second Brain\" này thiết lập một lớp bộ nhớ dài hạn (Long-term Memory) cho AI bằng cách tận dụng kiến trúc **Serverless** trên Cloudflare Workers. Về mặt kỹ thuật, hệ thống triển khai quy trình **RAG (Retrieval-Augmented Generation)** thông qua việc chuyển đổi dữ liệu người dùng thành **Vector Embeddings** và lưu trữ chúng để thực hiện **Semantic Search** (tìm kiếm ngữ nghĩa). Thay vì phụ thuộc vào Context Window hữu hạn của các mô hình như Claude 3.5 Sonnet, giải pháp này cung cấp một **Persistent Memory Layer** giúp AI duy trì trạng thái (statefulness) qua nhiều phiên làm việc khác nhau. Việc triển khai trên Cloudflare Workers giúp tối ưu hóa độ trễ ở phía Edge, đồng thời cho phép tích hợp linh hoạt vào các **Agentic workflows** thông qua API. Đây là một hướng tiếp cận thực tế để giải quyết vấn đề \"mất trí nhớ\" của LLM, hỗ trợ các tác vụ phức tạp đòi hỏi sự kế thừa thông tin từ các kiến trúc hệ thống và sở thích cá nhân đã thiết lập trước đó.",
+            "date": "2026-05-11T07:04:32"
+        },
+        {
+            "title": "🎙️ Một repo đang được rất nhiều dev AI Audio bookmark vì… gần như gom toàn bộ th...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid028DbwHYJG7Y3a8iYGCAhcneiNz5U31thjKR87z8MCBRyYuDgrMZos2oTq1ZVbcC3Cl",
+            "source": "Apify: Facebook",
+            "summary_vn": "Nội dung đề cập đến một \"Awesome List\" chuyên biệt cho lĩnh vực AI Audio, tập trung vào mã nguồn mở cho Text-to-Speech (TTS), Voice Cloning, và Music Generation. Đối với các kỹ sư AI, đây là tài nguyên quan trọng để tiếp cận các kiến trúc hiện đại như Zero-shot Voice Cloning, Speech-to-Speech (S2S), và hệ thống ASR (Automatic Speech Recognition). Tài liệu này cung cấp các giải pháp triển khai local, giúp tối ưu hóa inference thời gian thực (Real-time) và khôi phục âm thanh (Audio Restoration). Về mặt kỹ thuật, danh sách này tổng hợp các mô hình sử dụng kỹ thuật tách biệt speaker embedding, nén audio codec (như VQ-VAE, HiFi-GAN) và các phương pháp fine-tuning hiệu quả như LoRA cho giọng nói. Nó hỗ trợ đắc lực cho việc xây dựng các Voice Agents tích hợp Agentic Reasoning, cho phép so sánh định lượng về độ trễ (latency) và chất lượng (MOS) giữa các mô hình như GPT-soVITS, Fish Speech hoặc các bản clone mã nguồn mở của ElevenLabs.",
+            "date": "2026-05-11T02:06:37"
+        },
+        {
+            "title": "🚀 Một model AI tạo ảnh mới ra đang khiến cộng đồng Stable Diffusion bàn tán vì… ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0n5vnuP2r9VDkyXUAnhwNC9fQNPFyiX9hvkCfDeSCjvoGHW6hF6T2SAG3AbP4KZW7l",
+            "source": "Apify: Facebook",
+            "summary_vn": "HiDream-O1-Image là một mô hình tạo ảnh đột phá sử dụng kiến trúc \"Pixel-Level Unified Transformer\" (PUT), đánh dấu sự dịch chuyển khỏi pipeline Latent Diffusion truyền thống. Cải tiến kỹ thuật quan trọng nhất của mô hình này là việc loại bỏ hoàn toàn VAE (Variational Autoencoder) và các bộ mã hóa văn bản (text encoder) rời rạc, cho phép xử lý trực tiếp trên dữ liệu cấp độ pixel. Cách tiếp cận này giúp loại bỏ hiện tượng mất mát dữ liệu khi nén/giải nén trong không gian latent, đồng thời tối ưu hóa khả năng hiểu ngữ nghĩa văn bản ngay trong Transformer backbone. Đây là một mô hình thống nhất (Unified Model) đa tác vụ, hỗ trợ từ Text-to-Image, Image Editing cho đến Subject Personalization mà không cần các module bổ trợ phức tạp. Với việc đứng thứ 8 trên bảng xếp hạng hiệu năng, HiDream-O1-Image chứng minh rằng kiến trúc Transformer thuần túy trên pixel có thể cạnh tranh sòng phẳng với các mô hình Diffusion dựa trên VAE hiện nay.",
+            "date": "2026-05-10T16:13:06"
         }
     ],
     "debug_stats": {
-        "raw_total": 41,
+        "raw_total": 44,
         "duplicates": 0,
-        "final": 1
+        "final": 3
     }
 }

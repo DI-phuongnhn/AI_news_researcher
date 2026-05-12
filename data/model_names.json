@@ -54,7 +54,8 @@
         "Qwen 2.5 27B",
         "Claude Video",
         "Claude 3.5 Sonnet",
-        "ds2api"
+        "ds2api",
+        "HiDream-O1-Image"
     ],
     "legacy": [
         "GPT-4",
