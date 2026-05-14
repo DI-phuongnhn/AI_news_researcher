@@ -1,5 +1,30 @@
 [
     {
+        "timestamp": "2026-05-14T04:32:23.427765",
+        "keywords": "EN: [Multimodal pipeline, Open-source, Self-hosted, Sandbox, Agentic coding workflows, Infrastructure, System architecture, Process isolation, Integration, Telegram bot]\nVN: [Quy trình đa phương thức, Mã nguồn mở, Tự host, Môi trường sandbox, Quy trình lập trình Agentic, Hạ tầng, Kiến trúc hệ thống, Cô lập quy trình, Tích hợp, Telegram bot]\nMODELS: [Codex]",
+        "reports": [
+            {
+                "title": "🚀 Một dự án open-source cực kỳ thực tế và hữu ích mà mình tình cờ phát hiện gần ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02oBvXkbUT4EzFGwEaFe7YAQda6zv2bS7oe3yNFPxxNVXQQQnDg3Zr1Ao9kqLGw3il",
+                "source": "Apify: Facebook",
+                "summary_vn": "Shorts Saver Bot là một dự án mã nguồn mở triển khai quy trình xử lý đa phương thức (multimodal pipeline) dưới dạng một Telegram bot tự host. Về mặt kỹ thuật, dự án tích hợp nhiều thành phần AI chuyên biệt để tự động hóa việc trích xuất tri thức từ video ngắn. Hệ thống sử dụng mô hình Whisper (OpenAI) cho tác vụ Speech-to-Text (ASR) để chuyển đổi âm thanh thành văn bản với độ chính xác cao. Điểm đáng chú ý là việc ứng dụng Vision AI (các mô hình ngôn ngữ thị giác) để phân tích ngữ cảnh hình ảnh, giúp trích xuất các insight mà văn bản đơn thuần không truyền tải hết. Quy trình này mô phỏng một dạng Agentic Workflow cơ bản: tiếp nhận đầu vào (URL), xử lý tải xuống, thực hiện suy luận song song qua hai nhánh (âm thanh và hình ảnh), sau đó tổng hợp dữ liệu để lưu trữ có cấu trúc. Đây là một case study thực tế cho các kỹ sư AI trong việc tích hợp các mô hình SLM hoặc API của LLM vào các ứng dụng thực tế (Production-ready).",
+                "date": "2026-05-13T11:55:03"
+            },
+            {
+                "title": "Building a safe, effective sandbox to enable Codex on Windows",
+                "link": "https://openai.com/index/building-codex-windows-sandbox",
+                "source": "https://openai.com/news/rss.xml",
+                "summary_vn": "OpenAI giới thiệu giải pháp xây dựng môi trường sandbox bảo mật cho Codex trên Windows, một hạ tầng thiết yếu cho các Agentic coding workflows. Về mặt kiến trúc, giải pháp này tập trung vào việc cô lập thực thi mã (code execution isolation) để cho phép các AI Agent chạy mã Python/PowerShell một cách an toàn. Cụ thể, hệ thống kiểm soát chặt chẽ quyền truy cập hệ thống tệp (file access) và giới hạn kết nối mạng (network restrictions) để ngăn chặn các rủi ro bảo mật từ mã nguồn do LLM tự động tạo ra. Đây là một bước tiến quan trọng trong việc triển khai các tác vụ tự động hóa (Agentic reasoners) trên môi trường local Windows thay vì chỉ dựa vào cloud sandbox. Cải tiến kỹ thuật nằm ở việc tối ưu hóa hiệu suất sandbox để giảm thiểu độ trễ khi thực thi, đồng thời đảm bảo tính toàn vẹn của hệ thống vật lý thông qua các cơ chế virtualization hoặc containerization được tinh chỉnh riêng cho Codex, giúp các kỹ sư AI xây dựng các công cụ lập trình tự trị an toàn hơn.",
+                "date": "2026-05-13T11:00:00"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 41,
+            "duplicates": 0,
+            "final": 2
+        }
+    },
+    {
         "timestamp": "2026-05-12T04:18:15.458076",
         "keywords": "EN: [Serverless, Long-term Memory, Text-to-Speech (TTS), Voice Cloning, Music Generation, Pixel-Level Unified Transformer (PUT), Latent Diffusion, Pipeline, Open source, Architecture]\n\nVN: [Kiến trúc Serverless, Bộ nhớ dài hạn, Chuyển đổi văn bản thành giọng nói, Nhân bản giọng nói, Tạo nhạc tự động, Transformer thống nhất cấp độ pixel, Khuếch tán tiềm ẩn, Quy trình xử lý, Mã nguồn mở, Kiến trúc hệ thống]\n\nMODELS: [HiDream-O1-Image, Stable Diffusion]",
         "reports": [
@@ -189,24 +214,6 @@
             "raw_total": 42,
             "duplicates": 0,
             "final": 4
-        }
-    },
-    {
-        "timestamp": "2026-04-28T04:16:24.159203",
-        "keywords": "EN: [Steerability, Reasoning Trace, Prompt Engineering, Instruct, Open Source, Thinking Mode, Chain of Thought, Roleplay, Optimization, Tag-based prompting]\n\nVN: [Khả năng điều khiển, Luồng suy nghĩ, Kỹ thuật đặt câu lệnh, Chỉ dẫn, Mã nguồn mở, Chế độ tư duy, Chuỗi tư duy, Nhập vai, Tối ưu hóa, Nhắc lệnh dựa trên thẻ]\n\nMODELS: [DeepSeek V4]",
-        "reports": [
-            {
-                "title": "Dự án nguồn mở DeepSeek V4 Roleplay Instruct – Bộ Prompt Điều Khiển Thinking Mod...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02SrLYp7WCGPHB8fBFpQERFe1DbFDm5cS1hoFnuwoXLXEgPqxtzcECgTLy1XK39MSal",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dự án mã nguồn mở \"deepseek_v4_roleplay_instruct\" tập trung vào việc tối ưu hóa tính **Steerability** (khả năng điều khiển) đối với luồng suy nghĩ (**Reasoning Trace**) bên trong thẻ `<think>` của các mô hình DeepSeek (đặc biệt là dòng R1 và V3). Thay vì chỉ sử dụng Prompt Engineering bề mặt, dự án này can thiệp vào cấu trúc **Chain-of-Thought (CoT)** để định hướng cách mô hình thực hiện các bước lập luận trung gian. \n\nVề mặt kỹ thuật, dự án cung cấp các cấu trúc System Prompt chuyên biệt để chuyển đổi mô hình qua ba chế độ: Default, Character Immersion (sử dụng kỹ thuật **Inner Monologue** để duy trì tính nhất quán nhân vật), và Pure Analysis (tập trung vào logic thuần túy). Điều này đặc biệt quan trọng đối với các kỹ sư xây dựng hệ thống **Agentic Roleplay**, giúp kiểm soát xu hướng \"suy nghĩ\" của mô hình, tránh hiện tượng trôi lệch ngữ cảnh và tối ưu hóa phản hồi cuối cùng dựa trên các trạng thái ẩn (hidden states) được định hướng trước.",
-                "date": "2026-04-27T11:49:39"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 42,
-            "duplicates": 0,
-            "final": 1
         }
     }
 ]

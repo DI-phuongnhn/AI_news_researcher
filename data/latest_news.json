@@ -1,32 +1,25 @@
 {
-    "timestamp": "2026-05-12T04:18:15.458076",
-    "keywords": "EN: [Serverless, Long-term Memory, Text-to-Speech (TTS), Voice Cloning, Music Generation, Pixel-Level Unified Transformer (PUT), Latent Diffusion, Pipeline, Open source, Architecture]\n\nVN: [Kiến trúc Serverless, Bộ nhớ dài hạn, Chuyển đổi văn bản thành giọng nói, Nhân bản giọng nói, Tạo nhạc tự động, Transformer thống nhất cấp độ pixel, Khuếch tán tiềm ẩn, Quy trình xử lý, Mã nguồn mở, Kiến trúc hệ thống]\n\nMODELS: [HiDream-O1-Image, Stable Diffusion]",
+    "timestamp": "2026-05-14T04:32:23.427765",
+    "keywords": "EN: [Multimodal pipeline, Open-source, Self-hosted, Sandbox, Agentic coding workflows, Infrastructure, System architecture, Process isolation, Integration, Telegram bot]\nVN: [Quy trình đa phương thức, Mã nguồn mở, Tự host, Môi trường sandbox, Quy trình lập trình Agentic, Hạ tầng, Kiến trúc hệ thống, Cô lập quy trình, Tích hợp, Telegram bot]\nMODELS: [Codex]",
     "reports": [
         {
-            "title": "Second Brain trên Cloudflare Workers: Lớp bộ nhớ cá nhân bền vững cho AI – Dự án...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid025FhvkYLzrwvn7tcwgtaq76xQ2WswU2DnqCK9pcAtgPNVAAe3z74mWhQdPvjfwgVvl",
+            "title": "🚀 Một dự án open-source cực kỳ thực tế và hữu ích mà mình tình cờ phát hiện gần ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02oBvXkbUT4EzFGwEaFe7YAQda6zv2bS7oe3yNFPxxNVXQQQnDg3Zr1Ao9kqLGw3il",
             "source": "Apify: Facebook",
-            "summary_vn": "Dự án \"Second Brain\" này thiết lập một lớp bộ nhớ dài hạn (Long-term Memory) cho AI bằng cách tận dụng kiến trúc **Serverless** trên Cloudflare Workers. Về mặt kỹ thuật, hệ thống triển khai quy trình **RAG (Retrieval-Augmented Generation)** thông qua việc chuyển đổi dữ liệu người dùng thành **Vector Embeddings** và lưu trữ chúng để thực hiện **Semantic Search** (tìm kiếm ngữ nghĩa). Thay vì phụ thuộc vào Context Window hữu hạn của các mô hình như Claude 3.5 Sonnet, giải pháp này cung cấp một **Persistent Memory Layer** giúp AI duy trì trạng thái (statefulness) qua nhiều phiên làm việc khác nhau. Việc triển khai trên Cloudflare Workers giúp tối ưu hóa độ trễ ở phía Edge, đồng thời cho phép tích hợp linh hoạt vào các **Agentic workflows** thông qua API. Đây là một hướng tiếp cận thực tế để giải quyết vấn đề \"mất trí nhớ\" của LLM, hỗ trợ các tác vụ phức tạp đòi hỏi sự kế thừa thông tin từ các kiến trúc hệ thống và sở thích cá nhân đã thiết lập trước đó.",
-            "date": "2026-05-11T07:04:32"
+            "summary_vn": "Shorts Saver Bot là một dự án mã nguồn mở triển khai quy trình xử lý đa phương thức (multimodal pipeline) dưới dạng một Telegram bot tự host. Về mặt kỹ thuật, dự án tích hợp nhiều thành phần AI chuyên biệt để tự động hóa việc trích xuất tri thức từ video ngắn. Hệ thống sử dụng mô hình Whisper (OpenAI) cho tác vụ Speech-to-Text (ASR) để chuyển đổi âm thanh thành văn bản với độ chính xác cao. Điểm đáng chú ý là việc ứng dụng Vision AI (các mô hình ngôn ngữ thị giác) để phân tích ngữ cảnh hình ảnh, giúp trích xuất các insight mà văn bản đơn thuần không truyền tải hết. Quy trình này mô phỏng một dạng Agentic Workflow cơ bản: tiếp nhận đầu vào (URL), xử lý tải xuống, thực hiện suy luận song song qua hai nhánh (âm thanh và hình ảnh), sau đó tổng hợp dữ liệu để lưu trữ có cấu trúc. Đây là một case study thực tế cho các kỹ sư AI trong việc tích hợp các mô hình SLM hoặc API của LLM vào các ứng dụng thực tế (Production-ready).",
+            "date": "2026-05-13T11:55:03"
         },
         {
-            "title": "🎙️ Một repo đang được rất nhiều dev AI Audio bookmark vì… gần như gom toàn bộ th...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid028DbwHYJG7Y3a8iYGCAhcneiNz5U31thjKR87z8MCBRyYuDgrMZos2oTq1ZVbcC3Cl",
-            "source": "Apify: Facebook",
-            "summary_vn": "Nội dung đề cập đến một \"Awesome List\" chuyên biệt cho lĩnh vực AI Audio, tập trung vào mã nguồn mở cho Text-to-Speech (TTS), Voice Cloning, và Music Generation. Đối với các kỹ sư AI, đây là tài nguyên quan trọng để tiếp cận các kiến trúc hiện đại như Zero-shot Voice Cloning, Speech-to-Speech (S2S), và hệ thống ASR (Automatic Speech Recognition). Tài liệu này cung cấp các giải pháp triển khai local, giúp tối ưu hóa inference thời gian thực (Real-time) và khôi phục âm thanh (Audio Restoration). Về mặt kỹ thuật, danh sách này tổng hợp các mô hình sử dụng kỹ thuật tách biệt speaker embedding, nén audio codec (như VQ-VAE, HiFi-GAN) và các phương pháp fine-tuning hiệu quả như LoRA cho giọng nói. Nó hỗ trợ đắc lực cho việc xây dựng các Voice Agents tích hợp Agentic Reasoning, cho phép so sánh định lượng về độ trễ (latency) và chất lượng (MOS) giữa các mô hình như GPT-soVITS, Fish Speech hoặc các bản clone mã nguồn mở của ElevenLabs.",
-            "date": "2026-05-11T02:06:37"
-        },
-        {
-            "title": "🚀 Một model AI tạo ảnh mới ra đang khiến cộng đồng Stable Diffusion bàn tán vì… ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0n5vnuP2r9VDkyXUAnhwNC9fQNPFyiX9hvkCfDeSCjvoGHW6hF6T2SAG3AbP4KZW7l",
-            "source": "Apify: Facebook",
-            "summary_vn": "HiDream-O1-Image là một mô hình tạo ảnh đột phá sử dụng kiến trúc \"Pixel-Level Unified Transformer\" (PUT), đánh dấu sự dịch chuyển khỏi pipeline Latent Diffusion truyền thống. Cải tiến kỹ thuật quan trọng nhất của mô hình này là việc loại bỏ hoàn toàn VAE (Variational Autoencoder) và các bộ mã hóa văn bản (text encoder) rời rạc, cho phép xử lý trực tiếp trên dữ liệu cấp độ pixel. Cách tiếp cận này giúp loại bỏ hiện tượng mất mát dữ liệu khi nén/giải nén trong không gian latent, đồng thời tối ưu hóa khả năng hiểu ngữ nghĩa văn bản ngay trong Transformer backbone. Đây là một mô hình thống nhất (Unified Model) đa tác vụ, hỗ trợ từ Text-to-Image, Image Editing cho đến Subject Personalization mà không cần các module bổ trợ phức tạp. Với việc đứng thứ 8 trên bảng xếp hạng hiệu năng, HiDream-O1-Image chứng minh rằng kiến trúc Transformer thuần túy trên pixel có thể cạnh tranh sòng phẳng với các mô hình Diffusion dựa trên VAE hiện nay.",
-            "date": "2026-05-10T16:13:06"
+            "title": "Building a safe, effective sandbox to enable Codex on Windows",
+            "link": "https://openai.com/index/building-codex-windows-sandbox",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "OpenAI giới thiệu giải pháp xây dựng môi trường sandbox bảo mật cho Codex trên Windows, một hạ tầng thiết yếu cho các Agentic coding workflows. Về mặt kiến trúc, giải pháp này tập trung vào việc cô lập thực thi mã (code execution isolation) để cho phép các AI Agent chạy mã Python/PowerShell một cách an toàn. Cụ thể, hệ thống kiểm soát chặt chẽ quyền truy cập hệ thống tệp (file access) và giới hạn kết nối mạng (network restrictions) để ngăn chặn các rủi ro bảo mật từ mã nguồn do LLM tự động tạo ra. Đây là một bước tiến quan trọng trong việc triển khai các tác vụ tự động hóa (Agentic reasoners) trên môi trường local Windows thay vì chỉ dựa vào cloud sandbox. Cải tiến kỹ thuật nằm ở việc tối ưu hóa hiệu suất sandbox để giảm thiểu độ trễ khi thực thi, đồng thời đảm bảo tính toàn vẹn của hệ thống vật lý thông qua các cơ chế virtualization hoặc containerization được tinh chỉnh riêng cho Codex, giúp các kỹ sư AI xây dựng các công cụ lập trình tự trị an toàn hơn.",
+            "date": "2026-05-13T11:00:00"
         }
     ],
     "debug_stats": {
-        "raw_total": 44,
+        "raw_total": 41,
         "duplicates": 0,
-        "final": 3
+        "final": 2
     }
 }
