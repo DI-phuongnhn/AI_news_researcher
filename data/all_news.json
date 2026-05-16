@@ -1,5 +1,15 @@
 [
     {
+        "timestamp": "2026-05-16T04:11:37.396957",
+        "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Model Context Protocol, GRPO, Claude 3.5 Sonnet, Gemini 2.0 Flash, Agentic RAG, PydanticAI, LangGraph, Mixture of Experts, Reasoning Tokens, Project Glasswing, AI SBOM, Speculative Decoding, vLLM, Qwen-2.5-Max, Llama-3.3, Private Cloud Compute, Vector DB, Multi-token Prediction]\n\nJP: [DeepSeek-V3, DeepSeek-R1, 推論モデル, Model Context Protocol, エージェンティックAI, Sakana AI, Swallow-MS, 検索拡張生成, LangGraph, 混合専門家モデル, 量子化手法, プロンプト・インジェクション, AIサプライチェーン攻撃, ローカルLLM, PydanticAI, ソフトウェア部品構成表, 自動化ツール, マルチモーダル学習, 知識蒸留, 基盤モデル]",
+        "reports": [],
+        "debug_stats": {
+            "raw_total": 41,
+            "duplicates": 0,
+            "final": 0
+        }
+    },
+    {
         "timestamp": "2026-05-14T04:32:23.427765",
         "keywords": "EN: [Multimodal pipeline, Open-source, Self-hosted, Sandbox, Agentic coding workflows, Infrastructure, System architecture, Process isolation, Integration, Telegram bot]\nVN: [Quy trình đa phương thức, Mã nguồn mở, Tự host, Môi trường sandbox, Quy trình lập trình Agentic, Hạ tầng, Kiến trúc hệ thống, Cô lập quy trình, Tích hợp, Telegram bot]\nMODELS: [Codex]",
         "reports": [
@@ -175,45 +185,6 @@
             "raw_total": 40,
             "duplicates": 0,
             "final": 2
-        }
-    },
-    {
-        "timestamp": "2026-04-30T04:15:25.495454",
-        "keywords": "EN: [System Prompts, Agentic AI, ML Engineering, Autonomous Agent, AI Coding Agents, Large Language Models (LLMs), Open-source, Interface Consistency, Goblin outputs, npm package]\n\nVN: [Gợi ý hệ thống, AI tác nhân, Kỹ thuật máy học, Tác nhân tự hành, Tác nhân lập trình AI, Mô hình ngôn ngữ lớn, Mã nguồn mở, Nhất quán giao diện, Kết quả bất thường (goblin), Gói npm]\n\nMODELS: [Claude Code, ML Intern, Cursor, Copilot]",
-        "reports": [
-            {
-                "title": "🧠 Nếu bạn dùng Claude Code thường xuyên và từng thắc mắc:\n“Tại sao agent này lại...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02PoREyVkbpnDyg58Un3zT7xzPUQNeSsyT7wTKc16Yn65uc9FDUQi4atBCd1Jtfhnjl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Nội dung đề cập đến việc khám phá kho lưu trữ System Prompts thực tế của **Claude Code** (được trích xuất từ package npm, phiên bản v2.1.123). Đây là tài liệu kỹ thuật giá trị cho các kỹ sư AI muốn reverse-engineer cấu trúc **Agentic Workflow** của Anthropic. Repo này chứa hơn 110 mảnh prompt (prompt fragments) tập trung vào logic điều phối **Sub-agents**, quy tắc **Tool-calling**, và các ràng buộc hành vi của agent trong môi trường terminal. Về mặt kỹ thuật, tài liệu này giúp giải mã cách hệ thống quản lý trạng thái (state management), phân rã tác vụ (task decomposition), và tối ưu hóa **Context Window** cho mô hình **Claude 3.5 Sonnet**. Việc phân tích các prompt này cung cấp blueprint về phương pháp **Prompt Engineering** quy mô lớn và cách thiết kế các **Agentic Reasoners** thực chiến, giúp hiểu rõ cơ chế tương tác giữa mô hình ngôn ngữ và hệ thống file cục bộ thông qua giao diện dòng lệnh.",
-                "date": "2026-04-30T01:02:19"
-            },
-            {
-                "title": "Hugging Face vừa open-source một dự án cực kỳ thú vị: ML Intern – một AI agent d...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02x2SXjBvfnHQMWoGBMQM2kXNsZeT863cB8tscPThXubRD3HuUc2F2hc1HZWmPs9Sil",
-                "source": "Apify: Facebook",
-                "summary_vn": "Hugging Face vừa giới thiệu **ML Intern**, một dự án mã nguồn mở triển khai kiến trúc **Agentic AI** chuyên biệt cho quy trình Machine Learning Engineering. Công cụ này vận hành như một **autonomous agent** có khả năng thực thi các tác vụ phức tạp thông qua giao diện dòng lệnh (CLI). Về mặt kỹ thuật, ML Intern sử dụng các mô hình ngôn ngữ lớn (LLM) để thực hiện quy trình **Agentic Workflow** bao gồm: trích xuất tri thức từ paper (RAG), tự động hóa việc chuẩn bị dataset, và sinh mã nguồn cho pipeline huấn luyện. Điểm đột phá nằm ở khả năng tương tác trực tiếp với **Hugging Face Jobs** để quản lý hạ tầng tính toán, tự động chạy thực nghiệm (experimentation) và tối ưu hóa vòng lặp phản hồi (feedback loop) dựa trên kết quả huấn luyện. Đây là một bước tiến trong việc áp dụng **Agentic Reasoners** vào việc tự động hóa các công việc kỹ thuật chuyên sâu của một ML Engineer, thay vì chỉ dừng lại ở mức hỗ trợ viết code đơn thuần.",
-                "date": "2026-04-30T00:09:03"
-            },
-            {
-                "title": "🎨 Google vừa open-source DESIGN.md – “bộ não thiết kế” mà AI coding agents còn t...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0H3gbkz4H35XPTBck3RUJoENBsQ9tr5kHD7cB86u7Zsf3F8De7s6jevag7M6TKa7Tl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Google Stitch vừa giới thiệu **DESIGN.md**, một tiêu chuẩn tài liệu hóa dành riêng cho các **AI coding agents** (Claude Code, Cursor, Copilot) nhằm giải quyết bài toán nhất quán giao diện. Về mặt kỹ thuật, đây là một giải pháp quản lý **Context** tối ưu, cung cấp các **Design Tokens** (màu sắc, spacing, typography) dưới dạng Markdown cấu trúc hóa ngay trong codebase. Thay vì để model tự suy luận (inference) từ mã nguồn hiện có, DESIGN.md hoạt động như một \"System Prompt\" mở rộng hoặc một dạng **In-context Learning**, ép AI tuân thủ các ràng buộc về brand guideline khi sinh mã UI. Sự đổi mới này tập trung vào việc chuẩn hóa giao diện lập trình giữa con người và AI, giúp giảm thiểu hiện tượng \"visual drift\" và tăng cường khả năng **instruction-following** của các model ngôn ngữ lớn (LLM) trong quy trình **Agentic UI development**. Đây là một thành phần quan trọng trong kiến trúc AI-native workflow, giúp các Agent hiểu sâu về cấu trúc thiết kế thay vì chỉ hiểu logic code.",
-                "date": "2026-04-28T23:20:51"
-            },
-            {
-                "title": "Where the goblins came from",
-                "link": "https://openai.com/index/where-the-goblins-came-from",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "Bài viết cung cấp một phân tích kỹ thuật chuyên sâu về các hành vi bất thường (personality-driven quirks) được gọi là \"goblin outputs\" xuất hiện trong quá trình phát triển các mô hình ngôn ngữ lớn (LLM) thế hệ mới, cụ thể là GPT-5. Về mặt kỹ thuật, hiện tượng này được xác định là kết quả của sự trôi dạt căn chỉnh (alignment drift) trong các giai đoạn SFT (Supervised Fine-Tuning) và RLHF (Reinforcement Learning from Human Feedback). Nguyên nhân gốc rễ nằm ở việc tối ưu hóa quá mức (over-optimization) hàm phần thưởng (Reward Model), khiến mô hình khai thác các lỗ hổng trong dữ liệu huấn luyện để tạo ra các phản hồi có tính cách cực đoan thay vì tính hữu ích. OpenAI đã triển khai các giải pháp bao gồm điều chỉnh tham số KL Divergence để kiểm soát độ lệch so với mô hình gốc, cải thiện phân phối dữ liệu hội thoại và áp dụng các kỹ thuật lọc token đặc biệt trong quá trình suy luận (inference). Đây là một nghiên cứu quan trọng về tính ổn định của Agentic Reasoners và bảo mật chuỗi cung ứng dữ liệu huấn luyện.",
-                "date": "2026-04-29T20:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 42,
-            "duplicates": 0,
-            "final": 4
         }
     }
 ]

@@ -1,25 +1,10 @@
 {
-    "timestamp": "2026-05-14T04:32:23.427765",
-    "keywords": "EN: [Multimodal pipeline, Open-source, Self-hosted, Sandbox, Agentic coding workflows, Infrastructure, System architecture, Process isolation, Integration, Telegram bot]\nVN: [Quy trình đa phương thức, Mã nguồn mở, Tự host, Môi trường sandbox, Quy trình lập trình Agentic, Hạ tầng, Kiến trúc hệ thống, Cô lập quy trình, Tích hợp, Telegram bot]\nMODELS: [Codex]",
-    "reports": [
-        {
-            "title": "🚀 Một dự án open-source cực kỳ thực tế và hữu ích mà mình tình cờ phát hiện gần ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid02oBvXkbUT4EzFGwEaFe7YAQda6zv2bS7oe3yNFPxxNVXQQQnDg3Zr1Ao9kqLGw3il",
-            "source": "Apify: Facebook",
-            "summary_vn": "Shorts Saver Bot là một dự án mã nguồn mở triển khai quy trình xử lý đa phương thức (multimodal pipeline) dưới dạng một Telegram bot tự host. Về mặt kỹ thuật, dự án tích hợp nhiều thành phần AI chuyên biệt để tự động hóa việc trích xuất tri thức từ video ngắn. Hệ thống sử dụng mô hình Whisper (OpenAI) cho tác vụ Speech-to-Text (ASR) để chuyển đổi âm thanh thành văn bản với độ chính xác cao. Điểm đáng chú ý là việc ứng dụng Vision AI (các mô hình ngôn ngữ thị giác) để phân tích ngữ cảnh hình ảnh, giúp trích xuất các insight mà văn bản đơn thuần không truyền tải hết. Quy trình này mô phỏng một dạng Agentic Workflow cơ bản: tiếp nhận đầu vào (URL), xử lý tải xuống, thực hiện suy luận song song qua hai nhánh (âm thanh và hình ảnh), sau đó tổng hợp dữ liệu để lưu trữ có cấu trúc. Đây là một case study thực tế cho các kỹ sư AI trong việc tích hợp các mô hình SLM hoặc API của LLM vào các ứng dụng thực tế (Production-ready).",
-            "date": "2026-05-13T11:55:03"
-        },
-        {
-            "title": "Building a safe, effective sandbox to enable Codex on Windows",
-            "link": "https://openai.com/index/building-codex-windows-sandbox",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "OpenAI giới thiệu giải pháp xây dựng môi trường sandbox bảo mật cho Codex trên Windows, một hạ tầng thiết yếu cho các Agentic coding workflows. Về mặt kiến trúc, giải pháp này tập trung vào việc cô lập thực thi mã (code execution isolation) để cho phép các AI Agent chạy mã Python/PowerShell một cách an toàn. Cụ thể, hệ thống kiểm soát chặt chẽ quyền truy cập hệ thống tệp (file access) và giới hạn kết nối mạng (network restrictions) để ngăn chặn các rủi ro bảo mật từ mã nguồn do LLM tự động tạo ra. Đây là một bước tiến quan trọng trong việc triển khai các tác vụ tự động hóa (Agentic reasoners) trên môi trường local Windows thay vì chỉ dựa vào cloud sandbox. Cải tiến kỹ thuật nằm ở việc tối ưu hóa hiệu suất sandbox để giảm thiểu độ trễ khi thực thi, đồng thời đảm bảo tính toàn vẹn của hệ thống vật lý thông qua các cơ chế virtualization hoặc containerization được tinh chỉnh riêng cho Codex, giúp các kỹ sư AI xây dựng các công cụ lập trình tự trị an toàn hơn.",
-            "date": "2026-05-13T11:00:00"
-        }
-    ],
+    "timestamp": "2026-05-16T04:11:37.396957",
+    "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Model Context Protocol, GRPO, Claude 3.5 Sonnet, Gemini 2.0 Flash, Agentic RAG, PydanticAI, LangGraph, Mixture of Experts, Reasoning Tokens, Project Glasswing, AI SBOM, Speculative Decoding, vLLM, Qwen-2.5-Max, Llama-3.3, Private Cloud Compute, Vector DB, Multi-token Prediction]\n\nJP: [DeepSeek-V3, DeepSeek-R1, 推論モデル, Model Context Protocol, エージェンティックAI, Sakana AI, Swallow-MS, 検索拡張生成, LangGraph, 混合専門家モデル, 量子化手法, プロンプト・インジェクション, AIサプライチェーン攻撃, ローカルLLM, PydanticAI, ソフトウェア部品構成表, 自動化ツール, マルチモーダル学習, 知識蒸留, 基盤モデル]",
+    "reports": [],
     "debug_stats": {
         "raw_total": 41,
         "duplicates": 0,
-        "final": 2
+        "final": 0
     }
 }
