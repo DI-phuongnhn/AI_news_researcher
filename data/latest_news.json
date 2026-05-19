@@ -1,10 +1,18 @@
 {
-    "timestamp": "2026-05-16T04:11:37.396957",
-    "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Model Context Protocol, GRPO, Claude 3.5 Sonnet, Gemini 2.0 Flash, Agentic RAG, PydanticAI, LangGraph, Mixture of Experts, Reasoning Tokens, Project Glasswing, AI SBOM, Speculative Decoding, vLLM, Qwen-2.5-Max, Llama-3.3, Private Cloud Compute, Vector DB, Multi-token Prediction]\n\nJP: [DeepSeek-V3, DeepSeek-R1, 推論モデル, Model Context Protocol, エージェンティックAI, Sakana AI, Swallow-MS, 検索拡張生成, LangGraph, 混合専門家モデル, 量子化手法, プロンプト・インジェクション, AIサプライチェーン攻撃, ローカルLLM, PydanticAI, ソフトウェア部品構成表, 自動化ツール, マルチモーダル学習, 知識蒸留, 基盤モデル]",
-    "reports": [],
+    "timestamp": "2026-05-19T04:45:20.988041",
+    "keywords": "EN: [Hybrid, On-premise, Infrastructure, AI Factory, Enterprise environment, Infrastructure transition, Solution, Deployment, Environment, Technical]\nVN: [Hybrid, On-premise, Hạ tầng, AI Factory, Môi trường doanh nghiệp, Chuyển dịch hạ tầng, Giải pháp, Triển khai, Môi trường, Kỹ thuật]\nMODELS: [Codex]",
+    "reports": [
+        {
+            "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+            "link": "https://openai.com/index/dell-codex-enterprise-partnership",
+            "source": "https://openai.com/news/rss.xml",
+            "summary_vn": "Sự hợp tác giữa OpenAI và Dell đánh dấu bước chuyển dịch hạ tầng quan trọng, đưa mô hình Codex vào môi trường hybrid và on-premise thông qua giải pháp Dell AI Factory. Về mặt kỹ thuật, đây là nỗ lực tối ưu hóa các **AI Coding Agents** để hoạt động trực tiếp trên dữ liệu nội bộ của doanh nghiệp, giúp giải quyết triệt để bài toán **Data Sovereignty** (chủ quyền dữ liệu) và giảm độ trễ (latency) so với mô hình Cloud-only. Việc triển khai này cho phép các kỹ sư tích hợp sâu Codex vào quy trình **Agentic Workflows** bảo mật, hỗ trợ sinh mã (code generation) và kiểm thử tự động ngay trong hạ tầng CI/CD nội bộ. Cấu trúc này thường kết hợp với kỹ thuật **RAG** để mô hình truy xuất an toàn các codebase riêng tư, đồng thời tận dụng khả năng tăng tốc phần cứng từ các hệ thống Dell XE9680 để tối ưu hóa hiệu suất suy luận (inference). Đây là bước tiến lớn trong việc đưa các mô hình ngôn ngữ lớn (LLM) vào thực tế sản xuất của doanh nghiệp yêu cầu bảo mật cao.",
+            "date": "2026-05-18T10:00:00"
+        }
+    ],
     "debug_stats": {
         "raw_total": 41,
         "duplicates": 0,
-        "final": 0
+        "final": 1
     }
 }
