@@ -1,5 +1,30 @@
 [
     {
+        "timestamp": "2026-05-21T04:55:57.577640",
+        "keywords": "EN: [Agentic RAG, Codebase, Context optimization, Token, KV cache, Voice Agent, Docker, Speech-to-Speech, Low latency, Orchestration]\nVN: [RAG hướng Agent, Toàn bộ mã nguồn, Tối ưu hóa ngữ cảnh, Token, Bộ nhớ đệm KV, Agent giọng nói, Docker, Truyền âm thanh trực tiếp (Speech-to-Speech), Độ trễ thấp, Điều phối hệ thống]\nMODELS: [Claude Code]",
+        "reports": [
+            {
+                "title": "🚀 CodeGraph: “Google Maps cho codebase” giúp Claude Code hiểu project nhanh hơn ...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0Xuh2RYwzNB3M3Jbjrx9XKqkg8h8Q4agD8quqCVhAjXLurzPx7ywvW4xsDfHRHSwSl",
+                "source": "Apify: Facebook",
+                "summary_vn": "CodeGraph là một giải pháp Agentic RAG tối ưu hóa context cho các AI Agent chuyên về lập trình như Claude Code. Thay vì để AI liên tục sử dụng lệnh grep hoặc đọc file tuần tự gây lãng phí token và KV Cache, CodeGraph thực hiện tiền chỉ mục (pre-index) toàn bộ codebase thành một đồ thị tri thức ngữ nghĩa (Semantic Knowledge Graph). Về mặt kỹ thuật, công cụ này phân tích cấu trúc mã nguồn để dựng lên bản đồ quan hệ bao gồm dependency graph, call graph (luồng gọi hàm) và ánh xạ route-to-handler. Sáng kiến cốt lõi ở đây là chuyển đổi từ phương pháp tìm kiếm văn bản đơn thuần sang Graph-based RAG, giúp AI nhanh chóng xác định \"impact radius\" (bán kính ảnh hưởng) khi có thay đổi trong code mà không cần load toàn bộ file vào context window, tăng tốc độ xử lý và giảm chi phí API đáng kể.",
+                "date": "2026-05-21T00:25:15"
+            },
+            {
+                "title": "🚀 Dograh AI: Nền tảng Voice Agent mã nguồn mở tự host\n\nDograh là một open-source...",
+                "link": "https://www.facebook.com/tinix.vn/posts/pfbid025SXJsRjtqwbCiBb5ffQVxW56SRD3xwhkrcVMM5WQDoMfMkjSYF8BdmLLARLUwLC7l",
+                "source": "Apify: Facebook",
+                "summary_vn": "Dograh AI là nền tảng orchestrate voice agent mã nguồn mở cho phép self-host qua Docker, tối ưu hóa cho các tác vụ đàm thoại thời gian thực (Speech-to-Speech) với độ trễ thấp. Về mặt kỹ thuật, Dograh giải quyết bài toán tích hợp pipeline âm thanh bằng cách cho phép module hóa và thay thế linh hoạt các thành phần STT, LLM và TTS. Nền tảng hỗ trợ tích hợp trực tiếp với Gemini Flash Live và GPT-4o Realtime API qua giao thức WebSocket/WebRTC để giảm thiểu network latency. Điểm cải tiến cốt lõi là bộ visual workflow builder (tương tự cơ chế của n8n hoặc LangGraph) giúp thiết lập luồng điều hướng hội thoại phức tạp, quản lý state, và thực thi Agentic Tool Calling mà không phụ thuộc vào nhà cung cấp đám mây bên thứ ba, đảm bảo kiểm soát dữ liệu hoàn toàn.",
+                "date": "2026-05-19T14:29:32"
+            }
+        ],
+        "debug_stats": {
+            "raw_total": 40,
+            "duplicates": 0,
+            "final": 2
+        }
+    },
+    {
         "timestamp": "2026-05-19T04:45:20.988041",
         "keywords": "EN: [Hybrid, On-premise, Infrastructure, AI Factory, Enterprise environment, Infrastructure transition, Solution, Deployment, Environment, Technical]\nVN: [Hybrid, On-premise, Hạ tầng, AI Factory, Môi trường doanh nghiệp, Chuyển dịch hạ tầng, Giải pháp, Triển khai, Môi trường, Kỹ thuật]\nMODELS: [Codex]",
         "reports": [
@@ -132,52 +157,6 @@
             "raw_total": 40,
             "duplicates": 0,
             "final": 3
-        }
-    },
-    {
-        "timestamp": "2026-05-05T04:00:22.628435",
-        "keywords": "EN: [Orchestration framework, Audio/video pipeline, Infrastructure as Code (IaC), Retrieval-Augmented Generation (RAG), Agentic Workspace, AI Agent, Voice cloning, End-to-end workflow, SOTA models, Multi-stage pipeline]\n\nVN: [Framework điều phối, Pipeline xử lý âm thanh/video, Hạ tầng dưới dạng mã, Thế hệ tăng cường truy xuất (RAG), Không gian làm việc Agentic, Tác nhân AI, Nhân bản giọng nói, Quy trình công việc đầu-cuối, Các mô hình tiên tiến nhất (SOTA), Pipeline đa tầng]\n\nMODELS: [DeepSeek V4, Claude Code, Codex]",
-        "reports": [
-            {
-                "title": "7.9k ⭐️ Một dự án open-source rất mạnh trong mảng AI audio/video, đóng vai trò n...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ucDfiqDv4fTbDnfZrLTJdTwwshTLQGamhNNk9MxBRM8QLvPTgut5CCsGgaBTBqf3l",
-                "source": "Apify: Facebook",
-                "summary_vn": "Voice-Pro là một dự án mã nguồn mở mạnh mẽ, đóng vai trò như một framework điều phối (orchestration) toàn diện cho pipeline xử lý audio và video. Về mặt kỹ thuật, dự án tích hợp các mô hình SOTA (State-of-the-art) như WhisperX và Faster-Whisper để xử lý Speech-to-Text (STT) với khả năng căn chỉnh thời gian (word-level alignment) chính xác. Điểm đổi mới quan trọng nằm ở việc ứng dụng các kiến trúc Zero-shot Voice Cloning hiện đại như F5-TTS, E2-TTS và CosyVoice, cho phép sao chép giọng nói chỉ từ một mẫu audio ngắn mà không cần quá trình fine-tuning phức tạp. Hệ thống tối ưu hóa quy trình từ khâu tách nguồn âm thanh (source separation), dịch thuật cho đến tổng hợp giọng nói (TTS) trong một workflow duy nhất. Đây là công cụ giá trị cho AI Engineers trong việc xây dựng các Agentic workflows liên quan đến xử lý ngôn ngữ tự nhiên và chuyển đổi đa phương tiện, giúp giảm thiểu độ trễ inference và đơn giản hóa việc triển khai các mô hình audio phức tạp.",
-                "date": "2026-05-04T14:41:31"
-            },
-            {
-                "title": "👍 Nguồn mở framework tạo slide theo hướng “slides as code”, nơi mỗi slide là một...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02hn3tf1gfr5WgX6BF58xbVgSrdw2KH2W35BMCfh8N3HLrB3joqUEL8hHsdY8hCsMNl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Framework mã nguồn mở này chuyển đổi phương thức tạo bài thuyết trình truyền thống sang mô hình \"Slides as code\", tương tự như triết lý Infrastructure as Code (IaC). Về mặt kỹ thuật, mỗi slide được định nghĩa là một React component độc lập, cho phép áp dụng quy trình Version Control (Git) và CI/CD vào nội dung trình chiếu. Điểm đổi mới cốt lõi nằm ở kiến trúc \"Agent-first workflow\", được tối ưu hóa để các AI Agent (như Claude 3.5 Sonnet hoặc Codex) có thể can thiệp trực tiếp vào mã nguồn để thực hiện các tác vụ suy luận (reasoning), chỉnh sửa logic UI và thuộc tính CSS. Thay vì thao tác trên các định dạng nhị phân đóng kín (như .pptx), Agent tương tác với cấu trúc code tường minh, giúp việc map yêu cầu người dùng vào giao diện đạt độ chính xác cao hơn. Hệ thống cho phép tích hợp dữ liệu thời gian thực thông qua API trực tiếp vào slide, hỗ trợ tối đa cho các Agentic Workflows trong việc tự động hóa báo cáo và thuyết trình kỹ thuật.",
-                "date": "2026-05-04T06:22:49"
-            },
-            {
-                "title": "Nguồn mở kéo thả và xây dựng hệ tri thức RAGFlow phiên bản mới đã hỗ trợ DeepSee...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0QzSgRT82s6WtcGAoCkL6e1vcB6D5mveBMeD6H4SPkdiD1Atfb7KZmJFZ1Nk2eAK6l",
-                "source": "Apify: Facebook",
-                "summary_vn": "RAGFlow, một nền tảng RAG (Retrieval-Augmented Generation) mã nguồn mở dựa trên cơ chế kéo thả, vừa công bố bản cập nhật quan trọng tích hợp hỗ trợ cho mô hình DeepSeek V4. Cốt lõi kỹ thuật của RAGFlow nằm ở khả năng \"Deep document understanding\", cho phép trích xuất tri thức từ các định dạng dữ liệu phi cấu trúc phức tạp như PDF, slide và ảnh quét thông qua các pipeline xử lý ngôn ngữ và thị giác máy tính chuyên sâu. Việc hỗ trợ DeepSeek V4 giúp hệ thống tối ưu hóa khả năng reasoning (suy luận) và xử lý context dài, đáp ứng các workload lớn trong doanh nghiệp. Ngoài ra, RAGFlow triển khai một Context Engine hợp nhất, đóng vai trò như lớp trung gian quản lý ngữ cảnh cho LLM, giúp tăng độ chính xác của vector retrieval và giảm thiểu hiện tượng hallucination (ảo tưởng). Đây là bước tiến trong việc xây dựng các Agentic RAG workflow có khả năng tự điều chỉnh dựa trên cấu trúc tài liệu thực tế thay vì chỉ phân tách văn bản thô (chunking) thông thường.",
-                "date": "2026-05-04T01:10:06"
-            },
-            {
-                "title": "10k ⭐️ dự án nguồn mở Claudian là một plugin cho Obsidian giúp biến toàn bộ vaul...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid01TY28WSk6ioMUN9YoVTnLZsM8QVgEDBPrQV7o4Nvmn6hThKUFkTAnG35AJo3Tu5bl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Claudian là một plugin mã nguồn mở dành cho Obsidian, chuyển đổi một Vault ghi chú thông thường thành một **Agentic Workspace** dành cho các AI Agent như Claude Code và Codex. Về mặt kỹ thuật, plugin này cho phép LLM tương tác sâu với hệ thống tệp cục bộ thông qua các khả năng **Tool-calling** như đọc/ghi file, thực thi lệnh terminal (Bash) và quản lý **multi-step workflows** trực tiếp trong môi trường ghi chú. Điểm đổi mới cụ thể là việc tích hợp luồng công việc của Agentic AI vào cấu trúc dữ liệu của Obsidian, cho phép AI truy cập ngữ cảnh toàn diện để thực hiện các tác vụ kỹ thuật phức tạp (như lập trình hoặc tự động hóa quy trình) mà không cần rời khỏi ứng dụng. Đây là một bước tiến trong việc áp dụng mô hình **Agent-centric** vào quản lý tri thức cá nhân, hỗ trợ **Inline editing** thông minh và tận dụng tối đa khả năng xử lý của các mô hình ngôn ngữ lớn hiện đại trong việc thao tác với hệ thống.",
-                "date": "2026-05-03T17:16:46"
-            },
-            {
-                "title": "🚀 Công cụ AI nguồn mở 9.9k ⭐️ dịch video + lồng tiếng + voice clone all-in-one c...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02kJ4iuDQSvDUeZhoB76CaRsQwkXiqhZ66SqNYh6FGCDyooDrN4QYguAyMAPmA9C3wl",
-                "source": "Apify: Facebook",
-                "summary_vn": "KrillinAI là một công cụ mã nguồn mở tích hợp quy trình (workflow) xử lý video đầu-cuối (end-to-end) dựa trên các kiến trúc AI hiện đại. Về mặt kỹ thuật, hệ thống triển khai một pipeline đa tầng: đầu tiên sử dụng OpenAI Whisper hoặc FasterWhisper (tối ưu hóa qua CTranslate2) để thực hiện tác vụ Speech-to-Text (ASR) với độ chính xác cao và timestamp chính xác. Giai đoạn dịch thuật được đảm nhiệm bởi các LLM (Large Language Models) giúp bảo toàn ngữ cảnh và sắc thái ngôn ngữ thay vì dịch máy truyền thống. Cuối cùng, hệ thống tích hợp công nghệ Voice Cloning và AI Dubbing (TTS) để tái tạo giọng nói đặc trưng. Sự đổi mới cụ thể nằm ở việc đóng gói các Agentic Workflows phức tạp vào một công cụ duy nhất, xử lý tự động việc căn chỉnh thời gian (alignment) giữa văn bản dịch và âm thanh lồng tiếng, đồng thời tối ưu hóa cho cả môi trường local và cloud. Đây là một giải pháp hữu ích cho các kỹ sư muốn tìm hiểu về tích hợp đa mô hình (Multi-modal integration) trong xử lý phương tiện truyền thông.",
-                "date": "2026-05-03T11:18:26"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 40,
-            "duplicates": 0,
-            "final": 5
         }
     }
 ]

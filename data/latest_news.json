@@ -1,18 +1,25 @@
 {
-    "timestamp": "2026-05-19T04:45:20.988041",
-    "keywords": "EN: [Hybrid, On-premise, Infrastructure, AI Factory, Enterprise environment, Infrastructure transition, Solution, Deployment, Environment, Technical]\nVN: [Hybrid, On-premise, Hạ tầng, AI Factory, Môi trường doanh nghiệp, Chuyển dịch hạ tầng, Giải pháp, Triển khai, Môi trường, Kỹ thuật]\nMODELS: [Codex]",
+    "timestamp": "2026-05-21T04:55:57.577640",
+    "keywords": "EN: [Agentic RAG, Codebase, Context optimization, Token, KV cache, Voice Agent, Docker, Speech-to-Speech, Low latency, Orchestration]\nVN: [RAG hướng Agent, Toàn bộ mã nguồn, Tối ưu hóa ngữ cảnh, Token, Bộ nhớ đệm KV, Agent giọng nói, Docker, Truyền âm thanh trực tiếp (Speech-to-Speech), Độ trễ thấp, Điều phối hệ thống]\nMODELS: [Claude Code]",
     "reports": [
         {
-            "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-            "link": "https://openai.com/index/dell-codex-enterprise-partnership",
-            "source": "https://openai.com/news/rss.xml",
-            "summary_vn": "Sự hợp tác giữa OpenAI và Dell đánh dấu bước chuyển dịch hạ tầng quan trọng, đưa mô hình Codex vào môi trường hybrid và on-premise thông qua giải pháp Dell AI Factory. Về mặt kỹ thuật, đây là nỗ lực tối ưu hóa các **AI Coding Agents** để hoạt động trực tiếp trên dữ liệu nội bộ của doanh nghiệp, giúp giải quyết triệt để bài toán **Data Sovereignty** (chủ quyền dữ liệu) và giảm độ trễ (latency) so với mô hình Cloud-only. Việc triển khai này cho phép các kỹ sư tích hợp sâu Codex vào quy trình **Agentic Workflows** bảo mật, hỗ trợ sinh mã (code generation) và kiểm thử tự động ngay trong hạ tầng CI/CD nội bộ. Cấu trúc này thường kết hợp với kỹ thuật **RAG** để mô hình truy xuất an toàn các codebase riêng tư, đồng thời tận dụng khả năng tăng tốc phần cứng từ các hệ thống Dell XE9680 để tối ưu hóa hiệu suất suy luận (inference). Đây là bước tiến lớn trong việc đưa các mô hình ngôn ngữ lớn (LLM) vào thực tế sản xuất của doanh nghiệp yêu cầu bảo mật cao.",
-            "date": "2026-05-18T10:00:00"
+            "title": "🚀 CodeGraph: “Google Maps cho codebase” giúp Claude Code hiểu project nhanh hơn ...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0Xuh2RYwzNB3M3Jbjrx9XKqkg8h8Q4agD8quqCVhAjXLurzPx7ywvW4xsDfHRHSwSl",
+            "source": "Apify: Facebook",
+            "summary_vn": "CodeGraph là một giải pháp Agentic RAG tối ưu hóa context cho các AI Agent chuyên về lập trình như Claude Code. Thay vì để AI liên tục sử dụng lệnh grep hoặc đọc file tuần tự gây lãng phí token và KV Cache, CodeGraph thực hiện tiền chỉ mục (pre-index) toàn bộ codebase thành một đồ thị tri thức ngữ nghĩa (Semantic Knowledge Graph). Về mặt kỹ thuật, công cụ này phân tích cấu trúc mã nguồn để dựng lên bản đồ quan hệ bao gồm dependency graph, call graph (luồng gọi hàm) và ánh xạ route-to-handler. Sáng kiến cốt lõi ở đây là chuyển đổi từ phương pháp tìm kiếm văn bản đơn thuần sang Graph-based RAG, giúp AI nhanh chóng xác định \"impact radius\" (bán kính ảnh hưởng) khi có thay đổi trong code mà không cần load toàn bộ file vào context window, tăng tốc độ xử lý và giảm chi phí API đáng kể.",
+            "date": "2026-05-21T00:25:15"
+        },
+        {
+            "title": "🚀 Dograh AI: Nền tảng Voice Agent mã nguồn mở tự host\n\nDograh là một open-source...",
+            "link": "https://www.facebook.com/tinix.vn/posts/pfbid025SXJsRjtqwbCiBb5ffQVxW56SRD3xwhkrcVMM5WQDoMfMkjSYF8BdmLLARLUwLC7l",
+            "source": "Apify: Facebook",
+            "summary_vn": "Dograh AI là nền tảng orchestrate voice agent mã nguồn mở cho phép self-host qua Docker, tối ưu hóa cho các tác vụ đàm thoại thời gian thực (Speech-to-Speech) với độ trễ thấp. Về mặt kỹ thuật, Dograh giải quyết bài toán tích hợp pipeline âm thanh bằng cách cho phép module hóa và thay thế linh hoạt các thành phần STT, LLM và TTS. Nền tảng hỗ trợ tích hợp trực tiếp với Gemini Flash Live và GPT-4o Realtime API qua giao thức WebSocket/WebRTC để giảm thiểu network latency. Điểm cải tiến cốt lõi là bộ visual workflow builder (tương tự cơ chế của n8n hoặc LangGraph) giúp thiết lập luồng điều hướng hội thoại phức tạp, quản lý state, và thực thi Agentic Tool Calling mà không phụ thuộc vào nhà cung cấp đám mây bên thứ ba, đảm bảo kiểm soát dữ liệu hoàn toàn.",
+            "date": "2026-05-19T14:29:32"
         }
     ],
     "debug_stats": {
-        "raw_total": 41,
+        "raw_total": 40,
         "duplicates": 0,
-        "final": 1
+        "final": 2
     }
 }
