@@ -1,107 +1,90 @@
 """
-Advanced utility to handle Gemini API calls with multiple rotations.
-This module provides a mechanism to cycle through multiple API keys and 
-multiple Gemini models to maximize available quota in the Free Tier.
+AI Model Rotation and Quota Management.
+
+This module provides a mechanism to cycle through multiple Google Gemini 
+API keys and model variants to maximize the efficiency of the Free Tier 
+quotas (RPM/TPM limits).
 """
 
-from google import genai
-import time
+import os
+from datetime import datetime
 from src.config import Config
 
-class SmartRotator:
+# Module-level singleton instance for shared model rotation.
+_rotator_instance = None
+
+class ModelRotator:
     """
-    Manages API key and model rotation to bypass rate limits.
+    Stateful manager for rotating API credentials and AI models.
     
-    Attributes:
-        api_keys (list): List of available Gemini API keys.
-        models (list): List of Gemini models to use as fallbacks.
-        clients (list): Pre-initialized genai.Client instances for each key.
-        current_key_index (int): Pointer to the current key in use.
-        current_model_index (int): Pointer to the current model in use.
+    This class tracks usage across multiple keys to avoid '429 Too Many Requests'
+    errors which are common in high-volume research pipelines.
     """
     
     def __init__(self):
-        """Initializes the rotator with keys and models from Config."""
+        # Load keys from Config, which extracts them from environment variables.
         self.api_keys = Config.GEMINI_API_KEYS
         self.models = Config.GEMINI_MODELS_FALLBACK
-        
-        if not self.api_keys:
-            raise ValueError("No GEMINI_API_KEYS found in configuration.")
-            
-        # Pre-initialize clients for better performance during rotation
-        self.clients = [genai.Client(api_key=key) for key in self.api_keys]
-        
         self.current_key_index = 0
         self.current_model_index = 0
+        self._active_rotator = None
+        
+        # --- Block: Safety Validation ---
+        if not self.api_keys:
+            print("  Warning: No GEMINI_API_KEYS found in configuration.")
 
-    def generate_content(self, prompt, attempt=0):
+    def get_model(self):
         """
-        Attempts to generate content using the current key/model pair.
-        Automatically rotates to the next key or model on failure.
+        Initializes and returns a Gemini model instance.
+        
+        Uses the 'google-generativeai' library to create a GenerativeModel 
+        object configured with the current rotatable API key.
+        """
+        import google.generativeai as genai
+        
+        key = self.api_keys[self.current_key_index]
+        model_name = self.models[self.current_model_index]
+        
+        # Configure the global SDK with the selected key.
+        genai.configure(api_key=key)
+        
+        # Log the rotation status for debugging quota issues.
+        print(f"  Rotator: Initializing {model_name} (Key #{self.current_key_index + 1})")
+        
+        return genai.GenerativeModel(model_name)
+
+    def rotate(self, reason: str = "quota"):
+        """
+        Switches to the next available API key or model.
         
         Args:
-            prompt (str): The input text for the AI.
-            attempt (int): Internal counter to prevent infinite retry loops.
-            
-        Returns:
-            str: Generated text response or error message.
+            reason: The trigger for rotation (default is 'quota' for 429 errors).
         """
-        # Calculate total combinations to avoid infinite loops
-        max_attempts = len(self.api_keys) * len(self.models)
-        if attempt >= max_attempts:
-            return "Error: All (API Key + Model) combinations exhausted their quota."
-
-        current_model = self.models[self.current_model_index]
-        client = self.clients[self.current_key_index]
+        # --- Block: Key-First Rotation Strategy ---
+        # We prioritize rotating through keys for a single model first,
+        # as different keys often have separate RPM buckets.
+        self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
         
-        print(f"--- Calling API (Key Index: {self.current_key_index}, Model: {current_model}) ---")
-
-        try:
-            response = client.models.generate_content(
-                model=current_model,
-                contents=prompt
-            )
-            return response.text
-        except Exception as e:
-            err_msg = str(e).upper()
+        # If we have cycled through all keys, we switch to a different model variant.
+        if self.current_key_index == 0:
+            self.current_model_index = (self.current_model_index + 1) % len(self.models)
             
-            # Common quota/rate limit error signals
-            quota_strings = ["429", "RESOURCE_EXHAUSTED", "QUOTA", "REMITTER_LIMIT", "RATE_LIMIT"]
-            
-            if any(qs in err_msg for qs in quota_strings):
-                print(f"!!! QUOTA REACHED for Key {self.current_key_index} on {current_model}.")
-                
-                # ROTATION STRATEGY:
-                # 1. Try next API Key for the SAME model (horizontal scaling)
-                # 2. If all keys fail for this model, move to NEXT model and reset key to 0 (vertical scaling)
-                self.current_key_index += 1
-                if self.current_key_index >= len(self.api_keys):
-                    print("!!! All keys exhausted for this model. Switching to NEXT MODEL...")
-                    self.current_key_index = 0
-                    self.current_model_index = (self.current_model_index + 1) % len(self.models)
-                
-                # Brief settle time to avoid rapid-fire failures
-                time.sleep(2)
-                return self.generate_content(prompt, attempt + 1)
-            else:
-                # Handle 404/Not Found for specific models that might be deprecated/restricted
-                if "404" in err_msg or "NOT FOUND" in err_msg:
-                    print(f"!!! Model {current_model} not available. Trying next model...")
-                    self.current_key_index = 0 
-                    self.current_model_index = (self.current_model_index + 1) % len(self.models)
-                    return self.generate_content(prompt, attempt + 1)
-                
-                return f"Execution failed: {e}"
-
-# Singleton instance to persist rotation state across module imports
-_rotator_instance = None
+        print(f"  Rotator: Switched due to {reason}. Now using Key #{self.current_key_index + 1}")
 
 def get_rotator():
     """
-    Returns the global SmartRotator instance.
-    Ensures that rotation state is shared across all parts of the application.
+    Singleton-style getter for the active ModelRotator.
+    
+    Ensures that multiple components share the same rotation state 
+    within a single execution run.
     """
     global _rotator_instance
     if _rotator_instance is None:
-        _rotator_instance = SmartRotator()
-    return _rotator_instance
+        _rotator_instance = ModelRotator()
+    return _rotator_instance.get_model()
+
+def trigger_rotation(reason="API Limit"):
+    """External trigger to force a rotation in the shared instance."""
+    global _rotator_instance
+    if _rotator_instance is not None:
+        _rotator_instance.rotate(reason)

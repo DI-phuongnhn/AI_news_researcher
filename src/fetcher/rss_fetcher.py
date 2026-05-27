@@ -1,59 +1,44 @@
 """
-RSS feed news fetcher.
-This module extracts articles from RSS feeds, focusing on those published 
-within a specific recent timeframe.
+RSS Feed Fetching Module.
+
+This module provides a lightweight way to consume standard RSS/Atom feeds 
+from official entities like OpenAI or Hugging Face. it uses 'feedparser' 
+for robust handling of different XML standards.
 """
 
+from typing import List, Dict
 import feedparser
-from datetime import datetime, timedelta
-import time
+from datetime import datetime
 
-def fetch_rss_news(rss_url, days=1):
+def fetch_rss_news(feed_url: str) -> List[Dict]:
     """
-    Fetches and parses news from a given RSS URL.
+    Parses an RSS feed and returns normalized news items.
     
     Args:
-        rss_url (str): The URL of the RSS feed.
-        days (int): Number of days to look back for articles. Defaults to 1.
+        feed_url: The URL of the XML RSS/Atom feed.
         
     Returns:
-        list: A list of dictionaries, each containing 'title', 'link', 'summary', 'source', and 'date'.
+        List of dictionaries with standardized news schema.
     """
-    feed = feedparser.parse(rss_url)
-    news_items = []
-    
-    cutoff_date = datetime.now() - timedelta(days=days)
-    
-    for entry in feed.entries:
-        # Some feeds use published_parsed, some use updated_parsed
-        published_parsed = getattr(entry, 'published_parsed', getattr(entry, 'updated_parsed', None))
+    results = []
+    try:
+        # --- Block: Parsing ---
+        # feedparser handles the heavy lifting of XML/Atom standard compatibility.
+        print(f"  RSS: Fetching {feed_url}...")
+        feed = feedparser.parse(feed_url)
         
-        if published_parsed:
-            published_time = datetime.fromtimestamp(time.mktime(published_parsed))
-            if published_time > cutoff_date:
-                news_items.append({
-                    "title": entry.title,
-                    "link": entry.link,
-                    "summary": entry.get("summary", ""),
-                    "source": rss_url,
-                    "date": published_time.isoformat()
-                })
-        else:
-            # Keep undated items explicit so freshness enforcement can discard them.
-            news_items.append({
-                "title": entry.title,
-                "link": entry.link,
-                "summary": entry.get("summary", ""),
-                "source": rss_url,
-                "date": None
+        # --- Block: Extraction ---
+        for entry in feed.entries:
+            # Map RSS fields (published, title, summary) to our internal schema.
+            # We use .get() and fallbacks to handle feeds with missing fields.
+            results.append({
+                "title": entry.get("title", "No Title"),
+                "link": entry.get("link", ""),
+                "summary": entry.get("summary", entry.get("description", "")),
+                "source": f"RSS: {feed.feed.get('title', 'Unknown Source')}",
+                "date": entry.get("published", entry.get("updated", datetime.now().isoformat()))
             })
-            
-    return news_items
-
-if __name__ == "__main__":
-    # Test execution with arXiv
-    test_url = "http://export.arxiv.org/rss/cs.AI"
-    items = fetch_rss_news(test_url)
-    print(f"Fetched {len(items)} items from {test_url}")
-    for item in items[:2]:
-        print(f"- {item['title']} ({item['link']})")
+    except Exception as e:
+        print(f"    Warning: RSS fetch failed for {feed_url}: {e}")
+        
+    return results

@@ -1,150 +1,99 @@
 """
-Technical news summarization and filtering agent.
-This module uses AI to evaluate the technical depth of discovered news 
-and provides high-density Vietnamese summaries for relevant items.
+AI News Summarization Module.
+
+This module leverages Google Gemini models to provide concise, technical 
+summaries of AI news items in Vietnamese. It includes logic for batch 
+processing, token management, and structured formatting.
 """
 
-import os
-import time
-from src.config import Config
+from typing import List, Dict
 from src.agent.model_rotator import get_rotator
+from src.utils.text_utils import normalize_text
 
-def summarize_news(news_list, trending_keywords, known_models=None):
+def summarize_news(news_list: List[Dict], keywords: str, known_models: List[str]) -> List[Dict]:
     """
-    Filters and summarizes news items based on technical signal, global trends, and known models.
+    Translates and summarizes technical news into Vietnamese.
     
     Args:
-        news_list (list): Raw news items from various fetchers.
-        trending_keywords (str): Current trending keywords for context.
+        news_list: List of raw news dictionaries (title, link, summary, source).
+        keywords: Current trending keywords for context.
+        known_models: List of AI models for priority highlighting.
         
     Returns:
-        list: Summarized technical news articles.
+        List of dictionaries with Vietnamese summaries.
     """
-    rotator = get_rotator()
+    if not news_list:
+        return []
+
+    # Get the currently active Gemini model from the rotator.
+    model = get_rotator()
     summaries = []
-    
-    # Domains to exclude based on general/non-technical nature
-    exclude_domains = [
-        "vnexpress.net", "tienphong.vn", "tuoitre.vn", "thanhnien.vn", 
-        "cnn.com", "bbc.com", "nytimes.com", "reuters.com", "bloomberg.com"
-    ]
-    
-    # Step 3.6: Prioritize ScrapeGraph and Facebook FREE items manually in the processing list
-    # These are high-value deep scrapes that should always be processed first
-    def get_priority_score(item):
-        source = item.get("source", "").upper()
-        if "SCRAPEGRAPH" in source: return 0
-        if "FACEBOOK: FREE" in source: return 1
-        if "APIFY" in source: return 2
-        return 3
 
-    # Sources that we TRUST to be technical (ArXiv, official blogs)
-    # These will bypass the strict "TECHNICAL: YES" check if AI fails or is uncertain
-    trusted_sources = ["ARXIV", "SCRAPEGRAPH", "OPENAI", "DEEPMIND", "ANTHROPIC", "NVIDIA"]
-
-    filtered_list = [
-        item for item in news_list 
-        if not any(domain in item['link'] for domain in exclude_domains)
-    ]
-
-    # Sort the list by priority score
-    filtered_list.sort(key=get_priority_score)
-    
-    # Process top candidates (expanded to reach 20+ final items as per user req)
-    items_to_process = filtered_list[:50] 
-    
-    for i, item in enumerate(items_to_process):
-        print(f"Processing item {i+1}/{len(items_to_process)}: {item['title'][:50]}...")
+    # --- Block: Batching Strategy ---
+    # To minimize API roundtrips, we combine multiple news items into a single
+    # prompt. We process in chunks of 5 items to stay within token limits 
+    # and maintain summarization quality.
+    chunk_size = 5
+    for i in range(0, len(news_list), chunk_size):
+        chunk = news_list[i : i + chunk_size]
         
-        # Check if source is trusted
-        source_upper = item.get("source", "").upper()
-        is_trusted = any(ts in source_upper for ts in trusted_sources)
-            
-        models_context = ""
-        if known_models:
-            import random
-            sample_models = random.sample(known_models, min(15, len(known_models)))
-            models_context = f"\n        KNOWN AI MODELS: {', '.join(sample_models)} (and others)"
-
+        # --- Block: Prompt Construction ---
+        # The prompt is designed to ensure technical accuracy while translating 
+        # to Vietnamese. We enforce a HARD CONSTRAINT to always output Vietnamese.
         prompt = f"""
-        You are an Expert Technical AI Researcher / Senior Software Architect.
-        
-        VALIDATION TASK:
-        Analyze the news item to see if it has REAL technical substance for AI Engineers.
-        
-        - Title: {item['title']}
-        - Source: {item['source']}
-        - Content: {item['summary'][:1500]}
-        
-        TRENDING CONTEXT: {trending_keywords}{models_context}
-        
-        CRITERIA FOR 'TECHNICAL: YES':
-        1. Architectural novelty: New model architectures (e.g. MLA, MoE updates), training techniques, or optimization algorithms.
-        2. Frameworks/Ops: Major updates to Agentic frameworks (LangGraph, CrewAI, Autogen) or AI Infrastructure (vLLM, SGLang).
-        3. Research: Math, papers (arXiv), or technical breakdowns from official labs (OpenAI, DeepSeek, Anthropic).
-        4. Benchmarks/Performance: Quantitative technical benchmarks.
-        5. Implicit AI Context: If an item discusses KNOWN AI MODELS performing technical tasks (e.g., segmentation, routing, vision), mark it TECHNICAL: YES even if 'AI' or 'model' is missing.
-        
-        REJECT ('TECHNICAL: NO') IF:
-        - It is just social impact, ethics, or general news.
-        - It is "AI Hype" or high-level product announcements without technical documentation.
-        - It is merely a fundraising announcement or executive hire.
-        - **IMPORTANT: REJECT Community Q&A / Technical Support / Troubleshooting / Bug Reports.**
-          Examples: "How to sign in?", "Antigravity not working on M1", "Is anyone experiencing login issues?", "Need help with API quota", "Can someone help me fix this?".
-          Reject even if it mentions technical terms like MacBook, M1, vLLM, or Sign-in.
-        
-        5. SUMMARIZE (VIETNAMESE):
-           - Provide a high-density technical summary (100-150 words).
-           - USE technical terms: Agentic, Multi-Agent, RAG, KV Cache, LoRA, etc.
-           - Answer: "How does this work technically?" and "What is the specific innovation?"
-        
-        OUTPUT FORMAT (STRICT):
-        TECHNICAL: YES/NO
-        SUMMARY: [Vietnamese summary here]
-        """
-        
-        try:
-            # Rotator handles key rotation internally if 429 occurs
-            result = rotator.generate_content(prompt)
-            
-            # Detect AI failure string from rotator
-            is_ai_failure = result.startswith("Error:") or result.startswith("Execution failed:")
-            
-            if is_ai_failure:
-                print(f"  !!! AI Failure for this item. Fallback triggered. Reason: {result[:50]}...")
-                # FALLBACK: If it's a trusted source, we MUST keep it even if AI failed
-                if is_trusted:
-                    summaries.append({
-                        "title": item['title'],
-                        "link": item['link'],
-                        "source": item['source'],
-                        "summary_vn": item['summary'] if item['summary'] else "AI summarization failed. High-trust source kept as fallback.",
-                        "date": item.get('date', '')
-                    })
-                continue
+Bạn là một chuyên gia nghiên cứu AI. Hãy tóm tắt danh sách tin tức AI dưới đây sang tiếng Việt.
 
-            if "TECHNICAL: YES" in result.upper() or (is_trusted and "TECHNICAL: NO" not in result.upper()):
-                summary_content = result.split("SUMMARY:")[-1].strip()
-                if not summary_content or len(summary_content) < 10:
-                    summary_content = item['summary'] # Fallback to original summary if AI output is broken
-                
-                summaries.append({
-                    "title": item['title'],
-                    "link": item['link'],
-                    "source": item['source'],
-                    "summary_vn": summary_content,
-                    "date": item.get('date', '')
-                })
-        except Exception as e:
-            print(f"  !!! Critical error processing item: {e}")
-            if is_trusted:
-                summaries.append({
-                    "title": item['title'],
-                    "link": item['link'],
-                    "source": item['source'],
-                    "summary_vn": item['summary'],
-                    "date": item.get('date', '')
-                })
+CẢNH BÁO QUAN TRỌNG (HARD CONSTRAINT): 
+- Mọi kết quả tóm tắt PHẢI bằng tiếng Việt (Vietnamese). 
+- KHÔNG ĐƯỢC giữ nguyên các ngôn ngữ khác ngoài tiếng Việt (trừ các thuật ngữ kỹ thuật tiếng Anh).
+- Nếu nội dung gốc là tiếng Trung, tiếng Nhật hoặc ngôn ngữ khác, hãy DỊCH các ý chính sang tiếng Việt.
+
+YÊU CẦU:
+1. Độ dài: tóm tắt ngắn gọn (3-4 câu).
+2. Ngôn ngữ: Tiếng Việt chuyên ngành công nghệ. Giữ nguyên các thuật ngữ tiếng Anh quan trọng (ví dụ: 'Transformer', 'Fine-tuning', 'Agentic', 'Orchestration').
+3. Ưu tiên:
+   - Nếu là tin về ỨNG DỤNG (Applied AI) hoặc AGENT: Hãy giải thích RÕ cách nó hoạt động và lợi ích/giá trị thực tế (Business Value).
+   - Nếu là tin về MODEL: Nêu bật các thông số kỹ thuật hoặc khả năng mới so với bản cũ.
+4. Định dạng: Trả về chính xác cấu trúc bên dưới cho từng item.
+5. Ngữ cảnh: Tập trung vào {keywords} hoặc các model: {', '.join(known_models[:10])}.
+
+TIN TỨC CẦN TÓM TẮT:
+"""
+        for idx, item in enumerate(chunk):
+            prompt += f"\nITEM_{idx}:\nTiêu đề: {item.get('title')}\nNguồn: {item.get('source')}\nNội dung gốc: {item.get('summary')}\n---\n"
+
+        prompt += "\nOUTPUT FORMAT (TRẢ VỀ EXACTLY DƯỚI ĐÂY):\n"
+        for idx in range(len(chunk)):
+            prompt += f"ITEM_{idx}_VN: [Tóm tắt tiếng Việt]\n"
+
+        # --- Block: Generation & Error Handling ---
+        try:
+            response = model.generate_content(prompt).text
             
-    print(f"AI Filtering complete. Kept {len(summaries)} out of {len(items_to_process)} technical items.")
+            # --- Block: Response Parsing ---
+            # Extract the Vietnamese summaries from the raw model response.
+            for idx, item in enumerate(chunk):
+                marker = f"ITEM_{idx}_VN:"
+                if marker in response:
+                    # Extract content between this marker and the next one (or end of string).
+                    start_idx = response.find(marker) + len(marker)
+                    next_marker = f"ITEM_{idx+1}_VN:"
+                    
+                    if next_marker in response:
+                        summary_vn = response[start_idx : response.find(next_marker)].strip()
+                    else:
+                        summary_vn = response[start_idx:].strip()
+                        
+                    summaries.append({
+                        "title": item.get('title'),
+                        "link": item.get('link'),
+                        "source": item.get('source', 'Unknown'),
+                        "summary_vn": summary_vn,
+                        "date": item.get('date')
+                    })
+        except Exception as e:
+            # If AI generation fails (e.g. safety filters, context length),
+            # we log the error and skip this chunk to allow the pipeline to proceed.
+            print(f"  Warning: Summarization failed for chunk starting at {i}: {e}")
+            
     return summaries

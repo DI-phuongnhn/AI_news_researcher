@@ -1,25 +1,46 @@
 {
-    "timestamp": "2026-05-21T04:55:57.577640",
-    "keywords": "EN: [Agentic RAG, Codebase, Context optimization, Token, KV cache, Voice Agent, Docker, Speech-to-Speech, Low latency, Orchestration]\nVN: [RAG hướng Agent, Toàn bộ mã nguồn, Tối ưu hóa ngữ cảnh, Token, Bộ nhớ đệm KV, Agent giọng nói, Docker, Truyền âm thanh trực tiếp (Speech-to-Speech), Độ trễ thấp, Điều phối hệ thống]\nMODELS: [Claude Code]",
-    "reports": [
-        {
-            "title": "🚀 CodeGraph: “Google Maps cho codebase” giúp Claude Code hiểu project nhanh hơn ...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid0Xuh2RYwzNB3M3Jbjrx9XKqkg8h8Q4agD8quqCVhAjXLurzPx7ywvW4xsDfHRHSwSl",
-            "source": "Apify: Facebook",
-            "summary_vn": "CodeGraph là một giải pháp Agentic RAG tối ưu hóa context cho các AI Agent chuyên về lập trình như Claude Code. Thay vì để AI liên tục sử dụng lệnh grep hoặc đọc file tuần tự gây lãng phí token và KV Cache, CodeGraph thực hiện tiền chỉ mục (pre-index) toàn bộ codebase thành một đồ thị tri thức ngữ nghĩa (Semantic Knowledge Graph). Về mặt kỹ thuật, công cụ này phân tích cấu trúc mã nguồn để dựng lên bản đồ quan hệ bao gồm dependency graph, call graph (luồng gọi hàm) và ánh xạ route-to-handler. Sáng kiến cốt lõi ở đây là chuyển đổi từ phương pháp tìm kiếm văn bản đơn thuần sang Graph-based RAG, giúp AI nhanh chóng xác định \"impact radius\" (bán kính ảnh hưởng) khi có thay đổi trong code mà không cần load toàn bộ file vào context window, tăng tốc độ xử lý và giảm chi phí API đáng kể.",
-            "date": "2026-05-21T00:25:15"
-        },
-        {
-            "title": "🚀 Dograh AI: Nền tảng Voice Agent mã nguồn mở tự host\n\nDograh là một open-source...",
-            "link": "https://www.facebook.com/tinix.vn/posts/pfbid025SXJsRjtqwbCiBb5ffQVxW56SRD3xwhkrcVMM5WQDoMfMkjSYF8BdmLLARLUwLC7l",
-            "source": "Apify: Facebook",
-            "summary_vn": "Dograh AI là nền tảng orchestrate voice agent mã nguồn mở cho phép self-host qua Docker, tối ưu hóa cho các tác vụ đàm thoại thời gian thực (Speech-to-Speech) với độ trễ thấp. Về mặt kỹ thuật, Dograh giải quyết bài toán tích hợp pipeline âm thanh bằng cách cho phép module hóa và thay thế linh hoạt các thành phần STT, LLM và TTS. Nền tảng hỗ trợ tích hợp trực tiếp với Gemini Flash Live và GPT-4o Realtime API qua giao thức WebSocket/WebRTC để giảm thiểu network latency. Điểm cải tiến cốt lõi là bộ visual workflow builder (tương tự cơ chế của n8n hoặc LangGraph) giúp thiết lập luồng điều hướng hội thoại phức tạp, quản lý state, và thực thi Agentic Tool Calling mà không phụ thuộc vào nhà cung cấp đám mây bên thứ ba, đảm bảo kiểm soát dữ liệu hoàn toàn.",
-            "date": "2026-05-19T14:29:32"
-        }
-    ],
-    "debug_stats": {
-        "raw_total": 40,
-        "duplicates": 0,
-        "final": 2
+  "timestamp": "2026-05-06T14:30:55.235939",
+  "keywords": "EN: [O1, Seedance, SAM, Ternary Bonsai, Gemini, Claude Code, Grok, DeepSeek]",
+  "reports": [
+    {
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+      "link": "https://openai.com/index/gpt-5-5-instant",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls....",
+      "date": "2026-05-05T10:00:00"
+    },
+    {
+      "title": "GPT-5.5 Instant System Card",
+      "link": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "...",
+      "date": "2026-05-05T10:00:00"
+    },
+    {
+      "title": "New ways to buy ChatGPT ads",
+      "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads....",
+      "date": "2026-05-05T00:00:00"
+    },
+    {
+      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+      "link": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI and PwC are partnering to help enterprises use AI agents to automate finance workflows, improve forecasting, strengthen controls, and modernize the CFO function....",
+      "date": "2026-05-04T21:00:00"
+    },
+    {
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "link": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "How OpenAI rebuilt its WebRTC stack to power real-time Voice AI with low latency, global scale, and seamless conversational turn-taking....",
+      "date": "2026-05-04T00:00:00"
     }
+  ],
+  "debug_stats": {
+    "raw_total": 942,
+    "duplicates": 0,
+    "final": 5
+  }
 }

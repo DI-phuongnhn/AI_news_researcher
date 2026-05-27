@@ -29,19 +29,23 @@ def get_trending_keywords(languages=None):
     time.sleep(2)
     
     prompt = f"""
-    You are an AI Trend Analyst. Your task is to identify the most significant TECHNICAL AI keywords/topics today.
+    You are an AI Trend Analyst specializing in AGENTIC WORKFLOWS and PRACTICAL AI APPLICATIONS. 
+    Your task is to identify the most significant TECHNICAL AI keywords/topics today.
+    
+    CRITICAL CONSTRAINTS:
+    1. AVOID GENERIC TERMS: Do NOT return 'LLM', 'AI', 'Generative AI', 'Chatbot', 'Large Language Model'. These are too broad and low-signal.
+    2. FOCUS ON SPECIFICITY: Identify specific model versions (e.g., 'Claude 3.7', 'DeepSeek-R1', 'O3-mini') or specific agentic patterns (e.g., 'MCP Servers', 'Browser-use', 'Computer-use', 'Multi-agent Orchestration').
+    3. APPLICATION FOCUS: Look for real-world application success stories, solo-agency automation, and AI business workflows.
     
     SOURCES TO CONSIDER:
     - Social Media: Trending developer discussions on X (Twitter), Reddit (r/MachineLearning, r/LocalLLaMA), and Facebook groups.
     - IT Blogs: Latest posts from HuggingFace, Nvidia, and official company blogs (OpenAI, Anthropic, Google).
     
     REQUIREMENTS:
-    1. DEEP SCAN: Do NOT just look at hashtags (#). Scan the FULL content of posts and headlines for hidden technical signals.
-    2. MODEL FOCUS: Always identify specific model versions or products (e.g., 'Claude 3.5 Opus', 'Claude 3.7', 'DeepSeek-V3', 'OpenClaw', 'Llama-4', 'SeeDance', 'Qwen').
-    3. TECHNICAL DEPTH: Focus on architectural novelty (e.g., 'Linear Attention', 'Sparse Mixture of Experts', 'Agentic Reasoners', 'Robotics', 'Open-source LLM').
-    4. ECOSYSTEM & TOOLS: Look for AI infrastructure, Orchestration & Automation tools (e.g., 'n8n', 'LangGraph', 'CrewAI', 'Flowise', 'Vector Databases', 'Dify').
-    5. SECURITY: Include AI cybersecurity + critical software security (e.g., 'Project Glasswing', SBOM, SLSA, provenance, code signing, secure builds, supply chain attacks).
-    6. Provide keywords for these languages: {', '.join(languages)}.
+    1. DEEP SCAN: Scan the FULL content of posts for hidden technical signals.
+    2. ECOSYSTEM & TOOLS: Look for Orchestration & Automation tools (e.g., 'n8n', 'LangGraph', 'CrewAI', 'Flowise', 'Dify', 'Claude Code').
+    3. SECURITY: Include AI cybersecurity signals (e.g., 'Project Glasswing', secure builds, provenance).
+    4. Provide keywords for these languages: {', '.join(languages)}.
     
     OUTPUT FORMAT:
     EN: [keyword1, keyword2, keyword3, ...]
@@ -53,16 +57,20 @@ def get_trending_keywords(languages=None):
     try:
         res = rotator.generate_content(prompt)
         # Check if response is empty or an error message
-        if not res or "execut" in res.lower() or "exhaust" in res.lower() or "error" in res.lower():
+        if not res or any(err in res.lower() for err in ["execut", "exhaust", "error"]):
             raise ValueError(f"Invalid AI response: {res}")
         return res
     except Exception as e:
-        print(f"Warning: Keyword discovery failed ({e}). Using technical fallback...")
-        # High-signal fallback keywords to ensure search never stops
-        fallback = """
-        EN: [LLM, Claude, Agentic Workflow, Qwen, OpenAI, Anthropic, Project Glasswing, Glasswing, Critical Software, Supply Chain, SBOM, SLSA, Provenance, Code Signing, Secure Build, Dependency Confusion, CVE, n8n, LangGraph, CrewAI, Robotics]
-        """
-        return fallback.strip()
+        print(f"Warning: Keyword discovery failed ({e}). Using dynamic model-based fallback...")
+        try:
+            from src.utils.data_manager import DataManager
+            dm = DataManager()
+            models = dm.load_model_names().get("active", [])
+            import random
+            fallback_models = random.sample(models, min(len(models), 8)) if models else ["Claude", "DeepSeek", "Agentic Workflow"]
+            return f"EN: [{', '.join(fallback_models)}]"
+        except:
+            return "EN: [Claude, DeepSeek, Agentic Workflow, MCP, Automation]"
 
 if __name__ == "__main__":
     # Test execution

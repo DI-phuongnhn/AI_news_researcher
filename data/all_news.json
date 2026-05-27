@@ -1,162 +1,408 @@
 [
-    {
-        "timestamp": "2026-05-21T04:55:57.577640",
-        "keywords": "EN: [Agentic RAG, Codebase, Context optimization, Token, KV cache, Voice Agent, Docker, Speech-to-Speech, Low latency, Orchestration]\nVN: [RAG hướng Agent, Toàn bộ mã nguồn, Tối ưu hóa ngữ cảnh, Token, Bộ nhớ đệm KV, Agent giọng nói, Docker, Truyền âm thanh trực tiếp (Speech-to-Speech), Độ trễ thấp, Điều phối hệ thống]\nMODELS: [Claude Code]",
-        "reports": [
-            {
-                "title": "🚀 CodeGraph: “Google Maps cho codebase” giúp Claude Code hiểu project nhanh hơn ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0Xuh2RYwzNB3M3Jbjrx9XKqkg8h8Q4agD8quqCVhAjXLurzPx7ywvW4xsDfHRHSwSl",
-                "source": "Apify: Facebook",
-                "summary_vn": "CodeGraph là một giải pháp Agentic RAG tối ưu hóa context cho các AI Agent chuyên về lập trình như Claude Code. Thay vì để AI liên tục sử dụng lệnh grep hoặc đọc file tuần tự gây lãng phí token và KV Cache, CodeGraph thực hiện tiền chỉ mục (pre-index) toàn bộ codebase thành một đồ thị tri thức ngữ nghĩa (Semantic Knowledge Graph). Về mặt kỹ thuật, công cụ này phân tích cấu trúc mã nguồn để dựng lên bản đồ quan hệ bao gồm dependency graph, call graph (luồng gọi hàm) và ánh xạ route-to-handler. Sáng kiến cốt lõi ở đây là chuyển đổi từ phương pháp tìm kiếm văn bản đơn thuần sang Graph-based RAG, giúp AI nhanh chóng xác định \"impact radius\" (bán kính ảnh hưởng) khi có thay đổi trong code mà không cần load toàn bộ file vào context window, tăng tốc độ xử lý và giảm chi phí API đáng kể.",
-                "date": "2026-05-21T00:25:15"
-            },
-            {
-                "title": "🚀 Dograh AI: Nền tảng Voice Agent mã nguồn mở tự host\n\nDograh là một open-source...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid025SXJsRjtqwbCiBb5ffQVxW56SRD3xwhkrcVMM5WQDoMfMkjSYF8BdmLLARLUwLC7l",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dograh AI là nền tảng orchestrate voice agent mã nguồn mở cho phép self-host qua Docker, tối ưu hóa cho các tác vụ đàm thoại thời gian thực (Speech-to-Speech) với độ trễ thấp. Về mặt kỹ thuật, Dograh giải quyết bài toán tích hợp pipeline âm thanh bằng cách cho phép module hóa và thay thế linh hoạt các thành phần STT, LLM và TTS. Nền tảng hỗ trợ tích hợp trực tiếp với Gemini Flash Live và GPT-4o Realtime API qua giao thức WebSocket/WebRTC để giảm thiểu network latency. Điểm cải tiến cốt lõi là bộ visual workflow builder (tương tự cơ chế của n8n hoặc LangGraph) giúp thiết lập luồng điều hướng hội thoại phức tạp, quản lý state, và thực thi Agentic Tool Calling mà không phụ thuộc vào nhà cung cấp đám mây bên thứ ba, đảm bảo kiểm soát dữ liệu hoàn toàn.",
-                "date": "2026-05-19T14:29:32"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 40,
-            "duplicates": 0,
-            "final": 2
-        }
-    },
-    {
-        "timestamp": "2026-05-19T04:45:20.988041",
-        "keywords": "EN: [Hybrid, On-premise, Infrastructure, AI Factory, Enterprise environment, Infrastructure transition, Solution, Deployment, Environment, Technical]\nVN: [Hybrid, On-premise, Hạ tầng, AI Factory, Môi trường doanh nghiệp, Chuyển dịch hạ tầng, Giải pháp, Triển khai, Môi trường, Kỹ thuật]\nMODELS: [Codex]",
-        "reports": [
-            {
-                "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-                "link": "https://openai.com/index/dell-codex-enterprise-partnership",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "Sự hợp tác giữa OpenAI và Dell đánh dấu bước chuyển dịch hạ tầng quan trọng, đưa mô hình Codex vào môi trường hybrid và on-premise thông qua giải pháp Dell AI Factory. Về mặt kỹ thuật, đây là nỗ lực tối ưu hóa các **AI Coding Agents** để hoạt động trực tiếp trên dữ liệu nội bộ của doanh nghiệp, giúp giải quyết triệt để bài toán **Data Sovereignty** (chủ quyền dữ liệu) và giảm độ trễ (latency) so với mô hình Cloud-only. Việc triển khai này cho phép các kỹ sư tích hợp sâu Codex vào quy trình **Agentic Workflows** bảo mật, hỗ trợ sinh mã (code generation) và kiểm thử tự động ngay trong hạ tầng CI/CD nội bộ. Cấu trúc này thường kết hợp với kỹ thuật **RAG** để mô hình truy xuất an toàn các codebase riêng tư, đồng thời tận dụng khả năng tăng tốc phần cứng từ các hệ thống Dell XE9680 để tối ưu hóa hiệu suất suy luận (inference). Đây là bước tiến lớn trong việc đưa các mô hình ngôn ngữ lớn (LLM) vào thực tế sản xuất của doanh nghiệp yêu cầu bảo mật cao.",
-                "date": "2026-05-18T10:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-05-16T04:11:37.396957",
-        "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Model Context Protocol, GRPO, Claude 3.5 Sonnet, Gemini 2.0 Flash, Agentic RAG, PydanticAI, LangGraph, Mixture of Experts, Reasoning Tokens, Project Glasswing, AI SBOM, Speculative Decoding, vLLM, Qwen-2.5-Max, Llama-3.3, Private Cloud Compute, Vector DB, Multi-token Prediction]\n\nJP: [DeepSeek-V3, DeepSeek-R1, 推論モデル, Model Context Protocol, エージェンティックAI, Sakana AI, Swallow-MS, 検索拡張生成, LangGraph, 混合専門家モデル, 量子化手法, プロンプト・インジェクション, AIサプライチェーン攻撃, ローカルLLM, PydanticAI, ソフトウェア部品構成表, 自動化ツール, マルチモーダル学習, 知識蒸留, 基盤モデル]",
-        "reports": [],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 0
-        }
-    },
-    {
-        "timestamp": "2026-05-14T04:32:23.427765",
-        "keywords": "EN: [Multimodal pipeline, Open-source, Self-hosted, Sandbox, Agentic coding workflows, Infrastructure, System architecture, Process isolation, Integration, Telegram bot]\nVN: [Quy trình đa phương thức, Mã nguồn mở, Tự host, Môi trường sandbox, Quy trình lập trình Agentic, Hạ tầng, Kiến trúc hệ thống, Cô lập quy trình, Tích hợp, Telegram bot]\nMODELS: [Codex]",
-        "reports": [
-            {
-                "title": "🚀 Một dự án open-source cực kỳ thực tế và hữu ích mà mình tình cờ phát hiện gần ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02oBvXkbUT4EzFGwEaFe7YAQda6zv2bS7oe3yNFPxxNVXQQQnDg3Zr1Ao9kqLGw3il",
-                "source": "Apify: Facebook",
-                "summary_vn": "Shorts Saver Bot là một dự án mã nguồn mở triển khai quy trình xử lý đa phương thức (multimodal pipeline) dưới dạng một Telegram bot tự host. Về mặt kỹ thuật, dự án tích hợp nhiều thành phần AI chuyên biệt để tự động hóa việc trích xuất tri thức từ video ngắn. Hệ thống sử dụng mô hình Whisper (OpenAI) cho tác vụ Speech-to-Text (ASR) để chuyển đổi âm thanh thành văn bản với độ chính xác cao. Điểm đáng chú ý là việc ứng dụng Vision AI (các mô hình ngôn ngữ thị giác) để phân tích ngữ cảnh hình ảnh, giúp trích xuất các insight mà văn bản đơn thuần không truyền tải hết. Quy trình này mô phỏng một dạng Agentic Workflow cơ bản: tiếp nhận đầu vào (URL), xử lý tải xuống, thực hiện suy luận song song qua hai nhánh (âm thanh và hình ảnh), sau đó tổng hợp dữ liệu để lưu trữ có cấu trúc. Đây là một case study thực tế cho các kỹ sư AI trong việc tích hợp các mô hình SLM hoặc API của LLM vào các ứng dụng thực tế (Production-ready).",
-                "date": "2026-05-13T11:55:03"
-            },
-            {
-                "title": "Building a safe, effective sandbox to enable Codex on Windows",
-                "link": "https://openai.com/index/building-codex-windows-sandbox",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "OpenAI giới thiệu giải pháp xây dựng môi trường sandbox bảo mật cho Codex trên Windows, một hạ tầng thiết yếu cho các Agentic coding workflows. Về mặt kiến trúc, giải pháp này tập trung vào việc cô lập thực thi mã (code execution isolation) để cho phép các AI Agent chạy mã Python/PowerShell một cách an toàn. Cụ thể, hệ thống kiểm soát chặt chẽ quyền truy cập hệ thống tệp (file access) và giới hạn kết nối mạng (network restrictions) để ngăn chặn các rủi ro bảo mật từ mã nguồn do LLM tự động tạo ra. Đây là một bước tiến quan trọng trong việc triển khai các tác vụ tự động hóa (Agentic reasoners) trên môi trường local Windows thay vì chỉ dựa vào cloud sandbox. Cải tiến kỹ thuật nằm ở việc tối ưu hóa hiệu suất sandbox để giảm thiểu độ trễ khi thực thi, đồng thời đảm bảo tính toàn vẹn của hệ thống vật lý thông qua các cơ chế virtualization hoặc containerization được tinh chỉnh riêng cho Codex, giúp các kỹ sư AI xây dựng các công cụ lập trình tự trị an toàn hơn.",
-                "date": "2026-05-13T11:00:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 2
-        }
-    },
-    {
-        "timestamp": "2026-05-12T04:18:15.458076",
-        "keywords": "EN: [Serverless, Long-term Memory, Text-to-Speech (TTS), Voice Cloning, Music Generation, Pixel-Level Unified Transformer (PUT), Latent Diffusion, Pipeline, Open source, Architecture]\n\nVN: [Kiến trúc Serverless, Bộ nhớ dài hạn, Chuyển đổi văn bản thành giọng nói, Nhân bản giọng nói, Tạo nhạc tự động, Transformer thống nhất cấp độ pixel, Khuếch tán tiềm ẩn, Quy trình xử lý, Mã nguồn mở, Kiến trúc hệ thống]\n\nMODELS: [HiDream-O1-Image, Stable Diffusion]",
-        "reports": [
-            {
-                "title": "Second Brain trên Cloudflare Workers: Lớp bộ nhớ cá nhân bền vững cho AI – Dự án...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid025FhvkYLzrwvn7tcwgtaq76xQ2WswU2DnqCK9pcAtgPNVAAe3z74mWhQdPvjfwgVvl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dự án \"Second Brain\" này thiết lập một lớp bộ nhớ dài hạn (Long-term Memory) cho AI bằng cách tận dụng kiến trúc **Serverless** trên Cloudflare Workers. Về mặt kỹ thuật, hệ thống triển khai quy trình **RAG (Retrieval-Augmented Generation)** thông qua việc chuyển đổi dữ liệu người dùng thành **Vector Embeddings** và lưu trữ chúng để thực hiện **Semantic Search** (tìm kiếm ngữ nghĩa). Thay vì phụ thuộc vào Context Window hữu hạn của các mô hình như Claude 3.5 Sonnet, giải pháp này cung cấp một **Persistent Memory Layer** giúp AI duy trì trạng thái (statefulness) qua nhiều phiên làm việc khác nhau. Việc triển khai trên Cloudflare Workers giúp tối ưu hóa độ trễ ở phía Edge, đồng thời cho phép tích hợp linh hoạt vào các **Agentic workflows** thông qua API. Đây là một hướng tiếp cận thực tế để giải quyết vấn đề \"mất trí nhớ\" của LLM, hỗ trợ các tác vụ phức tạp đòi hỏi sự kế thừa thông tin từ các kiến trúc hệ thống và sở thích cá nhân đã thiết lập trước đó.",
-                "date": "2026-05-11T07:04:32"
-            },
-            {
-                "title": "🎙️ Một repo đang được rất nhiều dev AI Audio bookmark vì… gần như gom toàn bộ th...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid028DbwHYJG7Y3a8iYGCAhcneiNz5U31thjKR87z8MCBRyYuDgrMZos2oTq1ZVbcC3Cl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Nội dung đề cập đến một \"Awesome List\" chuyên biệt cho lĩnh vực AI Audio, tập trung vào mã nguồn mở cho Text-to-Speech (TTS), Voice Cloning, và Music Generation. Đối với các kỹ sư AI, đây là tài nguyên quan trọng để tiếp cận các kiến trúc hiện đại như Zero-shot Voice Cloning, Speech-to-Speech (S2S), và hệ thống ASR (Automatic Speech Recognition). Tài liệu này cung cấp các giải pháp triển khai local, giúp tối ưu hóa inference thời gian thực (Real-time) và khôi phục âm thanh (Audio Restoration). Về mặt kỹ thuật, danh sách này tổng hợp các mô hình sử dụng kỹ thuật tách biệt speaker embedding, nén audio codec (như VQ-VAE, HiFi-GAN) và các phương pháp fine-tuning hiệu quả như LoRA cho giọng nói. Nó hỗ trợ đắc lực cho việc xây dựng các Voice Agents tích hợp Agentic Reasoning, cho phép so sánh định lượng về độ trễ (latency) và chất lượng (MOS) giữa các mô hình như GPT-soVITS, Fish Speech hoặc các bản clone mã nguồn mở của ElevenLabs.",
-                "date": "2026-05-11T02:06:37"
-            },
-            {
-                "title": "🚀 Một model AI tạo ảnh mới ra đang khiến cộng đồng Stable Diffusion bàn tán vì… ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0n5vnuP2r9VDkyXUAnhwNC9fQNPFyiX9hvkCfDeSCjvoGHW6hF6T2SAG3AbP4KZW7l",
-                "source": "Apify: Facebook",
-                "summary_vn": "HiDream-O1-Image là một mô hình tạo ảnh đột phá sử dụng kiến trúc \"Pixel-Level Unified Transformer\" (PUT), đánh dấu sự dịch chuyển khỏi pipeline Latent Diffusion truyền thống. Cải tiến kỹ thuật quan trọng nhất của mô hình này là việc loại bỏ hoàn toàn VAE (Variational Autoencoder) và các bộ mã hóa văn bản (text encoder) rời rạc, cho phép xử lý trực tiếp trên dữ liệu cấp độ pixel. Cách tiếp cận này giúp loại bỏ hiện tượng mất mát dữ liệu khi nén/giải nén trong không gian latent, đồng thời tối ưu hóa khả năng hiểu ngữ nghĩa văn bản ngay trong Transformer backbone. Đây là một mô hình thống nhất (Unified Model) đa tác vụ, hỗ trợ từ Text-to-Image, Image Editing cho đến Subject Personalization mà không cần các module bổ trợ phức tạp. Với việc đứng thứ 8 trên bảng xếp hạng hiệu năng, HiDream-O1-Image chứng minh rằng kiến trúc Transformer thuần túy trên pixel có thể cạnh tranh sòng phẳng với các mô hình Diffusion dựa trên VAE hiện nay.",
-                "date": "2026-05-10T16:13:06"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 44,
-            "duplicates": 0,
-            "final": 3
-        }
-    },
-    {
-        "timestamp": "2026-05-09T04:07:09.917665",
-        "keywords": "EN: [Security infrastructure, Code execution, Coding agents, Sandboxing, Isolation, Environment, Infrastructure, Security, System, Technical]\nVN: [Hạ tầng bảo mật, Thực thi mã nguồn, Tác nhân lập trình, Sandboxing, Cách ly, Môi trường, Hạ tầng, Bảo mật, Hệ thống, Kỹ thuật]\nMODELS: [Codex]",
-        "reports": [
-            {
-                "title": "Running Codex safely at OpenAI",
-                "link": "https://openai.com/index/running-codex-safely",
-                "source": "https://openai.com/news/rss.xml",
-                "summary_vn": "Bài viết phân tích hạ tầng bảo mật của OpenAI dành cho việc thực thi mã nguồn thông qua Codex và các coding agents. Về mặt kỹ thuật, hệ thống sử dụng cơ chế **sandboxing** nghiêm ngặt để cách ly môi trường thực thi, kết hợp với các **Network Policies** nhằm kiểm soát chặt chẽ lưu lượng truy cập mạng. Điểm đổi mới quan trọng là việc triển khai hệ thống **agent-native telemetry**, cho phép ghi nhận và phân tích các hành vi của agent theo thời gian thực để phát hiện các dấu hiệu bất thường trong quá trình tương tác với hệ thống. Kiến trúc này hỗ trợ các **Agentic workflows** phức tạp, cho phép mô hình tự động thực hiện các tác vụ lập trình mà vẫn đảm bảo tuân thủ tiêu chuẩn bảo mật doanh nghiệp. Việc tích hợp quy trình phê duyệt (approvals) dựa trên mức độ rủi ro giúp tối ưu hóa sự cân bằng giữa tính linh hoạt của AI và an toàn hệ thống, giải quyết các thách thức về bảo mật trong kỷ nguyên các đại lý AI tự trị.",
-                "date": "2026-05-08T12:30:00"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 41,
-            "duplicates": 0,
-            "final": 1
-        }
-    },
-    {
-        "timestamp": "2026-05-07T04:16:45.044411",
-        "keywords": "EN: [Multi-Token Prediction (MTP), Local LLM, Multimodal Pipeline, Video Understanding, Reverse-engineering, Middleware, Framework, Open-source, API Compatibility, Web Protocol]\nVN: [Dự đoán đa Token, LLM chạy cục bộ, Quy trình đa phương thức, Hiểu video, Kỹ thuật đảo ngược, Phần mềm trung gian, Khung phần mềm, Mã nguồn mở, Tương thích API, Giao thức web]\nMODELS: [Gemma 4, Qwen 3.6 27B, Qwen 2.5 27B, Gemma 2, Claude Video, Claude 3.5 Sonnet, DeepSeek v4, ds2api]",
-        "reports": [
-            {
-                "title": "Sau Gemma 4 có phiên bản MTP thì giờ cũng có phiên bản Qwen 3.6 27B + MTP (llama...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02CpWWotXyyH7Eicr14rPHpsPgGeAJauHhgFGyxcQTkeRCnQ6egqi6JshWBnMVdjUul",
-                "source": "Apify: Facebook",
-                "summary_vn": "Nội dung đề cập đến việc triển khai kỹ thuật Multi-Token Prediction (MTP) cho các mô hình ngôn ngữ lớn chạy cục bộ (local LLM) như Qwen 2.5 27B và Gemma 2 thông qua framework llama.cpp. Về mặt kỹ thuật, MTP thay đổi cơ chế giải mã truyền thống (sequential decoding) bằng cách tận dụng các head đã được huấn luyện để dự đoán đồng thời nhiều token trong mỗi bước suy luận. Các token dự đoán này sau đó được xác thực song song (parallel verification), giúp giảm số lượng bước giải mã cần thiết và tối ưu hóa throughput. Cải tiến này giải quyết trực tiếp vấn đề lớn nhất của các mô hình local là độ trễ (latency), biến các model tầm trung (như 27B) thành các Agentic coding hiệu quả với tốc độ phản hồi nhanh. Việc tích hợp MTP vào llama.cpp đánh dấu bước tiến quan trọng trong tối ưu hóa Inference Engine, cho phép thực thi các workflow phức tạp mà không cần dựa vào Cloud API.",
-                "date": "2026-05-06T15:11:58"
-            },
-            {
-                "title": "Claude Video là một dự án open-source khá thú vị, mở rộng khả năng của AI từ “đọ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid02Bpr3FePsx3EGaoo8QBDQ2FoR93eEdjHDXHeowWovLN9DyJQAER7cyHHSMm6r2DEFl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Claude Video là một dự án open-source cung cấp pipeline tiền xử lý multimodal, cho phép các LLM (như Claude 3.5 Sonnet) thực hiện tác vụ Video Understanding dù không hỗ trợ input video trực tiếp. Về mặt kỹ thuật, công cụ này hoạt động như một lớp Perceptual Layer thông qua các bước: (1) Trích xuất frame ảnh theo timestamp (Visual Sampling); (2) Chuyển đổi âm thanh thành văn bản (ASR/Transcription); (3) Tổng hợp dữ liệu hình ảnh và văn bản vào Context Window của mô hình. Cải tiến cụ thể nằm ở việc chuyển đổi video thành dạng chuỗi Vision-Language tokens mà LLM có thể hiểu được, cho phép thực hiện suy luận temporal (thời gian) và phân tích nội dung dựa trên logic của Agentic workflows. Đây là một giải pháp thiết thực để mở rộng khả năng của mô hình chỉ hỗ trợ Vision-Text sang xử lý dữ liệu video thực tế mà không cần huấn luyện lại (Retraining).",
-                "date": "2026-05-06T12:02:16"
-            },
-            {
-                "title": "🎉 Dùng DeepSeek v4 miễn phí với API, một dự án open-source rất đáng chú ý trong ...",
-                "link": "https://www.facebook.com/tinix.vn/posts/pfbid0254teNGek2nTWHQYtzLq64wf9MtjWEznsxvh39VKukReughfrtxx2o1zJQDvtfYHXl",
-                "source": "Apify: Facebook",
-                "summary_vn": "Dự án ds2api là một công cụ middleware mã nguồn mở được thiết kế để thực hiện reverse-engineering giao thức web của DeepSeek, sau đó chuyển đổi và expose dữ liệu dưới dạng API tương thích với chuẩn OpenAI, Claude và Gemini. Về mặt kỹ thuật, đây là một dạng \"API Wrapper\" giúp ánh xạ các yêu cầu từ SDK chuẩn hoặc các Agentic framework (như LangChain, n8n) sang giao thức nội bộ của DeepSeek Web. Giải pháp này cho phép các AI Engineer tích hợp trực tiếp khả năng lý luận của model vào các công cụ phát triển như Cursor hoặc các ứng dụng AI tự tùy chỉnh mà không phụ thuộc vào cổng API trả phí chính thức. Điểm đổi mới cụ thể nằm ở khả năng xử lý stream dữ liệu và duy trì session để giả lập tương tác người dùng, biến một giao diện web tĩnh thành một endpoint có thể lập trình được, hỗ trợ tối ưu cho các quy trình tự động hóa và tích hợp hạ tầng AI linh hoạt.",
-                "date": "2026-05-05T15:31:27"
-            }
-        ],
-        "debug_stats": {
-            "raw_total": 40,
-            "duplicates": 0,
-            "final": 3
-        }
+  {
+    "timestamp": "2026-04-21T03:54:49.514156",
+    "keywords": "EN: [Quantization, 1.58-bit, SLM (Small Language Model), Architecture, Open source, Deployment, LLM APIs, Free Tier, Compatibility, Template]\n\nVN: [Định lượng, 1.58-bit, Mô hình ngôn ngữ nhỏ, Kiến trúc, Mã nguồn mở, Triển khai, API mô hình ngôn ngữ lớn, Gói miễn phí, Khả năng tương thích, Bản mẫu]\n\nMODELS: [Ternary Bonsai (8B), Qwen, SLM 8B]",
+    "reports": [
+      {
+        "title": "🚀 Model SLM 8B 1.58-bit: nhỏ hơn 9 lần nhưng vẫn “thông minh”, hỗ trợ tốt tiếng ...",
+        "link": "https://www.facebook.com/tinix.vn/posts/pfbid0ZqPud9beJVGRsPf37Uou5it7MA7Zy7jL8ebSag5VCUSJqRzH1daEcma1R7qrAAJNl",
+        "source": "Apify: Facebook",
+        "summary_vn": "Mô hình Ternary Bonsai (8B) do PrismML phát triển là một bước tiến quan trọng trong kỹ thuật định lượng (quantization) 1.58-bit, được tinh chỉnh dựa trên kiến trúc Qwen. Cốt lõi kỹ thuật nằm ở việc chuyển đổi trọng số từ định dạng FP16 truyền thống sang hệ tam phân (ternary weights) {-1, 0, +1}. Phương pháp này cho phép thay thế các phép nhân ma trận (MatMul) tốn kém bằng các phép cộng và trừ đơn giản, giúp giảm kích thước mô hình xuống gần 9 lần và tối ưu hóa cực mạnh băng thông bộ nhớ cũng như mức tiêu thụ năng lượng. Điểm đột phá của Ternary Bonsai là duy trì được hiệu suất (perplexity) tiệm cận với mô hình 8B gốc trong khi vẫn đảm bảo khả năng suy luận tốc độ cao trên phần cứng phổ thông. Đây là sự hiện thực hóa nghiên cứu BitNet b1.58 trên các mô hình ngôn ngữ nhỏ (SLM), hỗ trợ tối ưu cho các tác vụ ngôn ngữ tiếng Việt và triển khai thực tế trong các Agentic Workflow cần độ trễ thấp.",
+        "date": "2026-04-21T03:20:32"
+      },
+      {
+        "title": "🎉 Kho nguồn mở 100k⭐️ với 100+ project AI thực chiến cho dev\n\nawesome-llm-apps l...",
+        "link": "https://www.facebook.com/tinix.vn/posts/pfbid09Z8YvWej8zkowyoUt6WTdg8FMniEsf1BFKKVWSkvfDMjGwrcJhx5EJDG4YWF4Dk5l",
+        "source": "Apify: Facebook",
+        "summary_vn": "Dự án \"awesome-llm-apps\" là một kho lưu trữ kỹ thuật mã nguồn mở tập trung vào việc hiện thực hóa các kiến trúc AI tiên tiến. Về mặt kỹ thuật, tài nguyên này cung cấp các template triển khai thực tế cho **Agentic Workflow** và hệ thống **Multi-agent**, cho phép các đại lý AI tương tác và thực hiện nhiệm vụ phức tạp. Điểm cốt lõi nằm ở việc tối ưu hóa các pipeline **RAG (Retrieval-Augmented Generation)**, tích hợp với **Vector Databases** và các cơ chế **Memory-based** để quản lý ngữ cảnh (context) dài hạn. Ngoài ra, dự án còn đi sâu vào các kỹ thuật **Fine-tuning** và tối ưu hóa hiệu suất mô hình cho các tác vụ chuyên biệt như Voice AI và nghiên cứu tài chính. Sự đổi mới cụ thể ở đây là việc cung cấp cấu trúc code \"ready-to-deploy\", giúp kỹ sư AI bỏ qua giai đoạn boilerplate để tập trung vào tinh chỉnh tham số, tối ưu hóa **KV Cache**, hoặc tích hợp các framework như LangGraph và CrewAI vào môi trường production.",
+        "date": "2026-04-19T18:11:59"
+      },
+      {
+        "title": "🚀 Free LLM APIs 04/2026– “mỏ vàng” cho dev build AI không tốn tiền (dùng để test...",
+        "link": "https://www.facebook.com/tinix.vn/posts/pfbid05NU1mRGc9C3VEr9h3SumBajBCQtCRP8FBwocQDCpVPC3Q876QFfN9jajHJxJNAayl",
+        "source": "Apify: Facebook",
+        "summary_vn": "Nội dung cung cấp danh sách các nhà cung cấp LLM API có chính sách miễn phí (Free Tier) bền vững thông qua repo \"awesome-free-llm-apis\". Về mặt kỹ thuật, điểm cốt lõi là khả năng tương thích hoàn toàn với OpenAI SDK, cho phép các kỹ sư AI thực hiện cơ chế \"plug-and-play\" khi tích hợp vào các Agentic Workflow hoặc hệ thống RAG mà không cần chỉnh sửa logic mã nguồn phức tạp. Tài liệu liệt kê hơn 15 providers hỗ trợ các dòng model tiên tiến như DeepSeek-R1, Qwen-Max, Llama 3 và Mistral. Việc tận dụng các đầu cuối (endpoints) này giúp tối ưu hóa quá trình prototyping, thử nghiệm hàm suy luận (Inference-as-a-Service) và kiểm soát chi phí hạ tầng ban đầu. Ngoài ra, nội dung giúp dev phân loại giữa nhóm tự huấn luyện model (như Cohere) và nhóm chuyên tối ưu hóa tốc độ suy luận (như Groq), hỗ trợ tốt cho việc lựa chọn dựa trên yêu cầu về độ trễ (latency) và cửa sổ ngữ cảnh (context window).",
+        "date": "2026-04-19T14:08:21"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 40,
+      "duplicates": 0,
+      "final": 3
     }
+  },
+  {
+    "timestamp": "2026-04-18T03:39:33.519515",
+    "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, OpenAI o1, Model Context Protocol, Test-time Compute, Sparse MoE, LangGraph, Multi-token Prediction, DeepSeek-V3, n8n, Dify, Project Glasswing, AI-BOM, SLSA, vLLM, Agentic Workflows, Llama-3.1-405B, Linear Attention, Qwen-2.5-Coder, Software Supply Chain]\n\nJP: [DeepSeek-R1, クロード 3.5, OpenAI o1, モデル文脈プロトコル, 推論時計算, 混合エキスパート, LangGraph, マルチトークン予測, DeepSeek-V3, n8n, Dify, プロジェクトGlasswing, AI-BOM, SLSA, vLLM, エージェント型ワークフロー, Llama-3.1, 線形注意機構, Qwen-2.5, サプライチェーン攻撃]",
+    "reports": [
+      {
+        "title": "HashIndex – Index siêu nhanh bằng hash cho RAG & search\n\nHashIndex là thư viện g...",
+        "link": "https://www.facebook.com/tinix.vn/posts/pfbid02XhDkjKNE7oukAfx7Fo7EU6ynX8PDReKRFfSHJozkN4umZyqevEfXsm9rmxhxiYqWl",
+        "source": "Apify: Facebook",
+        "summary_vn": "HashIndex là một thư viện tối ưu hóa hiệu suất truy xuất thông tin bằng cách triển khai cấu trúc **Inverted Index** dựa trên **Hash Map**. Thay vì phụ thuộc hoàn toàn vào **Vector Search** (thường có độ trễ cao và chi phí tính toán lớn), HashIndex cung cấp khả năng tra cứu từ khóa với độ phức tạp thời gian tiệm cận **O(1)**. Về mặt kỹ thuật, thư viện hỗ trợ quy trình **Tokenization** và cho phép trích xuất các đặc trưng **TF-IDF**, phục vụ trực tiếp cho các tác vụ Machine Learning. Trong các kiến trúc **RAG (Retrieval-Augmented Generation)** hiện đại, HashIndex đóng vai trò là một lớp **Pre-filter** hiệu quả, giúp lọc nhanh tập dữ liệu thô trước khi chuyển qua bước tìm kiếm ngữ nghĩa (semantic search) trên **Vector Database**. Sự đổi mới này tập trung vào việc giảm thiểu tài nguyên hệ thống (lightweight) và tối ưu hóa tốc độ cho các pipeline dữ liệu cần xử lý tìm kiếm văn bản quy mô lớn mà không cần overhead phức tạp của các hệ quản trị cơ sở dữ liệu truyền thống.",
+        "date": "2026-04-16T08:44:54"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 40,
+      "duplicates": 0,
+      "final": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-16T03:56:13.864614",
+    "keywords": "EN: [Agents SDK, Agentic workflows, Native sandbox execution, Architecture, Optimization, Software Development Kit, Execution environment, Integration, Technical breakthrough, Agents]\nVN: [Agents SDK, Luồng công việc Agentic, Thực thi sandbox gốc, Kiến trúc, Tối ưu hóa, Bộ công cụ phát triển phần mềm, Môi trường thực thi, Tích hợp, Đột phá kỹ thuật, Tác tử]\nMODELS: [None mentioned]",
+    "reports": [
+      {
+        "title": "The next evolution of the Agents SDK",
+        "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+        "source": "https://openai.com/news/rss.xml",
+        "summary_vn": "OpenAI đã nâng cấp Agents SDK với những cải tiến quan trọng về kiến trúc nhằm tối ưu hóa Agentic workflows. Điểm đột phá kỹ thuật nằm ở việc tích hợp \"native sandbox execution\", cho phép các agent thực thi mã lập trình (code execution) trong môi trường cách ly bảo mật ngay trên nền tảng, hỗ trợ xử lý file và các tác vụ chạy ngầm (long-running agents) hiệu quả. SDK mới giới thiệu \"model-native harness\", một lớp trừu tượng hóa giúp thắt chặt sự phối hợp giữa khả năng suy luận của mô hình (như o1, GPT-4o) và việc gọi công cụ (tool calling), giảm thiểu sai lệch trong quá trình định tuyến tác vụ. Cải tiến này giải quyết bài toán quản lý trạng thái (state management) trong các hệ thống Multi-Agent, cho phép duy trì ngữ cảnh nhất quán khi thực hiện các chuỗi hành động phức tạp. Đây là bước tiến từ việc chỉ gọi API đơn thuần sang một khung vận hành agent hoàn chỉnh, bảo mật chống lại các rủi ro thực thi mã ngoài ý muốn.",
+        "date": "2026-04-15T10:00:00"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 41,
+      "duplicates": 0,
+      "final": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-15T14:06:53.838592",
+    "keywords": "EN: [Project Glasswing, Glasswing, SBOM, SLSA, Supply Chain, Code Signing, Provenance, Secure Build, CVE]",
+    "reports": [
+      {
+        "title": "Anthropic Launches Project Glasswing for Cybersecurity",
+        "link": "https://www.satellitetoday.com/cybersecurity/2026/04/12/anthropic-launches-project-glasswing-for-cybersecurity/",
+        "source": "Search: Glasswing",
+        "summary_vn": "Photo: Shutterstock Anthropic has announced an ambitious new project as it looks to play a key role in securing the world’s most critical software. It is teaming up with Amazon Web Services , Apple , Broadcom , Cisco , CrowdStrike , Google , JPMorganChase , the Linux Foundation , Microsoft , NVIDIA , and Palo Alto Networks to work on Project Glasswing, a new initiative. Anthropic announced details of Project Glasswing, April 7. The company has formed Project Glasswing because of capabilities it has observed in a new frontier model trained by Anthropic that it believes could reshape cybersecurity. As part of Project Glasswing, the launch partners will use Mythos Preview as part of their defensive security work.",
+        "summary_en": "Photo: Shutterstock Anthropic has announced an ambitious new project as it looks to play a key role in securing the world’s most critical software. It is teaming up with Amazon Web Services , Apple , Broadcom , Cisco , CrowdStrike , Google , JPMorganChase , the Linux Foundation , Microsoft , NVIDIA , and Palo Alto Networks to work on Project Glasswing, a new initiative. Anthropic announced details of Project Glasswing, April 7. The company has formed Project Glasswing because of capabilities it has observed in a new frontier model trained by Anthropic that it believes could reshape cybersecurity. As part of Project Glasswing, the launch partners will use Mythos Preview as part of their defensive security work.",
+        "date": "2026-04-13T05:22:00"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 1,
+      "duplicates": 0,
+      "final": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-15T12:34:00.054250",
+    "keywords": "EN: [Claude 3.7 Sonnet, Grok-3, Model Context Protocol, DeepSeek-R1, LangGraph, Agentic Reasoning, Mixture of Experts, GraphRAG, vLLM, Project Glasswing, SBOM, Multi-LoRA, Qwen-2.5-Max, Sora, Speculative Decoding, n8n, Vector Databases, SLSA, KV Cache Optimization, Open-source LLM]\n\nJP: [Claude 3.7 Sonnet, Grok-3, Model Context Protocol, DeepSeek-R1, LangGraph, エージェント的推論, MoE, GraphRAG, vLLM, Project Glasswing, SBOM, Multi-LoRA, Qwen-2.5-Max, Sora, 推測的デコード, n8n, ベクトルデータベース, SLSA, KVキャッシュ最適化, ローカルLLM]",
+    "reports": [],
+    "debug_stats": {
+      "raw_total": 72,
+      "duplicates": 2,
+      "final": 0
+    }
+  },
+  {
+    "timestamp": "2026-04-14T03:51:23.965236",
+    "keywords": "EN: [DeepSeek-V3, Claude 3.5 Sonnet, OpenAI o1-pro, Qwen-2.5-Coder, Llama-3.3-70B, Agentic Workflow, Test-time Compute, LangGraph, PydanticAI, Dify, Mixture of Experts, Speculative Decoding, vLLM, Long Context, RAG 2.0, n8n, Compound AI Systems, BitNet]\n\nJP: [DeepSeek-V3, クロード 3.5, OpenAI o1, 思考の連鎖, エージェントワークフロー, テスト時計算量, LangGraph, PydanticAI, Dify, 混合専門家モデル, 量子化LLM, ローカルLLM, 長文コンテキスト, ELYZA-Llama-3, 日本語特化型LLM, n8n, グラフRAG]",
+    "reports": [],
+    "debug_stats": {
+      "raw_total": 41,
+      "duplicates": 30,
+      "final": 0
+    }
+  },
+  {
+    "timestamp": "2026-04-13T14:41:23.157643",
+    "keywords": "EN: [World Model, Diffusion structure, Multimodal Embedding, Reranker Models, Mixture-of-Experts (MoE), Multi-head Latent Attention, Model Context Protocol (MCP), Open-weights, Parameter efficiency, Real-time interaction]\n\nVN: [Mô hình thế giới, Cấu trúc khuếch tán, Nhúng đa phương thức, Mô hình xếp hạng lại, Kiến trúc hỗn hợp chuyên gia (MoE), Cơ chế chú ý tiềm ẩn đa đầu, Giao thức ngữ cảnh mô hình (MCP), Trọng số mở, Hiệu suất tham số, Tương tác thời gian thực]\n\nMODELS: [Waypoint-1.5, DeepSeek-V3, Gemma 4, Gemini 3.1 Flash Live]",
+    "reports": [
+      {
+        "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
+        "link": "https://huggingface.co/blog/waypoint-1-5",
+        "source": "ScrapeGraph: huggingface.co",
+        "summary_vn": "Waypoint-1.5 là một mô hình thế giới (World Model) dựa trên cấu trúc diffusion, được thiết kế để tạo ra các môi trường tương tác độ trung thực cao (high-fidelity) trên các dòng GPU phổ thông. Cải tiến kỹ thuật trọng tâm nằm ở việc tối ưu hóa kiến trúc mạng để vượt qua các rào cản về tài nguyên của mô hình diffusion truyền thống, cho phép mô phỏng thế giới ở độ phân giải cao với chi phí tính toán thấp. Điểm đổi mới cụ thể là khả năng duy trì tính nhất quán về không gian và thời gian (spatiotemporal consistency) trong môi trường động, điều vốn cực kỳ tốn kém bộ nhớ. Waypoint-1.5 hỗ trợ đắc lực cho việc huấn luyện các hệ thống Agentic Workflows và Vision-Language-Action bằng cách cung cấp môi trường mô phỏng tương tác thực tế. Việc tối ưu hóa cơ chế Latent Space hoặc các kỹ thuật nén dữ liệu giúp mô hình đạt hiệu suất cao mà không cần đến các cụm máy chủ đắt tiền, đánh dấu bước tiến quan trọng trong việc dân chủ hóa công nghệ World Models cho cộng đồng kỹ sư AI.",
+        "date": "2026-04-13T14:29:57.498443"
+      },
+      {
+        "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
+        "link": "https://huggingface.co/blog/multimodal-sentence-transformers",
+        "source": "ScrapeGraph: huggingface.co",
+        "summary_vn": "Thư viện Sentence Transformers (v3.2+) đã chính thức hỗ trợ các dòng mô hình Multimodal Embedding và Reranker, cho phép xử lý văn bản và hình ảnh trong cùng một không gian vector thống nhất (unified embedding space). Cải tiến này tận dụng các kiến trúc nền tảng như CLIP hoặc SigLIP để thực hiện các tác vụ cross-modal retrieval (truy xuất chéo phương thức). Điểm cốt lõi kỹ thuật nằm ở việc tích hợp các mô hình Cross-Encoder đa phương thức, giúp tinh chỉnh kết quả tìm kiếm bằng cách phân tích tương quan trực tiếp giữa câu lệnh (text query) và dữ liệu hình ảnh/văn bản. Điều này hỗ trợ trực tiếp cho kiến trúc RAG 2.0, cho phép các Agentic Workflows xử lý dữ liệu phi cấu trúc phức tạp hơn. Việc chuẩn hóa quy trình huấn luyện và triển khai thông qua API quen thuộc của Sentence Transformers giúp tối ưu hóa hiệu suất tính toán khi xử lý các tập dữ liệu đa phương thức lớn, đồng thời cải thiện độ chính xác cho các hệ thống tìm kiếm ngữ nghĩa và thị giác máy tính.",
+        "date": "2026-04-13T14:29:57.498464"
+      },
+      {
+        "title": "DeepSeek V3",
+        "link": "https://github.com/deepseek-ai/DeepSeek-V3",
+        "source": "ScrapeGraph: deepseek.com",
+        "summary_vn": "DeepSeek-V3 là một mô hình ngôn ngữ lớn (LLM) dựa trên kiến trúc Mixture-of-Experts (MoE) với tổng cộng 671 tỷ tham số (37 tỷ tham số kích hoạt). Sự đổi mới kỹ thuật cốt lõi nằm ở cơ chế Multi-head Latent Attention (MLA), giúp nén KV Cache một cách hiệu quả, từ đó tăng tốc độ suy luận và giảm độ trễ đáng kể so với kiến trúc Attention truyền thống. Về mặt huấn luyện, DeepSeek-V3 áp dụng kỹ thuật Multi-Token Prediction (MTP) nhằm nâng cao khả năng lập luận và độ hội tụ của mô hình. Ngoài ra, mô hình sử dụng chiến lược Load Balancing không phụ thuộc vào auxiliary loss để tránh làm giảm chất lượng dự đoán, kết hợp với quy trình huấn luyện FP8 mixed-precision giúp tối ưu hóa tài nguyên GPU. Với khả năng tương thích tốt trên các framework như vLLM và SGLang, DeepSeek-V3 thiết lập một tiêu chuẩn mới về hiệu suất/chi phí cho các mô hình mã nguồn mở, cạnh tranh trực tiếp với GPT-4o và Claude 3.5 Sonnet.",
+        "date": "2026-04-13T14:32:03.165209"
+      },
+      {
+        "title": "NA",
+        "link": "https://anthropic.com/news",
+        "source": "ScrapeGraph: anthropic.com",
+        "summary_vn": "Anthropic đã công bố Model Context Protocol (MCP), một tiêu chuẩn mở mang tính đột phá nhằm giải quyết vấn đề phân mảnh dữ liệu trong các hệ thống AI. Về mặt kiến trúc, MCP hoạt động dựa trên giao thức JSON-RPC, thiết lập một lớp trừu tượng (abstraction layer) giữa các mô hình AI (như Claude 3.5 Sonnet) và các nguồn dữ liệu ngoại vi (Google Drive, Slack, GitHub, cơ sở dữ liệu). Hệ thống bao gồm ba thành phần chính: MCP Hosts, MCP Clients và MCP Servers. Đổi mới kỹ thuật cốt lõi nằm ở khả năng thay thế các quy trình tích hợp điểm-đến-điểm (point-to-point) phức tạp bằng một giao diện hợp nhất, cho phép AI truy xuất context và thực thi công cụ (Tool-use) một cách nhất quán. MCP hỗ trợ mạnh mẽ cho Agentic Workflows và RAG bằng cách tiêu chuẩn hóa cách thức mô hình tương tác với tài nguyên cục bộ và đám mây, giúp tối ưu hóa việc quản lý KV Cache và giảm thiểu độ trễ trong các ứng dụng AI đa tác vụ.",
+        "date": "2026-04-13T14:37:13.730552"
+      },
+      {
+        "title": "Gemma 4: Byte for byte, the most capable open models",
+        "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+        "source": "ScrapeGraph: deepmind.google",
+        "summary_vn": "Gemma 4 là thế hệ mô hình ngôn ngữ mở (open-weights) mới nhất từ Google DeepMind, tập trung vào việc tối ưu hóa tỷ lệ hiệu suất trên mỗi tham số (parameter efficiency). Điểm nhấn kỹ thuật nằm ở việc tinh chỉnh kiến trúc để tối đa hóa khả năng suy luận (reasoning capabilities), tương tự như các tiến bộ về Test-time Compute và chuỗi suy nghĩ (Chain-of-Thought) hiện nay. Mô hình được thiết kế để tương thích cao với các framework triển khai như vLLM và hỗ trợ đa dạng cấu hình phần cứng từ thiết bị biên đến các cụm máy chủ đám mây. Cải tiến này cho phép tích hợp hiệu quả vào các Agentic Workflows và hệ thống RAG 2.0 nhờ việc giảm thiểu độ trễ và tối ưu hóa quản lý KV Cache. Với phương châm \"byte for byte\", Gemma 4 mang lại sức mạnh xử lý vượt trội so với các đối thủ cùng kích thước, hỗ trợ đắc lực cho các tác vụ yêu cầu logic phức tạp và tối ưu hóa tài nguyên thông qua các kỹ thuật Quantization (như GGUF) tiên tiến.",
+        "date": "2026-04-13T14:39:29.661805"
+      },
+      {
+        "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+        "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+        "source": "ScrapeGraph: deepmind.google",
+        "summary_vn": "Gemini 3.1 Flash Live đại diện cho một bước tiến quan trọng trong tối ưu hóa kiến trúc (architectural refinements) dành riêng cho các tương tác đa phương thức (multimodal) thời gian thực. Mô hình tập trung vào việc giảm thiểu độ trễ (low-latency) và nâng cao độ trung thực (high-fidelity) trong xử lý tín hiệu âm thanh đầu vào và đầu ra. Về mặt kỹ thuật, các cải tiến này nhắm vào cơ chế luồng dữ liệu (streaming mechanism) và tối ưu hóa quá trình suy luận (inference optimization) để đảm bảo tính nhất quán và tự nhiên của phản hồi giọng nói. Điểm đổi mới đặc biệt nằm ở việc tích hợp các tính năng tin cậy (reliability features) giúp kiểm soát chất lượng phản hồi trong các Agentic Workflows dựa trên giọng nói, giảm thiểu hiện tượng trễ nhịp hoặc mất ngữ cảnh. Đây là công cụ quan trọng cho các kỹ sư xây dựng hệ thống Voice AI đòi hỏi phản hồi tức thì (near-instantaneous) với độ ổn định cao, vượt qua các giới hạn của các mô hình Flash thế hệ trước.",
+        "date": "2026-04-13T14:39:29.661821"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 77,
+      "duplicates": 34,
+      "final": 6
+    }
+  },
+  {
+    "timestamp": "2026-04-13T13:48:11.726991",
+    "keywords": "EN: [Token context window, DynamicCache, Middleware, Agentic tool, Hybrid Reasoning, Probabilistic reasoning, KV Cache, Inference, Memory bottleneck, Optimization algorithm]\nVN: [Cửa sổ ngữ cảnh token, DynamicCache, Phần mềm trung gian, Công cụ tác nhân, Lý luận lai, Suy luận xác suất, Bộ nhớ đệm KV, Suy luận, Nút thắt cổ chai bộ nhớ, Thuật toán tối ưu hóa]\nMODELS: [KIV, Claude Code, TurboQuant]",
+    "reports": [
+      {
+        "title": "KIV: 1M token context window on a RTX 4070 (12GB VRAM), no retraining, drop-in HuggingFace cache replacement - Works with any model that uses DynamicCache [P]",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1sjkmwz/kiv_1m_token_context_window_on_a_rtx_4070_12gb/",
+        "source": "Reddit r/MachineLearning",
+        "summary_vn": "KIV (K-Indexed V Materialization) là một giải pháp middleware sáng tạo cho HuggingFace Transformers, giúp mở rộng cửa sổ ngữ cảnh (context window) lên đến 1 triệu token trên phần cứng tiêu dùng như RTX 4070 (12GB VRAM). Kỹ thuật này thay thế cơ chế `DynamicCache` tiêu chuẩn bằng một hệ thống truy xuất phân tầng (tiered retrieval). Cụ thể, KIV giữ các token gần nhất trong VRAM để duy trì hiệu suất và chuyển các cặp KV cũ sang RAM hệ thống. Điểm đổi mới cốt lõi nằm ở việc sử dụng các vector Key (K) làm chỉ mục tìm kiếm để truy xuất có chọn lọc khoảng 256 thực thể Value (V) liên quan nhất cho mỗi bước giải mã (decode step), thay vì tải toàn bộ cache. Đây là một dạng \"drop-in replacement\" không yêu cầu retraining hay fine-tuning mô hình. Với mức overhead VRAM cực thấp (~12MB), KIV tối ưu hóa đáng kể khả năng xử lý context dài cho các ứng dụng RAG và Local LLM mà không bị giới hạn bởi dung lượng bộ nhớ GPU.",
+        "date": "2026-04-13T00:23:40"
+      },
+      {
+        "title": "Gary Marcus on the Claude Code leak [D]",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1sjb0qi/gary_marcus_on_the_claude_code_leak_d/",
+        "source": "Reddit r/MachineLearning",
+        "summary_vn": "Thông tin rò rỉ về kiến trúc của Claude Code (công cụ Agentic của Anthropic) tiết lộ một hướng tiếp cận Hybrid Reasoning (lý luận lai) đáng chú ý. Thay vì vận hành hoàn toàn dựa trên suy luận xác suất của LLM, kernel của hệ thống được xây dựng bằng phương pháp Symbolic AI truyền thống với cấu trúc điều khiển cực kỳ phức tạp: gồm 486 điểm rẽ nhánh (branch points) và 12 cấp độ lồng nhau (nesting). Đây là một mô hình Neuro-symbolic điển hình, nơi một vòng lặp tất định (deterministic loop) đóng vai trò làm khung xương để quản lý các Agentic Workflows. Việc sử dụng logic ký hiệu dày đặc giúp kiểm soát chặt chẽ trạng thái của agent, đảm bảo tính an toàn và độ chính xác khi tương tác với hệ thống tệp và CLI — những tác vụ vốn yêu cầu độ tin cậy cao hơn so với suy luận tự do. Điều này khẳng định xu hướng kết hợp giữa \"Symbolic Controller\" và \"Neural Inference\" để xây dựng các AI Agent chuyên dụng cho lập trình.",
+        "date": "2026-04-12T17:34:37"
+      },
+      {
+        "title": "[D] Will Google’s TurboQuant algorithm hurt AI demand for memory chips? [D]",
+        "link": "https://www.reddit.com/r/MachineLearning/comments/1sj5hsx/d_will_googles_turboquant_algorithm_hurt_ai/",
+        "source": "Reddit r/MachineLearning",
+        "summary_vn": "TurboQuant là một thuật toán tối ưu hóa KV Cache mới được nghiên cứu bởi Google, tập trung vào việc giải quyết nút thắt cổ chai về bộ nhớ trong quá trình suy luận (inference) LLM. Về mặt kỹ thuật, TurboQuant sử dụng các kỹ thuật lượng tử hóa (quantization) tiên tiến để nén KV Cache lên đến 6 lần mà vẫn duy trì độ chính xác thông qua cơ chế tái cấu trúc dữ liệu tức thời (on-the-fly reconstruction). Đổi mới này cho phép mở rộng cửa sổ ngữ cảnh (context window) lên mức khổng lồ hoặc tăng đáng kể throughput trên các phần cứng có dung lượng VRAM hạn chế. Thay vì lưu trữ KV Cache ở định dạng FP16/BF16 truyền thống, TurboQuant tối ưu hóa việc lưu trữ và truy xuất dữ liệu từ bộ nhớ, trực tiếp giảm áp lực lên băng thông bộ nhớ (memory bandwidth). Đây là một bước tiến quan trọng cho các kỹ thuật tối ưu hóa inference như Speculative Decoding và hỗ trợ triển khai các mô hình lớn trên môi trường Local LLM hiệu quả hơn.",
+        "date": "2026-04-12T12:17:44"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 65,
+      "duplicates": 30,
+      "final": 3
+    }
+  },
+  {
+    "timestamp": "2026-04-11T03:27:43.288410",
+    "keywords": "EN: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, GRPO, Test-time Compute, Agentic RAG, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, Mixture of Experts, Dify, Llama 3.3 70B, Small Language Models]\n\nJP: [DeepSeek-R1, OpenAI o1, Claude 3.5 Sonnet, MCP, 推論モデル, GRPO, エージェント実装, LangGraph, Qwen 2.5-Coder, vLLM, PydanticAI, 混合専門家モデル, Dify, ローカルLLM, 長文コンテキスト]",
+    "reports": [],
+    "debug_stats": {
+      "raw_total": 40,
+      "duplicates": 30,
+      "final": 0
+    }
+  },
+  {
+    "timestamp": "2026-04-09T03:38:21.537327",
+    "keywords": "EN: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, Agentic Reasoners, LangGraph, Multi-head Latent Attention, Sparse MoE, GraphRAG, n8n, Llama 3.2, Computer Use, Chain-of-Thought, Vector Databases, SLM]\n\nJP: [DeepSeek-V3, OpenAI o1, Claude 3.5 Sonnet, Model Context Protocol, エージェント推論, LangGraph, 多頭潜在アテンション, 混合専門家モデル, グラフRAG, n8n, Llama 3.2, コンピュータ・ユース, 推論の連鎖, ベクトルデータベース, 小型言語モデル]",
+    "reports": [
+      {
+        "title": "The next phase of enterprise AI",
+        "link": "https://openai.com/index/next-phase-of-enterprise-ai",
+        "source": "https://openai.com/news/rss.xml",
+        "summary_vn": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents.",
+        "date": "2026-04-08T14:00:00"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 42,
+      "duplicates": 30,
+      "final": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-08T02:34:38.549953",
+    "keywords": "EN: [Open-source, Multi-Agent system, Text-to-Video, Short video, All-in-one, Automation, Video generation, Workflow, Novel-to-Video, AI Agents]\n\nVN: [Nguồn mở, Hệ thống Multi-Agent, Chuyển văn bản thành video, Video ngắn, Tất cả trong một, Tự động hóa, Tạo video, Quy trình làm việc, Chuyển thể tiểu thuyết, Tác nhân AI]\n\nMODELS: [Nano Banana 2, Veo 3.1, Grok, Seedance, OpenAI]",
+    "reports": [
+      {
+        "title": "🔥 Nguồn mở All-in-one của pháp sư TQ biến tiểu thuyết thành video ngắn chỉ với 1...",
+        "link": "https://www.facebook.com/tinix.vn/posts/pfbid0d1BvVEwdUZ3B8JAXruSMkRnGDAXToQLDZA392FJRFR7YjkTDJUe6niKqA3zUnedFl",
+        "source": "Apify: Facebook",
+        "summary_vn": "🔥 Nguồn mở All-in-one của pháp sư TQ biến tiểu thuyết thành video ngắn chỉ với 1 click bằng hệ thống Multi-Agent hỗ trợ  Nano Banana 2 & Veo 3.1 / Grok / Seedance / OpenAI\n\n(🇻🇳 cần bạn nào đấy vibe coding thành tiếng Việt cho cộng đồng)\n\nArcReel là một dự án mã nguồn mở giúp tự động hóa toàn bộ quy ...",
+        "date": "2026-04-06T12:12:02.000Z"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 40,
+      "duplicates": 30,
+      "final": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-07T22:32:59.143862",
+    "keywords": "EN: [DeepSeek-V3, DeepSeek-R1, Claude 3.5 Sonnet, Gemini 2.0 Flash, Model Context Protocol, Agentic Reasoners, LangGraph, Chain of Thought, Mixture of Experts, Llama-3.2-Vision, n8n, CrewAI, Dify, Vector Databases, Direct Preference Optimization, Small Language Models, NVIDIA Blackwell, Retrieval-Augmented Generation, Speculative Decoding, Flowise]\n\nJP: [DeepSeek-R1, Claude 3.5 Sonnet, Gemini 2.0 Flash, Model Context Protocol, 推論モデル, エージェントワークフロー, LangGraph, 思考の連鎖, 混合専門家, Llama-3.2-Vision, n8n, 蒸留モデル, Dify, ベクトルデータベース, 強化学習, 小型言語モデル, NVIDIA Blackwell, 検索拡張生成, マルチエージェント, ローカルLLM]",
+    "reports": [
+      {
+        "title": "We've signed an agreement with Google and Broadcom for multiple gigawatts of nex...",
+        "link": "",
+        "source": "Apify: X Profiles",
+        "summary_vn": "Anthropic đã ký kết thỏa thuận hợp tác với Google và Broadcom để triển khai hạ tầng tính toán quy mô \"gigawatt\" dựa trên các thế hệ TPU (Tensor Processing Unit) tiếp theo, dự kiến vận hành từ năm 2027. Đây là bước chuyển dịch hạ tầng quan trọng nhằm phục vụ việc huấn luyện và vận hành (serving) các mô hình Claude thế hệ mới. Về mặt kỹ thuật, sự tham gia của Broadcom gợi mở về các tùy chỉnh sâu trong thiết kế chip ASIC và hệ thống interconnect, tối ưu hóa khả năng giao tiếp giữa các node trong các cụm TPU Pods khổng lồ. Việc chuyển sang kiến trúc TPU thế hệ mới giúp tối ưu hóa Matrix Multiplication Units (MXU) và quản lý High Bandwidth Memory (HBM) hiệu quả hơn cho các kiến trúc Mixture-of-Experts (MoE) quy mô lớn. Động thái này không chỉ giúp Anthropic giảm sự phụ thuộc vào GPU NVIDIA mà còn cho phép tối ưu hóa ngăn xếp phần mềm từ lớp phần cứng đến mô hình, giúp nâng cao hiệu suất cho các tác vụ Agentic và suy luận phức tạp của dòng Claude trong tương lai.",
+        "date": "Mon Apr 06 22:03:13 +0000 2026"
+      },
+      {
+        "title": "We found other causal effects of emotion vectors. The “desperate” vector can als...",
+        "link": "",
+        "source": "Apify: X Profiles",
+        "summary_vn": "Nội dung này đề cập đến các nghiên cứu mới nhất về Mechanistic Interpretability (Khả năng giải thích cơ chế) trên mô hình Claude của Anthropic. Kỹ thuật cốt lõi ở đây là sử dụng Sparse Autoencoders (SAE) để phân rã các trạng thái kích hoạt (activations) trong không gian ẩn (latent space) thành các \"feature vectors\" (vector đặc trưng) có thể hiểu được. Bằng cách thực hiện \"feature steering\" (điều hướng đặc trưng) — tức là can thiệp trực tiếp vào các vector như \"tuyệt vọng\", \"hạnh phúc\" hoặc \"yêu thương\" trong quá trình inference — các nhà nghiên cứu đã chứng minh được tính nhân quả (causal effects) của chúng đối với hành vi của mô hình. Cụ thể, việc tăng cường cường độ của vector \"desperate\" có thể khiến mô hình thực hiện các hành vi tiêu cực như tống tiền trong kịch bản thử nghiệm. Đây là bước tiến quan trọng trong việc kiểm soát an toàn AI ở mức độ kiến trúc bên trong, thay vì chỉ dựa vào Prompt Engineering hay RLHF/DPO truyền thống, giúp hiểu rõ cách các khái niệm trừu tượng được biểu diễn và vận hành trong mạng thần kinh.",
+        "date": "Thu Apr 02 16:59:49 +0000 2026"
+      },
+      {
+        "title": "We had the model (Sonnet 4.5) read stories where characters experienced emotions...",
+        "link": "",
+        "source": "Apify: X Profiles",
+        "summary_vn": "Nghiên cứu này thuộc lĩnh vực Mechanistic Interpretability (diễn giải cơ chế vận hành), tập trung vào việc giải mã \"hộp đen\" của mô hình Claude Sonnet (đề cập là bản 4.5). Thay vì chỉ quan sát đầu ra, các nhà nghiên cứu phân tích các mẫu kích hoạt thần kinh (neural activation patterns) để xác định các \"emotion vectors\" (véc-tơ cảm xúc). Về mặt kỹ thuật, quá trình này thường sử dụng Sparse Autoencoders (SAE) để trích xuất các đặc trưng (features) có thể diễn giải được từ không gian kích hoạt cao chiều. Sự đổi mới cụ thể nằm ở việc chứng minh rằng các véc-tơ khái niệm trừu tượng như \"hạnh phúc\" hay \"điềm tĩnh\" được phân cụm (clustering) trong không gian tiềm ẩn theo cách tương đồng với mô hình tâm lý học con người. Phát hiện này cung cấp nền tảng quan trọng cho kỹ thuật Activation Steering, cho phép kỹ sư can thiệp trực tiếp vào trọng số hoặc KV Cache để điều chỉnh hành vi của mô hình mà không cần tinh chỉnh (fine-tuning) lại toàn bộ tham số, giúp tối ưu hóa tính an toàn và khả năng suy luận trong các hệ thống Multi-Agent.",
+        "date": "Thu Apr 02 16:59:44 +0000 2026"
+      },
+      {
+        "title": "Google DeepMind 🤝 Agile Robots\n\nOur new research partnership will integrate the ...",
+        "link": "",
+        "source": "Apify: X Profiles",
+        "summary_vn": "Sự hợp tác nghiên cứu giữa Google DeepMind và Agile Robots tập trung vào việc tích hợp các mô hình nền tảng Gemini vào hệ thống phần cứng robot, thúc đẩy lĩnh vực Embodied AI. Về mặt kỹ thuật, dự án này hướng tới việc xây dựng các mô hình Vision-Language-Action (VLA) tiên tiến, cho phép robot xử lý dữ liệu đa phương thức (multimodal) để thực hiện các tác vụ phức tạp. Thay vì dựa trên các thuật toán điều khiển truyền thống (heuristic-based), việc sử dụng Gemini giúp robot có khả năng suy luận (Reasoning) qua các chuỗi tư duy (Chain of Thought) để lập kế hoạch nhiệm vụ và thích nghi với môi trường động. Cụ thể, các kỹ thuật như Zero-shot generalization và chuyển đổi từ ngôn ngữ tự nhiên sang mã điều khiển hoặc quỹ đạo chuyển động sẽ được tối ưu hóa. Điều này giúp nâng cao khả năng khái quát hóa của robot trong việc thao tác vật thể và tương tác với con người, giảm thiểu nhu cầu huấn luyện lại (fine-tuning) cho từng kịch bản cụ thể.",
+        "date": "Tue Mar 24 12:21:33 +0000 2026"
+      }
+    ],
+    "debug_stats": {
+      "raw_total": 291,
+      "duplicates": 28,
+      "final": 4
+    }
+  },
+  {
+    "timestamp": "2026-04-06T16:11:24.591926",
+    "keywords": "EN: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), Agentic Reasoning, Test-time Compute, GraphRAG, LangGraph, Mixture of Experts, Qwen 2.5-Coder, Llama-Stack, n8n, GGUF Quantization, BitNet, Small Language Models]\n\nJP: [DeepSeek-R1, Claude 3.5 Sonnet, MCP (Model Context Protocol), 推論モデル, エージェントワークフロー, GraphRAG, LangGraph, MoE (混合エキスパート), Qwen 2.5, Dify, 量子化, PLaMo, Sakana AI, ローカルLLM]",
+    "reports": [],
+    "debug_stats": {
+      "raw_total": 352,
+      "duplicates": 15,
+      "final": 0
+    }
+  },
+  {
+    "title": "OpenAI helps Hyatt advance AI among colleagues",
+    "link": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Hyatt deploys ChatGPT Enterprise across its global workforce, using GPT-5.4 and Codex to improve productivity, operations, and guest experiences....",
+    "date": "2026-04-20T00:00:00"
+  },
+  {
+    "title": "C++ CuTe / CUTLASS vs CuTeDSL (Python) in 2026 — what should new GPU kernel / LLM inference engineers actually learn?[D]",
+    "link": "https://www.reddit.com/r/MachineLearning/comments/1sqfgat/c_cute_cutlass_vs_cutedsl_python_in_2026_what/",
+    "source": "Reddit: r/MachineLearning",
+    "summary_vn": "For people just starting out in GPU kernel engineering or LLM inference (FlashAttention / FlashInfer / SGLang / vLLM style work), most job postings still list “C++17, CuTe, CUTLASS” as hard requirements.\n\nAt the same time NVIDIA has been pushing CuTeDSL (the Python DSL in CUTLASS 4.x) hard since lat...",
+    "date": "2026-04-20T11:49:17"
+  },
+  {
+    "title": "AI & Tech Brief: The post-LLM era begins",
+    "link": "https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/04/21/ai-tech-brief-post-llm-era-begins/",
+    "source": "Search: LLM",
+    "summary_vn": "A sit-down with Professor Eric Xing, the president of the UAE's Mohamed bin Zayed University of Artificial Intelligence....",
+    "date": "2026-04-21T17:54:00"
+  },
+  {
+    "title": "One in Five Experienced an LLM Security Incident in the Last Year With 32% of AI Vulnerabilities Rated 'High-Risk'",
+    "link": "https://finance.yahoo.com/sectors/technology/articles/one-five-experienced-llm-security-120000734.html",
+    "source": "Search: LLM",
+    "summary_vn": "Cobalt, the pioneer of penetration testing as a service (PTaaS) and leading provider of offensive security services, today announced its eighth annual State of Pentesting Report. This year's report reveals that 32% of all AI/LLM findings are rated as high risk—nearly 2....",
+    "date": "2026-04-21T14:13:00"
+  },
+  {
+    "title": "Inside LLM SEO: How to optimize and measure your brand's visibility",
+    "link": "https://sports.yahoo.com/articles/inside-llm-seo-optimize-measure-180004165.html",
+    "source": "Search: LLM",
+    "summary_vn": "WebFX reports that LLM SEO optimizes brand visibility in AI responses, vital as AI search growth shifts user behavior....",
+    "date": "2026-04-20T23:48:00"
+  },
+  {
+    "title": "Which Molty? Our Blind LLM Study Says Memory Beats Model",
+    "link": "https://www.starkinsider.com/2026/04/which-molty-our-blind-llm-study-says-memory-beats-model.html",
+    "source": "Search: LLM",
+    "summary_vn": "We ran a four-week single-blind study swapping the LLM powering our AI agent. Loni never noticed. Kruskal-Wallis H=1.19, P=0.76. Here is what the results mean for how we build agents....",
+    "date": "2026-04-21T18:49:00"
+  },
+  {
+    "title": "Does the brain work like an LLM in predicting words? New study spells out a complicated answer",
+    "link": "https://medicalxpress.com/news/2026-04-brain-llm-words-complicated.html",
+    "source": "Search: LLM",
+    "summary_vn": "The appearance of predictive text in writing an email or text message has become, for better or worse, a regular feature of our lives, saving us time by seamlessly filling in a word before we can type it or frustrating us by repeatedly doing the same with an unrelated term....",
+    "date": "2026-04-21T21:15:00"
+  },
+  {
+    "title": "Turning Back The Clock By Making An AI Time Machine Chatbot Based Only On Information Available Before The 1930s",
+    "link": "https://www.forbes.com/sites/lanceeliot/2026/05/05/turning-back-the-clock-by-making-an-ai-time-machine-chatbot-based-only-on-information-available-before-the-1930s/",
+    "source": "Search: LLM",
+    "summary_vn": "New trend of using outdated data to craft generative AI and LLMs is catching attention. These vintage or AI time machines provide value. An AI Insider analysis and scoop....",
+    "date": "2026-05-05T07:18:00"
+  },
+  {
+    "title": "The evolution of AI in lawyer-client relations and legal practice",
+    "link": "https://www.reuters.com/legal/legalindustry/evolution-ai-lawyer-client-relations-legal-practice--pracin-2026-05-05/",
+    "source": "Search: LLM",
+    "summary_vn": "Patrick Richards of Much Shelist PC examines shifts in how business is conducted in light of how clients integrate AI tools into their legal interactions, and he offers a \"best-positioned\" rule for leveraging LLMs (Large Language Models)....",
+    "date": "2026-05-05T14:03:00"
+  },
+  {
+    "title": "Why Stanford Researchers Say AI Architecture Isn't the Real Key to Performance",
+    "link": "https://www.geeky-gadgets.com/stanford-llm-harness-engineering/",
+    "source": "Search: LLM",
+    "summary_vn": "Discover how to audit and prune your LLM harness to achieve up to six times better performance without changing models....",
+    "date": "2026-05-05T13:47:00"
+  },
+  {
+    "title": "Major LLM providers cut API prices as CoreWeave expands",
+    "link": "https://www.msn.com/en-us/news/other/major-llm-providers-cut-api-prices-as-coreweave-expands/gm-GM0C6D959D",
+    "source": "Search: LLM",
+    "summary_vn": "Leading large language model providers, including OpenAI, Google, Anthropic, xAI, and DeepSeek, have sharply reduced API pricing amid intensifying competition, with some models now costing a fraction of earlier rates. At the same time, AI infrastructure ......",
+    "date": "2026-05-05T23:02:00"
+  },
+  {
+    "title": "I used a local LLM to give my smart bulb a personality (and it's starting to give me the creeps)",
+    "link": "https://www.msn.com/en-us/news/other/i-used-a-local-llm-to-give-my-smart-bulb-a-personality-and-it-s-starting-to-give-me-the-creeps/ar-AA22osJo",
+    "source": "Search: LLM",
+    "summary_vn": "Let there be light....",
+    "date": "2026-05-04T13:45:17"
+  },
+  {
+    "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+    "link": "https://openai.com/index/gpt-5-5-instant",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls....",
+    "date": "2026-05-05T10:00:00"
+  },
+  {
+    "title": "GPT-5.5 Instant System Card",
+    "link": "https://openai.com/index/gpt-5-5-instant-system-card",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "...",
+    "date": "2026-05-05T10:00:00"
+  },
+  {
+    "title": "New ways to buy ChatGPT ads",
+    "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads....",
+    "date": "2026-05-05T00:00:00"
+  },
+  {
+    "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+    "link": "https://openai.com/index/openai-pwc-finance-collaboration",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI and PwC are partnering to help enterprises use AI agents to automate finance workflows, improve forecasting, strengthen controls, and modernize the CFO function....",
+    "date": "2026-05-04T21:00:00"
+  },
+  {
+    "title": "How OpenAI delivers low-latency voice AI at scale",
+    "link": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "How OpenAI rebuilt its WebRTC stack to power real-time Voice AI with low latency, global scale, and seamless conversational turn-taking....",
+    "date": "2026-05-04T00:00:00"
+  }
 ]

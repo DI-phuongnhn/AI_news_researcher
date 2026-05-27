@@ -1,131 +1,113 @@
 """
-Text Utilities for AI News Researcher.
-Provides normalization and similarity comparison for URLs and news content.
+Text Processing and Date Parsing Utilities.
+
+This module provides common helpers for cleaning text (normalization) 
+and parsing diverse date formats found across various web sources.
 """
 
 import re
-import difflib
 import unicodedata
-from datetime import datetime, timedelta
-from email.utils import parsedate_to_datetime
-from urllib.parse import urlparse, urlunparse
+from datetime import datetime
+from dateutil import parser as date_parser
 
-def normalize_url(url):
+def normalize_text(text: str) -> str:
     """
-    Strips tracking parameters and fragments from a URL for robust comparison.
-    """
-    if not url:
-        return ""
-    try:
-        parsed = urlparse(url)
-        # Keep only scheme, netloc, and path
-        return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path, '', '', ''))
-    except Exception:
-        return url.lower()
-
-def normalize_text(text):
-    """
-    Normalizes text by lowercase, stripping accents, and removing non-alphanumerics.
+    Cleans and normalizes strings for robust keyword matching.
+    
+    1. Converts to lowercase.
+    2. Removes Vietnamese diacritics (e.g. 'á' -> 'a').
+    3. Trims whitespace.
+    
+    Args:
+        text: The raw string to normalize.
+        
+    Returns:
+        A cleaned, lower-case, ASCII-compatible string.
     """
     if not text:
         return ""
-    # Strip accents
-    text = ''.join(c for c in unicodedata.normalize('NFD', text.lower())
-                  if unicodedata.category(c) != 'Mn')
-    # Replace common Vietnamese-specific characters not handled by Mn (like đ)
-    text = text.replace('đ', 'd')
-    # Lowercase and remove all non-word characters except spaces
-    text = re.sub(r'[^\w\s]', '', text)
-    # Collapse multiple spaces
-    text = re.sub(r'\s+', ' ', text)
+    
+    # Lowercase first.
+    text = text.lower()
+    
+    # --- Block: Diacritic Removal ---
+    # We use NFD normalization to separate characters from their accents,
+    # then filter out the 'Combining Diacritical Mark' category (Mn).
+    text = unicodedata.normalize('NFD', text)
+    text = "".join([c for c in text if unicodedata.category(c) != 'Mn'])
+    
+    # Cleanup special characters but keep alphanumeric for matching.
+    text = re.sub(r'[^a-zA-Z0-9\s]', ' ', text)
+    text = " ".join(text.split())
+    
     return text.strip()
 
-def calculate_similarity(text1, text2):
+def parse_flexible_date(date_str: str) -> datetime:
     """
-    Calculates the similarity ratio between two strings using normalized versions.
+    Attempts to parse arbitrary date strings into datetime objects.
+    
+    Handles standard ISO formats, human-readable strings (e.g. '2 hours ago'),
+    and Unix timestamps.
+    
+    Returns:
+        Datetime object if successful, else None.
     """
-    n1 = normalize_text(text1)
-    n2 = normalize_text(text2)
-    if not n1 or not n2:
-        return 0.0
-    return difflib.SequenceMatcher(None, n1, n2).ratio()
-
-
-def parse_flexible_date(date_input):
-    """
-    Parse common absolute and relative date formats into a naive local datetime.
-    Returns None when the input cannot be trusted as a publication date.
-    """
-    if date_input in (None, ""):
+    if not date_str:
         return None
-
-    if isinstance(date_input, datetime):
-        parsed = date_input
-    elif isinstance(date_input, (int, float)):
+        
+    # --- Block: ISO/Standard Parsing ---
+    try:
+        # dateutil.parser is extremely flexible with common English date strings.
+        return date_parser.parse(date_str)
+    except:
+        pass
+        
+    # --- Block: Timestamp Fallback ---
+    # Handle the case where the input might be a string-encoded Unix timestamp.
+    try:
+        if isinstance(date_str, (int, float)) or date_str.isdigit():
+            return datetime.fromtimestamp(float(date_str))
+    except:
+        pass
+        
+    # --- Block: Relative Date Parsing (Minimalist) ---
+    # If the user provides a very custom relative string, we might need 
+    # a library like 'dateparser' (different from dateutil).
+    # For now, we return None to let the pipeline handle it as 'Undated'.
+    return None
+def is_latin_only(text: str, limit: float = 0.3) -> bool:
+    """
+    Heuristic to detect if a string contains significant non-Latin script.
+    
+    Used to filter out Chinese, Japanese, or Korean spam/news if the 
+    user only wants Global/Technical results.
+    
+    Args:
+        text: String to check.
+        limit: Percentage of non-latin characters allowed.
+        
+    Returns:
+        True if the text is mostly Latin/English/Vietnamese.
+    """
+    if not text:
+        return True
+        
+    # Count characters that are NOT Latin, Common, or Inherited (e.g. CJK scripts).
+    # We allow some non-latin for technical symbols.
+    non_latin_count = 0
+    for char in text:
+        cat = unicodedata.category(char)
+        # Skip spaces, numbers, and symbols which are 'Common'
+        if cat.startswith('P') or cat.startswith('N') or cat.startswith('S') or char.isspace():
+            continue
+            
         try:
-            parsed = datetime.fromtimestamp(date_input)
-        except (OverflowError, OSError, ValueError):
-            return None
-    else:
-        text = str(date_input).strip()
-        if not text:
-            return None
-
-        normalized = text.lower()
-        relative_match = re.fullmatch(
-            r"(?:(?P<a>an?|one)\s+)?(?P<value>\d+|an?|one)?\s*"
-            r"(?P<unit>minute|minutes|min|hour|hours|day|days|week|weeks|month|months)"
-            r"\s+ago",
-            normalized,
-        )
-        if relative_match:
-            raw_value = relative_match.group("value") or relative_match.group("a") or "1"
-            value = 1 if raw_value in {"a", "an", "one"} else int(raw_value)
-            unit = relative_match.group("unit")
-            if unit.startswith("min"):
-                delta = timedelta(minutes=value)
-            elif unit.startswith("hour"):
-                delta = timedelta(hours=value)
-            elif unit.startswith("day"):
-                delta = timedelta(days=value)
-            elif unit.startswith("week"):
-                delta = timedelta(weeks=value)
-            else:
-                delta = timedelta(days=value * 30)
-            return datetime.now() - delta
-
-        iso_candidate = text.replace("Z", "+00:00")
-        try:
-            parsed = datetime.fromisoformat(iso_candidate)
-        except ValueError:
-            parsed = None
-
-        if parsed is None:
-            for fmt in (
-                "%Y-%m-%d",
-                "%Y/%m/%d",
-                "%d/%m/%Y",
-                "%b %d, %Y",
-                "%B %d, %Y",
-                "%d %b %Y",
-                "%d %B %Y",
-            ):
-                try:
-                    parsed = datetime.strptime(text, fmt)
-                    break
-                except ValueError:
-                    continue
-
-        if parsed is None:
-            try:
-                parsed = parsedate_to_datetime(text)
-            except (TypeError, ValueError):
-                return None
-
-    if parsed.tzinfo is not None:
-        parsed = parsed.astimezone().replace(tzinfo=None)
-
-    if parsed > datetime.now() + timedelta(days=1):
-        return None
-
-    return parsed
+            name = unicodedata.name(char).lower()
+            # If it's not LATIN and not VIETNAMESE marks.
+            if "latin" not in name and "combining" not in name:
+                non_latin_count += 1
+        except:
+            non_latin_count += 1
+            
+    percentage = non_latin_count / len(text)
+    return percentage < limit

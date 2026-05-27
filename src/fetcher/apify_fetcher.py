@@ -1,239 +1,198 @@
+"""
+Apify-based Social Media Fetching Module.
+
+This module integrates with the Apify platform to scrape X (Twitter) and 
+Facebook. It handles actor orchestration, keyword searching, and payload 
+normalization.
+"""
+
+import os
+import json
+from typing import List, Dict
 from apify_client import ApifyClient
 from src.config import Config
-import json
-import os
 
-def fetch_latest_run_dataset(actor_id: str, platform_name: str):
-    """
-    Feches items from the LATEST run of an actor.
-    Useful when the user has scheduled runs or manual runs on the Apify dashboard.
-    """
-    if not Config.APIFY_API_TOKENS:
-        return []
-
-    for token in Config.APIFY_API_TOKENS:
+def get_apify_client():
+    """Returns an ApifyClient, rotating through available API tokens."""
+    tokens = Config.APIFY_API_TOKENS
+    if not tokens:
+        return None
+        
+    state_file = "data/apify_token_idx.json"
+    idx = 0
+    if os.path.exists(state_file):
         try:
-            client = ApifyClient(token)
-            print(f"  [Apify] Fetching latest run for: {actor_id} ({platform_name})...")
+            with open(state_file, "r") as f:
+                idx = json.load(f).get("token_idx", 0)
+        except:
+            pass
             
-            # Get the last run of the actor
-            runs = client.actor(actor_id).runs().list(limit=1, desc=True)
-            if not runs.items:
-                print(f"    No runs found for {actor_id}.")
-                continue
-                
-            last_run = runs.items[0]
-            if last_run["status"] != "SUCCEEDED":
-                print(f"    Last run status: {last_run['status']}. Still fetching items...")
-                
-            dataset_id = last_run["defaultDatasetId"]
-            posts = []
-            for item in client.dataset(dataset_id).iterate_items():
-                text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
-                url = item.get("url") or item.get("post_url") or item.get("postUrl") or item.get("twitterUrl") or ""
-                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
-                
-                title = item.get("title")
-                if not title:
-                    title = text_content[:80] + "..." if text_content else "No Title"
-                    
-                posts.append({
-                    "title": title,
-                    "link": url,
-                    "summary": text_content[:500],
-                    "source": f"Apify: {platform_name} (Latest Run)",
-                    "date": date_raw
-                })
-            
-            if posts:
-                print(f"    [{platform_name}] Successfully retrieved {len(posts)} items from last run.")
-                return posts
-                
-        except Exception as e:
-            print(f"    [Apify] Error fetching last run for {actor_id}: {e}")
-            continue
-            
-    return []
+    client = ApifyClient(tokens[idx % len(tokens)])
+    
+    # Update state for next run
+    next_idx = (idx + 1) % len(tokens)
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(state_file, "w") as f:
+            json.dump({"token_idx": next_idx}, f)
+    except:
+        pass
+        
+    return client
 
-def fetch_apify_posts(actor_id: str, run_input: dict, platform_name: str):
+def search_x_apify(queries: List[str], max_items: int = None) -> List[Dict]:
     """
-    Generic run function for an Apify Actor.
+    Searches X (Twitter) for trending technical content using an Apify actor.
     
     Args:
-        actor_id (str): The ID of the Apify Actor (e.g., 'apify/twitter-scraper').
-        run_input (dict): The input specification for the Actor.
-        platform_name (str): The name of the platform (e.g., 'X', 'Facebook') for standardized source tagging.
+        queries: List of search query strings (e.g. ['Gemini 1.5', 'OpenAI news']).
+        max_items: Optional override for the maximum number of items to fetch.
         
     Returns:
-        list: A list of unified post dictionaries.
+        List of normalized news items.
     """
     if not Config.APIFY_API_TOKENS:
-        print(f"[{platform_name}] APIFY_API_TOKENS is not set. Skipping Apify fetch.")
         return []
 
-    posts = []
-    
-    for token in Config.APIFY_API_TOKENS:
-        try:
-            client = ApifyClient(token)
-            print(f"  Starting Apify Actor: {actor_id} for {platform_name} (Token: {token[:4]}...)...")
-            print(f"  Input: {run_input}")
-            # Run the actor and wait for it to finish
-            run = client.actor(actor_id).call(run_input=run_input)
-            
-            # Fetch results from the actor's default dataset
-            for item in client.dataset(run["defaultDatasetId"]).iterate_items():
-                text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
-                url = item.get("url") or item.get("post_url") or item.get("postUrl") or item.get("twitterUrl") or ""
-                date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
-                
-                title = item.get("title")
-                if not title:
-                    title = text_content[:80] + "..." if text_content else "No Title"
-                    
-                posts.append({
-                    "title": title,
-                    "link": url,
-                    "summary": text_content[:500],
-                    "source": f"Apify: {platform_name}",
-                    "date": date_raw
-                })
-                
-                
-            print(f"  [{platform_name}] Successfully fetched {len(posts)} items from Apify.")
-            return posts
-            
-        except Exception as e:
-            err_msg = str(e).lower()
-            print(f"  [{platform_name}] Error running Apify Actor {actor_id}: {type(e).__name__}: {e}")
-            
-            # If it's a quota or limit error, try the NEXT token
-            if "usage" in err_msg or "limit" in err_msg or "quota" in err_msg or "429" in err_msg:
-                print("  -> Token exhausted or quota reached. Trying next Apify token...")
-                continue
-            else:
-                # For other errors (e.g. invalid input), don't try other tokens as they will likely fail too
-                break
-                
-    # If we are here, it means all tokens failed OR we broke out of the loop
-    # ONLY now we try the fallback to the latest already-existing run
-    print(f"  -> All Apify tokens exhausted or failed for {platform_name}. Attempting to fetch LATEST ALREADY-EXISTING RUN as final fallback...")
-    latest_posts = fetch_latest_run_dataset(actor_id, platform_name)
-    if latest_posts:
-        return latest_posts
-        
-    print(f"  [{platform_name}] All Apify tokens and fallbacks failed.")
-    return []
+    # --- Block: Client Initialization ---
+    client = get_apify_client()
+    if not client:
+        return []
+    max_count = max_items or Config.APIFY_X_SEARCH_MAX
+    results = []
 
-def search_x_apify(keywords_list, max_items=None):
-    """
-    Search X/Twitter by keywords using the official Apify Twitter Scraper.
-    Actor: apify/twitter-scraper
-    """
-    if max_items is None:
-        max_items = Config.APIFY_X_SEARCH_MAX
-    
-    # Updated to use apidojo/twitter-scraper-lite (newer, more efficient version)
-    actor_id = "apidojo/twitter-scraper-lite"
-    
+    # --- Block: Actor Execution ---
+    # We use 'apidojo/twitter-scraper-lite' for its balance of speed and cost.
     run_input = {
-        "searchTerms": keywords_list,
-        "maxItems": max_items,
-        "sort": "Latest",
-        "tweetLanguage": "en"
+        "searchTerms": queries,
+        "maxTweets": max_count,
+        "addUserInfo": True,
+        "sort": "Latest"
     }
-    return fetch_apify_posts(actor_id, run_input, "X (Twitter)")
 
-def fetch_facebook_posts_apify(target_urls=None, max_items=None):
-    """
-    Scrape posts from Facebook Pages or Groups using the official Facebook Posts Scraper.
-    Actor: apify/facebook-posts-scraper
-    """
-    if max_items is None:
-        max_items = Config.APIFY_FB_MAX
-    
-    if not target_urls:
-        target_urls = Config.FB_URLS
-        
-    if not target_urls:
-        print("  [Facebook Post] No target URLs configured. Skipping.")
-        return []
-        
-    # Standardize to {url: ...} format for the official scraper
-    urls_input = [{"url": url} for url in target_urls if url]
-    
-    actor_id = "apify/facebook-posts-scraper"
-    run_input = {
-        "startUrls": urls_input,
-        "resultsLimit": max_items,
-    }
-    
-    return fetch_apify_posts(actor_id, run_input, "Facebook")
-
-def fetch_x_profiles_apify(handles=None, max_items_per_profile=None):
-    """
-    Scrapes specific X (Twitter) profiles by their handles using the apidojo scraper.
-    Actor: apidojo/tweet-scraper
-    """
-    if max_items_per_profile is None:
-        max_items_per_profile = Config.APIFY_X_PROFILE_MAX
-    
-    if not handles:
-        handles = Config.X_ACCOUNTS
-        
-    if not handles:
-        return []
-
-    actor_id = "apidojo/twitter-scraper-lite"
-    
-    # Update to newer schema: twitterHandles and maxItems
-    run_input = {
-        "twitterHandles": handles,
-        "maxItems": max_items_per_profile * len(handles),
-        "sort": "Latest",
-        "tweetLanguage": "en"
-    }
-    
-    return fetch_apify_posts(actor_id, run_input, "X Profiles")
-
-def load_manual_apify_data(file_path="data/manual_import.json"):
-    """
-    Helper to load manually downloaded Apify JSON data.
-    This allows the user to still feed data manually if automation fails (e.g. quota).
-    """
-    import json
-    import os
-    if not os.path.exists(file_path):
-        return []
-        
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            raw_data = json.load(f)
-            
-        posts = []
-        for item in raw_data:
-            text_content = item.get("full_text") or item.get("text") or item.get("fullText") or item.get("message") or item.get("content") or ""
-            url = item.get("url") or item.get("post_url") or item.get("postUrl") or ""
-            date_raw = item.get("created_at") or item.get("date") or item.get("time") or item.get("createdAt")
-            
-            title = item.get("title")
-            if not title:
-                title = text_content[:80] + "..." if text_content else "Manual Import"
-                
-            posts.append({
-                "title": title,
-                "link": url,
-                "summary": text_content[:500],
-                "source": "Apify: Manual Import",
-                "date": date_raw
+        print(f"  Apify X: Searching for {queries[:2]}...")
+        run = client.actor("apidojo/twitter-scraper-lite").call(run_input=run_input)
+        
+        # --- Block: Data Normalization ---
+        # Map the actor-specific fields ('full_text', 'created_at') to our standard schema.
+        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+            results.append({
+                "title": item.get("full_text", "")[:100] + "...",
+                "link": f"https://x.com/i/web/status/{item.get('id_str')}",
+                "summary": item.get("full_text", ""),
+                "source": f"Apify X: {item.get('user', {}).get('screen_name', 'Unknown')}",
+                "date": item.get("created_at")
             })
-        print(f"  [Manual] Successfully loaded {len(posts)} items from {file_path}.")
-        return posts
     except Exception as e:
-        print(f"  [Manual] Error loading manual data: {e}")
+        print(f"    Warning: Apify X search failed: {e}")
+        
+    return results
+
+def fetch_facebook_posts_apify() -> List[Dict]:
+    """
+    Scrapes specific Facebook pages or groups for AI community news.
+    
+    Target URLs are defined in Config.FB_URLS.
+    """
+    if not Config.APIFY_API_TOKENS or not Config.FB_URLS:
         return []
 
-if __name__ == "__main__":
-    # Test script: you need a valid APIFY_API_TOKEN in your .env
-    test_keywords = ["DeepSeek", "AI Researcher"]
-    print(search_x_apify(test_keywords, max_items=2))
+    client = get_apify_client()
+    if not client:
+        return []
+    results = []
+
+    # --- Block: Actor Configuration ---
+    # 'apify/facebook-post-scraper' is used to monitor specific groups/pages.
+    run_input = {
+        "startUrls": [{"url": url} for url in Config.FB_URLS],
+        "resultsLimit": Config.APIFY_FB_MAX,
+        "viewOption": "CHRONOLOGICAL"
+    }
+
+    try:
+        print(f"  Apify FB: Scrapping {len(Config.FB_URLS)} targets...")
+        run = client.actor("apify/facebook-post-scraper").call(run_input=run_input)
+        
+        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+            results.append({
+                "title": item.get("text", "")[:80] + "...",
+                "link": item.get("url"),
+                "summary": item.get("text", ""),
+                "source": f"Apify FB: {item.get('userName', 'Unknown')}",
+                "date": item.get("time")
+            })
+    except Exception as e:
+        print(f"    Warning: Apify Facebook scraping failed: {e}")
+        
+    return results
+
+def fetch_x_profiles_apify() -> List[Dict]:
+    """
+    Tracks specific technical thought leaders on X for high-signal updates.
+    
+    Account handles are defined in Config.X_ACCOUNTS.
+    """
+    if not Config.APIFY_API_TOKENS or not Config.X_ACCOUNTS:
+        return []
+
+    client = get_apify_client()
+    if not client:
+        return []
+    results = []
+
+    # --- Block: Account Batching ---
+    # Fetch 5 accounts per run to save Apify quota, cycling through the list
+    state_file = "data/apify_account_idx.json"
+    idx = 0
+    if os.path.exists(state_file):
+        try:
+            with open(state_file, "r") as f:
+                idx = json.load(f).get("account_idx", 0)
+        except:
+            pass
+            
+    batch_size = 5
+    start_idx = idx % len(Config.X_ACCOUNTS)
+    end_idx = start_idx + batch_size
+    
+    if end_idx > len(Config.X_ACCOUNTS):
+        batch_accounts = Config.X_ACCOUNTS[start_idx:] + Config.X_ACCOUNTS[:end_idx % len(Config.X_ACCOUNTS)]
+    else:
+        batch_accounts = Config.X_ACCOUNTS[start_idx:end_idx]
+        
+    next_idx = end_idx % len(Config.X_ACCOUNTS)
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(state_file, "w") as f:
+            json.dump({"account_idx": next_idx}, f)
+    except:
+        pass
+
+    # Map handles to full profile URLs.
+    profile_urls = [f"https://x.com/{account}" for account in batch_accounts]
+    
+    run_input = {
+        "startUrls": [{"url": url} for url in profile_urls],
+        "maxTweets": Config.APIFY_X_PROFILE_MAX,
+        "addUserInfo": True,
+        "sort": "Latest"
+    }
+
+    try:
+        print(f"  Apify X Profile: Tracking {len(batch_accounts)} leaders (Batch: {batch_accounts})...")
+        run = client.actor("quacker/twitter-scraper").call(run_input=run_input)
+        
+        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+            results.append({
+                "title": f"Update from @{item.get('user', {}).get('screen_name')}",
+                "link": f"https://x.com/i/web/status/{item.get('id_str')}",
+                "summary": item.get("full_text", ""),
+                "source": f"X Profile: {item.get('user', {}).get('screen_name')}",
+                "date": item.get("created_at")
+            })
+    except Exception as e:
+        print(f"    Warning: Apify X Profile tracking failed: {e}")
+        
+    return results
