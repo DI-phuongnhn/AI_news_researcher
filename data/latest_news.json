@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-05-06T14:30:55.235939",
-  "keywords": "EN: [O1, Seedance, SAM, Ternary Bonsai, Gemini, Claude Code, Grok, DeepSeek]",
+  "timestamp": "2026-05-28T04:51:42.221379",
+  "keywords": "EN: [DeepSeek, O1, Llama, Seedance, Veo, Claude Code, YOLOv10, Qwen]",
   "reports": [
     {
-      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
-      "link": "https://openai.com/index/gpt-5-5-instant",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls....",
-      "date": "2026-05-05T10:00:00"
+      "title": "DeepSeek, Xiaomi Just Made Frontier AI 99% Cheaper. American Labs Went the Other Way",
+      "link": "https://decrypt.co/369202/deepseek-xiaomi-frontier-ai-cheaper-american-labs-other-way",
+      "source": "Search: DeepSeek",
+      "summary_vn": "Back-to-back price cuts from China's top AI labs have made their models a fraction of the cost of GPT-5.5 and Claude Opus....",
+      "date": "2026-05-27T20:18:00"
     },
     {
-      "title": "GPT-5.5 Instant System Card",
-      "link": "https://openai.com/index/gpt-5-5-instant-system-card",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "...",
-      "date": "2026-05-05T10:00:00"
+      "title": "Why DeepSeek Rejected Sequoia for Chinese State Capital",
+      "link": "https://analyticsindiamag.com/ai-features/why-deepseek-rejected-sequoia-for-chinese-state-capital",
+      "source": "Search: DeepSeek",
+      "summary_vn": "Chinese labs like DeepSeek are built on state-aligned capital, while their US peers chase valuations on the back of private VC cycles....",
+      "date": "2026-05-28T01:33:00"
     },
     {
-      "title": "New ways to buy ChatGPT ads",
-      "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads....",
-      "date": "2026-05-05T00:00:00"
+      "title": "DeepSeek Is Now Running Three AI Races at Once",
+      "link": "https://www.bloomberg.com/opinion/articles/2026-05-26/deepseek-is-now-running-three-ai-races-at-once",
+      "source": "Search: DeepSeek",
+      "summary_vn": "When DeepSeek released its highly anticipated V4 model last month, it landed not with a bang but a whimper. There were no declarations of a new \"Sputnik moment\" and global markets shrugged....",
+      "date": "2026-05-26T19:00:00"
     },
     {
-      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
-      "link": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+      "link": "https://openai.com/index/cisco",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI and PwC are partnering to help enterprises use AI agents to automate finance workflows, improve forecasting, strengthen controls, and modernize the CFO function....",
-      "date": "2026-05-04T21:00:00"
+      "summary_vn": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation....",
+      "date": "2026-05-27T11:00:00"
     },
     {
-      "title": "How OpenAI delivers low-latency voice AI at scale",
-      "link": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "title": "Building self-improving tax agents with Codex",
+      "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
       "source": "RSS: OpenAI News",
-      "summary_vn": "How OpenAI rebuilt its WebRTC stack to power real-time Voice AI with low latency, global scale, and seamless conversational turn-taking....",
-      "date": "2026-05-04T00:00:00"
+      "summary_vn": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows....",
+      "date": "2026-05-27T07:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 942,
+    "raw_total": 1475,
     "duplicates": 0,
     "final": 5
   }
