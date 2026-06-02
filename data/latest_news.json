@@ -1,46 +1,46 @@
 {
-  "timestamp": "2026-05-30T04:35:20.458766",
-  "keywords": "EN: [TurboQuant, Gemini, Seedance, O1, Qwen, SAM, Gemma, KIV]",
+  "timestamp": "2026-06-02T05:11:38.892169",
+  "keywords": "EN: [Gemini, Gemma 4, O3-mini, Claude, Llama, Grok, KIV, DeepSeek]",
   "reports": [
     {
-      "title": "Boston Children’s uses AI to unlock new diagnoses",
-      "link": "https://openai.com/index/boston-childrens-hospital",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases....",
-      "date": "2026-05-29T12:00:00"
+      "title": "Bryson DeChambeau credits Sunday 65 to talking with . . . Google Gemini",
+      "link": "https://sports.yahoo.com/articles/bryson-dechambeau-credits-sunday-65-151200068.html",
+      "source": "Search: Gemini",
+      "summary_vn": "Bryson DeChambeau credited a Sunday 65 to a chat he had on Saturday. It just wasn't with a person. Always one to push the boundaries when it comes to improving, the two-time U.S. Open champ credited that final round at the LIV Korea event to a talk he had with Google Gemini....",
+      "date": "2026-06-01T15:26:00"
     },
     {
-      "title": "How Braintrust turns customer requests into code with Codex",
-      "link": "https://openai.com/index/braintrust",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster....",
-      "date": "2026-05-29T12:00:00"
+      "title": "Bryson DeChambeau Turns to Google Gemini AI to Fix Swing: 'I Was Frustrated'",
+      "link": "https://www.msn.com/en-us/sports/golf/bryson-dechambeau-turns-to-google-gemini-ai-to-fix-swing-i-was-frustrated/ar-AA24Ao26",
+      "source": "Search: Gemini",
+      "summary_vn": "Searching for ways to improve his swing, Bryson DeChambeau has taken an unconventional approach using Google Gemini....",
+      "date": "2026-06-01T21:05:38"
     },
     {
-      "title": "Strengthening societal resilience with Rosalind Biodefense",
-      "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI....",
-      "date": "2026-05-29T03:00:00"
+      "title": "4 reasons why the gap between Gemini and ChatGPT is drastically closing",
+      "link": "https://www.androidauthority.com/gemini-chatgpt-gap-closing-reasons-3669341/",
+      "source": "Search: Gemini",
+      "summary_vn": "While ChatGPT is still the most popular AI platform in the world, Gemini is quickly closing the gap for several reasons....",
+      "date": "2026-05-30T12:24:00"
     },
     {
-      "title": "A shared playbook for trustworthy third party evaluations",
-      "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "title": "Our views on AI policy and political advocacy",
+      "link": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems....",
-      "date": "2026-05-29T00:00:00"
+      "summary_vn": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf....",
+      "date": "2026-06-01T17:00:00"
     },
     {
-      "title": "How Endava builds an agentic organization with Codex",
-      "link": "https://openai.com/index/endava",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "link": "https://openai.com/index/stargate-michigan-data-center",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours....",
-      "date": "2026-05-28T12:00:00"
+      "summary_vn": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities....",
+      "date": "2026-06-01T12:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1478,
-    "duplicates": 2,
+    "raw_total": 986,
+    "duplicates": 0,
     "final": 5
   }
 }
