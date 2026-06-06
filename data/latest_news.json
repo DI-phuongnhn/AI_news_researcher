@@ -1,46 +1,32 @@
 {
-  "timestamp": "2026-06-04T05:22:07.254534",
-  "keywords": "EN: [KIV, Gemma, Llama, Nano Banana 2, Qwen, SAM, O1, YOLOv10]",
+  "timestamp": "2026-06-06T04:37:32.923567",
+  "keywords": "EN: [Llama, Gemini, Gemma, KIV, Nano Banana 2, YOLOv10, Seedance, Claude]",
   "reports": [
     {
-      "title": "Introducing new capabilities to GPT-Rosalind",
-      "link": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "link": "https://openai.com/index/endava-frontiers",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities....",
-      "date": "2026-06-03T13:15:00"
+      "summary_vn": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise....",
+      "date": "2026-06-04T12:00:00"
     },
     {
-      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "link": "https://openai.com/index/wasmer",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "link": "https://openai.com/index/chatgpt-memory-dreaming",
       "source": "RSS: OpenAI News",
-      "summary_vn": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months....",
-      "date": "2026-06-03T12:00:00"
+      "summary_vn": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations....",
+      "date": "2026-06-04T09:00:00"
     },
     {
-      "title": "A blueprint for democratic governance of frontier AI",
-      "link": "https://openai.com/index/frontier-safety-blueprint",
+      "title": "Biodefense in the Intelligence Age",
+      "link": "https://openai.com/index/biodefense-in-the-intelligence-age",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security....",
-      "date": "2026-06-03T10:00:00"
-    },
-    {
-      "title": "OpenAI public policy agenda",
-      "link": "https://openai.com/index/public-policy-agenda",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society....",
-      "date": "2026-06-03T10:00:00"
-    },
-    {
-      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-      "link": "https://openai.com/index/travelers",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand....",
-      "date": "2026-06-02T12:00:00"
+      "summary_vn": "An action plan for AI-powered biological resilience...",
+      "date": "2026-06-04T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1208,
-    "duplicates": 2,
-    "final": 5
+    "raw_total": 1492,
+    "duplicates": 4,
+    "final": 3
   }
 }

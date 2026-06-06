@@ -544,5 +544,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand....",
     "date": "2026-06-02T12:00:00"
+  },
+  {
+    "title": "How Endava is redesigning software delivery around AI agents",
+    "link": "https://openai.com/index/endava-frontiers",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise....",
+    "date": "2026-06-04T12:00:00"
+  },
+  {
+    "title": "Dreaming: Better memory for a more helpful ChatGPT",
+    "link": "https://openai.com/index/chatgpt-memory-dreaming",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations....",
+    "date": "2026-06-04T09:00:00"
+  },
+  {
+    "title": "Biodefense in the Intelligence Age",
+    "link": "https://openai.com/index/biodefense-in-the-intelligence-age",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "An action plan for AI-powered biological resilience...",
+    "date": "2026-06-04T00:00:00"
   }
 ]
