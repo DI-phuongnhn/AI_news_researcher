@@ -621,5 +621,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes....",
     "date": "2026-06-09T12:00:00"
+  },
+  {
+    "title": "New OpenAI Academy courses for the next era of work",
+    "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work....",
+    "date": "2026-06-12T10:00:00"
+  },
+  {
+    "title": "How Preply combines AI and human tutors to personalize learning",
+    "link": "https://openai.com/index/preply",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises....",
+    "date": "2026-06-12T00:00:00"
+  },
+  {
+    "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+    "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
+    "date": "2026-06-11T00:00:00"
+  },
+  {
+    "title": "BBVA puts AI at the core of banking with OpenAI",
+    "link": "https://openai.com/index/bbva",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
+    "date": "2026-06-11T00:00:00"
+  },
+  {
+    "title": "OpenAI to acquire Ona",
+    "link": "https://openai.com/index/openai-to-acquire-ona",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows....",
+    "date": "2026-06-11T00:00:00"
   }
 ]
