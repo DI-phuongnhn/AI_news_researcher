@@ -1,46 +1,18 @@
 {
-  "timestamp": "2026-06-13T05:01:33.980561",
-  "keywords": "EN: [Gemma, Seedance, Claude Code, Gemini, Veo, Ternary Bonsai, O3-mini, O1]",
+  "timestamp": "2026-06-16T06:07:26.143911",
+  "keywords": "EN: [Seedance, Grok, Ternary Bonsai, O3-mini, DeepSeek, Llama, Gemma, Nano Banana 2]",
   "reports": [
     {
-      "title": "New OpenAI Academy courses for the next era of work",
-      "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "title": "Introducing the OpenAI Partner Network",
+      "link": "https://openai.com/index/introducing-openai-partner-network",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work....",
-      "date": "2026-06-12T10:00:00"
-    },
-    {
-      "title": "How Preply combines AI and human tutors to personalize learning",
-      "link": "https://openai.com/index/preply",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises....",
-      "date": "2026-06-12T00:00:00"
-    },
-    {
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
-      "date": "2026-06-11T00:00:00"
-    },
-    {
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "link": "https://openai.com/index/bbva",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
-      "date": "2026-06-11T00:00:00"
-    },
-    {
-      "title": "OpenAI to acquire Ona",
-      "link": "https://openai.com/index/openai-to-acquire-ona",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows....",
-      "date": "2026-06-11T00:00:00"
+      "summary_vn": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation....",
+      "date": "2026-06-14T17:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1433,
-    "duplicates": 3,
-    "final": 5
+    "raw_total": 1407,
+    "duplicates": 0,
+    "final": 1
   }
 }
