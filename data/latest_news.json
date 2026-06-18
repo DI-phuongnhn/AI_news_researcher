@@ -1,18 +1,25 @@
 {
-  "timestamp": "2026-06-16T06:07:26.143911",
-  "keywords": "EN: [Seedance, Grok, Ternary Bonsai, O3-mini, DeepSeek, Llama, Gemma, Nano Banana 2]",
+  "timestamp": "2026-06-18T05:17:51.280988",
+  "keywords": "EN: [Llama, Seedance, Veo, Gemini, Ternary Bonsai, Gemma 4, O1, Gemma]",
   "reports": [
     {
-      "title": "Introducing the OpenAI Partner Network",
-      "link": "https://openai.com/index/introducing-openai-partner-network",
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "link": "https://openai.com/index/ai-chemist-improves-reaction",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation....",
-      "date": "2026-06-14T17:00:00"
+      "summary_vn": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research....",
+      "date": "2026-06-17T10:00:00"
+    },
+    {
+      "title": "Predicting model behavior before release by simulating deployment",
+      "link": "https://openai.com/index/deployment-simulation",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
+      "date": "2026-06-16T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1407,
+    "raw_total": 1508,
     "duplicates": 0,
-    "final": 1
+    "final": 2
   }
 }

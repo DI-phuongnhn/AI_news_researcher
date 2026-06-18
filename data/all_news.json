@@ -663,5 +663,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation....",
     "date": "2026-06-14T17:00:00"
+  },
+  {
+    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+    "link": "https://openai.com/index/ai-chemist-improves-reaction",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research....",
+    "date": "2026-06-17T10:00:00"
+  },
+  {
+    "title": "Predicting model behavior before release by simulating deployment",
+    "link": "https://openai.com/index/deployment-simulation",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
+    "date": "2026-06-16T00:00:00"
   }
 ]
