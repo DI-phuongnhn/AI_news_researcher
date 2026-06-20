@@ -677,5 +677,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
     "date": "2026-06-16T00:00:00"
+  },
+  {
+    "title": "New usage analytics and updated spend controls for enterprises",
+    "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence....",
+    "date": "2026-06-18T17:00:00"
+  },
+  {
+    "title": "Improving health intelligence in ChatGPT",
+    "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations....",
+    "date": "2026-06-18T11:00:00"
+  },
+  {
+    "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+    "link": "https://openai.com/index/diagnose-rare-childhood-diseases",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
+    "date": "2026-06-18T08:00:00"
   }
 ]
