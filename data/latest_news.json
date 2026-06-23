@@ -1,32 +1,39 @@
 {
-  "timestamp": "2026-06-20T04:51:46.347381",
-  "keywords": "EN: [KIV, Llama, Veo, TurboQuant, Gemini, Claude Code, SAM, YOLOv10]",
+  "timestamp": "2026-06-23T04:41:45.203813",
+  "keywords": "EN: [TurboQuant, Seedance, Grok, Veo, O3-mini, SAM, Claude Code, Qwen]",
   "reports": [
     {
-      "title": "New usage analytics and updated spend controls for enterprises",
-      "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "link": "https://openai.com/index/patch-the-planet",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence....",
-      "date": "2026-06-18T17:00:00"
+      "summary_vn": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review....",
+      "date": "2026-06-22T10:00:00"
     },
     {
-      "title": "Improving health intelligence in ChatGPT",
-      "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "link": "https://openai.com/index/daybreak-securing-the-world",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations....",
-      "date": "2026-06-18T11:00:00"
+      "summary_vn": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale....",
+      "date": "2026-06-22T10:00:00"
     },
     {
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "link": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "title": "Codex-maxxing for long-running work",
+      "link": "https://openai.com/index/codex-maxxing-long-running-work",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
-      "date": "2026-06-18T08:00:00"
+      "summary_vn": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt....",
+      "date": "2026-06-22T00:00:00"
+    },
+    {
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "link": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts....",
+      "date": "2026-06-21T23:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1017,
-    "duplicates": 1,
-    "final": 3
+    "raw_total": 1417,
+    "duplicates": 0,
+    "final": 4
   }
 }

@@ -698,5 +698,33 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
     "date": "2026-06-18T08:00:00"
+  },
+  {
+    "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+    "link": "https://openai.com/index/patch-the-planet",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review....",
+    "date": "2026-06-22T10:00:00"
+  },
+  {
+    "title": "Daybreak: Tools for securing every organization in the world",
+    "link": "https://openai.com/index/daybreak-securing-the-world",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale....",
+    "date": "2026-06-22T10:00:00"
+  },
+  {
+    "title": "Codex-maxxing for long-running work",
+    "link": "https://openai.com/index/codex-maxxing-long-running-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt....",
+    "date": "2026-06-22T00:00:00"
+  },
+  {
+    "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+    "link": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts....",
+    "date": "2026-06-21T23:00:00"
   }
 ]
