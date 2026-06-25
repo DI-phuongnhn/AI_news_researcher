@@ -726,5 +726,33 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts....",
     "date": "2026-06-21T23:00:00"
+  },
+  {
+    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+    "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems....",
+    "date": "2026-06-24T06:00:00"
+  },
+  {
+    "title": "Helping build shared standards for advanced AI",
+    "link": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation....",
+    "date": "2026-06-23T13:00:00"
+  },
+  {
+    "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+    "link": "https://openai.com/index/gpt-5-immunology-mystery",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research....",
+    "date": "2026-06-23T17:00:00"
+  },
+  {
+    "title": "How Omio is building the future of conversational travel",
+    "link": "https://openai.com/index/omio",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company....",
+    "date": "2026-06-23T00:00:00"
   }
 ]
