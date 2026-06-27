@@ -1,39 +1,25 @@
 {
-  "timestamp": "2026-06-25T04:45:50.911156",
-  "keywords": "EN: [Grok, KIV, Gemma, Gemma 4, Gemini, DeepSeek, YOLOv10, Ternary Bonsai]",
+  "timestamp": "2026-06-27T04:35:10.514226",
+  "keywords": "EN: [O3-mini, Claude, Qwen, Grok, Llama, Gemma 4, Seedance, KIV]",
   "reports": [
     {
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems....",
-      "date": "2026-06-24T06:00:00"
+      "title": "Update from @dair_ai",
+      "link": "https://x.com/i/web/status/2069846777977880769",
+      "source": "X Profile: dair_ai",
+      "summary_vn": "// Agent memory is a data system now //\n\nGreat paper on long-term memory for LLM agents.\n\n(bookmark it)\n\nAgent memory has grown from simple retrieval into a full data-management layer with storage, retrieval, update, consolidation, and lifecycle governance. Yet most evaluations https://t.co/lRmSQapj...",
+      "date": "2026-06-24T18:15:02"
     },
     {
-      "title": "Helping build shared standards for advanced AI",
-      "link": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "link": "https://openai.com/index/previewing-gpt-5-6-sol",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation....",
-      "date": "2026-06-23T13:00:00"
-    },
-    {
-      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-      "link": "https://openai.com/index/gpt-5-immunology-mystery",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research....",
-      "date": "2026-06-23T17:00:00"
-    },
-    {
-      "title": "How Omio is building the future of conversational travel",
-      "link": "https://openai.com/index/omio",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company....",
-      "date": "2026-06-23T00:00:00"
+      "summary_vn": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack....",
+      "date": "2026-06-26T10:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1519,
-    "duplicates": 2,
-    "final": 4
+    "raw_total": 1522,
+    "duplicates": 1,
+    "final": 2
   }
 }
