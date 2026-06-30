@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-06-27T04:35:10.514226",
-  "keywords": "EN: [O3-mini, Claude, Qwen, Grok, Llama, Gemma 4, Seedance, KIV]",
+  "timestamp": "2026-06-30T04:45:00.908303",
+  "keywords": "EN: [SAM, O1, YOLOv10, DeepSeek, Gemini, Gemma, Llama, Ternary Bonsai]",
   "reports": [
     {
-      "title": "Update from @dair_ai",
-      "link": "https://x.com/i/web/status/2069846777977880769",
-      "source": "X Profile: dair_ai",
-      "summary_vn": "// Agent memory is a data system now //\n\nGreat paper on long-term memory for LLM agents.\n\n(bookmark it)\n\nAgent memory has grown from simple retrieval into a full data-management layer with storage, retrieval, update, consolidation, and lifecycle governance. Yet most evaluations https://t.co/lRmSQapj...",
-      "date": "2026-06-24T18:15:02"
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes....",
+      "date": "2026-06-29T07:00:00"
     },
     {
-      "title": "Previewing GPT-5.6 Sol: a next-generation model",
-      "link": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+      "link": "https://openai.com/index/hp-frontier-partnership",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack....",
-      "date": "2026-06-26T10:00:00"
+      "summary_vn": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations....",
+      "date": "2026-06-28T17:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1522,
-    "duplicates": 1,
+    "raw_total": 1206,
+    "duplicates": 0,
     "final": 2
   }
 }
