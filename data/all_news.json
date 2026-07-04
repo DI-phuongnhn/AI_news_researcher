@@ -810,5 +810,12 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
     "date": "2026-06-30T00:00:00"
+  },
+  {
+    "title": "Update from @dair_ai",
+    "link": "https://x.com/i/web/status/2073065231790809214",
+    "source": "X Profile: dair_ai",
+    "summary_vn": "Can coding-agents replicate scientific ML papers?\n\nWe know this is possible because we can already do this @dair_ai.\n\nStill a great read.\n\nSo they try to replicate an ML paper from its materials alone.\n\nThey use a coding-agent skill that turns each selected paper claim into a https://t.co/qUSYW0TemB...",
+    "date": "2026-07-03T15:24:01"
   }
 ]

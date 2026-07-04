@@ -1,39 +1,18 @@
 {
-  "timestamp": "2026-07-02T04:41:07.577509",
-  "keywords": "EN: [Gemini, KIV, Grok, Gemma 4, Ternary Bonsai, Llama, Claude, Qwen]",
+  "timestamp": "2026-07-04T04:12:02.859748",
+  "keywords": "EN: [O3-mini, SAM, TurboQuant, Veo, Claude Code, Grok, Nano Banana 2, Gemma 4]",
   "reports": [
     {
-      "title": "How ChatGPT adoption has expanded",
-      "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages....",
-      "date": "2026-06-30T09:00:00"
-    },
-    {
-      "title": "Inside Genebench-Pro",
-      "link": "https://openai.com/index/genebench-pro/case-studies",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "...",
-      "date": "2026-06-30T00:00:00"
-    },
-    {
-      "title": "Introducing GeneBench-Pro",
-      "link": "https://openai.com/index/introducing-genebench-pro",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets....",
-      "date": "2026-06-30T00:00:00"
-    },
-    {
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
-      "date": "2026-06-30T00:00:00"
+      "title": "Update from @dair_ai",
+      "link": "https://x.com/i/web/status/2073065231790809214",
+      "source": "X Profile: dair_ai",
+      "summary_vn": "Can coding-agents replicate scientific ML papers?\n\nWe know this is possible because we can already do this @dair_ai.\n\nStill a great read.\n\nSo they try to replicate an ML paper from its materials alone.\n\nThey use a coding-agent skill that turns each selected paper claim into a https://t.co/qUSYW0TemB...",
+      "date": "2026-07-03T15:24:01"
     }
   ],
   "debug_stats": {
-    "raw_total": 1458,
-    "duplicates": 1,
-    "final": 4
+    "raw_total": 1528,
+    "duplicates": 0,
+    "final": 1
   }
 }
