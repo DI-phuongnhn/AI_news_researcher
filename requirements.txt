@@ -1,5 +1,5 @@
 # Core dependencies
-google-genai
+google-generativeai
 feedparser
 requests
 beautifulsoup4
