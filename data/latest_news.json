@@ -1,18 +1,10 @@
 {
-  "timestamp": "2026-07-04T04:12:02.859748",
-  "keywords": "EN: [O3-mini, SAM, TurboQuant, Veo, Claude Code, Grok, Nano Banana 2, Gemma 4]",
-  "reports": [
-    {
-      "title": "Update from @dair_ai",
-      "link": "https://x.com/i/web/status/2073065231790809214",
-      "source": "X Profile: dair_ai",
-      "summary_vn": "Can coding-agents replicate scientific ML papers?\n\nWe know this is possible because we can already do this @dair_ai.\n\nStill a great read.\n\nSo they try to replicate an ML paper from its materials alone.\n\nThey use a coding-agent skill that turns each selected paper claim into a https://t.co/qUSYW0TemB...",
-      "date": "2026-07-03T15:24:01"
-    }
-  ],
+  "timestamp": "2026-07-07T04:34:02.540999",
+  "keywords": "EN: [Gemini, Llama, O3-mini, Ternary Bonsai, Seedance, DeepSeek, SAM, Nano Banana 2]",
+  "reports": [],
   "debug_stats": {
-    "raw_total": 1528,
+    "raw_total": 1429,
     "duplicates": 0,
-    "final": 1
+    "final": 0
   }
 }
