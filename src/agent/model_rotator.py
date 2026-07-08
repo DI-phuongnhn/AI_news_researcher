@@ -71,20 +71,76 @@ class ModelRotator:
             
         print(f"  Rotator: Switched due to {reason}. Now using Key #{self.current_key_index + 1}")
 
-def get_rotator():
-    """
-    Singleton-style getter for the active ModelRotator.
-    
-    Ensures that multiple components share the same rotation state 
-    within a single execution run.
-    """
+def _ensure_rotator_instance():
+    """Lazily creates the shared ModelRotator singleton."""
     global _rotator_instance
     if _rotator_instance is None:
         _rotator_instance = ModelRotator()
-    return _rotator_instance.get_model()
+    return _rotator_instance
+
+def get_rotator():
+    """
+    Singleton-style getter for the active ModelRotator.
+
+    Ensures that multiple components share the same rotation state
+    within a single execution run.
+    """
+    return _ensure_rotator_instance().get_model()
+
+def get_current_api_key():
+    """
+    Returns the API key currently selected by the shared rotator.
+
+    Used by callers that need to make raw REST calls (bypassing the
+    GenerativeModel wrapper), such as Google Search-grounded queries.
+    """
+    instance = _ensure_rotator_instance()
+    if not instance.api_keys:
+        return None
+    return instance.api_keys[instance.current_key_index]
 
 def trigger_rotation(reason="API Limit"):
     """External trigger to force a rotation in the shared instance."""
     global _rotator_instance
     if _rotator_instance is not None:
         _rotator_instance.rotate(reason)
+
+def generate_content(prompt: str, max_attempts: int = None) -> str:
+    """
+    Generates content via the shared rotator, automatically rotating to the
+    next API key/model combination on failure (e.g. 429 quota errors) and
+    retrying — instead of surfacing the first failure to the caller, which
+    is what happened previously since nothing ever called rotate()/
+    trigger_rotation() on error.
+
+    Args:
+        prompt: The prompt to send to Gemini.
+        max_attempts: Cap on retry attempts. Defaults to one attempt per
+            available (key, model) combination, so every credential/model
+            pairing gets tried before giving up.
+
+    Returns:
+        The generated text (already unwrapped from the response object).
+
+    Raises:
+        RuntimeError: If every combination is exhausted without success.
+    """
+    instance = _ensure_rotator_instance()
+    if not instance.api_keys:
+        raise RuntimeError("No GEMINI_API_KEYS configured.")
+
+    if max_attempts is None:
+        max_attempts = len(instance.api_keys) * len(instance.models)
+
+    last_error = None
+    for _ in range(max_attempts):
+        model = instance.get_model()
+        try:
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            last_error = e
+            reason = "quota (429)" if "429" in str(e) else f"error ({e})"
+            instance.rotate(reason)
+
+    raise RuntimeError(f"Gemini generation failed after {max_attempts} attempts across all keys/models: {last_error}")

@@ -104,13 +104,50 @@ class DataManager:
         """
         model_file = "data/model_names.json"
         current = self.load_model_names()
-        
+
         # --- Block: Deduplication & Merge ---
         # Moves previously seen models to legacy if they aren't on the new 'active' list.
         existing_active = set(current.get("active", []))
         for m in new_models:
             if m not in existing_active:
                 current["active"].append(m)
-        
+
         with open(model_file, "w", encoding="utf-8") as f:
             json.dump(current, f, ensure_ascii=False, indent=2)
+
+    def load_business_watchlist(self) -> List[str]:
+        """
+        Loads persisted AI business/partnership entities (e.g. company deals,
+        acquisitions, integrations) discovered in prior runs.
+        """
+        watchlist_file = "data/business_watchlist.json"
+        if not os.path.exists(watchlist_file):
+            return []
+        try:
+            with open(watchlist_file, "r", encoding="utf-8") as f:
+                return json.load(f).get("entities", [])
+        except Exception as e:
+            print(f"  Warning: Failed to load business watchlist: {e}")
+            return []
+
+    def save_business_watchlist(self, new_entities: List[str]):
+        """
+        Merges newly discovered business/partnership entities into the
+        persisted watchlist.
+
+        Capped to the most recent 30 entries: unlike model names, business
+        events (deals, launches) lose search relevance quickly, so we don't
+        want the list growing unbounded with stale entries.
+        """
+        watchlist_file = "data/business_watchlist.json"
+        current = self.load_business_watchlist()
+        for e in new_entities:
+            if e not in current:
+                current.append(e)
+        current = current[-30:]
+
+        try:
+            with open(watchlist_file, "w", encoding="utf-8") as f:
+                json.dump({"entities": current}, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"  Error: Failed to save business watchlist: {e}")

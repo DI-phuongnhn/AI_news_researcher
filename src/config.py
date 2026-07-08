@@ -48,13 +48,17 @@ class Config:
     APIFY_FB_MAX = 5                # Maximum Facebook posts (Reduced to 5)
     
     # --- 3. MODEL SELECTION ---
-    # Prefer newer 'Flash' models for speed/cost, falling back to Pro for complex reasoning.
+    # Confirmed by manual testing (2026-07): the "gemini-2.0-*" generation and
+    # "gemini-pro-latest" return zero free-tier quota on every available key
+    # (Google has since moved the free tier to the 2.5+ generation). Only
+    # list models that actually work on the free tier here, otherwise the
+    # rotator wastes retries cycling through dead models before reaching a
+    # working one.
     GEMINI_MODELS_FALLBACK = [
-        "gemini-2.0-flash-lite",
-        "gemini-2.0-flash",
-        "gemini-flash-latest",
+        "gemini-2.5-flash-lite",
+        "gemini-2.5-flash",
         "gemini-flash-lite-latest",
-        "gemini-pro-latest"
+        "gemini-flash-latest"
     ]
     
     # --- 4. DATA SOURCES (TECHNICAL) ---

@@ -22,7 +22,7 @@ from src.fetcher.apify_fetcher import (
 )
 from src.fetcher.scrapegraph_fetcher import fetch_with_scrapegraph, fetch_technical_blog_posts
 from src.agent.summarizer import summarize_news
-from src.agent.model_rotator import get_rotator
+from src.agent.model_rotator import generate_content
 from src.utils.data_manager import DataManager
 from src.utils.text_utils import normalize_text, parse_flexible_date, is_latin_only
 from src.utils.notifier import send_teams_notification
@@ -161,31 +161,34 @@ class ResearchPipeline:
         7. Persistence.
         """
         # Step 0: Initial State (Load history and models)
-        active_models, all_models = self._initial_state()
-        
+        active_models, all_models, business_watchlist = self._initial_state()
+
         # Step 1: Discover Keywords (Trending technical topics)
+        # This also parses and persists any BUSINESS entities the grounded
+        # search surfaced, so re-load the watchlist to include them.
         keywords, search_keywords = self._discover_keywords()
-        
+        business_watchlist = self.data_manager.load_business_watchlist()
+
         # Step 2: Fetch Official/Technical Sources (Primary Signals)
         # This includes ScrapeGraph, RSS, and Reddit. High-signal, low-noise.
         print("Step 2: Fetching from Official & Technical sources (ScraperAI, RSS, Reddit)...")
-        official_raw_news = self._fetch_official_sources(search_keywords, active_models)
-        
+        official_raw_news = self._fetch_official_sources(search_keywords, active_models, business_watchlist)
+
         # --- Block: Intelligence Gate (REMOVED) ---
         # We check if Phase 1 found any TRULY NEW news.
-        unique_official, _, _ = self._process_news(official_raw_news, search_keywords, all_models, dry_run=True)
-        
+        unique_official, _, _ = self._process_news(official_raw_news, search_keywords, all_models, business_watchlist, dry_run=True)
+
         # Always run Apify as requested
         print("  Result: Fetching Step 3: Apify Social Fallback (Always ON)...")
         social_raw_news = self._fetch_social_fallback(search_keywords, active_models)
-        
+
         # Prepend social_raw_news so that Apify sources are evaluated FIRST during deduplication.
         # If there's a duplicate between Apify and Official, the Apify one will be kept.
         all_raw_news = social_raw_news + official_raw_news
-        
+
         # --- Block: Final Processing ---
         # Full run (dry_run=False) which updates 'seen' history for url deduplication.
-        unique_news, filtered_news, duplicate_count = self._process_news(all_raw_news, search_keywords, all_models)
+        unique_news, filtered_news, duplicate_count = self._process_news(all_raw_news, search_keywords, all_models, business_watchlist)
         
         # --- Block: AI Summarization ---
         # We perform the summarization first.
@@ -206,15 +209,16 @@ class ResearchPipeline:
         return self._save_results(actual_keywords, final_reports, all_raw_news, duplicate_count)
 
     def _initial_state(self):
-        """Step 0: Load data and model names from local files."""
+        """Step 0: Load data, model names, and business watchlist from local files."""
         self.data_manager.load_history()
         known_models_dict = self.data_manager.load_model_names()
         active_models = known_models_dict.get("active", [])
         all_models = active_models + known_models_dict.get("legacy", [])
-        return active_models, all_models
+        business_watchlist = self.data_manager.load_business_watchlist()
+        return active_models, all_models, business_watchlist
 
     def _discover_keywords(self):
-        """Step 1: Trending technical keyword discovery using AI."""
+        """Step 1: Trending technical keyword discovery using AI (search-grounded when possible)."""
         print("Step 1: Discovering trending AI technical keywords...")
         keywords = get_trending_keywords()
         search_keywords = []
@@ -222,21 +226,31 @@ class ResearchPipeline:
             en_part = keywords.split("EN:")[1].split("\n\n")[0]
             en_clean = en_part.replace('[', '').replace(']', '')
             search_keywords = [k.strip() for k in en_clean.split(",") if k.strip()][:5]
-        
+
+        # --- Block: Business Entity Extraction ---
+        # Persist any partnership/deal/acquisition entities the grounded
+        # search surfaced, so future runs can prioritize searching for them.
+        if "BUSINESS:" in keywords:
+            biz_part = keywords.split("BUSINESS:")[1].split("\n")[0]
+            biz_clean = biz_part.replace('[', '').replace(']', '')
+            biz_list = [b.strip() for b in biz_clean.split(",") if b.strip()]
+            if biz_list:
+                self.data_manager.save_business_watchlist(biz_list)
+
         # Rate limit safety delay for external technical search engines.
         print("Step 1: Waiting for API quota reset (30s)...")
         time.sleep(30)
         return keywords, search_keywords
 
-    def _fetch_official_sources(self, search_keywords, active_models):
+    def _fetch_official_sources(self, search_keywords, active_models, business_watchlist=None):
         """
         Phase 1 Fetching: Official blogs, RSS, and technical forums.
-        
-        These are prioritized because they contain technical documentation 
+
+        These are prioritized because they contain technical documentation
         and first-party announcements.
         """
         all_raw_news = []
-        
+
         # --- Block: Active Model Tracking (Priority 1) ---
         # We prioritize specific models over generic technical keywords.
         if active_models:
@@ -247,6 +261,19 @@ class ResearchPipeline:
                 query = "(" + " OR ".join([f'"{k}"' for k in chunk]) + ")"
                 batched_queries.append(query)
             all_raw_news.extend(search_technical_news(batched_queries, max_results=10))
+
+        # --- Block: Business/Partnership Watchlist (Priority 1.5) ---
+        # Entities discovered via grounded search or post-run analysis
+        # (e.g. "Microsoft-Anthropic partnership") get their own priority
+        # search, same batching strategy as active models.
+        if business_watchlist:
+            print(f"  Batching {len(business_watchlist)} business/partnership entities for priority search...")
+            batched_biz_queries = []
+            for i_b in range(0, len(business_watchlist), 10):
+                chunk = business_watchlist[i_b:i_b+10]
+                query = "(" + " OR ".join([f'"{k}"' for k in chunk]) + ")"
+                batched_biz_queries.append(query)
+            all_raw_news.extend(search_technical_news(batched_biz_queries, max_results=5))
 
         # --- Block: Technical Search Discovery (Priority 2) ---
         if search_keywords:
@@ -339,12 +366,15 @@ class ResearchPipeline:
         
         return social_news
 
-    def _process_news(self, all_raw_news, search_keywords, all_models, dry_run=False):
+    def _process_news(self, all_raw_news, search_keywords, all_models, business_watchlist=None, dry_run=False):
         """
         Step 3.5 & 3.6: Deduplication, Ordering, and Relevance Filtering.
-        
+
         Args:
             all_raw_news (list): Merged list of news items.
+            business_watchlist (list): Persisted business/partnership entities.
+                Merged into the relevance keyword set so that items fetched
+                specifically for these entities aren't filtered back out.
             dry_run (bool): If True, detects duplicates but DOES NOT update the seen history.
         """
         # --- Block: Freshness Gate ---
@@ -399,7 +429,8 @@ class ResearchPipeline:
             if len(final_filtered) >= 20:
                 break
         
-        filtered_news = self.filter_relevance(final_filtered, search_keywords, all_models)
+        relevance_keywords = search_keywords + (business_watchlist or [])
+        filtered_news = self.filter_relevance(final_filtered, relevance_keywords, all_models)
         return unique_news, filtered_news, duplicate_count
 
     def _filter_recent_news(self, news_items):
@@ -482,14 +513,17 @@ class ResearchPipeline:
         if final_reports:
             context = "\n".join([f"- {r['title']}: {r['summary_vn'][:200]}" for r in final_reports[:15]])
             prompt = (
-                f"Extract 10 TECHNICAL keywords AND explicitly a list of any new AI MODEL NAMES you see in these news summaries.\n\n"
-                f"CONTEXT:\n{context}\n\nOUTPUT FORMAT:\nEN: [kw1, kw2, ...]\nVN: [kw1, kw2, ...]\nMODELS: [model1, model2, ...]"
+                f"Extract 10 TECHNICAL keywords, explicitly a list of any new AI MODEL NAMES, "
+                f"AND a list of AI BUSINESS/PARTNERSHIP events (deals, acquisitions, integrations, funding) "
+                f"you see in these news summaries.\n\n"
+                f"CONTEXT:\n{context}\n\nOUTPUT FORMAT:\nEN: [kw1, kw2, ...]\nVN: [kw1, kw2, ...]\n"
+                f"MODELS: [model1, model2, ...]\nBUSINESS: [event1, event2, ...]"
             )
             try:
-                ai_res = get_rotator().generate_content(prompt)
+                ai_res = generate_content(prompt)
                 if not any(bs in ai_res.upper() for bs in ["ERROR", "EXHAUSTED", "FAILED"]):
                     actual_keywords = ai_res
-                    
+
                     # Update local model knowledge if AI found new launches.
                     if "MODELS:" in ai_res:
                         models_str = ai_res.split("MODELS:")[1].strip().split("\n")[0]
@@ -497,6 +531,14 @@ class ResearchPipeline:
                         models_list = [m.strip() for m in models_str_clean.split(',') if m.strip()]
                         if models_list:
                             self.data_manager.save_model_names(models_list)
+
+                    # Update business watchlist if AI found new partnership/deal signals.
+                    if "BUSINESS:" in ai_res:
+                        biz_str = ai_res.split("BUSINESS:")[1].strip().split("\n")[0]
+                        biz_str_clean = biz_str.replace('[', '').replace(']', '')
+                        biz_list = [b.strip() for b in biz_str_clean.split(',') if b.strip()]
+                        if biz_list:
+                            self.data_manager.save_business_watchlist(biz_list)
             except Exception as e:
                 print(f"  Warning: Keyword extraction failed: {e}")
         return actual_keywords

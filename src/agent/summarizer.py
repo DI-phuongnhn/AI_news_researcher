@@ -7,7 +7,7 @@ processing, token management, and structured formatting.
 """
 
 from typing import List, Dict
-from src.agent.model_rotator import get_rotator
+from src.agent.model_rotator import generate_content
 from src.utils.text_utils import normalize_text
 
 def summarize_news(news_list: List[Dict], keywords: str, known_models: List[str]) -> List[Dict]:
@@ -25,8 +25,6 @@ def summarize_news(news_list: List[Dict], keywords: str, known_models: List[str]
     if not news_list:
         return []
 
-    # Get the currently active Gemini model from the rotator.
-    model = get_rotator()
     summaries = []
 
     # --- Block: Batching Strategy ---
@@ -68,8 +66,8 @@ TIN TỨC CẦN TÓM TẮT:
 
         # --- Block: Generation & Error Handling ---
         try:
-            response = model.generate_content(prompt).text
-            
+            response = generate_content(prompt)
+
             # --- Block: Response Parsing ---
             # Extract the Vietnamese summaries from the raw model response.
             for idx, item in enumerate(chunk):
@@ -78,7 +76,7 @@ TIN TỨC CẦN TÓM TẮT:
                     # Extract content between this marker and the next one (or end of string).
                     start_idx = response.find(marker) + len(marker)
                     next_marker = f"ITEM_{idx+1}_VN:"
-                    
+
                     if next_marker in response:
                         summary_vn = response[start_idx : response.find(next_marker)].strip()
                     else:
