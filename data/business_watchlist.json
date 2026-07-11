@@ -1,15 +1,5 @@
 {
   "entities": [
-    "** OpenAI's GPT-5.6 public release",
-    "SpaceXAI (xAI) and Cursor joint AI model release",
-    "SpaceXAI acquires Cursor ($60B)",
-    "Microsoft launches Microsoft Frontier Co. ($2.5B investment)",
-    "Kyndryl announces \"AI Orchestration for Business\"",
-    "EU unveils AI cybersecurity action plan",
-    "NTT Data and NTT Docomo Business launch frontier AI cyber risk SI service",
-    "AI Security Inc. partners with CrowdStrike",
-    "Faber Company adopts Google x Anthropic LLM orchestration",
-    "Takeda Pharmaceutical Company invests up to $600M in Insilico Medicine",
     "Flytxt partners with Digicel Trinidad & Tobago",
     "Cognition announces SWE-1.7",
     "xAI announces Grok 4.5",
@@ -23,6 +13,22 @@
     "Partnership with government and national security",
     "OpenAI Academy and Walton Family Foundation collaboration",
     "Australian Payments Plus integration with ChatGPT Enterprise and Codex",
-    "MUFG AI-native transformation with ChatGPT Enterprise"
+    "MUFG AI-native transformation with ChatGPT Enterprise",
+    "Microsoft-OpenAI expanded partnership",
+    "Anthropic secures major funding",
+    "Nvidia announces Blackwell platform",
+    "Google launches Gemini 1.5 Pro integration",
+    "AWS integrates Claude 3 family",
+    "Hugging Face Spaces for agent deployment",
+    "Together AI Series C",
+    "Oracle-Nvidia AI Cloud",
+    "Meta Llama 3 ecosystem growth",
+    "Enterprise AI workflow adoption",
+    "AI agent security compliance",
+    "Claude Code for secure development",
+    "Project Glasswing integration",
+    "AI model provenance tracking",
+    "Microsoft 365 Copilot integration",
+    "OpenAI Bio Bug Bounty program"
   ]
 }

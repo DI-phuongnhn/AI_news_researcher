@@ -859,5 +859,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Ngân hàng MUFG đang ứng dụng ChatGPT Enterprise để thúc đẩy quá trình chuyển đổi sang mô hình AI-native, tối ưu hóa quy trình làm việc và triển khai dịch vụ tài chính thế hệ mới. Mục tiêu là nâng cao hiệu quả hoạt động và khả năng cung cấp dịch vụ đột phá, tận dụng sức mạnh của AI để đáp ứng nhu cầu khách hàng ngày càng tăng.",
     "date": "2026-07-07T00:00:00"
+  },
+  {
+    "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+    "link": "https://openai.com/index/deutsche-telekom",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Deutsche Telekom đang chuyển đổi ngành viễn thông bằng cách áp dụng AI, tập trung vào việc nâng cao dịch vụ khách hàng, tối ưu hóa quy trình làm việc của nhân viên và vận hành mạng lưới. Việc tích hợp AI giúp họ trở thành một nhà mạng \"AI-native\", cải thiện trải nghiệm người dùng và tiềm năng cho các ứng dụng giọng nói trong tương lai.",
+    "date": "2026-07-10T07:00:00"
+  },
+  {
+    "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+    "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.6 hiện là mô hình được ưu tiên sử dụng trong Microsoft 365 Copilot, mang lại khả năng AI mạnh mẽ hơn cho các ứng dụng như Word, Excel, PowerPoint và Chat. Điều này giúp người dùng hoàn thành công việc nhanh chóng và đạt chất lượng cao hơn nhờ vào hiệu suất cải thiện trên mỗi token.",
+    "date": "2026-07-09T13:00:00"
+  },
+  {
+    "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+    "link": "https://openai.com/index/gpt-5-6",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.6 là một mô hình AI tiên tiến, cung cấp khả năng xử lý thông minh hơn cho mỗi token đầu vào, đồng thời tối ưu hóa hiệu suất trên chi phí. Mô hình này mang lại khả năng mạnh mẽ theo yêu cầu, hỗ trợ người dùng thực hiện các tác vụ phức tạp và đòi hỏi sự tập trung cao độ.",
+    "date": "2026-07-09T10:00:00"
+  },
+  {
+    "title": "ChatGPT is now a partner for your most ambitious work",
+    "link": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT Work giờ đây hoạt động như một AI agent có khả năng thực hiện hành động trên các ứng dụng và tệp tin của người dùng. Nó có thể duy trì tiến độ dự án trong nhiều giờ, giúp biến mục tiêu ban đầu thành sản phẩm hoàn chỉnh, hỗ trợ công việc tham vọng nhất.",
+    "date": "2026-07-09T10:00:00"
+  },
+  {
+    "title": "GPT-5.5 Bio Bug Bounty",
+    "link": "https://openai.com/index/bio-bug-bounty",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đang triển khai chương trình Bio Bug Bounty, tập trung vào việc tìm kiếm và khắc phục các lỗ hổng bảo mật liên quan đến mô hình GPT-5.5, đặc biệt trong các ứng dụng sinh học. Chương trình này nhằm đảm bảo an toàn và độ tin cậy cho các mô hình AI trong lĩnh vực nhạy cảm.",
+    "date": "2026-07-09T10:00:00"
   }
 ]
