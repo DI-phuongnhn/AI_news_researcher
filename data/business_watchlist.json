@@ -1,6 +1,5 @@
 {
   "entities": [
-    "Google launches Gemini 1.5 Pro integration",
     "AWS integrates Claude 3 family",
     "Hugging Face Spaces for agent deployment",
     "Together AI Series C",
@@ -29,6 +28,7 @@
     "JPMorgan building AI agents",
     "Anthropic's Fable 5/Mythos 5 pulled by US government order",
     "Apple's revamped Siri",
-    "Halberd Corporation NeuroSense AI update"
+    "Halberd Corporation NeuroSense AI update",
+    "**"
   ]
 }

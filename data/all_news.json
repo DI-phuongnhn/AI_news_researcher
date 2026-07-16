@@ -894,5 +894,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI đang triển khai chương trình Bio Bug Bounty, tập trung vào việc tìm kiếm và khắc phục các lỗ hổng bảo mật liên quan đến mô hình GPT-5.5, đặc biệt trong các ứng dụng sinh học. Chương trình này nhằm đảm bảo an toàn và độ tin cậy cho các mô hình AI trong lĩnh vực nhạy cảm.",
     "date": "2026-07-09T10:00:00"
+  },
+  {
+    "title": "The US is advancing AI safety through state and federal action",
+    "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Hoa Kỳ đang thúc đẩy an toàn AI thông qua hành động ở cấp bang và liên bang, với OpenAI đề xuất cách tiếp cận \"liên bang ngược\" để quản trị AI. Cách tiếp cận này cho phép luật pháp tiểu bang xây dựng một khuôn khổ quốc gia, đảm bảo AI an toàn và dân chủ.",
+    "date": "2026-07-15T12:00:00"
+  },
+  {
+    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-Red là hệ thống \"red teaming\" tự động của OpenAI, sử dụng cơ chế \"tự chơi\" để cải thiện độ an toàn, sự căn chỉnh và khả năng chống lại các cuộc tấn công injection của AI. Hệ thống này giúp phát hiện và khắc phục các điểm yếu của mô hình AI.",
+    "date": "2026-07-15T10:00:00"
+  },
+  {
+    "title": "How to manage AI investments in the agentic era",
+    "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Trong kỷ nguyên \"agentic\", các doanh nghiệp cần quản lý đầu tư AI bằng cách đo lường hiệu quả công việc trên mỗi đô la chi tiêu. Việc tối ưu hóa hiệu suất và mở rộng các luồng công việc có giá trị cao là yếu tố then chốt để đạt được lợi ích kinh doanh thực tế.",
+    "date": "2026-07-14T10:00:00"
+  },
+  {
+    "title": "How sales teams use ChatGPT Work",
+    "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT Work hỗ trợ các đội ngũ bán hàng bằng cách tự động hóa việc tạo các báo cáo tiềm năng, tài liệu chuẩn bị cho cuộc họp, đánh giá dự báo, kế hoạch khách hàng và chẩn đoán các giao dịch bị đình trệ từ dữ liệu thực tế. Điều này giúp tăng hiệu quả công việc bán hàng.",
+    "date": "2026-07-14T00:00:00"
+  },
+  {
+    "title": "How data science teams use ChatGPT Work",
+    "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT Work hỗ trợ các đội ngũ khoa học dữ liệu trong việc xây dựng báo cáo nguyên nhân gốc rễ, kết quả phân tích tác động, bản ghi nhớ KPI, phân tích phạm vi và thông số kỹ thuật dashboard. Việc này được thực hiện dựa trên dữ liệu công việc thực tế, giúp tăng tốc độ phân tích dữ liệu.",
+    "date": "2026-07-14T00:00:00"
   }
 ]
