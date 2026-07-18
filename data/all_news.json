@@ -929,5 +929,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "ChatGPT Work hỗ trợ các đội ngũ khoa học dữ liệu trong việc xây dựng báo cáo nguyên nhân gốc rễ, kết quả phân tích tác động, bản ghi nhớ KPI, phân tích phạm vi và thông số kỹ thuật dashboard. Việc này được thực hiện dựa trên dữ liệu công việc thực tế, giúp tăng tốc độ phân tích dữ liệu.",
     "date": "2026-07-14T00:00:00"
+  },
+  {
+    "title": "Why teens deserve access to safe AI",
+    "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đang tăng cường các biện pháp bảo vệ ChatGPT cho người dùng vị thành niên, bao gồm các công cụ học tập phù hợp lứa tuổi và tính năng kiểm soát của phụ huynh. Mục tiêu là đảm bảo trải nghiệm AI an toàn và có trách nhiệm cho thanh thiếu niên.",
+    "date": "2026-07-16T16:00:00"
+  },
+  {
+    "title": "How Cars24 scales conversations and builds faster with OpenAI",
+    "link": "https://openai.com/index/cars24",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Cars24 tận dụng các tác nhân giọng nói và trò chuyện được hỗ trợ bởi OpenAI để xử lý hơn 1 triệu phút hội thoại mỗi tháng. Giải pháp này giúp phục hồi 12% số khách hàng tiềm năng bị mất và triển khai các quy trình làm việc **agentic** hiệu quả hơn cho các đội nhóm trên toàn công ty.",
+    "date": "2026-07-16T00:00:00"
   }
 ]

@@ -1,46 +1,25 @@
 {
-  "timestamp": "2026-07-16T03:48:45.633853",
-  "keywords": "EN: [AI safety, federal action, state action, reverse federalism, AI governance, red teaming, self-play, AI robustness, injection attacks, agentic era, AI investments, sales teams, data science teams, ChatGPT Work, potential reports, meeting preparation documents, forecast reviews, customer plans, deal diagnostics, root cause reports, impact analysis, KPI memos, scope analysis, dashboard specifications]\nVN: [an toàn AI, hành động liên bang, hành động cấp bang, liên bang ngược, quản trị AI, red teaming, tự chơi, độ bền AI, tấn công injection, kỷ nguyên agentic, đầu tư AI, đội ngũ bán hàng, đội ngũ khoa học dữ liệu, ChatGPT Work, báo cáo tiềm năng, tài liệu chuẩn bị cho cuộc họp, đánh giá dự báo, kế hoạch khách hàng, chẩn đoán giao dịch, báo cáo nguyên nhân gốc rễ, phân tích tác động, bản ghi nhớ KPI, phân tích phạm vi, thông số kỹ thuật dashboard]\nMODELS: [GPT-Red]\nBUSINESS: []",
+  "timestamp": "2026-07-18T03:43:34.714335",
+  "keywords": "EN: [AI, ChatGPT, voice agents, conversational AI, parental controls, age-appropriate learning tools, lead recovery, customer engagement, AI safety, API]\nVN: [AI, ChatGPT, tác nhân giọng nói, AI đàm thoại, kiểm soát của phụ huynh, công cụ học tập phù hợp lứa tuổi, phục hồi khách hàng tiềm năng, tương tác khách hàng, an toàn AI, API]\nMODELS: [ChatGPT]\nBUSINESS: [OpenAI safety measures for teens, Cars24's OpenAI integration for customer service]",
   "reports": [
     {
-      "title": "The US is advancing AI safety through state and federal action",
-      "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "title": "Why teens deserve access to safe AI",
+      "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Hoa Kỳ đang thúc đẩy an toàn AI thông qua hành động ở cấp bang và liên bang, với OpenAI đề xuất cách tiếp cận \"liên bang ngược\" để quản trị AI. Cách tiếp cận này cho phép luật pháp tiểu bang xây dựng một khuôn khổ quốc gia, đảm bảo AI an toàn và dân chủ.",
-      "date": "2026-07-15T12:00:00"
+      "summary_vn": "OpenAI đang tăng cường các biện pháp bảo vệ ChatGPT cho người dùng vị thành niên, bao gồm các công cụ học tập phù hợp lứa tuổi và tính năng kiểm soát của phụ huynh. Mục tiêu là đảm bảo trải nghiệm AI an toàn và có trách nhiệm cho thanh thiếu niên.",
+      "date": "2026-07-16T16:00:00"
     },
     {
-      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "title": "How Cars24 scales conversations and builds faster with OpenAI",
+      "link": "https://openai.com/index/cars24",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-Red là hệ thống \"red teaming\" tự động của OpenAI, sử dụng cơ chế \"tự chơi\" để cải thiện độ an toàn, sự căn chỉnh và khả năng chống lại các cuộc tấn công injection của AI. Hệ thống này giúp phát hiện và khắc phục các điểm yếu của mô hình AI.",
-      "date": "2026-07-15T10:00:00"
-    },
-    {
-      "title": "How to manage AI investments in the agentic era",
-      "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Trong kỷ nguyên \"agentic\", các doanh nghiệp cần quản lý đầu tư AI bằng cách đo lường hiệu quả công việc trên mỗi đô la chi tiêu. Việc tối ưu hóa hiệu suất và mở rộng các luồng công việc có giá trị cao là yếu tố then chốt để đạt được lợi ích kinh doanh thực tế.",
-      "date": "2026-07-14T10:00:00"
-    },
-    {
-      "title": "How sales teams use ChatGPT Work",
-      "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT Work hỗ trợ các đội ngũ bán hàng bằng cách tự động hóa việc tạo các báo cáo tiềm năng, tài liệu chuẩn bị cho cuộc họp, đánh giá dự báo, kế hoạch khách hàng và chẩn đoán các giao dịch bị đình trệ từ dữ liệu thực tế. Điều này giúp tăng hiệu quả công việc bán hàng.",
-      "date": "2026-07-14T00:00:00"
-    },
-    {
-      "title": "How data science teams use ChatGPT Work",
-      "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT Work hỗ trợ các đội ngũ khoa học dữ liệu trong việc xây dựng báo cáo nguyên nhân gốc rễ, kết quả phân tích tác động, bản ghi nhớ KPI, phân tích phạm vi và thông số kỹ thuật dashboard. Việc này được thực hiện dựa trên dữ liệu công việc thực tế, giúp tăng tốc độ phân tích dữ liệu.",
-      "date": "2026-07-14T00:00:00"
+      "summary_vn": "Cars24 tận dụng các tác nhân giọng nói và trò chuyện được hỗ trợ bởi OpenAI để xử lý hơn 1 triệu phút hội thoại mỗi tháng. Giải pháp này giúp phục hồi 12% số khách hàng tiềm năng bị mất và triển khai các quy trình làm việc **agentic** hiệu quả hơn cho các đội nhóm trên toàn công ty.",
+      "date": "2026-07-16T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1036,
-    "duplicates": 0,
-    "final": 5
+    "raw_total": 1039,
+    "duplicates": 2,
+    "final": 2
   }
 }
