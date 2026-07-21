@@ -943,5 +943,12 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Cars24 tận dụng các tác nhân giọng nói và trò chuyện được hỗ trợ bởi OpenAI để xử lý hơn 1 triệu phút hội thoại mỗi tháng. Giải pháp này giúp phục hồi 12% số khách hàng tiềm năng bị mất và triển khai các quy trình làm việc **agentic** hiệu quả hơn cho các đội nhóm trên toàn công ty.",
     "date": "2026-07-16T00:00:00"
+  },
+  {
+    "title": "Safety and alignment in an era of long-horizon models",
+    "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "[OpenAI chia sẻ kinh nghiệm triển khai các mô hình AI hoạt động dài hạn, chỉ ra những rủi ro an toàn mới và các biện pháp bảo vệ cải tiến. Điều này nhấn mạnh tầm quan trọng của việc đảm bảo an toàn và căn chỉnh (alignment) khi các mô hình AI trở nên phức tạp hơn và hoạt động trong thời gian dài hơn, đặc biệt là với sự phát triển của các \"long-horizon models\".]",
+    "date": "2026-07-20T10:00:00"
   }
 ]

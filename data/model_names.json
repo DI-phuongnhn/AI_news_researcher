@@ -26,7 +26,8 @@
     "GPT-5.6",
     "GPT-5.5",
     "GPT-Red",
-    "ChatGPT"
+    "ChatGPT",
+    "**"
   ],
   "legacy": [
     "GPT-4",

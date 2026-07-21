@@ -1,25 +1,18 @@
 {
-  "timestamp": "2026-07-18T03:43:34.714335",
-  "keywords": "EN: [AI, ChatGPT, voice agents, conversational AI, parental controls, age-appropriate learning tools, lead recovery, customer engagement, AI safety, API]\nVN: [AI, ChatGPT, tác nhân giọng nói, AI đàm thoại, kiểm soát của phụ huynh, công cụ học tập phù hợp lứa tuổi, phục hồi khách hàng tiềm năng, tương tác khách hàng, an toàn AI, API]\nMODELS: [ChatGPT]\nBUSINESS: [OpenAI safety measures for teens, Cars24's OpenAI integration for customer service]",
+  "timestamp": "2026-07-21T03:57:41.152051",
+  "keywords": "Here's the breakdown based on your request:\n\n**EN:** [long-horizon models, safety, alignment, AI safety, risk mitigation, improved safeguards, AI deployment, advanced AI, future AI, AI development]\n**VN:** [mô hình AI hoạt động dài hạn, an toàn, đảm bảo an toàn, rủi ro an toàn, biện pháp bảo vệ cải tiến, triển khai AI, AI tiên tiến, AI tương lai, phát triển AI, mô hình AI]\n**MODELS:** []\n**BUSINESS:** []",
   "reports": [
     {
-      "title": "Why teens deserve access to safe AI",
-      "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "title": "Safety and alignment in an era of long-horizon models",
+      "link": "https://openai.com/index/safety-alignment-long-horizon-models",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đang tăng cường các biện pháp bảo vệ ChatGPT cho người dùng vị thành niên, bao gồm các công cụ học tập phù hợp lứa tuổi và tính năng kiểm soát của phụ huynh. Mục tiêu là đảm bảo trải nghiệm AI an toàn và có trách nhiệm cho thanh thiếu niên.",
-      "date": "2026-07-16T16:00:00"
-    },
-    {
-      "title": "How Cars24 scales conversations and builds faster with OpenAI",
-      "link": "https://openai.com/index/cars24",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Cars24 tận dụng các tác nhân giọng nói và trò chuyện được hỗ trợ bởi OpenAI để xử lý hơn 1 triệu phút hội thoại mỗi tháng. Giải pháp này giúp phục hồi 12% số khách hàng tiềm năng bị mất và triển khai các quy trình làm việc **agentic** hiệu quả hơn cho các đội nhóm trên toàn công ty.",
-      "date": "2026-07-16T00:00:00"
+      "summary_vn": "[OpenAI chia sẻ kinh nghiệm triển khai các mô hình AI hoạt động dài hạn, chỉ ra những rủi ro an toàn mới và các biện pháp bảo vệ cải tiến. Điều này nhấn mạnh tầm quan trọng của việc đảm bảo an toàn và căn chỉnh (alignment) khi các mô hình AI trở nên phức tạp hơn và hoạt động trong thời gian dài hơn, đặc biệt là với sự phát triển của các \"long-horizon models\".]",
+      "date": "2026-07-20T10:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1039,
-    "duplicates": 2,
-    "final": 2
+    "raw_total": 1441,
+    "duplicates": 0,
+    "final": 1
   }
 }
