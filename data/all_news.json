@@ -1006,5 +1006,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "David Vélez và Robin Vince tham gia hội đồng quản trị của OpenAI Foundation và OpenAI Group PBC, mang đến kinh nghiệm lãnh đạo toàn cầu về tài chính, công nghệ và quản trị để định hướng chiến lược của công ty.",
     "date": "2026-07-21T00:00:00"
+  },
+  {
+    "title": "Update from @dair_ai",
+    "link": "https://x.com/i/web/status/2080776545430557016",
+    "source": "X Profile: dair_ai",
+    "summary_vn": "Nghiên cứu mới tập trung vào việc **training AI Agents** trong chính môi trường thực thi của chúng, như Claude Code hay Codex, thay vì mô phỏng. Điều này nhằm giải quyết khó khăn trong việc **end-to-end training** các **Agentic Workflows** phức tạp, hứa hẹn cải thiện hiệu suất và khả năng tự động hóa.",
+    "date": "2026-07-24T22:06:02"
+  },
+  {
+    "title": "Launching Health in ChatGPT",
+    "link": "https://openai.com/index/health-in-chatgpt",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Tính năng \"Health in ChatGPT\" cho phép người dùng tại Mỹ kết nối an toàn hồ sơ y tế và dữ liệu từ Apple Health. Mục tiêu là cung cấp các hiểu biết cá nhân hóa hơn và giúp người dùng theo dõi sức khỏe tốt hơn, tận dụng sức mạnh của AI để **Computer Interaction** trong lĩnh vực y tế.",
+    "date": "2026-07-23T00:00:00"
   }
 ]
