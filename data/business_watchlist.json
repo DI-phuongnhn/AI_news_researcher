@@ -1,13 +1,5 @@
 {
   "entities": [
-    "Microsoft and Mistral expanded strategic partnership for enterprise AI deployment and compute capacity",
-    "Anthropic donated $40M to AI regulation group Public First Action",
-    "Intel and Google Cloud expanded collaboration for AI-enabled enterprise transformation with Gemini Enterprise",
-    "Microagi partnered with Google Cloud to develop embodied AI models and robotics using NVIDIA Blackwell platform",
-    "SAP invested $5.2B in n8n and integrated n8n into Joule Studio",
-    "Portland Thorns and Portland Fire partnered with Treasure AI as Official Agentic Experience Platform",
-    "DOE Genesis Mission projects selected to accelerate AI-driven scientific discovery",
-    "OpenAI Project Camellia launch",
     "OpenAI partnership with Department of Energy",
     "OpenAI partnership with national labs",
     "OpenAI Presence launch",
@@ -29,6 +21,14 @@
     "Local AI model distribution deals",
     "AI cybersecurity investments",
     "AI provenance solutions launched",
-    "Nvidia Blackwell GPU demand"
+    "Nvidia Blackwell GPU demand",
+    "Google-Mistral partnership",
+    "Nvidia-Hugging Face integration",
+    "Perplexity AI funding",
+    "Scale AI enterprise deals",
+    "OpenAI-Microsoft Azure integrations",
+    "Anthropic Claude 3.5 Sonnet launch",
+    "Meta Llama 3 ecosystem growth",
+    "Apple WWDC AI announcements"
   ]
 }

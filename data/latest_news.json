@@ -1,25 +1,10 @@
 {
-  "timestamp": "2026-07-25T03:50:46.825625",
-  "keywords": "EN: [AI Agents, Training AI Agents, Execution Environments, Health in ChatGPT, Personalized Insights, Health Tracking]\nVN: [AI Agents, Huấn luyện AI Agents, Môi trường thực thi, Health in ChatGPT, Hiểu biết cá nhân hóa, Theo dõi sức khỏe]\nMODELS: [Claude Code, Codex, ChatGPT]\nBUSINESS: []",
-  "reports": [
-    {
-      "title": "Update from @dair_ai",
-      "link": "https://x.com/i/web/status/2080776545430557016",
-      "source": "X Profile: dair_ai",
-      "summary_vn": "Nghiên cứu mới tập trung vào việc **training AI Agents** trong chính môi trường thực thi của chúng, như Claude Code hay Codex, thay vì mô phỏng. Điều này nhằm giải quyết khó khăn trong việc **end-to-end training** các **Agentic Workflows** phức tạp, hứa hẹn cải thiện hiệu suất và khả năng tự động hóa.",
-      "date": "2026-07-24T22:06:02"
-    },
-    {
-      "title": "Launching Health in ChatGPT",
-      "link": "https://openai.com/index/health-in-chatgpt",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Tính năng \"Health in ChatGPT\" cho phép người dùng tại Mỹ kết nối an toàn hồ sơ y tế và dữ liệu từ Apple Health. Mục tiêu là cung cấp các hiểu biết cá nhân hóa hơn và giúp người dùng theo dõi sức khỏe tốt hơn, tận dụng sức mạnh của AI để **Computer Interaction** trong lĩnh vực y tế.",
-      "date": "2026-07-23T00:00:00"
-    }
-  ],
+  "timestamp": "2026-07-28T03:48:00.393742",
+  "keywords": "EN: [Claude 3.5 Sonnet, DeepSeek-V2, Mistral Large, Mixtral 8x22B, Phi-3 Medium, LangGraph, CrewAI, AutoGen, RAG, Vector Stores, Agentic Workflows, Browser Automation, Computer Use, Code Generation, Autonomous Agents, Prompt Engineering, Context Windows, Knowledge Graphs, AI Agents, Solo Agents, Workflow Automation, OpenSource AI, Nvidia H100, Nvidia Blackwell, Fine-tuning, Model Quantization, Prompt Chaining, Tool Use, Function Calling, Guardrails, AI Cybersecurity, Provenance, Secure AI]\nJP: [クロード3.5ソネット, ディープシークV2, ミストラルラージ, ミクストラル8x22B, Phi-3ミディアム, ランググラフ, クルーAI, オートジェン, RAG, ベクトルストア, エージェンティックワークフロー, ブラウザ自動化, PC利用, コード生成, 自律エージェント, プロンプトエンジニアリング, コンテキストウィンドウ, ナレッジグラフ, AIエージェント, ソロエージェント, ワークフロー自動化, オープンソースAI, Nvidia H100, Nvidia Blackwell, ファインチューニング, モデル量子化, プロンプトチェイン, ツール利用, 関数呼び出し, ガードレール, AIサイバーセキュリティ, プロビナンス, セキュアAI]\nBUSINESS: [Microsoft-Anthropic partnership, Google-Mistral partnership, Nvidia-Hugging Face integration, Together AI Series C, Perplexity AI funding, Scale AI enterprise deals, OpenAI-Microsoft Azure integrations, Anthropic Claude 3.5 Sonnet launch, Meta Llama 3 ecosystem growth, Apple WWDC AI announcements]",
+  "reports": [],
   "debug_stats": {
-    "raw_total": 1550,
-    "duplicates": 4,
-    "final": 2
+    "raw_total": 1233,
+    "duplicates": 0,
+    "final": 0
   }
 }
