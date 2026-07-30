@@ -1020,5 +1020,33 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Tính năng \"Health in ChatGPT\" cho phép người dùng tại Mỹ kết nối an toàn hồ sơ y tế và dữ liệu từ Apple Health. Mục tiêu là cung cấp các hiểu biết cá nhân hóa hơn và giúp người dùng theo dõi sức khỏe tốt hơn, tận dụng sức mạnh của AI để **Computer Interaction** trong lĩnh vực y tế.",
     "date": "2026-07-23T00:00:00"
+  },
+  {
+    "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+    "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Hai cài đặt API mới đã giúp GPT-5.6 cải thiện đáng kể điểm số trên benchmark ARC-AGI-3, nhờ khả năng giữ lại suy luận và tối ưu hóa hiệu quả xử lý.",
+    "date": "2026-07-29T15:00:00"
+  },
+  {
+    "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+    "link": "https://openai.com/index/chatgpt-for-academic-researchers",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cung cấp quyền truy cập miễn phí ChatGPT phiên bản tiên tiến nhất cho 100.000 nhà nghiên cứu học thuật, nhằm đẩy nhanh quá trình khám phá khoa học và tăng cường hợp tác.",
+    "date": "2026-07-29T10:00:00"
+  },
+  {
+    "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.6 kết hợp sức mạnh trí tuệ tiên phong với hiệu quả vượt trội, cải thiện tốc độ xử lý (inference) và quy trình làm việc dựa trên Agentic AI, mang lại giá trị cao hơn trên mỗi đơn vị chi phí.",
+    "date": "2026-07-29T00:00:00"
+  },
+  {
+    "title": "Scientific computing in the age of agentic AI",
+    "link": "https://openai.com/index/scientific-computing-agentic-ai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Báo cáo mới về khoa học tính toán cho thấy các nhà khoa học đang ứng dụng AI coding agents để hiện đại hóa quy trình, từ đó tăng tốc phát triển phần mềm và khám phá trong lĩnh vực genomics và nhiều lĩnh vực khác.",
+    "date": "2026-07-28T17:00:00"
   }
 ]

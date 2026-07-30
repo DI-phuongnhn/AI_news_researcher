@@ -1,8 +1,5 @@
 {
   "entities": [
-    "OpenAI partnership with Department of Energy",
-    "OpenAI partnership with national labs",
-    "OpenAI Presence launch",
     "NTT DATA Group adoption of ChatGPT Enterprise and Codex",
     "ChatGPT for small business program launch",
     "OpenAI and Hugging Face partnership on security incident",
@@ -29,6 +26,9 @@
     "OpenAI-Microsoft Azure integrations",
     "Anthropic Claude 3.5 Sonnet launch",
     "Meta Llama 3 ecosystem growth",
-    "Apple WWDC AI announcements"
+    "Apple WWDC AI announcements",
+    "**",
+    "free access to ChatGPT for 100",
+    "000 academic researchers"
   ]
 }

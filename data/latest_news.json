@@ -1,10 +1,39 @@
 {
-  "timestamp": "2026-07-28T03:48:00.393742",
-  "keywords": "EN: [Claude 3.5 Sonnet, DeepSeek-V2, Mistral Large, Mixtral 8x22B, Phi-3 Medium, LangGraph, CrewAI, AutoGen, RAG, Vector Stores, Agentic Workflows, Browser Automation, Computer Use, Code Generation, Autonomous Agents, Prompt Engineering, Context Windows, Knowledge Graphs, AI Agents, Solo Agents, Workflow Automation, OpenSource AI, Nvidia H100, Nvidia Blackwell, Fine-tuning, Model Quantization, Prompt Chaining, Tool Use, Function Calling, Guardrails, AI Cybersecurity, Provenance, Secure AI]\nJP: [クロード3.5ソネット, ディープシークV2, ミストラルラージ, ミクストラル8x22B, Phi-3ミディアム, ランググラフ, クルーAI, オートジェン, RAG, ベクトルストア, エージェンティックワークフロー, ブラウザ自動化, PC利用, コード生成, 自律エージェント, プロンプトエンジニアリング, コンテキストウィンドウ, ナレッジグラフ, AIエージェント, ソロエージェント, ワークフロー自動化, オープンソースAI, Nvidia H100, Nvidia Blackwell, ファインチューニング, モデル量子化, プロンプトチェイン, ツール利用, 関数呼び出し, ガードレール, AIサイバーセキュリティ, プロビナンス, セキュアAI]\nBUSINESS: [Microsoft-Anthropic partnership, Google-Mistral partnership, Nvidia-Hugging Face integration, Together AI Series C, Perplexity AI funding, Scale AI enterprise deals, OpenAI-Microsoft Azure integrations, Anthropic Claude 3.5 Sonnet launch, Meta Llama 3 ecosystem growth, Apple WWDC AI announcements]",
-  "reports": [],
+  "timestamp": "2026-07-30T03:43:17.701563",
+  "keywords": "EN: [ARC-AGI-3 benchmark, API, inference, Agentic AI, scientific discovery, academic researchers, genomics, software development, scientific computing, AI coding agents]\nVN: [benchmark ARC-AGI-3, API, suy luận, AI Agentic, khám phá khoa học, nhà nghiên cứu học thuật, genomics, phát triển phần mềm, khoa học tính toán, AI coding agents]\nMODELS: [GPT-5.6, ChatGPT]\nBUSINESS: [free access to ChatGPT for 100,000 academic researchers]",
+  "reports": [
+    {
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Hai cài đặt API mới đã giúp GPT-5.6 cải thiện đáng kể điểm số trên benchmark ARC-AGI-3, nhờ khả năng giữ lại suy luận và tối ưu hóa hiệu quả xử lý.",
+      "date": "2026-07-29T15:00:00"
+    },
+    {
+      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+      "link": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI cung cấp quyền truy cập miễn phí ChatGPT phiên bản tiên tiến nhất cho 100.000 nhà nghiên cứu học thuật, nhằm đẩy nhanh quá trình khám phá khoa học và tăng cường hợp tác.",
+      "date": "2026-07-29T10:00:00"
+    },
+    {
+      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "GPT-5.6 kết hợp sức mạnh trí tuệ tiên phong với hiệu quả vượt trội, cải thiện tốc độ xử lý (inference) và quy trình làm việc dựa trên Agentic AI, mang lại giá trị cao hơn trên mỗi đơn vị chi phí.",
+      "date": "2026-07-29T00:00:00"
+    },
+    {
+      "title": "Scientific computing in the age of agentic AI",
+      "link": "https://openai.com/index/scientific-computing-agentic-ai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Báo cáo mới về khoa học tính toán cho thấy các nhà khoa học đang ứng dụng AI coding agents để hiện đại hóa quy trình, từ đó tăng tốc phát triển phần mềm và khám phá trong lĩnh vực genomics và nhiều lĩnh vực khác.",
+      "date": "2026-07-28T17:00:00"
+    }
+  ],
   "debug_stats": {
-    "raw_total": 1233,
+    "raw_total": 1554,
     "duplicates": 0,
-    "final": 0
+    "final": 4
   }
 }
