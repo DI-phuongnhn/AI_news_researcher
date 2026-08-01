@@ -1048,5 +1048,47 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Báo cáo mới về khoa học tính toán cho thấy các nhà khoa học đang ứng dụng AI coding agents để hiện đại hóa quy trình, từ đó tăng tốc phát triển phần mềm và khám phá trong lĩnh vực genomics và nhiều lĩnh vực khác.",
     "date": "2026-07-28T17:00:00"
+  },
+  {
+    "title": "Advancing responsible AI across Europe",
+    "link": "https://openai.com/index/advancing-responsible-ai-across-europe",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đang thúc đẩy AI có trách nhiệm tại Châu Âu bằng cách tập trung vào an toàn, bảo mật, minh bạch và nguồn gốc dữ liệu, tuân thủ quy định AI Act của EU.",
+    "date": "2026-07-31T15:00:00"
+  },
+  {
+    "title": "Building abundant intelligence",
+    "link": "https://openai.com/index/building-abundant-intelligence",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI theo đuổi chiến lược \"full-stack\" để phát triển AI tiên tiến với khả năng cao hơn, chi phí thấp hơn và ứng dụng rộng rãi hơn.",
+    "date": "2026-07-31T15:00:00"
+  },
+  {
+    "title": "Univé builds an AI-ready workforce",
+    "link": "https://openai.com/index/unive",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Univé đã trang bị đội ngũ sẵn sàng với AI bằng cách sử dụng ChatGPT Enterprise, kết hợp lãnh đạo, quản trị có trách nhiệm và đổi mới do nhân viên dẫn dắt để chuyển đổi công việc quy mô lớn.",
+    "date": "2026-07-31T07:00:00"
+  },
+  {
+    "title": "Disrupting a Criminal Scam Operation",
+    "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã phá vỡ một hoạt động lừa đảo tại Campuchia bằng cách sử dụng ChatGPT để hỗ trợ các hình thức lừa đảo đầu tư, tình cảm, cờ bạc và giả mạo.",
+    "date": "2026-07-31T00:00:00"
+  },
+  {
+    "title": "Advancing the price-performance frontier with GPT-5.6",
+    "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu giá thấp hơn cho GPT-5.6 (Luna và Terra), đồng thời tối ưu hóa hiệu suất giúp doanh nghiệp triển khai AI quy mô lớn.",
+    "date": "2026-07-30T10:00:00"
+  },
+  {
+    "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+    "link": "https://openai.com/index/avatarin",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Avatarin đã triển khai thành công **agent** hỗ trợ khách hàng bán lẻ đa ngôn ngữ 24/7 cho Yamada Denki bằng cách sử dụng GPT-Realtime của OpenAI. Giải pháp này nhanh chóng thu hút 30.000 người dùng chỉ trong hai tuần, với tỷ lệ phản hồi tích cực lên đến 92%, cho thấy giá trị kinh doanh và hiệu quả hoạt động vượt trội.",
+    "date": "2026-07-30T00:00:00"
   }
 ]
