@@ -1090,5 +1090,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Avatarin đã triển khai thành công **agent** hỗ trợ khách hàng bán lẻ đa ngôn ngữ 24/7 cho Yamada Denki bằng cách sử dụng GPT-Realtime của OpenAI. Giải pháp này nhanh chóng thu hút 30.000 người dùng chỉ trong hai tuần, với tỷ lệ phản hồi tích cực lên đến 92%, cho thấy giá trị kinh doanh và hiệu quả hoạt động vượt trội.",
     "date": "2026-07-30T00:00:00"
+  },
+  {
+    "title": "How we built a realtime system for responsive voice AI in six months",
+    "link": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI ra mắt GPT-Live, một hệ thống cho phép tương tác giọng nói liên tục với AI bằng cách sử dụng mô hình speech không gián đoạn (turnless speech model) và kiến trúc độ trễ thấp (low-latency architecture). Điều này mang lại trải nghiệm đàm thoại tự nhiên và nhanh chóng hơn cho người dùng.",
+    "date": "2026-08-03T07:00:00"
+  },
+  {
+    "title": "Circles powers telco personalization with OpenAI technology",
+    "link": "https://openai.com/index/circles",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Circles ứng dụng công nghệ từ OpenAI API và Codex để cá nhân hóa trải nghiệm viễn thông. Giải pháp này đã giúp tăng ARPU (doanh thu trung bình trên mỗi người dùng) 22%, giảm tỷ lệ rời bỏ khách hàng (churn) 9% và nâng cao hiệu quả phát triển.",
+    "date": "2026-08-03T00:00:00"
   }
 ]
