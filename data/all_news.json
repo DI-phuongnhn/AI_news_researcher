@@ -1104,5 +1104,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Circles ứng dụng công nghệ từ OpenAI API và Codex để cá nhân hóa trải nghiệm viễn thông. Giải pháp này đã giúp tăng ARPU (doanh thu trung bình trên mỗi người dùng) 22%, giảm tỷ lệ rời bỏ khách hàng (churn) 9% và nâng cao hiệu quả phát triển.",
     "date": "2026-08-03T00:00:00"
+  },
+  {
+    "title": "Third-party cyber evaluations involving OpenAI models",
+    "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã đưa ra các biện pháp bảo vệ mới nhằm tăng cường kiểm thử và đánh giá các mô hình AI sau các sự cố liên quan đến đánh giá an ninh mạng của bên thứ ba.",
+    "date": "2026-08-04T19:00:00"
+  },
+  {
+    "title": "New ways to learn and teach with ChatGPT Work and Codex",
+    "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT Work và Codex giới thiệu các plugin giáo dục mới giúp giáo viên và sinh viên ở mọi cấp học nâng cao khả năng học tập, giảng dạy, nghiên cứu và phát triển.",
+    "date": "2026-08-04T00:00:00"
+  },
+  {
+    "title": "Apple is getting this wrong",
+    "link": "https://openai.com/index/apple-is-getting-this-wrong",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI bác bỏ các cáo buộc vô căn cứ trong vụ kiện của Apple, đồng thời làm rõ các thông tin về nhân viên và cung cấp bằng chứng về các sự kiện đã xảy ra.",
+    "date": "2026-08-03T22:00:00"
   }
 ]

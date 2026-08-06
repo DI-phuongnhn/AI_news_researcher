@@ -1,25 +1,32 @@
 {
-  "timestamp": "2026-08-04T03:49:13.364632",
-  "keywords": "EN: [realtime system, responsive voice AI, continuous voice interaction, turnless speech model, low-latency architecture, telco personalization, AI API, average revenue per user, customer churn rate]\nVN: [hệ thống thời gian thực, AI giọng nói phản hồi, tương tác giọng nói liên tục, mô hình speech không gián đoạn, kiến trúc độ trễ thấp, cá nhân hóa viễn thông, API AI, doanh thu trung bình trên mỗi người dùng, tỷ lệ rời bỏ khách hàng]\nMODELS: [GPT-Live, Codex]\nBUSINESS: [OpenAI technology, OpenAI API]",
+  "timestamp": "2026-08-06T03:51:09.509047",
+  "keywords": "EN: [AI models, cyber security, third-party evaluations, plug-ins, education, research, development, lawsuits, employee information, evidence]\nVN: [mô hình AI, an ninh mạng, đánh giá của bên thứ ba, plugin, giáo dục, nghiên cứu, phát triển, vụ kiện, thông tin nhân viên, bằng chứng]\nMODELS: [ChatGPT Work, Codex]\nBUSINESS: [OpenAI, Apple]",
   "reports": [
     {
-      "title": "How we built a realtime system for responsive voice AI in six months",
-      "link": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI ra mắt GPT-Live, một hệ thống cho phép tương tác giọng nói liên tục với AI bằng cách sử dụng mô hình speech không gián đoạn (turnless speech model) và kiến trúc độ trễ thấp (low-latency architecture). Điều này mang lại trải nghiệm đàm thoại tự nhiên và nhanh chóng hơn cho người dùng.",
-      "date": "2026-08-03T07:00:00"
+      "summary_vn": "OpenAI đã đưa ra các biện pháp bảo vệ mới nhằm tăng cường kiểm thử và đánh giá các mô hình AI sau các sự cố liên quan đến đánh giá an ninh mạng của bên thứ ba.",
+      "date": "2026-08-04T19:00:00"
     },
     {
-      "title": "Circles powers telco personalization with OpenAI technology",
-      "link": "https://openai.com/index/circles",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Circles ứng dụng công nghệ từ OpenAI API và Codex để cá nhân hóa trải nghiệm viễn thông. Giải pháp này đã giúp tăng ARPU (doanh thu trung bình trên mỗi người dùng) 22%, giảm tỷ lệ rời bỏ khách hàng (churn) 9% và nâng cao hiệu quả phát triển.",
-      "date": "2026-08-03T00:00:00"
+      "summary_vn": "ChatGPT Work và Codex giới thiệu các plugin giáo dục mới giúp giáo viên và sinh viên ở mọi cấp học nâng cao khả năng học tập, giảng dạy, nghiên cứu và phát triển.",
+      "date": "2026-08-04T00:00:00"
+    },
+    {
+      "title": "Apple is getting this wrong",
+      "link": "https://openai.com/index/apple-is-getting-this-wrong",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI bác bỏ các cáo buộc vô căn cứ trong vụ kiện của Apple, đồng thời làm rõ các thông tin về nhân viên và cung cấp bằng chứng về các sự kiện đã xảy ra.",
+      "date": "2026-08-03T22:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1107,
-    "duplicates": 0,
-    "final": 2
+    "raw_total": 1510,
+    "duplicates": 1,
+    "final": 3
   }
 }

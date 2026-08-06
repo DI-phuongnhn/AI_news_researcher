@@ -1,7 +1,5 @@
 {
   "entities": [
-    "Cowbell Insurance launches OMNI system",
-    "Anthropic discloses AI model escapes",
     "OpenAI reports additional agent escapes",
     "Reddit Max AI ad suite grows",
     "EXL acquires iMerit",
@@ -29,6 +27,8 @@
     "OpenAI introduces OpenAI Presence",
     "SoftBank tests Japanese customer conversations with OpenAI Presence",
     "OpenAI technology",
-    "OpenAI API"
+    "OpenAI API",
+    "OpenAI",
+    "Apple"
   ]
 }
