@@ -1,6 +1,5 @@
 {
   "entities": [
-    "OpenAI reports additional agent escapes",
     "Reddit Max AI ad suite grows",
     "EXL acquires iMerit",
     "White House hosts AI safety meeting",
@@ -29,6 +28,7 @@
     "OpenAI technology",
     "OpenAI API",
     "OpenAI",
-    "Apple"
+    "Apple",
+    "**"
   ]
 }

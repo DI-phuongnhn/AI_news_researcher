@@ -1,32 +1,39 @@
 {
-  "timestamp": "2026-08-06T03:51:09.509047",
-  "keywords": "EN: [AI models, cyber security, third-party evaluations, plug-ins, education, research, development, lawsuits, employee information, evidence]\nVN: [mô hình AI, an ninh mạng, đánh giá của bên thứ ba, plugin, giáo dục, nghiên cứu, phát triển, vụ kiện, thông tin nhân viên, bằng chứng]\nMODELS: [ChatGPT Work, Codex]\nBUSINESS: [OpenAI, Apple]",
+  "timestamp": "2026-08-08T02:30:57.790941",
+  "keywords": "**EN:**\n[Cybersecurity, AI Cybersecurity, Prompt Injection, Tax Advisory, Productivity, Mental Health, Responsible AI, Evidence-Based, Domain-Specific LLMs, LLMs]\n\n**VN:**\n[An ninh mạng, AI Cybersecurity, Prompt Injection, Tư vấn thuế, Năng suất, Sức khỏe tâm thần, AI có trách nhiệm, Dựa trên bằng chứng, Domain-Specific LLMs, LLMs]\n\n**MODELS:**\n[Astra, ChatGPT Enterprise, GPT-5.6 Sol, GPT-5.6 Luna]\n\n**BUSINESS:**\n[OpenAI công bố đánh giá an ninh mạng cho Astra, HSP GRUPPE sử dụng ChatGPT Enterprise, ChatGPT cải tiến GPT-5.6 Sol, mở rộng truy cập GPT-5.6 Luna, OpenAI hợp tác với Hiệp hội Tâm lý học Hoa Kỳ]",
   "reports": [
     {
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã đưa ra các biện pháp bảo vệ mới nhằm tăng cường kiểm thử và đánh giá các mô hình AI sau các sự cố liên quan đến đánh giá an ninh mạng của bên thứ ba.",
-      "date": "2026-08-04T19:00:00"
+      "summary_vn": "OpenAI công bố các đánh giá an ninh mạng sơ bộ cho Astra, nhấn mạnh các biện pháp tăng cường an toàn và kiểm soát bảo mật. Điều này tập trung vào AI Cybersecurity và các biện pháp phòng chống Prompt Injection, thể hiện nỗ lực đảm bảo môi trường hoạt động an toàn cho các công cụ AI tiên tiến.",
+      "date": "2026-08-07T15:20:00"
     },
     {
-      "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+      "link": "https://openai.com/index/hsp-gruppe",
       "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT Work và Codex giới thiệu các plugin giáo dục mới giúp giáo viên và sinh viên ở mọi cấp học nâng cao khả năng học tập, giảng dạy, nghiên cứu và phát triển.",
-      "date": "2026-08-04T00:00:00"
+      "summary_vn": "HSP GRUPPE sử dụng ChatGPT Enterprise để nâng cao năng suất và chất lượng dịch vụ tư vấn thuế, cho phép tập trung vào các nhiệm vụ phức tạp hơn cho khách hàng. Đây là một ứng dụng cụ thể của **Agentic AI** trong lĩnh vực tài chính, mang lại **Business Value** rõ rệt thông qua việc tự động hóa và tối ưu hóa quy trình.",
+      "date": "2026-08-07T09:00:00"
     },
     {
-      "title": "Apple is getting this wrong",
-      "link": "https://openai.com/index/apple-is-getting-this-wrong",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI bác bỏ các cáo buộc vô căn cứ trong vụ kiện của Apple, đồng thời làm rõ các thông tin về nhân viên và cung cấp bằng chứng về các sự kiện đã xảy ra.",
-      "date": "2026-08-03T22:00:00"
+      "summary_vn": "ChatGPT cải tiến GPT-5.6 Sol với độ chính xác và nhất quán cao hơn, đồng thời mở rộng quyền truy cập miễn phí vào GPT-5.6 Luna. Phiên bản mới này cho thấy sự tiến bộ trong các **Domain-Specific LLMs**, mang lại trải nghiệm người dùng tốt hơn.",
+      "date": "2026-08-06T10:00:00"
+    },
+    {
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI hợp tác với Hiệp hội Tâm lý học Hoa Kỳ nhằm phát triển hướng dẫn và nguồn lực dựa trên bằng chứng về việc sử dụng AI có trách nhiệm đối với sức khỏe tâm thần thanh thiếu niên. Sự hợp tác này nhấn mạnh tầm quan trọng của an toàn AI và việc tích hợp các mô hình AI một cách đạo đức.",
+      "date": "2026-08-06T06:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1510,
-    "duplicates": 1,
-    "final": 3
+    "raw_total": 1543,
+    "duplicates": 0,
+    "final": 4
   }
 }
