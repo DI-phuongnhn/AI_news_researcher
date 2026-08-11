@@ -1,39 +1,67 @@
 {
-  "timestamp": "2026-08-08T02:30:57.790941",
-  "keywords": "**EN:**\n[Cybersecurity, AI Cybersecurity, Prompt Injection, Tax Advisory, Productivity, Mental Health, Responsible AI, Evidence-Based, Domain-Specific LLMs, LLMs]\n\n**VN:**\n[An ninh mạng, AI Cybersecurity, Prompt Injection, Tư vấn thuế, Năng suất, Sức khỏe tâm thần, AI có trách nhiệm, Dựa trên bằng chứng, Domain-Specific LLMs, LLMs]\n\n**MODELS:**\n[Astra, ChatGPT Enterprise, GPT-5.6 Sol, GPT-5.6 Luna]\n\n**BUSINESS:**\n[OpenAI công bố đánh giá an ninh mạng cho Astra, HSP GRUPPE sử dụng ChatGPT Enterprise, ChatGPT cải tiến GPT-5.6 Sol, mở rộng truy cập GPT-5.6 Luna, OpenAI hợp tác với Hiệp hội Tâm lý học Hoa Kỳ]",
+  "timestamp": "2026-08-11T02:37:11.113179",
+  "keywords": "EN: [AI infrastructure, finance automation, AI-native finance, cyber defense, vulnerability research, security testing, premium seats, workspace credits, marketing processes, customer journeys]\nVN: [hạ tầng AI, tự động hóa tài chính, tài chính AI-native, phòng thủ mạng, nghiên cứu lỗ hổng, kiểm thử bảo mật, chỗ ngồi cao cấp, tín dụng workspace, quy trình marketing, hành trình khách hàng]\nMODELS: [GPT-5.6 Sol, GPT-5.6-Cyber]\nBUSINESS: [ChatGPT Business Premium seats launch, Zapier marketing process transformation, Virgin Atlantic customer journey enhancement]",
   "reports": [
     {
-      "title": "Responding to the next frontier of critical cyber capabilities",
-      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+      "link": "https://openai.com/index/responsible-ai-infrastructure-texas",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI công bố các đánh giá an ninh mạng sơ bộ cho Astra, nhấn mạnh các biện pháp tăng cường an toàn và kiểm soát bảo mật. Điều này tập trung vào AI Cybersecurity và các biện pháp phòng chống Prompt Injection, thể hiện nỗ lực đảm bảo môi trường hoạt động an toàn cho các công cụ AI tiên tiến.",
-      "date": "2026-08-07T15:20:00"
+      "summary_vn": "OpenAI cam kết phát triển hạ tầng AI có trách nhiệm tại Texas, nhấn mạnh sự tăng trưởng minh bạch và lợi ích cho người dân địa phương.",
+      "date": "2026-08-10T14:00:00"
     },
     {
-      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
-      "link": "https://openai.com/index/hsp-gruppe",
+      "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+      "link": "https://openai.com/index/model-ml",
       "source": "RSS: OpenAI News",
-      "summary_vn": "HSP GRUPPE sử dụng ChatGPT Enterprise để nâng cao năng suất và chất lượng dịch vụ tư vấn thuế, cho phép tập trung vào các nhiệm vụ phức tạp hơn cho khách hàng. Đây là một ứng dụng cụ thể của **Agentic AI** trong lĩnh vực tài chính, mang lại **Business Value** rõ rệt thông qua việc tự động hóa và tối ưu hóa quy trình.",
-      "date": "2026-08-07T09:00:00"
+      "summary_vn": "Model ML ứng dụng GPT-5.6 Sol để tự động hóa quy trình tài chính từ nghiên cứu, phân tích đến tạo báo cáo PowerPoint và bảng tính Excel có thể chỉnh sửa, truy xuất nguồn gốc.",
+      "date": "2026-08-10T12:00:00"
     },
     {
-      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
-      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "title": "What building an AI-native finance function taught me",
+      "link": "https://openai.com/index/building-an-ai-native-finance-function",
       "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT cải tiến GPT-5.6 Sol với độ chính xác và nhất quán cao hơn, đồng thời mở rộng quyền truy cập miễn phí vào GPT-5.6 Luna. Phiên bản mới này cho thấy sự tiến bộ trong các **Domain-Specific LLMs**, mang lại trải nghiệm người dùng tốt hơn.",
-      "date": "2026-08-06T10:00:00"
+      "summary_vn": "Giám đốc tài chính OpenAI Sarah Friar chia sẻ 5 bài học về việc xây dựng bộ phận tài chính \"AI-native\", bao gồm dự báo tự động, kiểm soát chặt chẽ và tính toán ROI cho AI.",
+      "date": "2026-08-10T17:00:00"
     },
     {
-      "title": "Working with the American Psychological Association on youth mental health and AI",
-      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI hợp tác với Hiệp hội Tâm lý học Hoa Kỳ nhằm phát triển hướng dẫn và nguồn lực dựa trên bằng chứng về việc sử dụng AI có trách nhiệm đối với sức khỏe tâm thần thanh thiếu niên. Sự hợp tác này nhấn mạnh tầm quan trọng của an toàn AI và việc tích hợp các mô hình AI một cách đạo đức.",
-      "date": "2026-08-06T06:00:00"
+      "summary_vn": "OpenAI giới thiệu GPT-5.6-Cyber, một mô hình AI chuyên sâu về an ninh mạng, có sẵn qua Daybreak Red cho các hoạt động nghiên cứu lỗ hổng, xác thực tấn công và kiểm thử bảo mật.",
+      "date": "2026-08-10T10:00:00"
+    },
+    {
+      "title": "Putting frontier cyber models in more trusted hands",
+      "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Đối tác Daybreak được phê duyệt có thể sử dụng các mô hình an ninh mạng tiên tiến của OpenAI để cung cấp dịch vụ an ninh mạng có thẩm quyền và được quản lý cho khách hàng.",
+      "date": "2026-08-10T10:00:00"
+    },
+    {
+      "title": "Premium seats are coming to ChatGPT Business",
+      "link": "https://openai.com/index/premium-seats-chatgpt-business",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI giới thiệu \"Premium seats\" cho ChatGPT Business, cho phép đăng ký trước ngày 20 tháng 8 để nhận 100 USD tín dụng workspace và nâng cao giới hạn sử dụng cho các tác vụ yêu cầu cao của nhóm.",
+      "date": "2026-08-10T00:00:00"
+    },
+    {
+      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+      "link": "https://openai.com/index/zapier",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Zapier đã ứng dụng ChatGPT Work để cải thiện quy trình marketing cốt lõi, giảm tỷ lệ rời bỏ khách hàng tiềm năng, hỗ trợ xây dựng tài liệu chiến dịch và tự động hóa báo cáo, mang lại giá trị kinh doanh rõ rệt.",
+      "date": "2026-08-10T00:00:00"
+    },
+    {
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Virgin Atlantic sử dụng ChatGPT Work để đẩy nhanh quá trình nghiên cứu, lập kế hoạch sản phẩm và ra quyết định, đồng thời kết nối thông tin xuyên suốt hành trình khách hàng, tối ưu hóa trải nghiệm dịch vụ.",
+      "date": "2026-08-10T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1543,
+    "raw_total": 1529,
     "duplicates": 0,
-    "final": 4
+    "final": 8
   }
 }

@@ -1153,5 +1153,61 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI hợp tác với Hiệp hội Tâm lý học Hoa Kỳ nhằm phát triển hướng dẫn và nguồn lực dựa trên bằng chứng về việc sử dụng AI có trách nhiệm đối với sức khỏe tâm thần thanh thiếu niên. Sự hợp tác này nhấn mạnh tầm quan trọng của an toàn AI và việc tích hợp các mô hình AI một cách đạo đức.",
     "date": "2026-08-06T06:00:00"
+  },
+  {
+    "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+    "link": "https://openai.com/index/responsible-ai-infrastructure-texas",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cam kết phát triển hạ tầng AI có trách nhiệm tại Texas, nhấn mạnh sự tăng trưởng minh bạch và lợi ích cho người dân địa phương.",
+    "date": "2026-08-10T14:00:00"
+  },
+  {
+    "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+    "link": "https://openai.com/index/model-ml",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Model ML ứng dụng GPT-5.6 Sol để tự động hóa quy trình tài chính từ nghiên cứu, phân tích đến tạo báo cáo PowerPoint và bảng tính Excel có thể chỉnh sửa, truy xuất nguồn gốc.",
+    "date": "2026-08-10T12:00:00"
+  },
+  {
+    "title": "What building an AI-native finance function taught me",
+    "link": "https://openai.com/index/building-an-ai-native-finance-function",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Giám đốc tài chính OpenAI Sarah Friar chia sẻ 5 bài học về việc xây dựng bộ phận tài chính \"AI-native\", bao gồm dự báo tự động, kiểm soát chặt chẽ và tính toán ROI cho AI.",
+    "date": "2026-08-10T17:00:00"
+  },
+  {
+    "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+    "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu GPT-5.6-Cyber, một mô hình AI chuyên sâu về an ninh mạng, có sẵn qua Daybreak Red cho các hoạt động nghiên cứu lỗ hổng, xác thực tấn công và kiểm thử bảo mật.",
+    "date": "2026-08-10T10:00:00"
+  },
+  {
+    "title": "Putting frontier cyber models in more trusted hands",
+    "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Đối tác Daybreak được phê duyệt có thể sử dụng các mô hình an ninh mạng tiên tiến của OpenAI để cung cấp dịch vụ an ninh mạng có thẩm quyền và được quản lý cho khách hàng.",
+    "date": "2026-08-10T10:00:00"
+  },
+  {
+    "title": "Premium seats are coming to ChatGPT Business",
+    "link": "https://openai.com/index/premium-seats-chatgpt-business",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu \"Premium seats\" cho ChatGPT Business, cho phép đăng ký trước ngày 20 tháng 8 để nhận 100 USD tín dụng workspace và nâng cao giới hạn sử dụng cho các tác vụ yêu cầu cao của nhóm.",
+    "date": "2026-08-10T00:00:00"
+  },
+  {
+    "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+    "link": "https://openai.com/index/zapier",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Zapier đã ứng dụng ChatGPT Work để cải thiện quy trình marketing cốt lõi, giảm tỷ lệ rời bỏ khách hàng tiềm năng, hỗ trợ xây dựng tài liệu chiến dịch và tự động hóa báo cáo, mang lại giá trị kinh doanh rõ rệt.",
+    "date": "2026-08-10T00:00:00"
+  },
+  {
+    "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+    "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Virgin Atlantic sử dụng ChatGPT Work để đẩy nhanh quá trình nghiên cứu, lập kế hoạch sản phẩm và ra quyết định, đồng thời kết nối thông tin xuyên suốt hành trình khách hàng, tối ưu hóa trải nghiệm dịch vụ.",
+    "date": "2026-08-10T00:00:00"
   }
 ]
