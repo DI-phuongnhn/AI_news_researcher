@@ -1,67 +1,39 @@
 {
-  "timestamp": "2026-08-11T02:37:11.113179",
-  "keywords": "EN: [AI infrastructure, finance automation, AI-native finance, cyber defense, vulnerability research, security testing, premium seats, workspace credits, marketing processes, customer journeys]\nVN: [hạ tầng AI, tự động hóa tài chính, tài chính AI-native, phòng thủ mạng, nghiên cứu lỗ hổng, kiểm thử bảo mật, chỗ ngồi cao cấp, tín dụng workspace, quy trình marketing, hành trình khách hàng]\nMODELS: [GPT-5.6 Sol, GPT-5.6-Cyber]\nBUSINESS: [ChatGPT Business Premium seats launch, Zapier marketing process transformation, Virgin Atlantic customer journey enhancement]",
+  "timestamp": "2026-08-13T03:10:16.338286",
+  "keywords": "Here's the breakdown of the requested keywords and lists based on the provided summaries:\n\n**EN:** [agentic AI, AI-native, workflow, cybersecurity, product development, operations, advertising, privacy, integration, research]\n**VN:** [AI tự động, gốc AI, quy trình làm việc, an ninh mạng, phát triển sản phẩm, vận hành, quảng cáo, quyền riêng tư, tích hợp, nghiên cứu]\n**MODELS:** [ChatGPT, Codex, Daybreak]\n**BUSINESS:** [OpenAI research on enterprise AI adoption, RingCentral's AI-native approach using ChatGPT Work and Codex, OpenAI testing ads in ChatGPT, Daybreak models available on AWS Bedrock]",
   "reports": [
     {
-      "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
-      "link": "https://openai.com/index/responsible-ai-infrastructure-texas",
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI cam kết phát triển hạ tầng AI có trách nhiệm tại Texas, nhấn mạnh sự tăng trưởng minh bạch và lợi ích cho người dân địa phương.",
-      "date": "2026-08-10T14:00:00"
+      "summary_vn": "Nghiên cứu của OpenAI cho thấy các doanh nghiệp đang áp dụng mạnh mẽ **agentic AI** thông qua ChatGPT và Codex, với các công ty tiên phong dẫn đầu trong việc ứng dụng AI. Điều này cho thấy sự chuyển dịch từ hỗ trợ sang tự động hóa, giúp doanh nghiệp đạt hiệu quả cao hơn trong các quy trình.",
+      "date": "2026-08-12T06:00:00"
     },
     {
-      "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
-      "link": "https://openai.com/index/model-ml",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "link": "https://openai.com/index/ringcentral",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Model ML ứng dụng GPT-5.6 Sol để tự động hóa quy trình tài chính từ nghiên cứu, phân tích đến tạo báo cáo PowerPoint và bảng tính Excel có thể chỉnh sửa, truy xuất nguồn gốc.",
-      "date": "2026-08-10T12:00:00"
+      "summary_vn": "RingCentral ứng dụng ChatGPT Work và Codex để đẩy nhanh quá trình phát triển sản phẩm AI và hợp nhất thông tin vận hành xuyên suốt bộ phận kỹ thuật và vận hành. Cách tiếp cận **AI-native** này giúp tối ưu hóa quy trình làm việc và nâng cao hiệu suất tổng thể.",
+      "date": "2026-08-12T00:00:00"
     },
     {
-      "title": "What building an AI-native finance function taught me",
-      "link": "https://openai.com/index/building-an-ai-native-finance-function",
+      "title": "Testing ads in ChatGPT",
+      "link": "https://openai.com/index/testing-ads-in-chatgpt",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Giám đốc tài chính OpenAI Sarah Friar chia sẻ 5 bài học về việc xây dựng bộ phận tài chính \"AI-native\", bao gồm dự báo tự động, kiểm soát chặt chẽ và tính toán ROI cho AI.",
-      "date": "2026-08-10T17:00:00"
+      "summary_vn": "OpenAI bắt đầu thử nghiệm hiển thị quảng cáo trong ChatGPT nhằm duy trì dịch vụ miễn phí, đồng thời đảm bảo nhãn mác rõ ràng, độc lập với câu trả lời và bảo vệ quyền riêng tư người dùng. Đây là một mô hình kinh doanh mới để hỗ trợ hoạt động của nền tảng.",
+      "date": "2026-08-11T10:00:00"
     },
     {
-      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-      "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "title": "Daybreak models are now available on AWS",
+      "link": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu GPT-5.6-Cyber, một mô hình AI chuyên sâu về an ninh mạng, có sẵn qua Daybreak Red cho các hoạt động nghiên cứu lỗ hổng, xác thực tấn công và kiểm thử bảo mật.",
-      "date": "2026-08-10T10:00:00"
-    },
-    {
-      "title": "Putting frontier cyber models in more trusted hands",
-      "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Đối tác Daybreak được phê duyệt có thể sử dụng các mô hình an ninh mạng tiên tiến của OpenAI để cung cấp dịch vụ an ninh mạng có thẩm quyền và được quản lý cho khách hàng.",
-      "date": "2026-08-10T10:00:00"
-    },
-    {
-      "title": "Premium seats are coming to ChatGPT Business",
-      "link": "https://openai.com/index/premium-seats-chatgpt-business",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu \"Premium seats\" cho ChatGPT Business, cho phép đăng ký trước ngày 20 tháng 8 để nhận 100 USD tín dụng workspace và nâng cao giới hạn sử dụng cho các tác vụ yêu cầu cao của nhóm.",
-      "date": "2026-08-10T00:00:00"
-    },
-    {
-      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
-      "link": "https://openai.com/index/zapier",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Zapier đã ứng dụng ChatGPT Work để cải thiện quy trình marketing cốt lõi, giảm tỷ lệ rời bỏ khách hàng tiềm năng, hỗ trợ xây dựng tài liệu chiến dịch và tự động hóa báo cáo, mang lại giá trị kinh doanh rõ rệt.",
-      "date": "2026-08-10T00:00:00"
-    },
-    {
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Virgin Atlantic sử dụng ChatGPT Work để đẩy nhanh quá trình nghiên cứu, lập kế hoạch sản phẩm và ra quyết định, đồng thời kết nối thông tin xuyên suốt hành trình khách hàng, tối ưu hóa trải nghiệm dịch vụ.",
-      "date": "2026-08-10T00:00:00"
+      "summary_vn": "Các mô hình Daybreak của OpenAI, chuyên về an ninh mạng, hiện đã có sẵn trên Amazon Bedrock của AWS. Sự tích hợp này nhằm hỗ trợ các **workflow** an ninh mạng cấp doanh nghiệp, tận dụng khả năng của **LLM** để phát hiện và xử lý các mối đe dọa.",
+      "date": "2026-08-11T10:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1529,
-    "duplicates": 0,
-    "final": 8
+    "raw_total": 1156,
+    "duplicates": 5,
+    "final": 4
   }
 }

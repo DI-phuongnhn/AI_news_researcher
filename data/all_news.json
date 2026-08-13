@@ -1209,5 +1209,33 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Virgin Atlantic sử dụng ChatGPT Work để đẩy nhanh quá trình nghiên cứu, lập kế hoạch sản phẩm và ra quyết định, đồng thời kết nối thông tin xuyên suốt hành trình khách hàng, tối ưu hóa trải nghiệm dịch vụ.",
     "date": "2026-08-10T00:00:00"
+  },
+  {
+    "title": "From assistance to execution: How enterprises put AI to work",
+    "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Nghiên cứu của OpenAI cho thấy các doanh nghiệp đang áp dụng mạnh mẽ **agentic AI** thông qua ChatGPT và Codex, với các công ty tiên phong dẫn đầu trong việc ứng dụng AI. Điều này cho thấy sự chuyển dịch từ hỗ trợ sang tự động hóa, giúp doanh nghiệp đạt hiệu quả cao hơn trong các quy trình.",
+    "date": "2026-08-12T06:00:00"
+  },
+  {
+    "title": "How RingCentral builds AI-native work from engineering to ops",
+    "link": "https://openai.com/index/ringcentral",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "RingCentral ứng dụng ChatGPT Work và Codex để đẩy nhanh quá trình phát triển sản phẩm AI và hợp nhất thông tin vận hành xuyên suốt bộ phận kỹ thuật và vận hành. Cách tiếp cận **AI-native** này giúp tối ưu hóa quy trình làm việc và nâng cao hiệu suất tổng thể.",
+    "date": "2026-08-12T00:00:00"
+  },
+  {
+    "title": "Testing ads in ChatGPT",
+    "link": "https://openai.com/index/testing-ads-in-chatgpt",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI bắt đầu thử nghiệm hiển thị quảng cáo trong ChatGPT nhằm duy trì dịch vụ miễn phí, đồng thời đảm bảo nhãn mác rõ ràng, độc lập với câu trả lời và bảo vệ quyền riêng tư người dùng. Đây là một mô hình kinh doanh mới để hỗ trợ hoạt động của nền tảng.",
+    "date": "2026-08-11T10:00:00"
+  },
+  {
+    "title": "Daybreak models are now available on AWS",
+    "link": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Các mô hình Daybreak của OpenAI, chuyên về an ninh mạng, hiện đã có sẵn trên Amazon Bedrock của AWS. Sự tích hợp này nhằm hỗ trợ các **workflow** an ninh mạng cấp doanh nghiệp, tận dụng khả năng của **LLM** để phát hiện và xử lý các mối đe dọa.",
+    "date": "2026-08-11T10:00:00"
   }
 ]
