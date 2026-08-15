@@ -1237,5 +1237,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Các mô hình Daybreak của OpenAI, chuyên về an ninh mạng, hiện đã có sẵn trên Amazon Bedrock của AWS. Sự tích hợp này nhằm hỗ trợ các **workflow** an ninh mạng cấp doanh nghiệp, tận dụng khả năng của **LLM** để phát hiện và xử lý các mối đe dọa.",
     "date": "2026-08-11T10:00:00"
+  },
+  {
+    "title": "The builder’s guide to GPT‑5.6",
+    "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.6 giúp các startup xây dựng AI agents nhanh hơn, hiệu quả chi phí cao hơn thông qua lựa chọn model thông minh và các khả năng mới của Responses API.",
+    "date": "2026-08-13T11:00:00"
+  },
+  {
+    "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "link": "https://openai.com/index/previewing-ultrafast",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu Ultrafast mode cho GPT-5.6 Sol, đạt tốc độ nhanh hơn gấp 14 lần với 750 token/giây, được hỗ trợ bởi Cerebras.",
+    "date": "2026-08-13T10:00:00"
+  },
+  {
+    "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+    "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI bổ nhiệm Dali Rajic làm Giám đốc Doanh thu (Chief Revenue Officer) để lãnh đạo tổ chức doanh thu toàn cầu và thúc đẩy giá trị kinh doanh từ AI.",
+    "date": "2026-08-13T09:00:00"
   }
 ]
