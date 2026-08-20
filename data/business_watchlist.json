@@ -1,13 +1,5 @@
 {
   "entities": [
-    "Goldman Sachs",
-    "KKR.",
-    "Anthropic signs $9.1 billion",
-    "20-year computing agreement with Riot Platforms.",
-    "OpenAI pauses internal work on its Astra model due to \"critical\" cyber capabilities.",
-    "Google's Gemini app surpasses 1 billion monthly active users.",
-    "AI coding platform Lovable raises $400 million at a $13.3 billion valuation.",
-    "Anthropic begins meeting investors for a possible fall IPO.",
     "Foxconn's AI server division revenue (51%) surpasses consumer electronics.",
     "Anthropic is in talks to acquire startup Decart for $6 billion.",
     "OpenAI-backed Thrive Holdings raises $2 billion to bring AI to the enterprise.",
@@ -29,6 +21,14 @@
     "Anthropic makes Claude Sonnet 5's introductory pricing ($2/$10 per million tokens) permanent",
     "cancelling a scheduled increase.",
     "Microsoft slashes prices for its coding model.",
-    "OpenAI appoints Dali Rajic as Chief Revenue Officer"
+    "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+    "OpenAI policy for eligible API customers",
+    "Replit Free Mode",
+    "ChatGPT Ads expansion to Europe",
+    "OpenAI initiative for democratic oversight in national security",
+    "OpenAI partnership with CodeAI",
+    "OpenAI funding 14 independent projects for new policy ideas",
+    "Asana uses Codex for engineering",
+    "OpenAI joins PORTS-Pike project"
   ]
 }

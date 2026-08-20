@@ -1,32 +1,88 @@
 {
-  "timestamp": "2026-08-15T01:58:24.798295",
-  "keywords": "EN: [AI agents, cost-effective, intelligent model selection, Responses API, Ultrafast mode, speed, Cerebras, Chief Revenue Officer, global revenue organization, business value]\nVN: [AI agents, hiệu quả chi phí, lựa chọn model thông minh, Responses API, Ultrafast mode, tốc độ, Cerebras, Giám đốc Doanh thu, tổ chức doanh thu toàn cầu, giá trị kinh doanh]\nMODELS: [GPT-5.6, GPT-5.6 Sol]\nBUSINESS: [OpenAI appoints Dali Rajic as Chief Revenue Officer]",
+  "timestamp": "2026-08-20T02:03:31.809171",
+  "keywords": "EN: [Zero Data Retention, Private Safety Processing, API, Private Safety Processing, AI oversight, cybersecurity, AI policy, economic development, Generative AI, responsible AI]\nVN: [Zero Data Retention, Private Safety Processing, API, Private Safety Processing, giám sát AI, an ninh mạng, chính sách AI, phát triển kinh tế, AI tạo sinh, AI có trách nhiệm]\nMODELS: [GPT-5.6 Luna, Codex]\nBUSINESS: [OpenAI policy for eligible API customers, Replit Free Mode, ChatGPT Ads expansion to Europe, OpenAI initiative for democratic oversight in national security, OpenAI partnership with CodeAI, OpenAI funding 14 independent projects for new policy ideas, Asana uses Codex for engineering, OpenAI joins PORTS-Pike project]",
   "reports": [
     {
-      "title": "The builder’s guide to GPT‑5.6",
-      "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "title": "Offering Zero Data Retention for frontier models",
+      "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-5.6 giúp các startup xây dựng AI agents nhanh hơn, hiệu quả chi phí cao hơn thông qua lựa chọn model thông minh và các khả năng mới của Responses API.",
-      "date": "2026-08-13T11:00:00"
+      "summary_vn": "OpenAI khẳng định chính sách \"Zero Data Retention\" cho các khách hàng API đủ điều kiện, đồng thời giới thiệu Private Safety Processing giúp tăng cường an toàn AI mà vẫn đảm bảo quyền riêng tư dữ liệu.",
+      "date": "2026-08-19T19:00:00"
     },
     {
-      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "link": "https://openai.com/index/previewing-ultrafast",
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "link": "https://openai.com/index/replit",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu Ultrafast mode cho GPT-5.6 Sol, đạt tốc độ nhanh hơn gấp 14 lần với 750 token/giây, được hỗ trợ bởi Cerebras.",
-      "date": "2026-08-13T10:00:00"
+      "summary_vn": "Replit giới thiệu \"Free Mode\" sử dụng GPT-5.6 Luna, cho phép mọi người biến ý tưởng thành phần mềm hoạt động mà không lo chi phí token, mở rộng khả năng sáng tạo phần mềm.",
+      "date": "2026-08-19T07:00:00"
     },
     {
-      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
-      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "title": "ChatGPT Ads expands across Europe",
+      "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI bổ nhiệm Dali Rajic làm Giám đốc Doanh thu (Chief Revenue Officer) để lãnh đạo tổ chức doanh thu toàn cầu và thúc đẩy giá trị kinh doanh từ AI.",
-      "date": "2026-08-13T09:00:00"
+      "summary_vn": "ChatGPT Ads mở rộng sang 31 thị trường châu Âu, hỗ trợ nhà quảng cáo tiếp cận người dùng trong quá trình khám phá, so sánh và ra quyết định.",
+      "date": "2026-08-18T22:00:00"
+    },
+    {
+      "title": "Strengthening democratic oversight in national security",
+      "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI khởi xướng sáng kiến tăng cường giám sát dân chủ đối với AI trong an ninh quốc gia, cung cấp công cụ, đào tạo và chuyên môn cho các tổ chức chính phủ.",
+      "date": "2026-08-18T19:00:00"
+    },
+    {
+      "title": "Partnering with CodeAI to prepare the first AI generation",
+      "link": "https://openai.com/index/partnering-with-codeai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI hợp tác với CodeAI nhằm nâng cao kiến thức về AI cho sinh viên, rèn luyện tư duy phản biện và phát triển kỹ năng sử dụng, định hình AI một cách có trách nhiệm.",
+      "date": "2026-08-18T11:00:00"
+    },
+    {
+      "title": "Pacing model development in an era of cyber-critical capabilities",
+      "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đang tăng cường giám sát, alignment và bảo mật cho các mô hình AI tiên tiến. Các biện pháp bảo vệ mới đang được áp dụng để định hướng tốc độ phát triển mô hình, đặc biệt quan trọng trong kỷ nguyên các năng lực an ninh mạng then chốt.",
+      "date": "2026-08-18T11:00:00"
+    },
+    {
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "link": "https://openai.com/index/chatgpt-for-teens",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "ChatGPT for Teens ra mắt với mục tiêu hỗ trợ thanh thiếu niên học tập, tư duy phản biện và sử dụng AI một cách tự tin. Sản phẩm tích hợp các biện pháp bảo vệ mạnh mẽ, tính năng sử dụng lành mạnh và kiểm soát bổ sung cho phụ huynh.",
+      "date": "2026-08-18T11:00:00"
+    },
+    {
+      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+      "link": "https://openai.com/index/asana",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Asana đã sử dụng OpenAI Codex để thay thế hệ thống kiểm thử cũ, hoàn thành 5 năm công việc kỹ thuật chỉ trong 2 tuần với chi phí khoảng 12.000 USD. Điều này cho thấy hiệu quả rõ rệt của việc ứng dụng AI trong tối ưu hóa quy trình phát triển phần mềm.",
+      "date": "2026-08-18T07:00:00"
+    },
+    {
+      "title": "The Defender’s Window",
+      "link": "https://openai.com/index/the-defenders-window",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Trí tuệ nhân tạo (AI) đang định hình lại lĩnh vực an ninh mạng cho cả kẻ tấn công và người phòng thủ. OpenAI đang củng cố các biện pháp bảo vệ của mình và chia sẻ các bước mà các đội an ninh có thể thực hiện để đối phó với sự thay đổi này.",
+      "date": "2026-08-17T05:30:00"
+    },
+    {
+      "title": "OpenAI joins PORTS-Pike project",
+      "link": "https://openai.com/index/openai-joins-ports-pike-project",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI tham gia dự án PORTS-Pike, mở rộng đầu tư cộng đồng và hỗ trợ hàng nghìn việc làm tại Nam Ohio. Dự án này thể hiện cam kết của OpenAI trong việc đóng góp vào phát triển kinh tế địa phương và tạo dựng cộng đồng.",
+      "date": "2026-08-17T05:00:00"
+    },
+    {
+      "title": "New policy ideas for the Intelligence Age",
+      "link": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI tài trợ 14 dự án độc lập nghiên cứu các ý tưởng chính sách mới cho Kỷ nguyên Trí tuệ. Mục tiêu là mở rộng cơ hội kinh tế và tăng cường khả năng phục hồi của xã hội trong bối cảnh AI phát triển mạnh mẽ.",
+      "date": "2026-08-17T03:15:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1129,
-    "duplicates": 1,
-    "final": 3
+    "raw_total": 1542,
+    "duplicates": 0,
+    "final": 11
   }
 }
