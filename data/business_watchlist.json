@@ -1,17 +1,5 @@
 {
   "entities": [
-    "Foxconn's AI server division revenue (51%) surpasses consumer electronics.",
-    "Anthropic is in talks to acquire startup Decart for $6 billion.",
-    "OpenAI-backed Thrive Holdings raises $2 billion to bring AI to the enterprise.",
-    "OpenAI's enterprise revenue overtakes ChatGPT subscription revenue",
-    "reaching a $40 billion annualized run rate.",
-    "IBM partners with OpenAI for secure enterprise AI deployment",
-    "integrating GPT-5.6 and other products into IBM Consulting Advantage and expanding cybersecurity collaboration.",
-    "Pony.ai and Uber expand partnership to deploy over 2",
-    "000 Robotaxis in Europe and the Middle East.",
-    "Nvidia is training Nemotron 4",
-    "a trillion-parameter open model.",
-    "Cognition is in early talks to raise funding at a $40 billion valuation.",
     "Ryanair and Google Cloud announce a five-year data and AI partnership",
     "including deployment of Gemini Enterprise and Google Workspace.",
     "Nvidia partners with Noetra (a Japanese AI consortium including Sony",
@@ -29,6 +17,18 @@
     "OpenAI partnership with CodeAI",
     "OpenAI funding 14 independent projects for new policy ideas",
     "Asana uses Codex for engineering",
-    "OpenAI joins PORTS-Pike project"
+    "OpenAI joins PORTS-Pike project",
+    "Microsoft-Anthropic partnership",
+    "Google-Mistral AI collaboration",
+    "Nvidia DRIVE Thor integration",
+    "HuggingFace funding round",
+    "Together AI Series C",
+    "OpenAI API updates",
+    "Meta Llama 3 release",
+    "Apple WWDC AI announcements",
+    "Salesforce Einstein Copilot expansion",
+    "Adobe Firefly enterprise adoption",
+    "Anthropic Claude 3.5 Sonnet launch",
+    "Microsoft Azure OpenAI Service enhancements"
   ]
 }
