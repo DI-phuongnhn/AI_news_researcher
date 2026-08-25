@@ -1349,5 +1349,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Stampli giảm 68% thời gian ra mắt sản phẩm bằng cách tận dụng ChatGPT Work và Codex. Công cụ này giúp nén tiến độ sản xuất kéo dài nhiều tuần xuống chỉ còn vài ngày, vượt qua áp lực thời gian.",
     "date": "2026-08-20T00:00:00"
+  },
+  {
+    "title": "Update from @dair_ai",
+    "link": "https://x.com/i/web/status/2091896571730493746",
+    "source": "X Profile: dair_ai",
+    "summary_vn": "Dù các mô hình tiên tiến (frontier models) đã giảm chi phí viết code, việc xem xét và bảo trì code tùy chỉnh vẫn tốn kém do sự phân tán của các giải pháp. Điều này tạo ra một chi phí lớn trong việc áp dụng các nguyên tắc của Anthropic (Anthropic Primitives) vào doanh nghiệp lớn.",
+    "date": "2026-08-24T14:33:02"
+  },
+  {
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "link": "https://openai.com/index/gpt-5-6-in-kiro",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI ra mắt GPT-5.6 trên nền tảng Kiro, mang lại hiệu quả về giá (price-performance) cao hơn cho các nhà phát triển. Mô hình này hỗ trợ toàn diện quy trình lập kế hoạch, xây dựng, xem xét và kiểm thử phần mềm, tối ưu hóa chi phí và hiệu suất.",
+    "date": "2026-08-24T12:00:00"
   }
 ]

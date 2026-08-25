@@ -1,7 +1,5 @@
 {
   "entities": [
-    "Ryanair and Google Cloud announce a five-year data and AI partnership",
-    "including deployment of Gemini Enterprise and Google Workspace.",
     "Nvidia partners with Noetra (a Japanese AI consortium including Sony",
     "SoftBank",
     "Honda) for national physical AI infrastructure in Japan",
@@ -29,6 +27,8 @@
     "Salesforce Einstein Copilot expansion",
     "Adobe Firefly enterprise adoption",
     "Anthropic Claude 3.5 Sonnet launch",
-    "Microsoft Azure OpenAI Service enhancements"
+    "Microsoft Azure OpenAI Service enhancements",
+    "**",
+    "** OpenAI ra mắt GPT-5.6 trên nền tảng Kiro"
   ]
 }
