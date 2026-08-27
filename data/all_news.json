@@ -1363,5 +1363,61 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI ra mắt GPT-5.6 trên nền tảng Kiro, mang lại hiệu quả về giá (price-performance) cao hơn cho các nhà phát triển. Mô hình này hỗ trợ toàn diện quy trình lập kế hoạch, xây dựng, xem xét và kiểm thử phần mềm, tối ưu hóa chi phí và hiệu suất.",
     "date": "2026-08-24T12:00:00"
+  },
+  {
+    "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+    "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Ứng dụng ChatGPT for Teachers mở rộng tới 55 hệ thống trường học tại Hoa Kỳ, cung cấp công cụ AI bảo mật và đào tạo cho hơn 100.000 nhà giáo dục, mang lại giá trị thực tế trong việc nâng cao năng lực giảng dạy.",
+    "date": "2026-08-26T10:00:00"
+  },
+  {
+    "title": "Learning never stops: How AI makes learning continuous",
+    "link": "https://openai.com/index/learning-never-stops",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Báo cáo mới của OpenAI khám phá cách ChatGPT hỗ trợ học sinh và nhà giáo dục duy trì quá trình học tập liên tục, vượt ra ngoài phạm vi lớp học, thể hiện ứng dụng AI trong giáo dục.",
+    "date": "2026-08-26T10:00:00"
+  },
+  {
+    "title": "The Hugging Face incident and the road ahead",
+    "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI công bố kết quả điều tra sự cố bảo mật tại Hugging Face và các biện pháp tăng cường an ninh cho mô hình AI, giám sát và alignment, nhấn mạnh tầm quan trọng của AI Cybersecurity.",
+    "date": "2026-08-26T00:00:00"
+  },
+  {
+    "title": "How loveholidays is making everyone a builder with Codex",
+    "link": "https://openai.com/index/loveholidays",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Công ty loveholidays tận dụng OpenAI Codex để dân chủ hóa việc phát triển phần mềm, cho phép các bộ phận kinh doanh tự tạo sản phẩm, minh chứng cho ứng dụng AI tăng tốc độ đổi mới và giá trị kinh doanh.",
+    "date": "2026-08-26T00:00:00"
+  },
+  {
+    "title": "The full stack behind abundant intelligence",
+    "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Giám đốc Tài chính OpenAI giải thích cách sự kết hợp giữa chip tiên tiến, năng lực tính toán (compute), các mô hình AI (models) và sản phẩm (products) tạo nên \"abundant intelligence\", mang lại AI hữu ích với quy mô lớn và chi phí thấp hơn.",
+    "date": "2026-08-25T07:05:00"
+  },
+  {
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "link": "https://openai.com/index/jalapeno-first-results",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu chip tùy chỉnh Jalapeño, cho phép AI inference đạt tốc độ và hiệu quả năng lượng vượt trội, giảm độ trễ cho các model hiện đại. Chip này hứa hẹn nâng cao hiệu suất xử lý AI, đặc biệt trong các tác vụ đòi hỏi tốc độ cao.",
+    "date": "2026-08-25T07:00:00"
+  },
+  {
+    "title": "Disrupting a new covert influence campaign from Russia",
+    "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã cấm các tài khoản có nguồn gốc từ Nga lợi dụng AI để triển khai chiến dịch ảnh hưởng ngầm, bao gồm việc tạo ra một tổ chức tư vấn giả tại Israel và một chỉ số ca ngợi Nga, nhằm mục đích tuyên truyền và gây ảnh hưởng.",
+    "date": "2026-08-25T00:00:00"
+  },
+  {
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "link": "https://openai.com/index/introducing-admin-plugin",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Plugin Admin mới cho ChatGPT Work và Codex cho phép quản lý hiệu quả không gian làm việc, bao gồm phân tích việc sử dụng, quản lý thành viên, phân quyền, điều chỉnh giới hạn và xử lý các yêu cầu quản trị.",
+    "date": "2026-08-25T00:00:00"
   }
 ]

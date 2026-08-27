@@ -1,19 +1,5 @@
 {
   "entities": [
-    "Nvidia partners with Noetra (a Japanese AI consortium including Sony",
-    "SoftBank",
-    "Honda) for national physical AI infrastructure in Japan",
-    "featuring a Vera Rubin AI factory.",
-    "Anthropic makes Claude Sonnet 5's introductory pricing ($2/$10 per million tokens) permanent",
-    "cancelling a scheduled increase.",
-    "Microsoft slashes prices for its coding model.",
-    "OpenAI appoints Dali Rajic as Chief Revenue Officer",
-    "OpenAI policy for eligible API customers",
-    "Replit Free Mode",
-    "ChatGPT Ads expansion to Europe",
-    "OpenAI initiative for democratic oversight in national security",
-    "OpenAI partnership with CodeAI",
-    "OpenAI funding 14 independent projects for new policy ideas",
     "Asana uses Codex for engineering",
     "OpenAI joins PORTS-Pike project",
     "Microsoft-Anthropic partnership",
@@ -29,6 +15,20 @@
     "Anthropic Claude 3.5 Sonnet launch",
     "Microsoft Azure OpenAI Service enhancements",
     "**",
-    "** OpenAI ra mắt GPT-5.6 trên nền tảng Kiro"
+    "** OpenAI ra mắt GPT-5.6 trên nền tảng Kiro",
+    "** Nvidia-Hugging Face acquisition",
+    "Bain & Company-Anthropic partnership",
+    "Microsoft-HUMAIN collaboration",
+    "Google Cloud-Verizon partnership",
+    "AWS-NVIDIA infrastructure expansion",
+    "Databricks $5B round",
+    "Firmus $2B round",
+    "Stability AI $76M Series B",
+    "Ode With Anthropic acquisition of Casper Studios",
+    "US Gov AI Factories",
+    "ChatGPT for Teachers expansion",
+    "OpenAI investigation of Hugging Face incident",
+    "loveholidays leveraging OpenAI Codex",
+    "Admin plugin for ChatGPT Work and Codex"
   ]
 }
