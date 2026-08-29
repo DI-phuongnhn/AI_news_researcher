@@ -1,67 +1,39 @@
 {
-  "timestamp": "2026-08-27T10:09:24.539266",
-  "keywords": "EN: [AI, ChatGPT, education, security, AI cybersecurity, software development, AI models, compute, AI inference, AI efficiency]\nVN: [AI, ChatGPT, giáo dục, bảo mật, an ninh mạng AI, phát triển phần mềm, mô hình AI, năng lực tính toán, suy luận AI, hiệu quả AI]\nMODELS: [ChatGPT, OpenAI Codex, Jalapeño]\nBUSINESS: [ChatGPT for Teachers expansion, OpenAI investigation of Hugging Face incident, loveholidays leveraging OpenAI Codex, Admin plugin for ChatGPT Work and Codex]",
+  "timestamp": "2026-08-29T07:18:01.756748",
+  "keywords": "Here's the breakdown of the news summaries according to your requested format:\n\n**EN:** [AI models, OpenAI, SpaceX, Cursor, Thailand, MHESI, startups, ChatGPT, critical-thinking training, Brazil]\n**VN:** [mô hình AI, OpenAI, SpaceX, Cursor, Thái Lan, MHESI, startup, ChatGPT, đào tạo tư duy phản biện, Brazil]\n**MODELS:** [ChatGPT]\n**BUSINESS:** [acquisition, partnership, accelerator program, expansion]",
   "reports": [
     {
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Ứng dụng ChatGPT for Teachers mở rộng tới 55 hệ thống trường học tại Hoa Kỳ, cung cấp công cụ AI bảo mật và đào tạo cho hơn 100.000 nhà giáo dục, mang lại giá trị thực tế trong việc nâng cao năng lực giảng dạy.",
-      "date": "2026-08-26T10:00:00"
+      "summary_vn": "OpenAI ngừng cung cấp mô hình AI cho Cursor sau khi công ty này được SpaceX mua lại. Quyết định này cho thấy sự thay đổi chiến lược hoặc tập trung lại nguồn lực của OpenAI.",
+      "date": "2026-08-28T06:00:00"
     },
     {
-      "title": "Learning never stops: How AI makes learning continuous",
-      "link": "https://openai.com/index/learning-never-stops",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Báo cáo mới của OpenAI khám phá cách ChatGPT hỗ trợ học sinh và nhà giáo dục duy trì quá trình học tập liên tục, vượt ra ngoài phạm vi lớp học, thể hiện ứng dụng AI trong giáo dục.",
-      "date": "2026-08-26T10:00:00"
+      "summary_vn": "OpenAI hợp tác với MHESI tại Thái Lan khởi động chương trình tăng tốc kéo dài tám tuần, hỗ trợ 10 startup trong lĩnh vực sức khỏe, wellness và giáo dục phát triển các sản phẩm AI tin cậy từ nguyên mẫu.",
+      "date": "2026-08-28T02:00:00"
     },
     {
-      "title": "The Hugging Face incident and the road ahead",
-      "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI công bố kết quả điều tra sự cố bảo mật tại Hugging Face và các biện pháp tăng cường an ninh cho mô hình AI, giám sát và alignment, nhấn mạnh tầm quan trọng của AI Cybersecurity.",
-      "date": "2026-08-26T00:00:00"
+      "summary_vn": "Một nghiên cứu ngẫu nhiên trên hơn 1.000 sinh viên cho thấy ChatGPT kết hợp với đào tạo tư duy phản biện giúp cải thiện hiệu suất và sự độc đáo của sinh viên trong các bài tập thực tế ở trường đại học.",
+      "date": "2026-08-27T09:00:00"
     },
     {
-      "title": "How loveholidays is making everyone a builder with Codex",
-      "link": "https://openai.com/index/loveholidays",
+      "title": "Expanding OpenAI’s presence in Brazil",
+      "link": "https://openai.com/index/expanding-our-presence-in-brazil",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Công ty loveholidays tận dụng OpenAI Codex để dân chủ hóa việc phát triển phần mềm, cho phép các bộ phận kinh doanh tự tạo sản phẩm, minh chứng cho ứng dụng AI tăng tốc độ đổi mới và giá trị kinh doanh.",
-      "date": "2026-08-26T00:00:00"
-    },
-    {
-      "title": "The full stack behind abundant intelligence",
-      "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Giám đốc Tài chính OpenAI giải thích cách sự kết hợp giữa chip tiên tiến, năng lực tính toán (compute), các mô hình AI (models) và sản phẩm (products) tạo nên \"abundant intelligence\", mang lại AI hữu ích với quy mô lớn và chi phí thấp hơn.",
-      "date": "2026-08-25T07:05:00"
-    },
-    {
-      "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-      "link": "https://openai.com/index/jalapeno-first-results",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu chip tùy chỉnh Jalapeño, cho phép AI inference đạt tốc độ và hiệu quả năng lượng vượt trội, giảm độ trễ cho các model hiện đại. Chip này hứa hẹn nâng cao hiệu suất xử lý AI, đặc biệt trong các tác vụ đòi hỏi tốc độ cao.",
-      "date": "2026-08-25T07:00:00"
-    },
-    {
-      "title": "Disrupting a new covert influence campaign from Russia",
-      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã cấm các tài khoản có nguồn gốc từ Nga lợi dụng AI để triển khai chiến dịch ảnh hưởng ngầm, bao gồm việc tạo ra một tổ chức tư vấn giả tại Israel và một chỉ số ca ngợi Nga, nhằm mục đích tuyên truyền và gây ảnh hưởng.",
-      "date": "2026-08-25T00:00:00"
-    },
-    {
-      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
-      "link": "https://openai.com/index/introducing-admin-plugin",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Plugin Admin mới cho ChatGPT Work và Codex cho phép quản lý hiệu quả không gian làm việc, bao gồm phân tích việc sử dụng, quản lý thành viên, phân quyền, điều chỉnh giới hạn và xử lý các yêu cầu quản trị.",
-      "date": "2026-08-25T00:00:00"
+      "summary_vn": "OpenAI mở rộng sự hiện diện tại Brazil, tăng cường hợp tác với các nhà phát triển, doanh nghiệp và cộng đồng nhằm thúc đẩy việc áp dụng AI trên toàn quốc.",
+      "date": "2026-08-27T03:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1554,
-    "duplicates": 1,
-    "final": 8
+    "raw_total": 1656,
+    "duplicates": 2,
+    "final": 4
   }
 }

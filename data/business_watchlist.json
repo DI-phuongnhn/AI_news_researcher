@@ -1,9 +1,5 @@
 {
   "entities": [
-    "Asana uses Codex for engineering",
-    "OpenAI joins PORTS-Pike project",
-    "Microsoft-Anthropic partnership",
-    "Google-Mistral AI collaboration",
     "Nvidia DRIVE Thor integration",
     "HuggingFace funding round",
     "Together AI Series C",
@@ -29,6 +25,10 @@
     "ChatGPT for Teachers expansion",
     "OpenAI investigation of Hugging Face incident",
     "loveholidays leveraging OpenAI Codex",
-    "Admin plugin for ChatGPT Work and Codex"
+    "Admin plugin for ChatGPT Work and Codex",
+    "** acquisition",
+    "partnership",
+    "accelerator program",
+    "expansion"
   ]
 }
