@@ -1,17 +1,5 @@
 {
   "entities": [
-    "Nvidia DRIVE Thor integration",
-    "HuggingFace funding round",
-    "Together AI Series C",
-    "OpenAI API updates",
-    "Meta Llama 3 release",
-    "Apple WWDC AI announcements",
-    "Salesforce Einstein Copilot expansion",
-    "Adobe Firefly enterprise adoption",
-    "Anthropic Claude 3.5 Sonnet launch",
-    "Microsoft Azure OpenAI Service enhancements",
-    "**",
-    "** OpenAI ra mắt GPT-5.6 trên nền tảng Kiro",
     "** Nvidia-Hugging Face acquisition",
     "Bain & Company-Anthropic partnership",
     "Microsoft-HUMAIN collaboration",
@@ -29,6 +17,18 @@
     "** acquisition",
     "partnership",
     "accelerator program",
-    "expansion"
+    "expansion",
+    "Microsoft-Anthropic partnership",
+    "Google-Mistral partnership",
+    "Nvidia-Adobe integration",
+    "HuggingFace funding",
+    "OpenAI Enterprise deployments",
+    "Anthropic Enterprise deals",
+    "Cohere Command R+",
+    "Perplexity AI Pro expansion",
+    "ElevenLabs voice cloning deals",
+    "ChatGPT Ads revenue",
+    "global expansion",
+    "funding"
   ]
 }
