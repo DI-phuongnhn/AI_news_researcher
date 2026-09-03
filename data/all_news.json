@@ -1468,5 +1468,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "ChatGPT Ads đã đạt doanh thu hàng năm 1 tỷ USD và mở rộng toàn cầu, thể hiện một cột mốc quan trọng trong việc mở rộng khả năng tiếp cận AI. Chiến lược này hỗ trợ người dùng phổ thông thông qua các tùy chọn miễn phí và giá cả phải chăng.",
     "date": "2026-08-31T04:00:00"
+  },
+  {
+    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+    "link": "https://openai.com/index/atv-big-air-tour",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Tổ chức sự kiện ATV Big Air Tour đã sử dụng ChatGPT để tối ưu hóa quy trình tiếp thị và quản lý hàng hóa, giảm thời gian làm việc từ 3 ngày xuống chỉ còn 3 giờ. Công cụ này còn có khả năng tự động tạo website kiểm kê từ ảnh sản phẩm chỉ trong 15 phút, cho thấy hiệu quả ứng dụng AI trong kinh doanh thực tế.",
+    "date": "2026-09-02T12:00:00"
+  },
+  {
+    "title": "How AI-native companies turn workflows into operating capability",
+    "link": "https://openai.com/index/ai-native-company-workflows",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Các công ty \"AI-native\" như Basis, Clay, và Exa Labs đang tận dụng các AI agents để nâng cao hiệu quả các quy trình nghiệp vụ như onboarding, quản lý tài khoản và tích hợp cho nhà phát triển. Điều này cho phép chuyển đổi các workflow thành khả năng vận hành cốt lõi, mang lại giá trị kinh doanh vượt trội.",
+    "date": "2026-09-01T17:00:00"
+  },
+  {
+    "title": "Path to Astra: critical capabilities and frontier safeguards",
+    "link": "https://openai.com/index/path-to-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Mô hình Astra của OpenAI là mô hình đầu tiên đáp ứng ngưỡng Năng lực An ninh Mạng Quan trọng (critical cybersecurity capability) theo Preparedness Framework. Astra cũng được trang bị các biện pháp bảo vệ tiên tiến (frontier safeguards) trước khi ra mắt, đảm bảo an toàn và bảo mật.",
+    "date": "2026-09-01T13:00:00"
+  },
+  {
+    "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+    "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Các tổ chức y tế giờ đây có thể kết nối dữ liệu Hồ sơ Sức khỏe Điện tử (EHR) và các nguồn dữ liệu ngành khác với ChatGPT. Điều này hỗ trợ các bác sĩ truy cập an toàn thông tin bệnh nhân, nghiên cứu y khoa, từ đó nâng cao chất lượng chăm sóc sức khỏe.",
+    "date": "2026-09-01T12:00:00"
+  },
+  {
+    "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+    "link": "https://openai.com/index/gilbert-tobin",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Công ty luật Gilbert + Tobin đã tích hợp thành công ChatGPT Enterprise và Codex bằng cách kết hợp cam kết từ CEO, quy trình quản trị chặt chẽ và trách nhiệm giải trình của con người. Cách tiếp cận này giúp công ty này quản trị và mở rộng quy mô ứng dụng AI một cách hiệu quả.",
+    "date": "2026-09-01T01:00:00"
   }
 ]

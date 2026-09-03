@@ -38,7 +38,8 @@
     "** GPT-5.6",
     "OpenAI Codex",
     "Jalapeño",
-    "GPT"
+    "GPT",
+    "Astra"
   ],
   "legacy": [
     "GPT-4",
