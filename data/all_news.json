@@ -1503,5 +1503,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Công ty luật Gilbert + Tobin đã tích hợp thành công ChatGPT Enterprise và Codex bằng cách kết hợp cam kết từ CEO, quy trình quản trị chặt chẽ và trách nhiệm giải trình của con người. Cách tiếp cận này giúp công ty này quản trị và mở rộng quy mô ứng dụng AI một cách hiệu quả.",
     "date": "2026-09-01T01:00:00"
+  },
+  {
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI ra mắt \"Daybreak for Frontline Defenders\" với cam kết 1 tỷ USD, tập trung vào việc mở rộng khả năng tiếp cận AI tiên tiến cho an ninh mạng và các dịch vụ thiết yếu. Sáng kiến này nhằm nâng cao năng lực phòng thủ cho các hệ thống quan trọng thông qua đào tạo và hỗ trợ chuyên sâu.",
+    "date": "2026-09-03T13:15:00"
+  },
+  {
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Công ty Playco đã giảm 50% số lần sửa thủ công trong quá trình tạo mẫu game bằng GPT-6 Astra. Mô hình mới cho phép xây dựng ba nguyên mẫu game với ít công sức chỉnh sửa thủ công hơn đáng kể so với các phiên bản trước.",
+    "date": "2026-09-03T12:00:00"
+  },
+  {
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Legora đã áp dụng GPT-6 Astra để xem xét 41 tài liệu trong vài phút, phát hiện lỗi và cải thiện hiệu suất quy trình làm việc đánh giá tài chính lên gần 40%. Điều này thể hiện khả năng xử lý và phân tích tài liệu hiệu quả của mô hình.",
+    "date": "2026-09-03T12:00:00"
+  },
+  {
+    "title": "GPT-6 Astra: A new generation of intelligence",
+    "link": "https://openai.com/index/gpt-6-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-6 Astra được giới thiệu là thế hệ mô hình thông minh và có tính căn chỉnh cao nhất của OpenAI. Nó sở hữu các khả năng tiên tiến trong việc sử dụng máy tính, lập trình, an ninh mạng và khoa học.",
+    "date": "2026-09-03T11:00:00"
+  },
+  {
+    "title": "Safety overview: GPT-6 Astra",
+    "link": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-6 Astra đạt mức \"Critical\" về năng lực an ninh mạng theo Khung chuẩn bị của OpenAI, trở thành mô hình có khả năng triển khai rộng rãi nhất và có mức độ bảo mật cao nhất.",
+    "date": "2026-09-03T00:00:00"
   }
 ]

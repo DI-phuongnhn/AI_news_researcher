@@ -1,46 +1,46 @@
 {
-  "timestamp": "2026-09-03T04:54:07.036621",
-  "keywords": "EN: [AI, AI agents, ChatGPT, ChatGPT Enterprise, EHR, cybersecurity, operating capability, workflows, AI-native, governing AI]\nVN: [AI, AI agents, ChatGPT, ChatGPT Enterprise, EHR, an ninh mạng, năng lực vận hành, quy trình nghiệp vụ, AI-native, quản trị AI]\nMODELS: [Astra, Codex]\nBUSINESS: [integration, acquisition, funding, partnership, deal]",
+  "timestamp": "2026-09-05T04:50:45.004289",
+  "keywords": "EN: [AI, Cybersecurity, Essential Services, Prototyping, Document Review, Financial Assessment, Programming, Scientific Research, Machine Learning, Advanced Capabilities]\nVN: [AI, An ninh mạng, Dịch vụ thiết yếu, Tạo mẫu, Đánh giá tài liệu, Đánh giá tài chính, Lập trình, Nghiên cứu khoa học, Học máy, Khả năng tiên tiến]\nMODELS: [Daybreak for Frontline Defenders, GPT-6 Astra]\nBUSINESS: [$1B funding for cybersecurity and essential services, Reduced manual fixes in game prototyping, Accelerated document review for financial assessment]",
   "reports": [
     {
-      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "link": "https://openai.com/index/atv-big-air-tour",
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Tổ chức sự kiện ATV Big Air Tour đã sử dụng ChatGPT để tối ưu hóa quy trình tiếp thị và quản lý hàng hóa, giảm thời gian làm việc từ 3 ngày xuống chỉ còn 3 giờ. Công cụ này còn có khả năng tự động tạo website kiểm kê từ ảnh sản phẩm chỉ trong 15 phút, cho thấy hiệu quả ứng dụng AI trong kinh doanh thực tế.",
-      "date": "2026-09-02T12:00:00"
+      "summary_vn": "OpenAI ra mắt \"Daybreak for Frontline Defenders\" với cam kết 1 tỷ USD, tập trung vào việc mở rộng khả năng tiếp cận AI tiên tiến cho an ninh mạng và các dịch vụ thiết yếu. Sáng kiến này nhằm nâng cao năng lực phòng thủ cho các hệ thống quan trọng thông qua đào tạo và hỗ trợ chuyên sâu.",
+      "date": "2026-09-03T13:15:00"
     },
     {
-      "title": "How AI-native companies turn workflows into operating capability",
-      "link": "https://openai.com/index/ai-native-company-workflows",
+      "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Các công ty \"AI-native\" như Basis, Clay, và Exa Labs đang tận dụng các AI agents để nâng cao hiệu quả các quy trình nghiệp vụ như onboarding, quản lý tài khoản và tích hợp cho nhà phát triển. Điều này cho phép chuyển đổi các workflow thành khả năng vận hành cốt lõi, mang lại giá trị kinh doanh vượt trội.",
-      "date": "2026-09-01T17:00:00"
+      "summary_vn": "Công ty Playco đã giảm 50% số lần sửa thủ công trong quá trình tạo mẫu game bằng GPT-6 Astra. Mô hình mới cho phép xây dựng ba nguyên mẫu game với ít công sức chỉnh sửa thủ công hơn đáng kể so với các phiên bản trước.",
+      "date": "2026-09-03T12:00:00"
     },
     {
-      "title": "Path to Astra: critical capabilities and frontier safeguards",
-      "link": "https://openai.com/index/path-to-astra",
+      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Mô hình Astra của OpenAI là mô hình đầu tiên đáp ứng ngưỡng Năng lực An ninh Mạng Quan trọng (critical cybersecurity capability) theo Preparedness Framework. Astra cũng được trang bị các biện pháp bảo vệ tiên tiến (frontier safeguards) trước khi ra mắt, đảm bảo an toàn và bảo mật.",
-      "date": "2026-09-01T13:00:00"
+      "summary_vn": "Legora đã áp dụng GPT-6 Astra để xem xét 41 tài liệu trong vài phút, phát hiện lỗi và cải thiện hiệu suất quy trình làm việc đánh giá tài chính lên gần 40%. Điều này thể hiện khả năng xử lý và phân tích tài liệu hiệu quả của mô hình.",
+      "date": "2026-09-03T12:00:00"
     },
     {
-      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
-      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "link": "https://openai.com/index/gpt-6-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Các tổ chức y tế giờ đây có thể kết nối dữ liệu Hồ sơ Sức khỏe Điện tử (EHR) và các nguồn dữ liệu ngành khác với ChatGPT. Điều này hỗ trợ các bác sĩ truy cập an toàn thông tin bệnh nhân, nghiên cứu y khoa, từ đó nâng cao chất lượng chăm sóc sức khỏe.",
-      "date": "2026-09-01T12:00:00"
+      "summary_vn": "GPT-6 Astra được giới thiệu là thế hệ mô hình thông minh và có tính căn chỉnh cao nhất của OpenAI. Nó sở hữu các khả năng tiên tiến trong việc sử dụng máy tính, lập trình, an ninh mạng và khoa học.",
+      "date": "2026-09-03T11:00:00"
     },
     {
-      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
-      "link": "https://openai.com/index/gilbert-tobin",
+      "title": "Safety overview: GPT-6 Astra",
+      "link": "https://openai.com/index/safety-overview-gpt-6-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Công ty luật Gilbert + Tobin đã tích hợp thành công ChatGPT Enterprise và Codex bằng cách kết hợp cam kết từ CEO, quy trình quản trị chặt chẽ và trách nhiệm giải trình của con người. Cách tiếp cận này giúp công ty này quản trị và mở rộng quy mô ứng dụng AI một cách hiệu quả.",
-      "date": "2026-09-01T01:00:00"
+      "summary_vn": "GPT-6 Astra đạt mức \"Critical\" về năng lực an ninh mạng theo Khung chuẩn bị của OpenAI, trở thành mô hình có khả năng triển khai rộng rãi nhất và có mức độ bảo mật cao nhất.",
+      "date": "2026-09-03T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1339,
-    "duplicates": 2,
+    "raw_total": 1600,
+    "duplicates": 1,
     "final": 5
   }
 }
