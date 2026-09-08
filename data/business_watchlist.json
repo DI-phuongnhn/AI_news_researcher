@@ -1,17 +1,5 @@
 {
   "entities": [
-    "Meta",
-    "Salesforce",
-    "ServiceNow",
-    "Sierra",
-    "Google introduces Gemini 3.8 Flash",
-    "Gemini 3.8 Flash Cyber",
-    "and agentic video understanding for Gemini models",
-    "Anthropic signs $35 billion AI-compute deal with Lambda",
-    "Anthropic signs $45 billion AI computing power deal with Nscale",
-    "Nvidia acquires Hugging Face for approximately $12.9 billion",
-    "New York City announces one-year moratorium on student-facing generative AI tools",
-    "OpenAI gives first glimpse of its next-generation Astra model",
     "NVIDIA and CrowdStrike strengthen Agentic Cybersecurity Frontier partnership",
     "iManage and Wordsmith AI partner for agentic legal workflows",
     "Sharon AI selects Rafay Systems for AI infrastructure orchestration",
@@ -29,6 +17,18 @@
     "PwC Japan Group offers AI-driven cybersecurity re-engineering support",
     "$1B funding for cybersecurity and essential services",
     "Reduced manual fixes in game prototyping",
-    "Accelerated document review for financial assessment"
+    "Accelerated document review for financial assessment",
+    "Microsoft-OpenAI partnership",
+    "Anthropic Series B",
+    "Nvidia-Hugging Face collaboration",
+    "Google-Meta AI integration",
+    "Together AI Series C",
+    "Perplexity AI funding",
+    "Mistral AI Series A",
+    "ElevenLabs acquisition",
+    "Cohere enterprise deals",
+    "Databricks AI platform launch",
+    "OpenAI partnership with AIRPPU and WAN-IFRA",
+    "AI program in Ukraine"
   ]
 }
