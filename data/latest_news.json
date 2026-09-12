@@ -1,88 +1,67 @@
 {
-  "timestamp": "2026-09-10T05:05:01.397330",
-  "keywords": "EN: [DNA variants, AI policy, advanced AI capabilities, AI alignment, AI safety, quantum computing experiments, qubit calibration, generative AI, journalism support, engineering productivity]\nVN: [biến thể DNA, chính sách AI, khả năng AI tiên tiến, AI alignment, an toàn AI, thí nghiệm điện toán lượng tử, hiệu chỉnh qubit, generative AI, hỗ trợ báo chí, năng suất kỹ thuật]\nMODELS: [AlphaGenome Atlas, GPT-6 Astra, GPT-5.6 Sol, Codex, ChatGPT Images 2.5]\nBUSINESS: [OpenAI Foundation Board appointment, $5 million USD funding grant for AI and teen development research, 1Password productivity increase with Codex]",
+  "timestamp": "2026-09-12T04:53:36.015194",
+  "keywords": "EN: [online storage, scalability, testing, software testing, code review, genome analysis, antimicrobial molecules, drug resistance, enterprise data, natural language]\nVN: [lưu trữ trực tuyến, khả năng mở rộng, kiểm thử, kiểm thử phần mềm, xem xét mã, phân tích bộ gen, phân tử kháng khuẩn, kháng thuốc, dữ liệu doanh nghiệp, ngôn ngữ tự nhiên]\nMODELS: [GPT-6 Astra, Codex, ChatGPT, GPT-6 Astra, GPT‑Live‑1]\nBUSINESS: [OpenAI mở rộng nền tảng lưu trữ Habitat, Cognition giúp Devin thử nghiệm công việc của mình, Phòng thí nghiệm của César de la Fuente ứng dụng Codex và ChatGPT, ChatGPT Work giới thiệu Data agent, ChatGPT for Financial Services ra mắt, OpenAI hợp tác với GSA, API của OpenAI giờ đây hỗ trợ GPT‑Live‑1, OpenAI giới thiệu Agents API]",
   "reports": [
     {
-      "title": "Update from @demishassabis",
-      "link": "https://x.com/i/web/status/2097341636472688674",
-      "source": "X Profile: demishassabis",
-      "summary_vn": "Google DeepMind ra mắt AlphaGenome Atlas, một công cụ có khả năng dự đoán tác động của 9 tỷ biến thể DNA đơn lẻ, hỗ trợ nghiên cứu y học và hiểu biết về bệnh tật, được cung cấp miễn phí cho nghiên cứu học thuật.",
-      "date": "2026-09-08T15:09:47"
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đã mở rộng nền tảng lưu trữ Habitat để phục vụ hơn 1 tỷ người dùng ChatGPT, xử lý 22 triệu yêu cầu mỗi giây, cho thấy khả năng mở rộng quy mô của hệ thống.",
+      "date": "2026-09-11T10:00:00"
     },
     {
-      "title": "The AI policy window is open. We need to act.",
-      "link": "https://openai.com/index/ai-policy-window",
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Chris Lehane nhấn mạnh sự cần thiết của hành động chính sách mạnh mẽ, các tiêu chuẩn chung và bằng chứng an toàn vững chắc cho các khả năng AI tiên tiến trong bối cảnh cửa sổ chính sách còn mở.",
-      "date": "2026-09-09T13:00:00"
+      "summary_vn": "GPT-6 Astra, một mô hình mới của Cognition, giúp Devin tự kiểm tra công việc của mình, cải thiện khả năng kiểm thử phần mềm và giảm thiểu việc kỹ sư phải xem xét quá nhiều code.",
+      "date": "2026-09-11T16:00:00"
     },
     {
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu GPT-6 Astra, một mô hình AI tiên tiến cho doanh nghiệp, nổi bật với khả năng suy luận nâng cao, sử dụng máy tính hiệu quả và sự phán đoán tốt hơn trong viết lách và thiết kế.",
-      "date": "2026-09-09T11:00:00"
+      "summary_vn": "Phòng thí nghiệm của César de la Fuente ứng dụng Codex và ChatGPT để phân tích bộ gen, tìm kiếm các phân tử kháng khuẩn tiềm năng nhằm đối phó với tình trạng kháng thuốc ngày càng gia tăng.",
+      "date": "2026-09-10T16:00:00"
     },
     {
-      "title": "Paul Christiano joins OpenAI Foundation Board",
-      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "title": "Now everyone can put data to work",
+      "link": "https://openai.com/index/put-data-to-work",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Paul Christiano gia nhập Hội đồng Quản trị OpenAI Foundation và Ủy ban An toàn, An ninh, với kinh nghiệm chuyên sâu về AI alignment, an toàn và tiêu chuẩn.",
-      "date": "2026-09-09T17:00:00"
+      "summary_vn": "ChatGPT Work giới thiệu Data agent, cho phép người dùng kết nối dữ liệu doanh nghiệp, khám phá insights và xây dựng dashboard tương tác bằng ngôn ngữ tự nhiên.",
+      "date": "2026-09-10T15:00:00"
     },
     {
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "link": "https://openai.com/index/codex-quantum-computing-experiments",
+      "title": "Introducing ChatGPT for Financial Services",
+      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Một nhà nghiên cứu MIT đã sử dụng GPT-5.6 Sol kết hợp với Codex để tự động hóa các thí nghiệm điện toán lượng tử, phân tích kết quả và hiệu chỉnh qubit, thể hiện khả năng ứng dụng AI trong nghiên cứu khoa học phức tạp.",
-      "date": "2026-09-08T17:00:00"
+      "summary_vn": "ChatGPT for Financial Services ra mắt, kết hợp dữ liệu tài chính tích hợp với GPT-6 Astra, hỗ trợ nghiên cứu, mô hình hóa và tạo tài liệu cho khách hàng trong lĩnh vực tài chính.",
+      "date": "2026-09-10T07:00:00"
     },
     {
-      "title": "The Work Now Within Reach",
-      "link": "https://openai.com/index/the-work-now-within-reach",
+      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+      "link": "https://openai.com/index/expanding-ai-access-us-government",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI nhấn mạnh tiềm năng của AI ngày càng mạnh mẽ và chi phí hợp lý trong việc mở rộng khả năng làm việc cho cá nhân và doanh nghiệp, đồng thời thúc đẩy tăng trưởng kinh tế hiệu quả hơn.",
-      "date": "2026-09-08T13:00:00"
+      "summary_vn": "OpenAI hợp tác với GSA cung cấp các ưu đãi về chi phí cấp phép và sử dụng AI cùng hỗ trợ an ninh mạng cho các cơ quan chính phủ các cấp tại Hoa Kỳ, giúp mở rộng khả năng tiếp cận công nghệ AI và tăng cường phòng thủ mạng.",
+      "date": "2026-09-10T07:00:00"
     },
     {
-      "title": "Introducing ChatGPT Images 2.5",
-      "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
       "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT Images 2.5 được giới thiệu, cho phép người dùng chuyển ý tưởng, bản phác thảo và ảnh tham khảo thành những hình ảnh cá nhân hóa và tinh tế hơn, phản ánh chính xác hơn ý định ban đầu.",
-      "date": "2026-09-08T11:30:00"
+      "summary_vn": "API của OpenAI giờ đây hỗ trợ GPT‑Live‑1, cho phép xây dựng các trải nghiệm giọng nói tự nhiên và hai chiều (full-duplex), cải thiện khả năng tuân theo chỉ dẫn, hỗ trợ giọng nói tùy chỉnh và tích hợp với hệ thống điện thoại.",
+      "date": "2026-09-10T00:00:00"
     },
     {
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "link": "https://openai.com/index/navier-stokes-solution",
+      "title": "Introducing the Agents API",
+      "link": "https://openai.com/index/introducing-the-agents-api",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI công bố một giải pháp AI cho bài toán Millennium Prize về Navier-Stokes, kèm theo bài viết chi tiết và bằng chứng hình thức bằng ngôn ngữ Lean, đánh dấu một bước tiến trong khả năng giải quyết vấn đề phức tạp của AI.",
-      "date": "2026-09-08T10:00:00"
-    },
-    {
-      "title": "Funding grants for new research into AI and teen development",
-      "link": "https://openai.com/index/teen-development-research-grants",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI mở chương trình tài trợ $5 triệu USD cho các nghiên cứu độc lập, tập trung vào tác động của generative AI đối với sự phát triển, sức khỏe tinh thần và an toàn của thanh thiếu niên.",
-      "date": "2026-09-08T09:00:00"
-    },
-    {
-      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
-      "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI tăng cường hỗ trợ cho lĩnh vực báo chí thông qua các công cụ, chương trình đào tạo và quan hệ đối tác, nhằm mục tiêu hỗ trợ sinh viên, nhà giáo dục, nhà báo và các tổ chức tin tức.",
-      "date": "2026-09-08T00:00:00"
-    },
-    {
-      "title": "1Password increases engineering productivity 21% with Codex",
-      "link": "https://openai.com/index/1password",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "1Password đã tăng năng suất kỹ thuật lên 21% nhờ sử dụng Codex của OpenAI. Công cụ này giúp kỹ sư xây dựng nhanh chóng các tính năng mới và công cụ nội bộ, đạt được trạng thái sẵn sàng cho sản xuất mà vẫn duy trì các chính sách bảo mật nghiêm ngặt. Việc áp dụng Codex thể hiện rõ giá trị kinh doanh trong việc đẩy nhanh phát triển và duy trì an ninh.",
-      "date": "2026-09-08T00:00:00"
+      "summary_vn": "OpenAI giới thiệu Agents API, một dịch vụ được quản lý để xây dựng và triển khai các cloud agent. Dịch vụ này sử dụng kiến trúc Codex để hỗ trợ điều phối (orchestration), các phiên làm việc dài hạn và sử dụng công cụ (tool use).",
+      "date": "2026-09-10T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1584,
-    "duplicates": 0,
-    "final": 11
+    "raw_total": 1192,
+    "duplicates": 3,
+    "final": 8
   }
 }

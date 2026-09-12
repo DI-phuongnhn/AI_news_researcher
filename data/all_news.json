@@ -1636,5 +1636,61 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "1Password đã tăng năng suất kỹ thuật lên 21% nhờ sử dụng Codex của OpenAI. Công cụ này giúp kỹ sư xây dựng nhanh chóng các tính năng mới và công cụ nội bộ, đạt được trạng thái sẵn sàng cho sản xuất mà vẫn duy trì các chính sách bảo mật nghiêm ngặt. Việc áp dụng Codex thể hiện rõ giá trị kinh doanh trong việc đẩy nhanh phát triển và duy trì an ninh.",
     "date": "2026-09-08T00:00:00"
+  },
+  {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã mở rộng nền tảng lưu trữ Habitat để phục vụ hơn 1 tỷ người dùng ChatGPT, xử lý 22 triệu yêu cầu mỗi giây, cho thấy khả năng mở rộng quy mô của hệ thống.",
+    "date": "2026-09-11T10:00:00"
+  },
+  {
+    "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-6 Astra, một mô hình mới của Cognition, giúp Devin tự kiểm tra công việc của mình, cải thiện khả năng kiểm thử phần mềm và giảm thiểu việc kỹ sư phải xem xét quá nhiều code.",
+    "date": "2026-09-11T16:00:00"
+  },
+  {
+    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Phòng thí nghiệm của César de la Fuente ứng dụng Codex và ChatGPT để phân tích bộ gen, tìm kiếm các phân tử kháng khuẩn tiềm năng nhằm đối phó với tình trạng kháng thuốc ngày càng gia tăng.",
+    "date": "2026-09-10T16:00:00"
+  },
+  {
+    "title": "Now everyone can put data to work",
+    "link": "https://openai.com/index/put-data-to-work",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT Work giới thiệu Data agent, cho phép người dùng kết nối dữ liệu doanh nghiệp, khám phá insights và xây dựng dashboard tương tác bằng ngôn ngữ tự nhiên.",
+    "date": "2026-09-10T15:00:00"
+  },
+  {
+    "title": "Introducing ChatGPT for Financial Services",
+    "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT for Financial Services ra mắt, kết hợp dữ liệu tài chính tích hợp với GPT-6 Astra, hỗ trợ nghiên cứu, mô hình hóa và tạo tài liệu cho khách hàng trong lĩnh vực tài chính.",
+    "date": "2026-09-10T07:00:00"
+  },
+  {
+    "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+    "link": "https://openai.com/index/expanding-ai-access-us-government",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI hợp tác với GSA cung cấp các ưu đãi về chi phí cấp phép và sử dụng AI cùng hỗ trợ an ninh mạng cho các cơ quan chính phủ các cấp tại Hoa Kỳ, giúp mở rộng khả năng tiếp cận công nghệ AI và tăng cường phòng thủ mạng.",
+    "date": "2026-09-10T07:00:00"
+  },
+  {
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "API của OpenAI giờ đây hỗ trợ GPT‑Live‑1, cho phép xây dựng các trải nghiệm giọng nói tự nhiên và hai chiều (full-duplex), cải thiện khả năng tuân theo chỉ dẫn, hỗ trợ giọng nói tùy chỉnh và tích hợp với hệ thống điện thoại.",
+    "date": "2026-09-10T00:00:00"
+  },
+  {
+    "title": "Introducing the Agents API",
+    "link": "https://openai.com/index/introducing-the-agents-api",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu Agents API, một dịch vụ được quản lý để xây dựng và triển khai các cloud agent. Dịch vụ này sử dụng kiến trúc Codex để hỗ trợ điều phối (orchestration), các phiên làm việc dài hạn và sử dụng công cụ (tool use).",
+    "date": "2026-09-10T00:00:00"
   }
 ]
