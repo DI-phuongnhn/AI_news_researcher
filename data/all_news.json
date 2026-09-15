@@ -1692,5 +1692,19 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI giới thiệu Agents API, một dịch vụ được quản lý để xây dựng và triển khai các cloud agent. Dịch vụ này sử dụng kiến trúc Codex để hỗ trợ điều phối (orchestration), các phiên làm việc dài hạn và sử dụng công cụ (tool use).",
     "date": "2026-09-10T00:00:00"
+  },
+  {
+    "title": "How Fyxer built an AI executive assistant people trust",
+    "link": "https://openai.com/index/fyxer",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Fyxer phát triển trợ lý điều hành AI tin cậy bằng cách sử dụng các mô hình OpenAI, kỹ thuật **fine-tuning**, tích hợp bộ nhớ và phản hồi người dùng để quản lý hộp thư đến và soạn thảo email theo văn phong cá nhân.",
+    "date": "2026-09-14T12:00:00"
+  },
+  {
+    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Perplexity sử dụng GPT-6 Astra để tự động hóa các tác vụ như viết thông báo, thay đổi phần mềm và giám sát hệ thống sản xuất, đạt hiệu quả cao hơn so với các mô hình trước đây.",
+    "date": "2026-09-14T00:00:00"
   }
 ]
