@@ -1,25 +1,53 @@
 {
-  "timestamp": "2026-09-15T05:10:35.907644",
-  "keywords": "EN: [AI executive assistant, OpenAI models, fine-tuning, memory integration, user feedback, email drafting, end-to-end systems, software changes, production system monitoring, automation]\nVN: [trợ lý điều hành AI, mô hình OpenAI, fine-tuning, tích hợp bộ nhớ, phản hồi người dùng, soạn thảo email, hệ thống end-to-end, thay đổi phần mềm, giám sát hệ thống sản xuất, tự động hóa]\nMODELS: [GPT-6 Astra]\nBUSINESS: []",
+  "timestamp": "2026-09-17T05:09:41.894606",
+  "keywords": "EN: [AGI, interdisciplinary research, economic impact, scientific impact, social impact, AI workshops, advertising experiences, AI analytics, model misalignment, worker productivity]\nVN: [AGI, nghiên cứu liên ngành, tác động kinh tế, tác động khoa học, tác động xã hội, workshop AI, trải nghiệm quảng cáo, phân tích AI, sai lệch mô hình, năng suất lao động]\nMODELS: [ChatGPT, Codex]\nBUSINESS: [OpenAI partnership with AARP, OpenAI integration with HubSpot, OpenAI integration with Shopify]",
   "reports": [
     {
-      "title": "How Fyxer built an AI executive assistant people trust",
-      "link": "https://openai.com/index/fyxer",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Fyxer phát triển trợ lý điều hành AI tin cậy bằng cách sử dụng các mô hình OpenAI, kỹ thuật **fine-tuning**, tích hợp bộ nhớ và phản hồi người dùng để quản lý hộp thư đến và soạn thảo email theo văn phong cá nhân.",
-      "date": "2026-09-14T12:00:00"
+      "title": "Update from @demishassabis",
+      "link": "https://x.com/i/web/status/2100230524383981702",
+      "source": "X Profile: demishassabis",
+      "summary_vn": "DeepMind Institute, dưới sự dẫn dắt của Demis Hassabis và Shane Legg, mở rộng nghiên cứu liên ngành về tác động tiềm tàng của AGI lên kinh tế, khoa học và xã hội. Mục tiêu là thúc đẩy thảo luận cần thiết để định hướng các bước đi tiếp theo cho kỷ nguyên AI.",
+      "date": "2026-09-16T14:29:12"
     },
     {
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-      "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "title": "Helping older adults use AI in everyday life",
+      "link": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Perplexity sử dụng GPT-6 Astra để tự động hóa các tác vụ như viết thông báo, thay đổi phần mềm và giám sát hệ thống sản xuất, đạt hiệu quả cao hơn so với các mô hình trước đây.",
-      "date": "2026-09-14T00:00:00"
+      "summary_vn": "OpenAI hợp tác với AARP tổ chức các buổi workshop miễn phí sử dụng ChatGPT cho người lớn tuổi tại 10 thành phố Mỹ. Mục tiêu là trang bị kỹ năng AI thiết thực và an toàn cho nhóm đối tượng này.",
+      "date": "2026-09-16T16:00:00"
+    },
+    {
+      "title": "Reimagining advertising with AI",
+      "link": "https://openai.com/index/reimagining-advertising-with-ai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI giới thiệu các trải nghiệm quảng cáo mới dựa trên AI, bao gồm Sponsored Agents và các công cụ dành cho marketer, tích hợp cùng HubSpot và Shopify để tái định hình lĩnh vực quảng cáo.",
+      "date": "2026-09-16T13:00:00"
+    },
+    {
+      "title": "How to connect AI usage to business value",
+      "link": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "ChatGPT Work và Codex analytics giúp doanh nghiệp theo dõi việc sử dụng AI, chi phí, nhu cầu đào tạo và kết nối hiệu quả việc áp dụng AI với các kết quả kinh doanh cụ thể.",
+      "date": "2026-09-16T12:00:00"
+    },
+    {
+      "title": "Our framework for reporting model misalignment",
+      "link": "https://openai.com/index/model-misalignment-reporting-framework",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI công bố framework báo cáo về sự sai lệch của mô hình (model misalignment), bao gồm quy trình theo dõi, điều tra và công bố, cùng sáu báo cáo về hành vi bất thường của mô hình.",
+      "date": "2026-09-16T17:00:00"
+    },
+    {
+      "title": "How workers are unlocking new ways of working",
+      "link": "https://openai.com/index/unlocking-new-ways-of-working",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Nghiên cứu kinh tế mới từ OpenAI cho thấy người lao động đang tận dụng AI để thực hiện các hoạt động mới, vượt ra ngoài các vai trò truyền thống. Khám phá này làm nổi bật cách các công cụ AI đang tích hợp vào quy trình làm việc hàng ngày, tạo ra các phương thức làm việc hiệu quả và sáng tạo hơn. Điều này mở ra những tiềm năng mới trong việc nâng cao năng suất và định hình lại tương lai của công việc.",
+      "date": "2026-09-16T09:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1193,
-    "duplicates": 0,
-    "final": 2
+    "raw_total": 1599,
+    "duplicates": 1,
+    "final": 6
   }
 }
