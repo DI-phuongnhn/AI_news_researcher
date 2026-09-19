@@ -1748,5 +1748,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Nghiên cứu kinh tế mới từ OpenAI cho thấy người lao động đang tận dụng AI để thực hiện các hoạt động mới, vượt ra ngoài các vai trò truyền thống. Khám phá này làm nổi bật cách các công cụ AI đang tích hợp vào quy trình làm việc hàng ngày, tạo ra các phương thức làm việc hiệu quả và sáng tạo hơn. Điều này mở ra những tiềm năng mới trong việc nâng cao năng suất và định hình lại tương lai của công việc.",
     "date": "2026-09-16T09:00:00"
+  },
+  {
+    "title": "How Cooley is accelerating IPO work with ChatGPT",
+    "link": "https://openai.com/index/cooley-gopublic",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "[Cooley đã phát triển \"GO Public with ChatGPT\" để tích hợp AI vào quy trình IPO, giúp luật sư xác định vấn đề sớm hơn và tập trung chuyên môn vào các khía cạnh quan trọng, qua đó đẩy nhanh công việc.]",
+    "date": "2026-09-17T12:00:00"
+  },
+  {
+    "title": "Introducing Astra for Law",
+    "link": "https://openai.com/index/astra-for-law",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "[OpenAI for Law giới thiệu Astra, mang đến khả năng AI tiên tiến, tùy chỉnh quy trình làm việc cho các hãng luật, kết nối nguồn dữ liệu pháp lý và các biện pháp kiểm soát bảo mật cấp độ pháp lý cho công việc khách hàng.]",
+    "date": "2026-09-17T00:00:00"
+  },
+  {
+    "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+    "link": "https://openai.com/index/hex-gpt-6-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "[GPT-6 Astra hỗ trợ các \"data agents\" của Hex chuyển đổi kết quả phân tích phức tạp thành các báo cáo trực quan tương tác, giúp nhân viên tự tin chia sẻ.]",
+    "date": "2026-09-16T12:00:00"
   }
 ]
