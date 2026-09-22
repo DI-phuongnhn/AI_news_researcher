@@ -1769,5 +1769,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "[GPT-6 Astra hỗ trợ các \"data agents\" của Hex chuyển đổi kết quả phân tích phức tạp thành các báo cáo trực quan tương tác, giúp nhân viên tự tin chia sẻ.]",
     "date": "2026-09-16T12:00:00"
+  },
+  {
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI thành lập Nhóm Cố vấn về Toán học và Trí tuệ Nhân tạo để định hướng xem xét và truyền đạt các kết quả AI mới. Nhóm này đóng vai trò quan trọng trong việc đảm bảo sự phát triển và ứng dụng có trách nhiệm của AI.",
+    "date": "2026-09-21T12:00:00"
+  },
+  {
+    "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+    "link": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Higgsfield AI sử dụng GPT-6 Astra để đơn giản hóa quy trình tạo quảng cáo video cho các doanh nghiệp nhỏ, giúp họ nhanh chóng đưa các công cụ sáng tạo mới ra thị trường và nâng cao hiệu quả kinh doanh.",
+    "date": "2026-09-21T12:00:00"
+  },
+  {
+    "title": "Building standards for the next phase of AI",
+    "link": "https://openai.com/index/building-standards-next-phase-ai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đề xuất xây dựng các tiêu chuẩn AI toàn cầu mới, kêu gọi sự phối hợp trong đánh giá, báo cáo và quản trị để cải thiện an toàn AI. Đây là bước đi quan trọng hướng tới việc phát triển AI một cách bền vững và tin cậy.",
+    "date": "2026-09-21T10:00:00"
+  },
+  {
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "link": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI Academy mở rộng với các lộ trình học tập mới dành cho nhân viên, nhà phát triển, lãnh đạo, nhà giáo dục và sinh viên. Các khóa học này tập trung xây dựng và chứng minh kỹ năng AI thực tế, đáp ứng nhu cầu ngày càng tăng về nhân lực AI.",
+    "date": "2026-09-21T07:00:00"
+  },
+  {
+    "title": "How V7 gives AI agents institutional memory",
+    "link": "https://openai.com/index/v7",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "V7 áp dụng GPT-5.6 để biến các tệp tin phân tán của công ty thành bộ nhớ \"institutional memory\" cho AI agents. Điều này cho phép các agents hoàn thành công việc phức tạp với khả năng liên kết nguồn gốc rõ ràng, nâng cao hiệu quả và độ tin cậy.",
+    "date": "2026-09-21T00:00:00"
   }
 ]

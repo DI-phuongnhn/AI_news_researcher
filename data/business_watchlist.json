@@ -1,14 +1,5 @@
 {
   "entities": [
-    "AWS Bedrock integrations",
-    "Databricks AI platform enhancements",
-    "Cohere enterprise deployments",
-    "Perplexity AI business partnerships",
-    "Llama 3 model accessibility",
-    "Meta AI research breakthroughs",
-    "Apple AI integration rumors",
-    "Google Gemini multimodal capabilities",
-    "Inflection AI Pi development",
     "Stability AI new model releases",
     "OpenAI partnership with AARP",
     "OpenAI integration with HubSpot",
@@ -29,6 +20,15 @@
     "McKinsey-AI cybersecurity report",
     "Microsoft AI phishing campaign report",
     "OpenAI Astra model restriction",
-    "Anthropic Claude AI used in OpenAI hack"
+    "Anthropic Claude AI used in OpenAI hack",
+    "Microsoft-Anthropic partnership",
+    "Nvidia-Cohere integration",
+    "Google-Mistral AI collaboration",
+    "Hugging Face funding round",
+    "Together AI Series C",
+    "Databricks AI acquisition",
+    "OpenAI enterprise deals",
+    "Anthropic safety initiatives",
+    "Meta Llama 3 ecosystem expansion"
   ]
 }
