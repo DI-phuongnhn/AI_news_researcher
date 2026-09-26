@@ -1,17 +1,5 @@
 {
   "entities": [
-    "Ema over 50 active enterprise deals",
-    "1 million active enterprise users",
-    "5 million actions and queries handled",
-    "Microsoft AI CEO criticizes Anthropic",
-    "Kroger's AI shopping assistant",
-    "OneRail uses Nvidia AI",
-    "Basecamp Research $140M for AI drug design at $800M",
-    "Dell $9.7B Microsoft enterprise software deal",
-    "Mistral acquires Pimento",
-    "Amazon Bedrock Guardrails updates",
-    "Salesforce Agentforce GA",
-    "Google Antigravity 2.0",
     "Amazon CloudWatch Omni",
     "Snowflake acquires Observe",
     "Cisco adds capabilities to Splunk",
@@ -29,6 +17,18 @@
     "Ringg deploying AI agents with GPT-5.6",
     "ChatGPT Ads expansion to Southeast Asia and Taiwan",
     "Airbnb widening access to GPT-6 Astra and OpenAI frontier models",
-    "Grab and OpenAI GO Forward with AI program in Southeast Asia"
+    "Grab and OpenAI GO Forward with AI program in Southeast Asia",
+    "NVIDIA to Acquire Hugging Face",
+    "Google Beam expands",
+    "OpenAI releases GPT-6 Astra/Sol/Luna",
+    "Anthropic releases Claude Opus 5.5",
+    "Feedzai launches Farol",
+    "Qualcomm Snapdragon X2 for Agentic AI PCs",
+    "SimpSocial partners with VinSolutions",
+    "F5 Workforce AI Security availability",
+    "FI Works AI enhancements",
+    "Advanced AI Society joins Linux Foundation",
+    "OpenAI cybersecurity incident with Hugging Face",
+    "Google DeepMind Gemini 4 in post-training"
   ]
 }

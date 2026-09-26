@@ -1,109 +1,18 @@
 {
-  "timestamp": "2026-09-24T05:12:31.371309",
-  "keywords": "EN:\n[AI, cyber security, AI safety, human control, international cooperation, legal tech, color grading, customer service, mental health, marketing, software development, research, prompt caching, AI assessment]\nVN:\n[AI, an ninh mạng, an toàn AI, kiểm soát của con người, hợp tác quốc tế, công nghệ pháp lý, chỉnh sửa màu sắc, dịch vụ khách hàng, sức khỏe tâm thần, tiếp thị, phát triển phần mềm, nghiên cứu, lưu trữ prompt, đánh giá AI]\n\nMODELS:\n[GPT-6 Astra, GPT-6, GPT-5.6, GPT-4.1, GPT-6 Sol, GPT-6 Luna]\n\nBUSINESS:\n[OpenAI Academy program expansion, OpenAI Daybreak program extension to Ukraine, Harvey integrating GPT-6 Astra, invideo improving color grading with GPT-6 Astra, Ringg deploying AI agents with GPT-5.6, ChatGPT Ads expansion to Southeast Asia and Taiwan, Airbnb widening access to GPT-6 Astra and OpenAI frontier models, Grab and OpenAI GO Forward with AI program in Southeast Asia]",
+  "timestamp": "2026-09-26T05:20:04.321210",
+  "keywords": "EN: [AI, sales, fleet management, productivity, hours saved, solutions, GPT, Codex, Astra, GPT-Live-1]\nVN: [AI, doanh số, quản lý đội xe, năng suất, tiết kiệm giờ, giải pháp, GPT, Codex, Astra, GPT-Live-1]\nMODELS: [Codex, GPT-Live-1, GPT-6 Astra]\nBUSINESS: []",
   "reports": [
     {
-      "title": "Two years of OpenAI Academy",
-      "link": "https://openai.com/index/two-years-of-openai-academy",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "link": "https://openai.com/index/proaction",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI Academy kỷ niệm 2 năm hoạt động, tập trung vào việc phổ cập kỹ năng AI cho cộng đồng rộng lớn hơn.",
-      "date": "2026-09-23T16:00:00"
-    },
-    {
-      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-      "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI mở rộng chương trình Daybreak tới Chính phủ Ukraine, cung cấp quyền truy cập an ninh mạng để hỗ trợ phòng vệ dân sự và bảo vệ cơ sở hạ tầng.",
-      "date": "2026-09-23T13:00:00"
-    },
-    {
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "CEO Sam Altman của OpenAI đã trình bày tại Hội đồng Bảo an Liên Hợp Quốc về các vấn đề an toàn AI, sự kiểm soát của con người và hợp tác quốc tế.",
-      "date": "2026-09-23T12:00:00"
-    },
-    {
-      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-      "link": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 Astra giúp Harvey tạo ra các tài liệu pháp lý chi tiết và phù hợp ngữ cảnh hơn, cho phép luật sư tập trung vào chiến lược nhờ khả năng xử lý context mạnh mẽ.",
-      "date": "2026-09-23T12:00:00"
-    },
-    {
-      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-      "link": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "invideo sử dụng GPT-6 Astra để cải thiện quy trình chỉnh sửa màu sắc lên gấp 3 lần, lập kế hoạch chỉnh sửa chính xác hơn và tạo ra 50 hiệu ứng tùy chỉnh trong một ngày.",
-      "date": "2026-09-23T12:00:00"
-    },
-    {
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "link": "https://openai.com/index/ringg",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Ringg triển khai agent AI đa ngôn ngữ sử dụng GPT-5.6 để xử lý đến 65% cuộc gọi khách hàng, giảm chi phí tới 90% so với GPT-4.1, mang lại hiệu quả vận hành vượt trội.",
-      "date": "2026-09-23T12:00:00"
-    },
-    {
-      "title": "Introducing MentalHealthBench",
-      "link": "https://openai.com/index/introducing-mentalhealthbench",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "MentalHealthBench là một benchmark mới, được xây dựng dựa trên chuyên môn, nhằm đánh giá tính hữu ích và an toàn của các phản hồi AI trong các tình huống hội thoại sức khỏe tâm thần thực tế.",
-      "date": "2026-09-23T10:00:00"
-    },
-    {
-      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT Ads mở rộng sang Đông Nam Á và Đài Loan, cho phép các doanh nghiệp đủ điều kiện tiếp cận khách hàng tại hơn 60 quốc gia, mở ra cơ hội tiếp thị mới.",
-      "date": "2026-09-23T02:00:00"
-    },
-    {
-      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-      "link": "https://openai.com/index/airbnb-gpt-6-astra",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Airbnb ứng dụng GPT-6 Astra và các mô hình tiên tiến của OpenAI, giúp đội ngũ kỹ sư giải quyết lỗi, thiết kế hệ thống và đẩy nhanh quá trình phát triển sản phẩm.",
-      "date": "2026-09-23T01:00:00"
-    },
-    {
-      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI hợp tác với Grab triển khai chương trình GO Forward with AI tại Đông Nam Á, hỗ trợ 30.000 đối tác nâng cao kỹ năng AI thực tiễn, thúc đẩy ứng dụng AI trong khu vực.",
-      "date": "2026-09-23T00:00:00"
-    },
-    {
-      "title": "Better prompt caching for GPT-6",
-      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 cải thiện khả năng lưu trữ prompt (prompt caching) với tỷ lệ hit cache cao hơn, chẩn đoán mới, điểm dừng rõ ràng, giúp giảm độ trễ và chi phí.",
-      "date": "2026-09-22T21:00:00"
-    },
-    {
-      "title": "Introducing GPT-6 Sol and Luna",
-      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 Sol và Luna là hai mô hình mới từ OpenAI, mang lại trí tuệ tiên phong cho công việc hàng ngày với sự cân bằng khác biệt giữa khả năng và chi phí.",
-      "date": "2026-09-22T18:00:00"
-    },
-    {
-      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 Astra đã giúp các agent của Parallel rút ngắn một nửa thời gian và chi phí nghiên cứu, tổng hợp dữ liệu thị trường lao động so với các mô hình trước đây.",
-      "date": "2026-09-22T12:00:00"
-    },
-    {
-      "title": "Priorities and principles for effective third party assessments",
-      "link": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI công bố các nguyên tắc và ưu tiên cho việc đánh giá an toàn AI của các mô hình tiên tiến một cách chặt chẽ, bảo mật và độc lập.",
-      "date": "2026-09-22T00:00:00"
+      "summary_vn": "Proaction ứng dụng Codex, GPT-Live-1 và GPT-6 Astra để xây dựng, vận hành và bán các giải pháp quản lý đội xe hiện đại, giúp tăng doanh số 60% và tiết kiệm hơn 75 giờ làm việc. Giải pháp này thể hiện hiệu quả vượt trội của các mô hình AI tiên tiến trong việc tối ưu hóa quy trình kinh doanh.",
+      "date": "2026-09-25T19:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1630,
-    "duplicates": 4,
-    "final": 14
+    "raw_total": 1729,
+    "duplicates": 7,
+    "final": 1
   }
 }
