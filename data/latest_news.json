@@ -1,18 +1,46 @@
 {
-  "timestamp": "2026-09-26T05:20:04.321210",
-  "keywords": "EN: [AI, sales, fleet management, productivity, hours saved, solutions, GPT, Codex, Astra, GPT-Live-1]\nVN: [AI, doanh số, quản lý đội xe, năng suất, tiết kiệm giờ, giải pháp, GPT, Codex, Astra, GPT-Live-1]\nMODELS: [Codex, GPT-Live-1, GPT-6 Astra]\nBUSINESS: []",
+  "timestamp": "2026-09-29T06:02:33.083748",
+  "keywords": "EN: [Reinforcement Learning, conversational AI, cyber defense, AI Collaborative, Fellowship, AI research, AI applications, user intent, large language models, AI adoption]\nVN: [Học tăng cường, AI đàm thoại, phòng thủ mạng, AI Collaborative, Fellowship, nghiên cứu AI, ứng dụng AI, ý định người dùng, mô hình ngôn ngữ lớn, áp dụng AI]\nMODELS: [Codex, GPT-6 Astra, GPT-5.6 Sol]\nBUSINESS: [fundraising, partnership, software credits, technical support]",
   "reports": [
     {
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "link": "https://openai.com/index/proaction",
+      "title": "Update from @dair_ai",
+      "link": "https://x.com/i/web/status/2104597506835530112",
+      "source": "X Profile: dair_ai",
+      "summary_vn": "Salesforce AI Research giới thiệu kỹ thuật Reinforcement Learning (RL) cho việc sử dụng công cụ đa lượt đàm thoại, tập trung vào phần thưởng dựa trên hành động có tác động thay đổi kết quả.",
+      "date": "2026-09-28T15:42:01"
+    },
+    {
+      "title": "How we will do better for Australia",
+      "link": "https://openai.com/index/how-we-will-do-better-for-australia",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Proaction ứng dụng Codex, GPT-Live-1 và GPT-6 Astra để xây dựng, vận hành và bán các giải pháp quản lý đội xe hiện đại, giúp tăng doanh số 60% và tiết kiệm hơn 75 giờ làm việc. Giải pháp này thể hiện hiệu quả vượt trội của các mô hình AI tiên tiến trong việc tối ưu hóa quy trình kinh doanh.",
-      "date": "2026-09-25T19:00:00"
+      "summary_vn": "OpenAI xin lỗi về các sự cố với trang web chính phủ Úc và cam kết triển khai các biện pháp bảo vệ mạnh mẽ hơn nhằm tăng cường quốc phòng mạng cho Úc.",
+      "date": "2026-09-28T19:00:00"
+    },
+    {
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI mở rộng chương trình Lenfest AI Collaborative và Fellowship với khoản tài trợ 5 triệu USD, cùng với tín dụng phần mềm và hỗ trợ kỹ thuật trị giá 5 triệu USD.",
+      "date": "2026-09-28T07:00:00"
+    },
+    {
+      "title": "Are you a Codex Original?",
+      "link": "https://openai.com/form/codex-originals",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đang tìm kiếm những câu chuyện về người dùng tiên phong với Codex, khuyến khích những người xây dựng, nhà nghiên cứu và nhà sáng tạo chia sẻ câu chuyện và dự án của họ để tham gia chương trình Codex Originals.",
+      "date": "2026-09-28T00:00:00"
+    },
+    {
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "link": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "GPT-6 Astra hoàn thành bản tính thuế 50 tab nhanh gấp đôi GPT-5.6 Sol, chứng tỏ khả năng hiểu ý định người dùng vượt trội, mang lại sự tin cậy cao hơn cho ứng dụng thực tế.",
+      "date": "2026-09-28T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1729,
-    "duplicates": 7,
-    "final": 1
+    "raw_total": 1734,
+    "duplicates": 0,
+    "final": 5
   }
 }

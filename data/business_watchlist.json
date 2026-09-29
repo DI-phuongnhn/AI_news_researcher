@@ -1,19 +1,5 @@
 {
   "entities": [
-    "Amazon CloudWatch Omni",
-    "Snowflake acquires Observe",
-    "Cisco adds capabilities to Splunk",
-    "Polly expands agentic AI",
-    "AutoScheduler.AI AI App Builder",
-    "New Relic 2026 Observability Forecast",
-    "75% of organizations deployed AI for network operations",
-    "84% expect AI-led operating model",
-    "1 in 4 AI agents run unmonitored",
-    "8 in 10 organizations plan AI application observability deployment",
-    "OpenAI Academy program expansion",
-    "OpenAI Daybreak program extension to Ukraine",
-    "Harvey integrating GPT-6 Astra",
-    "invideo improving color grading with GPT-6 Astra",
     "Ringg deploying AI agents with GPT-5.6",
     "ChatGPT Ads expansion to Southeast Asia and Taiwan",
     "Airbnb widening access to GPT-6 Astra and OpenAI frontier models",
@@ -29,6 +15,20 @@
     "FI Works AI enhancements",
     "Advanced AI Society joins Linux Foundation",
     "OpenAI cybersecurity incident with Hugging Face",
-    "Google DeepMind Gemini 4 in post-training"
+    "Google DeepMind Gemini 4 in post-training",
+    "Microsoft-Anthropic Partnership",
+    "Hugging Face x Nvidia (Inference Optimizations)",
+    "OpenAI-Microsoft Security Collaboration",
+    "Google Cloud-Databricks Integration",
+    "Together AI Series C",
+    "Meta Llama 3 (Open Source Push)",
+    "Anthropic Claude 3.5 Release",
+    "Perplexity AI Funding",
+    "Cohere Enterprise Solutions",
+    "NVIDIA NIM Microservices",
+    "fundraising",
+    "partnership",
+    "software credits",
+    "technical support"
   ]
 }
