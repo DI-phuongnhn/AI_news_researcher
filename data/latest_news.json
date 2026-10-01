@@ -1,46 +1,46 @@
 {
-  "timestamp": "2026-09-29T06:02:33.083748",
-  "keywords": "EN: [Reinforcement Learning, conversational AI, cyber defense, AI Collaborative, Fellowship, AI research, AI applications, user intent, large language models, AI adoption]\nVN: [Học tăng cường, AI đàm thoại, phòng thủ mạng, AI Collaborative, Fellowship, nghiên cứu AI, ứng dụng AI, ý định người dùng, mô hình ngôn ngữ lớn, áp dụng AI]\nMODELS: [Codex, GPT-6 Astra, GPT-5.6 Sol]\nBUSINESS: [fundraising, partnership, software credits, technical support]",
+  "timestamp": "2026-10-01T06:22:47.333816",
+  "keywords": "EN: [model distillation, AI training, API, security, developer tools, safety cases, frontier AI, reasoning, programming, professional work]\nVN: [chưng cất mô hình, đào tạo AI, API, bảo mật, bộ công cụ nhà phát triển, trường hợp an toàn, AI tiên phong, suy luận, lập trình, công việc chuyên nghiệp]\nMODELS: [GPT-6.1 Sol, GPT-6 Astra]\nBUSINESS: [OpenAI hợp tác với America's SBDC]",
   "reports": [
     {
-      "title": "Update from @dair_ai",
-      "link": "https://x.com/i/web/status/2104597506835530112",
-      "source": "X Profile: dair_ai",
-      "summary_vn": "Salesforce AI Research giới thiệu kỹ thuật Reinforcement Learning (RL) cho việc sử dụng công cụ đa lượt đàm thoại, tập trung vào phần thưởng dựa trên hành động có tác động thay đổi kết quả.",
-      "date": "2026-09-28T15:42:01"
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đã ngăn chặn một chiến dịch tấn công nhằm trích xuất thông tin suy luận nhạy cảm từ mô hình của họ và đang tăng cường các biện pháp bảo vệ chống lại kỹ thuật \"model distillation\" (chưng cất mô hình). Điều này cho thấy nỗ lực bảo mật liên tục của OpenAI để duy trì tính toàn vẹn của các mô hình AI tiên tiến.",
+      "date": "2026-09-30T10:30:00"
     },
     {
-      "title": "How we will do better for Australia",
-      "link": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "title": "Helping small businesses put AI to work",
+      "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI xin lỗi về các sự cố với trang web chính phủ Úc và cam kết triển khai các biện pháp bảo vệ mạnh mẽ hơn nhằm tăng cường quốc phòng mạng cho Úc.",
+      "summary_vn": "OpenAI hợp tác với America's SBDC để cung cấp đào tạo AI thực hành và hỗ trợ địa phương cho các doanh nghiệp nhỏ, giúp họ ứng dụng AI hiệu quả. Sáng kiến này đi kèm với một báo cáo phân tích cách các nhóm nhỏ đang tận dụng AI, nhằm mục đích thúc đẩy khả năng tiếp cận và ứng dụng AI trong khu vực doanh nghiệp vừa và nhỏ.",
+      "date": "2026-09-30T10:00:00"
+    },
+    {
+      "title": "Introducing GPT-6.1 Sol",
+      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "GPT-6.1 Sol, một mô hình mới của OpenAI, được giới thiệu với khả năng gần với \"Astra intelligence\" cho các tác vụ lập trình, sử dụng máy tính và công việc chuyên nghiệp. Điểm nổi bật là chi phí API chỉ bằng một phần năm so với Astra, mang lại hiệu quả kinh tế cao cho người dùng.",
+      "date": "2026-09-29T10:00:00"
+    },
+    {
+      "title": "DevDay 2026 Recap",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI DevDay 2026 đã công bố hơn 20 điểm mới, bao gồm GPT-6 Astra, ChatGPT, Codex, API mới, cải tiến bảo mật và bộ công cụ mới cho nhà phát triển. Sự kiện này nhấn mạnh sự phát triển liên tục của hệ sinh thái AI và các công cụ hỗ trợ builder của OpenAI.",
+      "date": "2026-09-29T10:00:00"
+    },
+    {
+      "title": "Towards safety cases for frontier AI training",
+      "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đã đưa ra các hướng dẫn ban đầu về việc xây dựng \"safety cases\" (các trường hợp an toàn) cho quá trình huấn luyện các mô hình AI tiên phong. Các hướng dẫn này bao gồm các biện pháp bảo vệ kỹ thuật, quy trình vận hành và cách điều tra các sự cố mất đồng bộ, nhằm đảm bảo sự phát triển AI an toàn và có trách nhiệm.",
       "date": "2026-09-28T19:00:00"
-    },
-    {
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "link": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI mở rộng chương trình Lenfest AI Collaborative và Fellowship với khoản tài trợ 5 triệu USD, cùng với tín dụng phần mềm và hỗ trợ kỹ thuật trị giá 5 triệu USD.",
-      "date": "2026-09-28T07:00:00"
-    },
-    {
-      "title": "Are you a Codex Original?",
-      "link": "https://openai.com/form/codex-originals",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đang tìm kiếm những câu chuyện về người dùng tiên phong với Codex, khuyến khích những người xây dựng, nhà nghiên cứu và nhà sáng tạo chia sẻ câu chuyện và dự án của họ để tham gia chương trình Codex Originals.",
-      "date": "2026-09-28T00:00:00"
-    },
-    {
-      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "link": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 Astra hoàn thành bản tính thuế 50 tab nhanh gấp đôi GPT-5.6 Sol, chứng tỏ khả năng hiểu ý định người dùng vượt trội, mang lại sự tin cậy cao hơn cho ứng dụng thực tế.",
-      "date": "2026-09-28T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1734,
-    "duplicates": 0,
+    "raw_total": 1420,
+    "duplicates": 2,
     "final": 5
   }
 }
