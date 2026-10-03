@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-10-01T06:22:47.333816",
-  "keywords": "EN: [model distillation, AI training, API, security, developer tools, safety cases, frontier AI, reasoning, programming, professional work]\nVN: [chưng cất mô hình, đào tạo AI, API, bảo mật, bộ công cụ nhà phát triển, trường hợp an toàn, AI tiên phong, suy luận, lập trình, công việc chuyên nghiệp]\nMODELS: [GPT-6.1 Sol, GPT-6 Astra]\nBUSINESS: [OpenAI hợp tác với America's SBDC]",
+  "timestamp": "2026-10-03T05:36:53.010376",
+  "keywords": "EN: [GPT-6, reasoning effort, prompts, skills, orchestration, Codex, GPT-5.6, execution, ChatGPT Enterprise, ChatGPT Work]\nVN: [GPT-6, nỗ lực suy luận, gợi ý, kỹ năng, điều phối, Codex, GPT-5.6, thực thi, ChatGPT Enterprise, ChatGPT Work]\nMODELS: [GPT-6, Codex, GPT-5.6, ChatGPT Enterprise, ChatGPT Work]\nBUSINESS: []",
   "reports": [
     {
-      "title": "Disrupting a coordinated model-distillation campaign",
-      "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "title": "A model guide for the GPT-6 family",
+      "link": "https://openai.com/index/practical-guide-building-gpt-6",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã ngăn chặn một chiến dịch tấn công nhằm trích xuất thông tin suy luận nhạy cảm từ mô hình của họ và đang tăng cường các biện pháp bảo vệ chống lại kỹ thuật \"model distillation\" (chưng cất mô hình). Điều này cho thấy nỗ lực bảo mật liên tục của OpenAI để duy trì tính toàn vẹn của các mô hình AI tiên tiến.",
-      "date": "2026-09-30T10:30:00"
+      "summary_vn": "Hướng dẫn chọn lựa và tối ưu hóa các mô hình GPT-6 cho startup, tập trung vào việc tinh chỉnh 'reasoning effort', cải thiện 'prompts' và 'skills', điều phối công cụ ('orchestration') và chuẩn bị quy trình làm việc ('workflows') sẵn sàng cho sản xuất.",
+      "date": "2026-10-02T16:15:00"
     },
     {
-      "title": "Helping small businesses put AI to work",
-      "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "link": "https://openai.com/index/chatham-financial",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI hợp tác với America's SBDC để cung cấp đào tạo AI thực hành và hỗ trợ địa phương cho các doanh nghiệp nhỏ, giúp họ ứng dụng AI hiệu quả. Sáng kiến này đi kèm với một báo cáo phân tích cách các nhóm nhỏ đang tận dụng AI, nhằm mục đích thúc đẩy khả năng tiếp cận và ứng dụng AI trong khu vực doanh nghiệp vừa và nhỏ.",
-      "date": "2026-09-30T10:00:00"
+      "summary_vn": "Chatham Financial tận dụng Codex và GPT-5.6 để tái thiết kế quy trình làm việc và phát triển công nghệ, giảm thời gian xác nhận giao dịch từ 30 phút xuống dưới 4 phút, thể hiện giá trị kinh doanh rõ rệt.",
+      "date": "2026-10-02T00:00:00"
     },
     {
-      "title": "Introducing GPT-6.1 Sol",
-      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "title": "The eternal complement",
+      "link": "https://openai.com/index/the-eternal-complement",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6.1 Sol, một mô hình mới của OpenAI, được giới thiệu với khả năng gần với \"Astra intelligence\" cho các tác vụ lập trình, sử dụng máy tính và công việc chuyên nghiệp. Điểm nổi bật là chi phí API chỉ bằng một phần năm so với Astra, mang lại hiệu quả kinh tế cao cho người dùng.",
-      "date": "2026-09-29T10:00:00"
+      "summary_vn": "AI tiên tiến có tiềm năng cách mạng hóa công việc thường ngày đằng sau các ý tưởng đột phá, với khả năng 'execution' sẽ định hình nền kinh tế mới và tốc độ phát triển.",
+      "date": "2026-10-01T17:00:00"
     },
     {
-      "title": "DevDay 2026 Recap",
-      "link": "https://openai.com/index/devday-2026-recap",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "link": "https://openai.com/index/albertsons-reimagining-retail",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI DevDay 2026 đã công bố hơn 20 điểm mới, bao gồm GPT-6 Astra, ChatGPT, Codex, API mới, cải tiến bảo mật và bộ công cụ mới cho nhà phát triển. Sự kiện này nhấn mạnh sự phát triển liên tục của hệ sinh thái AI và các công cụ hỗ trợ builder của OpenAI.",
-      "date": "2026-09-29T10:00:00"
+      "summary_vn": "Albertsons Companies ứng dụng ChatGPT Enterprise và OpenAI API để đẩy nhanh quy trình làm việc nội bộ và đơn giản hóa trải nghiệm mua sắm cho hàng triệu khách hàng.",
+      "date": "2026-10-01T16:00:00"
     },
     {
-      "title": "Towards safety cases for frontier AI training",
-      "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "link": "https://openai.com/index/the-den-family-social",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã đưa ra các hướng dẫn ban đầu về việc xây dựng \"safety cases\" (các trường hợp an toàn) cho quá trình huấn luyện các mô hình AI tiên phong. Các hướng dẫn này bao gồm các biện pháp bảo vệ kỹ thuật, quy trình vận hành và cách điều tra các sự cố mất đồng bộ, nhằm đảm bảo sự phát triển AI an toàn và có trách nhiệm.",
-      "date": "2026-09-28T19:00:00"
+      "summary_vn": "Câu lạc bộ The Den tiết kiệm 10-15 giờ mỗi tuần nhờ ChatGPT Work, giúp chuẩn bị hồ sơ xin tài trợ và giấy phép kinh doanh nhanh chóng hơn, cho phép tập trung vào việc mở rộng hoạt động.",
+      "date": "2026-10-01T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1420,
+    "raw_total": 1675,
     "duplicates": 2,
     "final": 5
   }
