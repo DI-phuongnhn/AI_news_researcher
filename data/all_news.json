@@ -2014,5 +2014,26 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Câu lạc bộ The Den tiết kiệm 10-15 giờ mỗi tuần nhờ ChatGPT Work, giúp chuẩn bị hồ sơ xin tài trợ và giấy phép kinh doanh nhanh chóng hơn, cho phép tập trung vào việc mở rộng hoạt động.",
     "date": "2026-10-01T00:00:00"
+  },
+  {
+    "title": "Update from @dair_ai",
+    "link": "https://x.com/i/web/status/2107146326639358188",
+    "source": "X Profile: dair_ai",
+    "summary_vn": "Bài báo mới từ Microsoft giới thiệu CorpusMap, một phương pháp giúp giải quyết các thực thể lặp lại trong tập tài liệu lớn trước, gán cho mỗi thực thể một trang riêng, hỗ trợ hiệu quả cho các agent thực hiện tìm kiếm trên kho dữ liệu lớn.",
+    "date": "2026-10-05T16:30:07"
+  },
+  {
+    "title": "Our approach to EU text provenance rules",
+    "link": "https://openai.com/index/eu-text-provenance",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI công bố cách tiếp cận các quy tắc về \"provenance\" (nguồn gốc văn bản) theo luật của EU, tập trung vào kỹ thuật \"watermarking\" (đánh dấu bản quyền), cách thức phát hiện và việc cung cấp quyền truy cập ban đầu cho các nhà nghiên cứu.",
+    "date": "2026-10-05T15:00:00"
+  },
+  {
+    "title": "Building advertising for the way people use AI",
+    "link": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu định dạng quảng cáo hình ảnh mới trong ChatGPT, mở rộng các công cụ đo lường, đối tác phân bổ và tính năng phù hợp thương hiệu cho nhà quảng cáo, nhằm xây dựng kênh quảng cáo theo xu hướng sử dụng AI hiện tại.",
+    "date": "2026-10-05T10:00:00"
   }
 ]
