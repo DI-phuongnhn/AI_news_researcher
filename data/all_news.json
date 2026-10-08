@@ -2035,5 +2035,82 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI giới thiệu định dạng quảng cáo hình ảnh mới trong ChatGPT, mở rộng các công cụ đo lường, đối tác phân bổ và tính năng phù hợp thương hiệu cho nhà quảng cáo, nhằm xây dựng kênh quảng cáo theo xu hướng sử dụng AI hiện tại.",
     "date": "2026-10-05T10:00:00"
+  },
+  {
+    "title": "Update from @demishassabis",
+    "link": "https://x.com/i/web/status/2107861788301607261",
+    "source": "X Profile: demishassabis",
+    "summary_vn": "OpenAI hợp tác với CZI và Sáng kiến Sinh học Ảo (Virtual Biology Initiative) để ứng dụng AI cải thiện y tế và sức khỏe con người, tập trung vào các lĩnh vực y học.",
+    "date": "2026-10-07T15:53:07"
+  },
+  {
+    "title": "Latest AI Model Comparison [October 2026] | GPT-6.1 Sol, Claude Sonnet 5.5, Opus 5.5, Gemini 3.8 Flash: Which Should You Use for Work? Pricing and Usage Guide",
+    "link": "https://note.com/ai__worker/n/n3d128ad2dd06?hl=en",
+    "source": "Search: (\"GPT-6.1 Sol\")",
+    "summary_vn": "Cuối tháng 9 chứng kiến sự ra mắt liên tục của các mô hình AI mới như Claude Opus 5.5, Sonnet 5.5, GPT-6.1 Sol và Gemini 4 Argon, khiến việc cập nhật trở nên khó khăn cho người dùng.",
+    "date": "2026-10-07T05:06:00"
+  },
+  {
+    "title": "They didn't release the smarter model — From the release of GPT-6.1 Sol and the shelving of Astra 6.1, the 'authority to grant to AI' that companies must decide",
+    "link": "https://note.com/rokugen/n/n27063030611e?hl=en",
+    "source": "Search: (\"GPT-6.1 Sol\")",
+    "summary_vn": "GPT-6.1 Sol được giới thiệu với mức giá API chỉ 2 USD/triệu input token và 10 USD/triệu output token, mang lại khả năng gần với Astra nhưng với chi phí chỉ bằng 1/5.",
+    "date": "2026-10-07T06:00:00"
+  },
+  {
+    "title": "GPT-6.1 Sol + Claude Opus 5.5: 5 Details That Matter for Builders",
+    "link": "https://www.basenor.com/blogs/news/gpt-6-1-sol-claude-opus-5-5-5-details-that-matter-for-builders",
+    "source": "Search: (\"GPT-6.1 Sol\")",
+    "summary_vn": "Các nhà phát triển đang khám phá cách sử dụng GPT-6.1 Sol như một \"orchestrator\" để điều phối Claude Opus 5.5, cho thấy tiềm năng kết hợp sức mạnh của nhiều mô hình lớn.",
+    "date": "2026-10-07T04:03:00"
+  },
+  {
+    "title": "Helping teens learn, plan, and shape the future of AI",
+    "link": "https://openai.com/index/teens-learn-and-plan",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT cho thanh thiếu niên sẽ tích hợp Công cụ Lập kế hoạch Đại học (College Planner) để hỗ trợ ứng tuyển, cùng các flashcards và hội đồng AI dành cho lứa tuổi này.",
+    "date": "2026-10-07T12:00:00"
+  },
+  {
+    "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+    "link": "https://openai.com/index/radisson",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Radisson Hotel Group đã hợp tác với Accenture để phát triển plugin ChatGPT, cho phép người dùng tìm kiếm, so sánh và đặt phòng khách sạn trực tiếp trong ChatGPT, tích hợp AI vào quy trình lập kế hoạch du lịch.",
+    "date": "2026-10-07T07:00:00"
+  },
+  {
+    "title": "GPT-6 and Intelligent UI for everyone",
+    "link": "https://openai.com/index/gpt-6-for-everyone",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-6 hiện đã có trên toàn cầu trong ChatGPT, đi kèm với giao diện người dùng thông minh (Intelligent UI) mang đến trải nghiệm tương tác, phản hồi nhanh hơn cùng các yếu tố trực quan.",
+    "date": "2026-10-07T00:00:00"
+  },
+  {
+    "title": "How Jump Trading is scaling quant research with ChatGPT",
+    "link": "https://openai.com/index/jump-trading",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Jump Trading đang ứng dụng ChatGPT để mở rộng nghiên cứu định lượng, tận dụng các quy trình AI kéo dài kết hợp nhiều nguồn dữ liệu cùng với sự xem xét của con người.",
+    "date": "2026-10-06T12:00:00"
+  },
+  {
+    "title": "Sharing AI progress in mathematics",
+    "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI công bố tiến bộ trong lĩnh vực toán học với kết quả từ một mô hình frontier, đồng thời chia sẻ chi tiết nghiên cứu và công cụ formalization chứng minh trên GitHub.",
+    "date": "2026-10-06T12:00:00"
+  },
+  {
+    "title": "Advancing computer use with Ironclad",
+    "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI và Ironclad đang cùng nhau huấn luyện và đánh giá các AI Agent cho các quy trình hợp đồng phức tạp, nhằm nâng cao khả năng sử dụng máy tính trong công việc chuyên môn.",
+    "date": "2026-10-06T10:00:00"
+  },
+  {
+    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+    "link": "https://openai.com/index/atlassian-partnership",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Atlassian và OpenAI mở rộng hợp tác, tích hợp các mô hình AI tiên tiến với dữ liệu doanh nghiệp. Mục tiêu là giúp các đội nhóm lập kế hoạch, xây dựng và triển khai công việc hiệu quả hơn, biến kiến thức doanh nghiệp thành hành động cụ thể.",
+    "date": "2026-10-06T16:00:00"
   }
 ]

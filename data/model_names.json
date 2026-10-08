@@ -50,7 +50,12 @@
     "GPT-6 Sol",
     "GPT-6 Luna",
     "GPT-Live-1",
-    "GPT-6.1 Sol"
+    "GPT-6.1 Sol",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "Gemini 3.8 Flash",
+    "Gemini 4 Argon",
+    "Astra 6.1"
   ],
   "legacy": [
     "GPT-4",
