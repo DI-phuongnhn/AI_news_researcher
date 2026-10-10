@@ -1,88 +1,46 @@
 {
-  "timestamp": "2026-10-08T06:31:22.195776",
-  "keywords": "EN: [AI, medical, health, biology, virtual biology, pricing, API, tokens, developers, orchestrator, large language models, teenagers, college planner, flashcards, AI council, hotel discovery, plugin, hotel booking, intelligent UI, quantitative research, AI agents, contract workflows, enterprise knowledge, data integration]\nVN: [AI, y tế, sức khỏe, sinh học, sáng kiến sinh học ảo, giá, API, token, nhà phát triển, điều phối, mô hình ngôn ngữ lớn, thanh thiếu niên, công cụ lập kế hoạch đại học, flashcards, hội đồng AI, khám phá khách sạn, plugin, đặt phòng khách sạn, giao diện người dùng thông minh, nghiên cứu định lượng, AI agent, quy trình hợp đồng, kiến thức doanh nghiệp, tích hợp dữ liệu]\nMODELS: [GPT-6.1 Sol, Claude Sonnet 5.5, Claude Opus 5.5, Gemini 3.8 Flash, Gemini 4 Argon, Astra 6.1, GPT-6]\nBUSINESS: [OpenAI hợp tác với CZI và Sáng kiến Sinh học Ảo, Radisson Hotel Group hợp tác với Accenture, Atlassian và OpenAI mở rộng hợp tác, OpenAI và Ironclad hợp tác]",
+  "timestamp": "2026-10-10T06:13:48.361425",
+  "keywords": "EN: [threat investigation, cybersecurity, automation, browser model costs, workflow automation, recruitment, engineering, operations, creative ideas, disinformation campaigns]\nVN: [điều tra mối đe dọa, an ninh mạng, tự động hóa, chi phí mô hình trình duyệt, tự động hóa quy trình làm việc, tuyển dụng, kỹ thuật, vận hành, ý tưởng sáng tạo, chiến dịch thông tin sai lệch]\nMODELS: [OpenAI Daybreak, GPT-6.1 Sol, ChatGPT, Codex, GPT-5.6, GPT-6 Astra, GPT‑Image‑2.5]\nBUSINESS: [Sophos cuts threat investigation time by 96%, Asana cuts model costs 76x, Oracle turns days of work into minutes, Pollo AI turns creative ideas into campaigns, OpenAI disrupts disinformation campaigns]",
   "reports": [
     {
-      "title": "Update from @demishassabis",
-      "link": "https://x.com/i/web/status/2107861788301607261",
-      "source": "X Profile: demishassabis",
-      "summary_vn": "OpenAI hợp tác với CZI và Sáng kiến Sinh học Ảo (Virtual Biology Initiative) để ứng dụng AI cải thiện y tế và sức khỏe con người, tập trung vào các lĩnh vực y học.",
-      "date": "2026-10-07T15:53:07"
-    },
-    {
-      "title": "Latest AI Model Comparison [October 2026] | GPT-6.1 Sol, Claude Sonnet 5.5, Opus 5.5, Gemini 3.8 Flash: Which Should You Use for Work? Pricing and Usage Guide",
-      "link": "https://note.com/ai__worker/n/n3d128ad2dd06?hl=en",
-      "source": "Search: (\"GPT-6.1 Sol\")",
-      "summary_vn": "Cuối tháng 9 chứng kiến sự ra mắt liên tục của các mô hình AI mới như Claude Opus 5.5, Sonnet 5.5, GPT-6.1 Sol và Gemini 4 Argon, khiến việc cập nhật trở nên khó khăn cho người dùng.",
-      "date": "2026-10-07T05:06:00"
-    },
-    {
-      "title": "They didn't release the smarter model — From the release of GPT-6.1 Sol and the shelving of Astra 6.1, the 'authority to grant to AI' that companies must decide",
-      "link": "https://note.com/rokugen/n/n27063030611e?hl=en",
-      "source": "Search: (\"GPT-6.1 Sol\")",
-      "summary_vn": "GPT-6.1 Sol được giới thiệu với mức giá API chỉ 2 USD/triệu input token và 10 USD/triệu output token, mang lại khả năng gần với Astra nhưng với chi phí chỉ bằng 1/5.",
-      "date": "2026-10-07T06:00:00"
-    },
-    {
-      "title": "GPT-6.1 Sol + Claude Opus 5.5: 5 Details That Matter for Builders",
-      "link": "https://www.basenor.com/blogs/news/gpt-6-1-sol-claude-opus-5-5-5-details-that-matter-for-builders",
-      "source": "Search: (\"GPT-6.1 Sol\")",
-      "summary_vn": "Các nhà phát triển đang khám phá cách sử dụng GPT-6.1 Sol như một \"orchestrator\" để điều phối Claude Opus 5.5, cho thấy tiềm năng kết hợp sức mạnh của nhiều mô hình lớn.",
-      "date": "2026-10-07T04:03:00"
-    },
-    {
-      "title": "Helping teens learn, plan, and shape the future of AI",
-      "link": "https://openai.com/index/teens-learn-and-plan",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "link": "https://openai.com/index/sophos",
       "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT cho thanh thiếu niên sẽ tích hợp Công cụ Lập kế hoạch Đại học (College Planner) để hỗ trợ ứng tuyển, cùng các flashcards và hội đồng AI dành cho lứa tuổi này.",
-      "date": "2026-10-07T12:00:00"
+      "summary_vn": "Sophos đã sử dụng OpenAI Daybreak để giảm 96% thời gian điều tra mối đe dọa an ninh mạng và tự động hóa 52% các trường hợp MDR, cho thấy ứng dụng AI trong việc nâng cao hiệu quả hoạt động với sự giám sát của con người.",
+      "date": "2026-10-09T07:00:00"
     },
     {
-      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "link": "https://openai.com/index/radisson",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "link": "https://openai.com/index/asana-browser-agent",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Radisson Hotel Group đã hợp tác với Accenture để phát triển plugin ChatGPT, cho phép người dùng tìm kiếm, so sánh và đặt phòng khách sạn trực tiếp trong ChatGPT, tích hợp AI vào quy trình lập kế hoạch du lịch.",
-      "date": "2026-10-07T07:00:00"
+      "summary_vn": "Asana đã giảm 76 lần chi phí vận hành mô hình trình duyệt thông qua thử nghiệm với GPT-6.1 Sol, đồng thời cải thiện tốc độ gấp 5 lần, qua đó cung cấp các mô hình AI mạnh mẽ và tiết kiệm chi phí hơn cho người dùng.",
+      "date": "2026-10-09T07:00:00"
     },
     {
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "link": "https://openai.com/index/gpt-6-for-everyone",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "link": "https://openai.com/index/oracle",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6 hiện đã có trên toàn cầu trong ChatGPT, đi kèm với giao diện người dùng thông minh (Intelligent UI) mang đến trải nghiệm tương tác, phản hồi nhanh hơn cùng các yếu tố trực quan.",
-      "date": "2026-10-07T00:00:00"
+      "summary_vn": "Oracle áp dụng ChatGPT Work và Codex để chuyển đổi các quy trình làm việc tốn nhiều ngày thành phút trong tuyển dụng, kỹ thuật và vận hành, giúp chuyên môn hóa kiến thức và tạo ra các quy trình lặp lại nhanh chóng.",
+      "date": "2026-10-08T16:00:00"
     },
     {
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "link": "https://openai.com/index/jump-trading",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "link": "https://openai.com/index/pollo-ai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Jump Trading đang ứng dụng ChatGPT để mở rộng nghiên cứu định lượng, tận dụng các quy trình AI kéo dài kết hợp nhiều nguồn dữ liệu cùng với sự xem xét của con người.",
-      "date": "2026-10-06T12:00:00"
+      "summary_vn": "Pollo AI sử dụng GPT-5.6, GPT-6 Astra và GPT‑Image‑2.5 để biến ý tưởng sáng tạo thành các chiến dịch quảng cáo hình ảnh và video điện ảnh, hỗ trợ người sáng tạo chuyển đổi ý tưởng táo bạo thành sản phẩm chi tiết.",
+      "date": "2026-10-08T12:00:00"
     },
     {
-      "title": "Sharing AI progress in mathematics",
-      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI công bố tiến bộ trong lĩnh vực toán học với kết quả từ một mô hình frontier, đồng thời chia sẻ chi tiết nghiên cứu và công cụ formalization chứng minh trên GitHub.",
-      "date": "2026-10-06T12:00:00"
-    },
-    {
-      "title": "Advancing computer use with Ironclad",
-      "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI và Ironclad đang cùng nhau huấn luyện và đánh giá các AI Agent cho các quy trình hợp đồng phức tạp, nhằm nâng cao khả năng sử dụng máy tính trong công việc chuyên môn.",
-      "date": "2026-10-06T10:00:00"
-    },
-    {
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "link": "https://openai.com/index/atlassian-partnership",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Atlassian và OpenAI mở rộng hợp tác, tích hợp các mô hình AI tiên tiến với dữ liệu doanh nghiệp. Mục tiêu là giúp các đội nhóm lập kế hoạch, xây dựng và triển khai công việc hiệu quả hơn, biến kiến thức doanh nghiệp thành hành động cụ thể.",
-      "date": "2026-10-06T16:00:00"
+      "summary_vn": "OpenAI đã phá vỡ hai chiến dịch thông tin sai lệch được hỗ trợ bởi AI, sử dụng các nhà báo giả mạo và một viện tư vấn để truyền bá thông điệp địa chính trị, qua đó nhấn mạnh vai trò của AI trong việc chống lại các hoạt động ảnh hưởng.",
+      "date": "2026-10-08T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1666,
+    "raw_total": 1287,
     "duplicates": 2,
-    "final": 11
+    "final": 5
   }
 }

@@ -55,7 +55,9 @@
     "Claude Opus 5.5",
     "Gemini 3.8 Flash",
     "Gemini 4 Argon",
-    "Astra 6.1"
+    "Astra 6.1",
+    "OpenAI Daybreak",
+    "GPT‑Image‑2.5"
   ],
   "legacy": [
     "GPT-4",
