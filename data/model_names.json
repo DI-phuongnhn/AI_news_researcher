@@ -57,7 +57,8 @@
     "Gemini 4 Argon",
     "Astra 6.1",
     "OpenAI Daybreak",
-    "GPT‑Image‑2.5"
+    "GPT‑Image‑2.5",
+    "GPT-Image-2.5"
   ],
   "legacy": [
     "GPT-4",

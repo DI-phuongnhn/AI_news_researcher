@@ -2154,5 +2154,47 @@
     "source": "X Profile: dair_ai",
     "summary_vn": "[Bài đăng từ @dair_ai trên X giới thiệu về 'Agentic workflows' và 'Multi-agent orchestration', nhấn mạnh khả năng của các 'Persistent AI agents' trong việc thực hiện các tác vụ phức tạp. Tin tức cũng đề cập đến các ứng dụng trong 'Agentic cybersecurity' và 'Code repair', cùng với việc phát triển các 'Reasoning models' và khả năng 'Tool use' cho AI agents.]",
     "date": "2026-10-11T13:10:41"
+  },
+  {
+    "title": "Amp puts AI agents to work beyond code with OpenAI models",
+    "link": "https://openai.com/index/amp-beyond-coding",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Amp tận dụng các model OpenAI như GPT-6 Astra và GPT-Live-1 để phát triển AI agents, mở rộng khả năng ứng dụng vượt ra ngoài lĩnh vực lập trình, mang lại lợi ích thực tế trong nhiều nghiệp vụ.",
+    "date": "2026-10-14T12:00:00"
+  },
+  {
+    "title": "SentinelOne cuts malware analysis from weeks to hours",
+    "link": "https://openai.com/index/sentinelone",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "SentinelOne ứng dụng OpenAI Daybreak để giảm thời gian phân tích malware từ vài tuần xuống vài giờ, giúp tăng cường năng lực điều tra và đối phó với các mối đe dọa an ninh mạng hiệu quả hơn.",
+    "date": "2026-10-14T12:00:00"
+  },
+  {
+    "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+    "link": "https://openai.com/index/third-moment-research",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Third Moment Research sử dụng GPT-6 Astra, GPT-6.1 Sol và Daybreak để vận hành tới 10,000 AI agents, cho phép chúng hoạt động liên tục hàng ngày, tự cải thiện qua quá trình sử dụng và tập trung vào phân tích an ninh mạng chuyên sâu.",
+    "date": "2026-10-14T07:00:00"
+  },
+  {
+    "title": "How Block is building AI-powered security with OpenAI technology",
+    "link": "https://openai.com/index/block-ai-powered-security",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Block đang phát triển giải pháp an ninh mạng ứng dụng công nghệ OpenAI, giúp đội ngũ an ninh điều tra các mối đe dọa nhanh chóng và đề xuất các bản vá lỗi chỉ trong vài phút, tăng cường khả năng bảo vệ hệ thống.",
+    "date": "2026-10-14T07:00:00"
+  },
+  {
+    "title": "The EU’s next chapter in AI is agentic",
+    "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Báo cáo mới cho thấy việc áp dụng AI agents (agentic AI) đang tăng trưởng mạnh mẽ trong các doanh nghiệp và doanh nghiệp nhỏ tại EU, mở ra tiềm năng khai thác giá trị lớn hơn với việc sử dụng sâu rộng hơn.",
+    "date": "2026-10-14T00:00:00"
+  },
+  {
+    "title": "Higgsfield takes AI video from 1 minute to over 10",
+    "link": "https://openai.com/index/higgsfield-longer-videos-voice",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Higgsfield đã ra mắt GPT-6 Astra, cho phép tạo video AI dài hơn 10 phút, cải thiện độ chính xác hình ảnh với GPT-Image-2.5 và mở ra khả năng làm phim bằng giọng nói qua GPT-Live. Công nghệ này mang đến cho người sáng tạo công cụ mạnh mẽ để sản xuất nội dung video AI chất lượng cao và dài hơn.",
+    "date": "2026-10-13T12:00:00"
   }
 ]
