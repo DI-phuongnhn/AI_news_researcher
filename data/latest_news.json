@@ -1,53 +1,46 @@
 {
-  "timestamp": "2026-10-15T05:01:25.252773",
-  "keywords": "EN: [AI agents, code, malware analysis, security, EU, video generation, image accuracy, voice generation, large language models, business applications]\nVN: [AI agents, code, phân tích mã độc, an ninh mạng, EU, tạo video, độ chính xác hình ảnh, tạo giọng nói, mô hình ngôn ngữ lớn, ứng dụng kinh doanh]\nMODELS: [GPT-6 Astra, GPT-Live-1, OpenAI Daybreak, GPT-6.1 Sol, GPT-Image-2.5, GPT-Live]\nBUSINESS: []",
+  "timestamp": "2026-10-17T04:51:25.504187",
+  "keywords": "Here's the breakdown of the news summaries into technical keywords, AI model names, and business/partnership events:\n\n**EN:** [generative AI, conversational interface, AI governance platform, AI agents, plugin, academic research, AI tools, learning mode, legal expertise, agreement review]\n**VN:** [AI tạo sinh, giao diện hội thoại, nền tảng quản trị AI, tác nhân AI, plugin, nghiên cứu học thuật, công cụ AI, chế độ học tập, chuyên môn pháp lý, xem xét thỏa thuận]\n\n**MODELS:** [ChatGPT, Codex, GPT-Rosalind]\n**BUSINESS:** [Stack Overflow for Agents triples signups with ChatGPT plugin, OpenAI Kế hoạch Học thuật GPT-Rosalind, AI for Educators được ra mắt, Sullivan & Cromwell hợp tác với OpenAI]",
   "reports": [
     {
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "link": "https://openai.com/index/amp-beyond-coding",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "link": "https://openai.com/index/itau-generative-ai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Amp tận dụng các model OpenAI như GPT-6 Astra và GPT-Live-1 để phát triển AI agents, mở rộng khả năng ứng dụng vượt ra ngoài lĩnh vực lập trình, mang lại lợi ích thực tế trong nhiều nghiệp vụ.",
-      "date": "2026-10-14T12:00:00"
+      "summary_vn": "Ngân hàng Itaú đang triển khai chiến lược \"AI First\" bằng cách xây dựng các giải pháp Generative AI cho toàn bộ khách hàng và nhân viên thông qua giao diện hội thoại ia.i và nền tảng quản trị IARA. Ứng dụng này tập trung vào một trong những lĩnh vực được quản lý chặt chẽ nhất tại Brazil, mang lại giá trị kinh doanh bằng cách cải thiện trải nghiệm khách hàng và hiệu quả hoạt động.",
+      "date": "2026-10-16T19:00:00"
     },
     {
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "link": "https://openai.com/index/sentinelone",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
       "source": "RSS: OpenAI News",
-      "summary_vn": "SentinelOne ứng dụng OpenAI Daybreak để giảm thời gian phân tích malware từ vài tuần xuống vài giờ, giúp tăng cường năng lực điều tra và đối phó với các mối đe dọa an ninh mạng hiệu quả hơn.",
-      "date": "2026-10-14T12:00:00"
+      "summary_vn": "\"Stack Overflow for Agents\" đã chứng kiến sự tăng trưởng gấp 10 lần về số lượng agent được tạo ra nhờ plugin ChatGPT, được phát triển nhanh chóng bằng Codex. Điều này cho thấy tiềm năng của các công cụ hỗ trợ phát triển agent và sự hiệu quả của việc tích hợp với các mô hình lớn như ChatGPT.",
+      "date": "2026-10-16T00:00:00"
     },
     {
-      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-      "link": "https://openai.com/index/third-moment-research",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Third Moment Research sử dụng GPT-6 Astra, GPT-6.1 Sol và Daybreak để vận hành tới 10,000 AI agents, cho phép chúng hoạt động liên tục hàng ngày, tự cải thiện qua quá trình sử dụng và tập trung vào phân tích an ninh mạng chuyên sâu.",
-      "date": "2026-10-14T07:00:00"
+      "summary_vn": "OpenAI giới thiệu Kế hoạch Học thuật GPT-Rosalind, cung cấp quyền truy cập được tài trợ cho các phòng thí nghiệm học thuật đủ điều kiện. Mục tiêu là sử dụng GPT-Rosalind và các công cụ liên quan để thúc đẩy nghiên cứu khoa học đời sống, cho thấy ứng dụng AI trong các lĩnh vực chuyên sâu.",
+      "date": "2026-10-15T19:00:00"
     },
     {
-      "title": "How Block is building AI-powered security with OpenAI technology",
-      "link": "https://openai.com/index/block-ai-powered-security",
+      "title": "Teaching students to think and learn through questions",
+      "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Block đang phát triển giải pháp an ninh mạng ứng dụng công nghệ OpenAI, giúp đội ngũ an ninh điều tra các mối đe dọa nhanh chóng và đề xuất các bản vá lỗi chỉ trong vài phút, tăng cường khả năng bảo vệ hệ thống.",
-      "date": "2026-10-14T07:00:00"
+      "summary_vn": "Nhân dịp Ngày Nhà giáo, AI for Educators được ra mắt bằng tiếng Bồ Đào Nha (Brazil) cùng với Chế độ Học tập (Study Mode). Chế độ này giúp giáo viên hỗ trợ việc học tập chủ động, từng bước cho học sinh, qua đó nâng cao chất lượng giáo dục thông qua công nghệ AI.",
+      "date": "2026-10-15T13:00:00"
     },
     {
-      "title": "The EU’s next chapter in AI is agentic",
-      "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "link": "https://openai.com/index/sullivan-cromwell",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Báo cáo mới cho thấy việc áp dụng AI agents (agentic AI) đang tăng trưởng mạnh mẽ trong các doanh nghiệp và doanh nghiệp nhỏ tại EU, mở ra tiềm năng khai thác giá trị lớn hơn với việc sử dụng sâu rộng hơn.",
-      "date": "2026-10-14T00:00:00"
-    },
-    {
-      "title": "Higgsfield takes AI video from 1 minute to over 10",
-      "link": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Higgsfield đã ra mắt GPT-6 Astra, cho phép tạo video AI dài hơn 10 phút, cải thiện độ chính xác hình ảnh với GPT-Image-2.5 và mở ra khả năng làm phim bằng giọng nói qua GPT-Live. Công nghệ này mang đến cho người sáng tạo công cụ mạnh mẽ để sản xuất nội dung video AI chất lượng cao và dài hơn.",
-      "date": "2026-10-13T12:00:00"
+      "summary_vn": "Công ty luật Sullivan & Cromwell, hợp tác với OpenAI, đã phát triển Agreement Analyzer, một công cụ AI chuyên biệt. Công cụ này giúp xác định các vấn đề trong bản dự thảo hợp đồng, cung cấp giá trị kinh doanh rõ rệt bằng cách tự động hóa và tăng cường hiệu quả cho quy trình đánh giá pháp lý.",
+      "date": "2026-10-15T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1694,
-    "duplicates": 0,
-    "final": 6
+    "raw_total": 1796,
+    "duplicates": 4,
+    "final": 5
   }
 }
