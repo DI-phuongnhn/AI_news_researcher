@@ -2231,5 +2231,12 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Công ty luật Sullivan & Cromwell, hợp tác với OpenAI, đã phát triển Agreement Analyzer, một công cụ AI chuyên biệt. Công cụ này giúp xác định các vấn đề trong bản dự thảo hợp đồng, cung cấp giá trị kinh doanh rõ rệt bằng cách tự động hóa và tăng cường hiệu quả cho quy trình đánh giá pháp lý.",
     "date": "2026-10-15T00:00:00"
+  },
+  {
+    "title": "Advancing coding in low‑resource programming languages",
+    "link": "https://openai.com/index/low-resource-programming-languages",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cải thiện khả năng của ChatGPT trong các ngôn ngữ lập trình tài nguyên thấp, với các đánh giá mới cho kỹ thuật phần mềm, SQLite và di chuyển COBOL. Việc này nhằm mục đích nâng cao hiệu quả phát triển và tích hợp cho các dự án sử dụng đa dạng ngôn ngữ lập trình.",
+    "date": "2026-10-19T12:00:00"
   }
 ]
