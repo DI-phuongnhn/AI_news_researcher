@@ -2238,5 +2238,89 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI cải thiện khả năng của ChatGPT trong các ngôn ngữ lập trình tài nguyên thấp, với các đánh giá mới cho kỹ thuật phần mềm, SQLite và di chuyển COBOL. Việc này nhằm mục đích nâng cao hiệu quả phát triển và tích hợp cho các dự án sử dụng đa dạng ngôn ngữ lập trình.",
     "date": "2026-10-19T12:00:00"
+  },
+  {
+    "title": "How AT&T is rethinking in-house legal work with OpenAI",
+    "link": "https://openai.com/index/att-legal",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "AT&T hợp tác với OpenAI để tối ưu hóa quy trình pháp lý nội bộ, cải thiện khả năng tiếp cận kiến thức pháp lý và nâng cao hiệu quả hoạt động. Giải pháp này tập trung vào việc tái cấu trúc quy trình tiếp nhận thông tin và mở rộng khả năng đánh giá pháp lý, mang lại giá trị kinh doanh rõ rệt.",
+    "date": "2026-10-21T17:00:00"
+  },
+  {
+    "title": "Broad access through consistent standards",
+    "link": "https://openai.com/index/broad-access-through-consistent-standards",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI nhấn mạnh cam kết về việc đảm bảo an toàn và truy cập có trách nhiệm thông qua các tiêu chuẩn nhất quán với đối tác phân phối. Công ty làm rõ các kỳ vọng trong Chính sách sử dụng để thúc đẩy việc triển khai AI một cách an toàn.",
+    "date": "2026-10-21T21:00:00"
+  },
+  {
+    "title": "OpenAI models are coming to Google Cloud",
+    "link": "https://openai.com/index/openai-models-google-cloud",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI và Google Cloud hợp tác đưa các mô hình tiên tiến và quy trình làm việc Codex của OpenAI lên Model Garden của Gemini, cho phép truy cập thông qua Google Cloud Marketplace. Điều này mở rộng khả năng tiếp cận các công nghệ AI tiên tiến cho người dùng Google Cloud.",
+    "date": "2026-10-21T12:00:00"
+  },
+  {
+    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+    "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "\"Patch the Planet\" là một sáng kiến sử dụng các hệ thống **agentic** để phối hợp ứng phó toàn cầu, giúp các nhà nghiên cứu bảo mật, người bảo trì và lực lượng ứng phó sự cố nhanh chóng phát hiện và giải quyết các lỗ hổng quan trọng trong mã nguồn mở.",
+    "date": "2026-10-21T07:00:00"
+  },
+  {
+    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Tính năng ChatGPT Ads đã mở rộng sang 26 quốc gia mới, với hơn 100.000 nhà quảng cáo đã sử dụng nền tảng này. Điều này cho phép nhiều doanh nghiệp tiếp cận khách hàng mục tiêu khi họ khám phá, so sánh và đưa ra quyết định mua hàng ngay trong ChatGPT.",
+    "date": "2026-10-21T13:00:00"
+  },
+  {
+    "title": "Using thousands of AI agents to uncover new leads in biological data",
+    "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI, PerturbAI và Scripps Research đã triển khai hàng ngàn AI agents phân tán để phân tích dữ liệu hàng triệu tế bào não, từ đó khám phá các hướng nghiên cứu tiềm năng trong lĩnh vực sinh học.",
+    "date": "2026-10-21T04:50:00"
+  },
+  {
+    "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+    "link": "https://openai.com/index/cloudflare-cyber",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Cloudflare tích hợp OpenAI Daybreak để tự động hóa việc phát hiện lỗ hổng bảo mật và đề xuất các bản vá, đồng thời sử dụng Codex để nâng cao hiệu suất phát triển và chất lượng mã nguồn.",
+    "date": "2026-10-21T00:00:00"
+  },
+  {
+    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+    "link": "https://openai.com/index/building-chatgpt-ad-stack",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu kiến trúc quảng cáo mới cho ChatGPT, sử dụng LLM để hiểu ý định đàm thoại, tách biệt quảng cáo khỏi nội dung trả lời và cung cấp quảng cáo phù hợp với quy mô lớn, đảm bảo sự tin cậy của người dùng.",
+    "date": "2026-10-21T07:00:00"
+  },
+  {
+    "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+    "link": "https://openai.com/index/empowering-cyber-defenders",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đề xuất một khuôn khổ quản trị cho AI tiên tiến, nhằm tăng cường khả năng phòng thủ mạng bằng các biện pháp bảo vệ mạnh mẽ, hiện đại hóa an ninh mạng và xây dựng các thể chế công kiên cường hơn.",
+    "date": "2026-10-21T00:00:00"
+  },
+  {
+    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+    "link": "https://openai.com/index/ted-taylor-restaurant",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Một chủ sở hữu nhượng quyền độc lập của Schlotzsky’s và Cinnabon đã giảm 94% thời gian định giá lại thực đơn và tạo ra một quy trình làm việc có khả năng giải phóng 100.000 USD dòng tiền nhờ ChatGPT Work.",
+    "date": "2026-10-20T10:00:00"
+  },
+  {
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+    "link": "https://openai.com/index/terminal-x",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Ứng dụng Eval Agent của Terminal X sử dụng GPT-6.1 Sol để đánh giá kết quả dựa trên 54 tiêu chí, đạt độ chính xác 88.6% trong việc khớp với phán đoán của nhà đầu tư cấp cao, giúp phát hiện sớm hơn 25% các sai lệch so với chỉ thị của quỹ.",
+    "date": "2026-10-20T07:00:00"
+  },
+  {
+    "title": "OpenAI acquires Orchestra Bio",
+    "link": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã mua lại Orchestra Bio nhằm tích hợp AI vào các hoạt động nghiên cứu và phát triển (R&D) trong lĩnh vực khoa học đời sống, hỗ trợ các nhóm ngành dược đẩy nhanh quá trình phát triển thuốc và các phương pháp điều trị mới.",
+    "date": "2026-10-20T00:00:00"
   }
 ]
