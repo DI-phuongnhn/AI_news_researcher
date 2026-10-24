@@ -2322,5 +2322,40 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI đã mua lại Orchestra Bio nhằm tích hợp AI vào các hoạt động nghiên cứu và phát triển (R&D) trong lĩnh vực khoa học đời sống, hỗ trợ các nhóm ngành dược đẩy nhanh quá trình phát triển thuốc và các phương pháp điều trị mới.",
     "date": "2026-10-20T00:00:00"
+  },
+  {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã mở rộng quy mô lưu trữ trực tuyến để phục vụ hơn 1 tỷ người dùng ChatGPT bằng cách tối ưu hóa Habitat với khả năng multi-tenancy, global caching và Azure Cosmos DB, giúp tăng tốc độ đọc lên 12 lần.",
+    "date": "2026-10-23T17:00:00"
+  },
+  {
+    "title": "Securing our frontier model training environment",
+    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đã tăng cường các biện pháp bảo mật cho môi trường huấn luyện và đánh giá các mô hình tiên tiến, bao gồm việc sử dụng môi trường offline và red-teaming hiệu năng cao.",
+    "date": "2026-10-23T10:00:00"
+  },
+  {
+    "title": "Build more responsive apps with the Decisions API",
+    "link": "https://openai.com/index/decisions-api",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "API Decisions của OpenAI cung cấp các quyết định nhanh chóng, tập trung và chi phí thấp, giúp ứng dụng trở nên phản hồi nhạy hơn.",
+    "date": "2026-10-22T19:00:00"
+  },
+  {
+    "title": "What FDE means at OpenAI",
+    "link": "https://openai.com/index/forward-deployed-engineering-means",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Forward Deployed Engineering (FDE) tại OpenAI là một phương thức kỹ thuật tập trung vào việc triển khai sớm và liên tục các giải pháp kỹ thuật để giải quyết vấn đề thực tế.",
+    "date": "2026-10-22T06:00:00"
+  },
+  {
+    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+    "link": "https://openai.com/index/uber-chatgpt-work-rollout",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Uber đã triển khai ChatGPT Work cho hơn 30.000 nhân viên, hỗ trợ các nhóm nghiên cứu, phân tích dữ liệu, tạo bài thuyết trình và hoàn thành các quy trình làm việc phức tạp.",
+    "date": "2026-10-22T00:00:00"
   }
 ]
