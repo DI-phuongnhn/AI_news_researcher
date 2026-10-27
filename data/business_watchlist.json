@@ -1,12 +1,5 @@
 {
   "entities": [
-    "OpenAI Kế hoạch Học thuật GPT-Rosalind",
-    "AI for Educators được ra mắt",
-    "Sullivan & Cromwell hợp tác với OpenAI",
-    "**",
-    "Google-OpenAI partnership",
-    "Asuri.ai Multi-Agent Platform launch",
-    "Oracle AI Agent Studio launch",
     "Rockwell Automation FactoryTalk Conductor launch",
     "NVIDIA OpenShell Reference Architecture launch",
     "Microsoft 365 E7",
@@ -29,6 +22,13 @@
     "Expansion of ChatGPT Ads",
     "Acquisition of Orchestra Bio",
     "Integration with OpenAI Daybreak",
-    "Uber brings ChatGPT Work to all employees with OpenAI"
+    "Uber brings ChatGPT Work to all employees with OpenAI",
+    "Cloudflare",
+    "Greptile",
+    "OpenAI",
+    "Daybreak",
+    "CodeRabbit",
+    "Fanatics",
+    "OpenAI Signals"
   ]
 }

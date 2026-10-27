@@ -1,46 +1,67 @@
 {
-  "timestamp": "2026-10-24T04:55:38.908357",
-  "keywords": "EN: [online storage, ChatGPT, multi-tenancy, global caching, Azure Cosmos DB, frontier model training, offline environment, red-teaming, Decisions API, Forward Deployed Engineering]\nVN: [lưu trữ trực tuyến, ChatGPT, multi-tenancy, global caching, Azure Cosmos DB, huấn luyện mô hình tiên tiến, môi trường offline, red-teaming, API Decisions, Forward Deployed Engineering]\nMODELS: [ChatGPT]\nBUSINESS: [Uber brings ChatGPT Work to all employees with OpenAI]",
+  "timestamp": "2026-10-27T05:24:57.130911",
+  "keywords": "Here's the breakdown of the news summaries:\n\n**TECHNICAL Keywords:**\n\nEN: [System One, bug detection, code review, security, bug detection, code refactoring, mathematical hypotheses, quantum physics, codebases, incident investigation, security analysis, user workflow testing, code refactoring, machine computation, performance improvements]\nVN: [System One, phát hiện lỗi, xem xét mã nguồn, bảo mật, phát hiện lỗi, tái cấu trúc mã nguồn, giả thuyết toán học, vật lý lượng tử, codebase, điều tra sự cố, phân tích bảo mật, kiểm thử quy trình làm việc người dùng, tái cấu trúc mã nguồn, tính toán máy tính, cải thiện hiệu suất]\n\n**AI MODEL NAMES:**\n\nMODELS: [GPT-6 Astra, GPT-6.1 Sol, GPT-6.1 Terra, ChatGPT, Codex Ultrafast, Codex]\n\n**AI BUSINESS/PARTNERSHIP EVENTS:**\n\nBUSINESS: [Cloudflare, Greptile, OpenAI, Daybreak, CodeRabbit, Fanatics, OpenAI Signals, OpenAI]",
   "reports": [
     {
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã mở rộng quy mô lưu trữ trực tuyến để phục vụ hơn 1 tỷ người dùng ChatGPT bằng cách tối ưu hóa Habitat với khả năng multi-tenancy, global caching và Azure Cosmos DB, giúp tăng tốc độ đọc lên 12 lần.",
-      "date": "2026-10-23T17:00:00"
+      "title": "Update from @dair_ai",
+      "link": "https://x.com/i/web/status/2114721318491074808",
+      "source": "X Profile: dair_ai",
+      "summary_vn": "Hướng dẫn mới sử dụng mô hình trích xuất System One của Cloudflare, có thể kết hợp với Jev.",
+      "date": "2026-10-26T14:10:26"
     },
     {
-      "title": "Securing our frontier model training environment",
-      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "link": "https://openai.com/index/greptile-code-review-codex-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đã tăng cường các biện pháp bảo mật cho môi trường huấn luyện và đánh giá các mô hình tiên tiến, bao gồm việc sử dụng môi trường offline và red-teaming hiệu năng cao.",
-      "date": "2026-10-23T10:00:00"
+      "summary_vn": "Greptile ứng dụng GPT-6 Astra để kiểm thử quy trình làm việc người dùng và tăng cường bảo mật với Daybreak, giảm thiểu công việc làm lại bằng Codex.",
+      "date": "2026-10-26T22:00:00"
     },
     {
-      "title": "Build more responsive apps with the Decisions API",
-      "link": "https://openai.com/index/decisions-api",
+      "title": "Working with academic communities to build scientific understanding",
+      "link": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
       "source": "RSS: OpenAI News",
-      "summary_vn": "API Decisions của OpenAI cung cấp các quyết định nhanh chóng, tập trung và chi phí thấp, giúp ứng dụng trở nên phản hồi nhạy hơn.",
-      "date": "2026-10-22T19:00:00"
+      "summary_vn": "OpenAI công bố kết quả mô hình về các giả thuyết toán học và vật lý lượng tử, khuyến khích cộng đồng học thuật xác minh và phát triển thêm.",
+      "date": "2026-10-26T14:30:00"
     },
     {
-      "title": "What FDE means at OpenAI",
-      "link": "https://openai.com/index/forward-deployed-engineering-means",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "link": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Forward Deployed Engineering (FDE) tại OpenAI là một phương thức kỹ thuật tập trung vào việc triển khai sớm và liên tục các giải pháp kỹ thuật để giải quyết vấn đề thực tế.",
-      "date": "2026-10-22T06:00:00"
+      "summary_vn": "CodeRabbit sử dụng GPT-6.1 Sol để phân tích rủi ro bảo mật trên các codebase phức tạp, với agent hỗ trợ xem xét và đề xuất sửa lỗi.",
+      "date": "2026-10-26T13:45:00"
     },
     {
-      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-      "link": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "title": "ChatGPT’s expanding world of work",
+      "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Uber đã triển khai ChatGPT Work cho hơn 30.000 nhân viên, hỗ trợ các nhóm nghiên cứu, phân tích dữ liệu, tạo bài thuyết trình và hoàn thành các quy trình làm việc phức tạp.",
-      "date": "2026-10-22T00:00:00"
+      "summary_vn": "Dữ liệu từ OpenAI Signals cho thấy cách ChatGPT được sử dụng cho 165 hoạt động công việc tại gần 100 quốc gia, theo dõi sự thay đổi theo thời gian.",
+      "date": "2026-10-26T10:00:00"
+    },
+    {
+      "title": "How Fanatics and OpenAI streamline the fan experience",
+      "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Fanatics hợp tác với OpenAI để nâng cao trải nghiệm người hâm mộ thông qua tính năng \"Shop the Look\", giúp hoàn thiện trang phục. Việc thử nghiệm trên khoảng 30.000 sản phẩm MLB đã cho thấy mức độ tương tác cao hơn 10%, chứng minh giá trị kinh doanh thực tế của AI trong lĩnh vực bán lẻ.",
+      "date": "2026-10-26T07:00:00"
+    },
+    {
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "link": "https://openai.com/index/openai-cut-incident-investigation",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI ứng dụng Codex Ultrafast để giảm thiểu thời gian điều tra sự cố từ hàng giờ xuống chỉ còn vài phút. Công cụ này cải thiện đáng kể tốc độ phân tích bảo mật, tái cấu trúc mã nguồn (code refactoring) và tối ưu hóa các quy trình làm việc hàng ngày, mang lại hiệu quả hoạt động vượt trội.",
+      "date": "2026-10-26T07:00:00"
+    },
+    {
+      "title": "Introducing GPT-6.1 Terra",
+      "link": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI giới thiệu GPT-6.1 Terra, một mô hình mới tập trung vào khả năng sử dụng máy tính nhanh chóng và hiệu quả cho mọi người. Mô hình này hứa hẹn mang đến những cải tiến đáng kể về mặt hiệu suất và khả năng truy cập, mở rộng phạm vi ứng dụng của AI.",
+      "date": "2026-10-26T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1816,
-    "duplicates": 6,
-    "final": 5
+    "raw_total": 1825,
+    "duplicates": 0,
+    "final": 8
   }
 }
