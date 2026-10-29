@@ -1,10 +1,5 @@
 {
   "entities": [
-    "Rockwell Automation FactoryTalk Conductor launch",
-    "NVIDIA OpenShell Reference Architecture launch",
-    "Microsoft 365 E7",
-    "Microsoft Project Perception",
-    "OpenAI acquires Orchestra Bio",
     "NVIDIA Nemotron 3.5 launch",
     "Meta Muse Wonder/Wonder Full launch",
     "Google Gemini 4 Argon global availability",
@@ -29,6 +24,11 @@
     "Daybreak",
     "CodeRabbit",
     "Fanatics",
-    "OpenAI Signals"
+    "OpenAI Signals",
+    "OpenAI and ServiceNow expand partnership",
+    "Legora is building the agentic operating system for legal work",
+    "Retell uses OpenAI models",
+    "OpenAI expands partnership with Oracle",
+    "Check Point accelerates vulnerability research with Daybreak"
   ]
 }
