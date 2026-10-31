@@ -1,53 +1,60 @@
 {
-  "timestamp": "2026-10-29T06:16:11.557520",
-  "keywords": "EN: [AI, enterprise workflows, agent, legal work, contract analysis, voice agent, security vulnerability research, threat intelligence, data analysis, AI integration]\nVN: [AI, quy trình làm việc doanh nghiệp, agent, công việc pháp lý, phân tích hợp đồng, agent thoại, nghiên cứu lỗ hổng bảo mật, thông tin tình báo về mối đe dọa, phân tích dữ liệu, tích hợp AI]\nMODELS: [ChatGPT, Codex, GPT-6 Astra, Daybreak]\nBUSINESS: [OpenAI and ServiceNow expand partnership, Legora is building the agentic operating system for legal work, Retell uses OpenAI models, OpenAI expands partnership with Oracle, Check Point accelerates vulnerability research with Daybreak]",
+  "timestamp": "2026-10-31T06:08:33.755341",
+  "keywords": "EN: [AI training preferences, robots.txt, community safety, teen protection, fair use, AI training, Model Spec, frontier model misalignment, agent behavior, transactional diligence, AI solution, ChatGPT Enterprise, ROI]\nVN: [tùy chọn đào tạo AI, robots.txt, an toàn cộng đồng, bảo vệ vị thành niên, sử dụng hợp lý, đào tạo AI, Model Spec, sai lệch mô hình tiên tiến, hành vi agent, thẩm định giao dịch, giải pháp AI, ChatGPT Enterprise, lợi tức đầu tư]\nMODELS: [ChatGPT, ChatGPT Enterprise]\nBUSINESS: [OpenAI cho phép website bày tỏ tùy chọn đào tạo AI, OpenAI tăng cường bảo vệ an toàn cho người dùng vị thành niên, OpenAI trình bày quan điểm về \"fair use\", OpenAI cập nhật \"Model Spec\", OpenAI áp dụng cơ chế giám sát để phát hiện sai lệch mô hình AI, Ropes & Gray phát triển giải pháp AI cho thẩm định giao dịch sử dụng OpenAI, Credit Saison đạt 954% ROI trong thử nghiệm ChatGPT Enterprise]",
   "reports": [
     {
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "title": "Making it easier for websites to express AI training preferences",
+      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI và ServiceNow mở rộng hợp tác, tích hợp các model và agent của OpenAI vào quy trình làm việc của ServiceNow. Đồng thời, các tính năng của ServiceNow cũng được đưa vào ChatGPT và Codex, nhằm mục đích tự động hóa và tối ưu hóa các quy trình doanh nghiệp.",
-      "date": "2026-10-28T13:15:00"
+      "summary_vn": "OpenAI cho phép các website bày tỏ tùy chọn đào tạo AI thông qua tệp robots.txt, giúp các nhà cung cấp AI tham gia tôn trọng yêu cầu này để định hướng quá trình thu thập dữ liệu.",
+      "date": "2026-10-30T09:30:00"
     },
     {
-      "title": "The future of the firm",
-      "link": "https://openai.com/index/the-future-of-the-firm",
+      "title": "Community safety report and new protections for teens",
+      "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Bài viết thảo luận về sự thay đổi cấu trúc tổ chức trong tương lai do AI mang lại. AI có thể được tích hợp vào mọi cấp bậc, làm việc cùng, dưới hoặc xen kẽ với con người, định hình lại cách thức hoạt động của các doanh nghiệp.",
-      "date": "2026-10-28T10:00:00"
+      "summary_vn": "OpenAI tăng cường các biện pháp bảo vệ an toàn cho người dùng vị thành niên trong ChatGPT bằng cách mở rộng các lớp bảo vệ và can thiệp sớm, đồng thời cam kết báo cáo công khai về an toàn.",
+      "date": "2026-10-30T09:00:00"
     },
     {
-      "title": "Legora is building the agentic operating system for legal work",
-      "link": "https://openai.com/index/legora",
+      "title": "Fair use benefits everyone",
+      "link": "https://openai.com/index/fair-use-benefits-everyone",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Legora đang phát triển hệ điều hành cho ngành luật, sử dụng các model của OpenAI như ChatGPT và Codex để tự động hóa quy trình pháp lý. Ứng dụng này giúp phân tích hợp đồng hiệu quả hơn, giải phóng luật sư tập trung vào các công việc có giá trị cao hơn.",
-      "date": "2026-10-28T09:30:00"
+      "summary_vn": "OpenAI trình bày quan điểm về \"fair use\" (sử dụng hợp lý) thông qua các trích đoạn từ hồ sơ tòa án, nhấn mạnh vai trò của nó trong việc hỗ trợ đào tạo và đổi mới AI.",
+      "date": "2026-10-30T00:00:00"
     },
     {
-      "title": "Retell uses OpenAI models to help power 100M monthly calls",
-      "link": "https://openai.com/index/retell-ai",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "link": "https://openai.com/index/updated-model-spec",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Retell ứng dụng các model của OpenAI, đặc biệt là GPT-6 Astra cho agent thoại và Codex cho các quy trình, để xử lý 100 triệu cuộc gọi hàng tháng. Điều này giúp công ty đạt doanh thu 1.6 triệu USD/nhân viên/năm, cho thấy hiệu quả kinh doanh rõ rệt.",
-      "date": "2026-10-27T15:00:00"
+      "summary_vn": "OpenAI cập nhật \"Model Spec\" với 5 giá trị cốt lõi, hướng tới việc phát triển AI có năng lực cao hơn, đưa ra phán đoán đúng đắn, tôn trọng quyền tự chủ của con người và trung thành với ý định của con người.",
+      "date": "2026-10-29T17:00:00"
     },
     {
-      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "title": "How we detect frontier model misalignment",
+      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI và Oracle tăng cường hợp tác, đưa các ứng dụng doanh nghiệp và AI agents của Oracle vào ChatGPT. Sự hợp tác này hứa hẹn tạo ra các giải pháp Oracle mới, tận dụng sức mạnh của AI để phục vụ khách hàng doanh nghiệp.",
-      "date": "2026-10-27T07:00:00"
+      "summary_vn": "OpenAI áp dụng cơ chế giám sát nhiều lớp để phát hiện sự sai lệch của các mô hình AI tiên tiến và hành vi không được phép của agent, cho phép can thiệp kịp thời trước khi các sự cố leo thang.",
+      "date": "2026-10-29T09:00:00"
     },
     {
-      "title": "How Check Point accelerates vulnerability research with Daybreak",
-      "link": "https://openai.com/index/check-point-daybreak",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "link": "https://openai.com/index/ropes-gray-ai-diligence",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Check Point sử dụng OpenAI Daybreak để tăng tốc nghiên cứu lỗ hổng bảo mật, giúp các nhà phân tích chuyển đổi thông tin tình báo về lỗ hổng thành các biện pháp bảo vệ khách hàng nhanh hơn.",
-      "date": "2026-10-27T00:00:00"
+      "summary_vn": "Công ty luật Ropes & Gray đang phát triển giải pháp AI cho quy trình thẩm định giao dịch bằng cách sử dụng OpenAI. Giải pháp này giúp luật sư xem xét các tài liệu, bản tóm tắt và báo cáo một cách hiệu quả hơn trước khi tư vấn cho khách hàng.",
+      "date": "2026-10-29T07:00:00"
+    },
+    {
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "link": "https://openai.com/index/credit-saison",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Credit Saison đã đạt được lợi tức đầu tư (ROI) ấn tượng 954% trong chương trình thử nghiệm ChatGPT Enterprise. Thành công này đến từ sự đóng góp của đội ngũ lãnh đạo và nhân viên, thúc đẩy việc áp dụng rộng rãi giải pháp AI trong toàn công ty.",
+      "date": "2026-10-29T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1526,
-    "duplicates": 6,
-    "final": 6
+    "raw_total": 1773,
+    "duplicates": 3,
+    "final": 7
   }
 }

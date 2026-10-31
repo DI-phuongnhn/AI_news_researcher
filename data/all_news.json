@@ -2455,5 +2455,54 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Check Point sử dụng OpenAI Daybreak để tăng tốc nghiên cứu lỗ hổng bảo mật, giúp các nhà phân tích chuyển đổi thông tin tình báo về lỗ hổng thành các biện pháp bảo vệ khách hàng nhanh hơn.",
     "date": "2026-10-27T00:00:00"
+  },
+  {
+    "title": "Making it easier for websites to express AI training preferences",
+    "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cho phép các website bày tỏ tùy chọn đào tạo AI thông qua tệp robots.txt, giúp các nhà cung cấp AI tham gia tôn trọng yêu cầu này để định hướng quá trình thu thập dữ liệu.",
+    "date": "2026-10-30T09:30:00"
+  },
+  {
+    "title": "Community safety report and new protections for teens",
+    "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI tăng cường các biện pháp bảo vệ an toàn cho người dùng vị thành niên trong ChatGPT bằng cách mở rộng các lớp bảo vệ và can thiệp sớm, đồng thời cam kết báo cáo công khai về an toàn.",
+    "date": "2026-10-30T09:00:00"
+  },
+  {
+    "title": "Fair use benefits everyone",
+    "link": "https://openai.com/index/fair-use-benefits-everyone",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI trình bày quan điểm về \"fair use\" (sử dụng hợp lý) thông qua các trích đoạn từ hồ sơ tòa án, nhấn mạnh vai trò của nó trong việc hỗ trợ đào tạo và đổi mới AI.",
+    "date": "2026-10-30T00:00:00"
+  },
+  {
+    "title": "An updated Model Spec for more capable and beneficial AI",
+    "link": "https://openai.com/index/updated-model-spec",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cập nhật \"Model Spec\" với 5 giá trị cốt lõi, hướng tới việc phát triển AI có năng lực cao hơn, đưa ra phán đoán đúng đắn, tôn trọng quyền tự chủ của con người và trung thành với ý định của con người.",
+    "date": "2026-10-29T17:00:00"
+  },
+  {
+    "title": "How we detect frontier model misalignment",
+    "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI áp dụng cơ chế giám sát nhiều lớp để phát hiện sự sai lệch của các mô hình AI tiên tiến và hành vi không được phép của agent, cho phép can thiệp kịp thời trước khi các sự cố leo thang.",
+    "date": "2026-10-29T09:00:00"
+  },
+  {
+    "title": "How Ropes & Gray is developing AI for transactional diligence",
+    "link": "https://openai.com/index/ropes-gray-ai-diligence",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Công ty luật Ropes & Gray đang phát triển giải pháp AI cho quy trình thẩm định giao dịch bằng cách sử dụng OpenAI. Giải pháp này giúp luật sư xem xét các tài liệu, bản tóm tắt và báo cáo một cách hiệu quả hơn trước khi tư vấn cho khách hàng.",
+    "date": "2026-10-29T07:00:00"
+  },
+  {
+    "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+    "link": "https://openai.com/index/credit-saison",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Credit Saison đã đạt được lợi tức đầu tư (ROI) ấn tượng 954% trong chương trình thử nghiệm ChatGPT Enterprise. Thành công này đến từ sự đóng góp của đội ngũ lãnh đạo và nhân viên, thúc đẩy việc áp dụng rộng rãi giải pháp AI trong toàn công ty.",
+    "date": "2026-10-29T00:00:00"
   }
 ]
