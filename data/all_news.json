@@ -2504,5 +2504,54 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Credit Saison đã đạt được lợi tức đầu tư (ROI) ấn tượng 954% trong chương trình thử nghiệm ChatGPT Enterprise. Thành công này đến từ sự đóng góp của đội ngũ lãnh đạo và nhân viên, thúc đẩy việc áp dụng rộng rãi giải pháp AI trong toàn công ty.",
     "date": "2026-10-29T00:00:00"
+  },
+  {
+    "title": "Update from @dair_ai",
+    "link": "https://x.com/i/web/status/2117274289154252866",
+    "source": "X Profile: dair_ai",
+    "summary_vn": "Đội ngũ RAGFlow sử dụng MiniMax M3 với BM25 và grep (không dùng vector index) đạt hiệu suất cao trên BrowseComp-Plus (85%) và FRAMES (91%), cho thấy tiềm năng của các phương pháp \"context as infrastructure\" cho Agent.",
+    "date": "2026-11-02T15:15:02"
+  },
+  {
+    "title": "Scaling Git at OpenAI",
+    "link": "https://openai.com/index/scaling-git-at-openai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu Pando, một hệ thống backend tương thích Git, được thiết kế để đáp ứng quy mô phát triển lớn mà Codex mang lại, giúp quản lý code hiệu quả hơn.",
+    "date": "2026-11-02T15:30:00"
+  },
+  {
+    "title": "Introducing the Grid Protectors Program",
+    "link": "https://openai.com/index/grid-protectors-program",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Chương trình Grid Protectors của OpenAI hợp tác với các đơn vị cung cấp điện để đảm bảo độ tin cậy cho các trung tâm dữ liệu AI, đồng thời bảo vệ chi phí điện năng cho người tiêu dùng.",
+    "date": "2026-11-02T15:00:00"
+  },
+  {
+    "title": "Rewarding defenders with bigger bug bounties",
+    "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI tăng cường chương trình \"bug bounty\" an ninh, cung cấp phần thưởng cao hơn và các khoản thưởng bổ sung cho những nhà nghiên cứu bảo mật độc lập có báo cáo chất lượng, thể hiện sự trung thành và ưu tiên.",
+    "date": "2026-11-02T18:00:00"
+  },
+  {
+    "title": "Preparing our next security sprint to harden OpenAI",
+    "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đang chuẩn bị cho \"security sprint\" nội bộ tiếp theo, sử dụng các hệ thống Cathedral Systems để kiểm thử và củng cố khả năng phòng thủ của mình bằng AI.",
+    "date": "2026-11-02T18:00:00"
+  },
+  {
+    "title": "Qodo builds context into AI code review with Codex",
+    "link": "https://openai.com/index/qodo-codex-plugin",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Qodo tích hợp kiến thức công ty và tiêu chuẩn code vào OpenAI Codex để tự động hóa việc review code, giúp nhà phát triển phát hiện các lỗi nghiêm trọng (P0) trước khi gửi pull request, nâng cao hiệu quả và chất lượng dự án.",
+    "date": "2026-11-02T00:00:00"
+  },
+  {
+    "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+    "link": "https://openai.com/index/dan-driscoll-joins-openai",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI bổ nhiệm Dan Driscoll làm Cố vấn Cấp cao về Hiện đại hóa An ninh Quốc gia, tập trung vào AI có trách nhiệm, khả năng phục hồi an ninh mạng và hợp tác với các đồng minh Hoa Kỳ.",
+    "date": "2026-11-02T00:00:00"
   }
 ]

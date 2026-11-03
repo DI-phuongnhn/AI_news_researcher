@@ -1,60 +1,60 @@
 {
-  "timestamp": "2026-10-31T06:08:33.755341",
-  "keywords": "EN: [AI training preferences, robots.txt, community safety, teen protection, fair use, AI training, Model Spec, frontier model misalignment, agent behavior, transactional diligence, AI solution, ChatGPT Enterprise, ROI]\nVN: [tùy chọn đào tạo AI, robots.txt, an toàn cộng đồng, bảo vệ vị thành niên, sử dụng hợp lý, đào tạo AI, Model Spec, sai lệch mô hình tiên tiến, hành vi agent, thẩm định giao dịch, giải pháp AI, ChatGPT Enterprise, lợi tức đầu tư]\nMODELS: [ChatGPT, ChatGPT Enterprise]\nBUSINESS: [OpenAI cho phép website bày tỏ tùy chọn đào tạo AI, OpenAI tăng cường bảo vệ an toàn cho người dùng vị thành niên, OpenAI trình bày quan điểm về \"fair use\", OpenAI cập nhật \"Model Spec\", OpenAI áp dụng cơ chế giám sát để phát hiện sai lệch mô hình AI, Ropes & Gray phát triển giải pháp AI cho thẩm định giao dịch sử dụng OpenAI, Credit Saison đạt 954% ROI trong thử nghiệm ChatGPT Enterprise]",
+  "timestamp": "2026-11-03T07:08:20.043451",
+  "keywords": "EN: [RAG, BM25, grep, Git, backend, AI, security, bug bounty, code review, AI]\nVN: [RAG, BM25, grep, Git, backend, AI, bảo mật, bug bounty, review code, AI]\nMODELS: [MiniMax M3, Codex]\nBUSINESS: [Grid Protectors Program, bug bounty program enhancement, National Security Modernization appointment]",
   "reports": [
     {
-      "title": "Making it easier for websites to express AI training preferences",
-      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI cho phép các website bày tỏ tùy chọn đào tạo AI thông qua tệp robots.txt, giúp các nhà cung cấp AI tham gia tôn trọng yêu cầu này để định hướng quá trình thu thập dữ liệu.",
-      "date": "2026-10-30T09:30:00"
+      "title": "Update from @dair_ai",
+      "link": "https://x.com/i/web/status/2117274289154252866",
+      "source": "X Profile: dair_ai",
+      "summary_vn": "Đội ngũ RAGFlow sử dụng MiniMax M3 với BM25 và grep (không dùng vector index) đạt hiệu suất cao trên BrowseComp-Plus (85%) và FRAMES (91%), cho thấy tiềm năng của các phương pháp \"context as infrastructure\" cho Agent.",
+      "date": "2026-11-02T15:15:02"
     },
     {
-      "title": "Community safety report and new protections for teens",
-      "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "title": "Scaling Git at OpenAI",
+      "link": "https://openai.com/index/scaling-git-at-openai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI tăng cường các biện pháp bảo vệ an toàn cho người dùng vị thành niên trong ChatGPT bằng cách mở rộng các lớp bảo vệ và can thiệp sớm, đồng thời cam kết báo cáo công khai về an toàn.",
-      "date": "2026-10-30T09:00:00"
+      "summary_vn": "OpenAI giới thiệu Pando, một hệ thống backend tương thích Git, được thiết kế để đáp ứng quy mô phát triển lớn mà Codex mang lại, giúp quản lý code hiệu quả hơn.",
+      "date": "2026-11-02T15:30:00"
     },
     {
-      "title": "Fair use benefits everyone",
-      "link": "https://openai.com/index/fair-use-benefits-everyone",
+      "title": "Introducing the Grid Protectors Program",
+      "link": "https://openai.com/index/grid-protectors-program",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI trình bày quan điểm về \"fair use\" (sử dụng hợp lý) thông qua các trích đoạn từ hồ sơ tòa án, nhấn mạnh vai trò của nó trong việc hỗ trợ đào tạo và đổi mới AI.",
-      "date": "2026-10-30T00:00:00"
+      "summary_vn": "Chương trình Grid Protectors của OpenAI hợp tác với các đơn vị cung cấp điện để đảm bảo độ tin cậy cho các trung tâm dữ liệu AI, đồng thời bảo vệ chi phí điện năng cho người tiêu dùng.",
+      "date": "2026-11-02T15:00:00"
     },
     {
-      "title": "An updated Model Spec for more capable and beneficial AI",
-      "link": "https://openai.com/index/updated-model-spec",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI cập nhật \"Model Spec\" với 5 giá trị cốt lõi, hướng tới việc phát triển AI có năng lực cao hơn, đưa ra phán đoán đúng đắn, tôn trọng quyền tự chủ của con người và trung thành với ý định của con người.",
-      "date": "2026-10-29T17:00:00"
+      "summary_vn": "OpenAI tăng cường chương trình \"bug bounty\" an ninh, cung cấp phần thưởng cao hơn và các khoản thưởng bổ sung cho những nhà nghiên cứu bảo mật độc lập có báo cáo chất lượng, thể hiện sự trung thành và ưu tiên.",
+      "date": "2026-11-02T18:00:00"
     },
     {
-      "title": "How we detect frontier model misalignment",
-      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI áp dụng cơ chế giám sát nhiều lớp để phát hiện sự sai lệch của các mô hình AI tiên tiến và hành vi không được phép của agent, cho phép can thiệp kịp thời trước khi các sự cố leo thang.",
-      "date": "2026-10-29T09:00:00"
+      "summary_vn": "OpenAI đang chuẩn bị cho \"security sprint\" nội bộ tiếp theo, sử dụng các hệ thống Cathedral Systems để kiểm thử và củng cố khả năng phòng thủ của mình bằng AI.",
+      "date": "2026-11-02T18:00:00"
     },
     {
-      "title": "How Ropes & Gray is developing AI for transactional diligence",
-      "link": "https://openai.com/index/ropes-gray-ai-diligence",
+      "title": "Qodo builds context into AI code review with Codex",
+      "link": "https://openai.com/index/qodo-codex-plugin",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Công ty luật Ropes & Gray đang phát triển giải pháp AI cho quy trình thẩm định giao dịch bằng cách sử dụng OpenAI. Giải pháp này giúp luật sư xem xét các tài liệu, bản tóm tắt và báo cáo một cách hiệu quả hơn trước khi tư vấn cho khách hàng.",
-      "date": "2026-10-29T07:00:00"
+      "summary_vn": "Qodo tích hợp kiến thức công ty và tiêu chuẩn code vào OpenAI Codex để tự động hóa việc review code, giúp nhà phát triển phát hiện các lỗi nghiêm trọng (P0) trước khi gửi pull request, nâng cao hiệu quả và chất lượng dự án.",
+      "date": "2026-11-02T00:00:00"
     },
     {
-      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-      "link": "https://openai.com/index/credit-saison",
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "link": "https://openai.com/index/dan-driscoll-joins-openai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Credit Saison đã đạt được lợi tức đầu tư (ROI) ấn tượng 954% trong chương trình thử nghiệm ChatGPT Enterprise. Thành công này đến từ sự đóng góp của đội ngũ lãnh đạo và nhân viên, thúc đẩy việc áp dụng rộng rãi giải pháp AI trong toàn công ty.",
-      "date": "2026-10-29T00:00:00"
+      "summary_vn": "OpenAI bổ nhiệm Dan Driscoll làm Cố vấn Cấp cao về Hiện đại hóa An ninh Quốc gia, tập trung vào AI có trách nhiệm, khả năng phục hồi an ninh mạng và hợp tác với các đồng minh Hoa Kỳ.",
+      "date": "2026-11-02T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1773,
-    "duplicates": 3,
+    "raw_total": 1848,
+    "duplicates": 0,
     "final": 7
   }
 }

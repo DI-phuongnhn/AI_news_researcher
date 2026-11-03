@@ -61,7 +61,8 @@
     "GPT-Image-2.5",
     "GPT-Rosalind",
     "GPT-6.1 Terra",
-    "Codex Ultrafast"
+    "Codex Ultrafast",
+    "MiniMax M3"
   ],
   "legacy": [
     "GPT-4",
