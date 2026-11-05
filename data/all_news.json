@@ -2553,5 +2553,68 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "OpenAI bổ nhiệm Dan Driscoll làm Cố vấn Cấp cao về Hiện đại hóa An ninh Quốc gia, tập trung vào AI có trách nhiệm, khả năng phục hồi an ninh mạng và hợp tác với các đồng minh Hoa Kỳ.",
     "date": "2026-11-02T00:00:00"
+  },
+  {
+    "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+    "link": "https://openai.com/index/openai-to-acquire-pierre",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI mua lại Pierre Computer Company để mở rộng công cụ Codex, hỗ trợ xây dựng, hiểu và đánh giá mã nguồn hiệu quả hơn.",
+    "date": "2026-11-04T14:30:00"
+  },
+  {
+    "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+    "link": "https://openai.com/index/daybreak-red-aws-govcloud",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-5.6 Cyber, dưới tên Daybreak Red, hiện đã có trên AWS GovCloud (US-East) thông qua Amazon Bedrock, phục vụ các tác vụ an ninh mạng cho khách hàng được phê duyệt.",
+    "date": "2026-11-04T07:00:00"
+  },
+  {
+    "title": "A thousand fewer paths to root",
+    "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI phát triển một pipeline tự hành tìm và vá 948 lỗ hổng leo thang đặc quyền trong kernel Linux, nâng cao đáng kể an ninh hệ thống.",
+    "date": "2026-11-04T08:00:00"
+  },
+  {
+    "title": "Introducing Images 2.6",
+    "link": "https://openai.com/index/introducing-images-2-6",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Phiên bản Images 2.6 cải thiện tốc độ tạo ảnh, khả năng chỉnh sửa chính xác hơn và thêm API controls cho ChatGPT, Codex, hứa hẹn trải nghiệm sáng tạo đa dạng.",
+    "date": "2026-11-04T00:00:00"
+  },
+  {
+    "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+    "link": "https://openai.com/index/devrev-enterprise-self-service",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "DevRev tích hợp GPT-6.1 Sol để cung cấp dịch vụ tự phục vụ cho doanh nghiệp, tối ưu hóa sự cân bằng giữa khả năng suy luận, tốc độ và chi phí hoạt động.",
+    "date": "2026-11-04T00:00:00"
+  },
+  {
+    "title": "Accelerating engineering for the physical world",
+    "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI giới thiệu cách ChatGPT và Codex giúp các kỹ sư tăng tốc quy trình thiết kế vật lý, bao gồm CAD, PCB và mô phỏng. Ứng dụng này mang lại giá trị kinh doanh rõ rệt bằng cách tối ưu hóa hiệu quả kỹ thuật trong nhiều lĩnh vực.",
+    "date": "2026-11-03T12:00:00"
+  },
+  {
+    "title": "How Cisco defends at machine speed with OpenAI",
+    "link": "https://openai.com/index/cisco-cyber",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Cisco tích hợp trí tuệ mạng với các mô hình OpenAI để nâng cao khả năng phòng thủ an ninh doanh nghiệp ở tốc độ máy. Sự kết hợp này tạo ra các biện pháp bảo vệ linh hoạt hơn, giải quyết mối đe dọa an ninh mạng hiệu quả.",
+    "date": "2026-11-03T08:00:00"
+  },
+  {
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "link": "https://openai.com/index/heimstaden",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Heimstaden đang cách mạng hóa quản lý bất động sản dân cư tại Châu Âu bằng ChatGPT Enterprise và Codex của OpenAI. Giải pháp này giúp cắt giảm chi phí, nâng cao hiệu quả hoạt động và trao quyền cho nhân viên, mang lại lợi ích kinh doanh đáng kể.",
+    "date": "2026-11-03T08:00:00"
+  },
+  {
+    "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+    "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI bổ nhiệm Jill Hazelbaker vào vị trí Giám đốc Truyền thông Doanh nghiệp, phụ trách các hoạt động truyền thông và định vị thương hiệu toàn cầu của công ty.",
+    "date": "2026-11-03T00:00:00"
   }
 ]

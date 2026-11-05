@@ -1,60 +1,74 @@
 {
-  "timestamp": "2026-11-03T07:08:20.043451",
-  "keywords": "EN: [RAG, BM25, grep, Git, backend, AI, security, bug bounty, code review, AI]\nVN: [RAG, BM25, grep, Git, backend, AI, bảo mật, bug bounty, review code, AI]\nMODELS: [MiniMax M3, Codex]\nBUSINESS: [Grid Protectors Program, bug bounty program enhancement, National Security Modernization appointment]",
+  "timestamp": "2026-11-05T07:11:46.634553",
+  "keywords": "EN: [AI, security, code, kernel, vulnerability, image generation, API, cybersecurity, real estate, network intelligence]\nVN: [AI, an ninh, mã, kernel, lỗ hổng, tạo ảnh, API, an ninh mạng, bất động sản, trí tuệ mạng]\nMODELS: [GPT-5.6 Cyber, Daybreak Red, Images 2.6, GPT-6.1 Sol]\nBUSINESS: [OpenAI acquires Pierre Computer Company, Inc., Daybreak Red available in AWS GovCloud (US-East) via Amazon Bedrock, DevRev integrates GPT-6.1 Sol, Cisco integrates OpenAI models, Heimstaden uses ChatGPT Enterprise and Codex]",
   "reports": [
     {
-      "title": "Update from @dair_ai",
-      "link": "https://x.com/i/web/status/2117274289154252866",
-      "source": "X Profile: dair_ai",
-      "summary_vn": "Đội ngũ RAGFlow sử dụng MiniMax M3 với BM25 và grep (không dùng vector index) đạt hiệu suất cao trên BrowseComp-Plus (85%) và FRAMES (91%), cho thấy tiềm năng của các phương pháp \"context as infrastructure\" cho Agent.",
-      "date": "2026-11-02T15:15:02"
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "link": "https://openai.com/index/openai-to-acquire-pierre",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI mua lại Pierre Computer Company để mở rộng công cụ Codex, hỗ trợ xây dựng, hiểu và đánh giá mã nguồn hiệu quả hơn.",
+      "date": "2026-11-04T14:30:00"
     },
     {
-      "title": "Scaling Git at OpenAI",
-      "link": "https://openai.com/index/scaling-git-at-openai",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "link": "https://openai.com/index/daybreak-red-aws-govcloud",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu Pando, một hệ thống backend tương thích Git, được thiết kế để đáp ứng quy mô phát triển lớn mà Codex mang lại, giúp quản lý code hiệu quả hơn.",
-      "date": "2026-11-02T15:30:00"
+      "summary_vn": "GPT-5.6 Cyber, dưới tên Daybreak Red, hiện đã có trên AWS GovCloud (US-East) thông qua Amazon Bedrock, phục vụ các tác vụ an ninh mạng cho khách hàng được phê duyệt.",
+      "date": "2026-11-04T07:00:00"
     },
     {
-      "title": "Introducing the Grid Protectors Program",
-      "link": "https://openai.com/index/grid-protectors-program",
+      "title": "A thousand fewer paths to root",
+      "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Chương trình Grid Protectors của OpenAI hợp tác với các đơn vị cung cấp điện để đảm bảo độ tin cậy cho các trung tâm dữ liệu AI, đồng thời bảo vệ chi phí điện năng cho người tiêu dùng.",
-      "date": "2026-11-02T15:00:00"
+      "summary_vn": "OpenAI phát triển một pipeline tự hành tìm và vá 948 lỗ hổng leo thang đặc quyền trong kernel Linux, nâng cao đáng kể an ninh hệ thống.",
+      "date": "2026-11-04T08:00:00"
     },
     {
-      "title": "Rewarding defenders with bigger bug bounties",
-      "link": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "title": "Introducing Images 2.6",
+      "link": "https://openai.com/index/introducing-images-2-6",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI tăng cường chương trình \"bug bounty\" an ninh, cung cấp phần thưởng cao hơn và các khoản thưởng bổ sung cho những nhà nghiên cứu bảo mật độc lập có báo cáo chất lượng, thể hiện sự trung thành và ưu tiên.",
-      "date": "2026-11-02T18:00:00"
+      "summary_vn": "Phiên bản Images 2.6 cải thiện tốc độ tạo ảnh, khả năng chỉnh sửa chính xác hơn và thêm API controls cho ChatGPT, Codex, hứa hẹn trải nghiệm sáng tạo đa dạng.",
+      "date": "2026-11-04T00:00:00"
     },
     {
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "link": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "link": "https://openai.com/index/devrev-enterprise-self-service",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đang chuẩn bị cho \"security sprint\" nội bộ tiếp theo, sử dụng các hệ thống Cathedral Systems để kiểm thử và củng cố khả năng phòng thủ của mình bằng AI.",
-      "date": "2026-11-02T18:00:00"
+      "summary_vn": "DevRev tích hợp GPT-6.1 Sol để cung cấp dịch vụ tự phục vụ cho doanh nghiệp, tối ưu hóa sự cân bằng giữa khả năng suy luận, tốc độ và chi phí hoạt động.",
+      "date": "2026-11-04T00:00:00"
     },
     {
-      "title": "Qodo builds context into AI code review with Codex",
-      "link": "https://openai.com/index/qodo-codex-plugin",
+      "title": "Accelerating engineering for the physical world",
+      "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Qodo tích hợp kiến thức công ty và tiêu chuẩn code vào OpenAI Codex để tự động hóa việc review code, giúp nhà phát triển phát hiện các lỗi nghiêm trọng (P0) trước khi gửi pull request, nâng cao hiệu quả và chất lượng dự án.",
-      "date": "2026-11-02T00:00:00"
+      "summary_vn": "OpenAI giới thiệu cách ChatGPT và Codex giúp các kỹ sư tăng tốc quy trình thiết kế vật lý, bao gồm CAD, PCB và mô phỏng. Ứng dụng này mang lại giá trị kinh doanh rõ rệt bằng cách tối ưu hóa hiệu quả kỹ thuật trong nhiều lĩnh vực.",
+      "date": "2026-11-03T12:00:00"
     },
     {
-      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "link": "https://openai.com/index/dan-driscoll-joins-openai",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "link": "https://openai.com/index/cisco-cyber",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI bổ nhiệm Dan Driscoll làm Cố vấn Cấp cao về Hiện đại hóa An ninh Quốc gia, tập trung vào AI có trách nhiệm, khả năng phục hồi an ninh mạng và hợp tác với các đồng minh Hoa Kỳ.",
-      "date": "2026-11-02T00:00:00"
+      "summary_vn": "Cisco tích hợp trí tuệ mạng với các mô hình OpenAI để nâng cao khả năng phòng thủ an ninh doanh nghiệp ở tốc độ máy. Sự kết hợp này tạo ra các biện pháp bảo vệ linh hoạt hơn, giải quyết mối đe dọa an ninh mạng hiệu quả.",
+      "date": "2026-11-03T08:00:00"
+    },
+    {
+      "title": "Heimstaden is changing residential real estate management with AI",
+      "link": "https://openai.com/index/heimstaden",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Heimstaden đang cách mạng hóa quản lý bất động sản dân cư tại Châu Âu bằng ChatGPT Enterprise và Codex của OpenAI. Giải pháp này giúp cắt giảm chi phí, nâng cao hiệu quả hoạt động và trao quyền cho nhân viên, mang lại lợi ích kinh doanh đáng kể.",
+      "date": "2026-11-03T08:00:00"
+    },
+    {
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI bổ nhiệm Jill Hazelbaker vào vị trí Giám đốc Truyền thông Doanh nghiệp, phụ trách các hoạt động truyền thông và định vị thương hiệu toàn cầu của công ty.",
+      "date": "2026-11-03T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1848,
-    "duplicates": 0,
-    "final": 7
+    "raw_total": 1359,
+    "duplicates": 4,
+    "final": 9
   }
 }

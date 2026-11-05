@@ -62,7 +62,10 @@
     "GPT-Rosalind",
     "GPT-6.1 Terra",
     "Codex Ultrafast",
-    "MiniMax M3"
+    "MiniMax M3",
+    "GPT-5.6 Cyber",
+    "Daybreak Red",
+    "Images 2.6"
   ],
   "legacy": [
     "GPT-4",
