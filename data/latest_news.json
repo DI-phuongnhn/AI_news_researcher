@@ -1,74 +1,67 @@
 {
-  "timestamp": "2026-11-05T07:11:46.634553",
-  "keywords": "EN: [AI, security, code, kernel, vulnerability, image generation, API, cybersecurity, real estate, network intelligence]\nVN: [AI, an ninh, mã, kernel, lỗ hổng, tạo ảnh, API, an ninh mạng, bất động sản, trí tuệ mạng]\nMODELS: [GPT-5.6 Cyber, Daybreak Red, Images 2.6, GPT-6.1 Sol]\nBUSINESS: [OpenAI acquires Pierre Computer Company, Inc., Daybreak Red available in AWS GovCloud (US-East) via Amazon Bedrock, DevRev integrates GPT-6.1 Sol, Cisco integrates OpenAI models, Heimstaden uses ChatGPT Enterprise and Codex]",
+  "timestamp": "2026-11-07T06:24:09.540497",
+  "keywords": "EN: [cybersecurity, AI-native graduates, operational optimization, cybersecurity agents, source code review, responsible AI, conversion optimization, investment research, AI infrastructure, third-party services]\nVN: [an ninh mạng, sinh viên tốt nghiệp AI-native, tối ưu hóa vận hành, tác nhân an ninh mạng, xem xét mã nguồn, AI có trách nhiệm, tối ưu hóa chuyển đổi, nghiên cứu đầu tư, hạ tầng AI, dịch vụ bên thứ ba]\nMODELS: [ChatGPT, Codex, GPT‑6 Cyber, GPT‑6 Astra]\nBUSINESS: [Partnership with Hacktron, Integration with Cult.fit, Integration with Merge, Launch of National Community Compact and Compute Campus Policy Blueprint, Use of ChatGPT Ads by Flipsnack, Use of OpenAI by Franklin Templeton]",
   "reports": [
     {
-      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-      "link": "https://openai.com/index/openai-to-acquire-pierre",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "link": "https://openai.com/index/partnering-with-hacktron",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI mua lại Pierre Computer Company để mở rộng công cụ Codex, hỗ trợ xây dựng, hiểu và đánh giá mã nguồn hiệu quả hơn.",
-      "date": "2026-11-04T14:30:00"
+      "summary_vn": "OpenAI hợp tác với Hacktron để tìm lỗ hổng bảo mật trong hệ thống của mình, thử nghiệm kết nối với dịch vụ bên thứ ba và tăng cường phòng thủ bằng AI tiên tiến, tập trung vào việc củng cố an ninh mạng.",
+      "date": "2026-11-06T08:00:00"
     },
     {
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "link": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "title": "Australian universities are creating AI-native graduates",
+      "link": "https://openai.com/index/australian-universities-ai-native-graduates",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-5.6 Cyber, dưới tên Daybreak Red, hiện đã có trên AWS GovCloud (US-East) thông qua Amazon Bedrock, phục vụ các tác vụ an ninh mạng cho khách hàng được phê duyệt.",
-      "date": "2026-11-04T07:00:00"
+      "summary_vn": "Các trường đại học Úc đang tích hợp ChatGPT và AI vào chương trình giảng dạy để trang bị cho sinh viên kiến thức và kỹ năng cần thiết, chuẩn bị cho lực lượng lao động tương lai trong kỷ nguyên AI.",
+      "date": "2026-11-05T17:00:00"
     },
     {
-      "title": "A thousand fewer paths to root",
-      "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "link": "https://openai.com/index/cultfit-builds-with-codex",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI phát triển một pipeline tự hành tìm và vá 948 lỗ hổng leo thang đặc quyền trong kernel Linux, nâng cao đáng kể an ninh hệ thống.",
-      "date": "2026-11-04T08:00:00"
+      "summary_vn": "Cult.fit sử dụng Codex để hỗ trợ các nhóm trong việc xây dựng công cụ, đẩy nhanh quy trình làm việc và tái định hình cách thức hoạt động, cho thấy ứng dụng thực tế của AI trong tối ưu hóa vận hành doanh nghiệp.",
+      "date": "2026-11-05T20:00:00"
     },
     {
-      "title": "Introducing Images 2.6",
-      "link": "https://openai.com/index/introducing-images-2-6",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "link": "https://openai.com/index/introducing-gpt-6-cyber",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Phiên bản Images 2.6 cải thiện tốc độ tạo ảnh, khả năng chỉnh sửa chính xác hơn và thêm API controls cho ChatGPT, Codex, hứa hẹn trải nghiệm sáng tạo đa dạng.",
-      "date": "2026-11-04T00:00:00"
+      "summary_vn": "GPT‑6 Cyber là một mô hình AI chuyên dụng cho an ninh mạng của OpenAI, có khả năng phát hiện các lỗ hổng có thể khai thác và phát triển các bản vá, đồng thời tuân thủ phạm vi hoạt động được ủy quyền.",
+      "date": "2026-11-05T09:00:00"
     },
     {
-      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-      "link": "https://openai.com/index/devrev-enterprise-self-service",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "link": "https://openai.com/index/merge-builds-with-openai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "DevRev tích hợp GPT-6.1 Sol để cung cấp dịch vụ tự phục vụ cho doanh nghiệp, tối ưu hóa sự cân bằng giữa khả năng suy luận, tốc độ và chi phí hoạt động.",
-      "date": "2026-11-04T00:00:00"
+      "summary_vn": "Merge tích hợp công nghệ OpenAI như GPT‑6 Astra và Codex để xem xét mã nguồn, hỗ trợ marketing, lập kế hoạch sự kiện và chuẩn bị báo cáo bán hàng, minh chứng cho việc ứng dụng AI trong nhiều chức năng kinh doanh và phát triển sản phẩm.",
+      "date": "2026-11-05T08:00:00"
     },
     {
-      "title": "Accelerating engineering for the physical world",
-      "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu cách ChatGPT và Codex giúp các kỹ sư tăng tốc quy trình thiết kế vật lý, bao gồm CAD, PCB và mô phỏng. Ứng dụng này mang lại giá trị kinh doanh rõ rệt bằng cách tối ưu hóa hiệu quả kỹ thuật trong nhiều lĩnh vực.",
-      "date": "2026-11-03T12:00:00"
+      "summary_vn": "OpenAI ra mắt \"National Community Compact\" và \"Compute Campus Policy Blueprint\" nhằm đảm bảo phát triển hạ tầng AI có trách nhiệm, bảo vệ tài nguyên địa phương và tạo việc làm.",
+      "date": "2026-11-05T02:00:00"
     },
     {
-      "title": "How Cisco defends at machine speed with OpenAI",
-      "link": "https://openai.com/index/cisco-cyber",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "link": "https://openai.com/ads/customers/flipsnack",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Cisco tích hợp trí tuệ mạng với các mô hình OpenAI để nâng cao khả năng phòng thủ an ninh doanh nghiệp ở tốc độ máy. Sự kết hợp này tạo ra các biện pháp bảo vệ linh hoạt hơn, giải quyết mối đe dọa an ninh mạng hiệu quả.",
-      "date": "2026-11-03T08:00:00"
+      "summary_vn": "Flipsnack đã tối ưu hóa chiến dịch quảng cáo sử dụng ChatGPT Ads, tập trung vào việc thu hút người dùng dùng thử sản phẩm, giúp tăng số lượt đăng ký và giảm chi phí mỗi lượt đăng ký.",
+      "date": "2026-11-05T00:45:15"
     },
     {
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "link": "https://openai.com/index/heimstaden",
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "link": "https://openai.com/index/franklin-templeton",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Heimstaden đang cách mạng hóa quản lý bất động sản dân cư tại Châu Âu bằng ChatGPT Enterprise và Codex của OpenAI. Giải pháp này giúp cắt giảm chi phí, nâng cao hiệu quả hoạt động và trao quyền cho nhân viên, mang lại lợi ích kinh doanh đáng kể.",
-      "date": "2026-11-03T08:00:00"
-    },
-    {
-      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-      "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI bổ nhiệm Jill Hazelbaker vào vị trí Giám đốc Truyền thông Doanh nghiệp, phụ trách các hoạt động truyền thông và định vị thương hiệu toàn cầu của công ty.",
-      "date": "2026-11-03T00:00:00"
+      "summary_vn": "Franklin Templeton đang áp dụng các workflow AI sử dụng OpenAI cho hoạt động nghiên cứu đầu tư, ban đầu tập trung vào nghiên cứu cổ phiếu, nhằm hỗ trợ các nhà quản lý danh mục so sánh quan điểm và đánh giá rủi ro đầu tư.",
+      "date": "2026-11-05T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1359,
-    "duplicates": 4,
-    "final": 9
+    "raw_total": 1368,
+    "duplicates": 3,
+    "final": 8
   }
 }
