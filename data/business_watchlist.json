@@ -1,19 +1,5 @@
 {
   "entities": [
-    "OpenAI-Meta collaboration rumors",
-    "Google Cloud AI integrations",
-    "Apple's on-device AI strategy",
-    "Hugging Face funding",
-    "Nvidia AI infrastructure deals",
-    "Grid Protectors Program",
-    "bug bounty program enhancement",
-    "National Security Modernization appointment",
-    "Microsoft-Mistral partnership",
-    "Anthropic funding",
-    "Nvidia-Google Cloud AI",
-    "Hugging Face acquisition rumors",
-    "Oracle AI integration",
-    "Salesforce AI Cloud expansion",
     "Apple WWDC AI announcements",
     "Meta Llama 3.1 release",
     "Microsoft Copilot updates",
@@ -29,6 +15,20 @@
     "Integration with Merge",
     "Launch of National Community Compact and Compute Campus Policy Blueprint",
     "Use of ChatGPT Ads by Flipsnack",
-    "Use of OpenAI by Franklin Templeton"
+    "Use of OpenAI by Franklin Templeton",
+    "OpenAI-Microsoft Azure partnership",
+    "Anthropic-AWS partnership",
+    "Google Cloud-Mistral AI collaboration",
+    "Nvidia-Cohere partnership",
+    "Together AI Series B funding",
+    "Hugging Face open-source initiatives",
+    "Replicate platform expansion",
+    "Perplexity AI enterprise adoption",
+    "Automattic-acquired AI companies",
+    "Microsoft's AI security framework announcement",
+    "** AWS Marketplace",
+    "OpenAI API",
+    "Integrations",
+    "Funding"
   ]
 }
