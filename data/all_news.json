@@ -2777,5 +2777,47 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Cogent hợp tác với OpenAI phát triển các \"nhà máy phòng thủ mạng\" cho doanh nghiệp, sử dụng các model OpenAI kết hợp với ngữ cảnh doanh nghiệp để tự động hóa việc khắc phục lỗ hổng bảo mật thông qua các *agent*.",
     "date": "2026-11-10T00:00:00"
+  },
+  {
+    "title": "Introducing ChatGPT Wallet",
+    "link": "https://openai.com/index/introducing-chatgpt-wallet",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "**ChatGPT Wallet** cho phép các Agent trong ChatGPT Work, Codex và dots thực hiện giao dịch mua bán an toàn, yêu cầu phê duyệt từ người dùng và sử dụng các biện pháp bảo vệ thẻ hiện có, mở ra tiềm năng cho các ứng dụng tài chính và thương mại của AI.",
+    "date": "2026-11-13T15:00:00"
+  },
+  {
+    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "link": "https://openai.com/business/customer-stories/shield",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "**Shield** sử dụng OpenAI để hỗ trợ kỹ thuật viên IT xử lý các tác vụ trên hệ thống cũ. Các Forge agents của Shield tự động hóa việc điều hướng hệ thống, giúp kỹ thuật viên tập trung vào các vấn đề cần chuyên môn sâu, nâng cao hiệu quả làm việc và giảm thời gian xử lý.",
+    "date": "2026-11-13T08:00:00"
+  },
+  {
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "link": "https://openai.com/business/customer-stories/amplitude",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "**Amplitude** ứng dụng agent AI có tên Wave, được xây dựng chủ yếu trên các mô hình OpenAI, để xác định các cải tiến sản phẩm, hỗ trợ đội ngũ phát triển bằng coding agents và đo lường tác động. Điều này giúp Amplitude cải thiện sản phẩm nhanh chóng, chỉ trong 1-2 ngày.",
+    "date": "2026-11-12T20:00:00"
+  },
+  {
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "link": "https://openai.com/business/customer-stories/gondola",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "**Gondola** tăng gấp đôi doanh thu nhờ việc ứng dụng Codex để nâng cao hiệu suất kỹ sư lên 50% và ChatGPT đơn giản hóa công việc hàng ngày, giúp người sáng tạo được ghi nhận và có cơ hội việc làm tốt hơn.",
+    "date": "2026-11-12T12:00:00"
+  },
+  {
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "link": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "**Holiday Extras** đang tái định hình khả năng phát triển ứng dụng với Codex, chuyển đổi chuyên môn về khách hàng thành các ứng dụng tốt hơn, tăng tỷ lệ chuyển đổi đặt chỗ và mở ra các cơ hội tăng trưởng mới.",
+    "date": "2026-11-12T09:30:00"
+  },
+  {
+    "title": "Supporting research on AI and children’s safety",
+    "link": "https://openai.com/index/children-first-declaration",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI cam kết 2 triệu USD cho nghiên cứu về an toàn của trẻ em trên không gian AI, nhằm phát triển các công cụ chung để đo lường rủi ro và cơ hội.",
+    "date": "2026-11-12T00:00:00"
   }
 ]

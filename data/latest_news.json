@@ -1,81 +1,53 @@
 {
-  "timestamp": "2026-11-12T07:33:06.837900",
-  "keywords": "EN: [AI, AI model, AI application, AI solutions, AI technology, AI skills, AI adoption, AI productivity, AI research, AI defense]\nVN: [AI, mô hình AI, ứng dụng AI, giải pháp AI, công nghệ AI, kỹ năng AI, triển khai AI, năng suất AI, nghiên cứu AI, phòng thủ AI]\nMODELS: [Gemini 4 Carbon, ChatGPT Plus]\nBUSINESS: [Partnership between Gilbert + Tobin and OpenAI, ChatGPT Plus for veterans and servicemembers, Businesses in ChatGPT, Partnership between OpenAI and ThinkYoung, Singapore Airlines' use of OpenAI technology, Research by OpenAI and Upwork, Partnership between Cogent and OpenAI]",
+  "timestamp": "2026-11-14T06:54:49.328104",
+  "keywords": "Here's the breakdown of the keywords, AI model names, and business/partnership events from the provided summaries:\n\n**EN:** [ChatGPT Wallet, Agent, Work, Codex, dots, OpenAI, Shield, IT technicians, legacy systems, Wave, product improvements, coding agents, Amplitude, Gondola, revenue, Holiday Extras, AI, children's safety, risk measurement]\n**VN:** [ChatGPT Wallet, Agent, Work, Codex, dots, OpenAI, Shield, kỹ thuật viên IT, hệ thống cũ, Wave, cải tiến sản phẩm, coding agents, Amplitude, Gondola, doanh thu, Holiday Extras, AI, an toàn trẻ em, đo lường rủi ro]\n**MODELS:** [ChatGPT Wallet, Codex, Wave]\n**BUSINESS:** [OpenAI commitment of $2 million for AI and children's safety research]",
   "reports": [
     {
-      "title": "Update from @demishassabis",
-      "link": "https://x.com/i/web/status/2120210297948696997",
-      "source": "X Profile: demishassabis",
-      "summary_vn": "Google ra mắt mô hình Gemini 4 Carbon, một bước tiến vượt bậc so với Gemini 3, với khả năng đảo ngược kỹ thuật và tái tạo các ứng dụng phức tạp sang nền tảng web.",
-      "date": "2026-11-10T17:41:41"
+      "title": "Introducing ChatGPT Wallet",
+      "link": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "**ChatGPT Wallet** cho phép các Agent trong ChatGPT Work, Codex và dots thực hiện giao dịch mua bán an toàn, yêu cầu phê duyệt từ người dùng và sử dụng các biện pháp bảo vệ thẻ hiện có, mở ra tiềm năng cho các ứng dụng tài chính và thương mại của AI.",
+      "date": "2026-11-13T15:00:00"
     },
     {
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "link": "https://openai.com/business/customer-stories/shield",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Công ty luật Gilbert + Tobin đang ứng dụng AI, đặc biệt là các giải pháp từ OpenAI, để tối ưu hóa hoạt động kinh doanh và cung cấp dịch vụ pháp lý hiệu quả hơn.",
+      "summary_vn": "**Shield** sử dụng OpenAI để hỗ trợ kỹ thuật viên IT xử lý các tác vụ trên hệ thống cũ. Các Forge agents của Shield tự động hóa việc điều hướng hệ thống, giúp kỹ thuật viên tập trung vào các vấn đề cần chuyên môn sâu, nâng cao hiệu quả làm việc và giảm thời gian xử lý.",
+      "date": "2026-11-13T08:00:00"
+    },
+    {
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "link": "https://openai.com/business/customer-stories/amplitude",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "**Amplitude** ứng dụng agent AI có tên Wave, được xây dựng chủ yếu trên các mô hình OpenAI, để xác định các cải tiến sản phẩm, hỗ trợ đội ngũ phát triển bằng coding agents và đo lường tác động. Điều này giúp Amplitude cải thiện sản phẩm nhanh chóng, chỉ trong 1-2 ngày.",
+      "date": "2026-11-12T20:00:00"
+    },
+    {
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "link": "https://openai.com/business/customer-stories/gondola",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "**Gondola** tăng gấp đôi doanh thu nhờ việc ứng dụng Codex để nâng cao hiệu suất kỹ sư lên 50% và ChatGPT đơn giản hóa công việc hàng ngày, giúp người sáng tạo được ghi nhận và có cơ hội việc làm tốt hơn.",
+      "date": "2026-11-12T12:00:00"
+    },
+    {
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "link": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "**Holiday Extras** đang tái định hình khả năng phát triển ứng dụng với Codex, chuyển đổi chuyên môn về khách hàng thành các ứng dụng tốt hơn, tăng tỷ lệ chuyển đổi đặt chỗ và mở ra các cơ hội tăng trưởng mới.",
+      "date": "2026-11-12T09:30:00"
+    },
+    {
+      "title": "Supporting research on AI and children’s safety",
+      "link": "https://openai.com/index/children-first-declaration",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI cam kết 2 triệu USD cho nghiên cứu về an toàn của trẻ em trên không gian AI, nhằm phát triển các công cụ chung để đo lường rủi ro và cơ hội.",
       "date": "2026-11-12T00:00:00"
-    },
-    {
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "link": "https://openai.com/index/chatgpt-plus-for-veterans",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI cung cấp miễn phí ChatGPT Plus cho hơn 20.000 cựu chiến binh và quân nhân chuyển ngành, hỗ trợ họ trang bị kỹ năng AI để chuẩn bị cho sự nghiệp dân sự.",
-      "date": "2026-11-11T08:00:00"
-    },
-    {
-      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-      "link": "https://openai.com/index/jiostar-vijay-seshadri",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "JioStar chia sẻ kinh nghiệm triển khai AI cho quy mô 500 triệu người dùng, nhấn mạnh tầm quan trọng của đánh giá (evals) và hệ thống bảo vệ (guardrails) khi đưa AI vào sản xuất.",
-      "date": "2026-11-11T00:00:00"
-    },
-    {
-      "title": "Helping caregivers use AI in everyday life",
-      "link": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI Academy tổ chức các buổi workshop thực hành ChatGPT miễn phí cho người chăm sóc tại 5 thành phố ở Mỹ, giúp họ áp dụng AI vào cuộc sống hàng ngày.",
-      "date": "2026-11-10T12:00:00"
-    },
-    {
-      "title": "Introducing Businesses in ChatGPT",
-      "link": "https://openai.com/index/introducing-businesses-chatgpt",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu tính năng \"Businesses in ChatGPT\", cho phép doanh nghiệp quản lý thông tin, nhận insight và thúc đẩy hành động trong môi trường ChatGPT. Tính năng này mang lại giá trị kinh doanh rõ rệt bằng cách hỗ trợ quản lý hoạt động và ra quyết định chiến lược.",
-      "date": "2026-11-10T10:00:00"
-    },
-    {
-      "title": "Closing the AI guidance gap in education",
-      "link": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI và ThinkYoung công bố nghiên cứu về thu hẹp khoảng cách hướng dẫn AI trong giáo dục, cung cấp bài học từ các quan hệ đối tác EMEA để hỗ trợ giáo viên, nâng cao khả năng đọc hiểu AI và thúc đẩy học tập độc lập.",
-      "date": "2026-11-10T09:00:00"
-    },
-    {
-      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-      "link": "https://openai.com/index/singapore-airlines-travel-work",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Singapore Airlines ứng dụng công nghệ OpenAI để nâng cao trải nghiệm du lịch và làm việc, sử dụng các model và API của OpenAI để cải thiện hỗ trợ khách hàng, khám phá du lịch và năng suất nhân viên, đồng thời tăng gấp đôi CSAT cho chatbot Kris.",
-      "date": "2026-11-10T08:00:00"
-    },
-    {
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "link": "https://openai.com/index/ai-effect-on-freelance-work",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Nghiên cứu từ OpenAI và Upwork chỉ ra sự thay đổi trong nhu cầu công việc freelance do AI, với sự kết hợp kỹ năng mới, ngân sách và thời gian làm việc cho các dự án liên quan đến AI tăng lên.",
-      "date": "2026-11-10T07:00:00"
-    },
-    {
-      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
-      "link": "https://openai.com/index/cogent-security",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Cogent hợp tác với OpenAI phát triển các \"nhà máy phòng thủ mạng\" cho doanh nghiệp, sử dụng các model OpenAI kết hợp với ngữ cảnh doanh nghiệp để tự động hóa việc khắc phục lỗ hổng bảo mật thông qua các *agent*.",
-      "date": "2026-11-10T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1782,
-    "duplicates": 4,
-    "final": 10
+    "raw_total": 1387,
+    "duplicates": 2,
+    "final": 6
   }
 }
