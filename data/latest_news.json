@@ -1,53 +1,95 @@
 {
-  "timestamp": "2026-11-14T06:54:49.328104",
-  "keywords": "Here's the breakdown of the keywords, AI model names, and business/partnership events from the provided summaries:\n\n**EN:** [ChatGPT Wallet, Agent, Work, Codex, dots, OpenAI, Shield, IT technicians, legacy systems, Wave, product improvements, coding agents, Amplitude, Gondola, revenue, Holiday Extras, AI, children's safety, risk measurement]\n**VN:** [ChatGPT Wallet, Agent, Work, Codex, dots, OpenAI, Shield, kỹ thuật viên IT, hệ thống cũ, Wave, cải tiến sản phẩm, coding agents, Amplitude, Gondola, doanh thu, Holiday Extras, AI, an toàn trẻ em, đo lường rủi ro]\n**MODELS:** [ChatGPT Wallet, Codex, Wave]\n**BUSINESS:** [OpenAI commitment of $2 million for AI and children's safety research]",
+  "timestamp": "2026-11-17T08:18:45.408287",
+  "keywords": "Here are the extracted keywords, AI model names, and business/partnership events based on the provided news summaries:\n\n**EN:**\n[AI, cyber defenses, vulnerability detection, remediation, critical systems, academic researchers, advanced models, online child sexual abuse, tools, support, scientific research, workflow, productivity, programming time, financial crime investigation, journalism, content improvement, distribution, embedded assessments, independent testing, alignment, safeguards, monitoring, computer-use agents, clinical answers, healthcare software, automation, efficiency, practical skills, digital careers, lattice, perturbation methods, research, practical applications, scientific discovery]\n\n**VN:**\n[AI, phòng thủ mạng, phát hiện lỗ hổng, khắc phục, hệ thống quan trọng, nhà nghiên cứu học thuật, mô hình tiên tiến, lạm dụng tình dục trẻ em trực tuyến, công cụ, hỗ trợ, nghiên cứu khoa học, quy trình làm việc, năng suất, thời gian lập trình, điều tra tội phạm tài chính, báo chí, cải thiện nội dung, phân phối, đánh giá nội bộ, kiểm định độc lập, sự phù hợp, hệ thống bảo vệ, giám sát, computer-use agents, câu trả lời lâm sàng, phần mềm y tế, tự động hóa, hiệu quả, kỹ năng thực tế, sự nghiệp số, lưới, phương pháp phi nhiễu loạn, nghiên cứu, ứng dụng thực tế, khám phá khoa học]\n\n**MODELS:**\n[ChatGPT, Codex, GPT-6 Astra]\n\n**BUSINESS:**\n[OpenAI hợp tác với NATO, OpenAI mở rộng chương trình ChatGPT cho Nhà nghiên cứu Học thuật, OpenAI phát triển công cụ ngăn chặn lạm dụng trẻ em trực tuyến, Revolut sử dụng mô hình OpenAI và Codex, LVMH's Media Division hợp tác chiến lược với OpenAI, OpenAI triển khai giai đoạn đầu đánh giá nội bộ với Apollo Research, METR, Transluce và Goodfire, ChatGPT cho Y tế mở rộng khả năng, The King's Trust và OpenAI hợp tác £1m]",
   "reports": [
     {
-      "title": "Introducing ChatGPT Wallet",
-      "link": "https://openai.com/index/introducing-chatgpt-wallet",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
       "source": "RSS: OpenAI News",
-      "summary_vn": "**ChatGPT Wallet** cho phép các Agent trong ChatGPT Work, Codex và dots thực hiện giao dịch mua bán an toàn, yêu cầu phê duyệt từ người dùng và sử dụng các biện pháp bảo vệ thẻ hiện có, mở ra tiềm năng cho các ứng dụng tài chính và thương mại của AI.",
-      "date": "2026-11-13T15:00:00"
+      "summary_vn": "OpenAI hợp tác với NATO và các cơ quan an ninh mạng đồng minh để tăng cường khả năng phòng thủ, giúp các chuyên gia phát hiện lỗ hổng, kiểm tra các biện pháp khắc phục và bảo vệ hệ thống quan trọng.",
+      "date": "2026-11-17T00:00:00"
     },
     {
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "link": "https://openai.com/business/customer-stories/shield",
+      "title": "Broadening access to AI for scientists",
+      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
       "source": "RSS: OpenAI News",
-      "summary_vn": "**Shield** sử dụng OpenAI để hỗ trợ kỹ thuật viên IT xử lý các tác vụ trên hệ thống cũ. Các Forge agents của Shield tự động hóa việc điều hướng hệ thống, giúp kỹ thuật viên tập trung vào các vấn đề cần chuyên môn sâu, nâng cao hiệu quả làm việc và giảm thời gian xử lý.",
-      "date": "2026-11-13T08:00:00"
+      "summary_vn": "OpenAI mở rộng chương trình ChatGPT cho Nhà nghiên cứu Học thuật, cung cấp quyền truy cập miễn phí vào các mô hình tiên tiến cho 200.000 nhà nghiên cứu trên toàn thế giới.",
+      "date": "2026-11-16T17:00:00"
     },
     {
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "link": "https://openai.com/business/customer-stories/amplitude",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "link": "https://openai.com/index/strengthening-online-child-safety",
       "source": "RSS: OpenAI News",
-      "summary_vn": "**Amplitude** ứng dụng agent AI có tên Wave, được xây dựng chủ yếu trên các mô hình OpenAI, để xác định các cải tiến sản phẩm, hỗ trợ đội ngũ phát triển bằng coding agents và đo lường tác động. Điều này giúp Amplitude cải thiện sản phẩm nhanh chóng, chỉ trong 1-2 ngày.",
-      "date": "2026-11-12T20:00:00"
+      "summary_vn": "OpenAI phát triển các công cụ mới và hỗ trợ đối tác nhằm ngăn chặn, phát hiện và ứng phó hiệu quả hơn với tình trạng lạm dụng và bóc lột tình dục trẻ em trực tuyến.",
+      "date": "2026-11-16T17:00:00"
     },
     {
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "link": "https://openai.com/business/customer-stories/gondola",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "link": "https://openai.com/index/science-at-the-frontier",
       "source": "RSS: OpenAI News",
-      "summary_vn": "**Gondola** tăng gấp đôi doanh thu nhờ việc ứng dụng Codex để nâng cao hiệu suất kỹ sư lên 50% và ChatGPT đơn giản hóa công việc hàng ngày, giúp người sáng tạo được ghi nhận và có cơ hội việc làm tốt hơn.",
-      "date": "2026-11-12T12:00:00"
+      "summary_vn": "Hơn 1.800 nhà khoa học đang ứng dụng ChatGPT trong nghiên cứu, cải thiện quy trình làm việc hàng ngày và tăng năng suất nghiên cứu, theo một báo cáo mới từ OpenAI.",
+      "date": "2026-11-16T12:00:00"
     },
     {
-      "title": "Holiday Extras is rethinking what it can build with Codex",
-      "link": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "title": "How Revolut raises ambition without lowering the bar",
+      "link": "https://openai.com/business/customer-stories/revolut",
       "source": "RSS: OpenAI News",
-      "summary_vn": "**Holiday Extras** đang tái định hình khả năng phát triển ứng dụng với Codex, chuyển đổi chuyên môn về khách hàng thành các ứng dụng tốt hơn, tăng tỷ lệ chuyển đổi đặt chỗ và mở ra các cơ hội tăng trưởng mới.",
-      "date": "2026-11-12T09:30:00"
+      "summary_vn": "Revolut sử dụng các mô hình của OpenAI và Codex để giảm 30-60% thời gian lập trình, mở rộng quy mô điều tra tội phạm tài chính và đổi mới mà không ảnh hưởng đến bảo mật.",
+      "date": "2026-11-16T09:30:00"
     },
     {
-      "title": "Supporting research on AI and children’s safety",
-      "link": "https://openai.com/index/children-first-declaration",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "link": "https://openai.com/index/lvmh-media-division-partnership",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI cam kết 2 triệu USD cho nghiên cứu về an toàn của trẻ em trên không gian AI, nhằm phát triển các công cụ chung để đo lường rủi ro và cơ hội.",
-      "date": "2026-11-12T00:00:00"
+      "summary_vn": "LVMH và OpenAI hợp tác chiến lược nhằm ứng dụng AI hỗ trợ báo chí, tăng cường khả năng tiếp cận các ấn phẩm qua ChatGPT, mang lại giá trị kinh doanh thông qua việc cải thiện nội dung và phân phối.",
+      "date": "2026-11-16T09:00:00"
+    },
+    {
+      "title": "Our first phase of embedded assessments",
+      "link": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI triển khai giai đoạn đầu của các bài đánh giá nội bộ với Apollo Research, METR, Transluce và Goodfire để kiểm định độc lập sự phù hợp (alignment), hệ thống bảo vệ (safeguards) và giám sát (monitoring systems) của mô hình AI.",
+      "date": "2026-11-16T08:00:00"
+    },
+    {
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "link": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "ChatGPT cho Y tế mở rộng khả năng với các \"computer-use agents\", câu trả lời lâm sàng được cải thiện và plugin mới, giúp tự động hóa các tác vụ thực tế trên phần mềm y tế, mang lại lợi ích thiết thực cho ngành.",
+      "date": "2026-11-16T06:00:00"
+    },
+    {
+      "title": "Advancing computer-use agents for healthcare teams",
+      "link": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "OpenAI đang thúc đẩy phát triển các \"computer-use agents\" chuyên biệt cho đội ngũ y tế, nhằm tự động hóa quy trình và nâng cao hiệu quả công việc trong lĩnh vực chăm sóc sức khỏe.",
+      "date": "2026-11-16T06:00:00"
+    },
+    {
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "link": "https://openai.com/index/the-kings-trust-and-openai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "The King's Trust và OpenAI hợp tác £1 triệu để trang bị kỹ năng AI thực tế cho tối đa 25.000 thanh niên tại Vương quốc Anh, hỗ trợ họ xây dựng sự nghiệp trong kỷ nguyên số.",
+      "date": "2026-11-16T00:00:00"
+    },
+    {
+      "title": "A step toward defining the Standard Model on a lattice",
+      "link": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Nghiên cứu này khám phá định nghĩa ứng viên cho Mô hình Chuẩn trên lưới (Standard Model on a lattice) bằng phương pháp phi nhiễu loạn. GPT-6 Astra đã hỗ trợ chi tiết hóa ý tưởng này thành một chứng minh cụ thể.",
+      "date": "2026-11-15T22:00:01"
+    },
+    {
+      "title": "Our new blog for science",
+      "link": "https://openai.com/index/our-new-blog-for-science",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Blog khoa học mới của OpenAI sẽ cập nhật những khám phá mới, phương pháp ứng dụng thực tế và trải nghiệm từ các nhà nghiên cứu sử dụng AI để thúc đẩy khám phá khoa học.",
+      "date": "2026-11-15T22:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1387,
-    "duplicates": 2,
-    "final": 6
+    "raw_total": 1405,
+    "duplicates": 0,
+    "final": 12
   }
 }
