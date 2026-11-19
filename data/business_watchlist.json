@@ -1,18 +1,5 @@
 {
   "entities": [
-    "Amazon Alexa for Shopping launch",
-    "Tesla AI accelerator \"SI\" introduction",
-    "NTT Data INTELLILINK cybersecurity services",
-    "ESET NeoCortex launch",
-    "United Airlines AI agent booking restriction",
-    "Accenture AI agent practical examples",
-    "AI World 2026 Autumn Tokyo",
-    "NexTech Week AI・人工知能EXPO",
-    "NVIDIA AI Day Seoul",
-    "Japan Digital Agency AI governance standards",
-    "Japanese government considers AI safety penalties",
-    "Partnership between Gilbert + Tobin and OpenAI",
-    "ChatGPT Plus for veterans and servicemembers",
     "Businesses in ChatGPT",
     "Partnership between OpenAI and ThinkYoung",
     "Singapore Airlines' use of OpenAI technology",
@@ -29,6 +16,19 @@
     "Cohere enterprise deployments",
     "Hugging Face funding for agentic tools",
     "OpenAI DevDay agent announcements",
-    "Apple AI integration rumors"
+    "Apple AI integration rumors",
+    "Microsoft-Anthropic expanded partnership",
+    "Google Cloud announces new agentic AI features",
+    "Hugging Face releases new inference endpoints",
+    "Nvidia announces Blackwell chip for AI inference",
+    "Together AI Series B funding",
+    "OpenAI launches new developer tools for agentic workflows",
+    "Mistral AI partners with Leolux",
+    "Meta releases Llama 3.1 for commercial use",
+    "Anthropic announces Claude 3.5 Sonnet for enterprise",
+    "AWS announces new AI security features",
+    "Sumitomo Life adopting ChatGPT Enterprise",
+    "Le Groupe Figaro partnering with OpenAI",
+    "OpenAI partnering with Government of Chile"
   ]
 }

@@ -2903,5 +2903,82 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Blog khoa học mới của OpenAI sẽ cập nhật những khám phá mới, phương pháp ứng dụng thực tế và trải nghiệm từ các nhà nghiên cứu sử dụng AI để thúc đẩy khám phá khoa học.",
     "date": "2026-11-15T22:00:00"
+  },
+  {
+    "title": "The Silent Consensus",
+    "link": "https://openai.com/index/the-silent-consensus",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đang nghiên cứu cách AI tiên tiến có thể thay đổi xã hội và các biện pháp để con người duy trì quyền kiểm soát các thể chế. Tóm tắt này tập trung vào khía cạnh quản trị và đạo đức của AI có năng lực cao hơn.",
+    "date": "2026-11-18T10:00:00"
+  },
+  {
+    "title": "Research acceleration: The jagged frontier",
+    "link": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI đo lường mức độ các **Agent** code đang thúc đẩy nghiên cứu AI, chỉ ra rằng hiệu suất còn chưa đồng đều và điều này có thể là dấu hiệu của sự tự cải tiến đệ quy. Các **Agent** này giúp tăng tốc quá trình nghiên cứu.",
+    "date": "2026-11-18T08:00:00"
+  },
+  {
+    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+    "link": "https://openai.com/business/customer-stories/sumitomo-life",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Sumitomo Life sử dụng ChatGPT Enterprise để nghiên cứu ngành bảo hiểm, chuẩn bị đề xuất và soạn thảo code cho phân tích đầu tư. Việc lãnh đạo tiên phong sử dụng đã thúc đẩy sự chấp nhận rộng rãi hơn trong các nhóm.",
+    "date": "2026-11-18T08:00:00"
+  },
+  {
+    "title": "Inside the Codex sandbox",
+    "link": "https://openai.com/index/inside-the-codex-sandbox",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Codex cho phép chạy lệnh trên máy người dùng trong khi vẫn tuân thủ các giới hạn về hệ thống tệp và mạng do người dùng kiểm soát trên macOS, Linux và Windows. Đây là một ví dụ về **Agentic** control.",
+    "date": "2026-11-18T08:00:00"
+  },
+  {
+    "title": "Managing frontier AI risk: From training to deployment",
+    "link": "https://openai.com/index/managing-frontier-ai-risk",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI mô tả quy trình quản lý rủi ro AI tiên phong từ đào tạo đến triển khai, bao gồm căn chỉnh mô hình, **sandboxing**, các biện pháp bảo vệ và giám sát. Điều này nhấn mạnh vào **Secure AI builds** và **Model provenance**.",
+    "date": "2026-11-18T06:00:00"
+  },
+  {
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Le Groupe Figaro hợp tác với OpenAI để tích hợp nội dung báo chí của Le Figaro vào ChatGPT, cung cấp tóm tắt và trích đoạn có liên kết đến bài báo gốc, mở rộng khả năng tiếp cận tin tức cho người dùng.",
+    "date": "2026-11-18T00:00:00"
+  },
+  {
+    "title": "Advancing chip design with OpenAI models",
+    "link": "https://openai.com/index/advancing-chip-design-with-our-models",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Các mô hình của OpenAI đã hỗ trợ tối ưu hóa mạch tích hợp (silicon) và cải thiện thiết kế lõi RISC-V, thể hiện tiến bộ trong thiết kế chip nhờ AI với GPT-6 Astra.",
+    "date": "2026-11-18T00:00:00"
+  },
+  {
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "GPT-6.2 Astra và Sol mới ra mắt mang lại hiệu suất chuyên nghiệp, lập trình, sử dụng máy tính tốt hơn và tiết kiệm chi phí hơn trên ChatGPT Work, Codex và API.",
+    "date": "2026-11-17T17:45:00"
+  },
+  {
+    "title": "Introducing ChatGPT for Sales",
+    "link": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "ChatGPT for Sales ra mắt cùng hơn 30 plugin đối tác mới, hỗ trợ nghiên cứu khách hàng tiềm năng, chuẩn bị bài thuyết trình và cập nhật CRM để thúc đẩy giao dịch.",
+    "date": "2026-11-17T08:00:00"
+  },
+  {
+    "title": "Astra for Law leads in legal intelligence",
+    "link": "https://openai.com/index/astra-law-6-2",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Astra for Law dẫn đầu về khả năng cung cấp thông tin pháp lý trong một đánh giá toàn diện, và hiện có sẵn cho các khách hàng ChatGPT Enterprise.",
+    "date": "2026-11-17T00:00:00"
+  },
+  {
+    "title": "Introducing OpenAI for Chile",
+    "link": "https://openai.com/index/introducing-openai-for-chile",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI hợp tác với Chính phủ Chile nhằm thúc đẩy việc áp dụng AI có trách nhiệm, phát triển kỹ năng trong khu vực công và hỗ trợ các startup địa phương trong việc phát triển ứng dụng AI. Mục tiêu là khai thác tiềm năng của AI để mang lại lợi ích kinh tế và xã hội cho Chile.",
+    "date": "2026-11-17T00:00:00"
   }
 ]
