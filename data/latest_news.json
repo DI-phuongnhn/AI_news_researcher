@@ -1,88 +1,81 @@
 {
-  "timestamp": "2026-11-19T07:53:53.123898",
-  "keywords": "EN: [AI governance, AI ethics, AI risk management, agentic control, sandboxing, secure AI builds, silicon optimization, RISC-V core design, legal intelligence, CRM]\nVN: [quản trị AI, đạo đức AI, quản lý rủi ro AI, kiểm soát tác tử, sandbox, xây dựng AI an toàn, tối ưu hóa silicon, thiết kế lõi RISC-V, thông tin pháp lý, CRM]\nMODELS: [ChatGPT Enterprise, Codex, GPT-6 Astra, Sol, GPT-6.2 Astra, ChatGPT for Sales]\nBUSINESS: [Sumitomo Life adopting ChatGPT Enterprise, Le Groupe Figaro partnering with OpenAI, OpenAI partnering with Government of Chile]",
+  "timestamp": "2026-11-21T07:35:26.064156",
+  "keywords": "EN: [adversarial distillation, model training, model protection, model detection, model enforcement, molecular structure interpretation, empirical evidence, drug candidate identification, pull request scanning, supervised security investigation]\nVN: [trích xuất khả năng đối nghịch, đào tạo mô hình, bảo vệ mô hình, phát hiện mô hình, thực thi mô hình, diễn giải cấu trúc phân tử, bằng chứng thực nghiệm, xác định ứng viên thuốc, quét yêu cầu kéo, điều tra an ninh có giám sát]\nMODELS: [Claude Fable 5.2, Gestalt, GPT-6 Astra, MedChemBench, Codex]\nBUSINESS: [OpenAI introduces a multi-layer approach to combat adversarial distillation, Hebbia sees improvements in financial research with GPT-6 Astra, MedChemBench evaluates AI models for drug candidate identification, OpenAI introduces \"Performance Factory\" to keep ChatGPT fast, Codex Security Plugin demonstrated, PR scans demonstrated, Daybreak Blue onboarding process, Daybreak Red reference architecture for supervised security investigation]",
   "reports": [
     {
-      "title": "The Silent Consensus",
-      "link": "https://openai.com/index/the-silent-consensus",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đang nghiên cứu cách AI tiên tiến có thể thay đổi xã hội và các biện pháp để con người duy trì quyền kiểm soát các thể chế. Tóm tắt này tập trung vào khía cạnh quản trị và đạo đức của AI có năng lực cao hơn.",
-      "date": "2026-11-18T10:00:00"
+      "title": "【Claude Fable 5.2】The day the top-tier AI was released, a 50-year-old captain thought about it in terms of \"choosing the right tackle\"",
+      "link": "https://note.com/sibusamasama/n/n1e9c0633e6a3?hl=en",
+      "source": "Search: ** Claude Fable 5.2",
+      "summary_vn": "Claude Fable 5.2, một AI hàng đầu, được so sánh với \"cần câu phù hợp\" trong đánh bắt cá, nhấn mạnh việc lựa chọn công cụ phù hợp cho từng mục đích thay vì sử dụng liên tục.",
+      "date": "2026-11-20T04:05:00"
     },
     {
-      "title": "Research acceleration: The jagged frontier",
-      "link": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI đo lường mức độ các **Agent** code đang thúc đẩy nghiên cứu AI, chỉ ra rằng hiệu suất còn chưa đồng đều và điều này có thể là dấu hiệu của sự tự cải tiến đệ quy. Các **Agent** này giúp tăng tốc quá trình nghiên cứu.",
-      "date": "2026-11-18T08:00:00"
+      "title": "Gestalt beat Claude Fable 5.2 in 78% of blind design votes",
+      "link": "https://kingy.ai/blog/gestalt-ai-design-benchmark/",
+      "source": "Search: ** Claude Fable 5.2",
+      "summary_vn": "Trong các thử nghiệm thiết kế mù, Gestalt đã vượt qua Claude Fable 5.2 với tỷ lệ thắng 78%, cho thấy hiệu suất ấn tượng trong lĩnh vực này.",
+      "date": "2026-11-19T22:36:00"
     },
     {
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "link": "https://openai.com/business/customer-stories/sumitomo-life",
+      "title": "Combatting adversarial distillation",
+      "link": "https://openai.com/index/combatting-adversarial-distillation",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Sumitomo Life sử dụng ChatGPT Enterprise để nghiên cứu ngành bảo hiểm, chuẩn bị đề xuất và soạn thảo code cho phân tích đầu tư. Việc lãnh đạo tiên phong sử dụng đã thúc đẩy sự chấp nhận rộng rãi hơn trong các nhóm.",
-      "date": "2026-11-18T08:00:00"
+      "summary_vn": "OpenAI giới thiệu phương pháp tiếp cận đa lớp để chống lại kỹ thuật *adversarial distillation*, kết hợp đào tạo mô hình, các biện pháp bảo vệ, phát hiện và thực thi để ngăn chặn trích xuất khả năng.",
+      "date": "2026-11-20T10:00:00"
     },
     {
-      "title": "Inside the Codex sandbox",
-      "link": "https://openai.com/index/inside-the-codex-sandbox",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "link": "https://openai.com/business/customer-stories/hebbia",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Codex cho phép chạy lệnh trên máy người dùng trong khi vẫn tuân thủ các giới hạn về hệ thống tệp và mạng do người dùng kiểm soát trên macOS, Linux và Windows. Đây là một ví dụ về **Agentic** control.",
-      "date": "2026-11-18T08:00:00"
+      "summary_vn": "Hebbia ghi nhận sự cải thiện đáng kể trong nghiên cứu tài chính với GPT-6 Astra, đặc biệt về phạm vi nguồn, mức độ liên quan của trích dẫn và chất lượng trình bày.",
+      "date": "2026-11-20T00:00:00"
     },
     {
-      "title": "Managing frontier AI risk: From training to deployment",
-      "link": "https://openai.com/index/managing-frontier-ai-risk",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "link": "https://openai.com/index/introducing-medchembench",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI mô tả quy trình quản lý rủi ro AI tiên phong từ đào tạo đến triển khai, bao gồm căn chỉnh mô hình, **sandboxing**, các biện pháp bảo vệ và giám sát. Điều này nhấn mạnh vào **Secure AI builds** và **Model provenance**.",
-      "date": "2026-11-18T06:00:00"
+      "summary_vn": "MedChemBench đánh giá khả năng của các mô hình AI trong việc diễn giải cấu trúc phân tử và suy luận từ bằng chứng thực nghiệm, hỗ trợ các nhà khoa học xác định ứng viên thuốc tiềm năng trong giai đoạn đầu khám phá thuốc.",
+      "date": "2026-11-20T00:00:00"
     },
     {
-      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-      "link": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Le Groupe Figaro hợp tác với OpenAI để tích hợp nội dung báo chí của Le Figaro vào ChatGPT, cung cấp tóm tắt và trích đoạn có liên kết đến bài báo gốc, mở rộng khả năng tiếp cận tin tức cho người dùng.",
-      "date": "2026-11-18T00:00:00"
+      "summary_vn": "OpenAI giới thiệu \"Performance Factory\", một hệ thống sử dụng các quy trình dựa trên Codex để xác định và khắc phục các vấn đề về hiệu suất, đảm bảo tốc độ hoạt động nhanh chóng cho ChatGPT. Hệ thống này là một ví dụ về tối ưu hóa hệ thống AI để cải thiện trải nghiệm người dùng.",
+      "date": "2026-11-19T08:00:00"
     },
     {
-      "title": "Advancing chip design with OpenAI models",
-      "link": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "title": "Explore the Codex Security Plugin",
+      "link": "https://openai.com/business/learn/codex-security-plugin-demo",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Các mô hình của OpenAI đã hỗ trợ tối ưu hóa mạch tích hợp (silicon) và cải thiện thiết kế lõi RISC-V, thể hiện tiến bộ trong thiết kế chip nhờ AI với GPT-6 Astra.",
-      "date": "2026-11-18T00:00:00"
+      "summary_vn": "Codex Security Plugin được giới thiệu qua một buổi demo, minh họa quy trình sử dụng từ khi bắt đầu đến khi xem xét kết quả, thể hiện khả năng của plugin này trong việc hỗ trợ bảo mật.",
+      "date": "2026-11-19T00:00:00"
     },
     {
-      "title": "Introducing GPT-6.2 Astra and Sol",
-      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "title": "See PR scans in action",
+      "link": "https://openai.com/business/learn/pr-scans-demo",
       "source": "RSS: OpenAI News",
-      "summary_vn": "GPT-6.2 Astra và Sol mới ra mắt mang lại hiệu suất chuyên nghiệp, lập trình, sử dụng máy tính tốt hơn và tiết kiệm chi phí hơn trên ChatGPT Work, Codex và API.",
-      "date": "2026-11-17T17:45:00"
+      "summary_vn": "Bài giới thiệu về PR scans trình diễn quy trình quét và cách người dùng xem xét kết quả quét trong một luồng công việc pull request, nhấn mạnh tính năng tự động hóa trong quy trình phát triển phần mềm.",
+      "date": "2026-11-19T00:00:00"
     },
     {
-      "title": "Introducing ChatGPT for Sales",
-      "link": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "title": "Get started with Daybreak Blue",
+      "link": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
       "source": "RSS: OpenAI News",
-      "summary_vn": "ChatGPT for Sales ra mắt cùng hơn 30 plugin đối tác mới, hỗ trợ nghiên cứu khách hàng tiềm năng, chuẩn bị bài thuyết trình và cập nhật CRM để thúc đẩy giao dịch.",
-      "date": "2026-11-17T08:00:00"
+      "summary_vn": "Daybreak Blue cung cấp hướng dẫn chi tiết về quy trình onboarding, bao gồm trải nghiệm thiết lập ban đầu và cách thức bắt đầu sử dụng, nhằm đơn giản hóa việc triển khai cho người dùng mới.",
+      "date": "2026-11-19T00:00:00"
     },
     {
-      "title": "Astra for Law leads in legal intelligence",
-      "link": "https://openai.com/index/astra-law-6-2",
+      "title": "Deploying Daybreak Red",
+      "link": "https://openai.com/business/learn/deploying-daybreak-red",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Astra for Law dẫn đầu về khả năng cung cấp thông tin pháp lý trong một đánh giá toàn diện, và hiện có sẵn cho các khách hàng ChatGPT Enterprise.",
-      "date": "2026-11-17T00:00:00"
-    },
-    {
-      "title": "Introducing OpenAI for Chile",
-      "link": "https://openai.com/index/introducing-openai-for-chile",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI hợp tác với Chính phủ Chile nhằm thúc đẩy việc áp dụng AI có trách nhiệm, phát triển kỹ năng trong khu vực công và hỗ trợ các startup địa phương trong việc phát triển ứng dụng AI. Mục tiêu là khai thác tiềm năng của AI để mang lại lợi ích kinh tế và xã hội cho Chile.",
-      "date": "2026-11-17T00:00:00"
+      "summary_vn": "Daybreak Red trình bày kiến trúc tham chiếu cho việc điều tra an ninh có giám sát, bao gồm các biện pháp kiểm soát an toàn, thiết lập và giám sát, tập trung vào việc ứng dụng AI trong các hoạt động bảo mật quan trọng.",
+      "date": "2026-11-19T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1814,
-    "duplicates": 7,
-    "final": 11
+    "raw_total": 1924,
+    "duplicates": 4,
+    "final": 10
   }
 }

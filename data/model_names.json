@@ -75,7 +75,10 @@
     "Wave",
     "Sol",
     "GPT-6.2 Astra",
-    "ChatGPT for Sales"
+    "ChatGPT for Sales",
+    "Claude Fable 5.2",
+    "Gestalt",
+    "MedChemBench"
   ],
   "legacy": [
     "GPT-4",
