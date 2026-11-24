@@ -3050,5 +3050,33 @@
     "source": "RSS: OpenAI News",
     "summary_vn": "Daybreak Red trình bày kiến trúc tham chiếu cho việc điều tra an ninh có giám sát, bao gồm các biện pháp kiểm soát an toàn, thiết lập và giám sát, tập trung vào việc ứng dụng AI trong các hoạt động bảo mật quan trọng.",
     "date": "2026-11-19T00:00:00"
+  },
+  {
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "link": "https://openai.com/index/introducing-shirudo",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "OpenAI và Cisco ra mắt Shirudo, một runtime mã nguồn mở cho Linux, giúp bảo vệ hệ thống khi triển khai các bản vá.",
+    "date": "2026-11-23T21:20:00"
+  },
+  {
+    "title": "Connected intelligence for in-house legal",
+    "link": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Hội thảo thảo luận về cách AI, với sự tham gia của OpenAI, có thể hỗ trợ đội ngũ pháp lý nội bộ kết nối ngữ cảnh kinh doanh, xây dựng quy trình làm việc tái sử dụng và tối ưu hóa hợp tác với luật sư bên ngoài.",
+    "date": "2026-11-23T08:00:00"
+  },
+  {
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Richpanel ứng dụng các mô hình GPT-6 (Astra, Sol, Luna) để trang bị cho các AI support agent của họ, giúp tự động hóa 50% công việc hỗ trợ chỉ trong 30 ngày.",
+    "date": "2026-11-23T08:00:00"
+  },
+  {
+    "title": "Perplexity and Intelligence",
+    "link": "https://openai.com/index/perplexity-and-intelligence",
+    "source": "RSS: OpenAI News",
+    "summary_vn": "Bài viết đề cập đến vai trò của Perplexity trong việc đo lường tiến bộ của các mô hình AI, và tiềm năng của nó trong việc thiết lập phương pháp đánh giá chung các khả năng mới nổi.",
+    "date": "2026-11-22T00:00:00"
   }
 ]

@@ -1,81 +1,39 @@
 {
-  "timestamp": "2026-11-21T07:35:26.064156",
-  "keywords": "EN: [adversarial distillation, model training, model protection, model detection, model enforcement, molecular structure interpretation, empirical evidence, drug candidate identification, pull request scanning, supervised security investigation]\nVN: [trích xuất khả năng đối nghịch, đào tạo mô hình, bảo vệ mô hình, phát hiện mô hình, thực thi mô hình, diễn giải cấu trúc phân tử, bằng chứng thực nghiệm, xác định ứng viên thuốc, quét yêu cầu kéo, điều tra an ninh có giám sát]\nMODELS: [Claude Fable 5.2, Gestalt, GPT-6 Astra, MedChemBench, Codex]\nBUSINESS: [OpenAI introduces a multi-layer approach to combat adversarial distillation, Hebbia sees improvements in financial research with GPT-6 Astra, MedChemBench evaluates AI models for drug candidate identification, OpenAI introduces \"Performance Factory\" to keep ChatGPT fast, Codex Security Plugin demonstrated, PR scans demonstrated, Daybreak Blue onboarding process, Daybreak Red reference architecture for supervised security investigation]",
+  "timestamp": "2026-11-24T10:15:48.970804",
+  "keywords": "EN: [OpenAI, Cisco, Shirudo, Linux, patch deployment, AI, in-house legal, business context, reusable workflows, support agents]\nVN: [OpenAI, Cisco, Shirudo, Linux, triển khai bản vá, AI, pháp lý nội bộ, ngữ cảnh kinh doanh, quy trình làm việc tái sử dụng, đại lý hỗ trợ]\nMODELS: [GPT-6, Astra, Sol, Luna]\nBUSINESS: [OpenAI and Cisco introduce Shirudo, Richpanel helps companies automate 50% of support]",
   "reports": [
     {
-      "title": "【Claude Fable 5.2】The day the top-tier AI was released, a 50-year-old captain thought about it in terms of \"choosing the right tackle\"",
-      "link": "https://note.com/sibusamasama/n/n1e9c0633e6a3?hl=en",
-      "source": "Search: ** Claude Fable 5.2",
-      "summary_vn": "Claude Fable 5.2, một AI hàng đầu, được so sánh với \"cần câu phù hợp\" trong đánh bắt cá, nhấn mạnh việc lựa chọn công cụ phù hợp cho từng mục đích thay vì sử dụng liên tục.",
-      "date": "2026-11-20T04:05:00"
-    },
-    {
-      "title": "Gestalt beat Claude Fable 5.2 in 78% of blind design votes",
-      "link": "https://kingy.ai/blog/gestalt-ai-design-benchmark/",
-      "source": "Search: ** Claude Fable 5.2",
-      "summary_vn": "Trong các thử nghiệm thiết kế mù, Gestalt đã vượt qua Claude Fable 5.2 với tỷ lệ thắng 78%, cho thấy hiệu suất ấn tượng trong lĩnh vực này.",
-      "date": "2026-11-19T22:36:00"
-    },
-    {
-      "title": "Combatting adversarial distillation",
-      "link": "https://openai.com/index/combatting-adversarial-distillation",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "link": "https://openai.com/index/introducing-shirudo",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu phương pháp tiếp cận đa lớp để chống lại kỹ thuật *adversarial distillation*, kết hợp đào tạo mô hình, các biện pháp bảo vệ, phát hiện và thực thi để ngăn chặn trích xuất khả năng.",
-      "date": "2026-11-20T10:00:00"
+      "summary_vn": "OpenAI và Cisco ra mắt Shirudo, một runtime mã nguồn mở cho Linux, giúp bảo vệ hệ thống khi triển khai các bản vá.",
+      "date": "2026-11-23T21:20:00"
     },
     {
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "link": "https://openai.com/business/customer-stories/hebbia",
+      "title": "Connected intelligence for in-house legal",
+      "link": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Hebbia ghi nhận sự cải thiện đáng kể trong nghiên cứu tài chính với GPT-6 Astra, đặc biệt về phạm vi nguồn, mức độ liên quan của trích dẫn và chất lượng trình bày.",
-      "date": "2026-11-20T00:00:00"
+      "summary_vn": "Hội thảo thảo luận về cách AI, với sự tham gia của OpenAI, có thể hỗ trợ đội ngũ pháp lý nội bộ kết nối ngữ cảnh kinh doanh, xây dựng quy trình làm việc tái sử dụng và tối ưu hóa hợp tác với luật sư bên ngoài.",
+      "date": "2026-11-23T08:00:00"
     },
     {
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "link": "https://openai.com/index/introducing-medchembench",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
       "source": "RSS: OpenAI News",
-      "summary_vn": "MedChemBench đánh giá khả năng của các mô hình AI trong việc diễn giải cấu trúc phân tử và suy luận từ bằng chứng thực nghiệm, hỗ trợ các nhà khoa học xác định ứng viên thuốc tiềm năng trong giai đoạn đầu khám phá thuốc.",
-      "date": "2026-11-20T00:00:00"
+      "summary_vn": "Richpanel ứng dụng các mô hình GPT-6 (Astra, Sol, Luna) để trang bị cho các AI support agent của họ, giúp tự động hóa 50% công việc hỗ trợ chỉ trong 30 ngày.",
+      "date": "2026-11-23T08:00:00"
     },
     {
-      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "link": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "title": "Perplexity and Intelligence",
+      "link": "https://openai.com/index/perplexity-and-intelligence",
       "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI giới thiệu \"Performance Factory\", một hệ thống sử dụng các quy trình dựa trên Codex để xác định và khắc phục các vấn đề về hiệu suất, đảm bảo tốc độ hoạt động nhanh chóng cho ChatGPT. Hệ thống này là một ví dụ về tối ưu hóa hệ thống AI để cải thiện trải nghiệm người dùng.",
-      "date": "2026-11-19T08:00:00"
-    },
-    {
-      "title": "Explore the Codex Security Plugin",
-      "link": "https://openai.com/business/learn/codex-security-plugin-demo",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Codex Security Plugin được giới thiệu qua một buổi demo, minh họa quy trình sử dụng từ khi bắt đầu đến khi xem xét kết quả, thể hiện khả năng của plugin này trong việc hỗ trợ bảo mật.",
-      "date": "2026-11-19T00:00:00"
-    },
-    {
-      "title": "See PR scans in action",
-      "link": "https://openai.com/business/learn/pr-scans-demo",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Bài giới thiệu về PR scans trình diễn quy trình quét và cách người dùng xem xét kết quả quét trong một luồng công việc pull request, nhấn mạnh tính năng tự động hóa trong quy trình phát triển phần mềm.",
-      "date": "2026-11-19T00:00:00"
-    },
-    {
-      "title": "Get started with Daybreak Blue",
-      "link": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Daybreak Blue cung cấp hướng dẫn chi tiết về quy trình onboarding, bao gồm trải nghiệm thiết lập ban đầu và cách thức bắt đầu sử dụng, nhằm đơn giản hóa việc triển khai cho người dùng mới.",
-      "date": "2026-11-19T00:00:00"
-    },
-    {
-      "title": "Deploying Daybreak Red",
-      "link": "https://openai.com/business/learn/deploying-daybreak-red",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Daybreak Red trình bày kiến trúc tham chiếu cho việc điều tra an ninh có giám sát, bao gồm các biện pháp kiểm soát an toàn, thiết lập và giám sát, tập trung vào việc ứng dụng AI trong các hoạt động bảo mật quan trọng.",
-      "date": "2026-11-19T00:00:00"
+      "summary_vn": "Bài viết đề cập đến vai trò của Perplexity trong việc đo lường tiến bộ của các mô hình AI, và tiềm năng của nó trong việc thiết lập phương pháp đánh giá chung các khả năng mới nổi.",
+      "date": "2026-11-22T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1924,
-    "duplicates": 4,
-    "final": 10
+    "raw_total": 1425,
+    "duplicates": 0,
+    "final": 4
   }
 }
