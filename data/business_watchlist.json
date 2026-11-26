@@ -1,14 +1,5 @@
 {
   "entities": [
-    "Google Gemini 4 Neon release",
-    "OpenAI introduces a multi-layer approach to combat adversarial distillation",
-    "Hebbia sees improvements in financial research with GPT-6 Astra",
-    "MedChemBench evaluates AI models for drug candidate identification",
-    "OpenAI introduces \"Performance Factory\" to keep ChatGPT fast",
-    "Codex Security Plugin demonstrated",
-    "PR scans demonstrated",
-    "Daybreak Blue onboarding process",
-    "Daybreak Red reference architecture for supervised security investigation",
     "Microsoft-Anthropic partnership",
     "Google-OpenAI deal",
     "Nvidia-AMD GPU competition",
@@ -29,6 +20,15 @@
     "AI cybersecurity investments",
     "Oracle cloud AI integrations",
     "OpenAI and Cisco introduce Shirudo",
-    "Richpanel helps companies automate 50% of support"
+    "Richpanel helps companies automate 50% of support",
+    "** Anthropic IPO at $83/share",
+    "~$81 billion raised",
+    "valuation near $1.5 trillion; Siemens expands industrial AI automation portfolio; Microsoft Ignite 2026; Gartner IT Symposium/Xpo 2026; Web Summit 2026; SC26; Bengaluru Tech Summit 2026; Model ML Series B funding; AWS re:Invent 2026; Agentiq World 2026; Agentic Transformation Summit; AI Conference London AI World Congress 2026; Big Data Conference Europe 2026; NVIDIA GTC Washington",
+    "D.C. 2026; AI Journey 2026 conference in Moscow; Ottonomy Inc. partnerships in Australia; Northern Trust expands collaboration with Microsoft; IBM and Microsoft announce Imagine Enterprise platform; CogniForge Labs open-sources 'Nexus' framework; The Conference Board AI Leadership Summit; MLPOps World GenAI Summit; ODSC AI NYC 2026 - AI for Work Summit; Bharat AI Innovation 2026; Databricks Data + AI World Tour",
+    "Maxon Plusses Up With AI-Assisted 3D Creation Tools",
+    "Agentic Licenses",
+    "Intentful's Aria application",
+    "iFood scales AI Coding Agents",
+    "Clay integrates Codex and ChatGPT"
   ]
 }

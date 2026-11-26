@@ -1,39 +1,60 @@
 {
-  "timestamp": "2026-11-24T10:15:48.970804",
-  "keywords": "EN: [OpenAI, Cisco, Shirudo, Linux, patch deployment, AI, in-house legal, business context, reusable workflows, support agents]\nVN: [OpenAI, Cisco, Shirudo, Linux, triển khai bản vá, AI, pháp lý nội bộ, ngữ cảnh kinh doanh, quy trình làm việc tái sử dụng, đại lý hỗ trợ]\nMODELS: [GPT-6, Astra, Sol, Luna]\nBUSINESS: [OpenAI and Cisco introduce Shirudo, Richpanel helps companies automate 50% of support]",
+  "timestamp": "2026-11-26T08:46:59.508739",
+  "keywords": "EN: [Agentic AI Orchestration, AI-Assisted 3D Creation Tools, AI Coding Agents, Intrinsic protein-design capabilities, AI-powered search, Website research, Proposal generation, Automated issue resolution, Data analysis, Sales outreach strategies]\nVN: [Agentic AI Orchestration, Công cụ sáng tạo 3D hỗ trợ bởi AI, AI Coding Agents, Khả năng thiết kế protein nội tại, Tìm kiếm hỗ trợ bởi AI, Nghiên cứu website, Xây dựng đề xuất, Tự động xử lý vấn đề, Phân tích dữ liệu, Chiến lược tiếp cận thị trường]\nMODELS: [GPT-6, Astra, Codex, ChatGPT]\nBUSINESS: [Maxon Plusses Up With AI-Assisted 3D Creation Tools, Agentic Licenses, Intentful's Aria application, iFood scales AI Coding Agents, Clay integrates Codex and ChatGPT]",
   "reports": [
     {
-      "title": "OpenAI and Cisco introduce Shirudo",
-      "link": "https://openai.com/index/introducing-shirudo",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "OpenAI và Cisco ra mắt Shirudo, một runtime mã nguồn mở cho Linux, giúp bảo vệ hệ thống khi triển khai các bản vá.",
-      "date": "2026-11-23T21:20:00"
+      "title": "UiPath's 2027 Outlook: Agentic AI Orchestration as the Driver of Future Growth",
+      "link": "https://www.fool.com/coverage/moneyball/2026/11/24/uipath-s-2027-outlook-agentic-ai-orchestration-as-the-driver-of-future-growth/",
+      "source": "Search: ** Agentic AI",
+      "summary_vn": "UiPath dự báo **Agentic AI Orchestration** là động lực tăng trưởng tương lai, nhấn mạnh khả năng tự động hóa quy trình nâng cao mang lại giá trị kinh doanh vượt trội.",
+      "date": "2026-11-24T20:59:00"
     },
     {
-      "title": "Connected intelligence for in-house legal",
-      "link": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-      "source": "RSS: OpenAI News",
-      "summary_vn": "Hội thảo thảo luận về cách AI, với sự tham gia của OpenAI, có thể hỗ trợ đội ngũ pháp lý nội bộ kết nối ngữ cảnh kinh doanh, xây dựng quy trình làm việc tái sử dụng và tối ưu hóa hợp tác với luật sư bên ngoài.",
-      "date": "2026-11-23T08:00:00"
+      "title": "Maxon Plusses Up With AI-Assisted 3D Creation Tools, Agentic Licenses",
+      "link": "https://www.forbes.com/sites/dbloom/2026/11/24/maxon-plusses-up-with-ai-assisted-3d-creation-tools-agentic-licenses/",
+      "source": "Search: ** Agentic AI",
+      "summary_vn": "Maxon tích hợp công cụ sáng tạo 3D hỗ trợ bởi AI và các giấy phép **Agentic** vào nền tảng Maxon Plus, mang đến khả năng mới cho người dùng.",
+      "date": "2026-11-24T05:23:00"
     },
     {
-      "title": "Richpanel helps companies automate 50% of support in 30 days",
-      "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Richpanel ứng dụng các mô hình GPT-6 (Astra, Sol, Luna) để trang bị cho các AI support agent của họ, giúp tự động hóa 50% công việc hỗ trợ chỉ trong 30 ngày.",
-      "date": "2026-11-23T08:00:00"
+      "summary_vn": "Các mô hình GPT-6 cho thấy khả năng thiết kế cấu trúc và trình tự protein nội tại, sử dụng suy luận và code để đạt được hiệu quả trong thử nghiệm.",
+      "date": "2026-11-24T13:00:00"
     },
     {
-      "title": "Perplexity and Intelligence",
-      "link": "https://openai.com/index/perplexity-and-intelligence",
+      "title": "Searching for distant planets with Astra",
+      "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
       "source": "RSS: OpenAI News",
-      "summary_vn": "Bài viết đề cập đến vai trò của Perplexity trong việc đo lường tiến bộ của các mô hình AI, và tiềm năng của nó trong việc thiết lập phương pháp đánh giá chung các khả năng mới nổi.",
-      "date": "2026-11-22T00:00:00"
+      "summary_vn": "Hai nhà thiên văn nghiệp dư đã sử dụng **Astra** (hỗ trợ bởi AI) và Codex để khám phá các ngoại hành tinh tiềm năng từ dữ liệu kính viễn vọng Kepler và TESS của NASA.",
+      "date": "2026-11-24T11:00:00"
+    },
+    {
+      "title": "How Intentful uses dots to make more time for growth",
+      "link": "https://openai.com/business/customer-stories/intentful-dots",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "Ứng dụng Aria của Intentful, được hỗ trợ bởi AI, giúp nghiên cứu website, xây dựng đề xuất và tự động xử lý các vấn đề, tiết kiệm thời gian cho hoạt động kinh doanh.",
+      "date": "2026-11-24T00:00:00"
+    },
+    {
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "link": "https://openai.com/business/customer-stories/ifood",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "[iFood đã mở rộng quy mô sử dụng các AI Coding Agents trên 15.000 kho mã nguồn, cho phép tự động hóa các tác vụ phát triển phần mềm và tăng cường hiệu quả. Việc ứng dụng AI coding agents giúp tối ưu hóa quy trình phát triển, giảm thời gian triển khai và nâng cao chất lượng mã nguồn.]",
+      "date": "2026-11-24T00:00:00"
+    },
+    {
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "source": "RSS: OpenAI News",
+      "summary_vn": "[Clay tích hợp Codex và ChatGPT, sử dụng các mô hình GPT-6 để phân tích dữ liệu và hỗ trợ đội ngũ bán hàng đưa ra các chiến lược tiếp cận thị trường hiệu quả. Giải pháp này giúp người dùng nghiên cứu các thương vụ và chuyển đổi dữ liệu thành các kế hoạch kinh doanh tối ưu.]",
+      "date": "2026-11-24T00:00:00"
     }
   ],
   "debug_stats": {
-    "raw_total": 1425,
-    "duplicates": 0,
-    "final": 4
+    "raw_total": 1836,
+    "duplicates": 1,
+    "final": 7
   }
 }
