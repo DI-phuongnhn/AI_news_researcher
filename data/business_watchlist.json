@@ -1,16 +1,5 @@
 {
   "entities": [
-    "Microsoft-Anthropic partnership",
-    "Google-OpenAI deal",
-    "Nvidia-AMD GPU competition",
-    "Together AI Series C",
-    "HuggingFace funding",
-    "Cohere enterprise adoption",
-    "Mistral AI integrations",
-    "Anthropic Claude 3.5 Sonnet release",
-    "Google Gemini 1.5 Pro update",
-    "OpenAI Sora announcement",
-    "Apple WWDC AI features",
     "Amazon Bedrock model expansion",
     "Databricks AI platform",
     "Snowflake AI data cloud",
@@ -29,6 +18,17 @@
     "Agentic Licenses",
     "Intentful's Aria application",
     "iFood scales AI Coding Agents",
-    "Clay integrates Codex and ChatGPT"
+    "Clay integrates Codex and ChatGPT",
+    "Meta Llama 3.1 availability",
+    "Mistral AI Mixtral 8x22B launch",
+    "Hugging Face open-source model releases",
+    "Google Project Glasswing for AI security",
+    "Microsoft Copilot integrations",
+    "NVIDIA AI platform updates",
+    "Startup funding for agentic workflow tools",
+    "Enterprise adoption of AI assistants",
+    "Open-source orchestration tool partnerships (e.g.",
+    "LangGraph",
+    "CrewAI)"
   ]
 }
